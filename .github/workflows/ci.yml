@@ -178,3 +178,38 @@ jobs:
             --baseset-dir /usr/share/games/openttd/baseset \
             --admin-port 3977 \
             --server-port 3979
+
+  veloren-product:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: dtolnay/rust-toolchain@nightly
+      - name: Acquire pinned Veloren and build minimal GPL-side economy bridge
+        run: python tools/prepare_veloren_product.py --checkout "$RUNNER_TEMP/veloren" --toolchain nightly
+      - name: Execute actual Veloren Economy tick through patched product bridge
+        env:
+          PYTHONPATH: src
+          VELOREN_CHECKOUT: ${{ runner.temp }}/veloren
+        run: |
+          python -m unittest -v tests.test_veloren_product.VelorenProductTests.test_actual_veloren_economy_tick_executes
+          python - <<'PY'
+          import os
+          from baen_economy.veloren_product import run_veloren_economy
+          result = run_veloren_economy(
+              os.environ['VELOREN_CHECKOUT'],
+              population=64,
+              food_stock=500,
+              coin_stock=1000,
+              days=30,
+              timeout=60,
+          )
+          assert result.upstream == 'Veloren'
+          assert result.population >= 0
+          assert result.food_stock >= 0
+          assert result.food_price > 0
+          assert result.canonical_time_advanced is False
+          print('actual Veloren Economy tick OK', result)
+          PY
