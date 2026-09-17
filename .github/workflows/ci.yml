@@ -1,0 +1,43 @@
+name: baen-economy-engine CI
+
+on:
+  push:
+    branches:
+      - main
+      - codex/reconcile-standalone-authority-20260917
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Compile Python source and tests
+        run: python -m compileall -q src tests
+      - name: Run standalone regression suite
+        env:
+          PYTHONPATH: src
+        run: python -m unittest discover -s tests -v
+      - name: Verify import surface
+        env:
+          PYTHONPATH: src
+        run: |
+          python - <<'PY'
+          import baen_economy
+          import baen_economy.http_api
+          import baen_economy.operator_cli
+          import baen_economy.food_cli
+          import baen_economy.whole_economy_cli
+          print("standalone import surface OK")
+          PY
