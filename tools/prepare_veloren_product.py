@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Acquire pinned Veloren and build the minimal GPL-side Baen economy bridge.
 
-The upstream economy implementation remains Veloren's.  The only patch exposes
+The upstream economy implementation remains Veloren's. The only patch exposes
 state injection that Veloren's own economy tests currently perform from inside
-the module because the relevant fields are private.  The bridge then calls the
+the module because the relevant fields are private. The bridge then calls the
 existing public ``Economy::tick`` and reads the existing public information and
 price APIs.
 """
@@ -42,9 +42,9 @@ METHOD_INSERT = r'''    /// Baen GPL-side adapter seam: seed externally sourced 
 
 '''
 
-EXAMPLE = r'''use common::trade::Good;
+EXAMPLE = r'''use common::{store::Store, trade::Good};
 use std::env;
-use veloren_world::{index::Index, site::Site};
+use veloren_world::site::Site;
 
 fn number(args: &[String], index: usize, name: &str) -> f32 {
     args.get(index)
@@ -63,16 +63,16 @@ fn main() {
         panic!("days must be positive");
     }
 
-    let mut index = Index::new(424242);
+    let mut sites: Store<Site> = Store::default();
     let mut site = Site::default();
     site.economy_mut().baen_import_state(
         population,
         &[(Good::Food, food), (Good::Coin, coin)],
     );
-    let id = index.sites.insert(site);
-    index.sites.get_mut(id).economy_mut().tick(id, days);
+    let id = sites.insert(site);
+    sites.get_mut(id).economy_mut().tick(id, days);
 
-    let economy = index.sites.get(id).economy.as_ref().expect("economy");
+    let economy = sites.get(id).economy.as_ref().expect("economy");
     let info = economy.get_information(id);
     let prices = economy.get_site_prices();
     let food_after = info.stock.get(&Good::Food).copied().unwrap_or(0.0);
