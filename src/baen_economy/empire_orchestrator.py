@@ -363,8 +363,7 @@ def _brunnfeld_check(
     )
     snapshot = client.snapshot()
     return {
-        "status": "USED_IN_RUN" if evaluated else "MISSING_MAPPING",
-        "blocker": None if evaluated else "no Baen route with source-backed distance and mapped cargo was evaluated",
+        "status": "USED_IN_RUN",
         "upstream_commit": snapshot.upstream_commit,
         "mapping": {
             "baen_settlements": [str(row.get("name")) for row in settlements],
@@ -481,7 +480,8 @@ def _openttd_check(
                 "evaluations": per_cargo,
             })
     return {
-        "status": "USED_IN_RUN",
+        "status": "USED_IN_RUN" if evaluated else "MISSING_MAPPING",
+        "blocker": None if evaluated else "no Baen route with source-backed distance and mapped cargo was evaluated",
         "upstream_commit": snapshot.upstream_commit,
         "date": snapshot.current_date,
         "company_economy_records": [asdict(row) for row in snapshot.companies],
