@@ -38,6 +38,25 @@ class _Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def do_POST(self):  # noqa: N802
+        if self.path != "/api/generate-world":
+            body = b'{"error":"missing"}'
+            self.send_response(404)
+        else:
+            length = int(self.headers.get("Content-Length", "0"))
+            request = json.loads(self.rfile.read(length))
+            body = json.dumps({
+                "ok": True,
+                "villages": request["villages"],
+                "totalAgents": request["villages"] * request["agentsPerVillage"],
+                "seed": request["seed"],
+            }).encode()
+            self.send_response(200)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
     def log_message(self, format, *args):  # noqa: A002
         return
 
@@ -72,10 +91,23 @@ class BrunnfeldSidecarTests(unittest.TestCase):
         self.assertEqual(snapshot.villages, RESPONSES["/api/villages"])
         self.assertFalse(snapshot.canonical_time_advanced)
 
-    def test_client_has_no_mutating_product_method(self):
+    def test_only_deterministic_sandbox_generation_is_exposed(self):
         client = BrunnfeldServiceClient(self.base_url)
-        for name in ("start", "generate_world", "trigger_event", "whisper", "meeting"):
+        generated = client.generate_world(villages=3, agents_per_village=71, seed=42)
+        self.assertEqual(generated["villages"], 3)
+        self.assertEqual(generated["totalAgents"], 213)
+        for name in ("start", "trigger_event", "whisper", "meeting"):
             self.assertFalse(hasattr(client, name), name)
+
+    def test_generation_limits_fail_before_http(self):
+        client = BrunnfeldServiceClient(self.base_url)
+        for kwargs in (
+            {"villages": 0, "agents_per_village": 7, "seed": 1},
+            {"villages": 3, "agents_per_village": 201, "seed": 1},
+            {"villages": 3, "agents_per_village": 10, "seed": -1},
+        ):
+            with self.subTest(kwargs=kwargs), self.assertRaises(ValueError):
+                client.generate_world(**kwargs)
 
     def test_http_error_is_fail_closed(self):
         client = BrunnfeldServiceClient(self.base_url)
