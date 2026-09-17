@@ -87,6 +87,20 @@ class EmpireCliTests(unittest.TestCase):
         self.assertEqual(len(payload["products"]), 6)
         self.assertTrue(all("semantic mapping incomplete" in row["status"] for row in payload["products"]))
 
+    def test_actual_repository_empire_preview_resolves_real_registry(self):
+        payload = empire_preview(
+            seed="empire-operator-ci",
+            month="Hammer 1495 preview",
+        )
+        self.assertEqual(payload["source_state"]["current_live_records"], 1381)
+        self.assertEqual(payload["source_state"]["retained_core_records"], 1620)
+        self.assertEqual(payload["source_state"]["stored_records"], 1627)
+        self.assertGreater(payload["business_preview"]["resolved_businesses"], 0)
+        self.assertEqual(payload["notion_writes"], 0)
+        self.assertFalse(payload["campaign_time_advanced"])
+        self.assertFalse(payload["canonical"])
+        self.assertIn("Baen Empire Economy", render_report(payload))
+
 
 if __name__ == "__main__":
     unittest.main()
