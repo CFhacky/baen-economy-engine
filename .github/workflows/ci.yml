@@ -244,20 +244,21 @@ jobs:
           sudo apt-get install -y -qq ant build-essential cmake mold openttd-opengfx openttd-opensfx openttd-openmsx
           python -m pip install --upgrade pip
           python -m pip install -e '.[mesa]'
-      - name: Acquire and build every pinned upstream product
+      - name: Execute the exact user-facing whole-Empire command
         run: |
-          python tools/run_brunnfeld_sidecar.py --checkout "$RUNNER_TEMP/brunnfeld" --build-only
-          python tools/prepare_unknown_horizons_product.py --checkout "$RUNNER_TEMP/unknown-horizons"
-          python tools/prepare_freecol_product.py --checkout "$RUNNER_TEMP/freecol"
-          python tools/prepare_veloren_product.py --checkout "$RUNNER_TEMP/veloren" --toolchain nightly
-          python tools/prepare_openttd_product.py --checkout "$RUNNER_TEMP/openttd" --jobs 2
-      - name: Execute one source-rebased whole-Empire month through the complete product stack
-        env:
-          PYTHONPATH: src
-          BRUNNFELD_CHECKOUT: ${{ runner.temp }}/brunnfeld
-          UNKNOWN_HORIZONS_CHECKOUT: ${{ runner.temp }}/unknown-horizons
-          FREECOL_CHECKOUT: ${{ runner.temp }}/freecol
-          VELOREN_CHECKOUT: ${{ runner.temp }}/veloren
-          OPENTTD_CHECKOUT: ${{ runner.temp }}/openttd
-          OPENTTD_BASESET_DIR: /usr/share/games/openttd/baseset
-        run: python tools/run_empire_e2e_ci.py
+          mkdir -p reports
+          baen-empire run \
+            --seed "hammer-1495-e2e" \
+            --product-root "$RUNNER_TEMP/baen-product-stack" \
+            --openttd-baseset /usr/share/games/openttd/baseset \
+            --build-jobs 2 \
+            --format report | tee reports/Empire-E2E-Preview.md
+          test -s reports/Empire-E2E-Preview.md
+          grep -q "Whole-Economy Month" reports/Empire-E2E-Preview.md
+          grep -q "mesa.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+          grep -q "brunnfeld.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+          grep -q "unknown_horizons.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+          grep -q "freecol.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+          grep -q "veloren.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+          grep -q "openttd.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+
