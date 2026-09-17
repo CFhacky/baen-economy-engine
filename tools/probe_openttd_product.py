@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+from dataclasses import asdict
 import json
 import os
 from pathlib import Path
@@ -114,7 +115,7 @@ def main() -> int:
                 "map_width": snapshot.map_width,
                 "map_height": snapshot.map_height,
                 "current_date": snapshot.current_date,
-                "company_economy_records": [company.__dict__ for company in snapshot.companies],
+                "company_economy_records": [asdict(company) for company in snapshot.companies],
                 "rcon_output": list(snapshot.rcon_output),
                 "canonical_time_advanced": snapshot.canonical_time_advanced,
             }
