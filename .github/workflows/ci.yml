@@ -217,3 +217,43 @@ jobs:
           assert result.canonical_time_advanced is False
           print('actual Veloren Economy tick OK', result)
           PY
+
+
+  empire-e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "11"
+      - uses: dtolnay/rust-toolchain@nightly
+      - name: Install product build/runtime dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ant build-essential cmake mold openttd-opengfx openttd-opensfx openttd-openmsx
+          python -m pip install --upgrade pip
+          python -m pip install -e '.[mesa]'
+      - name: Acquire and build every pinned upstream product
+        run: |
+          python tools/run_brunnfeld_sidecar.py --checkout "$RUNNER_TEMP/brunnfeld" --build-only
+          python tools/prepare_unknown_horizons_product.py --checkout "$RUNNER_TEMP/unknown-horizons"
+          python tools/prepare_freecol_product.py --checkout "$RUNNER_TEMP/freecol"
+          python tools/prepare_veloren_product.py --checkout "$RUNNER_TEMP/veloren" --toolchain nightly
+          python tools/prepare_openttd_product.py --checkout "$RUNNER_TEMP/openttd" --jobs 2
+      - name: Execute one source-rebased whole-Empire month through the complete product stack
+        env:
+          PYTHONPATH: src
+          BRUNNFELD_CHECKOUT: ${{ runner.temp }}/brunnfeld
+          UNKNOWN_HORIZONS_CHECKOUT: ${{ runner.temp }}/unknown-horizons
+          FREECOL_CHECKOUT: ${{ runner.temp }}/freecol
+          VELOREN_CHECKOUT: ${{ runner.temp }}/veloren
+          OPENTTD_CHECKOUT: ${{ runner.temp }}/openttd
+          OPENTTD_BASESET_DIR: /usr/share/games/openttd/baseset
+        run: python tools/run_empire_e2e_ci.py
