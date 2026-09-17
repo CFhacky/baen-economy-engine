@@ -154,3 +154,27 @@ jobs:
           assert result.canonical_time_advanced is False
           print('actual FreeCol ProductionInfo OK', result)
           PY
+
+  openttd-product:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install OpenTTD build and free-base-set dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq build-essential cmake openttd-opengfx openttd-opensfx openttd-openmsx
+      - name: Acquire and build exact pinned OpenTTD dedicated product
+        run: python tools/prepare_openttd_product.py --checkout "$RUNNER_TEMP/openttd" --jobs 2
+      - name: Boot actual OpenTTD and probe documented admin economy API
+        env:
+          PYTHONPATH: src
+        run: |
+          test -d /usr/share/games/openttd/baseset
+          python tools/probe_openttd_product.py \
+            --checkout "$RUNNER_TEMP/openttd" \
+            --baseset-dir /usr/share/games/openttd/baseset \
+            --admin-port 3977 \
+            --server-port 3979
