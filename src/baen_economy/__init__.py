@@ -23,6 +23,13 @@ from .mesa_runtime import (
     mesa_available,
     run_mesa_preview,
 )
+from .openttd_product import (
+    OPENTTD_COMMIT,
+    OpenTTDAdminClient,
+    OpenTTDCompanyEconomy,
+    OpenTTDProductError,
+    OpenTTDProductSnapshot,
+)
 from .unknown_horizons_product import (
     UNKNOWN_HORIZONS_COMMIT,
     UnknownHorizonsProductError,
@@ -48,6 +55,8 @@ __all__ = [
     "FREECOL_COMMIT", "FreeColProductError", "FreeColProductionResult", "run_freecol_production_info",
     "MESA_COMMIT", "MESA_VERSION", "MesaProductEvent", "MesaProductRun",
     "MesaRuntimeUnavailable", "mesa_available", "run_mesa_preview",
+    "OPENTTD_COMMIT", "OpenTTDAdminClient", "OpenTTDCompanyEconomy",
+    "OpenTTDProductError", "OpenTTDProductSnapshot",
     "UNKNOWN_HORIZONS_COMMIT", "UnknownHorizonsProductError", "UnknownHorizonsProductionLine",
     "run_unknown_horizons_production_line",
     "DeliverySettlement", "ExportAllocation", "ProductionCapacity", "ScheduledEconomicEvent",
