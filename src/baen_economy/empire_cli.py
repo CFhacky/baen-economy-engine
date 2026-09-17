@@ -16,6 +16,12 @@ from typing import Any, Sequence
 
 from .http_api import run_named_previews, run_registry_preview
 from .mesa_runtime import mesa_available
+from .empire_orchestrator import (
+    DEFAULT_SCENARIO,
+    EmpireRunError,
+    render_empire_month,
+    run_empire_month,
+)
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -319,6 +325,17 @@ def build_parser() -> argparse.ArgumentParser:
     products = sub.add_parser("products", help="show actual upstream product boundaries and mapping state")
     products.add_argument("--format", choices=("summary", "json"), default="summary")
 
+    run = sub.add_parser("run", help="run one complete source-rebased whole-Empire month")
+    run.add_argument("--seed", required=True)
+    run.add_argument("--scenario", type=Path, default=DEFAULT_SCENARIO)
+    run.add_argument("--census", type=Path, default=DEFAULT_CENSUS)
+    run.add_argument(
+        "--require-products",
+        action="store_true",
+        help="fail unless all six configured upstream product boundaries execute",
+    )
+    run.add_argument("--format", choices=("json", "report"), default="report")
+
     preview = sub.add_parser("preview", help="run one coherent non-canonical Empire business preview")
     preview.add_argument("--seed", required=True)
     preview.add_argument("--month", required=True)
@@ -349,6 +366,18 @@ def main(argv: Sequence[str] | None = None) -> int:
                 for item in payload["products"]:
                     print(f"- {item['name']}: {item['boundary']} — {item['status']}")
             return 0
+        if args.command == "run":
+            payload = run_empire_month(
+                seed=args.seed,
+                census_path=args.census,
+                scenario_path=args.scenario,
+                require_products=args.require_products,
+            )
+            if args.format == "json":
+                _json(payload)
+            else:
+                print(render_empire_month(payload))
+            return 0
         if args.command == "preview":
             payload = empire_preview(
                 seed=args.seed,
@@ -377,7 +406,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 print(render_report(payload))
             return 0
         raise EmpireOperatorError("unknown command")
-    except (EmpireOperatorError, OSError, ValueError, TypeError, KeyError) as exc:
+    except (EmpireOperatorError, EmpireRunError, OSError, ValueError, TypeError, KeyError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
 
