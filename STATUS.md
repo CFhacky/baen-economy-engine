@@ -2,7 +2,7 @@
 
 ## Repository role
 
-`CFhacky/baen-economy-engine` is now the software workspace for the Baen Economy Engine. The private `campaign-development-vault` and live Notion workspace remain campaign/source authorities. Private-vault recovery PR #192 is provenance and recovery history, not the primary development lane for this package.
+`CFhacky/baen-economy-engine` is the software workspace for the Baen Economy Engine. The private `campaign-development-vault` and live Notion workspace remain campaign/source authorities. Private-vault recovery PR #192 is provenance and recovery history, not the primary development lane for this package.
 
 Standalone extraction baseline: `main@dd80d730427967dc78fe7b965b6a6d5875c9f3a2`, extracted from private-vault engine head `2cfb0c5` on 17 September 2026.
 
@@ -39,7 +39,7 @@ The older 372-row/five-collection human report is an intermediate checkpoint and
 - Quantities and money use decimal arithmetic; binary floating point is barred from authoritative arithmetic.
 - Negative inventory, overspent labour, oversubscribed routes, unbalanced postings, and accepted-snapshot mutation are hard failures.
 - Notion is read-only from the engine's current authority boundary.
-- Canonical campaign time does not advance through recovery, test, preview, or source-ingestion operations.
+- Canonical campaign time does not advance through recovery, test, preview, source-ingestion, or upstream-product operations.
 
 ## Implemented engine capabilities inherited into the standalone package
 
@@ -59,39 +59,56 @@ Verified historical capabilities include:
 
 These capabilities do **not** by themselves establish current campaign values or open the canonical-month gate.
 
+## Upstream product integration state
+
+At code head `c8d5830745f709838a3effe9ac9a4e588cc5f86f`, GitHub Actions run **#115** (`35280499380`) proves executable runtime boundaries for all six selected upstream products:
+
+- Mesa — direct Python library;
+- Brunnfeld Agentic World — Node service sidecar;
+- Unknown Horizons — separate pinned Python product process;
+- FreeCol — JVM product harness against the real `FreeCol.jar`;
+- Veloren — pinned GPL-side Rust adapter executing the real `veloren-world` economy;
+- OpenTTD — exact dedicated-server build probed through the documented admin network.
+
+`src/baen_economy/upstream_adaptations.py` remains compatibility/cross-check code only. Its helpers are not evidence of product integration and are not a substitute for the runtime boundaries above.
+
+Product integration is also not canonical semantic adoption. Upstream balances/defaults do not become Baen facts, and source-to-product mappings remain subject to the source/coverage gate.
+
 ## Standalone validation state
 
 `VALIDATION.md` remains the detailed **29 August 2026 private-vault validation history** and is not rewritten as if it were freshly executed in this repo.
 
 The first literal full-suite run after extraction executed **511 tests**: **502 passed and 9 errored**. Every error was an extraction boundary, not a failing economy assertion: three Windows launchers had been omitted, four finance checks pointed at the private sibling PR #48 ledger, one food-baseline class required the intentionally unpublished Registry page-body snapshot, and one recovery test asserted the old monorepo workflow path.
 
-The reconciliation branch has now:
+The reconciliation branch then:
 
 - restored the three exact Windows launchers from the private-vault extraction source;
 - bundled the pinned PR #48 chart as `fixtures/finance/pr48-accounts.bean` rather than inventing a replacement;
-- added `.github/workflows/ci.yml` for Python 3.11 and 3.12;
+- added `.github/workflows/ci.yml` for Python 3.11 and 3.12 plus dedicated upstream-product jobs;
 - added `tools/run_standalone_tests.py`, which explicitly lists evidence-only exclusions instead of silently marking them passed;
-- retained fail-closed handling for the unpublished private page-body fixture.
+- retained fail-closed handling for the unpublished private page-body fixture;
+- replaced “behavior-inspired means integrated” with actual pinned product boundaries for all six selected upstreams.
 
-A green standalone CI run at branch head `de46ea76d4f8de219708da88400141dc91538cec` executed **506 standalone tests** on Python 3.11 and again on Python 3.12, with import-surface verification passing on both. A subsequent runner revision re-enables the four finance-chart tests against the bundled exact chart; the current branch must receive a fresh green CI result before that larger count is reported as verified.
+The current validated code head is `c8d5830745f709838a3effe9ac9a4e588cc5f86f`. GitHub Actions run **#115** (`35280499380`) is green across the full matrix. Python 3.11 ran **544 tests, 0 failures, 3 skips**. Python 3.12 passed the standalone suite and the exact Mesa dependency path. Brunnfeld, Unknown Horizons, FreeCol, Veloren, and OpenTTD dedicated product jobs also passed.
 
-See `VALIDATION_STANDALONE.md` for the current executable evidence once the reconciliation head is finalized.
+See `VALIDATION_STANDALONE.md` for the executable evidence.
 
 ## Immediate development queue
 
-The ten-collection census is no longer the next missing deliverable. The recovery snapshot itself identifies the next evidence surfaces:
+The ten-collection census and the six upstream runtime boundaries are no longer the missing deliverables. The next work is source-to-simulator semantic coverage and adoption, including:
 
 1. finance/banking evidence outside the Business Registry;
 2. infrastructure/logistics evidence outside Locations;
 3. population/labour authority;
 4. construction/capital programmes;
 5. military formations and standing contracts;
-6. source-to-simulator coverage mapping and explicit mechanics/data blockers.
+6. explicit mapping of campaign source fields into the now-proven upstream/product and Baen execution surfaces;
+7. explicit mechanics/data blockers where no source authority exists.
 
 The practical target is to move records from `UNKNOWN` to justified executable coverage states without inventing balances, quantities, prices, wages, opening stocks, or campaign events.
 
 ## Not canonical or complete
 
-No calculated opening balance, commodity quantity, price, wage, production rate, route capacity, projected facility output, or test-fixture assumption is canonical merely because it appears in this repository.
+No calculated opening balance, commodity quantity, price, wage, production rate, route capacity, projected facility output, upstream default, or test-fixture assumption is canonical merely because it appears in this repository or executes successfully through an upstream product.
 
 The engine is a usable standalone software package. The campaign economy is **not** declared canonically executable yet. `/v1/canonical` must remain blocked until the source-to-simulator coverage gate is genuinely satisfied.
