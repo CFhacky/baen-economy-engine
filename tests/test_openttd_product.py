@@ -73,6 +73,13 @@ class _FakeAdmin:
                 assert kind == 5 and payload == cstring("status")
                 conn.sendall(packet(120, struct.pack("<H", 1) + cstring("Server is running")))
                 conn.sendall(packet(125, cstring("status")))
+
+                kind, payload = recv_packet(conn)
+                assert kind == 5 and payload == cstring("baen_transport_income 6 25 300 30")
+                conn.sendall(packet(120, struct.pack("<H", 1) + cstring(
+                    "BAEN_TRANSPORT_INCOME cargo=6 pieces=25 distance=300 days=30 income=9876"
+                )))
+                conn.sendall(packet(125, cstring("baen_transport_income 6 25 300 30")))
                 try:
                     recv_packet(conn)
                 except Exception:
@@ -99,6 +106,10 @@ class OpenTTDProductTests(unittest.TestCase):
                 "127.0.0.1", server.port, password="secret", timeout=1.0
             ) as client:
                 snapshot = client.snapshot()
+                transport_income = client.transport_income(
+                    cargo_type=6, pieces=25, distance_tiles=300, days_in_transit=30
+                )
+            self.assertEqual(transport_income, 9876)
             self.assertEqual(snapshot.protocol_version, 2)
             self.assertEqual(snapshot.server_name, "Fake OpenTTD")
             self.assertTrue(snapshot.dedicated)
