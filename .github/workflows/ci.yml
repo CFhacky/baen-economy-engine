@@ -120,3 +120,37 @@ jobs:
           assert result.canonical_time_advanced is False
           print('actual Unknown Horizons ProductionLine OK', result)
           PY
+
+  freecol-product:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "11"
+      - name: Install Ant
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ant
+      - name: Acquire and build exact pinned FreeCol product
+        run: python tools/prepare_freecol_product.py --checkout "$RUNNER_TEMP/freecol"
+      - name: Execute actual FreeCol ProductionInfo through JVM bridge
+        env:
+          PYTHONPATH: src
+          FREECOL_CHECKOUT: ${{ runner.temp }}/freecol
+        run: |
+          python -m unittest -v tests.test_freecol_product.FreeColProductTests.test_actual_pinned_product_executes_production_info
+          python - <<'PY'
+          import os
+          from baen_economy.freecol_product import run_freecol_production_info
+          result = run_freecol_production_info(
+              os.environ['FREECOL_CHECKOUT'],
+              actual={'model.goods.grain': 7, 'model.goods.tools': 4},
+              maximum={'model.goods.grain': 11, 'model.goods.tools': 4},
+          )
+          assert result.deficits == {'model.goods.grain': 4}
+          assert result.canonical_time_advanced is False
+          print('actual FreeCol ProductionInfo OK', result)
+          PY
