@@ -1,15 +1,15 @@
-"""Read-only client for the actual pinned Brunnfeld Agentic World product.
+"""Preview client for the actual pinned Brunnfeld Agentic World product.
 
-Brunnfeld exposes a Node HTTP server (`npm run server`) with economy, market,
-trade, price, state, village, and SSE endpoints.  Baen therefore treats it as an
-external simulation sidecar instead of copying its TypeScript economy classes.
+Brunnfeld exposes a Node HTTP server (`npm run server`) with world generation,
+economy, market, trade, price, state, village, and SSE endpoints. Baen treats it
+as an isolated simulation sidecar instead of copying its TypeScript economy classes.
 
 Pinned upstream: marcopatzelt/brunnfeld-agentic-world
 commit e0656ca01630333e26c622ffd4ba4c973b79eebe (MIT).
 
-This client is deliberately read-only.  It does not call Brunnfeld's mutating
-`/api/start`, `/api/generate-world`, event, meeting, or whisper endpoints, and it
-cannot advance Baen's canonical campaign clock.
+The only mutation exposed here is deterministic **sandbox world generation**.
+It never calls `/api/start`, event, meeting, or whisper endpoints and cannot
+advance Baen's canonical campaign clock.
 """
 from __future__ import annotations
 
@@ -78,6 +78,55 @@ class BrunnfeldServiceClient:
             return json.loads(raw)
         except (json.JSONDecodeError, UnicodeDecodeError) as exc:
             raise BrunnfeldSidecarError(f"Brunnfeld {path} returned non-JSON data") from exc
+
+    def _post_json(self, path: str, payload: dict[str, Any]) -> Any:
+        if path != "/api/generate-world":
+            raise ValueError("Baen only permits isolated Brunnfeld world generation")
+        raw_payload = json.dumps(payload, separators=(",", ":"), ensure_ascii=True).encode("utf-8")
+        request = Request(
+            self.base_url + path,
+            method="POST",
+            data=raw_payload,
+            headers={
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+                "User-Agent": "baen-economy-engine",
+            },
+        )
+        try:
+            with urlopen(request, timeout=self.timeout) as response:
+                if response.status != 200:
+                    raise BrunnfeldSidecarError(
+                        f"Brunnfeld {path} returned HTTP {response.status}"
+                    )
+                raw = response.read()
+        except (HTTPError, URLError, TimeoutError, OSError) as exc:
+            raise BrunnfeldSidecarError(f"Brunnfeld {path} is unavailable: {exc}") from exc
+        try:
+            return json.loads(raw)
+        except (json.JSONDecodeError, UnicodeDecodeError) as exc:
+            raise BrunnfeldSidecarError(f"Brunnfeld {path} returned non-JSON data") from exc
+
+    def generate_world(self, *, villages: int, agents_per_village: int, seed: int) -> dict[str, Any]:
+        if type(villages) is not int or not 1 <= villages <= 5:
+            raise ValueError("Brunnfeld villages must be 1..5")
+        if type(agents_per_village) is not int or not 7 <= agents_per_village <= 200:
+            raise ValueError("Brunnfeld agents_per_village must be 7..200")
+        if type(seed) is not int or seed < 0:
+            raise ValueError("Brunnfeld seed must be a non-negative integer")
+        result = self._expect(
+            self._post_json(
+                "/api/generate-world",
+                {
+                    "villages": villages,
+                    "agentsPerVillage": agents_per_village,
+                    "seed": seed,
+                },
+            ),
+            dict,
+            "/api/generate-world",
+        )
+        return result
 
     @staticmethod
     def _expect(value: Any, expected: type, endpoint: str) -> Any:
