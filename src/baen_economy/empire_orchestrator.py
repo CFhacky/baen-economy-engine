@@ -492,6 +492,56 @@ def _openttd_check(
     }
 
 
+def _scenario_assumptions(scenario: Mapping[str, object]) -> dict[str, Any]:
+    """Inventory unresolved/model-proposed inputs still driving the preview."""
+
+    entries: list[dict[str, Any]] = []
+
+    def walk(value: object, path: str) -> None:
+        if isinstance(value, Mapping):
+            authority = value.get("authority")
+            canonical = value.get("canonical")
+            source_ref = value.get("source_ref")
+            assumed = (
+                authority in {"scenario_assumption", "MODEL-PROPOSED"}
+                or canonical is False
+                or (isinstance(source_ref, str) and source_ref.startswith("scenario_assumption:"))
+            )
+            if assumed:
+                identity = (
+                    value.get("id")
+                    or value.get("entity_id")
+                    or value.get("route_id")
+                    or value.get("settlement_id")
+                    or value.get("commodity_id")
+                    or path
+                )
+                entries.append({
+                    "path": path,
+                    "identity": str(identity),
+                    "authority": authority,
+                    "source_ref": source_ref,
+                    "canonical": canonical,
+                })
+            for key, item in value.items():
+                walk(item, f"{path}.{key}" if path else str(key))
+        elif isinstance(value, list):
+            for index, item in enumerate(value):
+                walk(item, f"{path}[{index}]")
+
+    walk(scenario, "")
+    unique: dict[tuple[str, str], dict[str, Any]] = {}
+    for entry in entries:
+        unique[(entry["path"], entry["identity"])] = entry
+    rows = list(unique.values())
+    rows.sort(key=lambda row: (row["path"], row["identity"]))
+    return {
+        "count": len(rows),
+        "entries": rows,
+        "meaning": "These inputs may drive the non-canonical preview but are not promoted to campaign facts.",
+    }
+
+
 def run_empire_month(
     *,
     seed: str,
@@ -589,6 +639,7 @@ def run_empire_month(
         "source_snapshot_hash": census.get("meta", {}).get("snapshotHash"),
         "scenario_id": rebased["scenario_id"],
         "source_overrides": overrides,
+        "scenario_assumptions": _scenario_assumptions(rebased),
         "blockers": blockers,
         "baen_core": result,
         "products": products,
@@ -614,7 +665,17 @@ def render_empire_month(payload: Mapping[str, Any]) -> str:
     lines.extend(["", "## Source rebasing", ""])
     for row in payload["source_overrides"]:
         lines.append(f"- **{row['settlement']} population**: {row['from']} → {row['to']} ({row['provenance']}); class split remains {row['class_distribution']}.")
-    lines.extend(["", "## Integrity", ""])
+    assumptions = payload["scenario_assumptions"]
+    lines.extend([
+        "",
+        "## Assumptions still driving this preview",
+        "",
+        f"- **{assumptions['count']}** scenario/model-proposed input objects remain in the preview.",
+        "- They are inspectable in JSON output and are **not** campaign canon.",
+        "",
+        "## Integrity",
+        "",
+    ])
     for key in (
         "physical_conservation", "nonnegative_balances", "ledger_balanced",
         "deposit_liabilities_reconcile", "interest_receivables_reconcile",
