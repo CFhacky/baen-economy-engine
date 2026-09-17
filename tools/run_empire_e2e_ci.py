@@ -123,8 +123,12 @@ def main() -> int:
             statuses = {name: row.get("status") for name, row in payload["products"].items()}
             if set(statuses) != {"mesa", "brunnfeld", "unknown_horizons", "freecol", "veloren", "openttd"}:
                 raise RuntimeError("product result set is incomplete")
-            if any(value == "UNAVAILABLE" for value in statuses.values()):
-                raise RuntimeError("one or more upstream products did not execute")
+            incomplete = {name: value for name, value in statuses.items() if value != "USED_IN_RUN"}
+            if incomplete:
+                raise RuntimeError(
+                    "one or more upstream products did not consume mapped Baen input: "
+                    + json.dumps(incomplete, sort_keys=True)
+                )
             checks = payload["integrity"]
             for key in (
                 "physical_conservation",
