@@ -88,3 +88,35 @@ jobs:
           assert isinstance(data, list)
           print('actual Brunnfeld sidecar API OK; villages:', len(data))
           PY
+
+  unknown-horizons-product:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Acquire exact pinned Unknown Horizons product
+        run: python tools/prepare_unknown_horizons_product.py --checkout "$RUNNER_TEMP/unknown-horizons"
+      - name: Execute actual Unknown Horizons ProductionLine through process bridge
+        env:
+          PYTHONPATH: src
+          UNKNOWN_HORIZONS_CHECKOUT: ${{ runner.temp }}/unknown-horizons
+        run: |
+          python -m unittest -v tests.test_unknown_horizons_product.UnknownHorizonsProductTests.test_actual_pinned_product_executes_production_line
+          python - <<'PY'
+          import os
+          from baen_economy.unknown_horizons_product import run_unknown_horizons_production_line
+          result = run_unknown_horizons_production_line(
+              os.environ['UNKNOWN_HORIZONS_CHECKOUT'],
+              line_id=901,
+              produces=((1, 4.0),),
+              consumes=((2, -2.0),),
+              time=3.0,
+          )
+          assert result.production == {1: 4.0, 2: -2.0}
+          assert result.produced == {1: 4.0}
+          assert result.consumed == {2: -2.0}
+          assert result.canonical_time_advanced is False
+          print('actual Unknown Horizons ProductionLine OK', result)
+          PY
