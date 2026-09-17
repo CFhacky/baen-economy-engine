@@ -1,5 +1,12 @@
 """Baen Economy Engine public API."""
 
+from .brunnfeld_sidecar import (
+    BRUNNFELD_COMMIT,
+    BRUNNFELD_DEFAULT_URL,
+    BrunnfeldServiceClient,
+    BrunnfeldSidecarError,
+    BrunnfeldSnapshot,
+)
 from .domain import (
     AccountingTreatment,
     Authority,
@@ -34,6 +41,11 @@ __all__ = [
     "EntityRecord",
     "SimulationMode",
     "TemporalState",
+    "BRUNNFELD_COMMIT",
+    "BRUNNFELD_DEFAULT_URL",
+    "BrunnfeldServiceClient",
+    "BrunnfeldSidecarError",
+    "BrunnfeldSnapshot",
     "MESA_COMMIT",
     "MESA_VERSION",
     "MesaProductEvent",
