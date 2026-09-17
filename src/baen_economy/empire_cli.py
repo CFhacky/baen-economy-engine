@@ -22,6 +22,7 @@ from .empire_orchestrator import (
     render_empire_month,
     run_empire_month,
 )
+from .product_stack import ProductStackError, product_environment
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -335,6 +336,25 @@ def build_parser() -> argparse.ArgumentParser:
         help="fail unless all six configured upstream product boundaries execute",
     )
     run.add_argument("--format", choices=("json", "report"), default="report")
+    run.add_argument(
+        "--no-prepare-products",
+        dest="prepare_products",
+        action="store_false",
+        help="use already configured product checkouts/services instead of acquiring/starting them",
+    )
+    run.set_defaults(prepare_products=True)
+    run.add_argument(
+        "--product-root",
+        type=Path,
+        default=Path(".upstream/baen-product-stack"),
+        help="persistent cache for pinned upstream product checkouts/builds",
+    )
+    run.add_argument(
+        "--openttd-baseset",
+        type=Path,
+        help="OpenTTD base-set directory; auto-detected on common Linux installs",
+    )
+    run.add_argument("--build-jobs", type=int, default=2)
 
     preview = sub.add_parser("preview", help="run one coherent non-canonical Empire business preview")
     preview.add_argument("--seed", required=True)
@@ -367,12 +387,25 @@ def main(argv: Sequence[str] | None = None) -> int:
                     print(f"- {item['name']}: {item['boundary']} — {item['status']}")
             return 0
         if args.command == "run":
-            payload = run_empire_month(
-                seed=args.seed,
-                census_path=args.census,
-                scenario_path=args.scenario,
-                require_products=args.require_products,
-            )
+            if args.prepare_products:
+                with product_environment(
+                    args.product_root,
+                    openttd_baseset=args.openttd_baseset,
+                    build_jobs=args.build_jobs,
+                ):
+                    payload = run_empire_month(
+                        seed=args.seed,
+                        census_path=args.census,
+                        scenario_path=args.scenario,
+                        require_products=True,
+                    )
+            else:
+                payload = run_empire_month(
+                    seed=args.seed,
+                    census_path=args.census,
+                    scenario_path=args.scenario,
+                    require_products=args.require_products,
+                )
             if args.format == "json":
                 _json(payload)
             else:
@@ -406,7 +439,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 print(render_report(payload))
             return 0
         raise EmpireOperatorError("unknown command")
-    except (EmpireOperatorError, EmpireRunError, OSError, ValueError, TypeError, KeyError) as exc:
+    except (EmpireOperatorError, EmpireRunError, ProductStackError, OSError, ValueError, TypeError, KeyError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
 
