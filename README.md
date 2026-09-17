@@ -23,6 +23,29 @@ The newest retained census evidence is `recovery/LIVE_EMPIRE_SOURCE_CENSUS_EXECU
 
 The old 372-row human recovery report is preserved as historical evidence and is superseded for current counts by [recovery/CURRENT_CENSUS_STATE_2026-09-17.md](recovery/CURRENT_CENSUS_STATE_2026-09-17.md).
 
+## Use this first
+
+After installing the branch, the user-facing entry point is **\`baen-empire\`**. You do not need to start Mesa, Brunnfeld, FreeCol, Veloren, OpenTTD, or Unknown Horizons by hand just to get a coherent Baen report.
+
+\`\`\`bash
+pip install -e ".[mesa]"
+baen-empire status
+baen-empire products
+baen-empire preview --seed "hammer-1495-a" --month "Hammer 1495 preview"
+\`\`\`
+
+The third command produces one Markdown Empire report. It includes the current census boundary/counts, resolves every eligible Business Registry row through the existing source-bound monthly business preview, totals proposed revenue/cost/net, shows the largest positive/negative business previews, and states the current status of all six upstream products.
+
+For one business instead of the whole Registry:
+
+\`\`\`bash
+baen-empire preview --entity "Baen Brickworks" --seed "brickworks-a" --month "Hammer 1495 preview"
+\`\`\`
+
+Use \`--format json\` for machine-readable output or \`--format summary\` for a short terminal result.
+
+**Current boundary:** this command is genuinely useful now, but it is still a non-canonical preview. It does not pretend that the six upstream runtimes have complete source-to-product semantic mappings. Those mappings remain a separate engineering gate; missing opening cash, labour, stocks, reserve policy, and other unresolved authority stay unresolved rather than being invented.
+
 ## What other apps call
 
 ```bash
