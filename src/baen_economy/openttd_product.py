@@ -320,6 +320,61 @@ class OpenTTDAdminClient:
                 return tuple(output)
         raise OpenTTDProductError("OpenTTD rcon command timed out")
 
+    def transport_income(
+        self,
+        *,
+        cargo_type: int,
+        pieces: int,
+        distance_tiles: int,
+        days_in_transit: int,
+    ) -> int:
+        """Execute OpenTTD's real GetTransportedGoodsIncome through rcon."""
+
+        values = {
+            "cargo_type": cargo_type,
+            "pieces": pieces,
+            "distance_tiles": distance_tiles,
+            "days_in_transit": days_in_transit,
+        }
+        for name, value in values.items():
+            if type(value) is not int or value < 0:
+                raise ValueError(f"{name} must be a non-negative integer")
+        command = (
+            f"baen_transport_income {cargo_type} {pieces} "
+            f"{distance_tiles} {days_in_transit}"
+        )
+        output = self.rcon(command)
+        prefix = "BAEN_TRANSPORT_INCOME "
+        line = next((item for item in output if item.startswith(prefix)), None)
+        if line is None:
+            raise OpenTTDProductError(
+                "patched OpenTTD product returned no BAEN_TRANSPORT_INCOME result"
+            )
+        fields: dict[str, str] = {}
+        for token in line[len(prefix):].split():
+            if "=" not in token:
+                continue
+            key, value = token.split("=", 1)
+            fields[key] = value
+        required = {"cargo", "pieces", "distance", "days", "income"}
+        if set(fields) != required:
+            raise OpenTTDProductError("OpenTTD transport-income result fields changed")
+        try:
+            parsed = {key: int(value) for key, value in fields.items()}
+        except ValueError as exc:
+            raise OpenTTDProductError(
+                "OpenTTD transport-income result contains invalid integers"
+            ) from exc
+        expected = {
+            "cargo": cargo_type,
+            "pieces": pieces,
+            "distance": distance_tiles,
+            "days": days_in_transit,
+        }
+        if any(parsed[key] != value for key, value in expected.items()):
+            raise OpenTTDProductError("OpenTTD transport-income result identity drifted")
+        return parsed["income"]
+
     def snapshot(self) -> OpenTTDProductSnapshot:
         protocol, welcome = self.handshake()
         current_date = self.poll_date()
