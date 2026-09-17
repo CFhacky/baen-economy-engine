@@ -7,12 +7,12 @@ from .brunnfeld_sidecar import (
     BrunnfeldSidecarError,
     BrunnfeldSnapshot,
 )
-from .domain import (
-    AccountingTreatment,
-    Authority,
-    EntityRecord,
-    SimulationMode,
-    TemporalState,
+from .domain import AccountingTreatment, Authority, EntityRecord, SimulationMode, TemporalState
+from .freecol_product import (
+    FREECOL_COMMIT,
+    FreeColProductError,
+    FreeColProductionResult,
+    run_freecol_production_info,
 )
 from .mesa_runtime import (
     MESA_COMMIT,
@@ -42,34 +42,15 @@ from .upstream_adaptations import (
 )
 
 __all__ = [
-    "AccountingTreatment",
-    "Authority",
-    "EntityRecord",
-    "SimulationMode",
-    "TemporalState",
-    "BRUNNFELD_COMMIT",
-    "BRUNNFELD_DEFAULT_URL",
-    "BrunnfeldServiceClient",
-    "BrunnfeldSidecarError",
-    "BrunnfeldSnapshot",
-    "MESA_COMMIT",
-    "MESA_VERSION",
-    "MesaProductEvent",
-    "MesaProductRun",
-    "MesaRuntimeUnavailable",
-    "mesa_available",
-    "run_mesa_preview",
-    "UNKNOWN_HORIZONS_COMMIT",
-    "UnknownHorizonsProductError",
-    "UnknownHorizonsProductionLine",
+    "AccountingTreatment", "Authority", "EntityRecord", "SimulationMode", "TemporalState",
+    "BRUNNFELD_COMMIT", "BRUNNFELD_DEFAULT_URL", "BrunnfeldServiceClient",
+    "BrunnfeldSidecarError", "BrunnfeldSnapshot",
+    "FREECOL_COMMIT", "FreeColProductError", "FreeColProductionResult", "run_freecol_production_info",
+    "MESA_COMMIT", "MESA_VERSION", "MesaProductEvent", "MesaProductRun",
+    "MesaRuntimeUnavailable", "mesa_available", "run_mesa_preview",
+    "UNKNOWN_HORIZONS_COMMIT", "UnknownHorizonsProductError", "UnknownHorizonsProductionLine",
     "run_unknown_horizons_production_line",
-    "DeliverySettlement",
-    "ExportAllocation",
-    "ProductionCapacity",
-    "ScheduledEconomicEvent",
-    "UpstreamAdaptationError",
-    "allocate_export_after_local_need",
-    "events_due",
-    "production_capacity",
-    "settle_delivery",
+    "DeliverySettlement", "ExportAllocation", "ProductionCapacity", "ScheduledEconomicEvent",
+    "UpstreamAdaptationError", "allocate_export_after_local_need", "events_due",
+    "production_capacity", "settle_delivery",
 ]
