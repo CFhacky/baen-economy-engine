@@ -23,6 +23,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Install exact Mesa upstream product on Python 3.12
+        if: matrix.python-version == '3.12'
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e '.[mesa]'
       - name: Compile Python source, tests, and tools
         run: python -m compileall -q src tests tools
       - name: Run public standalone regression suite
@@ -34,10 +39,16 @@ jobs:
           PYTHONPATH: src
         run: |
           python - <<'PY'
+          import sys
           import baen_economy
           import baen_economy.http_api
           import baen_economy.operator_cli
           import baen_economy.food_cli
           import baen_economy.whole_economy_cli
+          if sys.version_info >= (3, 12):
+              import mesa
+              assert mesa.__version__ == baen_economy.MESA_VERSION
+              assert baen_economy.mesa_available()
+              print("pinned Mesa product runtime OK", mesa.__version__)
           print("standalone import surface OK")
           PY
