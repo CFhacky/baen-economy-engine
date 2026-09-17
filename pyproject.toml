@@ -10,6 +10,11 @@ requires-python = ">=3.11"
 dependencies = []
 license-files = ["THIRD_PARTY_NOTICES.md"]
 
+[project.optional-dependencies]
+mesa = [
+  "Mesa @ git+https://github.com/mesa/mesa.git@20841b12559ef920dd4c8263a09fe75ceac7250c ; python_version >= '3.12'",
+]
+
 [project.scripts]
 baen-registry-audit = "baen_economy.audit_cli:main"
 baen-economy = "baen_economy.operator_cli:main"
