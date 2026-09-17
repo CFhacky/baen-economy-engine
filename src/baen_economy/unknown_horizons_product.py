@@ -1,16 +1,18 @@
 """Separate-process bridge to the actual Unknown Horizons production product.
 
 Unknown Horizons is GPL-2.0-or-later and ships as a full Python game rather than
-an embeddable service.  Baen therefore does not copy ``ProductionLine`` or import
-it into the MIT engine process.  Instead, this module executes the exact pinned
+an embeddable service. Baen therefore does not copy ``ProductionLine`` or import
+it into the MIT engine process. Instead, this module executes the exact pinned
 upstream checkout in a child Python process and exchanges JSON.
 
 Pinned upstream: unknown-horizons/unknown-horizons
 commit af9c8ef5c7f6cf9ec0b8c9e7d172c555f2793615.
 
-The bridge currently exposes the real ``horizons.world.production.productionline.ProductionLine``
-contract.  It is preview/validation infrastructure only and cannot advance the
-canonical campaign clock.
+The normal dotted import of ``horizons.world.production`` bootstraps the wider
+world package and FIFE. The production-line file itself only depends on
+``horizons.constants``. The child process therefore loads that exact upstream
+file directly with ``importlib`` while still using the upstream constants; no
+ProductionLine logic is copied or translated into Baen.
 """
 from __future__ import annotations
 
@@ -32,8 +34,6 @@ class UnknownHorizonsProductError(RuntimeError):
 
 @dataclass(frozen=True, slots=True)
 class UnknownHorizonsProductionLine:
-    """Output read from the actual upstream ``ProductionLine`` instance."""
-
     upstream: str
     upstream_commit: str
     line_id: int
@@ -46,12 +46,19 @@ class UnknownHorizonsProductionLine:
 
 
 _BRIDGE = r'''
+import importlib.util
 import json
+from pathlib import Path
 import sys
-from horizons.world.production.productionline import ProductionLine
 
 payload = json.load(sys.stdin)
-line = ProductionLine(payload["line_id"], payload["data"])
+source = Path(payload["checkout"]) / "horizons/world/production/productionline.py"
+spec = importlib.util.spec_from_file_location("baen_pinned_unknown_horizons_productionline", source)
+if spec is None or spec.loader is None:
+    raise RuntimeError("cannot load pinned Unknown Horizons ProductionLine module")
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+line = module.ProductionLine(payload["line_id"], payload["data"])
 json.dump({
     "line_id": line.id,
     "time": line.time,
@@ -88,13 +95,7 @@ def run_unknown_horizons_production_line(
     python: str | None = None,
     timeout: float = 20.0,
 ) -> UnknownHorizonsProductionLine:
-    """Instantiate the real pinned Unknown Horizons ``ProductionLine``.
-
-    ``checkout`` must be a detached checkout at the pinned commit.  The function
-    validates its Git HEAD before executing upstream code.  Resource values are
-    deliberately generic; Baen source-to-resource mapping remains a separate,
-    explicit authority decision.
-    """
+    """Instantiate the real pinned Unknown Horizons ``ProductionLine``."""
 
     root = Path(checkout).resolve()
     if type(line_id) is not int or line_id < 0:
@@ -103,7 +104,8 @@ def run_unknown_horizons_production_line(
         raise ValueError("production time must be positive")
     if type(timeout) not in {int, float} or timeout <= 0:
         raise ValueError("timeout must be positive")
-    if not (root / "horizons/world/production/productionline.py").is_file():
+    source = root / "horizons/world/production/productionline.py"
+    if not source.is_file():
         raise UnknownHorizonsProductError("checkout does not contain Unknown Horizons ProductionLine")
     try:
         head = subprocess.check_output(
@@ -117,6 +119,7 @@ def run_unknown_horizons_production_line(
         )
 
     payload = {
+        "checkout": str(root),
         "line_id": line_id,
         "data": {
             "time": time,
@@ -129,7 +132,6 @@ def run_unknown_horizons_production_line(
         env = dict(os.environ)
         existing = env.get("PYTHONPATH")
         env["PYTHONPATH"] = str(root) if not existing else str(root) + os.pathsep + existing
-        # Keep any UH user-directory initialization out of the caller's profile.
         env["UH_USER_DIR"] = temp
         try:
             completed = subprocess.run(
