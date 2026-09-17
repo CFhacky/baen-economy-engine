@@ -52,3 +52,39 @@ jobs:
               print("pinned Mesa product runtime OK", mesa.__version__)
           print("standalone import surface OK")
           PY
+
+  brunnfeld-product:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Clone and build exact pinned Brunnfeld product
+        run: python tools/run_brunnfeld_sidecar.py --checkout "$RUNNER_TEMP/brunnfeld" --build-only
+      - name: Boot actual Brunnfeld HTTP product and verify published API
+        env:
+          PORT: "3333"
+        run: |
+          cd "$RUNNER_TEMP/brunnfeld"
+          npm run server > "$RUNNER_TEMP/brunnfeld-server.log" 2>&1 &
+          server_pid=$!
+          cleanup() { kill "$server_pid" 2>/dev/null || true; }
+          trap cleanup EXIT
+          for attempt in $(seq 1 20); do
+            if curl --fail --silent http://127.0.0.1:3333/api/villages > "$RUNNER_TEMP/villages.json"; then
+              break
+            fi
+            sleep 1
+          done
+          test -s "$RUNNER_TEMP/villages.json" || { cat "$RUNNER_TEMP/brunnfeld-server.log"; exit 1; }
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          data = json.loads((Path(os.environ['RUNNER_TEMP']) / 'villages.json').read_text())
+          assert isinstance(data, list)
+          print('actual Brunnfeld sidecar API OK; villages:', len(data))
+          PY
