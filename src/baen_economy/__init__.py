@@ -7,6 +7,17 @@ from .domain import (
     SimulationMode,
     TemporalState,
 )
+from .upstream_adaptations import (
+    DeliverySettlement,
+    ExportAllocation,
+    ProductionCapacity,
+    ScheduledEconomicEvent,
+    UpstreamAdaptationError,
+    allocate_export_after_local_need,
+    events_due,
+    production_capacity,
+    settle_delivery,
+)
 
 __all__ = [
     "AccountingTreatment",
@@ -14,4 +25,13 @@ __all__ = [
     "EntityRecord",
     "SimulationMode",
     "TemporalState",
+    "DeliverySettlement",
+    "ExportAllocation",
+    "ProductionCapacity",
+    "ScheduledEconomicEvent",
+    "UpstreamAdaptationError",
+    "allocate_export_after_local_need",
+    "events_due",
+    "production_capacity",
+    "settle_delivery",
 ]
