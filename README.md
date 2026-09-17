@@ -59,19 +59,27 @@ For each eligible commercial Registry row it:
 
 It will **not** invent opening cash, labour, cities, stock, or missing source facts; consolidate parent and child bank rows without an explicit treatment; treat capital invested as liquidity; advance campaign time; write Notion; or accept a canonical month while the source-to-simulator gate is closed.
 
-## Public-GitHub adaptations now implemented
+## Public upstream products
 
-The engine is not merely citing upstream projects. `src/baen_economy/upstream_adaptations.py` contains independently written, tested behavior adaptations from the exact public implementations inspected during recovery:
+The integration rule is now explicit: **use the actual upstream product when it exposes a viable library, service, process, plugin, or fork boundary.** A small independently written helper is not treated as equivalent to integrating the product.
 
-- **Brunnfeld Agentic World** — existing available-to-promise behavior excludes reserved stock; Baen rejects over-reservation instead of silently clamping it.
-- **Veloren** — `allocate_export_after_local_need` protects internal demand before allocating stock to external trade, then applies route capacity.
-- **Unknown Horizons + FreeCol** — `production_capacity` reports configured/labor **maximum capacity** separately from input-bottleneck **feasible capacity**, with limiting inputs retained.
-- **OpenTTD** — `settle_delivery` records dispatched, accepted and rejected cargo separately; only accepted cargo earns base delivery value and subsidy remains a separate adjustment.
-- **Mesa** — `ScheduledEconomicEvent` / `events_due` use explicit scenario time and deterministic ordering without granting permission to advance canonical campaign time.
+Implemented product boundaries:
 
-These functions are part of the package's public Python API. `tests/test_upstream_adaptations.py` executes the behaviors directly. Exact commits, files, licenses, adaptation boundaries and deliberately rejected upstream assumptions are in [docs/THIRD_PARTY_SOURCES.md](docs/THIRD_PARTY_SOURCES.md).
+- **Mesa** `20841b12559ef920dd4c8263a09fe75ceac7250c` — **direct Python library** on Python 3.12. `src/baen_economy/mesa_runtime.py` runs Baen preview events through Mesa's actual `Model`, event queue/priority system, RNG initialization, `run_until`, and `DataCollector`. The exact Git commit is an optional package dependency and is installed/executed in CI.
+- **Brunnfeld Agentic World** `e0656ca01630333e26c622ffd4ba4c973b79eebe` — **actual Node service sidecar**. `tools/run_brunnfeld_sidecar.py` clones/builds the exact revision and CI boots its real `npm run server`; `src/baen_economy/brunnfeld_sidecar.py` consumes Brunnfeld's published `/api/state`, `/api/economy`, `/api/marketplace`, `/api/trades`, `/api/prices`, and `/api/villages` endpoints.
+- **Unknown Horizons** `af9c8ef5c7f6cf9ec0b8c9e7d172c555f2793615` — **separate pinned product process**. `src/baen_economy/unknown_horizons_product.py` verifies the checkout and executes the exact upstream `ProductionLine` implementation in a child Python process. CI acquires the exact game revision and executes that real class. GPL production code is not copied into this MIT package.
 
-No GPL source or game data is copied into the engine. Upstream projects do not dictate Baen populations, prices, wages, taxes, reserve ratios, yields, loss rates, recipes, or campaign probabilities.
+Not yet product-integrated:
+
+- **Veloren** — the real economy is in the GPL Rust `veloren-world` library and exposes `simulate_economy(&mut Index)`, but its state model is tied to Veloren sites/assets and core `Economy` fields are private. The required route is a pinned Rust sidecar/fork adapter, not a Python rewrite.
+- **FreeCol** — the inspected economy classes live inside the GPL Java/Ant game model. Direct reuse requires a JVM product harness/sidecar that actually runs the pinned FreeCol model.
+- **OpenTTD** — the inspected delivery/economy functions are internal to the GPL native game. Direct reuse requires a headless/native sidecar, plugin, or thin fork adapter that actually executes the pinned product.
+
+The authoritative status and boundary for all six products is [docs/UPSTREAM_PRODUCT_INTEGRATION.md](docs/UPSTREAM_PRODUCT_INTEGRATION.md). Exact source locations and license notes remain in [docs/THIRD_PARTY_SOURCES.md](docs/THIRD_PARTY_SOURCES.md).
+
+`src/baen_economy/upstream_adaptations.py` remains a compatibility/cross-check layer. Its Veloren-, FreeCol-, OpenTTD-, Mesa-, Brunnfeld-, or Unknown-Horizons-inspired helpers are **not** themselves evidence that the associated product is integrated. Where a real product boundary exists, new product-level work uses that boundary first.
+
+No upstream project dictates Baen populations, prices, wages, taxes, reserve ratios, yields, loss rates, recipes, or campaign probabilities.
 
 ## CLI
 
@@ -83,7 +91,7 @@ PYTHONPATH=src python -m baen_economy.whole_economy_cli --help
 
 `baen-region` still requires `--allow-synthetic-demo` and is **not** the campaign economy.
 
-Python **3.11+**. No third-party runtime dependencies.
+Python **3.11+** for the base engine. Mesa direct-product integration is optional and requires Python **3.12+** because the pinned Mesa revision itself requires it.
 
 ## Validation
 
@@ -93,7 +101,7 @@ The public standalone suite is:
 PYTHONPATH=src python tools/run_standalone_tests.py
 ```
 
-GitHub Actions executes that suite on Python 3.11 and 3.12 and separately verifies the package import surface. The runner prints every excluded inherited check; exclusions are limited to evidence that is intentionally not part of this public checkout, principally the private detailed Registry page-body snapshot, plus one monorepo-publisher assertion that is inapplicable to this standalone repository.
+GitHub Actions executes that suite on Python 3.11 and 3.12 and separately verifies the package import surface. Product jobs additionally install/run the exact pinned Mesa revision, build/boot the exact Brunnfeld service, and execute the exact Unknown Horizons production model. The runner prints every excluded inherited check; exclusions are limited to evidence that is intentionally not part of this public checkout, principally the private detailed Registry page-body snapshot, plus one monorepo-publisher assertion that is inapplicable to this standalone repository.
 
 `VALIDATION.md` preserves the detailed August 29 private-vault validation history. [VALIDATION_STANDALONE.md](VALIDATION_STANDALONE.md) records the standalone extraction/reconciliation validation evidence.
 
