@@ -17,6 +17,7 @@ from typing import Any, Sequence
 from .http_api import run_named_previews, run_registry_preview
 from .mesa_runtime import mesa_available
 from .empire_orchestrator import (
+    DEFAULT_CENSUS as DEFAULT_EXECUTION_CENSUS,
     DEFAULT_SCENARIO,
     EmpireRunError,
     render_empire_month,
@@ -329,7 +330,7 @@ def build_parser() -> argparse.ArgumentParser:
     run = sub.add_parser("run", help="run one complete source-rebased whole-Empire month")
     run.add_argument("--seed", required=True)
     run.add_argument("--scenario", type=Path, default=DEFAULT_SCENARIO)
-    run.add_argument("--census", type=Path, default=DEFAULT_CENSUS)
+    run.add_argument("--census", type=Path, default=DEFAULT_EXECUTION_CENSUS)
     run.add_argument(
         "--require-products",
         action="store_true",
