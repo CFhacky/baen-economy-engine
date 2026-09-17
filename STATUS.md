@@ -59,13 +59,23 @@ Verified historical capabilities include:
 
 These capabilities do **not** by themselves establish current campaign values or open the canonical-month gate.
 
-## Validation state
+## Standalone validation state
 
-`VALIDATION.md` records the detailed **29 August 2026 private-vault validation history**, including the 436-test regression suite and focused acceptance paths. It is retained as historical evidence.
+`VALIDATION.md` remains the detailed **29 August 2026 private-vault validation history** and is not rewritten as if it were freshly executed in this repo.
 
-This standalone repository previously had no `.github/workflows` directory, so it had no automatic repository-level CI despite containing the extracted test suite. The current reconciliation branch adds a standalone CI workflow. Its GitHub Actions result, once executed, is the current executable validation evidence for this repository.
+The first literal full-suite run after extraction executed **511 tests**: **502 passed and 9 errored**. Every error was an extraction boundary, not a failing economy assertion: three Windows launchers had been omitted, four finance checks pointed at the private sibling PR #48 ledger, one food-baseline class required the intentionally unpublished Registry page-body snapshot, and one recovery test asserted the old monorepo workflow path.
 
-Until that workflow passes, do not convert the historical 436-test statement into a claim that this exact standalone tree has been freshly revalidated.
+The reconciliation branch has now:
+
+- restored the three exact Windows launchers from the private-vault extraction source;
+- bundled the pinned PR #48 chart as `fixtures/finance/pr48-accounts.bean` rather than inventing a replacement;
+- added `.github/workflows/ci.yml` for Python 3.11 and 3.12;
+- added `tools/run_standalone_tests.py`, which explicitly lists evidence-only exclusions instead of silently marking them passed;
+- retained fail-closed handling for the unpublished private page-body fixture.
+
+A green standalone CI run at branch head `de46ea76d4f8de219708da88400141dc91538cec` executed **506 standalone tests** on Python 3.11 and again on Python 3.12, with import-surface verification passing on both. A subsequent runner revision re-enables the four finance-chart tests against the bundled exact chart; the current branch must receive a fresh green CI result before that larger count is reported as verified.
+
+See `VALIDATION_STANDALONE.md` for the current executable evidence once the reconciliation head is finalized.
 
 ## Immediate development queue
 
