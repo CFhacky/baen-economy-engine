@@ -19,6 +19,13 @@ PROJECT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT / "src"))
 from baen_economy.openttd_product import OpenTTDAdminClient, OPENTTD_COMMIT
 
+# Pinned OpenTTD 16.0-beta3-era checkout uses ini version 8. This matters:
+# without a [version] block OpenTTD treats the config as pre-split (ini v0)
+# and loads secret settings such as admin_password from openttd.cfg instead of
+# secrets.cfg. The admin listener is only created when admin authentication is
+# configured, so omitting the version silently leaves the admin port closed.
+OPENTTD_INI_VERSION = 8
+
 
 def wait_port(host: str, port: int, process: subprocess.Popen, timeout: float) -> None:
     deadline = time.monotonic() + timeout
@@ -31,6 +38,10 @@ def wait_port(host: str, port: int, process: subprocess.Popen, timeout: float) -
         except OSError:
             time.sleep(0.1)
     raise RuntimeError("OpenTTD admin port did not open")
+
+
+def version_block() -> str:
+    return "[version]\n" f"ini_version = {OPENTTD_INI_VERSION}\n\n"
 
 
 def main() -> int:
@@ -66,7 +77,8 @@ def main() -> int:
         except OSError:
             shutil.copytree(baseset, local_baseset)
         config.write_text(
-            "[network]\n"
+            version_block()
+            + "[network]\n"
             f"server_port = {args.server_port}\n"
             f"server_admin_port = {args.admin_port}\n"
             "allow_insecure_admin_login = true\n"
@@ -75,7 +87,7 @@ def main() -> int:
             encoding="utf-8",
         )
         secrets.write_text(
-            "[network]\n" f"admin_password = {args.password}\n",
+            version_block() + "[network]\n" f"admin_password = {args.password}\n",
             encoding="utf-8",
         )
         command = [
@@ -96,6 +108,7 @@ def main() -> int:
             text=True,
             start_new_session=True,
         )
+        probe_error: BaseException | None = None
         try:
             wait_port("127.0.0.1", args.admin_port, process, args.timeout)
             with OpenTTDAdminClient(
@@ -126,6 +139,9 @@ def main() -> int:
                 raise RuntimeError("OpenTTD result commit mismatch")
             if snapshot.canonical_time_advanced:
                 raise RuntimeError("OpenTTD preview incorrectly claims canonical time advancement")
+        except BaseException as exc:
+            probe_error = exc
+            raise
         finally:
             if process.poll() is None:
                 os.killpg(process.pid, signal.SIGTERM)
@@ -135,7 +151,7 @@ def main() -> int:
                     os.killpg(process.pid, signal.SIGKILL)
                     process.wait(timeout=5)
             output = process.stdout.read() if process.stdout is not None else ""
-            if process.returncode not in (0, -signal.SIGTERM):
+            if probe_error is not None or process.returncode not in (0, -signal.SIGTERM):
                 print(output, file=sys.stderr)
     return 0
 
