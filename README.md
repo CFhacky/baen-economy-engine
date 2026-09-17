@@ -59,6 +59,20 @@ For each eligible commercial Registry row it:
 
 It will **not** invent opening cash, labour, cities, stock, or missing source facts; consolidate parent and child bank rows without an explicit treatment; treat capital invested as liquidity; advance campaign time; write Notion; or accept a canonical month while the source-to-simulator gate is closed.
 
+## Public-GitHub adaptations now implemented
+
+The engine is not merely citing upstream projects. `src/baen_economy/upstream_adaptations.py` contains independently written, tested behavior adaptations from the exact public implementations inspected during recovery:
+
+- **Brunnfeld Agentic World** — existing available-to-promise behavior excludes reserved stock; Baen rejects over-reservation instead of silently clamping it.
+- **Veloren** — `allocate_export_after_local_need` protects internal demand before allocating stock to external trade, then applies route capacity.
+- **Unknown Horizons + FreeCol** — `production_capacity` reports configured/labor **maximum capacity** separately from input-bottleneck **feasible capacity**, with limiting inputs retained.
+- **OpenTTD** — `settle_delivery` records dispatched, accepted and rejected cargo separately; only accepted cargo earns base delivery value and subsidy remains a separate adjustment.
+- **Mesa** — `ScheduledEconomicEvent` / `events_due` use explicit scenario time and deterministic ordering without granting permission to advance canonical campaign time.
+
+These functions are part of the package's public Python API. `tests/test_upstream_adaptations.py` executes the behaviors directly. Exact commits, files, licenses, adaptation boundaries and deliberately rejected upstream assumptions are in [docs/THIRD_PARTY_SOURCES.md](docs/THIRD_PARTY_SOURCES.md).
+
+No GPL source or game data is copied into the engine. Upstream projects do not dictate Baen populations, prices, wages, taxes, reserve ratios, yields, loss rates, recipes, or campaign probabilities.
+
 ## CLI
 
 ```bash
