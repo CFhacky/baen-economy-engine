@@ -23,6 +23,12 @@ from .mesa_runtime import (
     mesa_available,
     run_mesa_preview,
 )
+from .unknown_horizons_product import (
+    UNKNOWN_HORIZONS_COMMIT,
+    UnknownHorizonsProductError,
+    UnknownHorizonsProductionLine,
+    run_unknown_horizons_production_line,
+)
 from .upstream_adaptations import (
     DeliverySettlement,
     ExportAllocation,
@@ -53,6 +59,10 @@ __all__ = [
     "MesaRuntimeUnavailable",
     "mesa_available",
     "run_mesa_preview",
+    "UNKNOWN_HORIZONS_COMMIT",
+    "UnknownHorizonsProductError",
+    "UnknownHorizonsProductionLine",
+    "run_unknown_horizons_production_line",
     "DeliverySettlement",
     "ExportAllocation",
     "ProductionCapacity",
