@@ -7,6 +7,15 @@ from .domain import (
     SimulationMode,
     TemporalState,
 )
+from .mesa_runtime import (
+    MESA_COMMIT,
+    MESA_VERSION,
+    MesaProductEvent,
+    MesaProductRun,
+    MesaRuntimeUnavailable,
+    mesa_available,
+    run_mesa_preview,
+)
 from .upstream_adaptations import (
     DeliverySettlement,
     ExportAllocation,
@@ -25,6 +34,13 @@ __all__ = [
     "EntityRecord",
     "SimulationMode",
     "TemporalState",
+    "MESA_COMMIT",
+    "MESA_VERSION",
+    "MesaProductEvent",
+    "MesaProductRun",
+    "MesaRuntimeUnavailable",
+    "mesa_available",
+    "run_mesa_preview",
     "DeliverySettlement",
     "ExportAllocation",
     "ProductionCapacity",
