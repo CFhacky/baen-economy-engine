@@ -11,6 +11,7 @@ from __future__ import annotations
 from copy import deepcopy
 from dataclasses import asdict
 from decimal import Decimal, ROUND_FLOOR
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -321,15 +322,65 @@ def _veloren_check(scenario: Mapping[str, object], checkout: str) -> dict[str, A
     }
 
 
-def _brunnfeld_check(url: str) -> dict[str, Any]:
-    snapshot = BrunnfeldServiceClient(url).snapshot()
+def _brunnfeld_check(
+    scenario: Mapping[str, object],
+    url: str,
+    seed: str,
+) -> dict[str, Any]:
+    """Generate a deterministic representative Brunnfeld micro-economy.
+
+    Brunnfeld's generator supports a uniform number of agents per village, not
+    arbitrary population weights. We therefore use one product village per Baen
+    settlement and one representative agent per 1,000 residents, capped by the
+    upstream 7..200 limit. This is a micro-sample, never an Empire population
+    total.
+    """
+
+    settlements = [
+        row for row in scenario.get("settlements", [])
+        if isinstance(row, Mapping)
+    ]
+    village_count = len(settlements)
+    if not 1 <= village_count <= 5:
+        raise EmpireRunError("Brunnfeld mapping requires 1..5 Baen settlements")
+    total_population = sum(
+        int(Decimal(str(row.get("population_total", 0)))) for row in settlements
+    )
+    agents_per_village = max(
+        7,
+        min(
+            200,
+            (total_population + (village_count * 1000) - 1)
+            // (village_count * 1000),
+        ),
+    )
+    product_seed = int(hashlib.sha256(seed.encode("utf-8")).hexdigest()[:8], 16)
+    client = BrunnfeldServiceClient(url)
+    generated = client.generate_world(
+        villages=village_count,
+        agents_per_village=agents_per_village,
+        seed=product_seed,
+    )
+    snapshot = client.snapshot()
     return {
-        "status": "CONNECTED_PRODUCT_ONLY",
+        "status": "USED_IN_RUN" if evaluated else "MISSING_MAPPING",
+        "blocker": None if evaluated else "no Baen route with source-backed distance and mapped cargo was evaluated",
         "upstream_commit": snapshot.upstream_commit,
-        "villages": len(snapshot.villages) if isinstance(snapshot.villages, list) else None,
+        "mapping": {
+            "baen_settlements": [str(row.get("name")) for row in settlements],
+            "brunnfeld_villages": village_count,
+            "agents_per_village": agents_per_village,
+            "total_sample_agents": village_count * agents_per_village,
+            "source_population_total": total_population,
+            "seed": product_seed,
+            "provenance": "MODEL-PROPOSED representative micro-sample: 1 Brunnfeld agent per 1,000 residents, uniform village sample, bounded by upstream limits",
+        },
+        "generation_result": generated,
+        "product_villages": len(snapshot.villages) if isinstance(snapshot.villages, list) else None,
         "economy_snapshots": len(snapshot.economy) if isinstance(snapshot.economy, list) else None,
-        "provenance": "UPSTREAM-ADOPTED runtime boundary; Baen-state import into Brunnfeld is not yet defined",
-        "blocker": "Brunnfeld's published generator accepts village/agent counts but not the Baen census state model; do not treat its native world as Empire totals.",
+        "marketplace": snapshot.marketplace,
+        "prices": snapshot.prices,
+        "provenance": "UPSTREAM-ADOPTED actual Brunnfeld world generator and market state; sampled agents are not canonical population counts",
     }
 
 
@@ -498,7 +549,7 @@ def run_empire_month(
 
     br = os.environ.get("BRUNNFELD_URL")
     if br:
-        products["brunnfeld"] = _brunnfeld_check(br)
+        products["brunnfeld"] = _brunnfeld_check(rebased, br, seed)
     else:
         products["brunnfeld"] = {"status": "UNAVAILABLE", "blocker": "BRUNNFELD_URL is not configured"}
         if require_products:
@@ -515,13 +566,18 @@ def run_empire_month(
             raise EmpireRunError(products["openttd"]["blocker"])
 
     for name, item in products.items():
-        if item.get("status") == "CONNECTED_PRODUCT_ONLY":
+        if item.get("status") != "USED_IN_RUN":
             blockers.append({
                 "kind": "MISSING_MECHANICS",
                 "product": name,
                 "provenance": "UNRESOLVED",
-                "reason": item.get("blocker"),
+                "reason": item.get("blocker") or f"{name} did not consume a mapped Baen preview input",
             })
+            if require_products:
+                raise EmpireRunError(
+                    f"{name} did not satisfy the all-products acceptance boundary: "
+                    f"{item.get('status')}"
+                )
 
     return {
         "schema": "tnp.economy.empire-end-to-end-preview/1",
