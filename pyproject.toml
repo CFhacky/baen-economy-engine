@@ -25,6 +25,7 @@ baen-agriculture = "baen_economy.agriculture_cli:main"
 baen-food-ops = "baen_economy.food_ops_server:main"
 baen-whole-economy = "baen_economy.whole_economy_cli:main"
 baen-tick = "baen_economy.http_api:main"
+baen-empire = "baen_economy.empire_cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
