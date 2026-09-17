@@ -333,16 +333,111 @@ def _brunnfeld_check(url: str) -> dict[str, Any]:
     }
 
 
-def _openttd_check(host: str, port: int, password: str) -> dict[str, Any]:
+def _openttd_check(
+    scenario: Mapping[str, object],
+    core_result: Mapping[str, Any],
+    host: str,
+    port: int,
+    password: str,
+) -> dict[str, Any]:
+    """Evaluate actual Baen route usage with OpenTTD's real cargo-income function.
+
+    OpenTTD wants cargo IDs, tile distance, and economy-days. The mappings below
+    are deliberately explicit MODEL-PROPOSED conversions: they are preview
+    semantics, not campaign facts.
+    """
+
+    cargo_map = {
+        "grain": 6,      # OpenTTD temperate grain
+        "fish": 5,       # goods proxy; no native fish cargo in base temperate set
+        "clay": 8,       # ore/bulk proxy
+        "bricks": 5,     # goods
+        "timber": 7,     # wood
+        "wool": 5,       # goods proxy
+        "dye": 5,        # goods proxy
+        "cloth": 5,      # goods
+        "bauxite": 8,    # ore proxy
+        "aluminum": 9,   # steel/processed-metal proxy
+        "ceramics": 5,   # goods
+    }
+    source_distance_miles = {
+        frozenset(("neverwinter", "waterdeep")): 300,
+        frozenset(("neverwinter", "forgedeep")): 80,
+    }
+    usage = {
+        str(row.get("route_id")): Decimal(str(row.get("dispatched_quantity", 0)))
+        for row in core_result.get("route_usage", [])
+        if isinstance(row, Mapping)
+    }
+    routes = {
+        str(row.get("id")): row
+        for row in scenario.get("routes", [])
+        if isinstance(row, Mapping)
+    }
+    evaluated: list[dict[str, Any]] = []
+    unmapped: list[dict[str, Any]] = []
+
     with OpenTTDAdminClient(host, port, password=password, timeout=10.0) as client:
         snapshot = client.snapshot()
+        for route_id, dispatched in sorted(usage.items()):
+            if dispatched <= 0:
+                continue
+            route = routes.get(route_id)
+            if route is None:
+                unmapped.append({"route_id": route_id, "reason": "route definition missing"})
+                continue
+            distance = source_distance_miles.get(
+                frozenset((str(route.get("origin")), str(route.get("destination"))))
+            )
+            if distance is None:
+                unmapped.append({
+                    "route_id": route_id,
+                    "reason": "no source-backed route distance is available",
+                })
+                continue
+            commodities = [
+                str(value) for value in route.get("commodities", [])
+                if str(value) in cargo_map
+            ]
+            if not commodities:
+                unmapped.append({
+                    "route_id": route_id,
+                    "reason": "route carries no commodity with an explicit OpenTTD cargo mapping",
+                })
+                continue
+            pieces = max(1, int(dispatched.to_integral_value(rounding=ROUND_FLOOR)))
+            days = max(1, int(Decimal(str(route.get("travel_months", 1))) * Decimal("30")))
+            per_cargo = []
+            for commodity in commodities:
+                income = client.transport_income(
+                    cargo_type=cargo_map[commodity],
+                    pieces=pieces,
+                    distance_tiles=distance,
+                    days_in_transit=days,
+                )
+                per_cargo.append({
+                    "commodity": commodity,
+                    "openttd_cargo_type": cargo_map[commodity],
+                    "pieces": pieces,
+                    "distance_tiles": distance,
+                    "days_in_transit": days,
+                    "income_game_currency": income,
+                    "mapping_provenance": "MODEL-PROPOSED: 1 source mile = 1 OpenTTD tile; 30 days per scenario month; commodity proxy table above",
+                })
+            evaluated.append({
+                "route_id": route_id,
+                "dispatched_quantity_baen_units": str(dispatched),
+                "evaluations": per_cargo,
+            })
     return {
-        "status": "CONNECTED_PRODUCT_ONLY",
+        "status": "USED_IN_RUN",
         "upstream_commit": snapshot.upstream_commit,
         "date": snapshot.current_date,
         "company_economy_records": [asdict(row) for row in snapshot.companies],
-        "provenance": "UPSTREAM-ADOPTED runtime boundary; Baen route-state injection is not exposed by the admin protocol",
-        "blocker": "OpenTTD admin API reports economy state but does not create Baen routes/vehicles; Baen core route model remains active until a source-mapped product adapter exists.",
+        "routes_evaluated": len(evaluated),
+        "details": evaluated,
+        "unmapped_routes": unmapped,
+        "provenance": "UPSTREAM-ADOPTED OpenTTD transport-income execution; route/cargo unit conversions remain explicit MODEL-PROPOSED preview mappings",
     }
 
 
@@ -413,7 +508,7 @@ def run_empire_month(
     op = os.environ.get("OPENTTD_ADMIN_PORT")
     pw = os.environ.get("OPENTTD_ADMIN_PASSWORD")
     if oh and op and pw:
-        products["openttd"] = _openttd_check(oh, int(op), pw)
+        products["openttd"] = _openttd_check(rebased, result, oh, int(op), pw)
     else:
         products["openttd"] = {"status": "UNAVAILABLE", "blocker": "OpenTTD admin connection is not configured"}
         if require_products:
