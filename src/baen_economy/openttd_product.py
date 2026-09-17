@@ -22,6 +22,7 @@ from typing import Iterable
 
 OPENTTD_COMMIT = "1aca0b60a8024f295e1d0ad2a3407b3dac838099"
 OPENTTD_ADMIN_VERSION = 2  # validated against ServerProtocol at runtime, not assumed for parsing
+OPENTTD_PATCH_VERSION = 1
 
 # PacketAdminType at the pinned revision.
 _ADMIN_JOIN = 0
