@@ -6,10 +6,7 @@ from threading import Thread
 import time
 import unittest
 
-from baen_economy.openttd_product import (
-    OPENTTD_COMMIT,
-    OpenTTDAdminClient,
-)
+from baen_economy.openttd_product import OPENTTD_COMMIT, OpenTTDAdminClient
 
 
 def packet(kind: int, payload: bytes = b"") -> bytes:
@@ -50,7 +47,7 @@ class _FakeAdmin:
             with conn:
                 kind, payload = recv_packet(conn)
                 assert kind == 0
-                assert b"secret\0baen-economy-engine\00.3.0\0" == payload
+                assert payload == b"secret\x00baen-economy-engine\x000.3.0\x00"
                 conn.sendall(packet(103, b"\x02\x00"))
                 welcome = (
                     cstring("Fake OpenTTD") + cstring("1aca-test") + b"\x01" + cstring("")
@@ -70,7 +67,6 @@ class _FakeAdmin:
                     + struct.pack("<QHH", 55000, 480, 61)
                 )
                 conn.sendall(packet(117, company))
-                # Let the client's documented quiet-window collection terminate.
                 time.sleep(0.08)
 
                 kind, payload = recv_packet(conn)
@@ -78,7 +74,7 @@ class _FakeAdmin:
                 conn.sendall(packet(120, struct.pack("<H", 1) + cstring("Server is running")))
                 conn.sendall(packet(125, cstring("status")))
                 try:
-                    recv_packet(conn)  # optional AdminQuit
+                    recv_packet(conn)
                 except Exception:
                     pass
         except BaseException as exc:
