@@ -73,13 +73,17 @@ Python **3.11+**. No third-party runtime dependencies.
 
 ## Validation
 
+The public standalone suite is:
+
 ```bash
-PYTHONPATH=src python -m unittest discover -s tests -v
+PYTHONPATH=src python tools/run_standalone_tests.py
 ```
 
-`VALIDATION.md` preserves the detailed August 29 validation history inherited from the private vault. The standalone repository now has GitHub Actions CI; current branch/PR results should be treated as the executable validation authority for this repository.
+GitHub Actions executes that suite on Python 3.11 and 3.12 and separately verifies the package import surface. The runner prints every excluded inherited check; exclusions are limited to evidence that is intentionally not part of this public checkout, principally the private detailed Registry page-body snapshot, plus one monorepo-publisher assertion that is inapplicable to this standalone repository.
 
-The 29 August 2026 90-row Registry export is included. The private detailed page-body fixture is not published here; tests requiring private GM-prose bodies must fail closed or skip rather than synthesize replacements.
+`VALIDATION.md` preserves the detailed August 29 private-vault validation history. [VALIDATION_STANDALONE.md](VALIDATION_STANDALONE.md) records the standalone extraction/reconciliation validation evidence.
+
+The 29 August 2026 90-row Registry export is included. The private detailed page-body fixture is not published here; the standalone suite does not synthesize a replacement or silently call those checks passed.
 
 ## Authority boundary
 
