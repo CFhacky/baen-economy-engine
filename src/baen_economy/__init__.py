@@ -36,6 +36,13 @@ from .unknown_horizons_product import (
     UnknownHorizonsProductionLine,
     run_unknown_horizons_production_line,
 )
+from .veloren_product import (
+    VELOREN_COMMIT,
+    VELOREN_PATCH_VERSION,
+    VelorenEconomyResult,
+    VelorenProductError,
+    run_veloren_economy,
+)
 from .upstream_adaptations import (
     DeliverySettlement,
     ExportAllocation,
@@ -59,6 +66,8 @@ __all__ = [
     "OpenTTDProductError", "OpenTTDProductSnapshot",
     "UNKNOWN_HORIZONS_COMMIT", "UnknownHorizonsProductError", "UnknownHorizonsProductionLine",
     "run_unknown_horizons_production_line",
+    "VELOREN_COMMIT", "VELOREN_PATCH_VERSION", "VelorenEconomyResult",
+    "VelorenProductError", "run_veloren_economy",
     "DeliverySettlement", "ExportAllocation", "ProductionCapacity", "ScheduledEconomicEvent",
     "UpstreamAdaptationError", "allocate_export_after_local_need", "events_due",
     "production_capacity", "settle_delivery",
