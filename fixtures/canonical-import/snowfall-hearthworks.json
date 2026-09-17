@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "fixture_class": "CAN-IMPORT",
+  "authority": "canon_import",
+  "captured_on": "2026-08-29",
+  "scenario_id": "snowfall-hearthworks",
+  "business_type": "heating_systems_manufacturer",
+  "source_refs": [
+    "https://app.notion.com/p/3c2e821484b081f888a6e1169f9a4df4",
+    "https://app.notion.com/p/2fbe821484b0816ab0b8e7e7ed41fe29"
+  ],
+  "current_anchor": {
+    "timeline_id": "source:snowfall-hearthworks-hammer-1495",
+    "campaign_date": "7 Hammer 1495 DR",
+    "economy_timeline_mapping": "unresolved_CAN-001",
+    "status": "Planning",
+    "monthly_revenue_gp": "0",
+    "monthly_cost_gp": "0",
+    "ncf_equity_percent": "25",
+    "veldrin_equity_percent": "75",
+    "facility_limit_gp": "30000",
+    "facility_drawn_gp": "0",
+    "annual_interest_rate": "0.08",
+    "completion_guarantee_held_gp": "5000",
+    "registry_capital_invested_gp": "30000",
+    "ncf_effects_at_anchor": {
+      "revenue_change_gp": "0",
+      "active_loan_total_change_gp": "0"
+    }
+  },
+  "forward_resolved": {
+    "temporal_state": "forward_resolved",
+    "formation_begins": "1 Alturiak 1495 DR",
+    "opening_date": "1 Eleint 1495 DR",
+    "rolls": [12, 15, 13, 6, 12, 11, 14],
+    "progress_percent_by_month": [15, 10, 15, 20, 15, 15, 15],
+    "contingency_opening_gp": "3500",
+    "contingency_used_month_2_gp": "900",
+    "opening_month": {
+      "revenue_gp": "6900",
+      "operating_cost_gp": "6250",
+      "operating_profit_before_interest_gp": "650",
+      "illustrative_full_draw_payment_gp": "608.29",
+      "first_month_interest_gp": "200",
+      "first_month_principal_gp": "408.29",
+      "accounting_profit_after_interest_gp": "450",
+      "cash_remainder_after_payment_before_dues_or_additional_reserves_gp": "41.71",
+      "closing_principal_gp": "29591.71"
+    },
+    "opening_month_field_authority": {
+      "revenue_gp": "canon_import",
+      "operating_cost_gp": "canon_import",
+      "illustrative_full_draw_payment_gp": "canon_import",
+      "operating_profit_before_interest_gp": "canon_import",
+      "first_month_interest_gp": "engine_derived",
+      "first_month_principal_gp": "engine_derived",
+      "accounting_profit_after_interest_gp": "engine_derived",
+      "cash_remainder_after_payment_before_dues_or_additional_reserves_gp": "canon_import",
+      "closing_principal_gp": "engine_derived"
+    }
+  },
+  "unresolved": [
+    "construction-period interest treatment",
+    "actual facility draw schedule",
+    "equity paid-in amount",
+    "custody and accounting for the completion guarantee",
+    "meaning of registry Capital Invested 30000 while the separate facility is described as undrawn"
+  ]
+}

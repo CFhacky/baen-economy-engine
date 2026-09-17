@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "schema": "tnp.economy.source-census/1",
+    "capturedAt": "2026-09-17",
+    "campaignBoundary": "Day 7 Hammer 1495 DR",
+    "snapshotHash": "67d8e69b9e883d40b652a0b0a71f59883e205bc07445daa78de76279c0538160",
+    "repositoryBaseSha": "783213c03f3af1afb3f3a20f897cbfa1ebf22064",
+    "prHead": "7cd5fe1b680981569d73873344db52acc7a0f630",
+    "branch": "codex/baen-economy-recovery-census-20260917",
+    "pr": 192,
+    "readMode": "direct_live_Notion_SQL_receipts_read_only; NPC 920/681, artifacts 206/206, threats 26/26, plot_threads 89/89, public_perception 7/7",
+    "materializedCore": 1620,
+    "storedRecords": 1627,
+    "identifiedCore": 1620,
+    "notMaterialized": 0,
+    "simulated": 0,
+    "notes": [
+      "1620 live core records hashed; contextual authority records retained separately.",
+      "920 NPC rows hashed from live Notion receipts (681 of 681 live collection covered; 239 previously captured pages no longer in the live unfiltered collection are retained, not invented, not deleted).",
+      "Artifacts 206/206, threats 26/26, plot threads 89/89, public perception 7/7 from live SQL.",
+      "NPC Location/Faction fields are often relation URLs without place names; empty region is missing source projection, not an invented city.",
+      "SQL has_more=false on a page does not close the collection. Compact SQL columns used to avoid connector truncation.",
+      "Default UNKNOWN coverage is MODEL-PROPOSED fail-closed handling. Facts are SOURCE-DERIVED.",
+      "No Notion write, merge, or campaign-time advance. Day 7 Hammer 1495 DR unchanged."
+    ],
+    "provenance": [
+      {
+        "choice": "Live census first; no month, Notion write, merge or campaign-time advance: recovery/ECONOMY_EXECUTION_MANDATE_2026-09-17.txt@codex/recovery-execution-kit-20260917",
+        "tag": "USER-RULED"
+      },
+      {
+        "choice": "Core properties and membership from direct live Notion connector receipts",
+        "tag": "SOURCE-DERIVED"
+      },
+      {
+        "choice": "Stable page UUIDs, conservative UNKNOWN classification, acquisition checkpoint protocol",
+        "tag": "MODEL-PROPOSED"
+      },
+      {
+        "choice": "Gauntlgrym ledger states, contract scope, monetary authority and mixed timelines",
+        "tag": "UNRESOLVED"
+      }
+    ],
+    "coverageCore": {
+      "SIMULATED": 0,
+      "CONTEXT_ONLY": 0,
+      "FUTURE": 1,
+      "HISTORICAL": 1,
+      "MISSING_DATA": 1,
+      "MISSING_MECHANICS": 1,
+      "SUPERSEDED": 3,
+      "CONFLICT": 4,
+      "UNKNOWN": 1616,
+      "basis": "Actual per-record coverage plus explicit UNKNOWN for unmaterialized collections; no carried-forward aggregate SIMULATED claim",
+      "denominator_core_rows": 1620
+    },
+    "nextBatch": [
+      "finance_banking_outside_registry",
+      "infrastructure_logistics_outside_locations",
+      "population_labour",
+      "construction_capital_programmes",
+      "military_formations_standing_contracts"
+    ]
+  },
+  "collections": [
+    {
+      "key": "business_registry",
+      "title": "Baen Empire - Business Registry",
+      "sourceClass": "business_registry",
+      "rowCount": 90,
+      "complete": true,
+      "hash": "8cdc26b324175407",
+      "captured": 90
+    },
+    {
+      "key": "locations",
+      "title": "The New Path - Locations",
+      "sourceClass": "locations",
+      "rowCount": 182,
+      "complete": true,
+      "hash": "11515f09fb141be3",
+      "captured": 182
+    },
+    {
+      "key": "factions",
+      "title": "The New Path - Factions",
+      "sourceClass": "factions",
+      "rowCount": 79,
+      "complete": true,
+      "hash": "ef931b3f0dfe5185",
+      "captured": 79
+    },
+    {
+      "key": "npcs",
+      "title": "The New Path - NPCs",
+      "sourceClass": "npcs_leadership",
+      "rowCount": 681,
+      "complete": true,
+      "hash": "571eb13b200940cb",
+      "captured": 920
+    },
+    {
+      "key": "artifacts",
+      "title": "The New Path - Artifacts",
+      "sourceClass": "inventories_materials_hoards_assets",
+      "rowCount": 206,
+      "complete": true,
+      "hash": "3984c03597b4158f",
+      "captured": 206
+    },
+    {
+      "key": "threats",
+      "title": "The New Path - Threats",
+      "sourceClass": "shocks_shortages_threats",
+      "rowCount": 26,
+      "complete": true,
+      "hash": "666cfbaf61d845b3",
+      "captured": 26
+    },
+    {
+      "key": "plot_threads",
+      "title": "The New Path - Plot Threads",
+      "sourceClass": "contracts_orders_obligations_threads",
+      "rowCount": 89,
+      "complete": true,
+      "hash": "73fbce475eb3de18",
+      "captured": 89
+    },
+    {
+      "key": "public_perception",
+      "title": "Public Perception",
+      "sourceClass": "demand_perception_context",
+      "rowCount": 7,
+      "complete": true,
+      "hash": "6b80edff9799654a",
+      "captured": 7
+    },
+    {
+      "key": "consequence_ledger_a",
+      "title": "Consequence Ledger A",
+      "sourceClass": "consequence_ledger_a",
+      "rowCount": 11,
+      "complete": true,
+      "hash": "6022f8df33d3cacc",
+      "captured": 11
+    },
+    {
+      "key": "consequence_ledger_b",
+      "title": "Consequence Ledger B",
+      "sourceClass": "consequence_ledger_b",
+      "rowCount": 10,
+      "complete": true,
+      "hash": "727553564d0e307b",
+      "captured": 10
+    }
+  ],
+  "flags": [
+    {
+      "id": "col-consequence-ledger-pair",
+      "stableSourceId": "notion:collection:consequence-ledger-pair",
+      "title": "Consequence Ledger duplicate authority pair",
+      "sourceClass": "contracts_orders_obligations",
+      "coverage": "CONFLICT",
+      "region": [
+        "Campaign-wide"
+      ],
+      "status": "parallel databases with divergent rows/statuses",
+      "effectiveDate": "live 2026-09-17 read",
+      "relevance": "active",
+      "provenance": "SOURCE-DERIVED",
+      "hash": "555639f17e7624b2",
+      "url": "collection://e1debaad-0b2f-412e-8b19-8c9a99f48dbe|collection://88705cad-2c1a-493b-b52c-955bbef8230f",
+      "relations": [
+        "Consequence Ledger A",
+        "Consequence Ledger B"
+      ],
+      "numbers": {
+        "ledger_a_rows": 11,
+        "ledger_b_rows": 10
+      },
+      "facts": [
+        "The two live ledgers overlap but are not identical.",
+        "Examples include Forgedeep charter and Gauntlgrym mine-support status divergence.",
+        "No silent deduplication is permitted."
+      ]
+    },
+    {
+      "id": "321e8214-84b0-8119-b068-e3d4d503eaa3",
+      "stableSourceId": "notion:page:321e8214-84b0-8119-b068-e3d4d503eaa3",
+      "title": "[SUPERSEDED] Guardian's Gate Settlement (older variant)",
+      "sourceClass": "business_registry",
+      "coverage": "SUPERSEDED",
+      "region": [
+        "Guardian's Gate Ziggurat"
+      ],
+      "status": "Scaling",
+      "effectiveDate": "Eleint 1494",
+      "relevance": "not_active",
+      "provenance": "SOURCE-DERIVED",
+      "hash": "daf98ac95eaec83f",
+      "url": "https://app.notion.com/321e821484b08119b068e3d4d503eaa3",
+      "relations": [],
+      "numbers": {
+        "Capital Invested": 30000,
+        "Employees": 20,
+        "Monthly Cost": 3000,
+        "Monthly Revenue": 0,
+        "Profit Margin": 0,
+        "ROI Pct": 0
+      },
+      "facts": [
+        "Sector: \"Infrastructure\"",
+        "Status: \"Scaling\"",
+        "Date Operational: \"Eleint 1494\"",
+        "Last Updated: \"Eleint 20, 1494\"",
+        "Parent Entity: \"\\u2014\"",
+        "Leadership: \"Taeven Ashgrove (Settlement Warden)\""
+      ]
+    },
+    {
+      "id": "323e8214-84b0-8146-a6ed-c334fb99592d",
+      "stableSourceId": "notion:page:323e8214-84b0-8146-a6ed-c334fb99592d",
+      "title": "Prepare Forgedeep charter review before oversight committee visit",
+      "sourceClass": "consequence_ledger_a",
+      "coverage": "SUPERSEDED",
+      "region": [
+        "UNRESOLVED"
+      ],
+      "status": "Fulfilled",
+      "effectiveDate": "Eleint 1494",
+      "relevance": "not_active",
+      "provenance": "SOURCE-DERIVED",
+      "hash": "f47a454318e39101",
+      "url": "https://app.notion.com/323e821484b08146a6edc334fb99592d",
+      "relations": [],
+      "numbers": {
+        "Days Overdue": 0
+      },
+      "facts": [
+        "createdTime: \"2026-03-14 02:00:35Z\"",
+        "Commitment: \"Prepare Forgedeep charter review before oversight committee visit\"",
+        "Status: \"Fulfilled\"",
+        "Category: \"Self-Imposed\"",
+        "Severity: \"Moderate\"",
+        "Date Created: \"Eleint 1494\""
+      ]
+    },
+    {
+      "id": "323e8214-84b0-81e7-a912-fe3389a5f75a",
+      "stableSourceId": "notion:page:323e8214-84b0-81e7-a912-fe3389a5f75a",
+      "title": "Provide engineering support for Gauntlgrym lower mine expansion",
+      "sourceClass": "consequence_ledger_a",
+      "coverage": "CONFLICT",
+      "region": [
+        "UNRESOLVED"
+      ],
+      "status": "Overdue",
+      "effectiveDate": "Mirtul 1494",
+      "relevance": "active",
+      "provenance": "SOURCE-DERIVED",
+      "hash": "62ce9ea8b297facd",
+      "url": "https://app.notion.com/323e821484b081e7a912fe3389a5f75a",
+      "relations": [],
+      "numbers": {
+        "Days Overdue": 45
+      },
+      "facts": [
+        "createdTime: \"2026-03-14 02:00:35Z\"",
+        "Commitment: \"Provide engineering support for Gauntlgrym lower mine expansion\"",
+        "Status: \"Overdue\"",
+        "Category: \"Political Obligation\"",
+        "Severity: \"Major\"",
+        "Date Created: \"Mirtul 1494\""
+      ]
+    },
+    {
+      "id": "323e8214-84b0-81ed-8ab7-ed48df5c2d07",
+      "stableSourceId": "notion:page:323e8214-84b0-81ed-8ab7-ed48df5c2d07",
+      "title": "Gauntlgrym partnership: engineering support for lower mine expansion",
+      "sourceClass": "consequence_ledger_b",
+      "coverage": "CONFLICT",
+      "region": [
+        "UNRESOLVED"
+      ],
+      "status": "Upcoming",
+      "effectiveDate": "Partnership founding 1494",
+      "relevance": "active",
+      "provenance": "SOURCE-DERIVED",
+      "hash": "ff2a174b3d68876e",
+      "url": "https://app.notion.com/323e821484b081ed8ab7ed48df5c2d07",
+      "relations": [],
+      "numbers": {
+        "Days Overdue": 0
+      },
+      "facts": [
+        "createdTime: \"2026-03-14 02:10:03Z\"",
+        "Commitment: \"Gauntlgrym partnership: engineering support for lower mine expansion\"",
+        "Status: \"Upcoming\"",
+        "Category: \"Political Obligation\"",
+        "Severity: \"Major\"",
+        "Date Created: \"Partnership founding 1494\""
+      ]
+    },
+    {
+      "id": "32ce8214-84b0-814d-bfeb-d60ac51ac338",
+      "stableSourceId": "notion:page:32ce8214-84b0-814d-bfeb-d60ac51ac338",
+      "title": "[SUPERSEDED — H8] Northern Crown Monetary System",
+      "sourceClass": "banks_treasuries_funds_debt_loans_reserves_instruments",
+      "coverage": "SUPERSEDED",
+      "region": [
+        "Empire-wide"
+      ],
+      "status": "superseded standalone authority",
+      "effectiveDate": "superseded 2026-08-20",
+      "relevance": "not_active",
+      "provenance": "SOURCE-DERIVED",
+      "hash": "3c9f86158258ec62",
+      "url": "https://app.notion.com/p/32ce821484b0814dbfebd60ac51ac338",
+      "relations": [
+        "3c2e8214-84b0-81c0-85ee-cc74c2bcb35b"
+      ],
+      "numbers": {
+        "max_circulation_to_reserves_ratio": 2.5,
+        "steady_state_reserve_percent": 40,
+        "year_1_reserve_percent": 100,
+        "year_2_reserve_percent": 70
+      },
+      "facts": [
+        "Retains detailed denomination, reserve, lending, and crisis mechanics.",
+        "Explicit supersession warning prevents these numbers from becoming opening-state mechanics without authority resolution."
+      ]
+    },
+    {
+      "id": "338e8214-84b0-81e3-9d8c-dcd4d6c896c7#mechanics",
+      "stableSourceId": "notion:page:338e8214-84b0-81e3-9d8c-dcd4d6c896c7#mechanics",
+      "title": "ESAMT Financial & Investment System — mechanics",
+      "sourceClass": "construction_capital_programs",
+      "coverage": "MISSING_MECHANICS",
+      "region": [
+        "Empire-wide / Shi'van financial layer"
+      ],
+      "status": "active system reference",
+      "effectiveDate": "system active; current-state subsection explicitly stale",
+      "relevance": "active",
+      "provenance": "SOURCE-DERIVED",
+      "hash": "e070f6f3fc9a0852",
+      "url": "https://app.notion.com/p/338e821484b081e39d8cdcd4d6c896c7",
+      "relations": [
+        "Empire Financial State — Current Reference",
+        "Northern Crown Monetary System",
+        "District Economy Layer"
+      ],
+      "numbers": {
+        "investment_categories": 16
+      },
+      "facts": [
+        "Defines capital-deployment categories, strategic lending, production sponsorship, property, infrastructure, security, and contingency lanes.",
+        "The engine does not currently ingest this capital-deployment layer."
+      ]
+    },
+    {
+      "id": "338e8214-84b0-81e3-9d8c-dcd4d6c896c7#state",
+      "stableSourceId": "notion:page:338e8214-84b0-81e3-9d8c-dcd4d6c896c7#state",
+      "title": "ESAMT Financial & Investment System — Day 605 state",
+      "sourceClass": "banks_treasuries_funds_debt_loans_reserves_instruments",
+      "coverage": "HISTORICAL",
+      "region": [
+        "Shi'van financial layer"
+      ],
+      "status": "explicitly stale",
+      "effectiveDate": "Day 605",
+      "relevance": "not_active",
+      "provenance": "SOURCE-DERIVED",
+      "hash": "c4c648c9df2a6f39",
+      "url": "https://app.notion.com/p/338e821484b081e39d8cdcd4d6c896c7",
+      "relations": [
+        "ESAMT Trust Structure",
+        "Institut de Tissage Arcanique"
+      ],
+      "numbers": {
+        "borrowing_gp": 0,
+        "day": 605,
+        "trust_gp": 1010000
+      },
+      "facts": [
+        "Page explicitly directs current financial-state readers elsewhere and labels this section stale."
+      ]
+    },
+    {
+      "id": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+      "stableSourceId": "notion:page:34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+      "title": "Empire Financial State — Current Reference",
+      "sourceClass": "banks_treasuries_funds_debt_loans_reserves_instruments",
+      "coverage": "MISSING_DATA",
+      "region": [
+        "Empire-wide / Arik-side"
+      ],
+      "status": "current reference with explicit audit debts",
+      "effectiveDate": "~Hammer-Alturiak 1495 DR",
+      "relevance": "active",
+      "provenance": "SOURCE-DERIVED",
+      "hash": "c156fd85ddde17cd",
+      "url": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "relations": [
+        "Business Registry",
+        "NCF",
+        "Klauth Estate Liquidation — Shimmerdeep Liquidity"
+      ],
+      "numbers": {
+        "active_loan_portfolio_gp": 2300000,
+        "current_shortfall_gp_approx": 400000,
+        "deployed_capital_lower_bound_gp_approx": 12500000,
+        "deployed_capital_upper_band_gp_approx": 30000000,
+        "hard_asset_portfolio_gp_approx": 18000000,
+        "protected_net_settled_target_gp": 450000
+      },
+      "facts": [
+        "Supersedes Kythorn-1494 overview for current-play decisions.",
+        "Exact current liquid reserves are indeterminate; older exact-cash arithmetic is superseded.",
+        "Per-page Registry verification and active liquidity reconciliation remain open audit debts."
+      ]
+    },
+    {
+      "id": "37ee8214-84b0-812b-b758-cf201d8fcb63#hammer1496",
+      "stableSourceId": "notion:page:37ee8214-84b0-812b-b758-cf201d8fcb63#hammer1496",
+      "title": "District Economy Layer — Hammer 1496 calibration",
+      "sourceClass": "settlements_cities_districts",
+      "coverage": "FUTURE",
+      "region": [
+        "Baen civic footprint"
+      ],
+      "status": "future relative to Day 7 Hammer 1495 boundary",
+      "effectiveDate": "Hammer 1496",
+      "relevance": "not_active",
+      "provenance": "SOURCE-DERIVED",
+      "hash": "73309120d242ad5b",
+      "url": "https://app.notion.com/p/37ee821484b0812bb758cf201d8fcb63",
+      "relations": [
+        "Business Registry",
+        "Empire Session Protocol",
+        "Real Estate Operations Mode annex"
+      ],
+      "numbers": {
+        "backfill_1495_ventures": 86,
+        "initial_named_districts": 8
+      },
+      "facts": [
+        "Tracks induced independent economy outside the Baen-owned Business Registry.",
+        "Hammer 1496 prosperity seeds cannot be loaded into the Day 7 Hammer 1495 opening state.",
+        "The page also preserves a declared-canon 1495 backfill; temporal sections must be segmented before simulation."
+      ]
+    },
+    {
+      "id": "3c2e8214-84b0-81c0-85ee-cc74c2bcb35b",
+      "stableSourceId": "notion:page:3c2e8214-84b0-81c0-85ee-cc74c2bcb35b",
+      "title": "Northern Crown Monetary System",
+      "sourceClass": "banks_treasuries_funds_debt_loans_reserves_instruments",
+      "coverage": "CONFLICT",
+      "region": [
+        "Empire-wide"
+      ],
+      "status": "System References pointer",
+      "effectiveDate": "2026-08-19 registry update",
+      "relevance": "active",
+      "provenance": "SOURCE-DERIVED",
+      "hash": "d44e599472e3ec46",
+      "url": "https://app.notion.com/p/3c2e821484b081c085eecc74c2bcb35b",
+      "relations": [
+        "32ce8214-84b0-814d-bfeb-d60ac51ac338",
+        "ESAMT Financial & Investment System",
+        "The Crown Advantage",
+        "District Economy Layer"
+      ],
+      "numbers": {},
+      "facts": [
+        "System References entry calls the standalone page canonical.",
+        "The referenced standalone page marks itself SUPERSEDED and says this System References entry is canonical.",
+        "Reserve and credit mechanics therefore have a circular authority conflict until resolved."
+      ]
+    }
+  ],
+  "storedCoverage": {
+    "CONFLICT": 4,
+    "UNKNOWN": 1616,
+    "SUPERSEDED": 3,
+    "MISSING_MECHANICS": 1,
+    "HISTORICAL": 1,
+    "MISSING_DATA": 1,
+    "FUTURE": 1
+  }
+}

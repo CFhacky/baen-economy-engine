@@ -1,0 +1,21 @@
+{
+  "schema":"tnp.economy.acquisition-control/1",
+  "repository_base_sha":"b90ba473f1d9527401986849967312c555390bba",
+  "captured_at":"2026-09-17T15:18:25Z",
+  "campaign_boundary":"Day 7 Hammer 1495 DR",
+  "expected_collection_keys":["business_registry","locations","consequence_ledger_a","consequence_ledger_b","factions","npcs","artifacts","threats","plot_threads","public_perception"],
+  "specs":[
+    {"key":"business_registry","data_source_url":"collection://3c5f887a-4219-4ae6-a18a-82cf2d1841db","title":"Baen Empire - Business Registry","source_class":"businesses_branches","title_property":"Entity","columns":["url","Entity","City","Sector","Status","Date Operational","Last Updated","Parent Entity","Leadership","Capital Invested","Monthly Revenue","Monthly Cost","Employees","Profit Margin","ROI Pct","Disposition","Notes","Current Activity","Known Assets","Region","Relationship","Last Attended","Neglect Status","date:Last Updated 1:start","date:Last Updated 1:end","date:Last Updated 1:is_datetime","createdTime"],"numeric_properties":["Capital Invested","Monthly Revenue","Monthly Cost","Employees","Profit Margin","ROI Pct","Disposition"],"relation_properties":[],"json_properties":["Region"]},
+    {"key":"locations","data_source_url":"collection://4b453810-16af-43eb-86ff-927da765a17f","title":"The New Path - Locations","source_class":"locations","title_property":"Name","columns":["url","Name","Type","Population","Controller","Parent Location","Sub-Locations","Garrison","Region","Campaign Arc","Notes","Source File","Status","Strategic Value","date:Last Updated:start","date:Last Updated:end","date:Last Updated:is_datetime","createdTime"],"numeric_properties":["Population"],"relation_properties":["Controller","Parent Location","Sub-Locations"],"json_properties":["Region","Campaign Arc"]}
+  ],
+  "enumeration_evidence":{
+    "business_registry":{"start":{"row_count":90,"distinct_urls":90},"end":{"row_count":90,"distinct_urls":90},"terminal_after":"https://app.notion.com/3c2e821484b081f888a6e1169f9a4df4","terminal_urls_json":"[]"}
+  },
+  "opening_counts":{"locations":{"row_count":182,"distinct_urls":182}},
+  "source_tool":"Notion.query-data-sources",
+  "read_mode":"live direct installed connector; SQL property projection",
+  "notion_write":false,
+  "simulation_allowed":false,
+  "provenance":"SOURCE-DERIVED",
+  "notes":["A SQL aggregate has_more=false only closes that response, not its underlying collection. Completion requires the terminal empty page and opening/closing row reconciliation.","Business Registry and Locations schemas were fetched through live Notion before querying.","A completed property census is not a claim that page bodies or native rich-text formatting have been acquired."]
+}

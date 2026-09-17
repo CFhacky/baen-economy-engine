@@ -1,0 +1,19 @@
+{
+  "batch_id": "20260917-R2-factions",
+  "capture_date": "2026-09-17",
+  "baseline_commit_sha": "a4bdae84c3432f8747483260612cb2e13821fc98",
+  "baseline_snapshot_path": "projects/in-progress/baen-economy-engine/recovery/LIVE_EMPIRE_SOURCE_CENSUS_2026-09-17.json",
+  "extensions": [
+    {
+      "collection": "factions",
+      "title_property": "Name",
+      "proof_path": "recovery/acquisition/20260917-execution/factions.proof.json",
+      "receipt_paths": [
+        "recovery/acquisition/20260917-execution/factions.000.json",
+        "recovery/acquisition/20260917-execution/factions.001.json",
+        "recovery/acquisition/20260917-execution/factions.002.json"
+      ]
+    }
+  ],
+  "provenance": "USER-RULED: next collection is Factions; SOURCE-DERIVED: direct live Notion receipts; MODEL-PROPOSED: explicit batch configuration; UNRESOLVED: simulation eligibility. This batch does not change campaign authority or advance time."
+}

@@ -1,0 +1,933 @@
+{
+  "blockers": [
+    "Gauntlgrym overdue/upcoming conflict",
+    "Zariel contract quantity/scope",
+    "Standing civic series versus dated occurrence",
+    "Apprenticeship row says Pending while Notes describe a future proposal",
+    "Cross-calendar anchoring and deadline histories"
+  ],
+  "canonical_deduplication_performed": false,
+  "capture_date": "2026-09-17",
+  "linked_pairs": 7,
+  "links": [
+    {
+      "active_record_override": "notion:page:323e8214-84b0-81bd-8195-cc09b1652d1d",
+      "campaign_event": false,
+      "explanation": "A is explicitly closed as a bookkeeping duplicate of B, not fulfilled in-world. B remains Pending. The A page's live rich-text Notes explicitly mentions B.",
+      "left_source_id": "notion:page:323e8214-84b0-8146-a6ed-c334fb99592d",
+      "link_id": "charter",
+      "link_provenance": "SOURCE-DERIVED",
+      "notion_mutation": false,
+      "resolution": "explicit_supersession",
+      "right_source_id": "notion:page:323e8214-84b0-81bd-8195-cc09b1652d1d",
+      "source_property_differences": {
+        "Cascade Effects": {
+          "A": "Taeven's personal merchant network grows. Guardian's Gate drifts toward semi-autonomous operation.",
+          "B": "Settler recruitment slows if independence uncertain. Ashgrove's parallel authority structure gains appeal."
+        },
+        "Commitment": {
+          "A": "Prepare Forgedeep charter review before oversight committee visit",
+          "B": "Formalize Forgedeep charter review preparation"
+        },
+        "Consequence If Broken": {
+          "A": "Unprepared review extends provisional period 6-12 months. Signals to residents their city's future isn't priority. Taeven Ashgrove adjusts personal network timeline \u2014 if Forgedeep independence uncertain, his alternatives gain value.",
+          "B": "Oversight committee sees disorganized settlement. Provisional period extended 6-12 months. Forgedeep residents see their political future deprioritized. Taeven Ashgrove adjusts his personal network timeline."
+        },
+        "Context": {
+          "A": "Charter requires periodic review for independence timeline",
+          "B": "Charter requires periodic review for full independence timeline"
+        },
+        "Date Created": {
+          "A": "Eleint 1494",
+          "B": "Charter founding 1494"
+        },
+        "Date Resolved": {
+          "A": "2026-07-28",
+          "B": null
+        },
+        "Deadline": {
+          "A": "Before review date (approaching)",
+          "B": "DUE NOW \u2014 founding-period clock (late 1493 + 12\u201318 months) matured Hammer\u2013Kythorn 1495. Committee visit stages for Arik's declared post-S076 Forgedeep return."
+        },
+        "Notes": {
+          "A": "DUPLICATE \u2014 superseded 2026-07-28 by the master row \"Formalize Forgedeep charter review preparation\" () in the other Baen Empire - Consequence Ledger database. Closed as a bookkeeping dedupe only \u2014 no in-world resolution implied. Twin-ledger duplication flagged for structural cleanup.",
+          "B": "MASTER ROW (duplicate in second Consequence Ledger DB marked superseded 2026-07-28). Needs population milestone data (\u26a0 pulls from the visit itself), governance structure documentation, infrastructure progress report. Ruled 2026-07-28: clock runs from charter founding, review is due at current play position."
+        },
+        "Pressure Target": {
+          "A": "Forgedeep governance legitimacy",
+          "B": "Forgedeep civic identity. Charter independence timeline."
+        },
+        "Status": {
+          "A": "Fulfilled",
+          "B": "Pending"
+        }
+      }
+    },
+    {
+      "active_record_override": null,
+      "campaign_event": false,
+      "explanation": "Candidate same engineering obligation: A Overdue/45 days, B Upcoming/0. Preserve both; do not recompute a clock or pick a winner.",
+      "left_source_id": "notion:page:323e8214-84b0-81e7-a912-fe3389a5f75a",
+      "link_id": "gauntlgrym",
+      "link_provenance": "MODEL-PROPOSED",
+      "notion_mutation": false,
+      "resolution": "UNRESOLVED",
+      "right_source_id": "notion:page:323e8214-84b0-81ed-8ab7-ed48df5c2d07",
+      "source_property_differences": {
+        "Cascade Effects": {
+          "A": "NCF faces unexpected competition in most secure partnership.",
+          "B": "NCF competitive position weakened if dwarven trust erodes. Gauntlgrym Tools JV terms affected."
+        },
+        "Commitment": {
+          "A": "Provide engineering support for Gauntlgrym lower mine expansion",
+          "B": "Gauntlgrym partnership: engineering support for lower mine expansion"
+        },
+        "Consequence If Broken": {
+          "A": "Whisper network: 'Baen doesn't keep promises to dwarves.' Aluminum JV renegotiation starts from dwarven skepticism. Nassim im'Dalat approaches Gauntlgrym with alternative financing.",
+          "B": "Bruenor mentions to advisors. Whisper network: 'Baen doesn't keep promises to dwarves.' Aluminum JV renegotiation starts from dwarven skepticism. Nassim im'Dalat approaches Gauntlgrym with alternative financing."
+        },
+        "Date Created": {
+          "A": "Mirtul 1494",
+          "B": "Partnership founding 1494"
+        },
+        "Days Overdue": {
+          "A": 45,
+          "B": 0
+        },
+        "Deadline": {
+          "A": "Ongoing \u2014 quarterly check-in expected",
+          "B": "Quarterly check-in expected"
+        },
+        "Notes": {
+          "A": null,
+          "B": "Kalnar Stonebrow is the natural delegate for this. Has he been sent?"
+        },
+        "Pressure Target": {
+          "A": "Gauntlgrym alliance (strategic relationship)",
+          "B": "Gauntlgrym alliance (strategic relationship). Aluminum monopoly."
+        },
+        "Status": {
+          "A": "Overdue",
+          "B": "Upcoming"
+        }
+      }
+    },
+    {
+      "active_record_override": null,
+      "campaign_event": false,
+      "explanation": "Candidate related production obligation. B specifies 200,000 units and ahead-of-schedule text; A is generic milestones. Do not conflate total, priority order, or facility output.",
+      "left_source_id": "notion:page:323e8214-84b0-8199-9808-c4cb7a0fb555",
+      "link_id": "zariel",
+      "link_provenance": "MODEL-PROPOSED",
+      "notion_mutation": false,
+      "resolution": "UNRESOLVED",
+      "right_source_id": "notion:page:323e8214-84b0-8122-ae2b-e1bebef4c027",
+      "source_property_differences": {
+        "Cascade Effects": {
+          "A": "Mazikeen reports displeasure. Pantocrator adjusts asset management. Leviathan recalculates.",
+          "B": "Production delays affect aluminum allocation (shared Gauntlgrym resources). Zariel's displeasure communicated through devil asset channels."
+        },
+        "Commitment": {
+          "A": "Zariel contract: production milestones per agreed schedule",
+          "B": "Zariel contract: 200,000 Warborn units on production schedule"
+        },
+        "Consequence If Broken": {
+          "A": "Each missed milestone adds penalty clauses. Three misses shift all negotiable terms to Zariel's favor. Devil assets inside Baen territory become less cooperative.",
+          "B": "Contract breach triggers infernal penalty clauses. Each missed milestone compounds. Three missed milestones shift all negotiable terms to favor Zariel. Devil assets inside Baen territory become less cooperative."
+        },
+        "Date Created": {
+          "A": "Kythorn 1494",
+          "B": "Post-Hell Siege 1494"
+        },
+        "Deadline": {
+          "A": "Per milestone schedule",
+          "B": "Per milestone schedule (ongoing)"
+        },
+        "Notes": {
+          "A": null,
+          "B": "Currently ahead of schedule. Highest-severity obligation in the ledger."
+        },
+        "Pressure Target": {
+          "A": "Infernal standing + Warborn viability",
+          "B": "Infernal standing + Warborn program viability + Mazikeen/Pantocrator cooperation"
+        }
+      }
+    },
+    {
+      "active_record_override": null,
+      "campaign_event": false,
+      "explanation": "Both Pending; similar before-winter 1494 target. B adds the Planning entity and seed sawmill. No current-month resolution inferred.",
+      "left_source_id": "notion:page:323e8214-84b0-81a5-ab8c-e281286128a1",
+      "link_id": "timber",
+      "link_provenance": "MODEL-PROPOSED",
+      "notion_mutation": false,
+      "resolution": "compatible_candidate_overlap",
+      "right_source_id": "notion:page:323e8214-84b0-8157-8f0f-d10c1910e8df",
+      "source_property_differences": {
+        "Cascade Effects": {
+          "A": "Vara researched her destroyed family business at Arik's request. Not acting on it is a double wound.",
+          "B": "Construction costs increase without secured timber supply. Dassyr strengthens while Baen's strategic gap widens."
+        },
+        "Commitment": {
+          "A": "Investigate timber market before Dassyr consolidates supply chains",
+          "B": "Investigate timber market before House Dassyr consolidates"
+        },
+        "Consequence If Broken": {
+          "A": "Each month of delay: Dassyr locks suppliers, secures rights, builds monopoly. Month 1 head start. Month 3 exclusive contracts. Month 6 monopoly requiring hostile action to displace.",
+          "B": "Competitive window closes exponentially. Month 1: Dassyr has head start. Month 3: exclusive supplier contracts. Month 6: monopoly position requiring hostile action to displace. Vara's Torsten history makes this personal \u2014 deprioritizing it after she researched it is a professional and personal slight."
+        },
+        "Context": {
+          "A": "Strategic planning after Magnate's Eye analysis",
+          "B": "Magnate's Eye analysis identified timber as critical gap"
+        },
+        "Date Created": {
+          "A": "Eleint 1494",
+          "B": "Eleint 1494 (this session)"
+        },
+        "Deadline": {
+          "A": "Before winter 1494",
+          "B": "Before winter 1494 (self-imposed)"
+        },
+        "Notes": {
+          "A": null,
+          "B": "Northern Crown Timber entity created in Planning status. Sable Ashwick identified as camp foreman. Dawnwood sawmill operational as seed. Formal launch awaiting this decision."
+        },
+        "Pressure Target": {
+          "A": "Strategic position (competitive window closing). Vara personal/professional slight.",
+          "B": "Strategic competitive position. Vara relationship pressure."
+        },
+        "Recipient": {
+          "A": "Self / Vara (mentioned in passing)",
+          "B": "Self / Vara (mentioned in strategic planning)"
+        }
+      }
+    },
+    {
+      "active_record_override": null,
+      "campaign_event": false,
+      "explanation": "Both Upcoming at autumn equinox 1494. B explicitly disallows delegation. An old deadline is not evidence that attendance or failure occurred.",
+      "left_source_id": "notion:page:323e8214-84b0-81b5-9e37-ea05de7941b4",
+      "link_id": "coronal",
+      "link_provenance": "MODEL-PROPOSED",
+      "notion_mutation": false,
+      "resolution": "compatible_candidate_overlap",
+      "right_source_id": "notion:page:323e8214-84b0-81af-9a0c-cc0f8a23586d",
+      "source_property_differences": {
+        "Cascade Effects": {
+          "A": "Elven purist sentiment gains evidence: 'He doesn't care about us.'",
+          "B": "Farathil-adjacent elements gain recruitment argument. Elara's authority with her own people weakened."
+        },
+        "Commitment": {
+          "A": "Attend Coronal Remembrance \u2014 elven ceremony for fallen Cormanthor leaders",
+          "B": "Elara's court: attend Coronal Remembrance ceremony"
+        },
+        "Consequence If Broken": {
+          "A": "10,000 elven refugees see their lord considers their grief optional. Elara covers \u2014 costs her credibility. Purist elements weaponize the absence.",
+          "B": "10,000 elven refugees interpret absence as indifference to their grief. Elara covers diplomatically but absorbs political cost. Elven purist elements use it as evidence. Elara relationship pressure +2 steps."
+        },
+        "Context": {
+          "A": "Marriage obligation, cultural significance",
+          "B": "Marriage obligation, cultural significance to refugee community"
+        },
+        "Date Created": {
+          "A": "Marriage terms",
+          "B": "Marriage alliance 1494"
+        },
+        "Notes": {
+          "A": null,
+          "B": "Cannot be delegated. Arik's personal presence is the point."
+        },
+        "Pressure Target": {
+          "A": "Elara relationship pressure +2 steps",
+          "B": "Elara relationship. Elven community integration. Purist movement fuel."
+        },
+        "Recipient": {
+          "A": "Elara Baen'del + elven refugee community",
+          "B": "Elara Baen'del + 10,000 elven refugees"
+        }
+      }
+    },
+    {
+      "active_record_override": null,
+      "campaign_event": false,
+      "explanation": "A names Harvest Remembrance on Marpenoth 15; B is a standing civic expectation with a next ceremony. Occurrence-versus-series treatment is not user-ratified.",
+      "left_source_id": "notion:page:323e8214-84b0-81d6-9a15-e4ad05af6f0c",
+      "link_id": "civic",
+      "link_provenance": "MODEL-PROPOSED",
+      "notion_mutation": false,
+      "resolution": "UNRESOLVED",
+      "right_source_id": "notion:page:323e8214-84b0-8118-a899-ee4de3c6e713",
+      "source_property_differences": {
+        "Cascade Effects": {
+          "A": "Builder's Guild at ceremony notes absence, next regulatory challenge more aggressive.",
+          "B": "Guild regulatory challenges become more aggressive. Neverember extracts concessions at next charter review."
+        },
+        "Commitment": {
+          "A": "Attend Harvest Remembrance ceremony as notable citizen",
+          "B": "Neverember civic cooperation: attend public ceremonies as notable citizen"
+        },
+        "Consequence If Broken": {
+          "A": "First absence noted. Second discussed. Third means Neverember stops inviting and starts demanding. NMWC charter renewal becomes a negotiation.",
+          "B": "First absence noted. Second discussed. Third means Neverember stops inviting, starts demanding. NMWC charter renewal becomes negotiation. Builder's Guild takes absence as signal Baen considers itself above civic participation."
+        },
+        "Context": {
+          "A": "Standing civic invitation, politically expected",
+          "B": "Standing expectation tied to NMWC charter, operating permits, political cover"
+        },
+        "Date Created": {
+          "A": "Standing",
+          "B": "NMWC founding 1494"
+        },
+        "Deadline": {
+          "A": "Marpenoth 15, 1494",
+          "B": "Next: Harvest Remembrance, Marpenoth 1494"
+        },
+        "Notes": {
+          "A": null,
+          "B": "Delegatable to Vara or Nestra for some events. Personal attendance expected for major ceremonies."
+        },
+        "Pressure Target": {
+          "A": "Neverember political relationship",
+          "B": "Neverember political relationship. NMWC charter terms. Guild hostility level."
+        }
+      }
+    },
+    {
+      "active_record_override": null,
+      "campaign_event": false,
+      "explanation": "Both Instinct Only; an intelligence warning is not an executed investigation or a realized economic event.",
+      "left_source_id": "notion:page:323e8214-84b0-81db-885e-d9acb18225b8",
+      "link_id": "mila",
+      "link_provenance": "MODEL-PROPOSED",
+      "notion_mutation": false,
+      "resolution": "compatible_candidate_overlap",
+      "right_source_id": "notion:page:323e8214-84b0-814a-b3cc-dcd7434d99ae",
+      "source_property_differences": {
+        "Cascade Effects": {
+          "A": "Aldric maps Baen food production dependency. Future economic warfare targets supply chain.",
+          "B": "If Mila eventually turns, Aldric gains food production data. Aquaculture becomes leverage point for economic warfare."
+        },
+        "Commitment": {
+          "A": "Check on Mila Dunwright's aquaculture operation \u2014 something felt off",
+          "B": "Check on Mila Dunwright \u2014 something off in aquaculture numbers"
+        },
+        "Consequence If Broken": {
+          "A": "Mila's unresolved Aldric approach continues on enemy's timeline. Edric Voss controls pacing. Combined with Mirren Deepwell's unreported refusal, two data points that reveal Aldric's food-sector strategy remain unconnected.",
+          "B": "Aldric approach resolves on Mila's timeline. She's paralyzed, so Edric Voss controls pacing. Combined with Mirren Deepwell's unreported refusal, two data points that reveal Aldric's food-sector strategy remain unconnected."
+        },
+        "Context": {
+          "A": "Gut feeling after reading quarterly aquaculture figures",
+          "B": "Quarterly aquaculture figures triggered instinct. Mila sitting on unresolved Aldric approach."
+        },
+        "Notes": {
+          "A": null,
+          "B": "Nobody tracks this except the GM. The instinct that saves empires or the instinct that gets filed and forgotten."
+        },
+        "Pressure Target": {
+          "A": "Intelligence exposure (Aldric gains aquaculture data if Mila turns)",
+          "B": "Intelligence exposure. Aquaculture sector security."
+        },
+        "Recipient": {
+          "A": "Self (instinct)",
+          "B": "Self (gut instinct)"
+        }
+      }
+    }
+  ],
+  "raw_rows": 21,
+  "reconciliation_hash": "1cc70adc0ed77994b1ee963f210ae461e9069cb1f1a1fc0c512c828e6bd9c1cb",
+  "rows": [
+    {
+      "collection": "consequence_ledger_b",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-81d6-9a15-e4ad05af6f0c",
+      "raw_properties_sha256": "700861f59c743491a9fb6cf0a1de51d0a0a55347325c8b540d3a99b55f23f23e",
+      "source_properties": {
+        "Cascade Effects": "Guild regulatory challenges become more aggressive. Neverember extracts concessions at next charter review.",
+        "Category": "Political Obligation",
+        "Commitment": "Neverember civic cooperation: attend public ceremonies as notable citizen",
+        "Consequence If Broken": "First absence noted. Second discussed. Third means Neverember stops inviting, starts demanding. NMWC charter renewal becomes negotiation. Builder's Guild takes absence as signal Baen considers itself above civic participation.",
+        "Context": "Standing expectation tied to NMWC charter, operating permits, political cover",
+        "Date Created": "NMWC founding 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "Next: Harvest Remembrance, Marpenoth 1494",
+        "Notes": "Delegatable to Vara or Nestra for some events. Personal attendance expected for major ceremonies.",
+        "Pressure Target": "Neverember political relationship. NMWC charter terms. Guild hostility level.",
+        "Recipient": "Lord Protector Neverember",
+        "Severity": "Moderate",
+        "Status": "Upcoming",
+        "createdTime": "2026-03-14 02:10:03Z",
+        "url": "https://app.notion.com/323e821484b08118a899ee4de3c6e713"
+      },
+      "source_url": "https://app.notion.com/323e821484b08118a899ee4de3c6e713",
+      "stable_source_id": "notion:page:323e8214-84b0-8118-a899-ee4de3c6e713",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Neverember civic cooperation: attend public ceremonies as notable citizen"
+    },
+    {
+      "collection": "consequence_ledger_b",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-8199-9808-c4cb7a0fb555",
+      "raw_properties_sha256": "145c14bbb11c789c03676848ce6f7b8b76e63cad8f193a421b9a48b553ad3a4a",
+      "source_properties": {
+        "Cascade Effects": "Production delays affect aluminum allocation (shared Gauntlgrym resources). Zariel's displeasure communicated through devil asset channels.",
+        "Category": "Political Obligation",
+        "Commitment": "Zariel contract: 200,000 Warborn units on production schedule",
+        "Consequence If Broken": "Contract breach triggers infernal penalty clauses. Each missed milestone compounds. Three missed milestones shift all negotiable terms to favor Zariel. Devil assets inside Baen territory become less cooperative.",
+        "Context": "Infernal contract, magically binding",
+        "Date Created": "Post-Hell Siege 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "Per milestone schedule (ongoing)",
+        "Notes": "Currently ahead of schedule. Highest-severity obligation in the ledger.",
+        "Pressure Target": "Infernal standing + Warborn program viability + Mazikeen/Pantocrator cooperation",
+        "Recipient": "Zariel, Archduchess of Avernus",
+        "Severity": "Critical",
+        "Status": "Pending",
+        "createdTime": "2026-03-14 02:10:03Z",
+        "url": "https://app.notion.com/323e821484b08122ae2be1bebef4c027"
+      },
+      "source_url": "https://app.notion.com/323e821484b08122ae2be1bebef4c027",
+      "stable_source_id": "notion:page:323e8214-84b0-8122-ae2b-e1bebef4c027",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Zariel contract: 200,000 Warborn units on production schedule"
+    },
+    {
+      "collection": "consequence_ledger_a",
+      "disposition": "retained_unmatched",
+      "partner_source_id": null,
+      "raw_properties_sha256": "269b33a22e5b92717f3b5431937e5aa1cbfd114945a9a525b877fb9f9c0b37b3",
+      "source_properties": {
+        "Cascade Effects": "Vara briefing includes pointed comment about military expenditures approved outside normal channels.",
+        "Category": "Promise",
+        "Commitment": "Discuss eastern deployment resource allocation with Korgan",
+        "Consequence If Broken": "Korgan makes allocation decision himself, prioritizing military readiness over budget. Costs 15% more than Vara preferred. Both Korgan and Vara annoyed.",
+        "Context": "After J\u00f6rmun session 14 debrief",
+        "Date Created": "Eleint 12, 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "End of Eleint 1494",
+        "Notes": null,
+        "Pressure Target": "Korgan relationship pressure +1 step. Vara friction over unauthorized military spending.",
+        "Recipient": "Korgan Bloodaxe",
+        "Severity": "Moderate",
+        "Status": "Pending",
+        "createdTime": "2026-03-14 02:00:35Z",
+        "url": "https://app.notion.com/323e821484b08134a432f9a1e4d3f8b3"
+      },
+      "source_url": "https://app.notion.com/323e821484b08134a432f9a1e4d3f8b3",
+      "stable_source_id": "notion:page:323e8214-84b0-8134-a432-f9a1e4d3f8b3",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Discuss eastern deployment resource allocation with Korgan"
+    },
+    {
+      "collection": "consequence_ledger_a",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-81bd-8195-cc09b1652d1d",
+      "raw_properties_sha256": "088bcb84d9bca243b2b98d8b8b83c96e8f5f245f1bb687edafbe8823f91e2164",
+      "source_properties": {
+        "Cascade Effects": "Taeven's personal merchant network grows. Guardian's Gate drifts toward semi-autonomous operation.",
+        "Category": "Self-Imposed",
+        "Commitment": "Prepare Forgedeep charter review before oversight committee visit",
+        "Consequence If Broken": "Unprepared review extends provisional period 6-12 months. Signals to residents their city's future isn't priority. Taeven Ashgrove adjusts personal network timeline \u2014 if Forgedeep independence uncertain, his alternatives gain value.",
+        "Context": "Charter requires periodic review for independence timeline",
+        "Date Created": "Eleint 1494",
+        "Date Resolved": "2026-07-28",
+        "Days Overdue": 0,
+        "Deadline": "Before review date (approaching)",
+        "Notes": "DUPLICATE \u2014 superseded 2026-07-28 by the master row \"Formalize Forgedeep charter review preparation\" () in the other Baen Empire - Consequence Ledger database. Closed as a bookkeeping dedupe only \u2014 no in-world resolution implied. Twin-ledger duplication flagged for structural cleanup.",
+        "Pressure Target": "Forgedeep governance legitimacy",
+        "Recipient": "Self / Forgedeep governance",
+        "Severity": "Moderate",
+        "Status": "Fulfilled",
+        "createdTime": "2026-03-14 02:00:35Z",
+        "url": "https://app.notion.com/323e821484b08146a6edc334fb99592d"
+      },
+      "source_url": "https://app.notion.com/323e821484b08146a6edc334fb99592d",
+      "stable_source_id": "notion:page:323e8214-84b0-8146-a6ed-c334fb99592d",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Prepare Forgedeep charter review before oversight committee visit"
+    },
+    {
+      "collection": "consequence_ledger_b",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-81db-885e-d9acb18225b8",
+      "raw_properties_sha256": "5c822a31159408a764b8b098bd1c0de85cbb98da034921b548560a4071076025",
+      "source_properties": {
+        "Cascade Effects": "If Mila eventually turns, Aldric gains food production data. Aquaculture becomes leverage point for economic warfare.",
+        "Category": "Self-Imposed",
+        "Commitment": "Check on Mila Dunwright \u2014 something off in aquaculture numbers",
+        "Consequence If Broken": "Aldric approach resolves on Mila's timeline. She's paralyzed, so Edric Voss controls pacing. Combined with Mirren Deepwell's unreported refusal, two data points that reveal Aldric's food-sector strategy remain unconnected.",
+        "Context": "Quarterly aquaculture figures triggered instinct. Mila sitting on unresolved Aldric approach.",
+        "Date Created": "Eleint 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "None stated",
+        "Notes": "Nobody tracks this except the GM. The instinct that saves empires or the instinct that gets filed and forgotten.",
+        "Pressure Target": "Intelligence exposure. Aquaculture sector security.",
+        "Recipient": "Self (gut instinct)",
+        "Severity": "Major",
+        "Status": "Instinct Only",
+        "createdTime": "2026-03-14 02:10:03Z",
+        "url": "https://app.notion.com/323e821484b0814ab3ccdcd7434d99ae"
+      },
+      "source_url": "https://app.notion.com/323e821484b0814ab3ccdcd7434d99ae",
+      "stable_source_id": "notion:page:323e8214-84b0-814a-b3cc-dcd7434d99ae",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Check on Mila Dunwright \u2014 something off in aquaculture numbers"
+    },
+    {
+      "collection": "consequence_ledger_b",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-81a5-ab8c-e281286128a1",
+      "raw_properties_sha256": "4a45d7eac355f335a031205cda206e0cd76e24e4b345392cd265fdbc5ae94193",
+      "source_properties": {
+        "Cascade Effects": "Construction costs increase without secured timber supply. Dassyr strengthens while Baen's strategic gap widens.",
+        "Category": "Self-Imposed",
+        "Commitment": "Investigate timber market before House Dassyr consolidates",
+        "Consequence If Broken": "Competitive window closes exponentially. Month 1: Dassyr has head start. Month 3: exclusive supplier contracts. Month 6: monopoly position requiring hostile action to displace. Vara's Torsten history makes this personal \u2014 deprioritizing it after she researched it is a professional and personal slight.",
+        "Context": "Magnate's Eye analysis identified timber as critical gap",
+        "Date Created": "Eleint 1494 (this session)",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "Before winter 1494 (self-imposed)",
+        "Notes": "Northern Crown Timber entity created in Planning status. Sable Ashwick identified as camp foreman. Dawnwood sawmill operational as seed. Formal launch awaiting this decision.",
+        "Pressure Target": "Strategic competitive position. Vara relationship pressure.",
+        "Recipient": "Self / Vara (mentioned in strategic planning)",
+        "Severity": "Major",
+        "Status": "Pending",
+        "createdTime": "2026-03-14 02:10:03Z",
+        "url": "https://app.notion.com/323e821484b081578f0fd10c1910e8df"
+      },
+      "source_url": "https://app.notion.com/323e821484b081578f0fd10c1910e8df",
+      "stable_source_id": "notion:page:323e8214-84b0-8157-8f0f-d10c1910e8df",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Investigate timber market before House Dassyr consolidates"
+    },
+    {
+      "collection": "consequence_ledger_b",
+      "disposition": "retained_unmatched",
+      "partner_source_id": null,
+      "raw_properties_sha256": "eb8d14ea16460194a647b2c0830f915458172e767d106a08986ce1e98911c572",
+      "source_properties": {
+        "Cascade Effects": "Zariel contract compliance uncertain without clear authority. Gauntlgrym partnership requires known counterpart. NCF client confidence depends on institutional stability.",
+        "Category": "Self-Imposed",
+        "Commitment": "Formalize political succession plan (regency council)",
+        "Consequence If Broken": "Tested by any event that incapacitates Arik 48+ hours. Without formalization: Vara and Elara contest authority, Korgan secures military independently, Lirien assumes unauthorized powers, Aldric advances timeline 6 months, Jarlaxle renegotiates all terms, Neverember demands NMWC review. The empire that took years to build fractures in days.",
+        "Context": "No formal plan exists for governance if Arik is incapacitated or killed. Multiple actors (Aldric, Jarlaxle, Neverember) would exploit the vacuum.",
+        "Date Created": "Permanent",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "No deadline. Permanent item. The crisis that tests it arrives on its own schedule.",
+        "Notes": "This item never goes overdue in the traditional sense. It sits in the ledger as a quiet reminder. The preparation happens through domestic conversations \u2014 Vara at week 34, political discussions with Elara or Korgan. When it's done, status changes to Fulfilled. Until then, it waits.",
+        "Pressure Target": "Empire structural integrity. Every alliance. Every contract.",
+        "Recipient": "Self / the empire's continuity",
+        "Severity": "Critical",
+        "Status": "Pending",
+        "createdTime": "2026-03-14 20:43:08Z",
+        "url": "https://app.notion.com/323e821484b08187ad22da8ba4c1e10f"
+      },
+      "source_url": "https://app.notion.com/323e821484b08187ad22da8ba4c1e10f",
+      "stable_source_id": "notion:page:323e8214-84b0-8187-ad22-da8ba4c1e10f",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Formalize political succession plan (regency council)"
+    },
+    {
+      "collection": "consequence_ledger_a",
+      "disposition": "retained_unmatched",
+      "partner_source_id": null,
+      "raw_properties_sha256": "517c7d0b2db6580f7c5b5a6b34d3d13be5187e7cdd738f753320bdbdc7cbc545",
+      "source_properties": {
+        "Cascade Effects": "None immediate. Arik discovers she chose a name without him.",
+        "Category": "Promise",
+        "Commitment": "Talk about baby names this weekend",
+        "Consequence If Broken": "Vara says nothing. Next briefing micro-pause before 'Any questions?' Pregnancy pressure ticks up. She starts making naming decisions without him.",
+        "Context": "Passing comment after briefing",
+        "Date Created": "Eleint 19, 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "This weekend (2 days)",
+        "Notes": null,
+        "Pressure Target": "Vara intimate relationship pressure +1 step",
+        "Recipient": "Vara Torsten",
+        "Severity": "Minor",
+        "Status": "Pending",
+        "createdTime": "2026-03-14 02:00:35Z",
+        "url": "https://app.notion.com/323e821484b0818b848fc2463bd5270a"
+      },
+      "source_url": "https://app.notion.com/323e821484b0818b848fc2463bd5270a",
+      "stable_source_id": "notion:page:323e8214-84b0-818b-848f-c2463bd5270a",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Talk about baby names this weekend"
+    },
+    {
+      "collection": "consequence_ledger_a",
+      "disposition": "retained_unmatched",
+      "partner_source_id": null,
+      "raw_properties_sha256": "0a6be14c0f74a3a879120fd702d2885417c6a84af1dee9ee77bdf0042a35e506",
+      "source_properties": {
+        "Cascade Effects": "Elspeth Vane (Jarlaxle asset, Treasury Quarries) notices activity increase at Star Metal Hills, reports in quarterly drop.",
+        "Category": "Promise",
+        "Commitment": "Inspect unidentified crystals at Star Metal Hills eastern gallery",
+        "Consequence If Broken": "Renna takes silence as permission. Begins mining crystals without authorization. If hazardous, mine contaminated. If valuable, exposed before empire secured deposit.",
+        "Context": "Star Metal Hills site visit, Eleint 1494",
+        "Date Created": "Eleint 5, 1494",
+        "Date Resolved": null,
+        "Days Overdue": 18,
+        "Deadline": "Within a tenday (implied)",
+        "Notes": null,
+        "Pressure Target": "Renna loyalty (true believer \u2192 questioning)",
+        "Recipient": "Renna Galtspur",
+        "Severity": "Major",
+        "Status": "Overdue",
+        "createdTime": "2026-03-14 02:00:35Z",
+        "url": "https://app.notion.com/323e821484b08190808cc962243ce5af"
+      },
+      "source_url": "https://app.notion.com/323e821484b08190808cc962243ce5af",
+      "stable_source_id": "notion:page:323e8214-84b0-8190-808c-c962243ce5af",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Inspect unidentified crystals at Star Metal Hills eastern gallery"
+    },
+    {
+      "collection": "consequence_ledger_a",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-8122-ae2b-e1bebef4c027",
+      "raw_properties_sha256": "bc36f40fb9535c486307b98217b16e0ed3f3f37c66dc16d1ecbab37fe470166c",
+      "source_properties": {
+        "Cascade Effects": "Mazikeen reports displeasure. Pantocrator adjusts asset management. Leviathan recalculates.",
+        "Category": "Political Obligation",
+        "Commitment": "Zariel contract: production milestones per agreed schedule",
+        "Consequence If Broken": "Each missed milestone adds penalty clauses. Three misses shift all negotiable terms to Zariel's favor. Devil assets inside Baen territory become less cooperative.",
+        "Context": "Infernal contract, magically binding",
+        "Date Created": "Kythorn 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "Per milestone schedule",
+        "Notes": null,
+        "Pressure Target": "Infernal standing + Warborn viability",
+        "Recipient": "Zariel, Archduchess of Avernus",
+        "Severity": "Critical",
+        "Status": "Pending",
+        "createdTime": "2026-03-14 02:00:35Z",
+        "url": "https://app.notion.com/323e821484b081999808c4cb7a0fb555"
+      },
+      "source_url": "https://app.notion.com/323e821484b081999808c4cb7a0fb555",
+      "stable_source_id": "notion:page:323e8214-84b0-8199-9808-c4cb7a0fb555",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Zariel contract: production milestones per agreed schedule"
+    },
+    {
+      "collection": "consequence_ledger_b",
+      "disposition": "retained_unmatched",
+      "partner_source_id": null,
+      "raw_properties_sha256": "76e9ceaf8584181c03bef81e5a8100676f77d2f37fc04261919e516a7fdf91b4",
+      "source_properties": {
+        "Cascade Effects": "Lyralei and Triune's secondary protagonist track stalls. The Alassra connection (reincarnated Simbul, Weave specialist) is also strategically valuable beyond the obligation.",
+        "Category": "Political Obligation",
+        "Commitment": "Find Alassra Dawnstrider (Simbul) for Elminster",
+        "Consequence If Broken": "Elminster is patient but not infinitely so. The quest is also a test of Arik's family competence. Failure doesn't void the Triune arrangement but damages the relationship and Elminster's willingness to mediate divine politics on Arik's behalf.",
+        "Context": "Condition for Elminster taking Triune as ward. Quest assigned to Lyralei/Triune track.",
+        "Date Created": "Post-Hell Siege 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "No stated deadline (implied: before Triune's training is complete)",
+        "Notes": "Lyralei leads. Candlekeep is the starting point. Quest doubles as the children's development arc.",
+        "Pressure Target": "Elminster relationship. Access to Triune. Future divine mediation capacity.",
+        "Recipient": "Elminster Aumar",
+        "Severity": "Major",
+        "Status": "Pending",
+        "createdTime": "2026-03-14 02:10:03Z",
+        "url": "https://app.notion.com/323e821484b081a2a79ce468eb4c636b"
+      },
+      "source_url": "https://app.notion.com/323e821484b081a2a79ce468eb4c636b",
+      "stable_source_id": "notion:page:323e8214-84b0-81a2-a79c-e468eb4c636b",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Find Alassra Dawnstrider (Simbul) for Elminster"
+    },
+    {
+      "collection": "consequence_ledger_a",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-8157-8f0f-d10c1910e8df",
+      "raw_properties_sha256": "ddd46465b9bfa546cf878f3208f0981ff69c341ea60d30e6cdd6751a4452592c",
+      "source_properties": {
+        "Cascade Effects": "Vara researched her destroyed family business at Arik's request. Not acting on it is a double wound.",
+        "Category": "Self-Imposed",
+        "Commitment": "Investigate timber market before Dassyr consolidates supply chains",
+        "Consequence If Broken": "Each month of delay: Dassyr locks suppliers, secures rights, builds monopoly. Month 1 head start. Month 3 exclusive contracts. Month 6 monopoly requiring hostile action to displace.",
+        "Context": "Strategic planning after Magnate's Eye analysis",
+        "Date Created": "Eleint 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "Before winter 1494",
+        "Notes": null,
+        "Pressure Target": "Strategic position (competitive window closing). Vara personal/professional slight.",
+        "Recipient": "Self / Vara (mentioned in passing)",
+        "Severity": "Major",
+        "Status": "Pending",
+        "createdTime": "2026-03-14 02:00:35Z",
+        "url": "https://app.notion.com/323e821484b081a5ab8ce281286128a1"
+      },
+      "source_url": "https://app.notion.com/323e821484b081a5ab8ce281286128a1",
+      "stable_source_id": "notion:page:323e8214-84b0-81a5-ab8c-e281286128a1",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Investigate timber market before Dassyr consolidates supply chains"
+    },
+    {
+      "collection": "consequence_ledger_b",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-81b5-9e37-ea05de7941b4",
+      "raw_properties_sha256": "1009157ac025cf7a93a782d55386f71b178d595866c6d0a864782ebc05a21bac",
+      "source_properties": {
+        "Cascade Effects": "Farathil-adjacent elements gain recruitment argument. Elara's authority with her own people weakened.",
+        "Category": "Political Obligation",
+        "Commitment": "Elara's court: attend Coronal Remembrance ceremony",
+        "Consequence If Broken": "10,000 elven refugees interpret absence as indifference to their grief. Elara covers diplomatically but absorbs political cost. Elven purist elements use it as evidence. Elara relationship pressure +2 steps.",
+        "Context": "Marriage obligation, cultural significance to refugee community",
+        "Date Created": "Marriage alliance 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "Autumn equinox 1494",
+        "Notes": "Cannot be delegated. Arik's personal presence is the point.",
+        "Pressure Target": "Elara relationship. Elven community integration. Purist movement fuel.",
+        "Recipient": "Elara Baen'del + 10,000 elven refugees",
+        "Severity": "Major",
+        "Status": "Upcoming",
+        "createdTime": "2026-03-14 02:10:03Z",
+        "url": "https://app.notion.com/323e821484b081af9a0ccc0f8a23586d"
+      },
+      "source_url": "https://app.notion.com/323e821484b081af9a0ccc0f8a23586d",
+      "stable_source_id": "notion:page:323e8214-84b0-81af-9a0c-cc0f8a23586d",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Elara's court: attend Coronal Remembrance ceremony"
+    },
+    {
+      "collection": "consequence_ledger_a",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-81af-9a0c-cc0f8a23586d",
+      "raw_properties_sha256": "9ad06ff5843448c990b250ccc9567aba6a55e46ea3aab23d135b673a29d8af2e",
+      "source_properties": {
+        "Cascade Effects": "Elven purist sentiment gains evidence: 'He doesn't care about us.'",
+        "Category": "Political Obligation",
+        "Commitment": "Attend Coronal Remembrance \u2014 elven ceremony for fallen Cormanthor leaders",
+        "Consequence If Broken": "10,000 elven refugees see their lord considers their grief optional. Elara covers \u2014 costs her credibility. Purist elements weaponize the absence.",
+        "Context": "Marriage obligation, cultural significance",
+        "Date Created": "Marriage terms",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "Autumn equinox 1494",
+        "Notes": null,
+        "Pressure Target": "Elara relationship pressure +2 steps",
+        "Recipient": "Elara Baen'del + elven refugee community",
+        "Severity": "Major",
+        "Status": "Upcoming",
+        "createdTime": "2026-03-14 02:00:35Z",
+        "url": "https://app.notion.com/323e821484b081b59e37ea05de7941b4"
+      },
+      "source_url": "https://app.notion.com/323e821484b081b59e37ea05de7941b4",
+      "stable_source_id": "notion:page:323e8214-84b0-81b5-9e37-ea05de7941b4",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Attend Coronal Remembrance \u2014 elven ceremony for fallen Cormanthor leaders"
+    },
+    {
+      "collection": "consequence_ledger_b",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-8146-a6ed-c334fb99592d",
+      "raw_properties_sha256": "68d53a697f4f143b1cdf7aa35d7d1bfad71040dff21a025e638acf6b215e475e",
+      "source_properties": {
+        "Cascade Effects": "Settler recruitment slows if independence uncertain. Ashgrove's parallel authority structure gains appeal.",
+        "Category": "Self-Imposed",
+        "Commitment": "Formalize Forgedeep charter review preparation",
+        "Consequence If Broken": "Oversight committee sees disorganized settlement. Provisional period extended 6-12 months. Forgedeep residents see their political future deprioritized. Taeven Ashgrove adjusts his personal network timeline.",
+        "Context": "Charter requires periodic review for full independence timeline",
+        "Date Created": "Charter founding 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "DUE NOW \u2014 founding-period clock (late 1493 + 12\u201318 months) matured Hammer\u2013Kythorn 1495. Committee visit stages for Arik's declared post-S076 Forgedeep return.",
+        "Notes": "MASTER ROW (duplicate in second Consequence Ledger DB marked superseded 2026-07-28). Needs population milestone data (\u26a0 pulls from the visit itself), governance structure documentation, infrastructure progress report. Ruled 2026-07-28: clock runs from charter founding, review is due at current play position.",
+        "Pressure Target": "Forgedeep civic identity. Charter independence timeline.",
+        "Recipient": "Self / Forgedeep governance",
+        "Severity": "Moderate",
+        "Status": "Pending",
+        "createdTime": "2026-03-14 02:10:03Z",
+        "url": "https://app.notion.com/323e821484b081bd8195cc09b1652d1d"
+      },
+      "source_url": "https://app.notion.com/323e821484b081bd8195cc09b1652d1d",
+      "stable_source_id": "notion:page:323e8214-84b0-81bd-8195-cc09b1652d1d",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Formalize Forgedeep charter review preparation"
+    },
+    {
+      "collection": "consequence_ledger_a",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-8118-a899-ee4de3c6e713",
+      "raw_properties_sha256": "41961d1a540e7c40ae512a249e39c7703b0421454dd8586a76082189f93ea757",
+      "source_properties": {
+        "Cascade Effects": "Builder's Guild at ceremony notes absence, next regulatory challenge more aggressive.",
+        "Category": "Political Obligation",
+        "Commitment": "Attend Harvest Remembrance ceremony as notable citizen",
+        "Consequence If Broken": "First absence noted. Second discussed. Third means Neverember stops inviting and starts demanding. NMWC charter renewal becomes a negotiation.",
+        "Context": "Standing civic invitation, politically expected",
+        "Date Created": "Standing",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "Marpenoth 15, 1494",
+        "Notes": null,
+        "Pressure Target": "Neverember political relationship",
+        "Recipient": "Lord Protector Neverember",
+        "Severity": "Moderate",
+        "Status": "Upcoming",
+        "createdTime": "2026-03-14 02:00:35Z",
+        "url": "https://app.notion.com/323e821484b081d69a15e4ad05af6f0c"
+      },
+      "source_url": "https://app.notion.com/323e821484b081d69a15e4ad05af6f0c",
+      "stable_source_id": "notion:page:323e8214-84b0-81d6-9a15-e4ad05af6f0c",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Attend Harvest Remembrance ceremony as notable citizen"
+    },
+    {
+      "collection": "consequence_ledger_a",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-814a-b3cc-dcd7434d99ae",
+      "raw_properties_sha256": "e9a8352dba10c6cb052a5471f0fef0ec70836658aaf3fe7214a1cf974c1ed300",
+      "source_properties": {
+        "Cascade Effects": "Aldric maps Baen food production dependency. Future economic warfare targets supply chain.",
+        "Category": "Self-Imposed",
+        "Commitment": "Check on Mila Dunwright's aquaculture operation \u2014 something felt off",
+        "Consequence If Broken": "Mila's unresolved Aldric approach continues on enemy's timeline. Edric Voss controls pacing. Combined with Mirren Deepwell's unreported refusal, two data points that reveal Aldric's food-sector strategy remain unconnected.",
+        "Context": "Gut feeling after reading quarterly aquaculture figures",
+        "Date Created": "Eleint 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "None stated",
+        "Notes": null,
+        "Pressure Target": "Intelligence exposure (Aldric gains aquaculture data if Mila turns)",
+        "Recipient": "Self (instinct)",
+        "Severity": "Major",
+        "Status": "Instinct Only",
+        "createdTime": "2026-03-14 02:00:35Z",
+        "url": "https://app.notion.com/323e821484b081db885ed9acb18225b8"
+      },
+      "source_url": "https://app.notion.com/323e821484b081db885ed9acb18225b8",
+      "stable_source_id": "notion:page:323e8214-84b0-81db-885e-d9acb18225b8",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Check on Mila Dunwright's aquaculture operation \u2014 something felt off"
+    },
+    {
+      "collection": "consequence_ledger_a",
+      "disposition": "retained_unmatched",
+      "partner_source_id": null,
+      "raw_properties_sha256": "d9b5449791afed00d806beb2745433e5d341ca88d0ff6af9f07901340515c4de",
+      "source_properties": {
+        "Cascade Effects": "Veldrin notices Kalnar's mood shift, mentions to Vara.",
+        "Category": "Promise",
+        "Commitment": "Review Kalnar's experimental construction technique proposal",
+        "Consequence If Broken": "Kalnar shelves proposal \u2014 dwarven pride. 20% timeline improvement dies in a drawer. Three months later, competitor develops similar technique independently.",
+        "Context": "Neverwinter engineering briefing, routine",
+        "Date Created": "Eleint 15, 1494",
+        "Date Resolved": null,
+        "Days Overdue": 5,
+        "Deadline": "Within a tenday",
+        "Notes": null,
+        "Pressure Target": "Kalnar initiative (stops proposing innovations)",
+        "Recipient": "Kalnar Stonebrow",
+        "Severity": "Moderate",
+        "Status": "Overdue",
+        "createdTime": "2026-03-14 02:00:35Z",
+        "url": "https://app.notion.com/323e821484b081e4b90bef7ddeed74c4"
+      },
+      "source_url": "https://app.notion.com/323e821484b081e4b90bef7ddeed74c4",
+      "stable_source_id": "notion:page:323e8214-84b0-81e4-b90b-ef7ddeed74c4",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Review Kalnar's experimental construction technique proposal"
+    },
+    {
+      "collection": "consequence_ledger_b",
+      "disposition": "retained_unmatched",
+      "partner_source_id": null,
+      "raw_properties_sha256": "d53cca6f7f23e34bd6c08d3615c26348c7f0562959db0c1dd6b2c218e8bb675f",
+      "source_properties": {
+        "Cascade Effects": "Warborn production scaling requires trained specialists. Forgedeep population growth needs skilled workers. Timber operation launch needs loggers Baen doesn't have.",
+        "Category": "Self-Imposed",
+        "Commitment": "Establish formal apprenticeship / training program",
+        "Consequence If Broken": "Growth ceiling hits. New entities can't be staffed. Competitors poach Baen-trained workers. Construction timelines extend. The empire's own success creates the bottleneck that stops further success.",
+        "Context": "900+ employees, no formal training pipeline. Every new entity requires external recruitment. Labor market tightening.",
+        "Date Created": "Eleint 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "Before the labor shortage blocks expansion (6-12 months)",
+        "Notes": "Vara will propose this during a briefing. The moment she does, the consequence ledger captures it. If deferred, the competitive cost accumulates monthly.",
+        "Pressure Target": "Strategic growth capacity. Vara relationship pressure (she'll propose this and track whether it's acted on).",
+        "Recipient": "Self / Vara (will propose when labor shortage becomes acute)",
+        "Severity": "Major",
+        "Status": "Pending",
+        "createdTime": "2026-03-14 20:43:08Z",
+        "url": "https://app.notion.com/323e821484b081e78275d1f27d8a270d"
+      },
+      "source_url": "https://app.notion.com/323e821484b081e78275d1f27d8a270d",
+      "stable_source_id": "notion:page:323e8214-84b0-81e7-8275-d1f27d8a270d",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Establish formal apprenticeship / training program"
+    },
+    {
+      "collection": "consequence_ledger_a",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-81ed-8ab7-ed48df5c2d07",
+      "raw_properties_sha256": "798e31305d4415c43df929577e8254fab0153f448fbb66fcd8625114195f094f",
+      "source_properties": {
+        "Cascade Effects": "NCF faces unexpected competition in most secure partnership.",
+        "Category": "Political Obligation",
+        "Commitment": "Provide engineering support for Gauntlgrym lower mine expansion",
+        "Consequence If Broken": "Whisper network: 'Baen doesn't keep promises to dwarves.' Aluminum JV renegotiation starts from dwarven skepticism. Nassim im'Dalat approaches Gauntlgrym with alternative financing.",
+        "Context": "Original aluminum partnership terms",
+        "Date Created": "Mirtul 1494",
+        "Date Resolved": null,
+        "Days Overdue": 45,
+        "Deadline": "Ongoing \u2014 quarterly check-in expected",
+        "Notes": null,
+        "Pressure Target": "Gauntlgrym alliance (strategic relationship)",
+        "Recipient": "King Bruenor Battlehammer",
+        "Severity": "Major",
+        "Status": "Overdue",
+        "createdTime": "2026-03-14 02:00:35Z",
+        "url": "https://app.notion.com/323e821484b081e7a912fe3389a5f75a"
+      },
+      "source_url": "https://app.notion.com/323e821484b081e7a912fe3389a5f75a",
+      "stable_source_id": "notion:page:323e8214-84b0-81e7-a912-fe3389a5f75a",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Provide engineering support for Gauntlgrym lower mine expansion"
+    },
+    {
+      "collection": "consequence_ledger_b",
+      "disposition": "linked_without_deletion",
+      "partner_source_id": "notion:page:323e8214-84b0-81e7-a912-fe3389a5f75a",
+      "raw_properties_sha256": "6a8c7602de703a39b121b89b3978b21c8dee26c93685cd8fa925c32091eb1ae4",
+      "source_properties": {
+        "Cascade Effects": "NCF competitive position weakened if dwarven trust erodes. Gauntlgrym Tools JV terms affected.",
+        "Category": "Political Obligation",
+        "Commitment": "Gauntlgrym partnership: engineering support for lower mine expansion",
+        "Consequence If Broken": "Bruenor mentions to advisors. Whisper network: 'Baen doesn't keep promises to dwarves.' Aluminum JV renegotiation starts from dwarven skepticism. Nassim im'Dalat approaches Gauntlgrym with alternative financing.",
+        "Context": "Original aluminum partnership terms",
+        "Date Created": "Partnership founding 1494",
+        "Date Resolved": null,
+        "Days Overdue": 0,
+        "Deadline": "Quarterly check-in expected",
+        "Notes": "Kalnar Stonebrow is the natural delegate for this. Has he been sent?",
+        "Pressure Target": "Gauntlgrym alliance (strategic relationship). Aluminum monopoly.",
+        "Recipient": "King Bruenor Battlehammer",
+        "Severity": "Major",
+        "Status": "Upcoming",
+        "createdTime": "2026-03-14 02:10:03Z",
+        "url": "https://app.notion.com/323e821484b081ed8ab7ed48df5c2d07"
+      },
+      "source_url": "https://app.notion.com/323e821484b081ed8ab7ed48df5c2d07",
+      "stable_source_id": "notion:page:323e8214-84b0-81ed-8ab7-ed48df5c2d07",
+      "temporal_resolution": "UNRESOLVED; no deadline or overdue counter advanced",
+      "title": "Gauntlgrym partnership: engineering support for lower mine expansion"
+    }
+  ],
+  "schema": "tnp.economy.consequence-reconciliation/1",
+  "source_explicit_supersessions": 1,
+  "unmatched_a": 4,
+  "unmatched_b": 3
+}

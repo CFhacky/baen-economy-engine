@@ -1,0 +1,614 @@
+{
+  "schema": "baen.whole-economy-scenario/1",
+  "scenario_id": "baen-north-whole-economy-v1",
+  "canonical": false,
+  "source_refs": [
+    "projects/in-progress/baen-economy-engine/fixtures/registry-snapshots/business-registry-2026-08-29.json",
+    "scenario_assumption:baen-north-whole-economy-v1"
+  ],
+  "assumption_policy": {
+    "authority": "scenario_assumption",
+    "canonical": false,
+    "scope": "Every executable number outside entities[].registry_facts is an explicit scenario assumption for this non-canonical vertical slice. Registry names, cities, sectors, status, employees, monthly revenue, monthly cost, and capital are copied exactly where the snapshot supplies them."
+  },
+  "pending_operations": [
+    {
+      "operation_id": "economic-return:forgedeep-v1",
+      "kind": "economic-return",
+      "title": "Forgedeep Economic Return — Evidence and Decisions",
+      "status": "pending",
+      "activation_gate": {
+        "visibility": "silent_until_matched",
+        "evidence_authority": "played_canonical_text",
+        "activation_policy": "once_per_operation_id",
+        "activate_once": true,
+        "auto_execute": false,
+        "auto_resolve": false,
+        "required_events": [
+          {
+            "subject_id": "arik",
+            "event_type": "physical_arrival",
+            "location_id": "forgedeep"
+          }
+        ],
+        "suppressed_contexts": [
+          "Avernus",
+          "Black Sluice",
+          "Tethford",
+          "travel before physical arrival at Forgedeep"
+        ]
+      },
+      "canonical": false,
+      "boot_trigger": "silently check the activation gate at Arik session boot; show nothing unless played canonical text already establishes Arik physically landed in Forgedeep",
+      "play_trigger": "activate exactly once when played canonical text establishes that Arik has physically landed in Forgedeep; do not activate in Avernus, at the Black Sluice, in Tethford, or during travel",
+      "current_boundary": "Arik remains on the played departure path from Avernus through the Black Sluice, with other written tasks and travel still controlling; the operation is dormant and invisible until physical landing in Forgedeep is established in played canon",
+      "source_refs": [
+        "notion:390e8214-84b0-819c-9577-d8103a27467e:arik-boot",
+        "notion:2fbe8214-84b0-81a1-997e-d3b747e8c556:forgedeep",
+        "notion:321e8214-84b0-81b0-9469-f6c9d92a22d5:forgedeep-city-development",
+        "notion:348e8214-84b0-81a6-8349-ecdc1f0efef8:longsaddle-valley",
+        "notion:396e8214-84b0-816c-9dd3-e88e17fc70f1:operation-laden-table",
+        "notion:396e8214-84b0-81f3-a85e-d13f2eafc928:tinderbox-atlas",
+        "projects/in-progress/baen-economy-engine/REQUEST_COMPLIANCE_AUDIT.md"
+      ],
+      "activation_guards": [
+        "Do not surface, brief, activate, or execute this operation while Arik remains in Avernus, at the Black Sluice, in Tethford, or in travel before Forgedeep.",
+        "A mention of Forgedeep, an intention to travel there, a departure, a portal crossing, an approach, or an expected arrival does not satisfy the gate.",
+        "Only played canonical text establishing that Arik has physically landed in Forgedeep satisfies the activation gate.",
+        "Activate at most one runtime instance for this operation_id; repeated boots or duplicate evidence must reuse it rather than create another.",
+        "Activation surfaces unresolved fact requests and player-held decisions; it does not answer, roll, execute, or resolve any of them.",
+        "Do not advance campaign time merely by booting or reading this operation.",
+        "Establish the played surface arrival date before selecting any dated economic authority band or applying the approximately 27:1 dilation.",
+        "Treat every simulator value marked scenario_assumption as unknown in canon until evidence or a player ruling replaces it.",
+        "Collect existing records without a roll; roll only at an actual uncertain execution gate.",
+        "Do not post a ledger entry, change a Registry row, or write a Notion fact as canon without the applicable approval gate.",
+        "Re-check the Tinderbox Atlas at activation; keep GM-only fuses out of the player briefing."
+      ],
+      "decision_authority": {
+        "holder": "player",
+        "may_execute_without_approval": false,
+        "may_advance_campaign_time": false,
+        "may_write_notion": false,
+        "delegation": [
+          "Vara may collect records, run ordinary operations, sign existing-line contracts below 10,000 gp, and make ordinary hires or supplier substitutions.",
+          "Vara may recommend 10,000–50,000 gp commitments, pricing changes, new suppliers, and reallocations up to 10 percent; explicit confirmation is required where the standing doctrine marks them conditional.",
+          "The player decides commitments above 50,000 gp, new business lines, market entry, investments above 100,000 gp, executives, political policy, sovereign fiscal rules, and any canon promotion."
+        ]
+      },
+      "required_fact_requests": [
+        {
+          "request_id": "fact:timeline:surface-arrival",
+          "fact_key": "surface_arrival_date_and_elapsed_hell_time",
+          "location": "Avernus and the Black Sluice route to Forgedeep",
+          "owner": "session clock keeper",
+          "due": "before any dated economic record is admitted at Forgedeep",
+          "question": "What are the played Avernus departure, Material crossing, and physical Forgedeep landing times?",
+          "evidence": "session chronology plus the established dilation rule applied only after both endpoints exist",
+          "resolves": "which current-actual, forward, or later economic records are admissible",
+          "status": "unresolved"
+        },
+        {
+          "request_id": "fact:forgedeep:population",
+          "fact_key": "forgedeep_current_civilian_population",
+          "location": "Forgedeep",
+          "owner": "Vara's civic clerks and the City Council",
+          "due": "first Forgedeep evidence return",
+          "question": "What is the current civilian population by quarter, household type, occupation, and dependants, separately from every garrison count?",
+          "evidence": "current census roll, ration issue roll, occupied housing roll, payroll headcount, and gate entries reconciled",
+          "resolves": "the stale 450 snapshot, the staged 1,400–1,600 band, the false 8,000 simulator population, labour supply, and household demand",
+          "status": "unresolved"
+        },
+        {
+          "request_id": "fact:forgedeep:housing-services",
+          "fact_key": "forgedeep_housing_and_service_capacity",
+          "location": "Forgedeep",
+          "owner": "Forgedeep City Development and Baen Real Estate",
+          "due": "first Forgedeep evidence return",
+          "question": "How many finished, occupied, vacant, and blocked dwelling spaces exist by quarter, and what are the current water, air, sanitation, clinic, school, market, and food-storage capacities?",
+          "evidence": "completion certificates, occupancy register, utility capacity logs, service rosters, and storage ledgers",
+          "resolves": "whether population growth is physically supportable and where the actual bottleneck lies",
+          "status": "unresolved"
+        },
+        {
+          "request_id": "fact:forgedeep:industry",
+          "fact_key": "forgedeep_industrial_actuals",
+          "location": "Forgedeep",
+          "owner": "Ilse Cramm with each operating manager",
+          "due": "first Forgedeep evidence return",
+          "question": "What did each active Forgedeep enterprise actually produce, consume, sell, hold, and lose in each of the last three closed months?",
+          "evidence": "production journals, warehouse counts, invoices, payrolls, work-in-progress ledgers, and rejected-output logs",
+          "resolves": "the 120-versus-180-ton Silversheen conflict, invented recipes, missing opening inventory, enterprise shortages, and the sixteen-of-ninety coverage gap",
+          "status": "unresolved"
+        },
+        {
+          "request_id": "fact:regional:routes",
+          "fact_key": "regional_route_time_capacity_cost_loss",
+          "location": "Neverwinter, Waterdeep, Forgedeep, and the Long Road corridor",
+          "owner": "Hunding transport office and Arterial Road Network",
+          "due": "before committing any procurement or redistribution plan",
+          "question": "What are the actual travel days, monthly throughput, carrier rates, tolls, seasonal loss, and currently available capacity by road, ship, canal, and deep-road mode?",
+          "evidence": "dispatch books, toll records, carrier manifests, arrival receipts, and the current route calendar",
+          "resolves": "the fixture's false one-to-two-month route times and unsupported capacity, cost, toll, and loss assumptions",
+          "status": "unresolved"
+        },
+        {
+          "request_id": "fact:forgedeep:fiscal",
+          "fact_key": "forgedeep_fiscal_and_spending_actuals",
+          "location": "Forgedeep",
+          "owner": "Vara's treasury office and City Council",
+          "due": "before any tax, rent, tithe, or spending simulation is treated as usable",
+          "question": "What taxes, rents, feudal dues, tithes, fees, subsidies, payrolls, procurement, and relief spending are legally due and actually collected or paid?",
+          "evidence": "charter ordinances, cadastral roll, leases, assessment basis, treasury cashbook, church cashbook, arrears ages, and enforcement records",
+          "resolves": "invented gross-revenue rates, unaged arrears, and the treasury and church monetary sinks",
+          "status": "unresolved"
+        },
+        {
+          "request_id": "fact:ncf:balance-sheets",
+          "fact_key": "ncf_branch_balance_sheets_and_credit_book",
+          "location": "NCF Neverwinter, Forgedeep, Waterdeep, and Longsaddle",
+          "owner": "Rurik Vandersen and NCF branch controllers",
+          "due": "before any lending, reserve, default, or loan-taking decision",
+          "question": "What are the audited branch reserves, depositor liabilities, equity, asset schedules, active loans, arrears, collateral liens, operating cash, and interbranch exposures?",
+          "evidence": "vault count, depositor subsidiary ledger, general ledger trial balance, loan register, collateral register, and interbranch settlement account",
+          "resolves": "the unsupported balancing assets, the fixture's 2,500-gp scale against the separate 2.3-million-gp active-loan authority, and false reserve or solvency conclusions",
+          "status": "unresolved"
+        },
+        {
+          "request_id": "fact:ncf:loan-files",
+          "fact_key": "ncf_loan_terms_collateral_and_default_status",
+          "location": "NCF credit operations",
+          "owner": "Rurik Vandersen and branch credit officers",
+          "due": "before a loan can approve, default, seize, or liquidate collateral",
+          "question": "What are the signed terms, payment history, appraisal, lien priority, cure period, and liquidation rule for every modeled or proposed loan?",
+          "evidence": "executed notes, amortization schedules, warehouse receipts, appraisals, payment records, notices, and forced-sale policy",
+          "resolves": "invented 20-percent reserves, 125-percent collateral gates, the under-collateralized Shimmerdeep note, and the forced month-three defaults",
+          "status": "unresolved"
+        },
+        {
+          "request_id": "fact:agriculture:acreage-yield",
+          "fact_key": "cultivated_acreage_yield_and_food_flow",
+          "location": "Forgedeep support lands, Neverwinter shelters, and Longsaddle",
+          "owner": "Odile Thistlewaite with agricultural stewards",
+          "due": "Forgedeep return, refreshed at the played Longsaddle arrival",
+          "question": "What acreage is planted, fallow, damaged, or harvestable; what yields, feed inputs, stocks, consumption, spoilage, and forward contracts exist by crop or livestock line?",
+          "evidence": "field survey, planting and harvest logs, granary counts, feed ledgers, consumption issues, and executed purchase contracts",
+          "resolves": "uncoupled acreage and yield, invented household baskets, and the exact remaining need under Operation Laden Table",
+          "status": "unresolved"
+        },
+        {
+          "request_id": "fact:registry:complete-operating-envelope",
+          "fact_key": "all_registry_entities_current_operating_envelope",
+          "location": "Baen Empire business network",
+          "owner": "Ilse Cramm",
+          "due": "after the visit evidence is returned and before the next consolidated month",
+          "question": "For all ninety Registry entities, what is the current status, leader, employees, last-attended date, cash revenue, cash expense, capital, dependencies, and source period?",
+          "evidence": "full Registry export reconciled to entity-page ledgers with explicit unknown and superseded fields",
+          "resolves": "the sixteen-of-ninety model boundary, missing financial fields, and the forty-four missing last-attended dates",
+          "status": "unresolved"
+        }
+      ],
+      "decision_gates": [
+        {
+          "decision_id": "decision:forgedeep:growth-posture",
+          "authority": "player",
+          "when": "after population, housing, services, food, and labour evidence reconciles",
+          "decision": "Set Forgedeep's next growth posture and population objective.",
+          "options": ["accelerate within proven capacity", "hold growth while capacity catches up", "redirect growth to another settlement"]
+        },
+        {
+          "decision_id": "decision:forgedeep:capital-allocation",
+          "authority": "player for any new line, commitment above 50,000 gp, investment above 100,000 gp, or reallocation beyond Vara's standing authority",
+          "when": "after enterprise actuals, inventories, housing, and route bottlenecks are known",
+          "decision": "Choose which binding constraint receives capital and scarce material first.",
+          "options": ["housing and civic services", "food and storage resilience", "transport and canal throughput", "industrial expansion", "hold capital"]
+        },
+        {
+          "decision_id": "decision:forgedeep:fiscal-policy",
+          "authority": "player",
+          "when": "after the legal assessment basis, collections, arrears, and public spending are reconciled",
+          "decision": "Ratify or replace the city's fiscal and arrears policy.",
+          "options": ["retain current lawful policy", "change rates or assessment basis", "grant targeted relief", "fund named services before expansion"]
+        },
+        {
+          "decision_id": "decision:ncf:risk-and-capital",
+          "authority": "player for reserve policy, sovereign borrowing, market entry, commitments above 50,000 gp, and any default or liquidation outside signed terms",
+          "when": "after audited branch balance sheets and individual loan files reconcile",
+          "decision": "Set NCF's reserve, credit, collateral, and northern loan-taking posture.",
+          "options": ["maintain and cure existing book", "tighten new credit", "expand through source-backed limits", "recapitalize or restructure", "execute the already-ratified Laden Table borrowing only at its played gate"]
+        },
+        {
+          "decision_id": "decision:longsaddle:food-bridge",
+          "authority": "player for any change to the ratified mission, commitment above 50,000 gp, or strategic reserve policy; Vara and Odile execute ordinary contracts within standing authority",
+          "when": "at the played Longsaddle follow-up after current stocks, harvest, consumption, and contracted arrivals are measured",
+          "decision": "Confirm how the remaining food bridge and reserve are filled without double-counting the already-active Operation Laden Table.",
+          "options": ["use contracted northern supply", "add southern second-source", "draw named reserves", "reduce or defer nonessential demand", "change the mission mandate"]
+        },
+        {
+          "decision_id": "decision:model:admission",
+          "authority": "player",
+          "when": "after each fact request has evidence, conflict handling, and a source period",
+          "decision": "Approve which recovered facts may replace scenario assumptions in a new sealed model version.",
+          "options": ["approve selected facts", "request reconciliation", "keep as non-canonical scenario assumptions", "reject the model change"]
+        }
+      ],
+      "linked_operations": [
+        {
+          "operation_id": "notion:396e8214-84b0-816c-9dd3-e88e17fc70f1",
+          "title": "Operation Laden Table — Northern Diplomatic and Procurement Mission",
+          "relationship": "active ratified food, finance, and diplomatic dependency; do not recreate or double-count"
+        }
+      ],
+      "atlas_check": {
+        "status": "checked-at-design; recheck-at-activation",
+        "page_id": "396e8214-84b0-81f3-a85e-d13f2eafc928",
+        "footprint": ["Nine Hells and Skyreach", "Neverwinter home ground and Forgedeep", "Dessarin corridor and Longsaddle", "Long Road convoy rim"],
+        "player_safe_summary": "The Forgedeep return and Longsaddle follow-up touch live regional clocks. The GM must resolve any applicable fuses at the played trigger rather than pre-firing them now."
+      }
+    }
+  ],
+  "entities": [
+    {
+      "id": "entity:agricultural-shelter-zones",
+      "name": "Agricultural Shelter Zones",
+      "source_record_id": "321e8214-84b0-81e0-9660-eacd14973b2f",
+      "source_ref": "registry_snapshot:321e8214-84b0-81e0-9660-eacd14973b2f",
+      "registry_facts": {"city": "Multi-Region", "sector": "Agriculture", "status": "Operational", "employees": "8", "monthly_revenue_gp": "1500", "monthly_cost_gp": "1050", "capital_invested_gp": "6000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:arterial-road-network",
+      "name": "Arterial Road Network",
+      "source_record_id": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+      "source_ref": "registry_snapshot:321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+      "registry_facts": {"city": "Multi-Region", "sector": "Infrastructure", "status": "Scaling", "employees": "150", "monthly_revenue_gp": "22000", "monthly_cost_gp": "19360", "capital_invested_gp": "65000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:baen-brickworks",
+      "name": "Baen Brickworks",
+      "source_record_id": "321e8214-84b0-816c-87fb-f0fee22835ad",
+      "source_ref": "registry_snapshot:321e8214-84b0-816c-87fb-f0fee22835ad",
+      "registry_facts": {"city": "Neverwinter", "sector": "Manufacturing", "status": "Operational", "employees": "30", "monthly_revenue_gp": "3333", "monthly_cost_gp": "2233", "capital_invested_gp": "12000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:baen-construction-hq",
+      "name": "Baen Construction HQ",
+      "source_record_id": "321e8214-84b0-8122-9dce-efa0c3c48170",
+      "source_ref": "registry_snapshot:321e8214-84b0-8122-9dce-efa0c3c48170",
+      "registry_facts": {"city": "Neverwinter", "sector": "Construction", "status": "Operational", "employees": "120", "monthly_revenue_gp": "6250", "monthly_cost_gp": "5125", "capital_invested_gp": "15000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:baen-real-estate",
+      "name": "Baen Real Estate & Housing Portfolio",
+      "source_record_id": "37de8214-84b0-8154-9c6b-d10986768d97",
+      "source_ref": "registry_snapshot:37de8214-84b0-8154-9c6b-d10986768d97",
+      "registry_facts": {"city": "Multi-Region", "sector": "Real Estate", "status": "Operational", "employees": "25", "monthly_revenue_gp": "28040", "monthly_cost_gp": "9800", "capital_invested_gp": null},
+      "canonical": false
+    },
+    {
+      "id": "entity:blacklake-aquaculture",
+      "name": "Blacklake Aquaculture (7 pools)",
+      "source_record_id": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+      "source_ref": "registry_snapshot:321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+      "registry_facts": {"city": "Neverwinter", "sector": "Aquaculture", "status": "Operational", "employees": "15", "monthly_revenue_gp": "7500", "monthly_cost_gp": "5850", "capital_invested_gp": "40000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:dock-ward-warehouse",
+      "name": "Dock Ward Warehouse",
+      "source_record_id": "321e8214-84b0-8132-bcc9-ef2290e366bc",
+      "source_ref": "registry_snapshot:321e8214-84b0-8132-bcc9-ef2290e366bc",
+      "registry_facts": {"city": "Waterdeep", "sector": "Trade", "status": "Operational", "employees": "8", "monthly_revenue_gp": "1833", "monthly_cost_gp": "1100", "capital_invested_gp": "12000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:formicorps",
+      "name": "Formicorps",
+      "source_record_id": "34ce8214-84b0-81b9-95b9-f3426792b6bc",
+      "source_ref": "registry_snapshot:34ce8214-84b0-81b9-95b9-f3426792b6bc",
+      "registry_facts": {"city": "Forgedeep", "sector": "Construction", "status": "Operational", "employees": "0", "monthly_revenue_gp": "0", "monthly_cost_gp": "15000", "capital_invested_gp": "2500000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:institut-tissage-arcanique",
+      "name": "Institut de Tissage Arcanique",
+      "source_record_id": "372e8214-84b0-81d9-8c19-e650c16b687f",
+      "source_ref": "registry_snapshot:372e8214-84b0-81d9-8c19-e650c16b687f",
+      "registry_facts": {"city": "Waterdeep", "sector": "Manufacturing", "status": "Operational", "employees": "81", "monthly_revenue_gp": "28000", "monthly_cost_gp": "17500", "capital_invested_gp": "132000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:neverwinter-clay-quarries",
+      "name": "Neverwinter Clay Quarries",
+      "source_record_id": "321e8214-84b0-81c6-9bde-c30dd49bc5b6",
+      "source_ref": "registry_snapshot:321e8214-84b0-81c6-9bde-c30dd49bc5b6",
+      "registry_facts": {"city": "Neverwinter", "sector": "Mining/Quarrying", "status": "Operational", "employees": "12", "monthly_revenue_gp": "0", "monthly_cost_gp": "1500", "capital_invested_gp": "5000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:ncf-neverwinter",
+      "name": "Northern Crown Financial - Neverwinter",
+      "source_record_id": "321e8214-84b0-8175-997c-c81e61c35015",
+      "source_ref": "registry_snapshot:321e8214-84b0-8175-997c-c81e61c35015",
+      "registry_facts": {"city": "Neverwinter", "sector": "Banking", "status": "Operational", "employees": "35", "monthly_revenue_gp": "10000", "monthly_cost_gp": "5200", "capital_invested_gp": "25000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:ncf-waterdeep",
+      "name": "Northern Crown Financial - Waterdeep",
+      "source_record_id": "321e8214-84b0-8169-bde3-cc7112ca328d",
+      "source_ref": "registry_snapshot:321e8214-84b0-8169-bde3-cc7112ca328d",
+      "registry_facts": {"city": "Waterdeep", "sector": "Banking", "status": "Operational", "employees": "12", "monthly_revenue_gp": "2750", "monthly_cost_gp": "1430", "capital_invested_gp": "15000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:shimmerdeep-cradle",
+      "name": "Shimmerdeep Cradle",
+      "source_record_id": "34ce8214-84b0-8111-9fd4-c41feef5634e",
+      "source_ref": "registry_snapshot:34ce8214-84b0-8111-9fd4-c41feef5634e",
+      "registry_facts": {"city": "Forgedeep", "sector": "Mining/Quarrying", "status": "Under Construction", "employees": "300", "monthly_revenue_gp": "0", "monthly_cost_gp": "20000", "capital_invested_gp": "1400000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:silversheen-trading",
+      "name": "Silversheen Trading (Aluminum)",
+      "source_record_id": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+      "source_ref": "registry_snapshot:321e8214-84b0-8155-bf9b-cea55e2c7669",
+      "registry_facts": {"city": "Forgedeep", "sector": "Manufacturing", "status": "Scaling", "employees": "45", "monthly_revenue_gp": "48400", "monthly_cost_gp": "29040", "capital_invested_gp": "80000"},
+      "canonical": false
+    },
+    {
+      "id": "entity:stonefire-ceramics",
+      "name": "Stonefire Ceramics",
+      "source_record_id": "37de8214-84b0-81d1-bf05-cd5b4111d5bc",
+      "source_ref": "registry_snapshot:37de8214-84b0-81d1-bf05-cd5b4111d5bc",
+      "registry_facts": {"city": "Forgedeep", "sector": "Manufacturing", "status": "Under Construction", "employees": "67", "monthly_revenue_gp": "1479", "monthly_cost_gp": "1909", "capital_invested_gp": "42700"},
+      "canonical": false
+    },
+    {
+      "id": "entity:waterdeep-trading-office",
+      "name": "Waterdeep Trading Office",
+      "source_record_id": "321e8214-84b0-8128-9cb9-fbb308ea2536",
+      "source_ref": "registry_snapshot:321e8214-84b0-8128-9cb9-fbb308ea2536",
+      "registry_facts": {"city": "Waterdeep", "sector": "Trade", "status": "Operational", "employees": "10", "monthly_revenue_gp": "3333", "monthly_cost_gp": "1733", "capital_invested_gp": "18000"},
+      "canonical": false
+    }
+  ],
+  "settlements": [
+    {
+      "id": "neverwinter",
+      "name": "Neverwinter",
+      "authority": "scenario_assumption",
+      "canonical": false,
+      "population_total": "28000",
+      "classes": [
+        {"id": "commoners", "population": "20000", "household_account_id": "households:neverwinter:commoners", "priority": "10", "basket": {"grain": "0.012", "fish": "0.001"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.40", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false},
+        {"id": "artisans", "population": "6000", "household_account_id": "households:neverwinter:artisans", "priority": "20", "basket": {"grain": "0.011", "fish": "0.0015"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.45", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false},
+        {"id": "burghers", "population": "1800", "household_account_id": "households:neverwinter:burghers", "priority": "30", "basket": {"grain": "0.010", "fish": "0.002"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.50", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false},
+        {"id": "elites", "population": "200", "household_account_id": "households:neverwinter:elites", "priority": "40", "basket": {"grain": "0.008", "fish": "0.003"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.60", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false}
+      ]
+    },
+    {
+      "id": "waterdeep",
+      "name": "Waterdeep",
+      "authority": "scenario_assumption",
+      "canonical": false,
+      "population_total": "130000",
+      "classes": [
+        {"id": "commoners", "population": "90000", "household_account_id": "households:waterdeep:commoners", "priority": "10", "basket": {"grain": "0.012", "fish": "0.001"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.40", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false},
+        {"id": "artisans", "population": "30000", "household_account_id": "households:waterdeep:artisans", "priority": "20", "basket": {"grain": "0.011", "fish": "0.0015"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.45", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false},
+        {"id": "burghers", "population": "9000", "household_account_id": "households:waterdeep:burghers", "priority": "30", "basket": {"grain": "0.010", "fish": "0.002"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.50", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false},
+        {"id": "elites", "population": "1000", "household_account_id": "households:waterdeep:elites", "priority": "40", "basket": {"grain": "0.008", "fish": "0.003"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.60", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false}
+      ]
+    },
+    {
+      "id": "forgedeep",
+      "name": "Forgedeep",
+      "authority": "scenario_assumption",
+      "canonical": false,
+      "population_total": "8000",
+      "classes": [
+        {"id": "commoners", "population": "4000", "household_account_id": "households:forgedeep:commoners", "priority": "10", "basket": {"grain": "0.012", "fish": "0.001"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.40", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false},
+        {"id": "artisans", "population": "2500", "household_account_id": "households:forgedeep:artisans", "priority": "20", "basket": {"grain": "0.011", "fish": "0.0015"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.45", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false},
+        {"id": "burghers", "population": "1200", "household_account_id": "households:forgedeep:burghers", "priority": "30", "basket": {"grain": "0.010", "fish": "0.002"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.50", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false},
+        {"id": "elites", "population": "300", "household_account_id": "households:forgedeep:elites", "priority": "40", "basket": {"grain": "0.008", "fish": "0.003"}, "substitutions": {"grain": [{"commodity_id": "fish", "ratio": "0.60", "authority": "scenario_assumption", "canonical": false}]}, "authority": "scenario_assumption", "canonical": false}
+      ]
+    }
+  ],
+  "commodities": [
+    {"id": "grain", "name": "Food grain", "unit": "ton", "base_price": "10", "min_price": "3", "max_price": "40", "spoilage_rate": "0.02", "price_elasticity": "0.50", "authority": "scenario_assumption", "canonical": false},
+    {"id": "fish", "name": "Preserved fish equivalent", "unit": "ton", "base_price": "25", "min_price": "8", "max_price": "80", "spoilage_rate": "0.08", "price_elasticity": "0.60", "authority": "scenario_assumption", "canonical": false},
+    {"id": "clay", "name": "Clay", "unit": "ton", "base_price": "0.50", "min_price": "0.10", "max_price": "2", "spoilage_rate": "0", "price_elasticity": "0.30", "authority": "scenario_assumption", "canonical": false},
+    {"id": "bricks", "name": "Finished brick", "unit": "brick", "base_price": "0.08", "min_price": "0.02", "max_price": "0.30", "spoilage_rate": "0", "price_elasticity": "0.30", "authority": "scenario_assumption", "canonical": false},
+    {"id": "timber", "name": "Construction timber", "unit": "ton", "base_price": "2", "min_price": "0.50", "max_price": "8", "spoilage_rate": "0.01", "price_elasticity": "0.40", "authority": "scenario_assumption", "canonical": false},
+    {"id": "construction_work", "name": "Completed construction work", "unit": "work unit", "base_price": "250", "min_price": "75", "max_price": "800", "spoilage_rate": "0", "price_elasticity": "0.20", "authority": "scenario_assumption", "canonical": false},
+    {"id": "wool", "name": "Raw wool", "unit": "bale", "base_price": "1.20", "min_price": "0.30", "max_price": "5", "spoilage_rate": "0.01", "price_elasticity": "0.40", "authority": "scenario_assumption", "canonical": false},
+    {"id": "dye", "name": "Dyestuff", "unit": "batch", "base_price": "3", "min_price": "1", "max_price": "12", "spoilage_rate": "0.02", "price_elasticity": "0.50", "authority": "scenario_assumption", "canonical": false},
+    {"id": "cloth", "name": "Finished cloth", "unit": "bolt", "base_price": "8", "min_price": "2", "max_price": "30", "spoilage_rate": "0.01", "price_elasticity": "0.50", "authority": "scenario_assumption", "canonical": false},
+    {"id": "bauxite", "name": "Bauxite ore", "unit": "ton", "base_price": "1", "min_price": "0.25", "max_price": "4", "spoilage_rate": "0", "price_elasticity": "0.40", "authority": "scenario_assumption", "canonical": false},
+    {"id": "aluminum", "name": "Refined aluminum", "unit": "ton", "base_price": "6", "min_price": "2", "max_price": "20", "spoilage_rate": "0", "price_elasticity": "0.50", "authority": "scenario_assumption", "canonical": false},
+    {"id": "ceramics", "name": "Stonefire ceramics", "unit": "crate", "base_price": "4", "min_price": "1", "max_price": "16", "spoilage_rate": "0", "price_elasticity": "0.40", "authority": "scenario_assumption", "canonical": false},
+    {"id": "trade_service", "name": "Wholesale and warehousing service", "unit": "service unit", "base_price": "20", "min_price": "5", "max_price": "60", "spoilage_rate": "0", "price_elasticity": "0.20", "authority": "scenario_assumption", "canonical": false},
+    {"id": "banking_service", "name": "Banking service", "unit": "service unit", "base_price": "15", "min_price": "3", "max_price": "50", "spoilage_rate": "0", "price_elasticity": "0.20", "authority": "scenario_assumption", "canonical": false},
+    {"id": "transport_service", "name": "Road carriage service", "unit": "service unit", "base_price": "12", "min_price": "3", "max_price": "40", "spoilage_rate": "0", "price_elasticity": "0.20", "authority": "scenario_assumption", "canonical": false},
+    {"id": "infrastructure_work", "name": "Underground infrastructure work", "unit": "work unit", "base_price": "400", "min_price": "100", "max_price": "1500", "spoilage_rate": "0", "price_elasticity": "0.20", "authority": "scenario_assumption", "canonical": false}
+  ],
+  "recipes": [
+    {"id": "recipe:nw-grain", "entity_id": "entity:agricultural-shelter-zones", "settlement_id": "neverwinter", "kind": "agriculture", "sector": "agriculture", "max_batches": "12", "desired_batches": "10", "inputs": {}, "outputs": {"grain": "20"}, "labor": {"farm": "3"}, "priority": "10", "source_ref": "scenario_assumption:recipe:nw-grain", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:wd-grain", "entity_id": "entity:agricultural-shelter-zones", "settlement_id": "waterdeep", "kind": "agriculture", "sector": "agriculture", "max_batches": "70", "desired_batches": "60", "inputs": {}, "outputs": {"grain": "20"}, "labor": {"farm": "3"}, "priority": "10", "source_ref": "scenario_assumption:recipe:wd-grain", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:fd-grain", "entity_id": "entity:agricultural-shelter-zones", "settlement_id": "forgedeep", "kind": "agriculture", "sector": "agriculture", "max_batches": "12", "desired_batches": "10", "inputs": {}, "outputs": {"grain": "20"}, "labor": {"farm": "3"}, "priority": "10", "source_ref": "scenario_assumption:recipe:fd-grain", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:blacklake-fish", "entity_id": "entity:blacklake-aquaculture", "settlement_id": "neverwinter", "kind": "aquaculture", "sector": "aquaculture", "max_batches": "25", "desired_batches": "20", "inputs": {"grain": "2"}, "outputs": {"fish": "8"}, "labor": {"aquaculture": "5"}, "priority": "20", "source_ref": "scenario_assumption:recipe:blacklake-fish", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:clay-extraction", "entity_id": "entity:neverwinter-clay-quarries", "settlement_id": "neverwinter", "kind": "extraction", "sector": "mining", "max_batches": "15", "desired_batches": "12", "inputs": {}, "outputs": {"clay": "100"}, "labor": {"quarry": "10"}, "priority": "20", "source_ref": "scenario_assumption:recipe:clay-extraction", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:brickworks", "entity_id": "entity:baen-brickworks", "settlement_id": "neverwinter", "kind": "manufacturing", "sector": "manufacturing", "max_batches": "40", "desired_batches": "30", "inputs": {"clay": "20"}, "outputs": {"bricks": "1000"}, "labor": {"craft": "8"}, "priority": "30", "source_ref": "scenario_assumption:recipe:brickworks", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:baen-construction", "entity_id": "entity:baen-construction-hq", "settlement_id": "neverwinter", "kind": "construction", "sector": "construction", "max_batches": "15", "desired_batches": "10", "inputs": {"bricks": "1000", "timber": "2"}, "outputs": {"construction_work": "1"}, "labor": {"construction": "20"}, "priority": "40", "source_ref": "scenario_assumption:recipe:baen-construction", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:tissage-cloth", "entity_id": "entity:institut-tissage-arcanique", "settlement_id": "waterdeep", "kind": "manufacturing", "sector": "manufacturing", "max_batches": "30", "desired_batches": "25", "inputs": {"wool": "10", "dye": "1"}, "outputs": {"cloth": "8"}, "labor": {"craft": "10"}, "priority": "30", "source_ref": "scenario_assumption:recipe:tissage-cloth", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:waterdeep-trade", "entity_id": "entity:waterdeep-trading-office", "settlement_id": "waterdeep", "kind": "service", "sector": "trade", "max_batches": "20", "desired_batches": "15", "inputs": {}, "outputs": {"trade_service": "10"}, "labor": {"clerk": "2"}, "priority": "50", "source_ref": "scenario_assumption:recipe:waterdeep-trade", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:dock-warehousing", "entity_id": "entity:dock-ward-warehouse", "settlement_id": "waterdeep", "kind": "service", "sector": "trade", "max_batches": "15", "desired_batches": "10", "inputs": {}, "outputs": {"trade_service": "20"}, "labor": {"porter": "3"}, "priority": "50", "source_ref": "scenario_assumption:recipe:dock-warehousing", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:ncf-neverwinter", "entity_id": "entity:ncf-neverwinter", "settlement_id": "neverwinter", "kind": "service", "sector": "banking", "max_batches": "12", "desired_batches": "10", "inputs": {}, "outputs": {"banking_service": "10"}, "labor": {"banking": "3"}, "priority": "50", "source_ref": "scenario_assumption:recipe:ncf-neverwinter", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:ncf-waterdeep", "entity_id": "entity:ncf-waterdeep", "settlement_id": "waterdeep", "kind": "service", "sector": "banking", "max_batches": "12", "desired_batches": "10", "inputs": {}, "outputs": {"banking_service": "10"}, "labor": {"banking": "3"}, "priority": "50", "source_ref": "scenario_assumption:recipe:ncf-waterdeep", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:road-carriage", "entity_id": "entity:arterial-road-network", "settlement_id": "neverwinter", "kind": "service", "sector": "infrastructure", "max_batches": "30", "desired_batches": "20", "inputs": {}, "outputs": {"transport_service": "10"}, "labor": {"road_worker": "5"}, "priority": "50", "source_ref": "scenario_assumption:recipe:road-carriage", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:shimmerdeep-bauxite", "entity_id": "entity:shimmerdeep-cradle", "settlement_id": "forgedeep", "kind": "extraction", "sector": "mining", "max_batches": "12", "desired_batches": "10", "inputs": {}, "outputs": {"bauxite": "50"}, "labor": {"miner": "15"}, "priority": "20", "source_ref": "scenario_assumption:recipe:shimmerdeep-bauxite", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:silversheen-aluminum", "entity_id": "entity:silversheen-trading", "settlement_id": "forgedeep", "kind": "manufacturing", "sector": "manufacturing", "max_batches": "20", "desired_batches": "15", "inputs": {"bauxite": "20"}, "outputs": {"aluminum": "10"}, "labor": {"craft": "10"}, "priority": "30", "source_ref": "scenario_assumption:recipe:silversheen-aluminum", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:stonefire-ceramics", "entity_id": "entity:stonefire-ceramics", "settlement_id": "forgedeep", "kind": "manufacturing", "sector": "manufacturing", "max_batches": "15", "desired_batches": "10", "inputs": {"clay": "10"}, "outputs": {"ceramics": "20"}, "labor": {"craft": "8"}, "priority": "30", "source_ref": "scenario_assumption:recipe:stonefire-ceramics", "authority": "scenario_assumption", "canonical": false},
+    {"id": "recipe:formicorps-infrastructure", "entity_id": "entity:formicorps", "settlement_id": "forgedeep", "kind": "construction", "sector": "construction", "max_batches": "12", "desired_batches": "10", "inputs": {"aluminum": "5", "ceramics": "10"}, "outputs": {"infrastructure_work": "1"}, "labor": {"construction": "20"}, "priority": "40", "source_ref": "scenario_assumption:recipe:formicorps-infrastructure", "authority": "scenario_assumption", "canonical": false}
+  ],
+  "routes": [
+    {"id": "route:nw-to-wd-road", "origin": "neverwinter", "destination": "waterdeep", "carrier_id": "entity:arterial-road-network", "toll_recipient_id": "treasury:waterdeep", "commodities": ["grain", "fish", "clay", "bricks", "timber", "construction_work", "banking_service", "transport_service"], "capacity": "600", "travel_months": "1", "spoilage_rate": "0.03", "carrier_cost_per_unit": "0.20", "toll_per_unit": "0.05", "authority": "scenario_assumption", "canonical": false},
+    {"id": "route:wd-to-nw-road", "origin": "waterdeep", "destination": "neverwinter", "carrier_id": "entity:arterial-road-network", "toll_recipient_id": "treasury:neverwinter", "commodities": ["grain", "fish", "wool", "dye", "cloth", "trade_service", "banking_service"], "capacity": "500", "travel_months": "1", "spoilage_rate": "0.03", "carrier_cost_per_unit": "0.20", "toll_per_unit": "0.05", "authority": "scenario_assumption", "canonical": false},
+    {"id": "route:wd-to-fd-deep-road", "origin": "waterdeep", "destination": "forgedeep", "carrier_id": "entity:arterial-road-network", "toll_recipient_id": "treasury:forgedeep", "commodities": ["grain", "fish", "cloth", "trade_service", "banking_service", "timber"], "capacity": "350", "travel_months": "2", "spoilage_rate": "0.05", "carrier_cost_per_unit": "0.45", "toll_per_unit": "0.10", "authority": "scenario_assumption", "canonical": false},
+    {"id": "route:fd-to-wd-deep-road", "origin": "forgedeep", "destination": "waterdeep", "carrier_id": "entity:arterial-road-network", "toll_recipient_id": "treasury:waterdeep", "commodities": ["bauxite", "aluminum", "ceramics", "infrastructure_work"], "capacity": "300", "travel_months": "2", "spoilage_rate": "0.02", "carrier_cost_per_unit": "0.50", "toll_per_unit": "0.12", "authority": "scenario_assumption", "canonical": false},
+    {"id": "route:nw-to-fd-north-road", "origin": "neverwinter", "destination": "forgedeep", "carrier_id": "entity:arterial-road-network", "toll_recipient_id": "treasury:forgedeep", "commodities": ["grain", "fish", "clay", "bricks", "timber", "construction_work"], "capacity": "280", "travel_months": "2", "spoilage_rate": "0.06", "carrier_cost_per_unit": "0.55", "toll_per_unit": "0.12", "authority": "scenario_assumption", "canonical": false},
+    {"id": "route:fd-to-nw-north-road", "origin": "forgedeep", "destination": "neverwinter", "carrier_id": "entity:arterial-road-network", "toll_recipient_id": "treasury:neverwinter", "commodities": ["bauxite", "aluminum", "ceramics", "infrastructure_work"], "capacity": "260", "travel_months": "1", "spoilage_rate": "0.02", "carrier_cost_per_unit": "0.50", "toll_per_unit": "0.10", "authority": "scenario_assumption", "canonical": false}
+  ],
+  "tenures": [
+    {"id": "tenure:nw-shelter-land", "settlement_id": "neverwinter", "tenant_id": "entity:agricultural-shelter-zones", "landlord_id": "entity:baen-real-estate", "church_id": "church:neverwinter", "treasury_id": "treasury:neverwinter", "acres": "400", "rent_per_acre": "0.20", "feudal_due_rate": "0.05", "tithe_rate": "0.10", "tax_rate": "0.04", "authority": "scenario_assumption", "canonical": false},
+    {"id": "tenure:wd-shelter-land", "settlement_id": "waterdeep", "tenant_id": "entity:agricultural-shelter-zones", "landlord_id": "entity:baen-real-estate", "church_id": "church:waterdeep", "treasury_id": "treasury:waterdeep", "acres": "1500", "rent_per_acre": "0.20", "feudal_due_rate": "0.04", "tithe_rate": "0.10", "tax_rate": "0.05", "authority": "scenario_assumption", "canonical": false},
+    {"id": "tenure:fd-shelter-land", "settlement_id": "forgedeep", "tenant_id": "entity:agricultural-shelter-zones", "landlord_id": "entity:baen-real-estate", "church_id": "church:forgedeep", "treasury_id": "treasury:forgedeep", "acres": "300", "rent_per_acre": "0.25", "feudal_due_rate": "0.06", "tithe_rate": "0.10", "tax_rate": "0.03", "authority": "scenario_assumption", "canonical": false}
+  ],
+  "shocks": [
+    {"id": "shock:weather:wetter-stores", "type": "weather", "probability": "1", "settlement_id": "neverwinter", "effects": {"spoilage_rate_delta": "0.01", "labor_multiplier": "0.95"}, "source_ref": "scenario_assumption:shock:weather", "months": [1], "authority": "scenario_assumption", "canonical": false},
+    {"id": "shock:harvest:poor-nw-yield", "type": "harvest", "probability": "1", "settlement_id": "neverwinter", "sector": "agriculture", "effects": {"production_multiplier": "0.85"}, "source_ref": "scenario_assumption:shock:harvest", "months": [1], "authority": "scenario_assumption", "canonical": false},
+    {"id": "shock:war:waterdeep-road-patrols", "type": "war", "probability": "1", "settlement_id": "waterdeep", "effects": {"route_capacity_multiplier": "0.80"}, "source_ref": "scenario_assumption:shock:war", "months": [2], "authority": "scenario_assumption", "canonical": false},
+    {"id": "shock:monster:forgedeep-raids", "type": "monster", "probability": "1", "settlement_id": "forgedeep", "effects": {"route_capacity_multiplier": "0.70", "migration_push": "0.02"}, "source_ref": "scenario_assumption:shock:monster", "months": [3], "authority": "scenario_assumption", "canonical": false},
+    {"id": "shock:political:waterdeep-market-rumor", "type": "political", "probability": "1", "settlement_id": "waterdeep", "effects": {"price_pressure": "0.05"}, "source_ref": "scenario_assumption:shock:political", "months": [2], "authority": "scenario_assumption", "canonical": false},
+    {"id": "shock:infrastructure:northern-road-repair", "type": "infrastructure", "probability": "1", "settlement_id": "neverwinter", "effects": {"route_capacity_multiplier": "1.15"}, "source_ref": "scenario_assumption:shock:infrastructure", "months": [3], "authority": "scenario_assumption", "canonical": false},
+    {"id": "shock:policy:emergency-levy-credit-review", "type": "policy", "probability": "1", "effects": {"tax_rate_delta": "0.02", "default_risk_delta": "1"}, "source_ref": "scenario_assumption:shock:policy", "months": [3], "authority": "scenario_assumption", "canonical": false}
+  ],
+  "migration_links": [
+    {"id": "migration:fd-to-nw-commoners", "origin": "forgedeep", "destination": "neverwinter", "class_id": "commoners", "occupation": "road_worker", "shortage_weight": "0.04", "wage_weight": "0.01", "friction": "0.001", "max_rate": "0.03", "authority": "scenario_assumption", "canonical": false},
+    {"id": "migration:nw-to-wd-artisans", "origin": "neverwinter", "destination": "waterdeep", "class_id": "artisans", "occupation": "craft", "shortage_weight": "0.03", "wage_weight": "0.01", "friction": "0.004", "max_rate": "0.02", "authority": "scenario_assumption", "canonical": false},
+    {"id": "migration:wd-to-fd-burghers", "origin": "waterdeep", "destination": "forgedeep", "class_id": "burghers", "occupation": "clerk", "shortage_weight": "0.02", "wage_weight": "0.01", "friction": "0.006", "max_rate": "0.015", "authority": "scenario_assumption", "canonical": false}
+  ],
+  "credit_requests": [
+    {"loan_id": "loan:brickworks-working-capital", "month": "1", "bank_id": "entity:ncf-neverwinter", "borrower_id": "entity:baen-brickworks", "amount": "900", "annual_rate": "0.12", "term_months": "12", "default_after_missed": "1", "collateral_owner_id": "entity:baen-brickworks", "collateral_settlement_id": "neverwinter", "collateral_commodity_id": "bricks", "collateral_quantity": "20000", "collateral_haircut": "0.25", "minimum_collateral_ratio": "1.25", "authority": "scenario_assumption", "canonical": false},
+    {"loan_id": "loan:waterdeep-trade-credit", "month": "2", "bank_id": "entity:ncf-waterdeep", "borrower_id": "entity:waterdeep-trading-office", "amount": "600", "annual_rate": "0.10", "term_months": "6", "default_after_missed": "1", "collateral_owner_id": "entity:waterdeep-trading-office", "collateral_settlement_id": "waterdeep", "collateral_commodity_id": "cloth", "collateral_quantity": "150", "collateral_haircut": "0.20", "minimum_collateral_ratio": "1.25", "authority": "scenario_assumption", "canonical": false}
+  ],
+  "market_demands": [
+    {"id": "demand:construction-bricks", "buyer_id": "entity:baen-construction-hq", "settlement_id": "neverwinter", "commodity_id": "bricks", "quantity": "50000", "purpose": "construction materials", "authority": "scenario_assumption", "canonical": false},
+    {"id": "demand:construction-timber", "buyer_id": "entity:baen-construction-hq", "settlement_id": "neverwinter", "commodity_id": "timber", "quantity": "40", "purpose": "construction materials", "authority": "scenario_assumption", "canonical": false},
+    {"id": "demand:real-estate-construction", "buyer_id": "entity:baen-real-estate", "settlement_id": "neverwinter", "commodity_id": "construction_work", "quantity": "8", "purpose": "housing and estate works", "authority": "scenario_assumption", "canonical": false},
+    {"id": "demand:real-estate-banking", "buyer_id": "entity:baen-real-estate", "settlement_id": "neverwinter", "commodity_id": "banking_service", "quantity": "30", "purpose": "estate finance services", "authority": "scenario_assumption", "canonical": false},
+    {"id": "demand:dock-cloth", "buyer_id": "entity:dock-ward-warehouse", "settlement_id": "waterdeep", "commodity_id": "cloth", "quantity": "100", "purpose": "warehouse wholesale stock", "authority": "scenario_assumption", "canonical": false},
+    {"id": "demand:dock-trade-service", "buyer_id": "entity:dock-ward-warehouse", "settlement_id": "waterdeep", "commodity_id": "trade_service", "quantity": "120", "purpose": "dockside brokerage and warehousing", "authority": "scenario_assumption", "canonical": false},
+    {"id": "demand:stonefire-clay", "buyer_id": "entity:stonefire-ceramics", "settlement_id": "forgedeep", "commodity_id": "clay", "quantity": "180", "purpose": "ceramic feedstock", "authority": "scenario_assumption", "canonical": false},
+    {"id": "demand:formicorps-aluminum", "buyer_id": "entity:formicorps", "settlement_id": "forgedeep", "commodity_id": "aluminum", "quantity": "80", "purpose": "underground construction material", "authority": "scenario_assumption", "canonical": false},
+    {"id": "demand:formicorps-ceramics", "buyer_id": "entity:formicorps", "settlement_id": "forgedeep", "commodity_id": "ceramics", "quantity": "120", "purpose": "underground construction material", "authority": "scenario_assumption", "canonical": false},
+    {"id": "demand:waterdeep-bauxite", "buyer_id": "entity:waterdeep-trading-office", "settlement_id": "waterdeep", "commodity_id": "bauxite", "quantity": "100", "purpose": "metals wholesale import", "authority": "scenario_assumption", "canonical": false}
+  ],
+  "opening_state": {
+    "accounts": [
+      {"entity_id": "entity:agricultural-shelter-zones", "cash": "10000", "bank_id": "entity:ncf-neverwinter", "deposit": "30000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:arterial-road-network", "cash": "5000", "bank_id": "entity:ncf-neverwinter", "deposit": "20000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:baen-brickworks", "cash": "3000", "bank_id": "entity:ncf-neverwinter", "deposit": "5000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:baen-construction-hq", "cash": "5000", "bank_id": "entity:ncf-neverwinter", "deposit": "12000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:baen-real-estate", "cash": "10000", "bank_id": "entity:ncf-waterdeep", "deposit": "20000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:blacklake-aquaculture", "cash": "3000", "bank_id": "entity:ncf-neverwinter", "deposit": "8000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:dock-ward-warehouse", "cash": "3000", "bank_id": "entity:ncf-waterdeep", "deposit": "6000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:formicorps", "cash": "5000", "bank_id": "entity:ncf-waterdeep", "deposit": "20000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:institut-tissage-arcanique", "cash": "5000", "bank_id": "entity:ncf-waterdeep", "deposit": "20000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:neverwinter-clay-quarries", "cash": "2000", "bank_id": "entity:ncf-neverwinter", "deposit": "4000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:ncf-neverwinter", "cash": "10000", "bank_id": null, "deposit": "0", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:ncf-waterdeep", "cash": "10000", "bank_id": null, "deposit": "0", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:shimmerdeep-cradle", "cash": "3000", "bank_id": "entity:ncf-waterdeep", "deposit": "5000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:silversheen-trading", "cash": "6000", "bank_id": "entity:ncf-waterdeep", "deposit": "20000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:stonefire-ceramics", "cash": "3000", "bank_id": "entity:ncf-waterdeep", "deposit": "7000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "entity:waterdeep-trading-office", "cash": "5000", "bank_id": "entity:ncf-waterdeep", "deposit": "12000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "church:neverwinter", "cash": "0", "bank_id": "entity:ncf-neverwinter", "deposit": "0", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "church:waterdeep", "cash": "0", "bank_id": "entity:ncf-waterdeep", "deposit": "0", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "church:forgedeep", "cash": "0", "bank_id": "entity:ncf-waterdeep", "deposit": "0", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "treasury:neverwinter", "cash": "0", "bank_id": "entity:ncf-neverwinter", "deposit": "0", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "treasury:waterdeep", "cash": "0", "bank_id": "entity:ncf-waterdeep", "deposit": "0", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "treasury:forgedeep", "cash": "0", "bank_id": "entity:ncf-waterdeep", "deposit": "0", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:neverwinter:commoners", "cash": "1000", "bank_id": "entity:ncf-neverwinter", "deposit": "25000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:neverwinter:artisans", "cash": "1000", "bank_id": "entity:ncf-neverwinter", "deposit": "15000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:neverwinter:burghers", "cash": "500", "bank_id": "entity:ncf-neverwinter", "deposit": "10000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:neverwinter:elites", "cash": "500", "bank_id": "entity:ncf-neverwinter", "deposit": "5000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:waterdeep:commoners", "cash": "1000", "bank_id": "entity:ncf-waterdeep", "deposit": "100000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:waterdeep:artisans", "cash": "1000", "bank_id": "entity:ncf-waterdeep", "deposit": "60000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:waterdeep:burghers", "cash": "1000", "bank_id": "entity:ncf-waterdeep", "deposit": "30000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:waterdeep:elites", "cash": "1000", "bank_id": "entity:ncf-waterdeep", "deposit": "20000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:forgedeep:commoners", "cash": "500", "bank_id": "entity:ncf-waterdeep", "deposit": "15000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:forgedeep:artisans", "cash": "500", "bank_id": "entity:ncf-waterdeep", "deposit": "12000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:forgedeep:burghers", "cash": "500", "bank_id": "entity:ncf-waterdeep", "deposit": "8000", "authority": "scenario_assumption", "canonical": false},
+      {"entity_id": "households:forgedeep:elites", "cash": "500", "bank_id": "entity:ncf-waterdeep", "deposit": "6000", "authority": "scenario_assumption", "canonical": false}
+    ],
+    "inventories": [
+      {"owner_id": "entity:agricultural-shelter-zones", "settlement_id": "neverwinter", "commodity_id": "grain", "quantity": "50", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:agricultural-shelter-zones", "settlement_id": "waterdeep", "commodity_id": "grain", "quantity": "300", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:agricultural-shelter-zones", "settlement_id": "forgedeep", "commodity_id": "grain", "quantity": "100", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:blacklake-aquaculture", "settlement_id": "neverwinter", "commodity_id": "grain", "quantity": "100", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:blacklake-aquaculture", "settlement_id": "neverwinter", "commodity_id": "fish", "quantity": "80", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:neverwinter-clay-quarries", "settlement_id": "neverwinter", "commodity_id": "clay", "quantity": "500", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:baen-brickworks", "settlement_id": "neverwinter", "commodity_id": "clay", "quantity": "800", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:baen-brickworks", "settlement_id": "neverwinter", "commodity_id": "bricks", "quantity": "20000", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:baen-construction-hq", "settlement_id": "neverwinter", "commodity_id": "bricks", "quantity": "10000", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:baen-construction-hq", "settlement_id": "neverwinter", "commodity_id": "timber", "quantity": "100", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:baen-construction-hq", "settlement_id": "neverwinter", "commodity_id": "construction_work", "quantity": "5", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:institut-tissage-arcanique", "settlement_id": "waterdeep", "commodity_id": "wool", "quantity": "400", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:institut-tissage-arcanique", "settlement_id": "waterdeep", "commodity_id": "dye", "quantity": "50", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:institut-tissage-arcanique", "settlement_id": "waterdeep", "commodity_id": "cloth", "quantity": "80", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:waterdeep-trading-office", "settlement_id": "waterdeep", "commodity_id": "grain", "quantity": "100", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:waterdeep-trading-office", "settlement_id": "waterdeep", "commodity_id": "fish", "quantity": "60", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:waterdeep-trading-office", "settlement_id": "waterdeep", "commodity_id": "cloth", "quantity": "300", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:waterdeep-trading-office", "settlement_id": "waterdeep", "commodity_id": "trade_service", "quantity": "50", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:dock-ward-warehouse", "settlement_id": "waterdeep", "commodity_id": "grain", "quantity": "100", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:dock-ward-warehouse", "settlement_id": "waterdeep", "commodity_id": "fish", "quantity": "30", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:dock-ward-warehouse", "settlement_id": "waterdeep", "commodity_id": "trade_service", "quantity": "50", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:shimmerdeep-cradle", "settlement_id": "forgedeep", "commodity_id": "bauxite", "quantity": "150", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:silversheen-trading", "settlement_id": "forgedeep", "commodity_id": "bauxite", "quantity": "400", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:silversheen-trading", "settlement_id": "forgedeep", "commodity_id": "aluminum", "quantity": "50", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:stonefire-ceramics", "settlement_id": "forgedeep", "commodity_id": "clay", "quantity": "200", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:stonefire-ceramics", "settlement_id": "forgedeep", "commodity_id": "ceramics", "quantity": "80", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:formicorps", "settlement_id": "forgedeep", "commodity_id": "aluminum", "quantity": "60", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:formicorps", "settlement_id": "forgedeep", "commodity_id": "ceramics", "quantity": "100", "authority": "scenario_assumption", "canonical": false},
+      {"owner_id": "entity:formicorps", "settlement_id": "forgedeep", "commodity_id": "infrastructure_work", "quantity": "5", "authority": "scenario_assumption", "canonical": false}
+    ],
+    "labor": [
+      {"settlement_id": "neverwinter", "occupation": "farm", "class_id": "commoners", "household_account_id": "households:neverwinter:commoners", "workers": "100", "wage": "0.30", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "neverwinter", "occupation": "aquaculture", "class_id": "commoners", "household_account_id": "households:neverwinter:commoners", "workers": "30", "wage": "0.40", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "neverwinter", "occupation": "quarry", "class_id": "commoners", "household_account_id": "households:neverwinter:commoners", "workers": "40", "wage": "0.35", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "neverwinter", "occupation": "craft", "class_id": "artisans", "household_account_id": "households:neverwinter:artisans", "workers": "50", "wage": "0.45", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "neverwinter", "occupation": "construction", "class_id": "artisans", "household_account_id": "households:neverwinter:artisans", "workers": "150", "wage": "0.50", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "neverwinter", "occupation": "banking", "class_id": "burghers", "household_account_id": "households:neverwinter:burghers", "workers": "35", "wage": "0.65", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "neverwinter", "occupation": "road_worker", "class_id": "commoners", "household_account_id": "households:neverwinter:commoners", "workers": "150", "wage": "0.40", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "neverwinter", "occupation": "clerk", "class_id": "burghers", "household_account_id": "households:neverwinter:burghers", "workers": "20", "wage": "0.55", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "waterdeep", "occupation": "farm", "class_id": "commoners", "household_account_id": "households:waterdeep:commoners", "workers": "250", "wage": "0.35", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "waterdeep", "occupation": "craft", "class_id": "artisans", "household_account_id": "households:waterdeep:artisans", "workers": "120", "wage": "0.60", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "waterdeep", "occupation": "clerk", "class_id": "burghers", "household_account_id": "households:waterdeep:burghers", "workers": "40", "wage": "0.55", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "waterdeep", "occupation": "porter", "class_id": "commoners", "household_account_id": "households:waterdeep:commoners", "workers": "40", "wage": "0.40", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "waterdeep", "occupation": "banking", "class_id": "burghers", "household_account_id": "households:waterdeep:burghers", "workers": "20", "wage": "0.70", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "waterdeep", "occupation": "road_worker", "class_id": "commoners", "household_account_id": "households:waterdeep:commoners", "workers": "100", "wage": "0.45", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "waterdeep", "occupation": "construction", "class_id": "artisans", "household_account_id": "households:waterdeep:artisans", "workers": "60", "wage": "0.55", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "forgedeep", "occupation": "farm", "class_id": "commoners", "household_account_id": "households:forgedeep:commoners", "workers": "50", "wage": "0.35", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "forgedeep", "occupation": "miner", "class_id": "commoners", "household_account_id": "households:forgedeep:commoners", "workers": "300", "wage": "0.50", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "forgedeep", "occupation": "craft", "class_id": "artisans", "household_account_id": "households:forgedeep:artisans", "workers": "140", "wage": "0.65", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "forgedeep", "occupation": "construction", "class_id": "artisans", "household_account_id": "households:forgedeep:artisans", "workers": "200", "wage": "0.60", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "forgedeep", "occupation": "road_worker", "class_id": "commoners", "household_account_id": "households:forgedeep:commoners", "workers": "80", "wage": "0.42", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "forgedeep", "occupation": "clerk", "class_id": "burghers", "household_account_id": "households:forgedeep:burghers", "workers": "15", "wage": "0.60", "authority": "scenario_assumption", "canonical": false}
+    ],
+    "banks": [
+      {"bank_id": "entity:ncf-neverwinter", "reserves": "100000", "reserve_ratio": "0.20", "equity": "25000", "other_assets": "59000", "other_liabilities": "0", "other_assets_label": "unclassified opening balancing assets", "authority": "scenario_assumption", "canonical": false},
+      {"bank_id": "entity:ncf-waterdeep", "reserves": "200000", "reserve_ratio": "0.20", "equity": "15000", "other_assets": "175000", "other_liabilities": "0", "other_assets_label": "unclassified opening balancing assets", "authority": "scenario_assumption", "canonical": false}
+    ],
+    "loans": [
+      {"loan_id": "loan:shimmerdeep-opening-capital", "bank_id": "entity:ncf-waterdeep", "borrower_id": "entity:shimmerdeep-cradle", "principal": "1000", "annual_rate": "0.12", "scheduled_principal": "500", "remaining_months": "2", "origin_month": "0", "missed_payments": "0", "default_after_missed": "1", "status": "performing", "collateral_owner_id": "entity:shimmerdeep-cradle", "collateral_settlement_id": "forgedeep", "collateral_commodity_id": "bauxite", "collateral_quantity": "100", "collateral_haircut": "0.25", "authority": "scenario_assumption", "canonical": false}
+    ],
+    "prices": [
+      {"settlement_id": "neverwinter", "commodity_id": "grain", "price": "9", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "neverwinter", "commodity_id": "fish", "price": "22", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "neverwinter", "commodity_id": "bricks", "price": "0.08", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "waterdeep", "commodity_id": "grain", "price": "12", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "waterdeep", "commodity_id": "fish", "price": "30", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "waterdeep", "commodity_id": "cloth", "price": "8", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "forgedeep", "commodity_id": "grain", "price": "14", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "forgedeep", "commodity_id": "fish", "price": "35", "authority": "scenario_assumption", "canonical": false},
+      {"settlement_id": "forgedeep", "commodity_id": "aluminum", "price": "6", "authority": "scenario_assumption", "canonical": false}
+    ],
+    "in_transit": [
+      {"shipment_id": "shipment:opening:grain-to-waterdeep", "trade_id": "trade:opening:grain-to-waterdeep", "route_id": "route:nw-to-wd-road", "seller_id": "entity:agricultural-shelter-zones", "buyer_id": "households:waterdeep:commoners", "carrier_id": "entity:arterial-road-network", "toll_recipient_id": "treasury:waterdeep", "origin": "neverwinter", "destination": "waterdeep", "commodity_id": "grain", "dispatched_quantity": "52", "quantity": "50", "route_loss": "2", "goods_value": "500", "carrier_fee": "25", "toll": "5", "departure_month": "0", "arrival_month": "1", "status": "in-transit", "purpose": "opening household grain shipment", "authority": "scenario_assumption", "canonical": false}
+    ],
+    "arrears": []
+  }
+}

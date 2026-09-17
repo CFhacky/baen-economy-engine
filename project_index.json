@@ -1,0 +1,16 @@
+{
+  "name": "Baen Economy Engine",
+  "section": "active",
+  "order": 47,
+  "updated": "2026-08-29",
+  "lines": [
+    "State: IN PROGRESS / non-canonical. A runnable regional whole-economy loop that commits one month per launch, separate from and not replacing the source-grounded Food-Sector Operator. Advances no canonical campaign time and posts to no canonical ledger.",
+    "Purpose, design and how to open it: `projects/in-progress/baen-economy-engine/README.md`",
+    "Whole-economy loop: `projects/in-progress/baen-economy-engine/docs/WHOLE_ECONOMY_GUIDE.md`",
+    "Acceptance evidence and validation: `projects/in-progress/baen-economy-engine/ACCEPTANCE.md`, `projects/in-progress/baen-economy-engine/VALIDATION.md`",
+    "Source and tests: `projects/in-progress/baen-economy-engine/src/`, `projects/in-progress/baen-economy-engine/tests/`",
+    "Third-party attribution: `projects/in-progress/baen-economy-engine/THIRD_PARTY_NOTICES.md` (MIT, Brunnfeld available-to-promise method, pinned commit)",
+    "Backlog and declared depth gaps: `projects/in-progress/baen-economy-engine/BACKLOG.md`",
+    "Boundary: quantities without accepted campaign authority are marked scenario_assumption and canonical:false; Notion writes are zero."
+  ]
+}

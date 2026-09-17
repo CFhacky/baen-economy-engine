@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "purpose": "Guard configuration for the Baen Economy Engine, read by validation/guards/run_guards.py. This project has no ratified-dimension register, so locked_dimensions is null. external_records points at the allowlist of things this project's records name that are not repository files. fixtures, reports and validation are excluded from record scanning: they hold test fixtures, generated run reports and this configuration, not campaign records.",
+  "locked_dimensions": null,
+  "external_records": "validation/external_records.json",
+  "exclude_dirs": ["fixtures", "reports", "validation"]
+}

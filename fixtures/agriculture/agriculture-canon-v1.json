@@ -1,0 +1,823 @@
+{
+  "schema": "tnp.economy.agriculture-canon/1",
+  "retrieved_on": "2026-08-29",
+  "notion_access": "read_only",
+  "campaign_focus": "Arik live freeze at Day 7 Hammer 1495 with separately dated forward and later reference layers",
+  "warning": "Observed operations, ratified campaign state, technical design specifications, projections, and unconfirmed claims are separate authority classes. No class may be silently promoted into another.",
+  "safety": {
+    "notion_writes": 0,
+    "canonical_ledger_postings": 0,
+    "dice_rolled": 0,
+    "campaign_time_advanced": false
+  },
+  "authority_order": [
+    "ratified_campaign_state",
+    "observed_operating_state",
+    "technical_design",
+    "projection",
+    "unconfirmed"
+  ],
+  "sources": [
+    {
+      "source_id": "registry",
+      "title": "Baen Empire - Business Registry",
+      "url": "https://app.notion.com/p/8ba47f60efe14c839fe14561543e07d1",
+      "page_id": "8ba47f60-efe1-4c83-9fe1-4561543e07d1",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "shelters",
+      "title": "Agricultural Shelter Zones",
+      "url": "https://app.notion.com/p/321e821484b081e09660eacd14973b2f",
+      "page_id": "321e8214-84b0-81e0-9660-eacd14973b2f",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "blacklake",
+      "title": "Blacklake Aquaculture (7 pools)",
+      "url": "https://app.notion.com/p/321e821484b08112ab9ecd6f5eba18e8",
+      "page_id": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "converted-quarry",
+      "title": "Converted Quarry Aquaculture (5 sites)",
+      "url": "https://app.notion.com/p/321e821484b0811098cfebc200f16c7a",
+      "page_id": "321e8214-84b0-8110-98cf-ebc200f16c7a",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "bg-pools",
+      "title": "BG Aquaculture Pools (3 sites)",
+      "url": "https://app.notion.com/p/321e821484b08116a104c6217060c1c5",
+      "page_id": "321e8214-84b0-8116-a104-c6217060c1c5",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "reservoir-fisheries",
+      "title": "Reservoir Fisheries",
+      "url": "https://app.notion.com/p/321e821484b081f6a74cd6ee2b88a08e",
+      "page_id": "321e8214-84b0-81f6-a74c-d6ee2b88a08e",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "orchard-chapel",
+      "title": "Orchard Chapel",
+      "url": "https://app.notion.com/p/34ce821484b08130aedbf6d099d79bfb",
+      "page_id": "34ce8214-84b0-8130-aedb-f6d099d79bfb",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "orchard-chapel-location",
+      "title": "Orchard Chapel — Baen-Deneir Educational Compound",
+      "url": "https://app.notion.com/p/332e821484b081268f9bd7f0c40c8ea9",
+      "page_id": "332e8214-84b0-8126-8f9b-d7f0c40c8ea9",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "lobster-king-registry",
+      "title": "Lobster King Operations (Baen-Allied)",
+      "url": "https://app.notion.com/p/321e821484b081899107d6fd75176754",
+      "page_id": "321e8214-84b0-8189-9107-d6fd75176754",
+      "authority_class": "unconfirmed"
+    },
+    {
+      "source_id": "lobster-king-current",
+      "title": "The Lobster King",
+      "url": "https://app.notion.com/p/32be821484b081eeac6ec038fd0819f9",
+      "page_id": "32be8214-84b0-81ee-ac6e-c038fd0819f9",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "quarry-network",
+      "title": "Baen Empire Complete Quarry Network — All Stone & Mineral Operations",
+      "url": "https://app.notion.com/p/32ce821484b081c9b718f051b17ac057",
+      "page_id": "32ce8214-84b0-81c9-b718-f051b17ac057",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "nmwc-complete",
+      "title": "Neverwinter Municipal Water Corporation — Complete Infrastructure Specifications",
+      "url": "https://app.notion.com/p/32ce821484b0817eabfde8f384173179",
+      "page_id": "32ce8214-84b0-817e-abfd-e8f384173179",
+      "authority_class": "technical_design"
+    },
+    {
+      "source_id": "water-empire",
+      "title": "Baen Water Empire — Consolidated Infrastructure",
+      "url": "https://app.notion.com/p/32be821484b081b88f37d32299e00f60",
+      "page_id": "32be8214-84b0-81b8-8f37-d32299e00f60",
+      "authority_class": "projection"
+    },
+    {
+      "source_id": "aquaculture-technical",
+      "title": "Aquaculture Technical Specifications — Neverwinter's Warmth",
+      "url": "https://app.notion.com/p/32be821484b0810f8830e08af7982ae8",
+      "page_id": "32be8214-84b0-810f-8830-e08af7982ae8",
+      "authority_class": "technical_design"
+    },
+    {
+      "source_id": "arik-live-freeze",
+      "title": "Arik — Avernus, Day 7 Hammer 1495 DR",
+      "url": "https://app.notion.com/p/3c4e821484b081139b27d87512bc22d9",
+      "page_id": "3c4e8214-84b0-8113-9b27-d87512bc22d9",
+      "authority_class": "ratified_campaign_state"
+    },
+    {
+      "source_id": "laden",
+      "title": "Operation Laden Table — Northern Diplomatic & Procurement Mission",
+      "url": "https://app.notion.com/p/396e821484b0816c9dd3e88e17fc70f1",
+      "page_id": "396e8214-84b0-816c-9dd3-e88e17fc70f1",
+      "authority_class": "ratified_campaign_state"
+    },
+    {
+      "source_id": "longsaddle",
+      "title": "Longsaddle Valley",
+      "url": "https://app.notion.com/p/348e821484b081a68349ecdc1f0efef8",
+      "page_id": "348e8214-84b0-81a6-8349-ecdc1f0efef8",
+      "authority_class": "ratified_campaign_state"
+    },
+    {
+      "source_id": "ravencrest",
+      "title": "Ravencrest Estate (Surface)",
+      "url": "https://app.notion.com/p/340e821484b081a38bd6fe7df84566de",
+      "page_id": "340e8214-84b0-81a3-8bd6-fe7df84566de",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "forgedeep",
+      "title": "Forgedeep",
+      "url": "https://app.notion.com/p/2fbe821484b081a1997ed3b747e8c556",
+      "page_id": "2fbe8214-84b0-81a1-997e-d3b747e8c556",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "shimmerdeep-protocols",
+      "title": "Shimmerdeep Protocols",
+      "url": "https://app.notion.com/p/34be821484b08162a029cf544a179a38",
+      "page_id": "34be8214-84b0-8162-a029-cf544a179a38",
+      "authority_class": "ratified_campaign_state"
+    },
+    {
+      "source_id": "wyrmhelm-feeding",
+      "title": "Wyrmhelm Feeding Doctrine & Northern Megafauna Reserve Audit",
+      "url": "https://app.notion.com/p/3a7e821484b081a7a3c7cc2f3ef7f3a9",
+      "page_id": "3a7e8214-84b0-81a7-a3c7-cc2f3ef7f3a9",
+      "authority_class": "ratified_campaign_state"
+    },
+    {
+      "source_id": "glacier-terminus",
+      "title": "Glacier Terminus Complex",
+      "url": "https://app.notion.com/p/361e821484b081549abbff2fba3cddea",
+      "page_id": "361e8214-84b0-8154-9abb-ff2fba3cddea",
+      "authority_class": "projection"
+    },
+    {
+      "source_id": "arterial-roads",
+      "title": "Arterial Road Network",
+      "url": "https://app.notion.com/p/321e821484b081ceb8cefafb60bf5d8c",
+      "page_id": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "hunding-canal",
+      "title": "Hunding Canal — Baen Continental Waterway System",
+      "url": "https://app.notion.com/p/348e821484b081628111fba51071e587",
+      "page_id": "348e8214-84b0-8162-8111-fba51071e587",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "neverwinter-working-docks",
+      "title": "Neverwinter Working Docks",
+      "url": "https://app.notion.com/p/332e821484b081d3bb13f54b12daf00d",
+      "page_id": "332e8214-84b0-81d3-bb13-f54b12daf00d",
+      "authority_class": "observed_operating_state"
+    },
+    {
+      "source_id": "iron-sovereignty",
+      "title": "Iron Sovereignty",
+      "url": "https://app.notion.com/p/2fbe821484b0812e884ccc3815fe582f",
+      "page_id": "2fbe8214-84b0-812e-884c-cc3815fe582f",
+      "authority_class": "observed_operating_state"
+    }
+  ],
+  "registry_entities": [
+    {
+      "entity_id": "agricultural-shelter-zones",
+      "name": "Agricultural Shelter Zones",
+      "sector": "Agriculture",
+      "status": "Operational",
+      "as_of": "Eleint 20, 1494",
+      "employees": 8,
+      "monthly_revenue_gp": "1500",
+      "monthly_cost_gp": "1050",
+      "capital_invested_gp": "6000",
+      "source_id": "shelters"
+    },
+    {
+      "entity_id": "orchard-chapel",
+      "name": "Orchard Chapel",
+      "sector": "Agriculture",
+      "status": "Operational",
+      "as_of": "1498 DR",
+      "employees": null,
+      "monthly_revenue_gp": null,
+      "monthly_cost_gp": null,
+      "capital_invested_gp": null,
+      "source_id": "orchard-chapel"
+    },
+    {
+      "entity_id": "blacklake-aquaculture",
+      "name": "Blacklake Aquaculture (7 pools)",
+      "sector": "Aquaculture",
+      "status": "Operational",
+      "as_of": "Eleint 20, 1494",
+      "employees": 15,
+      "monthly_revenue_gp": "7500",
+      "monthly_cost_gp": "5850",
+      "capital_invested_gp": "40000",
+      "source_id": "blacklake"
+    },
+    {
+      "entity_id": "converted-quarry-aquaculture",
+      "name": "Converted Quarry Aquaculture (5 sites)",
+      "sector": "Aquaculture",
+      "status": "Operational",
+      "as_of": "Eleint 20, 1494",
+      "employees": 20,
+      "monthly_revenue_gp": "12500",
+      "monthly_cost_gp": "9750",
+      "capital_invested_gp": "35000",
+      "source_id": "converted-quarry"
+    },
+    {
+      "entity_id": "bg-aquaculture",
+      "name": "BG Aquaculture Pools (3 sites)",
+      "sector": "Aquaculture",
+      "status": "Operational",
+      "as_of": "Eleint 20, 1494",
+      "employees": 12,
+      "monthly_revenue_gp": "3333",
+      "monthly_cost_gp": "2600",
+      "capital_invested_gp": "22000",
+      "source_id": "bg-pools"
+    },
+    {
+      "entity_id": "reservoir-fisheries",
+      "name": "Reservoir Fisheries",
+      "sector": "Aquaculture",
+      "status": "Operational",
+      "as_of": "Eleint 20, 1494",
+      "employees": 8,
+      "monthly_revenue_gp": "1667",
+      "monthly_cost_gp": "1300",
+      "capital_invested_gp": "8000",
+      "source_id": "reservoir-fisheries"
+    },
+    {
+      "entity_id": "lobster-king",
+      "name": "Lobster King Operations (Baen-Allied)",
+      "sector": "Aquaculture",
+      "status": "Unconfirmed",
+      "as_of": "Eleint 20, 1494",
+      "employees": 0,
+      "monthly_revenue_gp": "0",
+      "monthly_cost_gp": "0",
+      "capital_invested_gp": "0",
+      "source_id": "lobster-king-registry"
+    }
+  ],
+  "current_actual_state": {
+    "campaign_date": "Day 7 Hammer 1495 DR, midday Hell-cycle",
+    "live_freeze": true,
+    "advance_authorized": false,
+    "agriculture_month_close_authorized": false,
+    "source_id": "arik-live-freeze"
+  },
+  "forward_k1495_state": {
+    "campaign_date": "late Kythorn 1495 DR",
+    "temporal_class": "ratified_forward_scenario_not_current_actual",
+    "actual_execution_eligible": false,
+    "shelter_zones_total": 8,
+    "shelter_zones_destroyed": 3,
+    "shelter_zones_not_reported_destroyed": 5,
+    "surviving_zones_confirmed_operational": null,
+    "destroyed_zone_ids": null,
+    "longsaddle_population": 11000,
+    "longsaddle_food_position": "net importer",
+    "longsaddle_first_full_planting": "Tarsakh-Mirtul 1495",
+    "longsaddle_k1495_harvestable_output": "0",
+    "longsaddle_first_harvest_window": "Eleint-Marpenoth 1495",
+    "longsaddle_first_harvest_outcome": "unresolved",
+    "first_meaningful_export_surplus": "1496 season",
+    "meat_self_sufficiency": "approximately 1496",
+    "meat_export": "approximately 1497 or later",
+    "grain_procurement_target_tons": {
+      "low": "1200",
+      "high": "1500"
+    },
+    "grain_procured_tons": "0",
+    "meat_and_livestock_budget_gp": {
+      "low": "25000",
+      "high": "40000"
+    },
+    "grain_budget_with_transport_gp": {
+      "low": "65000",
+      "high": "95000"
+    },
+    "execution_rolls_resolved": 0,
+    "transactions_resolved": 0,
+    "source_ids": ["laden", "longsaddle"]
+  },
+  "confirmed_production": {
+    "shelters": {
+      "outputs": ["greenhouse produce", "tomatoes", "year-round tomatoes"],
+      "linked_confirmed_outputs": [
+        {
+          "name": "cold-frame vegetables",
+          "scope": "Longsaddle shelter-zone winter production",
+          "source_id": "longsaddle"
+        }
+      ],
+      "third_greenhouse_yield_vs_expected": {
+        "low": "1.20",
+        "high": "1.20"
+      },
+      "baseline_physical_yield": null,
+      "source_id": "shelters"
+    },
+    "blacklake": {
+      "pool_count": 7,
+      "outputs": ["fish", "freshwater shellfish", "aquatic plants for food and alchemical markets"],
+      "workforce": {
+        "farm_manager": 1,
+        "fish_handlers": 6,
+        "processing_workers": 4,
+        "transport": 2,
+        "security": 2
+      },
+      "source_id": "blacklake"
+    },
+    "converted_quarry": {
+      "site_count": 5,
+      "confirmed_species": ["Tilapia"],
+      "evidence": "The cold-water tilapia are forgiving species for beginners.",
+      "source_id": "converted-quarry"
+    },
+    "bg_pools": {
+      "site_count": 3,
+      "confirmed_outputs": ["fish"],
+      "water_quality_complication": "Canal water quality is affecting yields at all three sites; hexagonal filtration investment is needed.",
+      "source_id": "bg-pools"
+    },
+    "reservoir_fisheries": {
+      "site_count": null,
+      "confirmed_outputs": ["fish", "trout", "salmon"],
+      "operating_specialty": "trout and salmon breeding",
+      "source_ids": ["reservoir-fisheries", "quarry-network"]
+    },
+    "orchard_chapel_1498": {
+      "temporal_class": "later_than_day7_hammer1495",
+      "acreage": "10",
+      "outputs": ["ortanique citrus", "culinary herbs", "medicinal herbs", "communal-kitchen vegetables", "dried fruit", "cider", "preserved goods"],
+      "processing": ["fruit sorting", "drying racks", "cider press", "preserved-goods storage"],
+      "annual_revenue_gp": "5000",
+      "source_ids": ["orchard-chapel", "orchard-chapel-location"]
+    },
+    "lobster_king_later_authority": {
+      "temporal_class": "later_detailed_authority_not_backdated_to_day7_hammer1495",
+      "status": "Active ally",
+      "production_method": "canal-wall lobster traps using city waste runoff as supplemental feed",
+      "workers": 50,
+      "weekly_output_tons": "2",
+      "annual_revenue_gp": "36500",
+      "profit_margin": "0.60",
+      "waterdeep_shellfish_market_share": "0.80",
+      "customers": ["high-end restaurants", "noble houses", "Sapphire Pools"],
+      "source_id": "lobster-king-current"
+    }
+  },
+  "dated_agricultural_systems": [
+    {
+      "system_id": "ravencrest-estate",
+      "name": "Ravencrest Estate",
+      "temporal_class": "later_day904_reference_not_day7_hammer1495_actual",
+      "day7_hammer1495_execution_eligible": false,
+      "total_acres": "18147",
+      "population": 180,
+      "established_vineyard_acres": "1200",
+      "established_grape_output_tons_per_year": "400",
+      "younger_vineyard_acres": "1347",
+      "coffee_trial_acres": "200",
+      "tobacco_trial_acres": "180",
+      "other_outputs": ["vegetable gardens", "apple trials", "pear trials", "lavender", "rosemary", "medicinal herbs", "culinary herbs", "wild honey"],
+      "wild_horse_headcount": {"low": "40", "high": "60"},
+      "beehives": {"low": "20", "high": "30"},
+      "annual_finance_gp": {
+        "gross": "420000",
+        "wine": "120000",
+        "timber": "150000",
+        "livestock": "100000",
+        "experimental_agriculture": "50000",
+        "net": "200000"
+      },
+      "source_id": "ravencrest"
+    },
+    {
+      "system_id": "forgedeep-food",
+      "name": "Forgedeep food system",
+      "temporal_class": "reference_state_with_unresolved_population_basis",
+      "day7_hammer1495_execution_eligible": false,
+      "production_types": ["mushrooms", "aquaculture", "algae"],
+      "storage_capacity_claim_months": "24",
+      "ratified_full_population_endurance_months": "18",
+      "claims_reconciled": false,
+      "source_ids": ["forgedeep", "shimmerdeep-protocols"]
+    },
+    {
+      "system_id": "wyrmhelm-feed",
+      "name": "Wyrmhelm carcass supply",
+      "temporal_class": "ratified_doctrine_reference_not_opening_inventory",
+      "day7_hammer1495_execution_eligible": false,
+      "current_one_warmother": {
+        "usable_carcass_lb_per_day": "577",
+        "usable_carcass_tons_per_year": "105",
+        "routine_45_day_reserve_tons": "13",
+        "high_tempo_reserve_tons": "26"
+      },
+      "full_rated_occupancy": {
+        "usable_carcass_lb_per_day": "928",
+        "usable_carcass_tons_per_year": "169",
+        "routine_45_day_reserve_tons": "21",
+        "high_tempo_reserve_tons": "42"
+      },
+      "supply_classes": ["herd stock", "fish", "slaughter by-products", "preserved carcass reserve"],
+      "human_grain_contracts_must_remain_separate": true,
+      "source_id": "wyrmhelm-feeding"
+    },
+    {
+      "system_id": "anauroch-mature-target",
+      "name": "Anauroch mature agricultural and herd target",
+      "temporal_class": "projection_gated_on_four_glaciers",
+      "day7_hammer1495_execution_eligible": false,
+      "dragon_usable_carcass_tons_per_year": "12000",
+      "managed_herd_headcount": {"low": "150000", "high": "170000"},
+      "livestock_classes": ["domestic cattle", "auroch-derived frontier cattle", "rothe", "other cold-steppe stock"],
+      "crop_classes": ["cold-tolerant grains", "drought-tolerant pulses", "irrigation-intensive vegetables"],
+      "source_ids": ["glacier-terminus", "wyrmhelm-feeding"]
+    }
+  ],
+  "logistics_reference": {
+    "temporal_class": "source_backed_capabilities_not_allocated_food_shipments",
+    "day7_hammer1495_execution_eligible": false,
+    "hunding_canal": {
+      "standard_barge_capacity_tons": "100",
+      "heavy_carrier_capacity_tons": "150",
+      "standard_barge_crew": 4,
+      "tow_speed_mph": "3",
+      "current_speed_mph": {"low": "5", "high": "8"},
+      "loudwater_warehouse_square_feet": "40000",
+      "source_id": "hunding-canal"
+    },
+    "neverwinter_ice_house": {
+      "ice_capacity_tons": "20",
+      "baen_owned": false,
+      "warning": "City infrastructure; capacity is not available to a Baen plan unless an allocation is sourced or entered as a user assumption.",
+      "source_id": "neverwinter-working-docks"
+    },
+    "arterial_road_distances_miles": [
+      {"from": "Neverwinter", "to": "Luskan", "distance": "120"},
+      {"from": "Neverwinter", "to": "Gauntlgrym", "distance": "80"},
+      {"from": "Neverwinter", "to": "Mirabar", "distance": "150"},
+      {"from": "Neverwinter", "to": "Waterdeep", "distance": "300"},
+      {"from": "Forgedeep", "to": "Guardian's Gate", "distance": "40"}
+    ],
+    "road_source_id": "arterial-roads"
+  },
+  "faction_beliefs_cross_reference": {
+    "queried_live": true,
+    "query_scope": "Active+",
+    "data_source_id": "collection://ecda3444-2cc0-4922-8c68-ce2eef22054c",
+    "direct_aquaculture_or_food_contact_points": [],
+    "representation_gap": "The live Active+ Faction Beliefs query returned no aquaculture, food, NMWC, canal, or reservoir contact point.",
+    "external_operational_threat": {
+      "description": "Iron Sovereignty identifies aquaculture as Baen's weakest-defended food production; approaches to Mila Dunwright and Mirren Deepwell remain unresolved and are not converted into production losses.",
+      "source_id": "iron-sovereignty"
+    }
+  },
+  "nmwc_pond_groups": [
+    {
+      "group_id": "warm",
+      "ponds": 4,
+      "temperature_f_low": "70",
+      "temperature_f_high": "85",
+      "species_labels": ["Tiger Shrimp", "Tilapia", "Freshwater Prawns"],
+      "annual_yield_lb": "45000",
+      "temporal_class": "technical_capacity_not_day7_hammer1495_actual",
+      "source_id": "nmwc-complete"
+    },
+    {
+      "group_id": "moderate",
+      "ponds": 4,
+      "temperature_f_low": "55",
+      "temperature_f_high": "70",
+      "species_labels": ["Littleneck Clams", "Largemouth Bass", "Blue Crabs"],
+      "annual_yield_lb": "38000",
+      "temporal_class": "technical_capacity_not_day7_hammer1495_actual",
+      "source_id": "nmwc-complete"
+    },
+    {
+      "group_id": "cool",
+      "ponds": 2,
+      "temperature_f_low": "45",
+      "temperature_f_high": "55",
+      "species_labels": ["Rainbow Trout", "Arctic Char"],
+      "annual_yield_lb": "18000",
+      "temporal_class": "technical_capacity_not_day7_hammer1495_actual",
+      "source_id": "nmwc-complete"
+    }
+  ],
+  "nmwc_topology": {
+    "ponds": 10,
+    "capacity_each_cubic_meters": "30000",
+    "total_capacity_cubic_meters": "300000",
+    "total_capacity_approx_gallons": "79000000",
+    "continuous_harvest_design": true,
+    "total_annual_yield_lb": "101000",
+    "temporal_class": "later_or_technical_not_day7_hammer1495_actual",
+    "day7_hammer1495_execution_eligible": false,
+    "source_ids": ["nmwc-complete", "water-empire", "aquaculture-technical"]
+  },
+  "species": [
+    {
+      "species_id": "tiger-shrimp",
+      "name": "Tiger Shrimp",
+      "scientific_name": "Penaeus monodon",
+      "zone": "warm",
+      "role": "primary",
+      "growth_months": {"low": "4", "high": "5"},
+      "stocking_density": {"low": "15", "high": "20", "unit": "juveniles_per_square_meter"},
+      "feed_conversion_ratio": {"low": "1.6", "high": "1.6"},
+      "market_gp_per_lb": {"low": "15", "high": "20"},
+      "annual_yield_lb_per_1000_unit": {"low": "3500", "high": "4000", "basis": "square_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "tilapia",
+      "name": "Tilapia",
+      "scientific_name": "Oreochromis niloticus",
+      "zone": "warm",
+      "role": "primary",
+      "growth_months": {"low": "6", "high": "8"},
+      "stocking_density": {"low": "5", "high": "8", "unit": "fish_per_cubic_meter"},
+      "feed_conversion_ratio": {"low": "1.7", "high": "1.7"},
+      "market_gp_per_lb": {"low": "3", "high": "5"},
+      "annual_yield_lb_per_1000_unit": {"low": "10000", "high": "12000", "basis": "cubic_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "freshwater-prawns",
+      "name": "Freshwater Prawns",
+      "scientific_name": "Macrobrachium rosenbergii",
+      "zone": "warm",
+      "role": "primary",
+      "growth_months": {"low": "5", "high": "6"},
+      "stocking_density": {"low": "10", "high": "12", "unit": "juveniles_per_square_meter"},
+      "feed_conversion_ratio": {"low": "2", "high": "2"},
+      "market_gp_per_lb": {"low": "20", "high": "25"},
+      "annual_yield_lb_per_1000_unit": {"low": "2800", "high": "3200", "basis": "square_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "pearl-gourami",
+      "name": "Pearl Gourami",
+      "scientific_name": "Trichogaster leerii",
+      "zone": "warm",
+      "role": "specialty",
+      "growth_months": {"low": "4", "high": "5"},
+      "stocking_density": {"low": "10", "high": "15", "unit": "fish_per_cubic_meter"},
+      "feed_conversion_ratio": null,
+      "market_gp_per_lb": {"low": "30", "high": "40"},
+      "annual_yield_lb_per_1000_unit": null,
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "red-claw-crayfish",
+      "name": "Red Claw Crayfish",
+      "scientific_name": "Cherax quadricarinatus",
+      "zone": "warm",
+      "role": "specialty",
+      "growth_months": {"low": "5", "high": "7"},
+      "stocking_density": {"low": "5", "high": "7", "unit": "animals_per_square_meter"},
+      "feed_conversion_ratio": null,
+      "market_gp_per_lb": {"low": "18", "high": "22"},
+      "annual_yield_lb_per_1000_unit": {"low": "1800", "high": "2200", "basis": "square_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "littleneck-clams",
+      "name": "Littleneck Clams",
+      "scientific_name": "Leukoma staminea",
+      "zone": "moderate",
+      "role": "primary",
+      "growth_months": {"low": "18", "high": "24"},
+      "stocking_density": {"low": "30", "high": "40", "unit": "animals_per_square_meter"},
+      "feed_conversion_ratio": {"low": "0", "high": "0"},
+      "market_gp_per_lb": {"low": "12", "high": "15"},
+      "annual_yield_lb_per_1000_unit": {"low": "3500", "high": "4000", "basis": "square_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "largemouth-bass",
+      "name": "Largemouth Bass",
+      "scientific_name": "Micropterus salmoides",
+      "zone": "moderate",
+      "role": "primary",
+      "growth_months": {"low": "12", "high": "18"},
+      "stocking_density": {"low": "3", "high": "5", "unit": "fish_per_cubic_meter"},
+      "feed_conversion_ratio": {"low": "1.5", "high": "1.5"},
+      "market_gp_per_lb": {"low": "6", "high": "8"},
+      "annual_yield_lb_per_1000_unit": {"low": "6000", "high": "7500", "basis": "cubic_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "blue-crabs",
+      "name": "Blue Crabs",
+      "scientific_name": "Callinectes sapidus",
+      "zone": "moderate",
+      "role": "primary",
+      "growth_months": {"low": "4", "high": "6"},
+      "stocking_density": {"low": "3", "high": "5", "unit": "animals_per_square_meter"},
+      "feed_conversion_ratio": {"low": "2.5", "high": "2.5"},
+      "market_gp_per_lb": {"low": "10", "high": "14"},
+      "annual_yield_lb_per_1000_unit": {"low": "2000", "high": "2500", "basis": "square_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "yellow-perch",
+      "name": "Yellow Perch",
+      "scientific_name": "Perca flavescens",
+      "zone": "moderate",
+      "role": "specialty",
+      "growth_months": {"low": "12", "high": "14"},
+      "stocking_density": {"low": "8", "high": "10", "unit": "fish_per_cubic_meter"},
+      "feed_conversion_ratio": null,
+      "market_gp_per_lb": {"low": "8", "high": "10"},
+      "annual_yield_lb_per_1000_unit": {"low": "4000", "high": "5000", "basis": "cubic_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "freshwater-mussels",
+      "name": "Freshwater Mussels",
+      "scientific_name": "Anodonta cygnea",
+      "zone": "moderate",
+      "role": "specialty",
+      "growth_months": {"low": "24", "high": "30"},
+      "stocking_density": {"low": "25", "high": "30", "unit": "animals_per_square_meter"},
+      "feed_conversion_ratio": null,
+      "market_gp_per_lb": {"low": "16", "high": "20"},
+      "annual_yield_lb_per_1000_unit": {"low": "2500", "high": "3000", "basis": "square_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "rainbow-trout",
+      "name": "Rainbow Trout",
+      "scientific_name": "Oncorhynchus mykiss",
+      "zone": "cool",
+      "role": "primary",
+      "growth_months": {"low": "12", "high": "14"},
+      "stocking_density": {"low": "4", "high": "6", "unit": "fish_per_cubic_meter"},
+      "feed_conversion_ratio": {"low": "1.2", "high": "1.2"},
+      "market_gp_per_lb": {"low": "7", "high": "9"},
+      "annual_yield_lb_per_1000_unit": {"low": "8000", "high": "10000", "basis": "cubic_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "arctic-char",
+      "name": "Arctic Char",
+      "scientific_name": "Salvelinus alpinus",
+      "zone": "cool",
+      "role": "primary",
+      "growth_months": {"low": "14", "high": "18"},
+      "stocking_density": {"low": "3", "high": "5", "unit": "fish_per_cubic_meter"},
+      "feed_conversion_ratio": {"low": "1.3", "high": "1.3"},
+      "market_gp_per_lb": {"low": "12", "high": "16"},
+      "annual_yield_lb_per_1000_unit": {"low": "6000", "high": "8000", "basis": "cubic_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "european-lobster",
+      "name": "European Lobster",
+      "scientific_name": "Homarus gammarus",
+      "zone": "cool",
+      "role": "primary",
+      "growth_months": {"low": "24", "high": "30"},
+      "stocking_density": {"low": "1", "high": "2", "unit": "animals_per_square_meter"},
+      "feed_conversion_ratio": {"low": "3", "high": "3"},
+      "market_gp_per_lb": {"low": "25", "high": "35"},
+      "annual_yield_lb_per_1000_unit": {"low": "500", "high": "700", "basis": "square_meters"},
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "northern-pike",
+      "name": "Northern Pike",
+      "scientific_name": "Esox lucius",
+      "zone": "cool",
+      "role": "specialty",
+      "growth_months": {"low": "18", "high": "24"},
+      "stocking_density": {"low": "1", "high": "2", "unit": "fish_per_cubic_meter"},
+      "feed_conversion_ratio": null,
+      "market_gp_per_lb": {"low": "10", "high": "14"},
+      "annual_yield_lb_per_1000_unit": null,
+      "source_id": "aquaculture-technical"
+    },
+    {
+      "species_id": "signal-crayfish",
+      "name": "Signal Crayfish",
+      "scientific_name": "Pacifastacus leniusculus",
+      "zone": "cool",
+      "role": "specialty",
+      "growth_months": {"low": "12", "high": "16"},
+      "stocking_density": {"low": "5", "high": "8", "unit": "animals_per_square_meter"},
+      "feed_conversion_ratio": null,
+      "market_gp_per_lb": {"low": "15", "high": "18"},
+      "annual_yield_lb_per_1000_unit": {"low": "1200", "high": "1500", "basis": "square_meters"},
+      "source_id": "aquaculture-technical"
+    }
+  ],
+  "crop_program": {
+    "overall_aqua_enhanced_yield_increase": {"low": "0.25", "high": "0.40"},
+    "fertilizer_reduction": {"low": "0.40", "high": "0.60"},
+    "water_distribution": {
+      "capacity_gallons_per_minute": {"low": "75", "high": "100"},
+      "field_range_miles": {"low": "1", "high": "2"}
+    },
+    "crops": [
+      {"crop_id": "wheat", "name": "Wheat", "class": "grain", "yield_increase": {"low": "0.30", "high": "0.35"}, "confirmed_planted": false},
+      {"crop_id": "barley", "name": "Barley", "class": "grain", "yield_increase": {"low": "0.25", "high": "0.30"}, "confirmed_planted": false},
+      {"crop_id": "rye", "name": "Rye", "class": "grain", "yield_increase": {"low": "0.35", "high": "0.40"}, "confirmed_planted": false},
+      {"crop_id": "apple", "name": "Apple Trees", "class": "orchard", "yield_increase": {"low": "0.20", "high": "0.25"}, "confirmed_planted": false},
+      {"crop_id": "pear", "name": "Pear Trees", "class": "orchard", "yield_increase": {"low": "0.25", "high": "0.30"}, "confirmed_planted": false},
+      {"crop_id": "cherry", "name": "Cherry Trees", "class": "orchard", "yield_increase": {"low": "0.20", "high": "0.25"}, "confirmed_planted": false},
+      {"crop_id": "leafy-greens", "name": "Leafy Greens", "class": "market_garden", "yield_increase": {"low": "0.40", "high": "0.50"}, "confirmed_planted": false},
+      {"crop_id": "root-vegetables", "name": "Root Vegetables", "class": "market_garden", "yield_increase": {"low": "0.30", "high": "0.35"}, "confirmed_planted": false},
+      {"crop_id": "herbs", "name": "Herbs", "class": "market_garden", "yield_increase": {"low": "0.45", "high": "0.55"}, "confirmed_planted": false},
+      {"crop_id": "specialty-herbs", "name": "Aqua-Enhanced Specialty Herbs", "class": "premium", "yield_increase": {"low": "0.75", "high": "1.00"}, "confirmed_planted": false},
+      {"crop_id": "wine-grapes", "name": "Neverwinter Wine Grapes", "class": "premium", "yield_increase": null, "confirmed_planted": false},
+      {"crop_id": "tomatoes", "name": "Tomatoes", "class": "greenhouse", "yield_increase": null, "confirmed_planted": true}
+    ],
+    "source_ids": ["aquaculture-technical", "water-empire", "shelters"]
+  },
+  "known_conflicts": [
+    {
+      "conflict_id": "timeline-boundary",
+      "description": "The actual Arik live freeze is Day 7 Hammer 1495. Operation Laden is a ratified late-Kythorn 1495 forward scenario; the ten-pond Water Empire operating results are dated Eleint 1498. Neither may be backdated into actual Hammer 1495 inventory or cash.",
+      "blocking_for": ["actual_month_advance", "current_physical_output", "current_cash"]
+    },
+    {
+      "conflict_id": "pond-topology",
+      "description": "Blacklake Registry reports 7 converted-quarry pools; NMWC complete infrastructure reports 10 aquaculture ponds. The sources do not establish whether these are identical, overlapping, or separate physical assets.",
+      "blocking_for": ["network_total_without_double_counting", "site_level_species_assignment"]
+    },
+    {
+      "conflict_id": "pond-temperature",
+      "description": "Water Empire consolidated documentation describes 10 ponds at 70-85 F, while NMWC complete infrastructure divides them into warm, moderate, and cool groups. The grouped complete specification is used for the technical-capacity lane; the conflict remains visible.",
+      "blocking_for": ["pond_by_pond_biological_simulation"]
+    },
+    {
+      "conflict_id": "physical-vs-financial-revenue",
+      "description": "Technical wholesale prices and yields do not reconcile automatically to Registry revenue. Physical revenue and reported business revenue must remain separate until species mix, sales volume, and accounting scope are reconciled.",
+      "blocking_for": ["automatic_ledger_posting"]
+    },
+    {
+      "conflict_id": "shelter-topology",
+      "description": "The sources name eight shelter zones and at least a third greenhouse but do not establish a one-to-one relationship between zones and greenhouses or identify which three zones were destroyed.",
+      "blocking_for": ["survivor_output_scaling"]
+    },
+    {
+      "conflict_id": "lobster-king-authority",
+      "description": "The Eleint 1494 Registry row is Unconfirmed with zero figures, while a later detailed NPC authority reports an active allied operation with 50 farmers and two tons per week. Ownership, effective date, and entry into Baen accounts are unresolved.",
+      "blocking_for": ["baen_owned_output", "automatic_ledger_posting"]
+    },
+    {
+      "conflict_id": "forgedeep-reserve-basis",
+      "description": "Forgedeep claims two years of storage capacity while ratified Shimmerdeep doctrine specifies 18 months at full population. The population and commodity basis needed to reconcile the claims is absent.",
+      "blocking_for": ["forgedeep_opening_inventory", "siege_consumption_balance"]
+    }
+  ],
+  "unresolved_inputs": [
+    "Opening inventories by site and commodity",
+    "Aquaculture species allocation within each pond or site",
+    "Opening cohorts, biomass, mortality, and current harvest schedule",
+    "Feed formula, supply, price, and storage by species",
+    "Whether the NMWC 10 ponds overlap the Registry's 7 Blacklake pools",
+    "Identity and capacity of the three destroyed shelter zones",
+    "Baseline physical yield, acreage, and crop allocation for shelter zones",
+    "Longsaddle acreage, crop allocation, expected base yield, and resolved harvest outcome",
+    "Food storage capacity, spoilage rates, and opening stock",
+    "Shared transport routes, capacities, travel times, and losses",
+    "Population ration requirements by food class",
+    "Market allocation and realized prices",
+    "Canonical opening cash and entity-level ledger balances"
+  ]
+}

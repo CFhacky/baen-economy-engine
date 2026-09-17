@@ -1,0 +1,151 @@
+{
+  "schema": "tnp.economy.source-census-receipt/1",
+  "capturedAt": "2026-09-17",
+  "campaignBoundary": "Day 7 Hammer 1495 DR",
+  "snapshotHash": "67d8e69b9e883d40b652a0b0a71f59883e205bc07445daa78de76279c0538160",
+  "storedRecords": 1627,
+  "materializedCore": 1620,
+  "identifiedCore": 1620,
+  "notMaterialized": 0,
+  "simulated": 0,
+  "readMode": "direct_live_Notion_SQL_receipts_read_only; NPC 920/681, artifacts 206/206, threats 26/26, plot_threads 89/89, public_perception 7/7",
+  "nextBatch": [
+    "finance_banking_outside_registry",
+    "infrastructure_logistics_outside_locations",
+    "population_labour",
+    "construction_capital_programmes",
+    "military_formations_standing_contracts"
+  ],
+  "notes": [
+    "1620 live core records hashed; contextual authority records retained separately.",
+    "920 NPC rows hashed from live Notion receipts (681 of 681 live collection covered; 239 previously captured pages no longer in the live unfiltered collection are retained, not invented, not deleted).",
+    "Artifacts 206/206, threats 26/26, plot threads 89/89, public perception 7/7 from live SQL.",
+    "NPC Location/Faction fields are often relation URLs without place names; empty region is missing source projection, not an invented city.",
+    "SQL has_more=false on a page does not close the collection. Compact SQL columns used to avoid connector truncation.",
+    "Default UNKNOWN coverage is MODEL-PROPOSED fail-closed handling. Facts are SOURCE-DERIVED.",
+    "No Notion write, merge, or campaign-time advance. Day 7 Hammer 1495 DR unchanged."
+  ],
+  "collections": [
+    {
+      "key": "business_registry",
+      "title": "Baen Empire - Business Registry",
+      "sourceClass": "business_registry",
+      "rowCount": 90,
+      "complete": true,
+      "hash": "8cdc26b324175407",
+      "captured": 90
+    },
+    {
+      "key": "locations",
+      "title": "The New Path - Locations",
+      "sourceClass": "locations",
+      "rowCount": 182,
+      "complete": true,
+      "hash": "11515f09fb141be3",
+      "captured": 182
+    },
+    {
+      "key": "factions",
+      "title": "The New Path - Factions",
+      "sourceClass": "factions",
+      "rowCount": 79,
+      "complete": true,
+      "hash": "ef931b3f0dfe5185",
+      "captured": 79
+    },
+    {
+      "key": "npcs",
+      "title": "The New Path - NPCs",
+      "sourceClass": "npcs_leadership",
+      "rowCount": 681,
+      "complete": true,
+      "hash": "571eb13b200940cb",
+      "captured": 920
+    },
+    {
+      "key": "artifacts",
+      "title": "The New Path - Artifacts",
+      "sourceClass": "inventories_materials_hoards_assets",
+      "rowCount": 206,
+      "complete": true,
+      "hash": "3984c03597b4158f",
+      "captured": 206
+    },
+    {
+      "key": "threats",
+      "title": "The New Path - Threats",
+      "sourceClass": "shocks_shortages_threats",
+      "rowCount": 26,
+      "complete": true,
+      "hash": "666cfbaf61d845b3",
+      "captured": 26
+    },
+    {
+      "key": "plot_threads",
+      "title": "The New Path - Plot Threads",
+      "sourceClass": "contracts_orders_obligations_threads",
+      "rowCount": 89,
+      "complete": true,
+      "hash": "73fbce475eb3de18",
+      "captured": 89
+    },
+    {
+      "key": "public_perception",
+      "title": "Public Perception",
+      "sourceClass": "demand_perception_context",
+      "rowCount": 7,
+      "complete": true,
+      "hash": "6b80edff9799654a",
+      "captured": 7
+    },
+    {
+      "key": "consequence_ledger_a",
+      "title": "Consequence Ledger A",
+      "sourceClass": "consequence_ledger_a",
+      "rowCount": 11,
+      "complete": true,
+      "hash": "6022f8df33d3cacc",
+      "captured": 11
+    },
+    {
+      "key": "consequence_ledger_b",
+      "title": "Consequence Ledger B",
+      "sourceClass": "consequence_ledger_b",
+      "rowCount": 10,
+      "complete": true,
+      "hash": "727553564d0e307b",
+      "captured": 10
+    }
+  ],
+  "classCounts": {
+    "contracts_orders_obligations": 1,
+    "locations": 182,
+    "factions": 79,
+    "business_registry": 90,
+    "consequence_ledger_b": 10,
+    "consequence_ledger_a": 11,
+    "banks_treasuries_funds_debt_loans_reserves_instruments": 4,
+    "construction_capital_programs": 1,
+    "settlements_cities_districts": 1,
+    "npcs": 920,
+    "shocks_shortages_threats": 26,
+    "contracts_orders_obligations_threads": 89,
+    "demand_perception_context": 7,
+    "inventories_materials_hoards_assets": 206
+  },
+  "coverageCore": {
+    "SIMULATED": 0,
+    "CONTEXT_ONLY": 0,
+    "FUTURE": 1,
+    "HISTORICAL": 1,
+    "MISSING_DATA": 1,
+    "MISSING_MECHANICS": 1,
+    "SUPERSEDED": 3,
+    "CONFLICT": 4,
+    "UNKNOWN": 1616,
+    "basis": "Actual per-record coverage plus explicit UNKNOWN for unmaterialized collections; no carried-forward aggregate SIMULATED claim",
+    "denominator_core_rows": 1620
+  },
+  "deskCensusBytes": 1434062,
+  "provenance": "SOURCE-DERIVED live Notion SQL compact receipts 2026-09-17. No invented rows. No Notion write. No merge. Day 7 Hammer 1495 DR unchanged."
+}

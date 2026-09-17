@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "purpose": "Things this project's records name that are not files in this repository, and where each actually is. An entry is only legitimate if it states where the thing lives. A file that exists nowhere is recorded as absent, not allowlisted into existence. Entries are keyed by basename because that is what validate_references.py matches on; the cited path each one covers is named in cited_for.",
+  "records": [],
+  "files": [
+    {
+      "name": "THIRD_PARTY_NOTICES.md",
+      "lives_in": "The cited path, baen_economy_engine-0.2.0.dist-info/licenses/THIRD_PARTY_NOTICES.md, is inside the built wheel and is not a repository path. VALIDATION.md records a reproducible build of this project with the pinned Setuptools 84.0.0 backend and SOURCE_DATE_EPOCH=1787980000, and names that path to state that the wheel carries the third-party notice where Python packaging puts license files. The source of those bytes is THIRD_PARTY_NOTICES.md at the root of this project, which is in the repository and which the delivery manifest carries. The identity was checked on landing rather than taken on trust: that file hashes to ccdcbcc93656cbfb23376e5ea8a04698e4405c2cb5ac25a92fa8d4d0ca6f109e, exactly the SHA-256 VALIDATION.md records for the copy inside the wheel. The wheel hash itself, 0676ee10a19879844c520987af7cfef5f30eda1797ff667f8a3075ecad1ccb8a, is the author's recorded build evidence and was not rebuilt here.",
+      "cited_for": "VALIDATION.md line 291"
+    }
+  ]
+}

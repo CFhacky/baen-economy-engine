@@ -1,0 +1,94 @@
+{
+  "schema": "tnp.economy.food-ops-context/1",
+  "retrieved_on": "2026-08-29",
+  "notion_access": "read_only",
+  "authority": "Baen Empire - Business Registry page bodies",
+  "warnings": [
+    "A GM-only clock is not knowledge available to Vara, the Veil, or an entity manager unless its source says so.",
+    "No issue in this file applies a mechanical modifier until its trigger or an authorized resolution fires.",
+    "The Eleint 1494 business amounts are a last-known historical envelope, not a Day 7 Hammer 1495 opening balance."
+  ],
+  "known_operational_issues": [
+    {
+      "issue_id": "bg-water-quality",
+      "entity_id": "bg-aquaculture",
+      "title": "Canal water quality is reducing yields at all three Baldur's Gate sites",
+      "knowledge": "operationally_known",
+      "status": "active_unresolved",
+      "mechanical_effect": null,
+      "decision_needed": "Choose whether and how to fund and deploy hexagonal filtration; the source provides no cost or completed installation.",
+      "source_id": "bg-pools",
+      "source_url": "https://app.notion.com/p/321e821484b08116a104c6217060c1c5"
+    }
+  ],
+  "gm_only_clocks": [
+    {
+      "issue_id": "primrose-produce-skimming",
+      "entity_id": "agricultural-shelter-zones",
+      "title": "Primrose sells surplus greenhouse produce outside Baen channels",
+      "knowledge": "gm_only_not_yet_exposed",
+      "status": "latent_trigger",
+      "mechanical_effect": null,
+      "source_amount_gp_per_month": {
+        "low": "200",
+        "high": "300"
+      },
+      "trigger": "A customer recognizes Baen-branded tomato varieties at Primrose's market stall and reports it to the Trading Office.",
+      "source_id": "shelters",
+      "source_url": "https://app.notion.com/p/321e821484b081e09660eacd14973b2f"
+    },
+    {
+      "issue_id": "mila-aldric-approach",
+      "entity_id": "blacklake-aquaculture",
+      "title": "Edric Voss approached Mila for Baen operational information",
+      "knowledge": "mila_knows_veil_awareness_unknown",
+      "status": "active_unreported_clock",
+      "mechanical_effect": null,
+      "source_timing": "six weeks before the Registry page state",
+      "trigger": "A renewed approach, Mila's report, or independent Veil detection advances the clock.",
+      "source_id": "blacklake",
+      "source_url": "https://app.notion.com/p/321e821484b08112ab9ecd6f5eba18e8"
+    },
+    {
+      "issue_id": "mirren-aldric-approach",
+      "entity_id": "converted-quarry-aquaculture",
+      "title": "Mirren refused an Aldric approach but did not report it",
+      "knowledge": "mirren_knows_veil_unaware",
+      "status": "active_unreported",
+      "mechanical_effect": null,
+      "source_timing": "three months before the Registry page state",
+      "trigger": "A reporting protocol, agent reappearance, or Veil discovery exposes the approach.",
+      "source_id": "converted-quarry",
+      "source_url": "https://app.notion.com/p/321e821484b0811098cfebc200f16c7a"
+    },
+    {
+      "issue_id": "corvin-harvest-skimming",
+      "entity_id": "bg-aquaculture",
+      "title": "Corvin redirects part of the fish harvest to a nephew's stall",
+      "knowledge": "gm_only_not_yet_exposed",
+      "status": "active_hidden",
+      "mechanical_effect": null,
+      "source_harvest_share": {
+        "low": "0.02",
+        "high": "0.03"
+      },
+      "source_duration": "eighteen months",
+      "source_claimed_total_gp": "approximately 7000",
+      "trigger": "Production scaling or the planned accounting expansion makes the diversion visible.",
+      "source_id": "bg-pools",
+      "source_url": "https://app.notion.com/p/321e821484b08116a104c6217060c1c5"
+    },
+    {
+      "issue_id": "gerta-blackmail",
+      "entity_id": "reservoir-fisheries",
+      "title": "A contact from Gerta's former smuggling life is blackmailing her",
+      "knowledge": "gm_only_not_yet_exposed",
+      "status": "active_hidden_clock",
+      "mechanical_effect": null,
+      "source_timing": "can remain hidden for a few months",
+      "trigger": "The demanded cut grows large enough to appear in financial tracking or Gerta seeks help.",
+      "source_id": "reservoir-fisheries",
+      "source_url": "https://app.notion.com/p/321e821484b081f6a74cd6ee2b88a08e"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+Baen agriculture workbench built: /tmp/tmpy0g6k_lh/agriculture.html
+Current actual remains frozen; Notion writes: 0; campaign advance: 0
+Opened in your browser: /tmp/tmpy0g6k_lh/agriculture.html
+BAEN FOOD SOURCE BASELINE: VERIFIED
+Source coverage: 90/90 rows, 90/90 page bodies, 7/7 food records
+Last-known commercial envelope: 63 employees; 26500 gp revenue; 20550 gp cost; 5950 gp net
+Physical execution: BLOCKED — missing values remain UNKNOWN
+Notion writes: 0 | Canonical ledger postings: 0 | Dice rolled: 0
+Readable report: /tmp/tmpb7o7cryc/food.html
+.................................................................................................................................................................................................................................error: the executable regional scenario is a synthetic mechanics demo and is disabled by default; run 'baen-food report' for your source-truth economy, or pass --allow-synthetic-demo only when you deliberately want invented test inputs
+........................................................................................................................................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 521 tests in 26.569s
+
+OK

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "fixture_class": "CAN-IMPORT",
+  "authority": "canon_import",
+  "captured_on": "2026-08-29",
+  "timeline_id": "surface-finance-mixed-date-import",
+  "as_of_campaign_date": null,
+  "scenario_id": "ncf-consolidation",
+  "source_refs": [
+    "https://app.notion.com/p/2fbe821484b0816ab0b8e7e7ed41fe29",
+    "https://app.notion.com/p/321e821484b08175997cc81e61c35015",
+    "https://app.notion.com/p/321e821484b0812d82f9cc0add910698",
+    "https://app.notion.com/p/321e821484b08169bde3cc7112ca328d",
+    "https://app.notion.com/p/321e821484b08109a55af30bd40fa6cb"
+  ],
+  "parent": {"name": "Northern Crown Financial", "revenue_gp": "22000", "cost_gp": null, "employees": 85},
+  "branches": [
+    {"name": "Northern Crown Financial - Neverwinter", "revenue_gp": "10000", "cost_gp": "5200", "employees": 35},
+    {"name": "Northern Crown Financial - Luskan", "revenue_gp": "9583", "cost_gp": "4990", "employees": 30},
+    {"name": "Northern Crown Financial - Waterdeep", "revenue_gp": "2750", "cost_gp": "1430", "employees": 12},
+    {"name": "Northern Crown Financial - Suzail", "revenue_gp": "917", "cost_gp": "550", "employees": 8}
+  ],
+  "branch_totals": {"revenue_gp": "23250", "cost_gp": "12170", "profit_gp": "11080", "employees": 85},
+  "parent_branch_revenue_discrepancy_gp": "1250",
+  "forbidden_blind_sum_revenue_gp": "45250",
+  "unresolved": ["whether Luskan subsidiary revenue is included in the Luskan branch", "Gold Lending House status"]
+}

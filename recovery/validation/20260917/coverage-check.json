@@ -1,0 +1,1934 @@
+{
+  "active_blockers": [
+    {
+      "coverage_state": "CONFLICT",
+      "stable_source_id": "notion:collection:consequence-ledger-pair",
+      "title": "Consequence Ledger duplicate authority pair"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-8108-b022-c5194e50ad99",
+      "title": "Skyreach Castle"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-8123-91b5-ec2e34d09ac5",
+      "title": "Lords' Alliance"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-812e-884c-cc3815fe582f",
+      "title": "Iron Sovereignty"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-8131-b119-d989998baaa8",
+      "title": "Dis (Layer 2)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-815f-ba19-e874f0becc19",
+      "title": "The Veil"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-8161-a02a-fe4c68fc8f6d",
+      "title": "Bloodaxe Legion"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-8165-ab14-c8c669cc58b3",
+      "title": "Gauntlgrym Dwarves"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-8166-98fb-ec6d2813314c",
+      "title": "Avernus (Layer 1)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-8167-b265-eac0d0df5a93",
+      "title": "Bregan D'aerthe"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+      "title": "Northern Crown Financial"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-8189-8b97-c6329f9f29a5",
+      "title": "Neverwinter"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-81a1-997e-d3b747e8c556",
+      "title": "Forgedeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-81a8-8f59-cf002a2906a1",
+      "title": "Waterdeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-81b5-ab0a-f9958c824b34",
+      "title": "Phlegethos (Layer 4)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-81d8-ae87-e3bd80ce0a54",
+      "title": "House Baen'und (Menzoberranzan)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-81d9-9cdf-f3c721af0db3",
+      "title": "Menzoberranzan"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-81d9-a18b-f06988cea7b9",
+      "title": "Moon Elf Alliance"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-81d9-bc8b-d10ad1ba785a",
+      "title": "Institut Baen'und"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-81de-b9b0-eb504f296ed6",
+      "title": "Silverymoon"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-81ef-80a5-d67f7b7e6f31",
+      "title": "Baen Enterprises"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:2fbe8214-84b0-81fd-bdab-e411d421d64e",
+      "title": "[TRASH \u2014 H4] DELETED - DO NOT USE (tombstone, recycle)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8101-87d5-cfa2a74f31f0",
+      "title": "Arterial Township Development"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8101-9287-cb7fdf65e5a9",
+      "title": "Western Limestone Quarries"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8104-815a-fe1101e6f8f1",
+      "title": "Thorn & Silver Exchange"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8109-a55a-f30bd40fa6cb",
+      "title": "Northern Crown Financial - Suzail"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-810c-945f-f2ee5b1d4841",
+      "title": "Underground Renovation Services"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8110-98cf-ebc200f16c7a",
+      "title": "Converted Quarry Aquaculture (5 sites)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8111-8df6-fb5d6377ba0a",
+      "title": "Treasury Stone Quarries"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+      "title": "Blacklake Aquaculture (7 pools)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8116-a104-c6217060c1c5",
+      "title": "BG Aquaculture Pools (3 sites)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8116-ac1b-cc07c68ff15f",
+      "title": "Gauntlgrym Tools Partnership"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8120-8756-cd5f9b876869",
+      "title": "Commercial Properties (Various)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8122-9dce-efa0c3c48170",
+      "title": "Baen Construction HQ"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8128-9cb9-fbb308ea2536",
+      "title": "Waterdeep Trading Office"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-812d-82f9-cc0add910698",
+      "title": "Northern Crown Financial - Luskan"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-812d-bba0-e10b75086a02",
+      "title": "Bloodaxe Legion"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8132-bcc9-ef2290e366bc",
+      "title": "Dock Ward Warehouse"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8140-8f8c-e78bbfd11b30",
+      "title": "Diplomatic Operations"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8144-9c69-fcb641741a06",
+      "title": "Green Vein Corridor"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-814a-9a3c-ea9157b13d6b",
+      "title": "Venetian Bay Housing"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-814a-9cd7-daca52d0c750",
+      "title": "Specialized Vault Construction"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-814c-9919-d340642e3319",
+      "title": "Canal Housing Redevelopment"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8151-be78-c309a7ce8475",
+      "title": "Enhanced Shoreline Systems"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8155-bf9b-cea55e2c7669",
+      "title": "Silversheen Trading (Aluminum)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-815e-97ff-e0bcec9a3ebc",
+      "title": "Celestial Springs Bathhouse"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8169-bde3-cc7112ca328d",
+      "title": "Northern Crown Financial - Waterdeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-816a-8684-d3df85527df8",
+      "title": "Warborn Production - Waterdeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-816b-ab1a-c84039fbe89f",
+      "title": "Crownsite Canal Property"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-816c-87fb-f0fee22835ad",
+      "title": "Baen Brickworks"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-816d-8ca6-d53a98b8ba6d",
+      "title": "Maritime Operations (Planned)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8172-9b7c-db66323883e8",
+      "title": "The Veil"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8175-997c-c81e61c35015",
+      "title": "Northern Crown Financial - Neverwinter"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-817d-a905-f79b60a61485",
+      "title": "Split Fountain Renovation"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8189-9107-d6fd75176754",
+      "title": "Lobster King Operations (Baen-Allied)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-8192-b481-f813840aadd3",
+      "title": "Western Sandstone Quarries"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-819e-840a-ea69126c3105",
+      "title": "Northern Hammer Smithy"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81a0-9fde-f55820cab72b",
+      "title": "Waterdeep Information Brokerage"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81a8-b47d-c47579a6e346",
+      "title": "Castle Operations"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81b0-9469-f6c9d92a22d5",
+      "title": "Forgedeep City Development"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81b2-8e6d-c97122a34793",
+      "title": "Azurite Decorative Quarries"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81b3-8d51-dcbc19edd667",
+      "title": "Warborn Production - Neverwinter"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81b8-8ac4-d7cb4a1b4b0c",
+      "title": "Safe Harbor Inn"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81b9-a4cb-f9fd26c7eccf",
+      "title": "Hunding Canal Lock System"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81b9-b209-d6dd21f950f8",
+      "title": "Dock Ward Security Corp"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81c6-9bde-c30dd49bc5b6",
+      "title": "Neverwinter Clay Quarries"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81cb-b112-e8cab733e992",
+      "title": "Star Metal Hills Bauxite Mining"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+      "title": "Arterial Road Network"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81cf-b8ef-c87bd6feaaf7",
+      "title": "The Cerulean"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81d4-921f-ffe136c22209",
+      "title": "Verdant Cascades Bathhouse"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81d9-9801-d601f9503056",
+      "title": "Northern Crown Timber Operations"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81dc-ae68-d45f3e3801db",
+      "title": "Dock District Mixed-Use"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81e0-9660-eacd14973b2f",
+      "title": "Agricultural Shelter Zones"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81e7-a5ec-fd25ff8299dc",
+      "title": "Gold Lending House"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81f6-a74c-d6ee2b88a08e",
+      "title": "Reservoir Fisheries"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81f7-be17-ff26a67e57fb",
+      "title": "Verification Services"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81f8-8632-c9a3a854424c",
+      "title": "The Lustrous Blade"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:321e8214-84b0-81fa-ba57-e5f9a87ab3a9",
+      "title": "Dock District Housing (Ph 1 & 2)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-8118-a899-ee4de3c6e713",
+      "title": "Neverember civic cooperation: attend public ceremonies as notable citizen"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-8122-ae2b-e1bebef4c027",
+      "title": "Zariel contract: 200,000 Warborn units on production schedule"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-8134-a432-f9a1e4d3f8b3",
+      "title": "Discuss eastern deployment resource allocation with Korgan"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-814a-b3cc-dcd7434d99ae",
+      "title": "Check on Mila Dunwright \u2014 something off in aquaculture numbers"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-8157-8f0f-d10c1910e8df",
+      "title": "Investigate timber market before House Dassyr consolidates"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-8187-ad22-da8ba4c1e10f",
+      "title": "Formalize political succession plan (regency council)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-818b-848f-c2463bd5270a",
+      "title": "Talk about baby names this weekend"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-8190-808c-c962243ce5af",
+      "title": "Inspect unidentified crystals at Star Metal Hills eastern gallery"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-8199-9808-c4cb7a0fb555",
+      "title": "Zariel contract: production milestones per agreed schedule"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-81a2-a79c-e468eb4c636b",
+      "title": "Find Alassra Dawnstrider (Simbul) for Elminster"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-81a5-ab8c-e281286128a1",
+      "title": "Investigate timber market before Dassyr consolidates supply chains"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-81af-9a0c-cc0f8a23586d",
+      "title": "Elara's court: attend Coronal Remembrance ceremony"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-81b5-9e37-ea05de7941b4",
+      "title": "Attend Coronal Remembrance \u2014 elven ceremony for fallen Cormanthor leaders"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-81bd-8195-cc09b1652d1d",
+      "title": "Formalize Forgedeep charter review preparation"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-81d6-9a15-e4ad05af6f0c",
+      "title": "Attend Harvest Remembrance ceremony as notable citizen"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-81db-885e-d9acb18225b8",
+      "title": "Check on Mila Dunwright's aquaculture operation \u2014 something felt off"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-81e4-b90b-ef7ddeed74c4",
+      "title": "Review Kalnar's experimental construction technique proposal"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:323e8214-84b0-81e7-8275-d1f27d8a270d",
+      "title": "Establish formal apprenticeship / training program"
+    },
+    {
+      "coverage_state": "CONFLICT",
+      "stable_source_id": "notion:page:323e8214-84b0-81e7-a912-fe3389a5f75a",
+      "title": "Provide engineering support for Gauntlgrym lower mine expansion"
+    },
+    {
+      "coverage_state": "CONFLICT",
+      "stable_source_id": "notion:page:323e8214-84b0-81ed-8ab7-ed48df5c2d07",
+      "title": "Gauntlgrym partnership: engineering support for lower mine expansion"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:324e8214-84b0-813f-b1c6-ecc41384257b",
+      "title": "Neverwinter Athenaeum"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:324e8214-84b0-8169-9a22-c992b7e05649",
+      "title": "Devil Academy (Philosophical Faculty)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:324e8214-84b0-8175-ae3c-c451aea28565",
+      "title": "Collegium Montis Gladii"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:324e8214-84b0-81f3-b801-f03fc8ec343d",
+      "title": "Schola Ducum Integrata"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32ae8214-84b0-811c-a1a6-ca51e9f15677",
+      "title": "Tethyamar / Irondelve"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32ae8214-84b0-81d5-9df3-eac77416c849",
+      "title": "Sembian Council of Merchants"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-8103-85a9-fdb2312328c7",
+      "title": "The Neverwinter Deep Labyrinth"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-8122-b159-f491f5f15b84",
+      "title": "Bloodaxe Legion District \u2014 Neverwinter"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-812b-97c9-f057203aeef8",
+      "title": "Star Metal Hills Mining Complex"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-8145-b768-cc0f492782d1",
+      "title": "Desertsmouth Passage \u2014 Trans-Mountain Canal Tunnel"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-8170-b18d-de084a3d2138",
+      "title": "Dynasty House (Vara's Domain)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-817b-8126-e8ff4735ef24",
+      "title": "The Sapphire Pools (Sea Ward Bathhouse)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-8182-a69d-fc6db5991aa2",
+      "title": "Anatomist's Laboratory (Dungeon Module)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-818e-9d58-ca579f4756d1",
+      "title": "Veil Safe House \u2014 Neverwinter"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-819b-933e-d9b67715dea4",
+      "title": "Schola Ducum Integrata"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-819f-82a4-f6eb9627aaca",
+      "title": "Veil Safe House \u2014 Luskan"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-81ae-9959-f6abfdbca301",
+      "title": "Peri's Operations Hub (Dock Ward Warehouse)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-81c2-a5a0-ee17bed6b8e7",
+      "title": "Bloodaxe Legion Mage Cadre"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32be8214-84b0-81e4-84bc-e5ac1ab8e015",
+      "title": "Eternal Dancers Program"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:32ce8214-84b0-81c4-87f6-da40d3ab1a7e",
+      "title": "Bloodaxe Diplomatic Escort Element \u2014 Operation Cardinal Support"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:331e8214-84b0-8198-a08e-e9ccb5698f83",
+      "title": "Crystal Gardens of New Harbor"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:332e8214-84b0-8105-9c36-e6ed007fe34d",
+      "title": "Veil Safe House \u2014 Neverwinter Docks"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:332e8214-84b0-8118-99f3-f652e6b532ca",
+      "title": "Neverwinter Academy of Natural Philosophy (Devil Academy)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:332e8214-84b0-8121-82d7-e120098fb69b",
+      "title": "Collegium Montis Gladii"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:332e8214-84b0-8126-8f9b-d7f0c40c8ea9",
+      "title": "Orchard Chapel"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:332e8214-84b0-814a-8efb-de14fadbbd21",
+      "title": "Venetian Bay \u2014 Premium Waterfront Development"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:332e8214-84b0-8168-baca-d2c113c751b7",
+      "title": "Shield-Copper Plaza \u2014 The Comfort Plague Memorial"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:332e8214-84b0-8190-86f1-e0f98c7c3298",
+      "title": "Dock District \u2014 The Baen Quarter"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:332e8214-84b0-81d3-bb13-f54b12daf00d",
+      "title": "Neverwinter Working Docks"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:333e8214-84b0-8120-a75e-f11a243ab6d5",
+      "title": "Baen Northern Industrial Yards (Warborn Production Neverwinter)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:334e8214-84b0-817a-bbc6-d240af9b9d00",
+      "title": "The Foundation"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:338e8214-84b0-8146-b362-f1bfdcfc91a7",
+      "title": "Thousand Silences (Al-Samt al-Alf)"
+    },
+    {
+      "coverage_state": "MISSING_MECHANICS",
+      "stable_source_id": "notion:page:338e8214-84b0-81e3-9d8c-dcd4d6c896c7#mechanics",
+      "title": "ESAMT Financial & Investment System \u2014 mechanics"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:33ae8214-84b0-8114-9c37-c6f48cf2f139",
+      "title": "Northman's Cairn"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:33de8214-84b0-8152-a773-ce4b13c010d3",
+      "title": "Dunbarrow's Hilltop (Greypeak Foothills)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:33de8214-84b0-8191-ab65-da92a203b331",
+      "title": "Chauntea Temple Ruins (Stone Bridge Company)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:33ee8214-84b0-8139-b02c-e643bdb0b08e",
+      "title": "Karak Durath \u2014 The Underhalls"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:340e8214-84b0-8120-97a3-fb2bfe099b18",
+      "title": "The Soul Forger's Repose (Moradin Shrine, Karak Durath L3)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:340e8214-84b0-81a3-8bd6-fe7df84566de",
+      "title": "Ravencrest Estate (Surface)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:340e8214-84b0-81aa-8867-cb57d9730332",
+      "title": "Fellowes Hall"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:341e8214-84b0-81ba-97e0-c8e16ed2cc23",
+      "title": "The Gilded Sparrow"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:343e8214-84b0-8189-acca-dbcdefeb2bc2",
+      "title": "The Windcaller's Roost"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:344e8214-84b0-816d-bd56-e1308c52a6f6",
+      "title": "Pelham's Grounds"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:347e8214-84b0-8130-aaca-cba4e0320d9a",
+      "title": "14 Blackwatch Lane \u2014 Baen'und & Dior'elle Showroom"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:347e8214-84b0-8142-a46b-c164ca8aeaf0",
+      "title": "Celestial Compass Estate"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:347e8214-84b0-814b-b10e-f27635d0da69",
+      "title": "Angel's Fall at the Devil's Gate"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:347e8214-84b0-8162-b8fa-cdfa7b0b3e3e",
+      "title": "Candlekeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:347e8214-84b0-81a8-894d-ebd644477ba1",
+      "title": "Institut de Tissage Arcanique"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:347e8214-84b0-81b7-9a99-f4016179ac7f",
+      "title": "Commerce Court \u2014 Trades Ward Judiciary Annex"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:347e8214-84b0-81e5-832b-d95fcf00b2d9",
+      "title": "Millbridge & Millbridge Merchant Trust"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:347e8214-84b0-81ed-bc20-e48766ef4f7a",
+      "title": "Silverhair Artistic Metals"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8100-ac1a-ed6b31fbe41f",
+      "title": "Elfstone Tavern"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8102-b0c4-e69d4dd2197c",
+      "title": "Stoneshaft Hold (Thornhold) \u2014 Dwarven Clan Anchor"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8103-b73b-f7df3fb8cec5",
+      "title": "Guardian's Gate Ziggurat"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8110-8dc3-dfd9aae048a2",
+      "title": "Nethpranter Street Dead Drop"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8112-b40a-d344a830c40b",
+      "title": "Mount Waterdeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-811e-81ef-e10c205dbb70",
+      "title": "Nessus Library"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-811f-8e80-cbd2eaf87662",
+      "title": "House of Gems"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8121-8429-ce992005d5b8",
+      "title": "Seatower of Balaeros"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8123-bbb5-f856b260a8e1",
+      "title": "Skullport"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8125-9d6b-ce13587ae431",
+      "title": "Moonwood"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8126-a246-fda30898b68c",
+      "title": "The Atelier (Baen'und Original Workshop)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8129-900e-df135c620093",
+      "title": "14 Nethpranter Street \u2014 Holding Cellar (Observer Network)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8138-bb0d-e9c71c8bfdc6",
+      "title": "Blackstaff Tower"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-813a-adc6-fb73af67e2ea",
+      "title": "Cormanthor"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8141-8aa0-cd6be66f5986",
+      "title": "The Yawning Portal"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8144-bba1-f2885704de1b",
+      "title": "Crosscurrent Inn (Neverwinter)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8147-a51b-da9c6feb22f5",
+      "title": "Font of Knowledge"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8149-a7e3-df762f727510",
+      "title": "Lamplighter Guild Hall"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-814c-b161-f14dcbee9632",
+      "title": "Mistshore"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-814d-b068-e0de417a0020",
+      "title": "Husteem Distribution Channel (Noble Circuit) \u2014 Waterdeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8151-9443-cdeb31108009",
+      "title": "The Plinth (Candle Street Dead Drop)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8161-8afd-e2e826b898e1",
+      "title": "City of the Dead"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8162-8111-fba51071e587",
+      "title": "Hunding Canal \u2014 Baen Continental Waterway System"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8165-8ce7-e0639959dd20",
+      "title": "Fish Street Receiving Office \u2014 Luskan"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8170-a5eb-d6a99b8bf748",
+      "title": "The Walking Statues of Waterdeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8175-9eec-db1f9a0dc720",
+      "title": "The Blushing Mermaid (Firth Briefing Tavern)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8175-a565-d27c16e5e1b5",
+      "title": "Cerulean Circle Convocation Hall \u2014 Neverwinter"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8178-84b9-f537ea3bf11b",
+      "title": "Rosznar Manufacturing Facility \u2014 Waterdeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-817b-b87b-c053573a5596",
+      "title": "Screaming Cliffs"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8191-bda7-d7037f891811",
+      "title": "Amphail Waystation (Dessarin Corridor) \u2014 Acquisition Pending"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-8192-95d8-f81988611e45",
+      "title": "Waterdeep Warborn Mega-Facility"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81a3-b119-cb252796aa61",
+      "title": "Baen'und Component Factory Site \u2014 Neverwinter"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81a6-8349-ecdc1f0efef8",
+      "title": "Longsaddle Valley"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81a6-907c-e3066551f69b",
+      "title": "Aldwich Lane Workshop \u2014 Neverwinter"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81a8-a8dd-d69c21b5f1b5",
+      "title": "Undermountain"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81b0-810b-dd2083f0362f",
+      "title": "Baen'und Innovations \u2014 Waterdeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81bd-a639-ef5dd4981b1a",
+      "title": "Thornfield Estate"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81bf-9ce2-d3a58b2310fe",
+      "title": "Castle Waterdeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81c3-98aa-ef7a40cdd803",
+      "title": "Deepwater Harbor"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81ce-8378-ffc93d9bebf2",
+      "title": "Inevitable City"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81cf-96a3-e3a18af78c89",
+      "title": "Toril Shield Assurance / Securus Cafe"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81d1-b5d6-ce4274842211",
+      "title": "The Market (Court of the White Bull)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81d3-ba53-fa0ef760543a",
+      "title": "The Ledge \u2014 Dalelands Corridor Overlook"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81d6-92af-ca37333dc5f3",
+      "title": "Gauntlgrym"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81d8-b39b-d2d00f403644",
+      "title": "Ravencrest Hall Program \u2014 Baen Construction + Treasury Quarries (Day 729\u20131200)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81d9-a53b-e4d73450d2a7",
+      "title": "Tethford"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81e0-a1d3-d90902c395f4",
+      "title": "Yartar"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81e2-a79d-c3eb294ee1f4",
+      "title": "The Saltcellar (Firth Secondary Meeting Site)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81e6-b8e3-d5334331bc22",
+      "title": "Old Xoblob Shop"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81e8-8a9d-ca14db3e72bd",
+      "title": "Mithril Hall"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81f5-9495-c4fa7ee5c086",
+      "title": "Rassalantar Waystation (Flagon and Dragon) \u2014 Dessarin Corridor"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81f7-9f8f-ea8c31905f65",
+      "title": "Northern Crown Financial \u2014 Castle District Branch (Neverwinter)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:348e8214-84b0-81fc-ab24-cad55e8da100",
+      "title": "Petra Voss Laundry (Candle Street Cut-Out)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34be8214-84b0-810d-88da-c87a2a6c5e5e",
+      "title": "Haulver & Cray Notary Side-Room"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34be8214-84b0-810d-946d-d27352f7df76",
+      "title": "Ironside Boarding House (Anchor Lane)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34be8214-84b0-811f-a74c-efdfc7e6d2aa",
+      "title": "Greymantle Alley"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34be8214-84b0-814d-8b94-c755aff46399",
+      "title": "Ashwell & Merrith Commercial Archives"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34be8214-84b0-8157-b4ca-d00d6b8a9107",
+      "title": "Tull & Hadwick Bonded Freight Yard"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34be8214-84b0-815e-92aa-d44c0e72913e",
+      "title": "Cordell's Reading Room (Selduth Street)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34be8214-84b0-81a4-9941-f02a691409b5",
+      "title": "Verandine Private Chamber"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8111-9fd4-c41feef5634e",
+      "title": "Shimmerdeep Cradle"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8116-b30f-fc437701a31b",
+      "title": "Sembia"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8119-a8f4-e7cbe9ab9375",
+      "title": "Dock Ward Warehouse Node \u2014 Waterdeep (47 Herring Lane)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8121-ac2a-f6b56634769a",
+      "title": "The Cerulean"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8123-b128-f25c130c0e69",
+      "title": "Veil Docks Facility \u2014 Neverwinter Physical Operations Node"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8125-b0cc-fa8966ff42f0",
+      "title": "Project Burning Gate"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-812f-8577-d4d37289da9f",
+      "title": "Wyrmhelm Forgedeep Facility"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-812f-97cc-e7bf7af67928",
+      "title": "Crown of Eight Springs"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8130-aedb-f6d099d79bfb",
+      "title": "Orchard Chapel"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8137-917c-e3c16e60d2da",
+      "title": "Calimport"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-813a-b762-f0810714306b",
+      "title": "Maltheus's Laboratory \u2014 Three-Level Research Wing"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-814d-853b-cfc46b2a0d36",
+      "title": "Al-Rashid Clan"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8158-a449-c58b59fbc2fd",
+      "title": "Crystal Gardens"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-815b-8025-e995ced7c996",
+      "title": "Neverwinter Municipal Water Corporation"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-815b-beb3-e3673d49d14b",
+      "title": "Shade Remnant"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-815d-97ac-c2ffe6144340",
+      "title": "Suzail"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-815d-aa7d-ed8836079200",
+      "title": "Luskan"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8164-aa0f-d2d0083834c8",
+      "title": "Threadbaum Model 1494-L \"Whisper\""
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8172-b32e-f083715f9465",
+      "title": "Desertsmouth Tunnel \u2014 Trans-Mountain Canal Passage"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8192-a3e1-d7a8e01f59ab",
+      "title": "Celestial Springs"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8194-8b0d-c5bd4ef21e14",
+      "title": "Dalelands"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-8199-afdb-e5a9fa617158",
+      "title": "House Amaranthe"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-819d-920a-fb6683f4e988",
+      "title": "The Thayan Delegation \u2014 Red Wizards of Thay"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81a2-971f-e07cee60db41",
+      "title": "The Shadowed Passage"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81a4-bd09-f7f074b83cd2",
+      "title": "The Argent Tide (Silver-Eyed Faction)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81a7-9506-ffca52327874",
+      "title": "Purist Assassination Cell"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81a9-8fa4-c44ac30bf8ac",
+      "title": "Crownsite Canal Property BG"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81ac-ab5e-ce56184c8614",
+      "title": "Al-Saif Clan"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81ad-8efe-c4119b8d50b3",
+      "title": "Angel Wing Griffon Corps"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81ae-863b-ee660d607219",
+      "title": "Waterdeep Trading Office"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81b0-a14b-c768b5efbcd7",
+      "title": "Order of the Storm's Edge (Emperor's Talons)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81b3-8852-d7e57a7ddc60",
+      "title": "Verdant Cascades"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81b4-80a1-f21c1cf84b7e",
+      "title": "Baldur's Gate"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81b9-95b9-f3426792b6bc",
+      "title": "Formicorps"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81c2-ba0f-e0203fa2676f",
+      "title": "Thirst Glacier"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81c2-beea-e2858f85995d",
+      "title": "Dawnwood Settlement"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81c8-a70a-cb6d6e6713ec",
+      "title": "Athkatla"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81c9-87b5-eb42379ee215",
+      "title": "Warden's Vigil"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81cb-a456-df180208d010",
+      "title": "Thorn & Silver Exchange \u2014 Luskan"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81d0-98d8-e1b1967a5188",
+      "title": "Safe Harbor Inn \u2014 Luskan"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81d0-b826-e05d9ac43342",
+      "title": "Mithral Gate (Proving Ground)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81d4-9ba6-f0ded0305137",
+      "title": "Baen Continental Waterway System"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81d7-aaf3-fb4e6a607477",
+      "title": "Skyreach Castle"
+    },
+    {
+      "coverage_state": "MISSING_DATA",
+      "stable_source_id": "notion:page:34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+      "title": "Empire Financial State \u2014 Current Reference"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81d8-97ee-dbe2fb005457",
+      "title": "The Zhentarim"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81de-bbfc-c4e4aff3134d",
+      "title": "Mennarn's Folly"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81e8-afe4-c305db68a0ab",
+      "title": "Baen Settlements \u2014 Gauntlgrym Road & Dawnwood"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81ed-8658-d74dbf3f7539",
+      "title": "Cult of the Dragon \u2014 Eastern Cells"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81ef-b974-fa3f64c20be8",
+      "title": "Arterial Road Crystal Network"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81f1-b228-e214adb50c0b",
+      "title": "Bloodaxe Halfling Scout-Sniper Section"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81f2-8cd4-c990f5b90e97",
+      "title": "Margaster Asmodean Cell"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81f4-9f96-e13329a117c6",
+      "title": "Anauroch \u2014 Eastern Region"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ce8214-84b0-81fe-bf14-f062ef3cb91b",
+      "title": "Zariel Warborn Contract"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:34ee8214-84b0-81cd-adac-d7764adfcc6a",
+      "title": "The Hollow Sun \u2014 Aurixalnar's Lair"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:361e8214-84b0-8108-98c6-c6ab45d6ae2b",
+      "title": "Northern Crown Financial \u2014 Luskan Branch House (Shipmaker's Row)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:361e8214-84b0-8114-927c-c6436632eda6",
+      "title": "Northern Crown Financial \u2014 Suzail Branch House (Bardenthal Counting House)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:361e8214-84b0-8146-a17b-cbbc1d829c97",
+      "title": "Hollow Reach (Independent Polity / Anticipated Vassal Kingdom)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:361e8214-84b0-8147-bd70-cf207ddfefd2",
+      "title": "Northern Crown Financial \u2014 Neverwinter Branch House"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:361e8214-84b0-8154-9abb-ff2fba3cddea",
+      "title": "Glacier Terminus Complex (Anauroch Glacier / Fortress Lloryk / Eastern Canal Terminus)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:361e8214-84b0-8167-8d69-d9adf9e2b5db",
+      "title": "Eastern Anauroch \u2014 Frostborn Legate Region"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:361e8214-84b0-8178-811c-ea3b87b98886",
+      "title": "Akhet-Senet (Sun-Crowned Heights Plateau, Thay-held)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:361e8214-84b0-8178-a028-eef9ba893773",
+      "title": "Northern Crown Financial \u2014 Waterdeep Branch House (Trade Ward)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:361e8214-84b0-81a6-af8f-ffc95216b2e8",
+      "title": "Akhet-Sereth (Ruins of the Pre-Trouble Mulhan Capital)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:361e8214-84b0-81c1-8106-fac55527195c",
+      "title": "Sethr-Anhepet (Capital of the Hollow Reach)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:362e8214-84b0-813b-9b7e-f67d1559fd89",
+      "title": "Faske & Halloran"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:362e8214-84b0-8146-9996-eada540f9dd9",
+      "title": "The Faske Library (Discreet)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:362e8214-84b0-8166-89cc-cc72eb8dfe59",
+      "title": "Faske & Halloran Premises"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:362e8214-84b0-81c6-b58b-cc3e9d78094f",
+      "title": "Halloran-Faske Townhouse"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:362e8214-84b0-81e9-8ce5-d318425ffcde",
+      "title": "Neverwinter Munitions Facility"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:368e8214-84b0-8117-9096-d8c6a32bd357",
+      "title": "The Elturel Cohort"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:36ae8214-84b0-8105-b235-e03f513232a8",
+      "title": "The Sunbroken Lances"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:36ae8214-84b0-8113-8a6c-f90a3b8207f7",
+      "title": "The Oak Father's Circle of the Delimbiyr"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:36ae8214-84b0-813a-911a-d8b205c76a29",
+      "title": "Rimehold Cloister"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:36ae8214-84b0-81f4-b34a-f63c44327bea",
+      "title": "Talvert's Ford"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:36ae8214-84b0-81f7-835d-e500affe72fe",
+      "title": "The Rimewardens"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:36be8214-84b0-8174-bdf2-f22d3e43e403",
+      "title": "Maltheus's Laboratory \u2014 The Concordance, the Theater, the Standing Problem"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:371e8214-84b0-81bf-a7d3-c0f4a3a7901d",
+      "title": "The Magisterium Verbi"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:372e8214-84b0-8153-8a4d-e3076e917016",
+      "title": "The Vast Swamp"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:372e8214-84b0-81d9-8c19-e650c16b687f",
+      "title": "Institut de Tissage Arcanique"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:372e8214-84b0-81e9-bf93-e7a587e13fba",
+      "title": "Selgaunt"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:375e8214-84b0-813e-970f-cadfa3c98e0f",
+      "title": "Order of the Warded Moon"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:376e8214-84b0-8108-8810-e1d99b58f959",
+      "title": "Thundertree Waystation"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:376e8214-84b0-8121-88b4-ced3087746f7",
+      "title": "Seven Spires Estate"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:376e8214-84b0-8156-ba5e-c9cb80aa57a4",
+      "title": "Khem-Ruur"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:376e8214-84b0-8195-b319-fbd85aa359b6",
+      "title": "Northern Sea Gate"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:376e8214-84b0-819e-8c07-d304487c01bb",
+      "title": "Sea Gate Harbor Authority"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:376e8214-84b0-81c1-95a1-d5c3e2ceb4cb",
+      "title": "Neverwinter Wood Canal"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:376e8214-84b0-81c4-98fe-c09d23b01898",
+      "title": "The Seven Spires"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:376e8214-84b0-81cf-b7a0-e6a0aee7a57b",
+      "title": "Fortress Llorkh \u2014 The Water Throne"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:376e8214-84b0-81db-9a8a-e682a583b6ee",
+      "title": "Sea Gate Shipyard"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:376e8214-84b0-81f6-b91b-ea0dea73e916",
+      "title": "Loudwater \u2014 The Venice of the North"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:377e8214-84b0-810e-a2b9-c27e1ac73efa",
+      "title": "Eldreth Veluuthra (Victorious Blade of the People)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:377e8214-84b0-8188-8267-d15607032249",
+      "title": "The Court of True Cormanthor (Maerithra's rival exile court)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:377e8214-84b0-81aa-9a34-cbb42e0f2cd4",
+      "title": "Kurrimal"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:377e8214-84b0-81f7-9b52-dd43846aa244",
+      "title": "The Coronal Court (Contemporary)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:378e8214-84b0-812a-9b0d-d6e3f23c8bfe",
+      "title": "The Bloodbone Clan"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:378e8214-84b0-81d5-a484-dc9533fdff2a",
+      "title": "Order of the Ironwing"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:378e8214-84b0-81ee-aa0c-d2792f860cb7",
+      "title": "The Saltglass Baths"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:37ae8214-84b0-810e-bdc4-cbb06f0887c0",
+      "title": "House Auvyrtha"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:37ae8214-84b0-81c0-96f9-f2422cae98a8",
+      "title": "Helm's Order of the Hand"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:37ae8214-84b0-81c8-8348-c3b0a504da24",
+      "title": "The Wyrmhelm Program"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:37de8214-84b0-8138-8622-e02dcadce4bf",
+      "title": "Treasury Quarries"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:37de8214-84b0-8154-9c6b-d10986768d97",
+      "title": "Baen Real Estate & Housing Portfolio"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:37de8214-84b0-81d1-bf05-cd5b4111d5bc",
+      "title": "Stonefire Ceramics"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:37fe8214-84b0-8193-885c-cadb1f4f69e5",
+      "title": "The Moonflower Covenant"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:381e8214-84b0-81c7-b992-e26deeee3b62",
+      "title": "House Vel'Khaeryn"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:383e8214-84b0-81bd-b71c-de6bec0780d0",
+      "title": "Akhet-Senef (Ruins of the Sky-Veiled Capital)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:388e8214-84b0-816d-ab3a-e40ee4aaeb07",
+      "title": "Sild\u00ebyuir"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:388e8214-84b0-81a3-b039-c8745cddebe8",
+      "title": "The Low Road"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:388e8214-84b0-81d1-8c62-fef45e645102",
+      "title": "House Baenre"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:388e8214-84b0-81d8-af7f-ce75f6e3b5bb",
+      "title": "Tir'in'tiral"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:38ce8214-84b0-8191-b531-d89b2ade8198",
+      "title": "Trollflow Redoubt \u2014 Forward Observation Post"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:38de8214-84b0-811e-84bd-d2a4ae725a54",
+      "title": "The Junction Waystation"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:38de8214-84b0-81db-9ba6-ef67998f270a",
+      "title": "Caledor"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:38de8214-84b0-81e1-b9ac-ea69b2346a24",
+      "title": "Surbrin Eastern Road (Baen Bypass)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:38de8214-84b0-81f1-8e13-f05afbaba879",
+      "title": "Isle de Troll"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:38ee8214-84b0-81fe-9a92-e8020a7be7a8",
+      "title": "The High Forest (Caledor Domain)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:392e8214-84b0-819b-9878-d48ea5b1dc44",
+      "title": "Mirabar"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:392e8214-84b0-81ef-b0a9-d73f9b9757d7",
+      "title": "Scales & Secrets Asset Management Trust (SSAMT)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:399e8214-84b0-81e8-a738-f93f1e833aeb",
+      "title": "Inevitable City \u2014 District Gazetteer & Hell-Quarter Ledger"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:39ce8214-84b0-81b8-ac8f-ec8f2a679a77",
+      "title": "The White Sash"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:39de8214-84b0-813d-8402-dba12a5a00ac",
+      "title": "The Nine-Banner Gathering"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3a0e8214-84b0-8112-ab84-d61039d9c852",
+      "title": "The Silvered Passage"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3a0e8214-84b0-816b-879a-ce1e87613511",
+      "title": "The Deep Galleries (Delve Gate)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3aae8214-84b0-81bd-b896-f92730c67452",
+      "title": "House Symryvvin"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3afe8214-84b0-81a0-9da0-cf60399bbc44",
+      "title": "The Drowned Throne"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3b3e8214-84b0-817e-b670-fb3f9b2c3511",
+      "title": "The Black Sluice"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3bbe8214-84b0-815f-ac80-dd1c4430327d",
+      "title": "Deep Road Network (Deep Road Authority)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-8101-8d24-eb61b3e8cf2b",
+      "title": "Calimshan (Syl-Pasha)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-8104-88aa-d07f4bded21e",
+      "title": "Lords of Waterdeep"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-8111-a885-e0308c1ea260",
+      "title": "Yartar (Waterbaron)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-811a-8961-d786dc6ec2dd",
+      "title": "The Twisted Rune"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-811c-8e67-d95b85323a82",
+      "title": "Clan Battlehammer (Mithral Hall)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-8123-8b13-dd743507d18c",
+      "title": "Stone Bridge Company"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-8125-9c06-df879a350b7e",
+      "title": "Shade Remnant Anauroch Bases"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-8132-9a0d-c36dd529380d",
+      "title": "The Eighth Veil"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-8136-ab42-e9f5e1307258",
+      "title": "Dales Council"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-814d-8b36-e5e2c932c89c",
+      "title": "The Jade Court of Aelindra"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-8167-be0c-dfc1372ddf25",
+      "title": "Archdevil Zariel (Avernus)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-816a-8570-e8c7f1243e3b",
+      "title": "Caledor Sub-Territories"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-817a-91de-d9b892517270",
+      "title": "Hollow Reach (Sunless Queen)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-817e-909d-f5e29072c0d2",
+      "title": "Council of Six (Athkatla / Amn)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-817e-b4e9-c028c3bb1569",
+      "title": "Hardliner Faction (Waterdeep)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-817f-ba5d-e85463b9d240",
+      "title": "The Heretic's Thread"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-8180-ad1d-d1eb2b31998a",
+      "title": "Archdevil Dispater (Dis)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-8196-ad9f-cf4db9814737",
+      "title": "Cormyr (Purple Dragon Throne)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81a2-8d13-e2c252a26647",
+      "title": "Dunbarrow's Riders"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81b4-859e-dc0c77c36e90",
+      "title": "Cormanthor-in-Exile (Elara's Kingdom)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81b7-aabc-c22f10569330",
+      "title": "Zhentarim Holdings (Moonsea & Dalelands)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81be-9378-eff521f16612",
+      "title": "Council of Four (Baldur's Gate)"
+    },
+    {
+      "coverage_state": "CONFLICT",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81c0-85ee-cc74c2bcb35b",
+      "title": "Northern Crown Monetary System"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81c0-8b0b-d1abb3bd6266",
+      "title": "Mirabar (Council of Sparkling Stones)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81c7-bc58-f1c6a4a8ae20",
+      "title": "Candlekeep (The Avowed)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81e3-98de-f742872121bf",
+      "title": "Luskan (High Captains)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81ec-8167-fd325ff1717b",
+      "title": "Eastern Bulwark (Iron Sovereignty)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81f2-8447-e5247b0265b1",
+      "title": "Northern Crown Financial (NCF)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81f2-be8f-d75c56502ed8",
+      "title": "Valkia the Bloody / Khorne Presence"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81f6-b3e2-eff79338929e",
+      "title": "Luruar Confederation (Silver Marches)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81f8-88a6-e1169f9a4df4",
+      "title": "Snowfall Hearthworks"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81fe-94fa-ef24cc392d75",
+      "title": "Vaelthorne (Cassius Brightward)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3c3e8214-84b0-815e-bb1a-c5e598d3d634",
+      "title": "Warborn Engineering Campus \u2014 North River Site"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3cee8214-84b0-815b-ac54-e46e900f6d55",
+      "title": "The Tally Room \u2014 Dalelands War-Accounting Facility"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3d1e8214-84b0-814e-aee1-db8532d9b16f",
+      "title": "The Sallow Pit (Field Ward, Waterdeep)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3d1e8214-84b0-8150-a65c-c6032705f27d",
+      "title": "Dock Ward Boathouse Altar (Umberlant)"
+    },
+    {
+      "coverage_state": "UNKNOWN",
+      "stable_source_id": "notion:page:3d1e8214-84b0-81d1-8583-d99753254127",
+      "title": "The Brine Kettle (Cod Lane, Dock Ward)"
+    }
+  ],
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "captured_at": "2026-09-17",
+  "coverage_state_counts": {
+    "CONFLICT": 4,
+    "FUTURE": 1,
+    "HISTORICAL": 1,
+    "MISSING_DATA": 1,
+    "MISSING_MECHANICS": 1,
+    "SUPERSEDED": 3,
+    "UNKNOWN": 368
+  },
+  "gate": "CLOSED",
+  "incomplete_collections": [
+    "notion:npcs",
+    "notion:artifacts",
+    "notion:threats",
+    "notion:plot_threads",
+    "notion:public_perception"
+  ],
+  "material_record_count": 379,
+  "provisional_row_coverage": {
+    "CONFLICT": 2,
+    "CONTEXT_ONLY": 0,
+    "FUTURE": 0,
+    "HISTORICAL": 0,
+    "MISSING_DATA": 0,
+    "MISSING_MECHANICS": 0,
+    "SIMULATED": 0,
+    "SUPERSEDED": 2,
+    "UNKNOWN": 1377,
+    "basis": "Actual per-record coverage plus explicit UNKNOWN for unmaterialized collections; no carried-forward aggregate SIMULATED claim",
+    "denominator_core_rows": 1381
+  },
+  "raw_core_rows": 1381,
+  "record_class_counts": {
+    "banks_treasuries_funds_debt_loans_reserves_instruments": 4,
+    "business_registry": 90,
+    "consequence_ledger_a": 11,
+    "consequence_ledger_b": 10,
+    "construction_capital_programs": 1,
+    "contracts_orders_obligations": 1,
+    "factions": 79,
+    "locations": 182,
+    "settlements_cities_districts": 1
+  },
+  "schema": "tnp.economy.coverage-report/1",
+  "source_collection_count": 10,
+  "temporal_records": {
+    "FUTURE": [
+      "notion:page:37ee8214-84b0-812b-b758-cf201d8fcb63#hammer1496"
+    ],
+    "HISTORICAL": [
+      "notion:page:338e8214-84b0-81e3-9d8c-dcd4d6c896c7#state"
+    ],
+    "SUPERSEDED": [
+      "notion:page:321e8214-84b0-8119-b068-e3d4d503eaa3",
+      "notion:page:323e8214-84b0-8146-a6ed-c334fb99592d",
+      "notion:page:32ce8214-84b0-814d-bfeb-d60ac51ac338"
+    ]
+  }
+}

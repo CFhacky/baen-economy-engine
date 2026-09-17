@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "baen-economy-engine"
+version = "0.3.0"
+description = "Fail-closed monthly economy engine for The New Path / Baen Empire. HTTP JSON API for other apps."
+requires-python = ">=3.11"
+dependencies = []
+license-files = ["THIRD_PARTY_NOTICES.md"]
+
+[project.scripts]
+baen-registry-audit = "baen_economy.audit_cli:main"
+baen-economy = "baen_economy.operator_cli:main"
+baen-business = "baen_economy.business_cli:main"
+baen-region = "baen_economy.regional_cli:main"
+baen-food = "baen_economy.food_cli:main"
+baen-agriculture = "baen_economy.agriculture_cli:main"
+baen-food-ops = "baen_economy.food_ops_server:main"
+baen-whole-economy = "baen_economy.whole_economy_cli:main"
+baen-tick = "baen_economy.http_api:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

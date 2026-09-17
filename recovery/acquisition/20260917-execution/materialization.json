@@ -1,0 +1,141 @@
+{
+  "schema": "tnp.economy.census-materialization/1",
+  "batch_id": "20260917-R2",
+  "capture_date": "2026-09-17",
+  "repository_base_sha": "f95516c89906834b096cfba2ddc7908940b6ad09",
+  "previous_snapshot": "recovery/LIVE_EMPIRE_SOURCE_CENSUS_2026-09-17.json",
+  "proof_file": "recovery/acquisition/20260917/enumeration_proofs.json",
+  "collections": [
+    {
+      "key": "business_registry",
+      "title_property": "Entity",
+      "files": [
+        "recovery/acquisition/20260917-execution/business_registry.000.json",
+        "recovery/acquisition/20260917-execution/business_registry.001.json",
+        "recovery/acquisition/20260917-execution/business_registry.002.json"
+      ]
+    },
+    {
+      "key": "locations",
+      "title_property": "Name",
+      "files": [
+        "recovery/acquisition/20260917/locations.000.json",
+        "recovery/acquisition/20260917/locations.001.json",
+        "recovery/acquisition/20260917/locations.002.json",
+        "recovery/acquisition/20260917/locations.003.json",
+        "recovery/acquisition/20260917/locations.004.json",
+        "recovery/acquisition/20260917/locations.005.json",
+        "recovery/acquisition/20260917/locations.006.json",
+        "recovery/acquisition/20260917/locations.007.json"
+      ]
+    },
+    {
+      "key": "consequence_ledger_a",
+      "title_property": "Commitment",
+      "files": [
+        "recovery/acquisition/20260917-execution/consequence_ledger_a.000.json"
+      ]
+    },
+    {
+      "key": "consequence_ledger_b",
+      "title_property": "Commitment",
+      "files": [
+        "recovery/acquisition/20260917-execution/consequence_ledger_b.000.json"
+      ]
+    },
+    {
+      "key": "factions",
+      "title_property": "Name",
+      "files": [
+        "recovery/acquisition/20260917-execution/factions.000.json",
+        "recovery/acquisition/20260917-execution/factions.001.json",
+        "recovery/acquisition/20260917-execution/factions.002.json"
+      ]
+    },
+    {
+      "key": "npcs",
+      "title_property": "Name",
+      "captured": 920,
+      "live_rowCount": 681,
+      "complete": true,
+      "files": [
+        "recovery/acquisition/20260917-execution/npcs.000.json",
+        "recovery/acquisition/20260917-execution/npcs.001.json",
+        "recovery/acquisition/20260917-execution/npcs.002.json",
+        "recovery/acquisition/20260917-execution/npcs.003.json",
+        "recovery/acquisition/20260917-execution/npcs.004.json",
+        "recovery/acquisition/20260917-execution/npcs.005.json",
+        "recovery/acquisition/20260917-execution/npcs.006.json",
+        "recovery/acquisition/20260917-execution/npcs.007.json",
+        "recovery/acquisition/20260917-execution/npcs.008.json",
+        "recovery/acquisition/20260917-execution/npcs.009.json",
+        "recovery/acquisition/20260917-execution/npcs_gap.000.json",
+        "recovery/acquisition/20260917-execution/npcs_gap.001.json",
+        "recovery/acquisition/20260917-execution/npcs_gap.002.json",
+        "recovery/acquisition/20260917-execution/npcs_gap.003.json"
+      ],
+      "notes": "npcs.000-005 prior hashed prefix; npcs.006-009 live suffix 312 compact rows after Darran Lightfoot; npcs_gap.000-003 live prefix-gap 278 compact rows. 239 previously captured pages no longer in the live unfiltered collection are retained in the desk census and are not in these gap/suffix shards."
+    },
+    {
+      "key": "artifacts",
+      "title_property": "Name",
+      "captured": 206,
+      "rowCount": 206,
+      "complete": true,
+      "files": [
+        "recovery/acquisition/20260917-execution/artifacts.000.json",
+        "recovery/acquisition/20260917-execution/artifacts.001.json",
+        "recovery/acquisition/20260917-execution/artifacts.002.json"
+      ]
+    },
+    {
+      "key": "threats",
+      "title_property": "Name",
+      "captured": 26,
+      "rowCount": 26,
+      "complete": true,
+      "files": [
+        "recovery/acquisition/20260917-execution/threats.000.json"
+      ]
+    },
+    {
+      "key": "plot_threads",
+      "title_property": "Thread",
+      "captured": 89,
+      "rowCount": 89,
+      "complete": true,
+      "files": [
+        "recovery/acquisition/20260917-execution/plot_threads.000.json"
+      ]
+    },
+    {
+      "key": "public_perception",
+      "title_property": "City",
+      "captured": 7,
+      "rowCount": 7,
+      "complete": true,
+      "files": [
+        "recovery/acquisition/20260917-execution/public_perception.000.json"
+      ]
+    }
+  ],
+  "source_scope": "Complete compact database-property rows from direct live Notion.query-data-sources SQL captured on 2026-09-17. NPC live collection 681/681 covered (312 suffix + 278 prefix-gap + 91 already in npcs.000-005 that remain live). 239 previously hashed NPC pages no longer in the live unfiltered collection are retained, not invented, not deleted. Artifacts 206/206, threats 26/26, plot threads 89/89, public perception 7/7. Compact SQL columns used to avoid connector truncation. Full page bodies and faithful rich-text mentions are a separate, explicitly unfinished hydration pass. No Notion write, no merge, no campaign-time advance. Day 7 Hammer 1495 DR unchanged.",
+  "provenance": [
+    {
+      "choice": "Live source enumeration, stable hashed records, no Notion writes, no merge, no campaign advance and no month simulation",
+      "tag": "USER-RULED"
+    },
+    {
+      "choice": "Source values, raw dates, relationships and explicit supersession notices",
+      "tag": "SOURCE-DERIVED"
+    },
+    {
+      "choice": "Receipt verification, deterministic normalization and conservative UNKNOWN defaults",
+      "tag": "MODEL-PROPOSED"
+    },
+    {
+      "choice": "Simulation eligibility and temporal reconciliation of unreviewed source records",
+      "tag": "UNRESOLVED"
+    }
+  ]
+}

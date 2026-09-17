@@ -1,0 +1,839 @@
+{
+  "schema": "tnp.economy.regional-scenario/1",
+  "scenario_id": "baen-regional-mvp",
+  "assumption_profile_id": "baen-north-preview-v1",
+  "mode": "preview",
+  "canonical": false,
+  "registry_binding": {
+    "fixture_path": "fixtures/registry-snapshots/business-registry-2026-08-29.json",
+    "row_count": 90,
+    "captured_at": "2026-08-29T10:48:48.579Z",
+    "content_hash": "d40285fc31dfee4290a8adb6d336113ba36674b292c27016216baa63afa4fa22",
+    "snapshot_hash": "a4196a7afaa0102f10d1d5fe752f9842ed17fcee6933ead468446d9343b71f1d",
+    "export_hash": "9c3f74ef052e49e9f1d62b1a76a1d8e3a504baf64566a016f668b06fe7a6f034",
+    "source_schema_hash": "3e18484d5f06e3530a80e3e50a6e11c3f1e3e9c90fb4da531f95c7c4df6f5562"
+  },
+  "selected_source_records": [
+    {
+      "source_record_id": "notion:321e821484b081c69bdec30dd49bc5b6",
+      "row_hash": "cd9aa52fd4fbbef4b57d0502f9b985c29e96a48c96e8bbff494ecfd5d128cae0"
+    },
+    {
+      "source_record_id": "notion:321e821484b0816c87fbf0fee22835ad",
+      "row_hash": "24f44edb39973588c674b8779ef0a62eabb82e7c2fe292ee40cb6d2bd3b881b7"
+    },
+    {
+      "source_record_id": "notion:321e821484b081e09660eacd14973b2f",
+      "row_hash": "f2f2bc168bfd8086ae58ee8005e7a73d982ced967a5c8d3c4c27bc82e6fcfc23"
+    },
+    {
+      "source_record_id": "notion:321e821484b08112ab9ecd6f5eba18e8",
+      "row_hash": "e0f1fc0a42987dd84f9bf7f69b24a1b70b3f091f2aa72e9da741b9d6b1a06be2"
+    },
+    {
+      "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+      "row_hash": "0d7d3d57f462942cd721090bcd86be045a763566a9242bfa885e854b5cca0b4f"
+    },
+    {
+      "source_record_id": "notion:321e821484b081229dceefa0c3c48170",
+      "row_hash": "c98c8497e1cecc2af2a589bbfdaf3d802529506e97d922dbf1b03a34e0c8cee7"
+    },
+    {
+      "source_record_id": "notion:321e821484b081289cb9fbb308ea2536",
+      "row_hash": "6694fd88683cb880412d91a6747f744e41bb39fdeaa75df0979ec4d2e7bd09de"
+    },
+    {
+      "source_record_id": "notion:321e821484b08175997cc81e61c35015",
+      "row_hash": "3441d7c84c243dc141dcfaed9e2bbb8e7b79299601313a4db0e727e329225b17"
+    }
+  ],
+  "assumptions": {
+    "authority": "scenario_input",
+    "canonical": false,
+    "warning": "Everything in this assumptions object is invented for a runnable preview. It is not a Notion fact, campaign ruling, settled price, actual inventory, actual route, actual demand, or actual cash balance.",
+    "timeline": {
+      "authority": "scenario_input",
+      "canonical": false,
+      "timeline_id": "preview:baen-north-preview-v1",
+      "month_index": 0,
+      "campaign_date_label": "Scenario month 0; no Forgotten Realms date asserted",
+      "basis": "The surface-economy opening date is unresolved, so the vertical slice uses an isolated preview clock."
+    },
+    "business_roles": [
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b081c69bdec30dd49bc5b6",
+        "role": "raw-material supplier",
+        "basis": "Selected to begin a visible clay-to-brick-to-construction chain."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b0816c87fbf0fee22835ad",
+        "role": "brick manufacturer",
+        "basis": "Selected as the manufacturing conversion step in the construction chain."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b081e09660eacd14973b2f",
+        "role": "grain producer",
+        "basis": "Selected to supply a food chain and market demand."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b08112ab9ecd6f5eba18e8",
+        "role": "fish producer",
+        "basis": "Selected as a food producer that consumes grain feed and supplies trade."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "role": "route operator and infrastructure buyer",
+        "basis": "Selected to make transport capacity and infrastructure demand operational constraints."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b081229dceefa0c3c48170",
+        "role": "construction producer and brick buyer",
+        "basis": "Selected to turn bricks into a demanded construction output."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b081289cb9fbb308ea2536",
+        "role": "food-market intermediary",
+        "basis": "Selected to create downstream grain and fish demand in another city."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b08175997cc81e61c35015",
+        "role": "settlement bank",
+        "basis": "Selected to exercise deposits, loans, bank assets, and bank liabilities without using the consolidation-only parent row."
+      }
+    ],
+    "commodities": [
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "commodity_id": "commodity:clay",
+        "name": "Clay",
+        "unit": "source ton",
+        "perishable_loss_rate": "0",
+        "basis": "A preview unit chosen for material conservation; the Registry does not define grade, moisture, or a conversion ratio."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "commodity_id": "commodity:brick",
+        "name": "Finished brick",
+        "unit": "brick",
+        "perishable_loss_rate": "0",
+        "basis": "A preview stock unit chosen to make Brickworks output and construction consumption visible."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "commodity_id": "commodity:grain",
+        "name": "Feed and food grain",
+        "unit": "ton",
+        "perishable_loss_rate": "0.01",
+        "basis": "A combined preview commodity with a one-percent monthly storage loss; no source fixes this loss rate."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "commodity_id": "commodity:fish",
+        "name": "Preserved fish equivalent",
+        "unit": "ton",
+        "perishable_loss_rate": "0.08",
+        "basis": "A preserved-fish-equivalent preview unit with an eight-percent monthly storage loss; preservation practice is unresolved."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "commodity_id": "commodity:construction-work",
+        "name": "Completed construction work",
+        "unit": "work unit",
+        "perishable_loss_rate": "0",
+        "basis": "An abstract preview output used to show material and labour conversion into infrastructure delivery."
+      }
+    ],
+    "sites": [
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "site_id": "site:neverwinter-clay-quarries",
+        "source_record_id": "notion:321e821484b081c69bdec30dd49bc5b6",
+        "basis": "Treat the selected Registry business as one preview production site."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "site_id": "site:baen-brickworks",
+        "source_record_id": "notion:321e821484b0816c87fbf0fee22835ad",
+        "basis": "Treat the selected Registry business as one preview production site."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "site_id": "site:agricultural-shelter-zones",
+        "source_record_id": "notion:321e821484b081e09660eacd14973b2f",
+        "basis": "Collapse the multi-region source row into one preview supply site without asserting its real geography."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "site_id": "site:blacklake-aquaculture",
+        "source_record_id": "notion:321e821484b08112ab9ecd6f5eba18e8",
+        "basis": "Aggregate the seven source pools into one preview operating site."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "site_id": "site:arterial-road-north",
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "basis": "Represent the network as one preview route-control site, not as a claim about its actual nodes."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "site_id": "site:baen-construction-hq",
+        "source_record_id": "notion:321e821484b081229dceefa0c3c48170",
+        "basis": "Treat the Registry HQ row as the preview construction conversion site."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "site_id": "site:waterdeep-trading-office",
+        "source_record_id": "notion:321e821484b081289cb9fbb308ea2536",
+        "basis": "Treat the office as a preview wholesale receipt and demand site."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "site_id": "site:ncf-neverwinter",
+        "source_record_id": "notion:321e821484b08175997cc81e61c35015",
+        "basis": "Treat the verified branch row as the preview settlement site."
+      }
+    ],
+    "inventories": [
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "inventory_id": "inventory:quarry-clay",
+        "source_record_id": "notion:321e821484b081c69bdec30dd49bc5b6",
+        "site_id": "site:neverwinter-clay-quarries",
+        "commodity_id": "commodity:clay",
+        "quantity": "500",
+        "basis": "Invented opening stock for the preview; no source provides opening clay inventory."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "inventory_id": "inventory:brickworks-clay",
+        "source_record_id": "notion:321e821484b0816c87fbf0fee22835ad",
+        "site_id": "site:baen-brickworks",
+        "commodity_id": "commodity:clay",
+        "quantity": "800",
+        "basis": "Invented opening stock chosen to permit immediate brick production."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "inventory_id": "inventory:brickworks-bricks",
+        "source_record_id": "notion:321e821484b0816c87fbf0fee22835ad",
+        "site_id": "site:baen-brickworks",
+        "commodity_id": "commodity:brick",
+        "quantity": "25000",
+        "basis": "Invented finished-goods opening stock; the Registry states capacity, not inventory."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "inventory_id": "inventory:shelter-grain",
+        "source_record_id": "notion:321e821484b081e09660eacd14973b2f",
+        "site_id": "site:agricultural-shelter-zones",
+        "commodity_id": "commodity:grain",
+        "quantity": "250",
+        "basis": "Invented opening grain stock for the preview; no source provides this inventory."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "inventory_id": "inventory:blacklake-grain",
+        "source_record_id": "notion:321e821484b08112ab9ecd6f5eba18e8",
+        "site_id": "site:blacklake-aquaculture",
+        "commodity_id": "commodity:grain",
+        "quantity": "30",
+        "basis": "Invented feed stock chosen to expose a feed shortage if deliveries fail."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "inventory_id": "inventory:blacklake-fish",
+        "source_record_id": "notion:321e821484b08112ab9ecd6f5eba18e8",
+        "site_id": "site:blacklake-aquaculture",
+        "commodity_id": "commodity:fish",
+        "quantity": "60",
+        "basis": "Invented saleable opening stock for the preview; no source provides this quantity."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "inventory_id": "inventory:construction-bricks",
+        "source_record_id": "notion:321e821484b081229dceefa0c3c48170",
+        "site_id": "site:baen-construction-hq",
+        "commodity_id": "commodity:brick",
+        "quantity": "20000",
+        "basis": "Invented opening material stock chosen to permit construction before deliveries."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "inventory_id": "inventory:construction-work",
+        "source_record_id": "notion:321e821484b081229dceefa0c3c48170",
+        "site_id": "site:baen-construction-hq",
+        "commodity_id": "commodity:construction-work",
+        "quantity": "5",
+        "basis": "Invented completed-work carryover for the infrastructure demand path."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "inventory_id": "inventory:road-work",
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "site_id": "site:arterial-road-north",
+        "commodity_id": "commodity:construction-work",
+        "quantity": "2",
+        "basis": "Invented opening maintenance-work stock for the preview."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "inventory_id": "inventory:trade-grain",
+        "source_record_id": "notion:321e821484b081289cb9fbb308ea2536",
+        "site_id": "site:waterdeep-trading-office",
+        "commodity_id": "commodity:grain",
+        "quantity": "40",
+        "basis": "Invented wholesale opening stock for the preview."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "inventory_id": "inventory:trade-fish",
+        "source_record_id": "notion:321e821484b081289cb9fbb308ea2536",
+        "site_id": "site:waterdeep-trading-office",
+        "commodity_id": "commodity:fish",
+        "quantity": "20",
+        "basis": "Invented wholesale opening stock for the preview."
+      }
+    ],
+    "labor_pools": [
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "labor_pool_id": "labor:quarry",
+        "source_record_id": "notion:321e821484b081c69bdec30dd49bc5b6",
+        "site_id": "site:neverwinter-clay-quarries",
+        "labor_class": "quarry labour",
+        "available_worker_days": "240",
+        "wage_gp_per_day": "0.35",
+        "basis": "Uses the Registry employee count at twenty available days each; wage and availability are preview assumptions."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "labor_pool_id": "labor:brickworks",
+        "source_record_id": "notion:321e821484b0816c87fbf0fee22835ad",
+        "site_id": "site:baen-brickworks",
+        "labor_class": "brickmaking labour",
+        "available_worker_days": "600",
+        "wage_gp_per_day": "0.45",
+        "basis": "Uses the Registry employee count at twenty available days each; wage and availability are preview assumptions."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "labor_pool_id": "labor:agriculture",
+        "source_record_id": "notion:321e821484b081e09660eacd14973b2f",
+        "site_id": "site:agricultural-shelter-zones",
+        "labor_class": "agricultural labour",
+        "available_worker_days": "160",
+        "wage_gp_per_day": "0.30",
+        "basis": "Uses the Registry employee count at twenty available days each; wage and availability are preview assumptions."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "labor_pool_id": "labor:aquaculture",
+        "source_record_id": "notion:321e821484b08112ab9ecd6f5eba18e8",
+        "site_id": "site:blacklake-aquaculture",
+        "labor_class": "aquaculture labour",
+        "available_worker_days": "300",
+        "wage_gp_per_day": "0.35",
+        "basis": "Uses the Registry employee count at twenty available days each; wage and availability are preview assumptions."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "labor_pool_id": "labor:road",
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "site_id": "site:arterial-road-north",
+        "labor_class": "road operations labour",
+        "available_worker_days": "3000",
+        "wage_gp_per_day": "0.40",
+        "basis": "Uses the Registry employee count at twenty available days each; wage and availability are preview assumptions."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "labor_pool_id": "labor:construction",
+        "source_record_id": "notion:321e821484b081229dceefa0c3c48170",
+        "site_id": "site:baen-construction-hq",
+        "labor_class": "construction labour",
+        "available_worker_days": "2400",
+        "wage_gp_per_day": "0.50",
+        "basis": "Uses the Registry employee count at twenty available days each; wage and availability are preview assumptions."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "labor_pool_id": "labor:trade",
+        "source_record_id": "notion:321e821484b081289cb9fbb308ea2536",
+        "site_id": "site:waterdeep-trading-office",
+        "labor_class": "trade labour",
+        "available_worker_days": "200",
+        "wage_gp_per_day": "0.55",
+        "basis": "Uses the Registry employee count at twenty available days each; wage and availability are preview assumptions."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "labor_pool_id": "labor:banking",
+        "source_record_id": "notion:321e821484b08175997cc81e61c35015",
+        "site_id": "site:ncf-neverwinter",
+        "labor_class": "banking labour",
+        "available_worker_days": "700",
+        "wage_gp_per_day": "0.65",
+        "basis": "Uses the Registry employee count at twenty available days each; wage and availability are preview assumptions."
+      }
+    ],
+    "recipes": [
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "recipe_id": "recipe:extract-clay",
+        "source_record_id": "notion:321e821484b081c69bdec30dd49bc5b6",
+        "site_id": "site:neverwinter-clay-quarries",
+        "inputs": [],
+        "outputs": [
+          {"commodity_id": "commodity:clay", "quantity_per_batch": "100"}
+        ],
+        "labor_class": "quarry labour",
+        "worker_days_per_batch": "12",
+        "max_batches_per_month": "15",
+        "priority": 100,
+        "basis": "Invented batch size and labour requirement capped below the source-reported 2,000-ton capacity."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "recipe_id": "recipe:fire-bricks",
+        "source_record_id": "notion:321e821484b0816c87fbf0fee22835ad",
+        "site_id": "site:baen-brickworks",
+        "inputs": [
+          {"commodity_id": "commodity:clay", "quantity_per_batch": "20"}
+        ],
+        "outputs": [
+          {"commodity_id": "commodity:brick", "quantity_per_batch": "750"}
+        ],
+        "labor_class": "brickmaking labour",
+        "worker_days_per_batch": "5",
+        "max_batches_per_month": "100",
+        "priority": 100,
+        "basis": "Invented clay-to-brick ratio and labour requirement; the 100-batch ceiling equals the source-reported 75,000-brick capacity but does not turn the ratio into canon."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "recipe_id": "recipe:produce-grain",
+        "source_record_id": "notion:321e821484b081e09660eacd14973b2f",
+        "site_id": "site:agricultural-shelter-zones",
+        "inputs": [],
+        "outputs": [
+          {"commodity_id": "commodity:grain", "quantity_per_batch": "20"}
+        ],
+        "labor_class": "agricultural labour",
+        "worker_days_per_batch": "16",
+        "max_batches_per_month": "10",
+        "priority": 100,
+        "basis": "Invented monthly harvest batches for a runnable preview; seasonality and real yield are unresolved."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "recipe_id": "recipe:raise-fish",
+        "source_record_id": "notion:321e821484b08112ab9ecd6f5eba18e8",
+        "site_id": "site:blacklake-aquaculture",
+        "inputs": [
+          {"commodity_id": "commodity:grain", "quantity_per_batch": "2"}
+        ],
+        "outputs": [
+          {"commodity_id": "commodity:fish", "quantity_per_batch": "8"}
+        ],
+        "labor_class": "aquaculture labour",
+        "worker_days_per_batch": "10",
+        "max_batches_per_month": "20",
+        "priority": 100,
+        "basis": "Invented feed ratio, yield, and labour requirement to make food inputs constrain output."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "recipe_id": "recipe:complete-construction-work",
+        "source_record_id": "notion:321e821484b081229dceefa0c3c48170",
+        "site_id": "site:baen-construction-hq",
+        "inputs": [
+          {"commodity_id": "commodity:brick", "quantity_per_batch": "1000"}
+        ],
+        "outputs": [
+          {"commodity_id": "commodity:construction-work", "quantity_per_batch": "1"}
+        ],
+        "labor_class": "construction labour",
+        "worker_days_per_batch": "30",
+        "max_batches_per_month": "50",
+        "priority": 100,
+        "basis": "Invented material and labour unit that exposes construction throughput without claiming a real building recipe."
+      }
+    ],
+    "routes": [
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "route_id": "route:clay-to-brickworks",
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "origin_site_id": "site:neverwinter-clay-quarries",
+        "destination_site_id": "site:baen-brickworks",
+        "commodity_id": "commodity:clay",
+        "capacity_per_month": "2000",
+        "travel_periods": 0,
+        "loss_rate": "0.01",
+        "transport_cost_gp_per_dispatched_unit": "0.05",
+        "basis": "Invented intra-Neverwinter link; capacity mirrors the source-reported quarry envelope while time, loss, and cost are assumptions."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "route_id": "route:bricks-to-construction",
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "origin_site_id": "site:baen-brickworks",
+        "destination_site_id": "site:baen-construction-hq",
+        "commodity_id": "commodity:brick",
+        "capacity_per_month": "75000",
+        "travel_periods": 0,
+        "loss_rate": "0.01",
+        "transport_cost_gp_per_dispatched_unit": "0.002",
+        "basis": "Invented intra-Neverwinter link; capacity mirrors Brickworks' source envelope while time, loss, and cost are assumptions."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "route_id": "route:grain-to-blacklake",
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "origin_site_id": "site:agricultural-shelter-zones",
+        "destination_site_id": "site:blacklake-aquaculture",
+        "commodity_id": "commodity:grain",
+        "capacity_per_month": "80",
+        "travel_periods": 1,
+        "loss_rate": "0.02",
+        "transport_cost_gp_per_dispatched_unit": "0.20",
+        "basis": "Invented feed route because the multi-region shelter geography is unresolved."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "route_id": "route:grain-to-waterdeep",
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "origin_site_id": "site:agricultural-shelter-zones",
+        "destination_site_id": "site:waterdeep-trading-office",
+        "commodity_id": "commodity:grain",
+        "capacity_per_month": "180",
+        "travel_periods": 1,
+        "loss_rate": "0.02",
+        "transport_cost_gp_per_dispatched_unit": "0.35",
+        "basis": "Invented wholesale route, capacity, time, handling loss, and dispatched-unit cost."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "route_id": "route:fish-to-waterdeep",
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "origin_site_id": "site:blacklake-aquaculture",
+        "destination_site_id": "site:waterdeep-trading-office",
+        "commodity_id": "commodity:fish",
+        "capacity_per_month": "140",
+        "travel_periods": 1,
+        "loss_rate": "0.03",
+        "transport_cost_gp_per_dispatched_unit": "0.50",
+        "basis": "Invented wholesale route, capacity, time, handling loss, and dispatched-unit cost."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "route_id": "route:construction-to-road",
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "origin_site_id": "site:baen-construction-hq",
+        "destination_site_id": "site:arterial-road-north",
+        "commodity_id": "commodity:construction-work",
+        "capacity_per_month": "40",
+        "travel_periods": 0,
+        "loss_rate": "0",
+        "transport_cost_gp_per_dispatched_unit": "1",
+        "basis": "Invented delivery channel for completed work; no physical work-unit route exists in canon."
+      }
+    ],
+    "demands": [
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "demand_id": "demand:blacklake-grain",
+        "source_record_id": "notion:321e821484b08112ab9ecd6f5eba18e8",
+        "site_id": "site:blacklake-aquaculture",
+        "commodity_id": "commodity:grain",
+        "quantity": "40",
+        "reservation_price_gp_per_delivered_unit": "12",
+        "priority": 20,
+        "basis": "Invented feed demand and willingness to pay for the preview."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "demand_id": "demand:construction-bricks",
+        "source_record_id": "notion:321e821484b081229dceefa0c3c48170",
+        "site_id": "site:baen-construction-hq",
+        "commodity_id": "commodity:brick",
+        "quantity": "50000",
+        "reservation_price_gp_per_delivered_unit": "0.06",
+        "priority": 20,
+        "basis": "Invented construction demand and willingness to pay for the preview."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "demand_id": "demand:trade-grain",
+        "source_record_id": "notion:321e821484b081289cb9fbb308ea2536",
+        "site_id": "site:waterdeep-trading-office",
+        "commodity_id": "commodity:grain",
+        "quantity": "120",
+        "reservation_price_gp_per_delivered_unit": "15",
+        "priority": 100,
+        "basis": "Invented wholesale demand and willingness to pay for the preview."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "demand_id": "demand:trade-fish",
+        "source_record_id": "notion:321e821484b081289cb9fbb308ea2536",
+        "site_id": "site:waterdeep-trading-office",
+        "commodity_id": "commodity:fish",
+        "quantity": "100",
+        "reservation_price_gp_per_delivered_unit": "35",
+        "priority": 100,
+        "basis": "Invented wholesale demand and willingness to pay for the preview."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "demand_id": "demand:road-construction-work",
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "site_id": "site:arterial-road-north",
+        "commodity_id": "commodity:construction-work",
+        "quantity": "20",
+        "reservation_price_gp_per_delivered_unit": "300",
+        "priority": 50,
+        "basis": "Invented infrastructure work demand and willingness to pay for the preview."
+      }
+    ],
+    "opening_prices": [
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "price_id": "price:quarry-clay",
+        "site_id": "site:neverwinter-clay-quarries",
+        "commodity_id": "commodity:clay",
+        "amount_gp_per_unit": "0.45",
+        "basis": "Invented opening reference price for the preview market."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "price_id": "price:brickworks-clay",
+        "site_id": "site:baen-brickworks",
+        "commodity_id": "commodity:clay",
+        "amount_gp_per_unit": "0.50",
+        "basis": "Invented delivered opening reference price for the preview market."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "price_id": "price:brickworks-brick",
+        "site_id": "site:baen-brickworks",
+        "commodity_id": "commodity:brick",
+        "amount_gp_per_unit": "0.04",
+        "basis": "Invented opening reference price for the preview market."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "price_id": "price:shelter-grain",
+        "site_id": "site:agricultural-shelter-zones",
+        "commodity_id": "commodity:grain",
+        "amount_gp_per_unit": "10",
+        "basis": "Invented opening reference price for the preview market."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "price_id": "price:blacklake-grain",
+        "site_id": "site:blacklake-aquaculture",
+        "commodity_id": "commodity:grain",
+        "amount_gp_per_unit": "12",
+        "basis": "Invented delivered opening reference price for the preview market."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "price_id": "price:blacklake-fish",
+        "site_id": "site:blacklake-aquaculture",
+        "commodity_id": "commodity:fish",
+        "amount_gp_per_unit": "25",
+        "basis": "Invented opening reference price for the preview market."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "price_id": "price:construction-brick",
+        "site_id": "site:baen-construction-hq",
+        "commodity_id": "commodity:brick",
+        "amount_gp_per_unit": "0.05",
+        "basis": "Invented delivered opening reference price for the preview market."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "price_id": "price:construction-work",
+        "site_id": "site:baen-construction-hq",
+        "commodity_id": "commodity:construction-work",
+        "amount_gp_per_unit": "250",
+        "basis": "Invented opening reference price for the abstract work unit."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "price_id": "price:road-work",
+        "site_id": "site:arterial-road-north",
+        "commodity_id": "commodity:construction-work",
+        "amount_gp_per_unit": "300",
+        "basis": "Invented delivered opening reference price for the abstract work unit."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "price_id": "price:trade-grain",
+        "site_id": "site:waterdeep-trading-office",
+        "commodity_id": "commodity:grain",
+        "amount_gp_per_unit": "14",
+        "basis": "Invented Waterdeep opening reference price for the preview market."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "price_id": "price:trade-fish",
+        "site_id": "site:waterdeep-trading-office",
+        "commodity_id": "commodity:fish",
+        "amount_gp_per_unit": "32",
+        "basis": "Invented Waterdeep opening reference price for the preview market."
+      }
+    ],
+    "opening_positions": [
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b081c69bdec30dd49bc5b6",
+        "entity_type": "enterprise",
+        "balances": {"cash": "4000"},
+        "basis": "Invented liquid opening balance; Registry capital, revenue, and cost are not cash."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b0816c87fbf0fee22835ad",
+        "entity_type": "enterprise",
+        "balances": {"cash": "5000"},
+        "basis": "Invented liquid opening balance; Registry capital, revenue, and cost are not cash."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b081e09660eacd14973b2f",
+        "entity_type": "enterprise",
+        "balances": {"cash": "2000"},
+        "basis": "Invented liquid opening balance; Registry capital, revenue, and cost are not cash."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b08112ab9ecd6f5eba18e8",
+        "entity_type": "enterprise",
+        "balances": {"cash": "3000"},
+        "basis": "Invented liquid opening balance; Registry capital, revenue, and cost are not cash."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b081ceb8cefafb60bf5d8c",
+        "entity_type": "enterprise",
+        "balances": {"cash": "10000"},
+        "basis": "Invented liquid opening balance; Registry capital, revenue, and cost are not cash."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b081229dceefa0c3c48170",
+        "entity_type": "enterprise",
+        "balances": {"cash": "8000"},
+        "basis": "Invented liquid opening balance; Registry capital, revenue, and cost are not cash."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b081289cb9fbb308ea2536",
+        "entity_type": "enterprise",
+        "balances": {"cash": "7000"},
+        "basis": "Invented liquid opening balance; Registry capital, revenue, and cost are not cash."
+      },
+      {
+        "authority": "scenario_input",
+        "canonical": false,
+        "source_record_id": "notion:321e821484b08175997cc81e61c35015",
+        "entity_type": "bank",
+        "balances": {"reserves": "50000"},
+        "basis": "Invented opening bank reserves. No deposits or loans are pre-created; those require balanced events."
+      }
+    ]
+  },
+  "permissions": {
+    "notion_write": false,
+    "ledger_post": false,
+    "campaign_advance": false,
+    "canonical_state_update": false
+  },
+  "warning": "This fixture is an executable non-canonical preview. Source-reported monthly revenue and cost are comparison benchmarks only; they are not opening cash, automatic transactions, or authorization to update Notion or campaign canon.",
+  "content_hash": "a1ec42b7fe9ae6a5ae85f89c81c8fa254a981f7a09b879c065d70ebbb261eac4"
+}

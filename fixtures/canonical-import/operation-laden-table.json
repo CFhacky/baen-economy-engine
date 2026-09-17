@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "fixture_class": "CAN-IMPORT",
+  "authority": "canon_import",
+  "captured_on": "2026-08-29",
+  "scenario_id": "operation-laden-table",
+  "operation_type": "food_relief_and_logistics",
+  "source_refs": [
+    "https://app.notion.com/p/396e821484b0816c9dd3e88e17fc70f1",
+    "https://app.notion.com/p/348e821484b081a68349ecdc1f0efef8"
+  ],
+  "timeline_id": "source:operation-laden-table-late-kythorn-1495",
+  "economy_timeline_mapping": "unresolved_CAN-001",
+  "planning_date": "Late Kythorn 1495 DR",
+  "status": "Active",
+  "phase": "assembly and instruction",
+  "population_mouths": 11000,
+  "local_food_position": "net_importer",
+  "first_harvest_window": "Eleint-Marpenoth 1495 DR if successful",
+  "first_meaningful_export_surplus": "1496 DR",
+  "departure_window": "Early Flamerule 1495 DR",
+  "first_grain_movement": "Eleasis 1495 DR",
+  "trigger": {
+    "agricultural_shelter_zones_destroyed": 3,
+    "agricultural_shelter_zones_total": 8,
+    "source_scope": "Operation Laden Table"
+  },
+  "grain_target_tons": {"low": "1200", "high": "1500"},
+  "grain_including_transport_gp": {"low": "65000", "high": "95000"},
+  "meat_and_livestock_gp": {"low": "25000", "high": "40000"},
+  "embassy_and_legations_capital_gp": "30000",
+  "embassy_and_legations_monthly_gp": "2000",
+  "stated_outlay_gp": {"low": "120000", "high": "165000"},
+  "borrowing_target_gp": {"low": "200000", "high": "300000"},
+  "borrowing_accounting_treatment": {
+    "debtor": "Baen",
+    "proceeds": "liability_not_revenue"
+  },
+  "planned_roll_contracts": [
+    {"purpose": "embassy and legations", "check": "Diplomacy", "count": 1},
+    {"purpose": "loan syndication", "check": "source-specified loan roll", "count": 3},
+    {"purpose": "grain procurement", "check": "Merchant", "count": 1},
+    {"purpose": "im'Dalat negotiation", "check": "Hidden Lore", "count": 1},
+    {"purpose": "complication", "check": "d12", "count": 1}
+  ],
+  "resolved_execution_rolls": [],
+  "resolved_or_source_recorded_transactions": [],
+  "transaction_scope": "No procurement or financing transaction is pre-resolved by the cited plan; this is not a complete cash audit.",
+  "unresolved": [
+    "opening food inventories",
+    "ration and consumption rates",
+    "seller stock and surplus",
+    "route capacities and travel time",
+    "spoilage and handling loss",
+    "resolved procurement prices",
+    "loan terms, draw timing, currency, rate, maturity and collateral"
+  ]
+}

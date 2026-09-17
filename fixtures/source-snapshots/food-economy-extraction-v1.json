@@ -1,0 +1,223 @@
+{
+  "schema": "tnp.economy.food-source-extraction/1",
+  "authority": "notion_read_only",
+  "registry_export_content_hash": "d40285fc31dfee4290a8adb6d336113ba36674b292c27016216baa63afa4fa22",
+  "page_body_snapshot_sha256": "ea94db3e47020af37498dd880eafa8e17cb915ba5e7eab4ad3fc3b65569c94c7",
+  "notion_writes": 0,
+  "warning": "This extraction preserves sourced claims and explicit unknowns. It is not permission to invent physical quantities or to advance campaign time.",
+  "entities": [
+    {
+      "source_record_id": "notion:321e821484b081e09660eacd14973b2f",
+      "row_hash": "f2f2bc168bfd8086ae58ee8005e7a73d982ced967a5c8d3c4c27bc82e6fcfc23",
+      "page_body_sha256": "4456936c51ec27d5cc79f996930d6253c94eb22c674ab653a4d6e533712989bf",
+      "classification": "commercial_food_entity",
+      "financial_inclusion": "last_known_pre_crisis_baseline",
+      "known_outputs": [
+        "greenhouse produce",
+        "tomatoes, including year-round tomatoes"
+      ],
+      "required_evidence": [
+        "Experimental climate-controlled growing spaces across multiple regions.",
+        "the tomatoes are growing year-round"
+      ],
+      "source_claims": [
+        "Climate-controlled growing spaces extend seasons and enable crops otherwise impossible in northern latitudes.",
+        "A third greenhouse reported twenty percent above its expected yield for one quarter; the absolute expected yield is not supplied."
+      ],
+      "gm_only_claims": [
+        "Primrose Greenthistle is skimming surplus produce worth 200-300 gp per month; accounting treatment is unresolved."
+      ],
+      "physical_unknowns": [
+        "zone identities and locations",
+        "crop mix beyond sourced produce and tomatoes",
+        "absolute yield",
+        "opening inventory",
+        "feed production",
+        "grain production",
+        "storage and spoilage",
+        "routes and capacities",
+        "prices and demand"
+      ]
+    },
+    {
+      "source_record_id": "notion:321e821484b08112ab9ecd6f5eba18e8",
+      "row_hash": "e0f1fc0a42987dd84f9bf7f69b24a1b70b3f091f2aa72e9da741b9d6b1a06be2",
+      "page_body_sha256": "364e8e1bb195c840e8b912b285e0d95a21208b4f23fe94d1a71d316f8050d515",
+      "classification": "commercial_food_entity",
+      "financial_inclusion": "last_known_pre_crisis_baseline",
+      "known_outputs": [
+        "fish",
+        "freshwater shellfish",
+        "aquatic plants for food and alchemical markets"
+      ],
+      "required_evidence": [
+        "Specific species and volumes need session confirmation.",
+        "Fish, freshwater shellfish, aquatic plants for food and alchemical markets."
+      ],
+      "source_claims": [
+        "Blacklake is a seven-pool Neverwinter operation with a specified fifteen-person workforce.",
+        "Specific species and physical volumes explicitly require session confirmation."
+      ],
+      "gm_only_claims": [
+        "Mila Dunwright has an unresolved approach from Edric Voss in Aldric Steelgaze's intelligence apparatus."
+      ],
+      "physical_unknowns": [
+        "species by pool",
+        "stocking cohorts",
+        "feed composition and quantity",
+        "absolute production volume",
+        "opening inventory",
+        "mortality and spoilage",
+        "routes and capacities",
+        "prices and customer demand"
+      ]
+    },
+    {
+      "source_record_id": "notion:321e821484b0811098cfebc200f16c7a",
+      "row_hash": "98e080dc839d82c27d358ddd38b526a9f8fa3a471ff43f680ae8df1a379a2190",
+      "page_body_sha256": "d4050689cafdfc161c5d8e5aba22948ae7cf510e011706d761bbf61a87be4fbc",
+      "classification": "commercial_food_entity",
+      "financial_inclusion": "last_known_pre_crisis_baseline",
+      "known_outputs": [
+        "fish",
+        "tilapia mentioned in manager dialogue"
+      ],
+      "required_evidence": [
+        "Converted Quarry Aquaculture — 5 Sites, Multi-Region",
+        "cold-water tilapia"
+      ],
+      "source_claims": [
+        "Five post-extraction quarry sites are operated as aquaculture.",
+        "Exact site locations, deployed species, and physical volumes are not established."
+      ],
+      "gm_only_claims": [
+        "Mirren Deepwell refused an Aldric intelligence approach but did not report it."
+      ],
+      "physical_unknowns": [
+        "site locations",
+        "species by site",
+        "feed composition and quantity",
+        "absolute production volume",
+        "opening inventory",
+        "water quality and mortality",
+        "routes and capacities",
+        "prices and customer demand"
+      ]
+    },
+    {
+      "source_record_id": "notion:321e821484b08116a104c6217060c1c5",
+      "row_hash": "4c3aff6495519a4a7a2b305749b3df55b125ddb7b856bc287b767222d8e273ba",
+      "page_body_sha256": "76a09982ead8ad0d3ac9b35330898aaab668c94d4b88ea0d09253e5a756fcf00",
+      "classification": "commercial_food_entity",
+      "financial_inclusion": "last_known_pre_crisis_baseline",
+      "known_outputs": [
+        "fish harvest"
+      ],
+      "required_evidence": [
+        "BG Aquaculture Pools — 3 Sites, Baldur's Gate",
+        "Canal water quality is affecting yields at all three sites."
+      ],
+      "source_claims": [
+        "Three Baldur's Gate aquaculture sites are operational.",
+        "Canal water quality is affecting yield; no numeric penalty or repair cost is supplied."
+      ],
+      "gm_only_claims": [
+        "Corvin Seastrand is redirecting two to three percent of fish harvest; the page reports about 7,000 gp over eighteen months."
+      ],
+      "physical_unknowns": [
+        "species by site",
+        "feed composition and quantity",
+        "absolute production volume",
+        "opening inventory",
+        "numeric water-quality penalty",
+        "filtration repair cost",
+        "routes and capacities",
+        "prices and customer demand"
+      ]
+    },
+    {
+      "source_record_id": "notion:321e821484b081f6a74cd6ee2b88a08e",
+      "row_hash": "524d7fd0884f8a2d21c004db801251b86d7bdea0eafe5439ed130f2d6af3c85d",
+      "page_body_sha256": "e4f3fca17a327c68c6f0524eb4909f65401b3b4c408ac110cd3bc4ecd9833261",
+      "classification": "commercial_food_entity",
+      "financial_inclusion": "last_known_pre_crisis_baseline",
+      "known_outputs": [
+        "fish harvest"
+      ],
+      "required_evidence": [
+        "Reservoir Fisheries — Multi-Region",
+        "various smaller reservoir sites"
+      ],
+      "source_claims": [
+        "Reservoir Fisheries covers various smaller sites managed as one operation.",
+        "The number, locations, species, and physical volumes are not supplied."
+      ],
+      "gm_only_claims": [
+        "Gerta Millstone is being blackmailed for a growing cut of the fish harvest."
+      ],
+      "physical_unknowns": [
+        "site count and locations",
+        "species by site",
+        "feed composition and quantity",
+        "absolute production volume",
+        "opening inventory",
+        "routes and capacities",
+        "prices and customer demand"
+      ]
+    },
+    {
+      "source_record_id": "notion:34ce821484b08130aedbf6d099d79bfb",
+      "row_hash": "8ae8f461e18126c48acf310ad7037c0feab542e9f19c51fe811c6e3c21ce3d03",
+      "page_body_sha256": "fad5176dc064078975da3f3f3b5128b8b45438003926fa536a1ed53ea181ea24",
+      "classification": "patronage_community_asset",
+      "financial_inclusion": "excluded_unknown_finance",
+      "known_outputs": [
+        "orchard harvest prepared for daily market delivery"
+      ],
+      "required_evidence": [
+        "daily harvest prepared for market delivery",
+        "not a conventional Baen commercial entity"
+      ],
+      "source_claims": [
+        "The chapel is a working orchard, welfare institution, community anchor, and discreet meeting location.",
+        "Its agricultural revenue is modest but not individually tracked."
+      ],
+      "gm_only_claims": [],
+      "physical_unknowns": [
+        "orchard crops",
+        "harvest quantities",
+        "opening inventory",
+        "revenue and costs",
+        "ownership and consolidation treatment",
+        "routes, prices, and customer demand"
+      ]
+    },
+    {
+      "source_record_id": "notion:321e821484b081899107d6fd75176754",
+      "row_hash": "6fca5ed3084185207e8aad13e61845535c8529bdb432192f959dbced378b5bb4",
+      "page_body_sha256": "64f32c8eba3e7e5cdd12aad1973700b40649a4893ff86f5044029764c43ef888",
+      "classification": "unconfirmed_allied_entity",
+      "financial_inclusion": "excluded_unconfirmed",
+      "known_outputs": [],
+      "required_evidence": [
+        "Status: UNCONFIRMED",
+        "ownership structure unclear"
+      ],
+      "source_claims": [
+        "The Registry marks the operation unconfirmed and Baen-allied rather than owned.",
+        "All ownership, scale, employment, revenue, and physical-output claims require confirmation."
+      ],
+      "gm_only_claims": [],
+      "physical_unknowns": [
+        "ownership",
+        "sites",
+        "products",
+        "employees",
+        "revenue and costs",
+        "production volume",
+        "opening inventory",
+        "routes, prices, and customer demand"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "captured_at": "2026-09-17T09:27:00-04:00",
+  "known_linked_authority_pages_outside_core_collections": 26,
+  "notes": [
+    "Raw core-row count is not a unique semantic-record count because the two consequence ledgers overlap.",
+    "Collection enumeration_complete is false until every row is captured into the durable census with a stable ID and source hash.",
+    "No Notion writes, ledger postings, merge, or campaign-time advance occurred during capture."
+  ],
+  "provenance": [
+    {
+      "choice": "Do not advance campaign time until census, coverage, and upstream provenance are inspectable.",
+      "tag": "USER-RULED"
+    },
+    {
+      "choice": "Campaign opening boundary is Day 7 Hammer 1495 DR.",
+      "tag": "SOURCE-DERIVED"
+    },
+    {
+      "choice": "Use a separate census contract rather than widening the existing Business Registry NotionReadSnapshot.",
+      "tag": "MODEL-PROPOSED"
+    },
+    {
+      "choice": "Whether the two consequence ledgers should be merged, one superseded, or both retained by scope.",
+      "tag": "UNRESOLVED"
+    }
+  ],
+  "provisional_row_coverage": {
+    "SIMULATED": 7,
+    "UNKNOWN": 1374,
+    "basis": "Seven Business Registry food-sector entities are source-grounded in the accepted agriculture slice; every other core row remains UNKNOWN until row-level adjudication.",
+    "denominator_core_rows": 1381
+  },
+  "read_mode": "live_notion_read_only",
+  "records": [
+    {
+      "coverage_state": "MISSING_DATA",
+      "direct_relations": [
+        "Business Registry",
+        "NCF",
+        "Klauth Estate Liquidation \u2014 Shimmerdeep Liquidity"
+      ],
+      "effective_date": "~Hammer-Alturiak 1495 DR",
+      "effective_status": "current reference with explicit audit debts",
+      "narrative_facts": [
+        "Supersedes Kythorn-1494 overview for current-play decisions.",
+        "Exact current liquid reserves are indeterminate; older exact-cash arithmetic is superseded.",
+        "Per-page Registry verification and active liquidity reconciliation remain open audit debts."
+      ],
+      "numeric_properties": {
+        "active_loan_portfolio_gp": 2300000,
+        "current_shortfall_gp_approx": 400000,
+        "deployed_capital_lower_bound_gp_approx": 12500000,
+        "deployed_capital_upper_band_gp_approx": 30000000,
+        "hard_asset_portfolio_gp_approx": 18000000,
+        "protected_net_settled_target_gp": 450000
+      },
+      "provenance": "SOURCE-DERIVED",
+      "region_location": "Empire-wide / Arik-side",
+      "simulation_relevance": "active",
+      "source_class": "banks_treasuries_funds_debt_loans_reserves_instruments",
+      "source_hash": "c156fd85ddde17cdc703d88431240052fa42449513c5c7bf6add326e1e51543d",
+      "source_url": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "stable_source_id": "notion:page:34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+      "title": "Empire Financial State \u2014 Current Reference"
+    },
+    {
+      "coverage_state": "CONFLICT",
+      "direct_relations": [
+        "32ce8214-84b0-814d-bfeb-d60ac51ac338",
+        "ESAMT Financial & Investment System",
+        "The Crown Advantage",
+        "District Economy Layer"
+      ],
+      "effective_date": "2026-08-19 registry update",
+      "effective_status": "System References pointer",
+      "narrative_facts": [
+        "System References entry calls the standalone page canonical.",
+        "The referenced standalone page marks itself SUPERSEDED and says this System References entry is canonical.",
+        "Reserve and credit mechanics therefore have a circular authority conflict until resolved."
+      ],
+      "numeric_properties": {},
+      "provenance": "SOURCE-DERIVED",
+      "region_location": "Empire-wide",
+      "simulation_relevance": "active",
+      "source_class": "banks_treasuries_funds_debt_loans_reserves_instruments",
+      "source_hash": "d44e599472e3ec4622cbb1bd8025dd19b2daa14ef676171b47e3621e0a6e3152",
+      "source_url": "https://app.notion.com/p/3c2e821484b081c085eecc74c2bcb35b",
+      "stable_source_id": "notion:page:3c2e8214-84b0-81c0-85ee-cc74c2bcb35b",
+      "title": "Northern Crown Monetary System"
+    },
+    {
+      "coverage_state": "SUPERSEDED",
+      "direct_relations": [
+        "3c2e8214-84b0-81c0-85ee-cc74c2bcb35b"
+      ],
+      "effective_date": "superseded 2026-08-20",
+      "effective_status": "superseded standalone authority",
+      "narrative_facts": [
+        "Retains detailed denomination, reserve, lending, and crisis mechanics.",
+        "Explicit supersession warning prevents these numbers from becoming opening-state mechanics without authority resolution."
+      ],
+      "numeric_properties": {
+        "max_circulation_to_reserves_ratio": 2.5,
+        "steady_state_reserve_percent": 40,
+        "year_1_reserve_percent": 100,
+        "year_2_reserve_percent": 70
+      },
+      "provenance": "SOURCE-DERIVED",
+      "region_location": "Empire-wide",
+      "simulation_relevance": "not_active",
+      "source_class": "banks_treasuries_funds_debt_loans_reserves_instruments",
+      "source_hash": "3c9f86158258ec62479b03e2d71cf4978687681a7c76129186e5b24cf401b217",
+      "source_url": "https://app.notion.com/p/32ce821484b0814dbfebd60ac51ac338",
+      "stable_source_id": "notion:page:32ce8214-84b0-814d-bfeb-d60ac51ac338",
+      "title": "[SUPERSEDED \u2014 H8] Northern Crown Monetary System"
+    },
+    {
+      "coverage_state": "MISSING_MECHANICS",
+      "direct_relations": [
+        "Empire Financial State \u2014 Current Reference",
+        "Northern Crown Monetary System",
+        "District Economy Layer"
+      ],
+      "effective_date": "system active; current-state subsection explicitly stale",
+      "effective_status": "active system reference",
+      "narrative_facts": [
+        "Defines capital-deployment categories, strategic lending, production sponsorship, property, infrastructure, security, and contingency lanes.",
+        "The engine does not currently ingest this capital-deployment layer."
+      ],
+      "numeric_properties": {
+        "investment_categories": 16
+      },
+      "provenance": "SOURCE-DERIVED",
+      "region_location": "Empire-wide / Shi'van financial layer",
+      "simulation_relevance": "active",
+      "source_class": "construction_capital_programs",
+      "source_hash": "e070f6f3fc9a08529e7db508229ef0d5bf3d68ba27bbe6c7969afcb09508d5ac",
+      "source_url": "https://app.notion.com/p/338e821484b081e39d8cdcd4d6c896c7",
+      "stable_source_id": "notion:page:338e8214-84b0-81e3-9d8c-dcd4d6c896c7#mechanics",
+      "title": "ESAMT Financial & Investment System \u2014 mechanics"
+    },
+    {
+      "coverage_state": "HISTORICAL",
+      "direct_relations": [
+        "ESAMT Trust Structure",
+        "Institut de Tissage Arcanique"
+      ],
+      "effective_date": "Day 605",
+      "effective_status": "explicitly stale",
+      "narrative_facts": [
+        "Page explicitly directs current financial-state readers elsewhere and labels this section stale."
+      ],
+      "numeric_properties": {
+        "borrowing_gp": 0,
+        "day": 605,
+        "trust_gp": 1010000
+      },
+      "provenance": "SOURCE-DERIVED",
+      "region_location": "Shi'van financial layer",
+      "simulation_relevance": "not_active",
+      "source_class": "banks_treasuries_funds_debt_loans_reserves_instruments",
+      "source_hash": "c4c648c9df2a6f395c9421a4508e97cb0fb1fbf80e498a8eb4bd33cbcc1bc7d6",
+      "source_url": "https://app.notion.com/p/338e821484b081e39d8cdcd4d6c896c7",
+      "stable_source_id": "notion:page:338e8214-84b0-81e3-9d8c-dcd4d6c896c7#state",
+      "title": "ESAMT Financial & Investment System \u2014 Day 605 state"
+    },
+    {
+      "coverage_state": "FUTURE",
+      "direct_relations": [
+        "Business Registry",
+        "Empire Session Protocol",
+        "Real Estate Operations Mode annex"
+      ],
+      "effective_date": "Hammer 1496",
+      "effective_status": "future relative to Day 7 Hammer 1495 boundary",
+      "narrative_facts": [
+        "Tracks induced independent economy outside the Baen-owned Business Registry.",
+        "Hammer 1496 prosperity seeds cannot be loaded into the Day 7 Hammer 1495 opening state.",
+        "The page also preserves a declared-canon 1495 backfill; temporal sections must be segmented before simulation."
+      ],
+      "numeric_properties": {
+        "backfill_1495_ventures": 86,
+        "initial_named_districts": 8
+      },
+      "provenance": "SOURCE-DERIVED",
+      "region_location": "Baen civic footprint",
+      "simulation_relevance": "not_active",
+      "source_class": "settlements_cities_districts",
+      "source_hash": "73309120d242ad5bc74e6d19d599d2ac1fabf5e0fdbd5329e65a5b4fb665a698",
+      "source_url": "https://app.notion.com/p/37ee821484b0812bb758cf201d8fcb63",
+      "stable_source_id": "notion:page:37ee8214-84b0-812b-b758-cf201d8fcb63#hammer1496",
+      "title": "District Economy Layer \u2014 Hammer 1496 calibration"
+    },
+    {
+      "coverage_state": "CONFLICT",
+      "direct_relations": [
+        "Consequence Ledger A",
+        "Consequence Ledger B"
+      ],
+      "effective_date": "live 2026-09-17 read",
+      "effective_status": "parallel databases with divergent rows/statuses",
+      "narrative_facts": [
+        "The two live ledgers overlap but are not identical.",
+        "Examples include Forgedeep charter and Gauntlgrym mine-support status divergence.",
+        "No silent deduplication is permitted."
+      ],
+      "numeric_properties": {
+        "ledger_a_rows": 11,
+        "ledger_b_rows": 10
+      },
+      "provenance": "SOURCE-DERIVED",
+      "region_location": "Campaign-wide",
+      "simulation_relevance": "active",
+      "source_class": "contracts_orders_obligations",
+      "source_hash": "555639f17e7624b2996a58801731b2e39bfb9567f4ba08dba3d5d680659510d7",
+      "source_url": "collection://e1debaad-0b2f-412e-8b19-8c9a99f48dbe|collection://88705cad-2c1a-493b-b52c-955bbef8230f",
+      "stable_source_id": "notion:collection:consequence-ledger-pair",
+      "title": "Consequence Ledger duplicate authority pair"
+    }
+  ],
+  "repository_base_sha": "783213c03f3af1afb3f3a20f897cbfa1ebf22064",
+  "schema": "tnp.economy.source-census/1",
+  "snapshot_hash": "ac1353aa4ce7f6d1104616cab7b8e8cdfda9bf35e4fe054ec638e4ca15aa75b9",
+  "source_collections": [
+    {
+      "enumeration_complete": false,
+      "row_count": 90,
+      "source_class": "businesses_branches",
+      "source_hash": "346f6e64c7c54a7c7a70ec3e9078264e064c5a540c68407277510e86bdfe88c2",
+      "source_url": "collection://3c5f887a-4219-4ae6-a18a-82cf2d1841db",
+      "stable_source_id": "notion:business_registry",
+      "title": "Baen Empire - Business Registry"
+    },
+    {
+      "enumeration_complete": false,
+      "row_count": 182,
+      "source_class": "settlements_cities_districts",
+      "source_hash": "935e44f6c79231c1a4d9f6d4c7608162872b533ec955e6de170671807ac26bd3",
+      "source_url": "collection://4b453810-16af-43eb-86ff-927da765a17f",
+      "stable_source_id": "notion:locations",
+      "title": "The New Path - Locations"
+    },
+    {
+      "enumeration_complete": false,
+      "row_count": 79,
+      "source_class": "factions_institutions",
+      "source_hash": "d0f32ec1833effbcdde51820c712508998847ebd3009b53db429ca208f701c09",
+      "source_url": "collection://a14877b1-e048-4814-b0f3-47a556665fc4",
+      "stable_source_id": "notion:factions",
+      "title": "The New Path - Factions"
+    },
+    {
+      "enumeration_complete": false,
+      "row_count": 681,
+      "source_class": "npcs_leadership",
+      "source_hash": "8fa6377d8230707365efc3ea8e956c62196b447112857d0798128f50657da261",
+      "source_url": "collection://ebad4913-73c8-4f39-81c0-0b35b2221d9d",
+      "stable_source_id": "notion:npcs",
+      "title": "The New Path - NPCs"
+    },
+    {
+      "enumeration_complete": false,
+      "row_count": 206,
+      "source_class": "inventories_materials_hoards_assets",
+      "source_hash": "25244d4ef5c9e898ebd54b00af1093ec91b7eb51249e2b44bc68869e8f1c893d",
+      "source_url": "collection://0b4e0fd7-51f7-4291-a8ff-ff4f26b8c085",
+      "stable_source_id": "notion:artifacts",
+      "title": "The New Path - Artifacts"
+    },
+    {
+      "enumeration_complete": false,
+      "row_count": 26,
+      "source_class": "shocks_shortages_threats",
+      "source_hash": "88e32d326ab59018120d3e3a56a65b6ad9096124eb148149199f10abd292175e",
+      "source_url": "collection://6ac1439a-f743-4fb8-a0fd-cf24ed645118",
+      "stable_source_id": "notion:threats",
+      "title": "The New Path - Threats"
+    },
+    {
+      "enumeration_complete": false,
+      "row_count": 89,
+      "source_class": "contracts_orders_obligations_threads",
+      "source_hash": "3af01663edf62e201230cf94ba0a4d0c4381d00bf1d06f18a42530d66d2b5d60",
+      "source_url": "collection://e9d15845-0221-4ef0-83fe-f1fc80281f40",
+      "stable_source_id": "notion:plot_threads",
+      "title": "The New Path - Plot Threads"
+    },
+    {
+      "enumeration_complete": false,
+      "row_count": 7,
+      "source_class": "demand_perception_context",
+      "source_hash": "a9a3f88a079e37beb5d168655cad49094bd478d918272bf3294d284d7fcdc4bf",
+      "source_url": "collection://c2d0aa01-638a-4a72-8760-7e9fb7696fef",
+      "stable_source_id": "notion:public_perception",
+      "title": "Public Perception"
+    },
+    {
+      "enumeration_complete": false,
+      "row_count": 11,
+      "source_class": "contracts_orders_obligations",
+      "source_hash": "403df1c5debc116da5c3899b38bee1a0a5bacb966439c5b2cd9e496566f2a927",
+      "source_url": "collection://e1debaad-0b2f-412e-8b19-8c9a99f48dbe",
+      "stable_source_id": "notion:consequence_ledger_a",
+      "title": "Consequence Ledger A"
+    },
+    {
+      "enumeration_complete": false,
+      "row_count": 10,
+      "source_class": "contracts_orders_obligations",
+      "source_hash": "893bb8ac99ac96c9f2facfa8108e51bad2cab391d6b1e01f17681271ad26df4c",
+      "source_url": "collection://88705cad-2c1a-493b-b52c-955bbef8230f",
+      "stable_source_id": "notion:consequence_ledger_b",
+      "title": "Consequence Ledger B"
+    }
+  ]
+}
