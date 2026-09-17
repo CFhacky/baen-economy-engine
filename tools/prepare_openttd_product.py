@@ -1,14 +1,59 @@
 #!/usr/bin/env python3
-"""Acquire and build the exact OpenTTD dedicated-server product used by Baen."""
+"""Acquire/build pinned OpenTTD with the narrow GPL-side Baen transport seam.
+
+The patch does not reimplement OpenTTD transport economics. It registers one
+server console command that calls OpenTTD's existing GetTransportedGoodsIncome
+so Baen can submit route/cargo preview inputs through the real product over rcon.
+"""
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
 import shutil
 import subprocess
 
 REPO = "https://github.com/OpenTTD/OpenTTD.git"
 COMMIT = "1aca0b60a8024f295e1d0ad2a3407b3dac838099"
+PATCH_VERSION = 1
+
+INCLUDE_MARKER = '#include "engine_func.h"\n'
+INCLUDE_INSERT = '#include "engine_func.h"\n#include "economy_func.h"\n'
+
+FUNCTION_MARKER = '#ifdef _DEBUG\n/******************\n *  debug commands\n ******************/\n'
+FUNCTION_INSERT = r'''/** Baen GPL-side adapter: call OpenTTD's real cargo-income function. */
+static bool ConBaenTransportIncome(std::span<std::string_view> argv)
+{
+	if (argv.empty()) {
+		IConsolePrint(CC_HELP, "Calculate OpenTTD transport income. Usage: 'baen_transport_income <cargo-id> <pieces> <distance-tiles> <days-in-transit>'.");
+		return true;
+	}
+	if (argv.size() != 5) return false;
+
+	auto cargo = ParseType<CargoType>(argv[1]);
+	auto pieces = ParseType<uint>(argv[2]);
+	auto distance = ParseType<uint>(argv[3]);
+	auto days = ParseType<uint32_t>(argv[4]);
+	if (!cargo.has_value() || !pieces.has_value() || !distance.has_value() || !days.has_value()) {
+		IConsolePrint(CC_ERROR, "baen_transport_income requires four non-negative integer arguments.");
+		return true;
+	}
+
+	uint64_t periods64 = static_cast<uint64_t>(*days) * 2 / 5;
+	uint16_t periods = static_cast<uint16_t>(std::min<uint64_t>(periods64, UINT16_MAX));
+	Money income = GetTransportedGoodsIncome(*pieces, *distance, periods, *cargo);
+	IConsolePrint(
+		CC_DEFAULT,
+		"BAEN_TRANSPORT_INCOME cargo={} pieces={} distance={} days={} income={}",
+		static_cast<uint>(*cargo), *pieces, *distance, *days, income
+	);
+	return true;
+}
+
+'''
+
+REGISTER_MARKER = '	IConsole::CmdRegister("getsysdate",              ConGetSysDate);\n'
+REGISTER_INSERT = REGISTER_MARKER + '	IConsole::CmdRegister("baen_transport_income", ConBaenTransportIncome, ConHookServerOrNoNetwork);\n'
 
 
 def run(command: list[str], *, cwd: Path | None = None) -> None:
@@ -17,6 +62,28 @@ def run(command: list[str], *, cwd: Path | None = None) -> None:
 
 def output(command: list[str], *, cwd: Path | None = None) -> str:
     return subprocess.check_output(command, cwd=cwd, text=True).strip()
+
+
+def patch_checkout(checkout: Path) -> None:
+    path = checkout / "src/console_cmds.cpp"
+    text = path.read_text(encoding="utf-8")
+    if INCLUDE_INSERT not in text:
+        if INCLUDE_MARKER not in text:
+            raise SystemExit("OpenTTD include patch marker changed; refusing fuzzy patch")
+        text = text.replace(INCLUDE_MARKER, INCLUDE_INSERT, 1)
+    if "static bool ConBaenTransportIncome" not in text:
+        if FUNCTION_MARKER not in text:
+            raise SystemExit("OpenTTD function patch marker changed; refusing fuzzy patch")
+        text = text.replace(FUNCTION_MARKER, FUNCTION_INSERT + FUNCTION_MARKER, 1)
+    if 'CmdRegister("baen_transport_income"' not in text:
+        if REGISTER_MARKER not in text:
+            raise SystemExit("OpenTTD registration patch marker changed; refusing fuzzy patch")
+        text = text.replace(REGISTER_MARKER, REGISTER_INSERT, 1)
+    path.write_text(text, encoding="utf-8")
+    (checkout / ".baen-economy-product-patch.json").write_text(
+        json.dumps({"upstream_commit": COMMIT, "patch_version": PATCH_VERSION}, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
 
 
 def main() -> int:
@@ -36,10 +103,13 @@ def main() -> int:
     if not (checkout / ".git").is_dir():
         raise SystemExit(f"{checkout} is not a git checkout")
     run(["git", "fetch", "origin", COMMIT], cwd=checkout)
-    run(["git", "checkout", "--detach", COMMIT], cwd=checkout)
+    run(["git", "checkout", "--detach", "--force", COMMIT], cwd=checkout)
+    run(["git", "reset", "--hard", COMMIT], cwd=checkout)
+    run(["git", "clean", "-fdx"], cwd=checkout)
     actual = output(["git", "rev-parse", "HEAD"], cwd=checkout)
     if actual != COMMIT:
         raise SystemExit(f"OpenTTD checkout mismatch: expected {COMMIT}, got {actual}")
+    patch_checkout(checkout)
     build = checkout / "build-baen-dedicated"
     if not args.skip_build:
         if not shutil.which("cmake"):
@@ -53,7 +123,7 @@ def main() -> int:
     binary = build / "openttd"
     if not binary.is_file():
         raise SystemExit(f"OpenTTD dedicated binary was not produced: {binary}")
-    print(f"OpenTTD {COMMIT} ready at {binary}")
+    print(f"OpenTTD {COMMIT} patched product ready at {binary}")
     return 0
 
 
