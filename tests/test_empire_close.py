@@ -25,6 +25,24 @@ class EmpireCloseTests(unittest.TestCase):
         self.assertIs(row["value"],False)
         self.assertEqual(row["authority"],"SOURCE-DERIVED")
 
+    def test_canal_has_sourced_vessel_constants_but_not_fake_current_fleet(self):
+        result=close_status()
+        lane=result["lanes"]["canal_waterway"]
+        facts={row["key"]:row for row in lane["facts"]}
+        self.assertEqual(facts["hunding.standard_canal_barge.cargo_tons"]["value"],100)
+        self.assertEqual(facts["hunding.heavy_ore_carrier.cargo_tons"]["value"],150)
+        self.assertEqual(facts["hunding.lock.standard_transit_minutes_min"]["value"],25)
+        self.assertTrue(any(row["key"]=="hunding.current_barge_fleet" for row in lane["unresolved"]))
+
+    def test_western_quarry_barges_are_not_silently_promoted_to_hunding_class(self):
+        result=close_status()
+        lane=result["lanes"]["conventional_freight"]
+        facts={row["key"]:row for row in lane["facts"]}
+        self.assertEqual(
+            facts["western_limestone.barge_capacity_status"]["value"],
+            "TWO_BARGES_CONFIRMED_CAPACITY_NOT_IDENTIFIED",
+        )
+
     def test_ncf_named_loans_do_not_fill_unknown_portfolio(self):
         result=close_status()
         lane=result["lanes"]["ncf_finance"]

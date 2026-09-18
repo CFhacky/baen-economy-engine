@@ -173,6 +173,13 @@
           "value": "monthly",
           "authority": "SOURCE-DERIVED",
           "source": "Baen Empire Complete Quarry Network"
+        },
+        {
+          "key": "western_limestone.barge_capacity_status",
+          "value": "TWO_BARGES_CONFIRMED_CAPACITY_NOT_IDENTIFIED",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network",
+          "note": "Do not assume these two western-quarry barges are 100-ton Hunding standard barges; source does not identify their class."
         }
       ],
       "unresolved": [
@@ -226,6 +233,76 @@
         {
           "key": "hunding.phase2.stations_1_3",
           "value": "operational",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.cargo_tons",
+          "value": 100,
+          "unit": "tons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.length_ft",
+          "value": 80,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.beam_ft",
+          "value": 15,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.loaded_draft_ft",
+          "value": 6,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.crew",
+          "value": 4,
+          "unit": "crew",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.towed_speed_mph",
+          "value": 3,
+          "unit": "mph",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.heavy_ore_carrier.cargo_tons",
+          "value": 150,
+          "unit": "tons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.heavy_ore_carrier.crew",
+          "value": 6,
+          "unit": "crew",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.lock.standard_transit_minutes_min",
+          "value": 25,
+          "unit": "minutes",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.lock.standard_transit_minutes_max",
+          "value": 30,
+          "unit": "minutes",
           "authority": "SOURCE-DERIVED",
           "source": "Hunding Canal — Baen Continental Waterway System"
         }
@@ -332,6 +409,11 @@
           "key": "aquaculture_technical_specifications",
           "status": "PLANNING_REFERENCE_NOT_ACTUAL",
           "note": "Neverwinter's Warmth contains detailed basin/species/yield design constants but is an internal-planning appendix; do not treat it as proof Blacklake was built to every specification."
+        },
+        {
+          "key": "blacklake_actuals_vs_neverwinter_warmth",
+          "status": "DATA_GRAIN_GUARD",
+          "note": "The technical appendix supplies generic basin/species engineering constants. It does not establish the geometry or species of Blacklake's seven operating pools."
         }
       ]
     },
@@ -514,6 +596,13 @@
           "method": "RECOVER_LOAN_FILES",
           "reason": "Named recovered active loans cover only ~1.30% of reported principal; do not generate charming borrowers to fill the rest."
         }
+      ],
+      "cautions": [
+        {
+          "key": "dorothea_pre_ncf_default",
+          "status": "HISTORICAL_NOT_ACTIVE_LOAN",
+          "note": "Dorothea Varnilly's old 40,000 gp Gundwynd default predates NCF's purchase of her portfolio. Do not count the original 40,000 gp as current NCF principal without a surviving-balance record."
+        }
       ]
     },
     "land_bank": {
@@ -641,6 +730,13 @@
         "material receipts",
         "large-scale intermodal handling"
       ]
+    }
+  ],
+  "recovery_notes": [
+    {
+      "id": "2026-09-18-batch-2",
+      "authority": "SOURCE-DERIVED",
+      "note": "Phase-1 batch added current Hunding vessel/lock engineering constants while retaining current fleet count as unresolved; added explicit guards against treating proposed/generic vessel and aquaculture designs as current physical stock."
     }
   ]
 }
