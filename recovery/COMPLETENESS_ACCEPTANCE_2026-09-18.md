@@ -18,10 +18,10 @@ At the current branch state:
   - 1,627 stored records including 7 contextual authority records;
   - 0 identified core records left unmaterialized.
 - source-record semantic disposition: **FAIL**
-  - 16 / 1,620 retained core records are currently non-UNKNOWN after semantic overlay plus completed body-review batch 001;
-  - **1,604 remain UNKNOWN**;
+  - 23 / 1,620 retained core records are currently non-UNKNOWN after semantic overlay plus completed body-review batches 001–002;
+  - **1,597 remain UNKNOWN**;
   - the 9 current-live semantic mappings in `SOURCE_SEMANTIC_EVIDENCE_2026-09-18.json` are counted only because that artifact explicitly says they move from UNKNOWN.
-- exhaustive source-body review: **IN PROGRESS / 4 OF 1,620 REVIEWED**
+- exhaustive source-body review: **IN PROGRESS / 12 OF 1,620 REVIEWED**
   - the standalone repo intentionally does not publish the private detailed Registry body snapshot;
   - no checked-in receipt currently proves that all 1,620 retained source bodies were read and dispositioned;
   - selective live-source requeries do not count as exhaustive coverage.
@@ -144,3 +144,15 @@ The first fixed-queue batch is persisted as `recovery/SOURCE_REVIEW_BATCH_001_20
 - Arterial Road Network and Arterial Township Development are `ECONOMIC_INPUT`;
 - Arterial Road Crystal Network and the Hammer-1496 Housing Portfolio are `ECONOMIC_CONTEXT` because their body state is temporally unsafe for Day-7 opening-state use;
 - UNKNOWN fell from 1,607 to **1,604** without inventing a value.
+
+
+## Batch 002 — NCF finance body review
+
+Eight finance bodies were read and hashed. The batch did **not** discover a hidden complete NCF balance sheet.
+
+- parent current authority: 22,000 gp/month revenue, 2.3M gp active loan portfolio, 85 staff;
+- exact reserves, deposits, total liabilities and equity remain absent;
+- four Eleint-1494 branch rows sum to 23,250 gp/month revenue and 12,170 gp/month cost, but the newer parent revenue authority already proves that roll-up stale; the cost sum is retained only as a historical baseline;
+- SSAMT's 12,000 gp corpus is client trust property, not NCF-owned reserves;
+- Gold Lending House remains explicitly unconfirmed and is not booked;
+- UNKNOWN fell from 1,604 to **1,597** without filling any balance-sheet hole with a guess.

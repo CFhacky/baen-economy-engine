@@ -106,8 +106,8 @@ The authoritative operator check is `python tools/check_completeness.py`, backed
 Current proof state:
 
 - collection acquisition: **PASS**;
-- retained-core semantic status: **FAIL — 16/1,620 non-UNKNOWN, 1,604 UNKNOWN** after the current overlay plus body-review batch 001;
-- exhaustive private source-body review: **IN PROGRESS — 4/1,620 REVIEWED, 1,616 UNREAD**;
+- retained-core semantic status: **FAIL — 23/1,620 non-UNKNOWN, 1,597 UNKNOWN** after the current overlay plus body-review batch 001;
+- exhaustive private source-body review: **IN PROGRESS — 12/1,620 REVIEWED, 1,608 UNREAD**;
 - 16-driver registry presence/disposition: **PASS as an inventory/control surface, not as execution readiness**;
 - coverage claim: **CLOSED**;
 - canonical execution readiness: **CLOSED**.
