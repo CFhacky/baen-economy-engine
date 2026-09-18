@@ -284,7 +284,7 @@ def _product_number(value: object) -> int | str:
 
 def _load_payload(path: Path) -> dict[str, Any]:
     try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
+        payload = json.loads(path.read_text(encoding="utf-8"), parse_float=Decimal)
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
         raise EmpireSourceProductError(f"cannot read source-input authority: {path}: {exc}") from exc
     if not isinstance(payload, dict) or payload.get("schema") != "tnp.economy.source-input-authority/1":
@@ -418,9 +418,12 @@ def _fact_snapshot(
         raise EmpireSourceProductError(f"missing semantic source fact {key}")
     if value_field not in row:
         raise EmpireSourceProductError(f"{key} lacks {value_field}")
+    value = row[value_field]
+    if isinstance(value, (float, Decimal)):
+        value = _product_number(value)
     item: dict[str, Any] = {
         "key": key,
-        "value": row[value_field],
+        "value": value,
         "authority": row["authority"],
         "source": _source_ref(row, key),
     }
@@ -793,14 +796,15 @@ def _map_openttd_source_candidate(
     quantity_key = str(freight["quantity_fact_key"])
     distance_key = str(freight["distance_fact_key"])
     transit_key = str(freight["transit_fact_key"])
-    quantity = _exact_number(facts[quantity_key], quantity_key)
+    quantity_raw = _exact_number(facts[quantity_key], quantity_key)
     distance = _exact_number(facts[distance_key], distance_key)
     transit_days = _exact_number(facts[transit_key], transit_key)
+    quantity = _product_number(quantity_raw)
     expected = freight.get("source_values")
     if not isinstance(expected, dict):
         raise EmpireSourceProductError("Warborn freight source values are missing")
     if (
-        Decimal(str(expected.get("quantity_tons_per_month"))) != Decimal(str(quantity))
+        Decimal(str(expected.get("quantity_tons_per_month"))) != Decimal(str(quantity_raw))
         or Decimal(str(expected.get("distance_miles"))) != Decimal(str(distance))
         or Decimal(str(expected.get("transit_days"))) != Decimal(str(transit_days))
     ):
