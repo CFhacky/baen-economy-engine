@@ -24,6 +24,11 @@ from .empire_orchestrator import (
     run_empire_month,
 )
 from .product_stack import ProductStackError, product_environment
+from .empire_operations import (
+    EmpireBusinessError,
+    render_empire_business_report,
+    run_empire_business_turn,
+)
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -329,36 +334,26 @@ def build_parser() -> argparse.ArgumentParser:
 
     run = sub.add_parser(
         "run",
-        help="run the actual source-grounded Empire month; fails if any synthetic input remains",
+        help="run the source-grounded Hammer-1495 Empire monthly business phase",
     )
     run.add_argument("--seed", required=True)
-    run.add_argument("--scenario", type=Path, default=DEFAULT_SCENARIO)
-    run.add_argument("--census", type=Path, default=DEFAULT_EXECUTION_CENSUS)
     run.add_argument(
-        "--require-products",
+        "--month",
+        default="Day 7 Hammer 1495 DR — monthly preview",
+        help="label for the deterministic review artifact; does not advance campaign time",
+    )
+    run.add_argument(
+        "--market",
+        choices=("unknown", "stable", "boom", "recession"),
+        default="unknown",
+        help="optional user-ruling for this preview; unknown applies no market modifier",
+    )
+    run.add_argument(
+        "--vara-active",
         action="store_true",
-        help="fail unless all six configured upstream product boundaries execute",
+        help="apply the explicit +3 Vara-active modifier for this preview",
     )
     run.add_argument("--format", choices=("json", "report"), default="report")
-    run.add_argument(
-        "--no-prepare-products",
-        dest="prepare_products",
-        action="store_false",
-        help="use already configured product checkouts/services instead of acquiring/starting them",
-    )
-    run.set_defaults(prepare_products=True)
-    run.add_argument(
-        "--product-root",
-        type=Path,
-        default=Path(".upstream/baen-product-stack"),
-        help="persistent cache for pinned upstream product checkouts/builds",
-    )
-    run.add_argument(
-        "--openttd-baseset",
-        type=Path,
-        help="OpenTTD base-set directory; auto-detected on common Linux installs",
-    )
-    run.add_argument("--build-jobs", type=int, default=2)
 
     sandbox = sub.add_parser(
         "sandbox",
@@ -415,31 +410,16 @@ def main(argv: Sequence[str] | None = None) -> int:
                     print(f"- {item['name']}: {item['boundary']} — {item['status']}")
             return 0
         if args.command == "run":
-            if args.prepare_products:
-                with product_environment(
-                    args.product_root,
-                    openttd_baseset=args.openttd_baseset,
-                    build_jobs=args.build_jobs,
-                ):
-                    payload = run_empire_month(
-                        seed=args.seed,
-                        census_path=args.census,
-                        scenario_path=args.scenario,
-                        require_products=True,
-                        allow_synthetic_scenario=False,
-                    )
-            else:
-                payload = run_empire_month(
-                    seed=args.seed,
-                    census_path=args.census,
-                    scenario_path=args.scenario,
-                    require_products=args.require_products,
-                    allow_synthetic_scenario=False,
-                )
+            payload = run_empire_business_turn(
+                seed=args.seed,
+                month_label=args.month,
+                market_condition=args.market,
+                vara_active=args.vara_active,
+            )
             if args.format == "json":
                 _json(payload)
             else:
-                print(render_empire_month(payload))
+                print(render_empire_business_report(payload))
             return 0
         if args.command == "sandbox":
             if args.prepare_products:
@@ -496,7 +476,16 @@ def main(argv: Sequence[str] | None = None) -> int:
                 print(render_report(payload))
             return 0
         raise EmpireOperatorError("unknown command")
-    except (EmpireOperatorError, EmpireRunError, ProductStackError, OSError, ValueError, TypeError, KeyError) as exc:
+    except (
+        EmpireOperatorError,
+        EmpireBusinessError,
+        EmpireRunError,
+        ProductStackError,
+        OSError,
+        ValueError,
+        TypeError,
+        KeyError,
+    ) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
 
