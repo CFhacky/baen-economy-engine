@@ -32,17 +32,30 @@
         "UPSTREAM-ADOPTED"
       ],
       "known": [
-        "Brickworks 75,000 bricks/mo",
-        "Clay Quarries 2,000 t/mo",
-        "Silversheen 180 t/mo Hammer 1495",
+        "Baen Brickworks 75,000 bricks/mo",
+        "Neverwinter Clay Quarries 2,000 t/mo",
+        "Treasury Stone Quarries 8,000 t/mo",
+        "Azurite Decorative Quarries 200 t/mo",
+        "Western Limestone Quarries 12,000 t/mo",
+        "Western Sandstone Quarries 6,000 t/mo",
         "Star Metal Hills bauxite 800 t/mo",
-        "Warborn NW 12 Legionnaires/mo; max 15"
+        "Silversheen 180 t/mo Hammer 1495",
+        "Warborn Neverwinter 12 Legionnaires/mo; max 15",
+        "complete six-quarry network cross-check: 29,000 t/mo / 165 employees"
       ],
       "blocks": [
-        "many other enterprise physical outputs absent",
-        "some input coefficients absent",
-        "Silversheen Warborn allocation 30 t/mo vs 20% after 180 t/mo ruling"
-      ]
+        "physical input coefficients are absent for several transformation lines",
+        "opening inventories are absent for the extraction/manufacturing lines",
+        "Silversheen Warborn allocation remains 30 t/mo quantity vs 20% after the 180 t/mo ruling"
+      ],
+      "product_execution": {
+        "mesa": "business-phase event schedule — prepared automatically on Python 3.12",
+        "unknown_horizons": "9 source-backed production-only lines — prepared automatically; no consume coefficients invented",
+        "freecol": "Warborn 12 actual vs 15 maximum — prepared automatically",
+        "openttd": "NOT_INVOKED: observed freight lacks a complete source-backed capacity/transit-time tuple",
+        "veloren": "NOT_INVOKED: opening stocks/general prices missing",
+        "brunnfeld": "NOT_INVOKED: source-backed market demand/prices missing"
+      }
     },
     {
       "driver": "population",
@@ -86,8 +99,9 @@
         "NCF employees/revenue"
       ],
       "blocks": [
-        "current deposits/reserves/trial balance not established",
-        "monetary reserve ratio authority conflict"
+        "Day-7-Hammer-1495 consolidated deposits/reserves/liabilities trial balance not found",
+        "NCF current consolidated monthly cost not stated",
+        "monetary reserve-ratio authority conflict"
       ]
     },
     {
@@ -240,25 +254,27 @@
       "blocks": []
     }
   ],
-  "actual_run_status": "SOURCE_GROUNDED_BUSINESS_PHASE_PLUS_KNOWN_PRODUCTION_AND_KNOWN_STATE",
+  "actual_run_status": "SOURCE_GROUNDED_BUSINESS_PHASE_PLUS_9_KNOWN_PRODUCTION_LINES_AND_MAPPED_PRODUCTS",
   "executable_now": [
-    "business financial/entity reporting without unsafe consolidation",
-    "known industrial production lines",
+    "source-grounded monthly business phase over 37 admitted Registry entities",
+    "9 source-backed industrial/extraction production lines",
+    "Mesa scheduling of SOURCE-DERIVED business-phase events",
+    "Unknown Horizons production-only validation on sourced outputs",
+    "FreeCol Warborn 12 actual / 15 maximum validation",
     "Neverwinter/Waterdeep census populations with Forgedeep fail-closed",
     "food-sector financials without physical volumes",
     "complete arterial distances without freight capacity",
-    "admitted entity-level commercial headcount without settlement unemployment",
-    "event scheduling of the campaign business-phase receipts"
+    "admitted entity-level commercial headcount without settlement unemployment"
   ],
   "next_source_targets": [
-    "opening inventories",
-    "NCF trial balance/current reserves",
+    "opening inventories or observed warehouse counts",
+    "NCF Day-7-Hammer-1495 trial balance/current reserves and consolidated monthly cost",
     "Silversheen Hammer-1495 monthly cost restatement",
     "Silversheen/Warborn aluminum allocation quantity-versus-ratio ruling",
-    "route capacities/loss rates",
+    "source-backed route transit/capacity observations suitable for OpenTTD",
     "Forgedeep civilian population",
     "food physical outputs",
     "current commodity prices",
-    "settlement labor pools"
+    "settlement labor pools/unemployment"
   ]
 }
