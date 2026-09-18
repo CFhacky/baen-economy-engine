@@ -19,11 +19,15 @@ from typing import Any, Mapping, Sequence
 
 from .mesa_runtime import MesaProductEvent, MesaRuntimeUnavailable, mesa_available, run_mesa_preview
 from .domain import canonical_decimal
+from .openttd_product import OPENTTD_COMMIT
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_SOURCE_INPUTS = (
     PROJECT_ROOT / "recovery/ECONOMY_SOURCE_INPUT_AUTHORITY_2026-09-17.json"
+)
+DEFAULT_SEMANTIC_EVIDENCE = (
+    PROJECT_ROOT / "recovery/SOURCE_SEMANTIC_EVIDENCE_2026-09-18.json"
 )
 
 
@@ -141,8 +145,12 @@ PRODUCTION_LINE_SPECS: tuple[ProductionLineSpec, ...] = (
 DORMANT_PRODUCTS: tuple[dict[str, str], ...] = (
     {
         "product": "OpenTTD",
-        "status": "NOT_INVOKED",
-        "reason": "route freight capacities and loss rates are not source-backed for the actual month",
+        "status": "MAPPED_BLOCKED",
+        "reason": (
+            "Warborn precision-steel freight is source-mapped to OpenTTD steel semantics, "
+            "but no authoritative source/user rule maps campaign miles to OpenTTD tiles or "
+            "fractional source tons to OpenTTD integer cargo pieces"
+        ),
     },
     {
         "product": "Veloren",
@@ -375,6 +383,370 @@ def _source_ref(row: Mapping[str, Any], fact_key: str) -> dict[str, Any]:
         "notion_page": source["notion_page"],
         "title": source.get("title"),
         "fact_key": fact_key,
+    }
+
+
+def _load_semantic_evidence(path: Path = DEFAULT_SEMANTIC_EVIDENCE) -> dict[str, Any]:
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise EmpireSourceProductError(f"cannot read semantic evidence: {path}: {exc}") from exc
+    if (
+        not isinstance(payload, dict)
+        or payload.get("schema") != "tnp.economy.source-semantic-evidence/1"
+    ):
+        raise EmpireSourceProductError("source semantic evidence schema is unsupported")
+    if payload.get("campaign_boundary") != "Day 7 Hammer 1495 DR":
+        raise EmpireSourceProductError("source semantic evidence campaign boundary drifted")
+    if payload.get("notion_writes") != 0:
+        raise EmpireSourceProductError("source semantic evidence records an unexpected Notion write")
+    return payload
+
+
+def _fact_snapshot(
+    facts: Mapping[str, Mapping[str, Any]],
+    key: str,
+    *,
+    value_field: str = "value",
+    unit: str | None = None,
+) -> dict[str, Any]:
+    row = facts.get(key)
+    if row is None:
+        raise EmpireSourceProductError(f"missing semantic source fact {key}")
+    if value_field not in row:
+        raise EmpireSourceProductError(f"{key} lacks {value_field}")
+    item: dict[str, Any] = {
+        "key": key,
+        "value": row[value_field],
+        "authority": row["authority"],
+        "source": _source_ref(row, key),
+    }
+    resolved_unit = unit or row.get("unit")
+    if resolved_unit:
+        item["unit"] = str(resolved_unit)
+    if row.get("approximate") is not None:
+        item["approximate"] = bool(row.get("approximate"))
+    if row.get("note"):
+        item["note"] = str(row.get("note"))
+    return item
+
+
+def _blocker_snapshot(
+    blockers: Mapping[str, Mapping[str, Any]],
+    key: str,
+) -> dict[str, Any]:
+    row = blockers.get(key)
+    if row is None:
+        raise EmpireSourceProductError(f"missing semantic blocker {key}")
+    source = row.get("source")
+    return {
+        "key": key,
+        "status": str(row.get("status") or "UNRESOLVED"),
+        "reason": str(row.get("reason") or "source state is unresolved"),
+        "authority": "UNRESOLVED",
+        "source": dict(source) if isinstance(source, Mapping) else None,
+    }
+
+
+def _semantic_mapping(evidence: Mapping[str, Any], mapping_id: str) -> dict[str, Any]:
+    mappings = evidence.get("mappings")
+    if not isinstance(mappings, list):
+        raise EmpireSourceProductError("source semantic evidence has no mappings array")
+    matches = [
+        row
+        for row in mappings
+        if isinstance(row, dict) and row.get("id") == mapping_id
+    ]
+    if len(matches) != 1:
+        raise EmpireSourceProductError(
+            f"semantic mapping {mapping_id} must exist exactly once"
+        )
+    return dict(matches[0])
+
+
+def source_semantic_domains(
+    source_path: Path = DEFAULT_SOURCE_INPUTS,
+    semantic_evidence_path: Path = DEFAULT_SEMANTIC_EVIDENCE,
+) -> dict[str, Any]:
+    """Project recovered source evidence into economic driver domains.
+
+    This is a semantic mapping layer, not a claim that every mapped fact is
+    executable. Known observations and unresolved state remain separate, and
+    MODEL-PROPOSED values are never inserted to make a domain complete.
+    """
+
+    payload = _load_payload(source_path)
+    facts = _index_facts(payload)
+    blockers = _index_blockers(payload)
+    evidence = _load_semantic_evidence(semantic_evidence_path)
+    freight = _semantic_mapping(evidence, "warborn_gauntlgrym_precision_steel_flow")
+    contract = _semantic_mapping(evidence, "warborn_zariel_priority_contract")
+
+    conflicts = evidence.get("conflicts")
+    if not isinstance(conflicts, list):
+        raise EmpireSourceProductError("source semantic evidence has no conflicts array")
+    unresolved_context = evidence.get("unresolved_context")
+    if not isinstance(unresolved_context, list):
+        raise EmpireSourceProductError("source semantic evidence has no unresolved_context array")
+
+    def evidence_unresolved(domain: str) -> list[dict[str, Any]]:
+        rows: list[dict[str, Any]] = []
+        for raw in [*conflicts, *unresolved_context]:
+            if not isinstance(raw, dict) or raw.get("domain") != domain:
+                continue
+            rows.append(
+                {
+                    "key": str(raw.get("id")),
+                    "status": str(raw.get("status") or "UNRESOLVED"),
+                    "reason": str(raw.get("reason")),
+                    "authority": "UNRESOLVED",
+                    "source": raw.get("source"),
+                }
+            )
+        return rows
+
+    contract_source = contract.get("source")
+    contract_terms = contract.get("terms")
+    if not isinstance(contract_source, dict) or not isinstance(contract_terms, dict):
+        raise EmpireSourceProductError("Warborn contract semantic evidence is malformed")
+    contract_rows = [
+        {
+            "key": "warborn.contract.priority_legionnaire_units",
+            "value": contract_terms["priority_legionnaire_units"],
+            "unit": "Legionnaire units",
+            "authority": contract["authority"],
+            "source": contract_source,
+        },
+        {
+            "key": "warborn.contract.priority_term_months",
+            "value": contract_terms["priority_term_months"],
+            "unit": "months",
+            "authority": contract["authority"],
+            "source": contract_source,
+        },
+        {
+            "key": "warborn.contract.solar_guard_units",
+            "value": contract_terms["solar_guard_units"],
+            "unit": "Solar Guard units",
+            "authority": contract["authority"],
+            "source": contract_source,
+        },
+        {
+            "key": "warborn.contract.solar_guard_term_months",
+            "value": contract_terms["solar_guard_term_months"],
+            "unit": "months",
+            "authority": contract["authority"],
+            "source": contract_source,
+        },
+    ]
+
+    arterial_route_keys = [key for _route_id, _label, key in ARTERIAL_ROUTE_SPECS]
+    return {
+        "finance_banking": {
+            "status": "PARTIAL_CONFLICT",
+            "can_execute_balance_sheet": False,
+            "known": [
+                _fact_snapshot(facts, "ncf.active_loans_gp", unit="gp"),
+                _fact_snapshot(facts, "ncf.employees", unit="employees"),
+                _fact_snapshot(facts, "ncf.monthly_revenue_gp", unit="gp/month"),
+                _fact_snapshot(
+                    facts,
+                    "finance.shimmerdeep_liquidity_target",
+                    value_field="value_gp",
+                    unit="gp protected target",
+                ),
+            ],
+            "unresolved": [
+                _blocker_snapshot(blockers, "finance.opening_liquid_cash"),
+                _blocker_snapshot(blockers, "ncf.current_monthly_cost_gp"),
+                _blocker_snapshot(blockers, "ncf.current_trial_balance"),
+                _blocker_snapshot(blockers, "banking.reserve_ratio_current"),
+            ],
+        },
+        "infrastructure_logistics": {
+            "status": "PARTIAL_SOURCE_BACKED",
+            "known": [
+                _fact_snapshot(facts, "arterial.employees", unit="employees"),
+                _fact_snapshot(facts, "arterial.monthly_cost_gp", unit="gp/month"),
+                _fact_snapshot(facts, "arterial.monthly_revenue_gp", unit="gp/month"),
+                *[_fact_snapshot(facts, key, unit="miles") for key in arterial_route_keys],
+                _fact_snapshot(
+                    facts,
+                    "warborn_neverwinter.gauntlgrym_freight_distance_miles",
+                    unit="miles",
+                ),
+                _fact_snapshot(
+                    facts,
+                    "warborn_neverwinter.gauntlgrym_freight_transit_days",
+                    unit="days",
+                ),
+            ],
+            "semantic_mappings": [freight],
+            "unresolved": [
+                _blocker_snapshot(blockers, "arterial.route_capacity"),
+                *evidence_unresolved("infrastructure_logistics"),
+            ],
+        },
+        "population_labour": {
+            "status": "PARTIAL_SOURCE_BACKED",
+            "known": [
+                _fact_snapshot(facts, "neverwinter.current_population", unit="people"),
+                _fact_snapshot(facts, "waterdeep.current_population", unit="people"),
+                _fact_snapshot(facts, "ncf.employees", unit="employees"),
+                _fact_snapshot(facts, "quarry_network.total_employees", unit="employees"),
+                _fact_snapshot(facts, "warborn_neverwinter.employees", unit="employees"),
+            ],
+            "aggregation_rule": (
+                "Named entity headcounts are observations, not additive Empire labour pools. "
+                "Do not sum them over the admitted commercial headcount."
+            ),
+            "unresolved": [
+                _blocker_snapshot(blockers, "forgedeep.current_population"),
+                _blocker_snapshot(blockers, "labor.empire_wide_occupation_pools"),
+                *evidence_unresolved("population_labour"),
+            ],
+        },
+        "construction_capital": {
+            "status": "PARTIAL_SOURCE_BACKED",
+            "known": [
+                _fact_snapshot(
+                    facts,
+                    "forgedeep.city_development.monthly_cost_gp",
+                    unit="gp/month",
+                ),
+                _fact_snapshot(
+                    facts,
+                    "forgedeep.city_development.monthly_revenue_gp",
+                    unit="gp/month",
+                ),
+                _fact_snapshot(
+                    facts,
+                    "finance.hard_asset_portfolio",
+                    value_field="value_gp_approx",
+                    unit="gp approximate hard assets",
+                ),
+            ],
+            "unresolved": evidence_unresolved("construction_capital"),
+        },
+        "military_contracts": {
+            "status": "PARTIAL_SOURCE_BACKED",
+            "known": [
+                _fact_snapshot(
+                    facts,
+                    "warborn_neverwinter.legionnaire_output_units_per_month",
+                    unit="Legionnaire units/month",
+                ),
+                _fact_snapshot(
+                    facts,
+                    "warborn_neverwinter.maximum_legionnaire_capacity_units_per_month",
+                    unit="Legionnaire units/month",
+                ),
+                _fact_snapshot(
+                    facts,
+                    "warborn_neverwinter.monthly_cost_gp",
+                    unit="gp/month",
+                ),
+                _fact_snapshot(
+                    facts,
+                    "warborn_neverwinter.monthly_revenue_gp",
+                    unit="gp/month",
+                ),
+                *contract_rows,
+            ],
+            "execution_rule": (
+                "Standing contract quantities are constraints/reporting facts only. "
+                "They do not authorize future facility output or campaign-time advancement."
+            ),
+            "unresolved": [
+                _blocker_snapshot(blockers, "silversheen.warborn_aluminum_allocation"),
+                *evidence_unresolved("military_contracts"),
+            ],
+        },
+    }
+
+
+def _map_openttd_source_candidate(
+    *,
+    source_path: Path = DEFAULT_SOURCE_INPUTS,
+    semantic_evidence_path: Path = DEFAULT_SEMANTIC_EVIDENCE,
+) -> dict[str, Any]:
+    """Bind a real source shipment to OpenTTD semantics without inventing units."""
+
+    facts = _load_facts(source_path)
+    evidence = _load_semantic_evidence(semantic_evidence_path)
+    freight = _semantic_mapping(evidence, "warborn_gauntlgrym_precision_steel_flow")
+    upstream = evidence.get("upstream_semantics")
+    if not isinstance(upstream, dict) or not isinstance(upstream.get("openttd"), dict):
+        raise EmpireSourceProductError("OpenTTD semantic evidence is missing")
+    openttd = dict(upstream["openttd"])
+    if openttd.get("commit") != OPENTTD_COMMIT:
+        raise EmpireSourceProductError("OpenTTD semantic evidence pin drifted")
+    if openttd.get("cargo_type") != 9 or openttd.get("cargo_label") != "CT_STEEL":
+        raise EmpireSourceProductError("OpenTTD steel cargo semantics drifted")
+
+    quantity_key = str(freight["quantity_fact_key"])
+    distance_key = str(freight["distance_fact_key"])
+    transit_key = str(freight["transit_fact_key"])
+    quantity = _exact_number(facts[quantity_key], quantity_key)
+    distance = _exact_number(facts[distance_key], distance_key)
+    transit_days = _exact_number(facts[transit_key], transit_key)
+    expected = freight.get("source_values")
+    if not isinstance(expected, dict):
+        raise EmpireSourceProductError("Warborn freight source values are missing")
+    if (
+        Decimal(str(expected.get("quantity_tons_per_month"))) != Decimal(str(quantity))
+        or Decimal(str(expected.get("distance_miles"))) != Decimal(str(distance))
+        or Decimal(str(expected.get("transit_days"))) != Decimal(str(transit_days))
+    ):
+        raise EmpireSourceProductError(
+            "Warborn freight semantic evidence drifted from source authority"
+        )
+
+    return {
+        "status": "MAPPED_BLOCKED",
+        "invoked": False,
+        "upstream": "OpenTTD",
+        "upstream_commit": OPENTTD_COMMIT,
+        "source_flow": {
+            "id": freight["id"],
+            "commodity": "precision tool steel",
+            "quantity_tons_per_month": quantity,
+            "distance_miles": distance,
+            "transit_days": transit_days,
+            "authority": freight["authority"],
+            "source": freight["source"],
+        },
+        "upstream_semantics": {
+            "cargo_type": openttd["cargo_type"],
+            "cargo_label": openttd["cargo_label"],
+            "cargo_unit": openttd["cargo_unit"],
+            "income_function": openttd["income_function"],
+            "authority": "UPSTREAM-ADOPTED",
+            "source_file": openttd["source_file"],
+        },
+        "blockers": [
+            {
+                "authority": "UNRESOLVED",
+                "kind": "UNIT_BRIDGE",
+                "reason": (
+                    "No USER-RULED or SOURCE-DERIVED conversion maps campaign miles to "
+                    "OpenTTD tile distance. 85 source miles therefore cannot be passed as 85 tiles."
+                ),
+            },
+            {
+                "authority": "UNRESOLVED",
+                "kind": "FRACTIONAL_CARGO",
+                "reason": (
+                    "The source shipment is 1.5 tons/month while the pinned OpenTTD income "
+                    "entry point accepts integer cargo pieces. No rounding/extrapolation rule is adopted."
+                ),
+            },
+        ],
+        "reason": (
+            "A real Warborn/Gauntlgrym precision-steel shipment is source-mapped to "
+            "OpenTTD's actual steel cargo, but the product is not invoked until the "
+            "campaign-to-product unit bridge has authority."
+        ),
     }
 
 
@@ -740,9 +1112,11 @@ def map_source_backed_physical_layer(
     expense_control: Mapping[str, Any],
     complications: Sequence[Mapping[str, Any]],
     source_path: Path = DEFAULT_SOURCE_INPUTS,
+    semantic_evidence_path: Path = DEFAULT_SEMANTIC_EVIDENCE,
 ) -> dict[str, Any]:
     lines = source_production_lines(source_path)
     known_state = source_known_state(source_path)
+    semantic_domains = source_semantic_domains(source_path, semantic_evidence_path)
     products = {
         "mesa": _map_mesa(
             seed=seed,
@@ -753,10 +1127,10 @@ def map_source_backed_physical_layer(
         ),
         "freecol": _map_freecol(lines),
         "unknown_horizons": _map_unknown_horizons(lines),
-        "openttd": {
-            "status": "NOT_INVOKED",
-            "reason": DORMANT_PRODUCTS[0]["reason"],
-        },
+        "openttd": _map_openttd_source_candidate(
+            source_path=source_path,
+            semantic_evidence_path=semantic_evidence_path,
+        ),
         "veloren": {
             "status": "NOT_INVOKED",
             "reason": DORMANT_PRODUCTS[1]["reason"],
@@ -782,12 +1156,15 @@ def map_source_backed_physical_layer(
             "financials, and complete arterial distances are reported from SOURCE-DERIVED "
             "facts. Mesa schedules the campaign business-phase events when installed. "
             "FreeCol/Unknown Horizons may consume sourced industrial outputs when their "
-            "checkouts are present. OpenTTD, Veloren, and Brunnfeld stay dormant because "
-            "route capacities, opening stocks, and market prices are not source-backed. "
-            "No conversion ratio, inventory, population, or price was invented."
+            "checkouts are present. OpenTTD now has a real source shipment mapped to its "
+            "actual steel-cargo semantics, but remains fail-closed because campaign miles "
+            "and 1.5 source tons do not yet have authoritative OpenTTD unit bridges. Veloren "
+            "and Brunnfeld stay dormant. No conversion ratio, inventory, population, or "
+            "price was invented."
         ),
         "production_lines": lines,
         "known_state": known_state,
+        "semantic_domains": semantic_domains,
         "products": products,
         "products_used": mapped,
         "dormant": list(DORMANT_PRODUCTS),
