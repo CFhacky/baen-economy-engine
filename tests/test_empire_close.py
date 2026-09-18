@@ -113,6 +113,8 @@ class EmpireCloseTests(unittest.TestCase):
         self.assertEqual(facts["heavy_machinery.production_parent"]["value"],"Gauntlgrym Tools Partnership")
         self.assertTrue(facts["heavy_machinery.stonebearer_line_exists"]["value"])
         self.assertTrue(facts["forgedeep.heavy_machinery_workshops_exist"]["value"])
+        self.assertTrue(facts["heavy_machinery.production_active_by_day7_hammer_1495"]["value"])
+        self.assertEqual(facts["heavy_machinery.production_active_by_day7_hammer_1495"]["authority"],"USER-RULED")
         methods={row["key"]:row["method"] for row in lane["unresolved"]}
         self.assertEqual(methods["empire.heavy_machinery.current_roster"],"WORKLOAD_BACKSOLVE_THEN_BOUND_RESIDUAL")
         self.assertEqual(methods["empire.heavy_machinery.current_build_rate"],"DERIVE_FROM_RATIFIED_FLEET_AND_PRODUCTION_WINDOW")

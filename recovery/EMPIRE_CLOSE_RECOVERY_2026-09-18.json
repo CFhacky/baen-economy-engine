@@ -157,6 +157,13 @@
           "authority": "SOURCE-DERIVED",
           "source": "Arik Bridge Plan — Early 1495 → Uktar 1498 DR",
           "note": "The 1495 bridge explicitly names the Ironmaw/Stonebearer/Groundshaper fleet as the year's mechanical construction engine for early canal work, Longsaddle terraforming and Athenaeum groundwork."
+        },
+        {
+          "key": "heavy_machinery.production_active_by_day7_hammer_1495",
+          "value": true,
+          "authority": "USER-RULED",
+          "source": "User ruling 2026-09-18",
+          "note": "The Ironmaw/Stonebearer/Groundshaper production system is already in production by 1495. Exact initial commissioning date and monthly production rate remain unresolved."
         }
       ],
       "unresolved": [
@@ -1043,6 +1050,11 @@
       "id": "2026-09-18-heavy-machinery-source-recovery",
       "authority": "SOURCE-DERIVED + USER-RULED",
       "note": "Recovered an existing Stonebearer production line under Gauntlgrym Tools Partnership, Forgedeep heavy-machinery workshops, and Workshop 7's Gauntlgrym/Forgedeep span. Current total fleet and heavy-machine monthly output were never authored and will be workload-backsolved rather than guessed. User confirmed no Baen-owned barge fleet has been explicitly established."
+    },
+    {
+      "id": "2026-09-18-heavy-machinery-active-1495",
+      "authority": "USER-RULED",
+      "note": "Heavy machinery production is active by Day 7 Hammer 1495. This does not establish the original commissioning month or monthly output."
     }
   ],
   "sourcebook_routing": {
