@@ -327,7 +327,10 @@ def build_parser() -> argparse.ArgumentParser:
     products = sub.add_parser("products", help="show actual upstream product boundaries and mapping state")
     products.add_argument("--format", choices=("summary", "json"), default="summary")
 
-    run = sub.add_parser("run", help="run one complete source-rebased whole-Empire month")
+    run = sub.add_parser(
+        "run",
+        help="run the actual source-grounded Empire month; fails if any synthetic input remains",
+    )
     run.add_argument("--seed", required=True)
     run.add_argument("--scenario", type=Path, default=DEFAULT_SCENARIO)
     run.add_argument("--census", type=Path, default=DEFAULT_EXECUTION_CENSUS)
@@ -356,6 +359,30 @@ def build_parser() -> argparse.ArgumentParser:
         help="OpenTTD base-set directory; auto-detected on common Linux installs",
     )
     run.add_argument("--build-jobs", type=int, default=2)
+
+    sandbox = sub.add_parser(
+        "sandbox",
+        help="run the synthetic whole-economy scenario for engine testing only",
+    )
+    sandbox.add_argument("--seed", required=True)
+    sandbox.add_argument("--scenario", type=Path, default=DEFAULT_SCENARIO)
+    sandbox.add_argument("--census", type=Path, default=DEFAULT_EXECUTION_CENSUS)
+    sandbox.add_argument("--format", choices=("json", "report"), default="report")
+    sandbox.add_argument(
+        "--no-prepare-products",
+        dest="prepare_products",
+        action="store_false",
+        help="use already configured product checkouts/services instead of acquiring/starting them",
+    )
+    sandbox.set_defaults(prepare_products=True)
+    sandbox.add_argument(
+        "--product-root",
+        type=Path,
+        default=Path(".upstream/baen-product-stack"),
+        help="persistent cache for pinned upstream product checkouts/builds",
+    )
+    sandbox.add_argument("--openttd-baseset", type=Path)
+    sandbox.add_argument("--build-jobs", type=int, default=2)
 
     preview = sub.add_parser("preview", help="run one coherent non-canonical Empire business preview")
     preview.add_argument("--seed", required=True)
@@ -399,6 +426,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                         census_path=args.census,
                         scenario_path=args.scenario,
                         require_products=True,
+                        allow_synthetic_scenario=False,
                     )
             else:
                 payload = run_empire_month(
@@ -406,6 +434,34 @@ def main(argv: Sequence[str] | None = None) -> int:
                     census_path=args.census,
                     scenario_path=args.scenario,
                     require_products=args.require_products,
+                    allow_synthetic_scenario=False,
+                )
+            if args.format == "json":
+                _json(payload)
+            else:
+                print(render_empire_month(payload))
+            return 0
+        if args.command == "sandbox":
+            if args.prepare_products:
+                with product_environment(
+                    args.product_root,
+                    openttd_baseset=args.openttd_baseset,
+                    build_jobs=args.build_jobs,
+                ):
+                    payload = run_empire_month(
+                        seed=args.seed,
+                        census_path=args.census,
+                        scenario_path=args.scenario,
+                        require_products=True,
+                        allow_synthetic_scenario=True,
+                    )
+            else:
+                payload = run_empire_month(
+                    seed=args.seed,
+                    census_path=args.census,
+                    scenario_path=args.scenario,
+                    require_products=False,
+                    allow_synthetic_scenario=True,
                 )
             if args.format == "json":
                 _json(payload)
