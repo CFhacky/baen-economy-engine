@@ -23,13 +23,13 @@
     {
       "id": 1,
       "name": "Source Recovery Close",
-      "status": "IN_PROGRESS",
+      "status": "COMPLETE",
       "exit": "Every required field classified as accepted authority or exact unresolved."
     },
     {
       "id": 2,
       "name": "External Constants & Engineering Research",
-      "status": "PENDING",
+      "status": "IN_PROGRESS",
       "exit": "Research relationships sourced/versioned; no campaign quantities invented."
     },
     {
@@ -691,6 +691,67 @@
           "reason": "No uniform gp/acre value may be invented."
         }
       ]
+    },
+    "system_gaps": {
+      "status": "CLASSIFIED_NOT_RESOLVED",
+      "facts": [],
+      "unresolved": [
+        {
+          "key": "brickworks.clay_to_brick_conversion",
+          "method": "PROCESS_LEDGER_RECOVERY",
+          "reason": "Sourced clay output and brick output do not establish consumed-clay coefficient or stock change."
+        },
+        {
+          "key": "silversheen.current_monthly_cost_gp",
+          "method": "CURRENT_COST_LEDGER_RECOVERY",
+          "reason": "Eleint-1494 cost table belongs to 150 t/mo baseline and cannot be scaled mechanically to 180 t/mo."
+        },
+        {
+          "key": "opening_inventories",
+          "method": "PHYSICAL_COUNT_OR_PERPETUAL_INVENTORY_RECONSTRUCTION",
+          "reason": "Most opening stocks lack current warehouse counts."
+        },
+        {
+          "key": "opening_entity_cash_and_deposits",
+          "method": "LEDGER_RECOVERY",
+          "reason": "Most entity opening balances are not tied to a current treasury/bank ledger."
+        },
+        {
+          "key": "labor.empire_wide_occupation_pools",
+          "method": "POPULATION_AND_EMPLOYMENT_RECONCILIATION",
+          "reason": "Business employee counts exist, but settlement labour supply and wage schedules are not yet source-backed."
+        },
+        {
+          "key": "market.opening_prices",
+          "method": "PRICE_SOURCE_RECOVERY_THEN_MARKET_MODEL",
+          "reason": "Current sandbox commodity prices are model-authored, not campaign authority."
+        },
+        {
+          "key": "market_demand_quantities",
+          "method": "ORDERS_CONTRACTS_AND_HOUSEHOLD_DEMAND_MODEL",
+          "reason": "Current sandbox demand quantities are model-authored."
+        },
+        {
+          "key": "settlement.social_class_shares_and_consumption_baskets",
+          "method": "DEMOGRAPHIC_RESEARCH_AND_RATIFIED_MODEL",
+          "reason": "Current class shares and household baskets are not established campaign facts."
+        },
+        {
+          "key": "migration_rates",
+          "method": "DEMOGRAPHIC_RESEARCH_AND_RATIFIED_MODEL",
+          "reason": "Current sandbox migration rates are model-authored."
+        },
+        {
+          "key": "shock_probabilities",
+          "method": "SEPARATE_EVENT_MODEL",
+          "reason": "Current weather/harvest/war/monster/political shock probabilities are model-authored."
+        },
+        {
+          "key": "esamt_capital_deployment_mechanics",
+          "method": "INGEST_CURRENT_MECHANICS_ONLY",
+          "reason": "Current ESAMT system defines capital-deployment mechanics, but stale historical balances must not be imported into Day-7 opening state."
+        }
+      ]
     }
   },
   "action_queue": [
@@ -770,6 +831,39 @@
         "material receipts",
         "large-scale intermodal handling"
       ]
+    },
+    {
+      "id": "production-process-ledgers",
+      "label": "Recover current production recipes/cost ledgers",
+      "method": "RECOVER_RECONCILE",
+      "user_action_required": false,
+      "unlocks": [
+        "brick conversion",
+        "Silversheen cost",
+        "material balances"
+      ]
+    },
+    {
+      "id": "opening-inventory-close",
+      "label": "Build opening warehouse/inventory state",
+      "method": "PHYSICAL_COUNT_OR_RECONSTRUCTION",
+      "user_action_required": false,
+      "unlocks": [
+        "production supply",
+        "shortages",
+        "bankable warehouse receipts"
+      ]
+    },
+    {
+      "id": "market-price-basket",
+      "label": "Research and ground prices/household demand",
+      "method": "RESEARCH_THEN_RATIFY_MODEL",
+      "user_action_required": false,
+      "unlocks": [
+        "consumption/prices",
+        "household demand",
+        "real wages"
+      ]
     }
   ],
   "recovery_notes": [
@@ -782,6 +876,11 @@
       "id": "2026-09-18-batch-3",
       "authority": "SOURCE-DERIVED + UPSTREAM-ADOPTED",
       "note": "Recovered NRTC's four-wagon affiliated commercial fleet; resolved the NCF 22,000 vs 23,250 revenue discrepancy by current-parent source precedence; added historical/FAO transport comparators without overwriting Baen's explicit 20–40 ton specialized heavy-wagon source fact."
+    },
+    {
+      "id": "2026-09-18-batch-4",
+      "authority": "SYSTEM",
+      "note": "Phase 1 source-recovery classification is complete: all remaining whole-economy gaps are now explicit unresolved items with named resolution methods. Phase 2 external/engineering research is active."
     }
   ]
 }

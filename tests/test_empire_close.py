@@ -63,6 +63,17 @@ class EmpireCloseTests(unittest.TestCase):
         self.assertEqual(calc["ncf.named_active_loans_recovered_gp"]["value"],30000)
         self.assertTrue(any(r["key"]=="ncf.remaining_loan_book_2270000_gp" for r in lane["unresolved"]))
 
+    def test_phase_one_is_complete_and_remaining_system_gaps_are_classified(self):
+        result=close_status()
+        phases={row["id"]:row for row in result["phase_progress"]}
+        self.assertEqual(phases[1]["status"],"COMPLETE")
+        self.assertEqual(phases[2]["status"],"IN_PROGRESS")
+        gaps=result["lanes"]["system_gaps"]
+        methods={row["key"]:row["method"] for row in gaps["unresolved"]}
+        self.assertEqual(methods["opening_inventories"],"PHYSICAL_COUNT_OR_PERPETUAL_INVENTORY_RECONSTRUCTION")
+        self.assertEqual(methods["market.opening_prices"],"PRICE_SOURCE_RECOVERY_THEN_MARKET_MODEL")
+        self.assertIn("shock_probabilities",methods)
+
     def test_non_executable_fact_fails_closed(self):
         payload=load_close_recovery()
         payload["lanes"]["heavy_machinery"]["facts"].append(
