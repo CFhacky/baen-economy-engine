@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
+import os
 from pathlib import Path
 import sys
 import threading
@@ -28,6 +29,7 @@ from .empire_ops_app import APP_HTML
 from .empire_ops_store import EmpireOpsStore, EmpireOpsStoreError
 
 LOOPBACK_HOST = "127.0.0.1"
+CODESPACES_HOST = "0.0.0.0"
 DEFAULT_MAX_BODY_BYTES = 256 * 1024
 DEFAULT_STORE_PATH = Path.home() / "Documents" / "Baen Economy" / "baen-empire-operator.sqlite"
 
@@ -141,13 +143,23 @@ class EmpireOpsHandler(BaseHTTPRequestHandler):
 
     def _allowed_request(self) -> bool:
         host = (self.headers.get("Host") or "").split(":", 1)[0].strip("[]").lower()
-        if host not in {"127.0.0.1", "localhost", "::1"}:
-            self._json_error(403, "invalid_host", "This operator accepts loopback requests only.")
+        allowed_hosts = {"127.0.0.1", "localhost", "::1"}
+        if os.environ.get("CODESPACES") == "true":
+            domain = os.environ.get("GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN", "").strip().lower()
+            if domain and host.endswith("." + domain):
+                allowed_hosts.add(host)
+        if host not in allowed_hosts:
+            self._json_error(
+                403,
+                "invalid_host",
+                "This operator accepts loopback or the authenticated Codespaces forwarded host only.",
+            )
             return False
         origin = self.headers.get("Origin")
         if origin:
             parsed = urlsplit(origin)
-            if parsed.hostname not in {"127.0.0.1", "localhost", "::1"}:
+            origin_host = (parsed.hostname or "").lower()
+            if origin_host not in allowed_hosts:
                 self._json_error(403, "cross_origin_denied", "Cross-origin requests are denied.")
                 return False
         return True
@@ -342,8 +354,12 @@ def create_server(
     max_body_bytes: int = DEFAULT_MAX_BODY_BYTES,
     store_path: Path = DEFAULT_STORE_PATH,
 ) -> EmpireOpsHTTPServer:
-    if host != LOOPBACK_HOST:
-        raise EmpireOpsServerError("the Empire operator may bind only 127.0.0.1")
+    codespaces = os.environ.get("CODESPACES") == "true"
+    if host != LOOPBACK_HOST and not (codespaces and host == CODESPACES_HOST):
+        raise EmpireOpsServerError(
+            "the Empire operator may bind 0.0.0.0 only inside GitHub Codespaces; "
+            "local runs remain loopback-only"
+        )
     if not 0 <= port <= 65535:
         raise EmpireOpsServerError("port must be 0..65535")
     if max_body_bytes <= 0:
@@ -407,12 +423,13 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="baen-empire-ops",
         description=(
-            "Run the local Baen Empire economy application. It binds only 127.0.0.1 "
-            "and cannot write Notion, post the canonical ledger, or advance campaign time."
+            "Run the Baen Empire economy application. Local use binds to 127.0.0.1; "
+            "GitHub Codespaces may bind 0.0.0.0 behind its authenticated private port. "
+            "The app cannot write Notion, post the canonical ledger, or advance campaign time."
         ),
     )
     parser.add_argument("--port", type=int, default=0, help="local port; 0 chooses a free port")
-    parser.add_argument("--host", default=LOOPBACK_HOST, help="must remain 127.0.0.1")
+    parser.add_argument("--host", default=LOOPBACK_HOST, help="127.0.0.1 locally; 0.0.0.0 only in Codespaces")
     parser.add_argument("--census", type=Path, default=DEFAULT_CENSUS)
     parser.add_argument("--database", "--store", dest="store", type=Path, default=DEFAULT_STORE_PATH)
     parser.add_argument("--open", action="store_true", help="open the app in the default browser")

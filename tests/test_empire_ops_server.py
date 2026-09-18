@@ -28,6 +28,30 @@ class EmpireOpsServerTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             create_server(host="0.0.0.0")
 
+    def test_codespaces_host_is_allowed_only_inside_codespaces(self):
+        import os
+        from unittest.mock import patch
+
+        with tempfile.TemporaryDirectory() as directory:
+            database = Path(directory) / "empire.sqlite"
+            with patch.dict(
+                os.environ,
+                {
+                    "CODESPACES": "true",
+                    "GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN": "app.github.dev",
+                },
+                clear=False,
+            ):
+                server = create_server(
+                    host="0.0.0.0",
+                    port=0,
+                    store_path=database,
+                )
+                server.server_close()
+
+        with self.assertRaises(ValueError):
+            create_server(host="0.0.0.0")
+
     def test_app_and_bootstrap_expose_real_source_state(self):
         with tempfile.TemporaryDirectory() as directory, start_server(port=0, store_path=Path(directory) / "empire.sqlite") as running:
             status, headers, raw = self.request(running, "GET", "/")

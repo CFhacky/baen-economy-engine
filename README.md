@@ -23,6 +23,16 @@ The newest retained census evidence is `recovery/LIVE_EMPIRE_SOURCE_CENSUS_EXECU
 
 The old 372-row human recovery report is preserved as historical evidence and is superseded for current counts by [recovery/CURRENT_CENSUS_STATE_2026-09-17.md](recovery/CURRENT_CENSUS_STATE_2026-09-17.md).
 
+## Use it from a phone or tablet
+
+The repository includes a GitHub Codespaces configuration for the Empire app. Open the current implementation branch in Codespaces from any browser:
+
+`https://codespaces.new/CFhacky/baen-economy-engine/tree/codex/reconcile-standalone-authority-20260917`
+
+Create or resume the codespace. The container installs the source-admissible upstream products, starts the Empire application automatically on port `8765`, and forwards that port privately through GitHub. GitHub Codespaces private forwarded ports require the codespace creator to authenticate, so the application does not need to be exposed publicly.
+
+The mobile/Codespaces path uses the same application, source snapshots, saved-run store, and source-grounded monthly business engine as the local Windows path. Its source-admissible product environment includes Mesa, Unknown Horizons, and FreeCol. OpenTTD, Veloren, and Brunnfeld remain intentionally dormant on the actual campaign lane until their missing source mappings are resolved.
+
 ## Use the browser app
 
 On Windows, double-click:
