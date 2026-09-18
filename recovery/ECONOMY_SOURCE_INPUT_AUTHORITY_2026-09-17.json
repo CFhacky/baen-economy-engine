@@ -1,0 +1,463 @@
+{
+  "schema": "tnp.economy.source-input-authority/1",
+  "as_of": "2026-09-17",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "rule": "Actual Empire execution may consume USER-RULED, SOURCE-DERIVED, or UPSTREAM-ADOPTED inputs. MODEL-PROPOSED/scenario_assumption inputs are sandbox-only. Unknown stays unknown.",
+  "facts": [
+    {
+      "key": "finance.monthly_recurring_revenue_arik",
+      "value_gp_per_month": 245000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
+      },
+      "temporal_note": "Arik-side aggregate; current realistic range below is medium-confidence."
+    },
+    {
+      "key": "finance.monthly_recurring_revenue_current_range",
+      "min_gp_per_month": 280000,
+      "max_gp_per_month": 320000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "medium",
+      "source": {
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
+      }
+    },
+    {
+      "key": "finance.monthly_recurring_profit_current_range",
+      "min_gp_per_month": 75000,
+      "max_gp_per_month": 90000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "medium",
+      "source": {
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
+      }
+    },
+    {
+      "key": "finance.ncf_active_loan_portfolio",
+      "value_gp": 2300000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
+      }
+    },
+    {
+      "key": "finance.hard_asset_portfolio",
+      "value_gp_approx": 18000000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "medium",
+      "source": {
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
+      }
+    },
+    {
+      "key": "finance.shimmerdeep_liquidity_target",
+      "value_gp": 450000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "34ce8214-84b0-8111-9fd4-c41feef5634e",
+        "title": "Shimmerdeep Cradle"
+      },
+      "note": "Protected net-settled liquidity target; approximately 400K current gap plus 50K operating buffer."
+    },
+    {
+      "key": "arterial.employees",
+      "value": 150,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      }
+    },
+    {
+      "key": "arterial.monthly_revenue_gp",
+      "value": 22000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      }
+    },
+    {
+      "key": "arterial.monthly_cost_gp",
+      "value": 19360,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      }
+    },
+    {
+      "key": "arterial.route.neverwinter_luskan.distance_miles",
+      "value": 120,
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      }
+    },
+    {
+      "key": "arterial.route.neverwinter_gauntlgrym.distance_miles",
+      "value": 80,
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      }
+    },
+    {
+      "key": "arterial.route.neverwinter_mirabar.distance_miles",
+      "value": 150,
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      }
+    },
+    {
+      "key": "arterial.route.neverwinter_waterdeep.distance_miles",
+      "value": 300,
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      }
+    },
+    {
+      "key": "arterial.route.forgedeep_guardians_gate.distance_miles",
+      "value": 40,
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      }
+    },
+    {
+      "key": "brickworks.employees",
+      "value": 30,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      }
+    },
+    {
+      "key": "brickworks.monthly_revenue_gp",
+      "value": 3333,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      }
+    },
+    {
+      "key": "brickworks.monthly_cost_gp",
+      "value": 2233,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      }
+    },
+    {
+      "key": "brickworks.monthly_output_bricks",
+      "value": 75000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      }
+    },
+    {
+      "key": "brickworks.annual_wages_gp",
+      "value": 21000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      }
+    },
+    {
+      "key": "clay_quarries.employees",
+      "value": 12,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81c6-9bde-c30dd49bc5b6",
+        "title": "Neverwinter Clay Quarries"
+      }
+    },
+    {
+      "key": "clay_quarries.monthly_output_tons",
+      "value": 2000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81c6-9bde-c30dd49bc5b6",
+        "title": "Neverwinter Clay Quarries"
+      }
+    },
+    {
+      "key": "clay_quarries.monthly_cost_gp",
+      "value": 1500,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81c6-9bde-c30dd49bc5b6",
+        "title": "Neverwinter Clay Quarries"
+      }
+    },
+    {
+      "key": "clay_quarries.monthly_external_revenue_gp",
+      "value": 0,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81c6-9bde-c30dd49bc5b6",
+        "title": "Neverwinter Clay Quarries"
+      }
+    },
+    {
+      "key": "agricultural_shelters.employees",
+      "value": 8,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
+        "title": "Agricultural Shelter Zones"
+      }
+    },
+    {
+      "key": "agricultural_shelters.monthly_revenue_gp",
+      "value": 1500,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
+        "title": "Agricultural Shelter Zones"
+      }
+    },
+    {
+      "key": "agricultural_shelters.monthly_cost_gp",
+      "value": 1050,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
+        "title": "Agricultural Shelter Zones"
+      }
+    },
+    {
+      "key": "blacklake_aquaculture.employees",
+      "value": 15,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+        "title": "Blacklake Aquaculture (7 pools)"
+      }
+    },
+    {
+      "key": "blacklake_aquaculture.monthly_revenue_gp",
+      "value": 7500,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+        "title": "Blacklake Aquaculture (7 pools)"
+      }
+    },
+    {
+      "key": "blacklake_aquaculture.monthly_cost_gp",
+      "value": 5850,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+        "title": "Blacklake Aquaculture (7 pools)"
+      }
+    },
+    {
+      "key": "ncf.employees",
+      "value": 85,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+        "title": "Northern Crown Financial"
+      }
+    },
+    {
+      "key": "ncf.monthly_revenue_gp",
+      "value": 22000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+        "title": "Northern Crown Financial"
+      }
+    },
+    {
+      "key": "ncf.active_loans_gp",
+      "value": 2300000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+        "title": "Northern Crown Financial"
+      }
+    },
+    {
+      "key": "forgedeep.city_development.monthly_cost_gp",
+      "value": 15000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b0-9469-f6c9d92a22d5",
+        "title": "Forgedeep City Development"
+      },
+      "temporal_note": "Operational page carries a population chronology caveat; do not infer current population from the stale/current mixed paragraph."
+    },
+    {
+      "key": "forgedeep.city_development.monthly_revenue_gp",
+      "value": 0,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b0-9469-f6c9d92a22d5",
+        "title": "Forgedeep City Development"
+      }
+    }
+  ],
+  "blockers": [
+    {
+      "key": "finance.opening_liquid_cash",
+      "status": "MISSING_DATA",
+      "reason": "Current liquid reserves are explicitly indeterminate; stale 800K figure must not be used.",
+      "source": {
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
+      }
+    },
+    {
+      "key": "banking.reserve_ratio_current",
+      "status": "CONFLICT",
+      "reason": "Northern Crown monetary authority chain is internally inconsistent/superseded; no reserve ratio is safe to import until reconciled.",
+      "source": {
+        "notion_page": "3c2e8214-84b0-81c0-85ee-cc74c2bcb35b",
+        "title": "Northern Crown Monetary System"
+      }
+    },
+    {
+      "key": "forgedeep.current_population",
+      "status": "MISSING_DATA",
+      "reason": "Controlling runtime requires occupancy/population evidence; City Development page mixes a 450 figure with a staged 1,400–1,600 band and future targets.",
+      "source": {
+        "notion_page": "3cbe8214-84b0-81a5-a0b4-c363b94c0aa8",
+        "title": "Forgedeep Economic Return — CONTROLLING RUNTIME"
+      }
+    },
+    {
+      "key": "agricultural_shelters.physical_output_volume",
+      "status": "MISSING_DATA",
+      "reason": "Registry gives revenue/employees but no source-backed monthly crop tonnage or crop mix sufficient for physical simulation.",
+      "source": {
+        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
+        "title": "Agricultural Shelter Zones"
+      }
+    },
+    {
+      "key": "blacklake_aquaculture.physical_output_volume",
+      "status": "MISSING_DATA",
+      "reason": "Page explicitly says specific species and volumes need session confirmation.",
+      "source": {
+        "notion_page": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+        "title": "Blacklake Aquaculture (7 pools)"
+      }
+    },
+    {
+      "key": "brickworks.clay_to_brick_conversion",
+      "status": "MISSING_DATA",
+      "reason": "75K bricks/month and 2K tons/month clay supply are both sourced, but the consumed-clay coefficient is not stated; do not derive a fake recipe ratio.",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      }
+    },
+    {
+      "key": "arterial.route_capacity",
+      "status": "MISSING_DATA",
+      "reason": "Distances/revenue/workforce are sourced; monthly freight capacities used by the sandbox are not.",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      }
+    },
+    {
+      "key": "market.opening_prices",
+      "status": "MISSING_DATA",
+      "reason": "The sandbox commodity price table is not grounded in a current campaign source."
+    },
+    {
+      "key": "labor.empire_wide_occupation_pools",
+      "status": "MISSING_DATA",
+      "reason": "Business-specific employee counts exist, but the sandbox settlement occupation pools and wage schedules are not source-backed."
+    },
+    {
+      "key": "settlement.social_class_shares_and_consumption_baskets",
+      "status": "MISSING_DATA",
+      "reason": "Sandbox class shares, food baskets, and substitution ratios are not established in current campaign authority."
+    },
+    {
+      "key": "migration_rates",
+      "status": "MISSING_DATA",
+      "reason": "Sandbox migration links/rates are model-authored and not current campaign facts."
+    },
+    {
+      "key": "shock_probabilities",
+      "status": "MISSING_DATA",
+      "reason": "Sandbox weather/harvest/war/monster/political shock probabilities are model-authored."
+    },
+    {
+      "key": "market_demand_quantities",
+      "status": "MISSING_DATA",
+      "reason": "Sandbox entity demand quantities are model-authored rather than derived from current orders/contracts."
+    },
+    {
+      "key": "opening_inventories",
+      "status": "MISSING_DATA",
+      "reason": "Most of the sandbox's 29 opening inventories are not tied to warehouse counts or current source records."
+    },
+    {
+      "key": "opening_entity_cash_and_deposits",
+      "status": "MISSING_DATA",
+      "reason": "Most of the sandbox's 34 opening account balances are not tied to a current treasury/bank ledger."
+    }
+  ]
+}
