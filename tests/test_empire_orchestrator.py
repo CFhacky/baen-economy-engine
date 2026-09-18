@@ -45,7 +45,10 @@ class EmpireOrchestratorTests(unittest.TestCase):
             "OPENTTD_ADMIN_PASSWORD": "",
         }
         with patch.dict(os.environ, env, clear=False):
-            payload = run_empire_month(seed="empire-e2e-core")
+            payload = run_empire_month(
+                seed="empire-e2e-core",
+                allow_synthetic_scenario=True,
+            )
         self.assertFalse(payload["canonical"])
         self.assertFalse(payload["campaign_time_advanced"])
         self.assertEqual(payload["notion_writes"], 0)
@@ -55,6 +58,12 @@ class EmpireOrchestratorTests(unittest.TestCase):
         self.assertTrue(payload["integrity"]["physical_conservation"])
         self.assertTrue(payload["integrity"]["ledger_balanced"])
         self.assertIn("Whole-Economy", render_empire_month(payload))
+
+    def test_actual_run_rejects_explicit_synthetic_inputs(self):
+        with self.assertRaises(Exception) as raised:
+            run_empire_month(seed="actual-must-be-source-grounded")
+        self.assertIn("source-gated", str(raised.exception))
+        self.assertIn("scenario/model-proposed", str(raised.exception))
 
     def test_require_products_fails_instead_of_pretending_product_execution(self):
         env = {
