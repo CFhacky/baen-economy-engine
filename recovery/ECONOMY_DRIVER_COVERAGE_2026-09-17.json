@@ -1,0 +1,247 @@
+{
+  "schema": "tnp.economy.driver-coverage/1",
+  "as_of": "2026-09-17",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "rule": "Actual-run coverage is measured by economic driver classes, not nested scenario object count. A driver is executable only when required state is source-backed/user-ruled or computable through an adopted upstream mechanic from such state.",
+  "drivers": [
+    {
+      "driver": "business_financial_flows",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": true,
+      "authority": [
+        "SOURCE-DERIVED"
+      ],
+      "known": [
+        "90 Registry records acquired",
+        "entity revenue/cost/employees/capital where temporally valid",
+        "current aggregate revenue/profit bands"
+      ],
+      "blocks": [
+        "temporal/accounting classification still required before consolidated total",
+        "parent/child overlaps such as NCF must not double-count"
+      ]
+    },
+    {
+      "driver": "industrial_production",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": true,
+      "authority": [
+        "SOURCE-DERIVED",
+        "UPSTREAM-ADOPTED"
+      ],
+      "known": [
+        "Brickworks 75,000 bricks/mo",
+        "Clay Quarries 2,000 t/mo",
+        "Silversheen 180 t/mo Hammer 1495",
+        "Star Metal Hills bauxite 800 t/mo",
+        "Warborn NW 12 Legionnaires/mo; max 15"
+      ],
+      "blocks": [
+        "many other enterprise physical outputs absent",
+        "some input coefficients absent"
+      ]
+    },
+    {
+      "driver": "population",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": false,
+      "authority": [
+        "SOURCE-DERIVED"
+      ],
+      "known": [
+        "Neverwinter 75,000 from census",
+        "Waterdeep 130,000 from census"
+      ],
+      "blocks": [
+        "Forgedeep civilian population explicitly unresolved"
+      ]
+    },
+    {
+      "driver": "opening_liquidity",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [
+        "450K protected Shimmerdeep liquidity target",
+        "~400K gap"
+      ],
+      "blocks": [
+        "current liquid cash explicitly indeterminate"
+      ]
+    },
+    {
+      "driver": "banking_balance_sheet",
+      "status": "PARTIAL_CONFLICT",
+      "can_execute": false,
+      "authority": [
+        "SOURCE-DERIVED"
+      ],
+      "known": [
+        "NCF active loans 2.3M gp",
+        "NCF employees/revenue"
+      ],
+      "blocks": [
+        "current deposits/reserves/trial balance not established",
+        "monetary reserve ratio authority conflict"
+      ]
+    },
+    {
+      "driver": "inventories",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [],
+      "blocks": [
+        "warehouse counts/opening inventories not source-backed"
+      ]
+    },
+    {
+      "driver": "labor_supply",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": false,
+      "authority": [
+        "SOURCE-DERIVED"
+      ],
+      "known": [
+        "business-specific headcounts",
+        "Warborn wage schedule",
+        "Brickworks annual wages"
+      ],
+      "blocks": [
+        "settlement-wide occupation pools and unemployment not established"
+      ]
+    },
+    {
+      "driver": "trade_routes",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": false,
+      "authority": [
+        "SOURCE-DERIVED",
+        "UPSTREAM-ADOPTED"
+      ],
+      "known": [
+        "key arterial route distances",
+        "road workforce/revenue/cost",
+        "OpenTTD transport-income mechanic"
+      ],
+      "blocks": [
+        "route freight capacities/loss rates not source-backed for actual month"
+      ]
+    },
+    {
+      "driver": "market_prices",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [
+        "some contracted/entity unit prices such as aluminum 320 gp/t"
+      ],
+      "blocks": [
+        "general opening commodity prices not source-backed"
+      ]
+    },
+    {
+      "driver": "food_supply",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": false,
+      "authority": [
+        "SOURCE-DERIVED"
+      ],
+      "known": [
+        "food-sector financial totals and headcount"
+      ],
+      "blocks": [
+        "Agricultural Shelter physical output missing",
+        "Blacklake physical species/volume explicitly unconfirmed"
+      ]
+    },
+    {
+      "driver": "household_consumption",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [],
+      "blocks": [
+        "social-class shares, baskets, substitution ratios not source-backed"
+      ]
+    },
+    {
+      "driver": "credit_origination",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": false,
+      "authority": [
+        "SOURCE-DERIVED",
+        "UPSTREAM-ADOPTED"
+      ],
+      "known": [
+        "specific approved facilities where documented",
+        "NCF portfolio size"
+      ],
+      "blocks": [
+        "general underwriting/reserve state and opening borrower balances incomplete"
+      ]
+    },
+    {
+      "driver": "tax_rent_tithe_obligations",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [],
+      "blocks": [
+        "sandbox tenure rates/assessment bases not established as current authority"
+      ]
+    },
+    {
+      "driver": "migration",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [],
+      "blocks": [
+        "migration links/rates model-authored"
+      ]
+    },
+    {
+      "driver": "exogenous_shocks",
+      "status": "MECHANICS_ONLY",
+      "can_execute": false,
+      "authority": [
+        "UPSTREAM-ADOPTED"
+      ],
+      "known": [
+        "engine can resolve deterministic/random events"
+      ],
+      "blocks": [
+        "current shock probabilities/events must come from campaign authority or explicit GM rule"
+      ]
+    },
+    {
+      "driver": "event_scheduling",
+      "status": "UPSTREAM_ADOPTED",
+      "can_execute": true,
+      "authority": [
+        "UPSTREAM-ADOPTED"
+      ],
+      "known": [
+        "Mesa event runtime"
+      ],
+      "blocks": []
+    }
+  ],
+  "actual_run_status": "BLOCKED_FOR_FULL_PHYSICAL_MONTH",
+  "executable_now": [
+    "business financial/entity reporting without unsafe consolidation",
+    "known industrial production lines",
+    "event scheduling"
+  ],
+  "next_source_targets": [
+    "temporal/accounting classification of Registry",
+    "opening inventories",
+    "NCF trial balance/current reserves",
+    "route capacities/loss rates",
+    "Forgedeep civilian population",
+    "food physical outputs",
+    "current commodity prices",
+    "settlement labor pools"
+  ]
+}
