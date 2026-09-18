@@ -1,0 +1,646 @@
+{
+  "schema": "tnp.economy.empire-close-recovery/1",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "canonical": false,
+  "campaign_time_advanced": false,
+  "notion_writes": 0,
+  "rules": {
+    "actual_authorities": [
+      "SOURCE-DERIVED",
+      "USER-RULED",
+      "CALCULATED",
+      "ROLLED-AND-BOUND",
+      "UPSTREAM-ADOPTED"
+    ],
+    "rejected_from_actual": [
+      "MODEL-PROPOSED",
+      "UNRESOLVED"
+    ],
+    "note": "Plausible is not an authority class. Missing values remain missing until an authorized resolution method succeeds."
+  },
+  "phases": [
+    {
+      "id": 1,
+      "name": "Source Recovery Close",
+      "status": "IN_PROGRESS",
+      "exit": "Every required field classified as accepted authority or exact unresolved."
+    },
+    {
+      "id": 2,
+      "name": "External Constants & Engineering Research",
+      "status": "PENDING",
+      "exit": "Research relationships sourced/versioned; no campaign quantities invented."
+    },
+    {
+      "id": 3,
+      "name": "Residual State Resolution",
+      "status": "PENDING",
+      "exit": "Only truly latent state is rolled-and-bound or user-ruled."
+    },
+    {
+      "id": 4,
+      "name": "Engine Implementation",
+      "status": "IN_PROGRESS",
+      "exit": "Actual lane rejects unsupported values and exposes receipts."
+    },
+    {
+      "id": 5,
+      "name": "Mobile Operator",
+      "status": "IN_PROGRESS",
+      "exit": "Action queue says what resolves each blocker and whether user action is needed."
+    },
+    {
+      "id": 6,
+      "name": "Day-7 Close",
+      "status": "PENDING",
+      "exit": "Accepted state/conflicts/unknowns/audit exceptions emitted without advancing time."
+    },
+    {
+      "id": 7,
+      "name": "Readiness Gate",
+      "status": "PENDING",
+      "exit": "First physically defensible canonical month is executable."
+    }
+  ],
+  "lanes": {
+    "heavy_machinery": {
+      "status": "PARTIAL_RECOVERED",
+      "facts": [
+        {
+          "key": "brickworks.stonebearer_allocated_units",
+          "value": 4,
+          "unit": "vehicles",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Brickworks / current Notion",
+          "note": "Specific BW-1 through BW-4 allocation; not empire-wide fleet."
+        },
+        {
+          "key": "stonebearer.payload",
+          "value": 15,
+          "unit": "short tons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Brickworks"
+        },
+        {
+          "key": "stonebearer.loaded_speed",
+          "value": 4,
+          "unit": "mph",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Brickworks"
+        },
+        {
+          "key": "stonebearer.empty_speed",
+          "value": 6,
+          "unit": "mph",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Brickworks"
+        },
+        {
+          "key": "earthmover.road_jeep_configuration",
+          "value": true,
+          "authority": "USER-RULED",
+          "source": "User ruling 2026-09-18"
+        },
+        {
+          "key": "earthmover.external_sales",
+          "value": false,
+          "authority": "USER-RULED",
+          "source": "User ruling 2026-09-18"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "empire.heavy_machinery.current_roster",
+          "method": "RECOVER_PHYSICAL_COUNT",
+          "reason": "No trustworthy Day-7 total Ironmaw/Stonebearer/Groundshaper roster found yet."
+        },
+        {
+          "key": "empire.heavy_machinery.current_build_rate",
+          "method": "RECOVER",
+          "reason": "Roadrider future production figures are not the existing earthmover build rate."
+        }
+      ]
+    },
+    "conventional_freight": {
+      "status": "PARTIAL_RECOVERED",
+      "facts": [
+        {
+          "key": "quarry_network.heavy_stone_wagons_min",
+          "value": 50,
+          "unit": "wagons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network",
+          "note": "Source says 50+ heavy stone wagons."
+        },
+        {
+          "key": "quarry_network.standard_wagon_load_min",
+          "value": 20,
+          "unit": "tons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network"
+        },
+        {
+          "key": "quarry_network.standard_wagon_load_max",
+          "value": 40,
+          "unit": "tons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network"
+        },
+        {
+          "key": "resource_extraction.specialized_ore_wagons_min",
+          "value": 50,
+          "unit": "wagons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Resource Extraction Operations",
+          "note": "Potential overlap with quarry-network 50+ wagon statement is unresolved."
+        },
+        {
+          "key": "western_limestone.dedicated_stone_barges",
+          "value": 2,
+          "unit": "barges",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network"
+        },
+        {
+          "key": "western_limestone.luskan_frequency",
+          "value": "weekly",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network"
+        },
+        {
+          "key": "western_limestone.neverwinter_frequency",
+          "value": "monthly",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "freight.wagon_sets_overlap",
+          "method": "RECONCILE",
+          "reason": "Cannot add 50+ heavy stone wagons and 50+ specialized ore wagons until source overlap is established."
+        },
+        {
+          "key": "freight.empire_total_wagons",
+          "method": "RECOVER_PHYSICAL_COUNT",
+          "reason": "Other construction/caravan fleets remain unenumerated."
+        },
+        {
+          "key": "freight.draft_animals_and_teamsters",
+          "method": "RECOVER",
+          "reason": "No consolidated current register yet."
+        }
+      ]
+    },
+    "rail": {
+      "status": "CURRENT_TRUNK_ZERO_FUTURE_DESIGN_KNOWN",
+      "facts": [
+        {
+          "key": "deep_road.day7_hammer_operational",
+          "value": false,
+          "authority": "SOURCE-DERIVED",
+          "source": "Deep Road Network Construction / current Notion",
+          "note": "Survey/design begin Alturiak 1495; Phase 1 ground-break Tarsakh 1495, after Day 7 Hammer."
+        }
+      ],
+      "unresolved": []
+    },
+    "canal_waterway": {
+      "status": "PARTIAL_RECOVERED",
+      "facts": [
+        {
+          "key": "hunding.phase1.western_network",
+          "value": "operational",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System",
+          "note": "Current canonical update ~Hammer–Alturiak 1495."
+        },
+        {
+          "key": "hunding.phase2.progress",
+          "value": 30,
+          "unit": "percent",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.phase2.stations_1_3",
+          "value": "operational",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "hunding.current_barge_fleet",
+          "method": "RECOVER_PHYSICAL_COUNT",
+          "reason": "Operational waterway status does not state a consolidated current barge fleet."
+        },
+        {
+          "key": "hunding.current_bulk_capacity",
+          "method": "CALCULATE_AFTER_RECOVERY",
+          "reason": "Requires actual fleet, lock/lift cycles, berths, and duty cycle."
+        }
+      ]
+    },
+    "food": {
+      "status": "PHYSICAL_DESIGN_PARTIAL_ACTUAL_OUTPUT_UNKNOWN",
+      "facts": [
+        {
+          "key": "blacklake.pool_count",
+          "value": 7,
+          "unit": "pools",
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "blacklake.employees",
+          "value": 15,
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "blacklake.monthly_revenue_gp",
+          "value": 7500,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "blacklake.monthly_cost_gp",
+          "value": 5850,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "blacklake.output_classes",
+          "value": [
+            "fish",
+            "freshwater shellfish",
+            "aquatic plants"
+          ],
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "aquaculture_network.employees",
+          "value": 55,
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "aquaculture_network.monthly_revenue_gp",
+          "value": 25000,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "agricultural_shelters.employees",
+          "value": 8,
+          "authority": "SOURCE-DERIVED",
+          "source": "Agricultural Shelter Zones"
+        },
+        {
+          "key": "agricultural_shelters.monthly_revenue_gp",
+          "value": 1500,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Agricultural Shelter Zones"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "blacklake.species_and_volumes",
+          "method": "SURVEY_THEN_RESEARCH",
+          "reason": "Current page explicitly says specific species and volumes need session confirmation."
+        },
+        {
+          "key": "blacklake.pool_geometry",
+          "method": "RECOVER_OR_SURVEY",
+          "reason": "Seven pools exist but current physical dimensions are not established on the operating page."
+        },
+        {
+          "key": "agricultural_shelters.physical_scale_and_output",
+          "method": "SURVEY_THEN_RESEARCH",
+          "reason": "Registry supplies finances/staff but not sufficient acreage/crop/output state."
+        }
+      ],
+      "cautions": [
+        {
+          "key": "aquaculture_technical_specifications",
+          "status": "PLANNING_REFERENCE_NOT_ACTUAL",
+          "note": "Neverwinter's Warmth contains detailed basin/species/yield design constants but is an internal-planning appendix; do not treat it as proof Blacklake was built to every specification."
+        }
+      ]
+    },
+    "forgedeep": {
+      "status": "CURRENT_POPULATION_UNRESOLVED",
+      "facts": [
+        {
+          "key": "forgedeep.population_eleint_1494",
+          "value": 450,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep City Development",
+          "note": "Explicitly Eleint 1494 historical baseline."
+        },
+        {
+          "key": "forgedeep.staged_next_visit_band_min",
+          "value": 1400,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep City Development",
+          "note": "Page calls 1,400–1,600 a staged band; not yet accepted as current census."
+        },
+        {
+          "key": "forgedeep.staged_next_visit_band_max",
+          "value": 1600,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep City Development"
+        },
+        {
+          "key": "forgedeep.year1_target",
+          "value": 2000,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep City Development"
+        },
+        {
+          "key": "forgedeep.city_development_employees",
+          "value": 30,
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep City Development"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "forgedeep.current_population_day7_hammer",
+          "method": "ROLL_AFTER_INTERPRETATION_LOCK",
+          "reason": "Live authority and July audit explicitly preserve 450 as historical and current population as pending; staged 1,400–1,600 band is available for bounded resolution."
+        }
+      ]
+    },
+    "ncf_finance": {
+      "status": "PARTIAL_RECOVERED_CONFLICTED",
+      "facts": [
+        {
+          "key": "ncf.active_loan_portfolio_gp",
+          "value": 2300000,
+          "unit": "gp principal outstanding",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Crown Financial"
+        },
+        {
+          "key": "ncf.parent_monthly_revenue_gp",
+          "value": 22000,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Crown Financial"
+        },
+        {
+          "key": "ncf.branch_sum_monthly_revenue_gp",
+          "value": 23250,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Crown Financial — Neverwinter",
+          "note": "Conflicts with parent 22,000 gp/month total."
+        },
+        {
+          "key": "loan.dockworkers_guild.principal_gp",
+          "value": 15000,
+          "unit": "gp",
+          "authority": "SOURCE-DERIVED",
+          "source": "NCF Neverwinter"
+        },
+        {
+          "key": "loan.dockworkers_guild.rate_pct",
+          "value": 6,
+          "unit": "annual percent",
+          "authority": "SOURCE-DERIVED",
+          "source": "NCF Neverwinter"
+        },
+        {
+          "key": "loan.selah_thorn.principal_gp",
+          "value": 10000,
+          "unit": "gp",
+          "authority": "SOURCE-DERIVED",
+          "source": "NCF Neverwinter / Thorn & Silver"
+        },
+        {
+          "key": "loan.selah_thorn.rate_pct",
+          "value": 8,
+          "unit": "annual percent",
+          "authority": "SOURCE-DERIVED",
+          "source": "NCF Neverwinter / Thorn & Silver"
+        },
+        {
+          "key": "loan.swiftfingers.principal_gp",
+          "value": 5000,
+          "unit": "gp",
+          "authority": "SOURCE-DERIVED",
+          "source": "Captain Philo Swiftfingers"
+        },
+        {
+          "key": "loan.swiftfingers.rate_pct",
+          "value": 12,
+          "unit": "annual percent",
+          "authority": "SOURCE-DERIVED",
+          "source": "Captain Philo Swiftfingers"
+        },
+        {
+          "key": "snowfall.approved_facility_gp",
+          "value": 30000,
+          "unit": "gp",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Crown Financial",
+          "note": "Approved but not yet drawn at Day 7 Hammer; excluded from active loan principal."
+        },
+        {
+          "key": "snowfall.approved_rate_pct",
+          "value": 8,
+          "unit": "annual percent",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Crown Financial"
+        }
+      ],
+      "calculated": [
+        {
+          "key": "ncf.named_active_loans_recovered_gp",
+          "value": 30000,
+          "unit": "gp",
+          "authority": "CALCULATED",
+          "formula": "15000 + 10000 + 5000"
+        },
+        {
+          "key": "ncf.named_active_loan_coverage_pct",
+          "value": 1.3043478261,
+          "unit": "percent of 2.3M portfolio",
+          "authority": "CALCULATED",
+          "formula": "30000 / 2300000 * 100"
+        }
+      ],
+      "conflicts": [
+        {
+          "key": "ncf.monthly_revenue_total",
+          "claims": [
+            22000,
+            23250
+          ],
+          "method": "RECONCILE_PARENT_BRANCH_CONSOLIDATION",
+          "reason": "Parent current page and branch table disagree by 1,250 gp/month."
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "ncf.current_trial_balance",
+          "method": "RECOVER_RECONCILE",
+          "reason": "Deposits, reserves, liabilities, equity and interbranch exposures remain incomplete."
+        },
+        {
+          "key": "ncf.current_monthly_cost_gp",
+          "method": "RECOVER_RECONCILE",
+          "reason": "Parent cost not safely derivable from child branch costs."
+        },
+        {
+          "key": "finance.opening_liquid_cash",
+          "method": "REMAIN_UNKNOWN_UNLESS_LEDGER_ANCHOR_FOUND",
+          "reason": "Current financial authority explicitly says exact cash is indeterminate."
+        },
+        {
+          "key": "ncf.remaining_loan_book_2270000_gp",
+          "method": "RECOVER_LOAN_FILES",
+          "reason": "Named recovered active loans cover only ~1.30% of reported principal; do not generate charming borrowers to fill the rest."
+        }
+      ]
+    },
+    "land_bank": {
+      "status": "USER_RULED_GEOMETRY_PARTIAL",
+      "facts": [
+        {
+          "key": "arterial.land_bank.half_width_each_side_miles",
+          "value": 8,
+          "unit": "miles",
+          "authority": "USER-RULED",
+          "source": "User ruling 2026-09-18"
+        },
+        {
+          "key": "arterial.operational_network_miles_floor",
+          "value": 500,
+          "unit": "miles",
+          "authority": "SOURCE-DERIVED",
+          "source": "Arterial Road Network"
+        },
+        {
+          "key": "arterial.legacy_direct_owned_acres_min",
+          "value": 1200,
+          "unit": "acres",
+          "authority": "SOURCE-DERIVED",
+          "source": "Arterial Road Network"
+        }
+      ],
+      "calculated": [
+        {
+          "key": "arterial.gross_strip_area_at_500_mile_floor",
+          "value": 5120000,
+          "unit": "gross strip-acres before overlap removal",
+          "authority": "CALCULATED",
+          "formula": "500 miles * 16 mile width * 640 acres/sq mi"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "arterial.unique_beneficially_controlled_acres",
+          "method": "GEOMETRY_AND_TITLE_RECONCILIATION",
+          "reason": "Requires segment overlap removal, urban/public/sovereign exclusions and shell-title reconciliation."
+        },
+        {
+          "key": "arterial.land_cost_basis_and_value",
+          "method": "RECOVER_THEN_APPRAISE",
+          "reason": "No uniform gp/acre value may be invented."
+        }
+      ]
+    }
+  },
+  "action_queue": [
+    {
+      "id": "fleet-roster",
+      "label": "Recover actual Heavy Machinery roster",
+      "method": "RECOVER_PHYSICAL_COUNT",
+      "user_action_required": false,
+      "unlocks": [
+        "road transport capacity",
+        "construction capacity",
+        "machine allocation"
+      ]
+    },
+    {
+      "id": "wagon-register",
+      "label": "Reconcile wagons, barges, draft teams and contracts",
+      "method": "RECOVER_PHYSICAL_COUNT",
+      "user_action_required": false,
+      "unlocks": [
+        "arterial freight capacity"
+      ]
+    },
+    {
+      "id": "ncf-close",
+      "label": "Reconstruct NCF trial balance and loan files",
+      "method": "RECOVER_RECONCILE",
+      "user_action_required": false,
+      "unlocks": [
+        "credit",
+        "reserves",
+        "interest income",
+        "Crownworks financing"
+      ]
+    },
+    {
+      "id": "forgedeep-pop",
+      "label": "Canonize Forgedeep current population",
+      "method": "ROLL_AFTER_INTERPRETATION_LOCK",
+      "user_action_required": true,
+      "decision": "Accept/reject use of the sourced 1,400–1,600 staged band as the bounded Day-7 census envelope.",
+      "unlocks": [
+        "Forgedeep labour",
+        "food demand",
+        "housing demand"
+      ]
+    },
+    {
+      "id": "food-survey",
+      "label": "Recover/survey actual food facilities",
+      "method": "SURVEY_THEN_RESEARCH",
+      "user_action_required": false,
+      "unlocks": [
+        "physical food output",
+        "consumption lane",
+        "food inventories"
+      ]
+    },
+    {
+      "id": "land-ledger",
+      "label": "Reconcile NCF corridor title geometry",
+      "method": "GEOMETRY_AND_TITLE_RECONCILIATION",
+      "user_action_required": false,
+      "unlocks": [
+        "land asset value",
+        "development/rent model"
+      ]
+    },
+    {
+      "id": "crownworks",
+      "label": "Authorize and fund Crownworks",
+      "method": "RULE_AFTER_FINANCIAL_CLOSE",
+      "user_action_required": true,
+      "decision": "Only after current funding capacity is reconciled; do not spend the proposed 3M gp by assumption.",
+      "unlocks": [
+        "future depot network",
+        "material receipts",
+        "large-scale intermodal handling"
+      ]
+    }
+  ]
+}

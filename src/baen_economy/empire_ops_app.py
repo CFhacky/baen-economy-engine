@@ -97,7 +97,7 @@ pre{white-space:pre-wrap;word-break:break-word;background:#090e14;border:1px sol
   <div class="nav-inner">
     <button class="nav-btn active" data-view="home">Home</button>
     <button class="nav-btn" data-view="businesses">Businesses</button>
-    <button class="nav-btn" data-view="economy">Economy</button>
+    <button class="nav-btn" data-view="economy">Economy</button>\n    <button class="nav-btn" data-view="close">Empire Close</button>
     <button class="nav-btn" data-view="sources">Sources & blockers</button>
     <button class="nav-btn" data-view="runs">Saved runs</button>
   </div>
@@ -251,6 +251,35 @@ pre{white-space:pre-wrap;word-break:break-word;background:#090e14;border:1px sol
   </div>
 </section>
 
+
+<section class="view" id="view-close">
+  <div class="grid">
+    <div class="card full hero">
+      <div class="eyebrow">Evidence-first recovery</div>
+      <div class="hero-title">Day 7 Hammer Empire Close</div>
+      <p class="muted">This does not advance time. It separates routine recovery from decisions that actually require you.</p>
+      <div class="quick-grid">
+        <div class="quick"><strong id="close-accepted">—</strong><span>accepted sourced/calculated values</span></div>
+        <div class="quick"><strong id="close-unresolved">—</strong><span>remaining unresolved items</span></div>
+        <div class="quick"><strong id="close-user-actions">—</strong><span>decisions that actually require you</span></div>
+      </div>
+    </div>
+    <div class="card full">
+      <h2>Execution phases</h2>
+      <div id="close-phases">Loading…</div>
+    </div>
+    <div class="card full">
+      <h2>What happens next</h2>
+      <p class="muted">Routine recovery proceeds without asking you for numbers. User decisions are separated below.</p>
+      <div id="close-actions">Loading…</div>
+    </div>
+    <div class="card full">
+      <h2>Recovered lanes</h2>
+      <div id="close-lanes">Loading…</div>
+    </div>
+  </div>
+</section>
+
 <section class="view" id="view-runs">
   <div class="grid">
     <div class="card full">
@@ -335,6 +364,29 @@ function renderBootstrap(data){
     '<details open><summary>NCF arterial land bank <span class="status warn">USER-RULED</span></summary><div class="detail-body"><strong>8 miles each side</strong> of the arterial centerline; NCF / controlled shells / subsidiaries are beneficial owners.<br><br>At the sourced <strong>500+ operational network-mile</strong> lower bound, the gross geometric corridor is at least <strong>'+num(land.gross_strip_acres_at_500_mile_floor||0)+' gross strip-acres</strong> before route-overlap subtraction. This is not a unique-acre lower bound and not yet the titled-acre ledger. The older 1,200+ acre Arterial figure is retained as the directly-booked/legacy parcel figure pending consolidation.</div></details>'+
     '<details><summary>Internal vehicle capacity <span class="status good">INTERNAL ONLY</span></summary><div class="detail-body">Earthmover road/Jeep configuration: <strong>'+(tr.earthmover_jeep_road_configuration?"YES":"NO")+'</strong>. External sales: <strong>'+(tr.external_sales?"YES":"NO")+'</strong>.<br>Stonebearer payload: <strong>'+esc(tr.stonebearer_payload_tons||"—")+' tons</strong>. The four sourced Brickworks-assigned units provide <strong>'+esc(tr.brickworks_short_haul_capacity_tons_per_day_min||"—")+'–'+esc(tr.brickworks_short_haul_capacity_tons_per_day_max||"—")+' tons/day</strong> on their sourced short-haul cycle. Empire-wide fleet count remains unresolved.</div></details>'+
     '<details><summary>NCF lending <span class="status warn">PARTIAL BOOK</span></summary><div class="detail-body">Current active loan principal: <strong>'+money(ln.active_loan_principal_gp||0)+' gp</strong>. Current aggregate NCF revenue: <strong>'+money(ln.monthly_ncf_revenue_gp||0)+' gp/month</strong>. Existing rate anchors include <strong>8%</strong> secured facility lending and <strong>12%</strong> voyage finance. The engine deliberately does not infer an average portfolio APR or reserve ratio from these figures.</div></details>';
+
+  var ec=data.empire_close||{};
+  el("close-accepted").textContent=num(ec.accepted_values||0);
+  el("close-unresolved").textContent=num(ec.unresolved_items||0);
+  el("close-user-actions").textContent=num((ec.user_actions||[]).length);
+  el("close-phases").innerHTML=(ec.phase_progress||[]).map(function(p){
+    var cls=p.status==="IN_PROGRESS"?"warn":(p.status==="COMPLETE"?"good":"");
+    return '<details '+(p.status==="IN_PROGRESS"?"open":"")+'><summary><span>Phase '+esc(p.id)+' — '+esc(p.name)+'</span><span class="status '+cls+'">'+esc(p.status)+'</span></summary><div class="detail-body"><strong>Exit:</strong> '+esc(p.exit)+'</div></details>'
+  }).join("");
+  var ua=ec.user_actions||[],ra=ec.routine_actions||[];
+  var userHtml=ua.length?'<h3>Requires Chad</h3>'+ua.map(function(a){return '<div class="notice" style="margin:8px 0"><strong>'+esc(a.label)+'</strong><br><span class="small">'+esc(a.decision||a.method)+'</span><br><span class="small">Unlocks: '+esc((a.unlocks||[]).join(", "))+'</span></div>'}).join(""):'<p class="goodtext">No user decisions required.</p>';
+  var routineHtml='<h3 style="margin-top:14px">Routine execution — no user input</h3>'+ra.map(function(a){return '<details><summary><span>'+esc(a.label)+'</span><span class="status good">'+esc(a.method)+'</span></summary><div class="detail-body">Unlocks: '+esc((a.unlocks||[]).join(", "))+'</div></details>'}).join("");
+  el("close-actions").innerHTML=userHtml+routineHtml;
+  var laneHtml2="";
+  Object.keys(ec.lanes||{}).forEach(function(k){
+    var l=ec.lanes[k]||{},facts=(l.facts||[]).length+(l.calculated||[]).length,un=(l.unresolved||[]).length,co=(l.conflicts||[]).length;
+    laneHtml2+='<details><summary><span>'+esc(k.replace(/_/g," "))+'</span><span class="status '+(un||co?"warn":"good")+'">'+facts+' accepted · '+un+' unresolved'+(co?' · '+co+' conflict':'')+'</span></summary><div class="detail-body">'+
+      ((l.facts||[]).map(function(r){return '<div><strong>'+esc(r.key)+'</strong>: '+esc(r.value)+' '+esc(r.unit||'')+' <span class="small">['+esc(r.authority)+']</span></div>'}).join("")||'')+
+      ((l.calculated||[]).map(function(r){return '<div><strong>'+esc(r.key)+'</strong>: '+esc(r.value)+' '+esc(r.unit||'')+' <span class="small">['+esc(r.authority)+']</span></div>'}).join("")||'')+
+      ((l.unresolved||[]).map(function(r){return '<div class="notice" style="margin-top:8px"><strong>'+esc(r.key)+'</strong><br>'+esc(r.reason)+'<br><span class="small">Resolution: '+esc(r.method)+'</span></div>'}).join("")||'')+
+      '</div></details>';
+  });
+  el("close-lanes").innerHTML=laneHtml2;
 
   var lanes=data.system_lanes||{}, laneHtml="";
   Object.keys(lanes).forEach(function(key){

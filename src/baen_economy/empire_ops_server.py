@@ -15,6 +15,7 @@ import webbrowser
 
 from .empire_cli import DEFAULT_CENSUS, census_status, product_status
 from .corridor_finance import corridor_finance_snapshot
+from .empire_close import close_status
 from .empire_operations import (
     EmpireBusinessError,
     render_empire_business_report,
@@ -49,6 +50,7 @@ def build_bootstrap(*, census_path: Path = DEFAULT_CENSUS) -> dict[str, Any]:
         "known_state": source_known_state(),
         "products": product_status(),
         "corridor_finance": corridor_finance_snapshot(),
+        "empire_close": close_status(),
         "system_lanes": {
             "population_labour": {"status": "PARTIAL_SOURCE_MAPPED", "basis": "Neverwinter/Waterdeep census and admitted commercial labour; Forgedeep and settlement-wide labour pools unresolved"},
             "production_supply": {"status": "PARTIAL_SOURCE_MAPPED", "basis": "source-backed industrial lines exist; input recipes and opening inventories remain incomplete"},
