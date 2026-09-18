@@ -8,6 +8,15 @@ from pathlib import Path
 from baen_economy.empire_close import EmpireCloseError, close_status, load_close_recovery
 
 class EmpireCloseTests(unittest.TestCase):
+    def test_audit_notes_cannot_introduce_extra_authority_classes(self):
+        with tempfile.TemporaryDirectory() as td:
+            payload = load_close_recovery()
+            payload["recovery_notes"][0]["authority"] = "SYSTEM"
+            path = Path(td) / "recovery.json"
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            with self.assertRaises(EmpireCloseError):
+                load_close_recovery(path)
+
     def test_close_is_zero_time_and_exposes_real_action_queue(self):
         result=close_status()
         self.assertFalse(result["canonical"])

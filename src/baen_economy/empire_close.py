@@ -29,6 +29,17 @@ def load_close_recovery(path: Path = DEFAULT_CLOSE_RECOVERY) -> dict[str, Any]:
 
 def _validate_authority(payload: Mapping[str, Any]) -> None:
     # Calculation and dice are provenance methods, never extra authorities.
+    allowed = _ACCEPTED | {"MODEL-PROPOSED", "UNRESOLVED"}
+    def check_labels(value: Any) -> None:
+        if isinstance(value, dict):
+            if "authority" in value and value["authority"] not in allowed:
+                raise EmpireCloseError(f"unknown authority class {value['authority']!r}")
+            for child in value.values():
+                check_labels(child)
+        elif isinstance(value, list):
+            for child in value:
+                check_labels(child)
+    check_labels(payload)
     if set(payload.get("rules", {}).get("actual_authorities", [])) != _ACCEPTED:
         raise EmpireCloseError("actual authorities must use the approved three executable classes")
     lanes=payload.get("lanes")

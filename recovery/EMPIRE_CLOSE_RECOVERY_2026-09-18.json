@@ -253,7 +253,7 @@
         {
           "key": "empire.heavy_machinery.current_build_rate",
           "method": "DERIVE_FROM_RATIFIED_FLEET_AND_PRODUCTION_WINDOW",
-          "reason": "An existing Stonebearer production line is source-established, but no monthly Ironmaw/Stonebearer/Groundshaper output rate was authored. After current fleet requirement and earliest production window are bounded, derive the minimum/credible ramp rather than inventing a rate."
+          "reason": "An existing Stonebearer production line is source-established, but no monthly Ironmaw/Stonebearer/Groundshaper output rate has been recovered. After current fleet requirement and earliest production window are bounded, derive the minimum/credible ramp rather than inventing a rate."
         },
         {
           "key": "heavy_machinery.ironmaw_groundshaper_performance",
@@ -263,7 +263,7 @@
         {
           "key": "heavy_machinery.first_acceptance_date",
           "method": "ORIGINAL_MACHINE_DOCUMENT_OR_RATIFIED_RETROSPECTIVE_HISTORY",
-          "reason": "Neither the partnership opening nor Brickworks opening dates dates its machinery. Longsaddle mixes early-1495 and Nightal-1495 state; later excavation cannot set a Day-7 fleet."
+          "reason": "Neither the partnership opening nor Brickworks opening date dates its machinery. Longsaddle mixes early-1495 and Nightal-1495 state; later excavation cannot set a Day-7 fleet."
         },
         {
           "key": "heavy_machinery.factory_bom_workforce_and_cost",
@@ -1305,23 +1305,31 @@
     },
     {
       "id": "2026-09-18-batch-3",
-      "authority": "SOURCE-DERIVED + UPSTREAM-ADOPTED",
-      "note": "Recovered NRTC's four-wagon affiliated commercial fleet; resolved the NCF 22,000 vs 23,250 revenue discrepancy by current-parent source precedence; added historical/FAO transport comparators without overwriting Baen's explicit 20–40 ton specialized heavy-wagon source fact."
+      "authority": "SOURCE-DERIVED",
+      "note": "Recovered NRTC's four-wagon affiliated commercial fleet; resolved the NCF 22,000 vs 23,250 revenue discrepancy by current-parent source precedence; added historical/FAO transport comparators without overwriting Baen's explicit 20–40 ton specialized heavy-wagon source fact.",
+      "input_authorities": [
+        "SOURCE-DERIVED",
+        "UPSTREAM-ADOPTED"
+      ],
+      "provenance_kind": "RECOVERY_AUDIT_NOTE"
     },
     {
       "id": "2026-09-18-batch-4",
-      "authority": "SYSTEM",
-      "note": "Phase 1 source-recovery classification is complete: all remaining whole-economy gaps are now explicit unresolved items with named resolution methods. Phase 2 external/engineering research is active."
+      "authority": "SOURCE-DERIVED",
+      "note": "Phase 1 source-recovery classification is complete: all remaining whole-economy gaps are now explicit unresolved items with named resolution methods. Phase 2 external/engineering research is active.",
+      "provenance_kind": "RECOVERY_AUDIT_NOTE"
     },
     {
       "id": "2026-09-18-batch-5",
-      "authority": "SYSTEM + SOURCE-DERIVED",
-      "note": "Empire Close now binds to the repository's existing strict agriculture canon/runtime instead of creating a duplicate food model. Current tomatoes/produce, seven-pool Blacklake, converted-quarry Tilapia, and reservoir trout/salmon are preserved; only genuinely missing physical state remains unresolved."
+      "authority": "SOURCE-DERIVED",
+      "note": "Empire Close now binds to the repository's existing strict agriculture canon/runtime instead of creating a duplicate food model. Current tomatoes/produce, seven-pool Blacklake, converted-quarry Tilapia, and reservoir trout/salmon are preserved; only genuinely missing physical state remains unresolved.",
+      "provenance_kind": "RECOVERY_AUDIT_NOTE"
     },
     {
       "id": "2026-09-18-sourcebook-routing",
-      "authority": "USER-RULED + SOURCE-ROUTED",
-      "note": "User reminded the Economy Engine that The New Path Engine contains harvested sourcebook data. Phase-2 research now checks that book-RAW layer before Library corpus and external research."
+      "authority": "USER-RULED",
+      "note": "User reminded the Economy Engine that The New Path Engine contains harvested sourcebook data. Phase-2 research now checks that book-RAW layer before Library corpus and external research.",
+      "provenance_kind": "RECOVERY_AUDIT_NOTE"
     },
     {
       "id": "2026-09-18-sourcebook-economic-constants",
@@ -1340,8 +1348,13 @@
     },
     {
       "id": "2026-09-18-heavy-machinery-source-recovery",
-      "authority": "SOURCE-DERIVED + USER-RULED",
-      "note": "Recovered an existing Stonebearer production line under Gauntlgrym Tools Partnership, Forgedeep heavy-machinery workshops, and Workshop 7's Gauntlgrym/Forgedeep span. Current total fleet and heavy-machine monthly output were never authored and will be workload-backsolved rather than guessed. User confirmed no Baen-owned barge fleet has been explicitly established."
+      "authority": "SOURCE-DERIVED",
+      "note": "Recovered an existing Stonebearer production line under Gauntlgrym Tools Partnership, Forgedeep heavy-machinery workshops, and Workshop 7's Gauntlgrym/Forgedeep span. Current total fleet and heavy-machine monthly output have not been recovered; no claim of corpus-wide absence is made. User confirmed no Baen-owned barge fleet has been explicitly established.",
+      "input_authorities": [
+        "SOURCE-DERIVED",
+        "USER-RULED"
+      ],
+      "provenance_kind": "RECOVERY_AUDIT_NOTE"
     },
     {
       "id": "2026-09-18-heavy-machinery-active-1495",
@@ -1357,7 +1370,7 @@
   "sourcebook_routing": {
     "procedure": "recovery/SOURCEBOOK_ROUTING_2026-09-18.md",
     "new_path_engine_repo": "CFhacky/the-new-path-engine",
-    "authority": "BOOK_RAW_BELOW_CAMPAIGN_CANON",
+    "authority": "UPSTREAM-ADOPTED",
     "order": [
       "USER-RULED",
       "LIVE_NOTION",
@@ -1369,7 +1382,8 @@
     ],
     "note": "Absence from a harvested New Path Engine family is not evidence of absence from the sourcebook corpus.",
     "book_raw_authority": "UPSTREAM-ADOPTED",
-    "book_raw_provenance_kind": "SOURCEBOOK_RAW"
+    "book_raw_provenance_kind": "SOURCEBOOK_RAW",
+    "precedence": "BELOW_CAMPAIGN_CANON"
   },
   "sourcebook_economic_constants": "recovery/SOURCEBOOK_ECONOMIC_CONSTANTS_2026-09-18.json"
 }
