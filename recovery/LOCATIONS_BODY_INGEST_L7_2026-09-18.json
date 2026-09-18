@@ -1,0 +1,596 @@
+{
+  "schema": "tnp.economy.locations-body-ingest/1",
+  "batch": "L7",
+  "records": [
+    {
+      "source_id": "348e8214-84b0-81e0-a1d3-d90902c395f4",
+      "title": "🚢 Yartar",
+      "revision": "2026-08-20T19:14:17.099Z",
+      "body_hash": "b545a484be92ec7a54c9ff3596683126251ad1b0607920f34b5445628e6aa263",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b08111a885e0308c1ea260"
+        ],
+        "Garrison": "Yartar city guard + Lord Ghallen's personal forces. Yartar Merchants' Guild credentialing infrastructure. Geometric Thaumaturgists previously maintained regional ley lines; 13 departed with Arik post-shadow-feeder crisis (lead: Valdris), remainder capacity not canonically established. Shaw/Hargrove is home-based here. Tesserly active on field investigation of Shaw principal.",
+        "Name": "Yartar",
+        "Notes": "Small Dessarin River city at the Evermoor Way crossing. Population \\~7,500. Lord Ghallen ruler. Paid Arik 50,000 gp plus supplies for shadow feeder extermination (Ulthaxor summoning event, late 1493 DR) — documented in The Exodus & Shadow Solutions (2fee8214-84b0-8171). Yartar was uncooperative ('bastards') during Arik's 10,000-refugee Silverymoon exodus convoy passage. Result: standing B. Taranis isolation order with 1560 DR review — Arik's organization does not operate through Yartar. 13 Geometric Thaumaturgists (lead: Valdris) departed with Arik's convoy, depleting regional ley-line maintenance capacity. Home base of Quentin Hargrove (Shaw cover) — Yartar trade factor credentials using FORGED Yartar Merchants' Guild seal (mould-fault rubbing from Stoneshaft Hold Day 728 identifies single Margaster-sourced Waterdhavian forgery shop). Tesserly active field investigation. CROSS-CAMPAIGN ASYMMETRY: Yartar is Arik-blind-spot / Shi'van-available operating ground — Observer Network not bound by B. Taranis isolation order. Canon intentionally thin; consolidated entry flags generation-ready gaps.",
+        "Population": 7500,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "The Exodus & Shadow Solutions (2fee8214-84b0-8171); Quentin Hargrove NPC (341e8214-84b0-814d); Stoneshaft Hold / PROP waystation contract (345e8214-84b0-819d); Malcolm Croft NPC (33de8214-84b0-812c); Amphail Acquisition Commitment (348e8214-84b0-819f)",
+        "Status": "Contested",
+        "Strategic Value": "High",
+        "Type": "City",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081e0a1d3d90902c395f4"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81e2-a79d-c3eb294ee1f4",
+      "title": "🧂 The Saltcellar (Firth Secondary Meeting Site)",
+      "revision": "2026-08-20T03:24:51.704Z",
+      "body_hash": "e01482e595284766c29def6c8ba1605e6e03f295e22f113e06fe7d30bb337f68",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Callum Firth (primary authority). Brannock (field operative, canonical user Session 31). Tesserly (likely access, not canonically confirmed). Shi'van (two visits confirmed, Session 31 second). Salt merchant on ground floor — identity and operational awareness undocumented, Firth tradecraft assumes unaware. Covered by Observer Network 550gp/month budget.",
+        "Name": "The Saltcellar (Firth Secondary Meeting Site)",
+        "Notes": "Retired chandlery in Dock Ward. Upper room above a salt merchant's storage. NOT a safehouse — Firth's framing. Secondary operational meeting site for Observer Network — fills gap between tavern-cover (Blushing Mermaid) and holding-level compartmentalization (Nethpranter cellar). Three-route egress from rear alley to three different streets is primary operational virtue. Stairs creak in same places consistently. Smell of brine and old timber carries on clothing. Session 31 Day 661 — Brannock delivered Luskan-channel identification report here. Shi'van two confirmed visits.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Population": 0,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "[session-31-the-homecoming-prose.md](http://session-31-the-homecoming-prose.md)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-19",
+        "url": "https://app.notion.com/p/348e821484b081e2a79dc3eb294ee1f4"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81e6-b8e3-d5334331bc22",
+      "title": "🔮 Old Xoblob Shop",
+      "revision": "2026-08-20T19:52:02.870Z",
+      "body_hash": "4d9c9a6a9edbeefc36ad5fd9e0b7a06b488714b8c7d48513c1dce3926f85191e",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "Dandalus Ruell (deep gnome, current proprietor, reclusive, inherited the shop from unspecified predecessor, courteous in a clipped way, extraordinarily well-informed about Waterdhavian oddities, lives alone behind the shop, no apprentices, no staff). The Beholder above the door (nominally deceased stuffed taxidermy, dormant-but-not-dead status unresolved in Waterdhavian magical scholarship, Dandalus denies). Dandalus's referral network of Dock Ward expert consultants (informal, not institutional — people who live or used to live in the Dock Ward, who have reasons to prefer not being found by institutional search apparatus). No guards. No visible magical defenses beyond the beholder's continuing presence and whatever accumulated protections decades of proprietor choices have layered onto the building. The Xanathar Guild has attempted pressure on the shop in the past; the shop continues to exist.",
+        "Name": "Old Xoblob Shop",
+        "Notes": "Dock Ward curiosity shop famous across Waterdeep. Named for stuffed beholder hanging above the door as shop-sign (eleven eyestalks with dull glass replacements, stuffed central eye \\~2 ft diameter, has hung there for uncertain decades, moth-damaged and weathered but maintained). Narrow 3-story timber-frame-over-stone corner building, visibly leaning toward north neighbor. Ground floor \\~30 ft square, packed with curio inventory: carved ivory, broken glass vessels, tarnished jewelry, skulls, stuffed songbirds, brass astronomical instruments, walking sticks, ceremonial daggers, snow globes, carved wooden boxes. Reserved behind-counter inventory for trusted repeat customers. Back room Dandalus's workshop/living quarters. Reputed cellar connecting to deeper Dock Ward subterranea (unconfirmed). Current proprietor: Dandalus Ruell, deep gnome, reclusive, inherited from unspecified predecessor, extraordinarily well-informed, soft-voiced, direct questions, dislikes haggling. Stock rotates unpredictably: obvious junk overpriced, fascinating trinkets underpriced, occasional genuine artifact priced accurately with no negotiation. Xanathar Guild has pressured shop in past; shop continues to exist. Campaign relevance: Dock Ward commercial adjacency to Peri's Operations Hub (landmark, not current intelligence node); Institut curiosity-sourcing potential through Marcel as interface; artifact-adjacent possibilities if Baen'und heirloom or Karak Durath relic surfaces; evidence of Dock Ward institutional capacity outside Xanathar Guild control; ambient rumor layer distinct from Market or Yawning Portal.",
+        "Population": 1,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "WotC canon: Waterdeep: Dragon Heist (5E, Dandalus Ruell proprietor), Volo's Guide to Waterdeep (2E), City of Splendors: Waterdeep (3.5E).",
+        "Status": "Allied",
+        "Strategic Value": "Low",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081e6b8e3d5334331bc22"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81e8-8a9d-ca14db3e72bd",
+      "title": "⛏ Mithril Hall",
+      "revision": "2026-08-30T18:40:59.294Z",
+      "body_hash": "1aa5b5b4b81ef1701701b5966cc7e88f9a1fb1ad0cd195299b1247b7c71e6801",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0811c8e67d95b85323a82"
+        ],
+        "Garrison": "Clan Battlehammer. King Bruenor Battlehammer (currently holding court at Gauntlgrym). Steward Banak Brawnanvil (formal authority at the Hall in Bruenor's absence). General Dagna (military commander of the Hall's defences). Forge-Warden Brunhild Deepdelve (Master of Precision Works, craft authority). Tordek Shieldbreaker (deep-halls patrol), Runyasar Stonescout (Long Road surface scouts). Smiths: Kettil Ironbraid, Dolgrin Coalmantle, Gundra Ashforge. Social: Audhild Meadkeeper, Balin Copperkettle, Kathra Lorekeeper, Helga Stoneshear.",
+        "Name": "Mithril Hall",
+        "Notes": "Ancient dwarven clan hold, seat of Clan Battlehammer, Silver Marches region. King Bruenor Battlehammer monarch, currently holding court at Gauntlgrym; Steward Banak Brawnanvil holds formal authority at the Hall in Bruenor's absence. 'The greatest forge on the Sword Coast.' Travel from Waterdeep: 10-12 days via Long Road through Dessarin Valley. Einar envoy visit Days 628-658 (30 days) — Oath-Horn of the Starforged gift, forge-showing of grain-integrated Futhark, Thurisaz-Tiwaz inscription on war hammer, received pre-aligned mithril blank + mithril-alloy tool set, standing 30-60 day forge residency invitation from Brunhild Deepdelve. Shimmer of Drowned Stars generated more questions about its maker than about Einar's work. Robb Stark Mithril Hall arc queued (Grimjaw return → Vardrung + Shield of the Dwarf-Friend; Varð runeword awakens when Robb defends rather than attacks). Baen-Gauntlgrym tool procurement active via Brunhild, 8-12 tenday window from Day 717 (delivery expected Days 734-758). Dolgrin Coalmantle logistics partnership — NRTC institutional (Marcus Ironhand d6=6 EXCEPTIONAL letter Session 34 close). Native enchantment system: Runeword Socketing (modular, institutional, replicable) — contrasts with Einar's Norse Futhark grain-integration (spiritual, unique, smith-dependent). Place-level canon intentionally thin; canonical gaps flagged in entry for in-play generation.",
+        "Region": [
+          "Silver Marches"
+        ],
+        "Source File": "Einar's Mithril Hall Visit GM Reference (340e8214-84b0-81da); The Long Road North - Robb's Mithril Hall Arc (33ee8214-84b0-81ef); Brunhild Deepdelve NPC (341e8214-84b0-819a); General Dagna NPC (341e8214-84b0-81cf); Dolgrin Coalmantle NPC (341e8214-84b0-81dd); Einar Starforged character sheet (334e8214-84b0-81f5); S35.9 Workshop prose (345e8214-84b0-8169)",
+        "Status": "Allied",
+        "Strategic Value": "High",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081e88a9dca14db3e72bd"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81f5-9495-c4fa7ee5c086",
+      "title": "🍺 Rassalantar Waystation (Flagon and Dragon) — Dessarin Corridor",
+      "revision": "2026-08-20T03:24:08.104Z",
+      "body_hash": "68ac05237fd188c047a5d0a8cd6ee8a2ab06125822351bf73917adfe0b5ee29f",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Flagon and Dragon inn staff. NRTC waystation contract-holder presence on corridor basis. No dedicated garrison. Drovers overnighting stock in the common pasture. Stabling attached to the inn.",
+        "Name": "Rassalantar Waystation (Flagon and Dragon) — Dessarin Corridor",
+        "Notes": "Drovers' waypoint on High Road north of Waterdeep. Thirty buildings strung along a quarter-mile at the junction where the road south forks toward Amphail and the road north continues toward Waterdeep. The Flagon and Dragon is the single inn (attached common pasture for drovers). First NRTC Dessarin-corridor waystation secured under Marcus Ironhand (\\~Session 31) within 2,000 gp ESAMT authorization for remaining waystations. Session 35 scene played 23rd–24th Marpenoth 1493 DR (Days 725–726): point-game drill in common pasture, third partial click by design on run twelve, tobacco porch-share with Seren (third person in two years to receive from the Calishite cigarillo case), Teacher's prophecy fragment released by Seren ('The dark will offer to take the child instead of the mother. You must refuse.'). Claws banked to 4/8. See S35.6 prose entry (345e8214-84b0-8104) for full scene.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "S35.6 Rassalantar prose (345e8214-84b0-8104); Day Sync Update S35 close (345e8214-84b0-8121); Quentin Hargrove NPC (341e8214-84b0-814d); NRTC Business Record",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Settlement",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081f59495c4fa7ee5c086"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81f7-9f8f-ea8c31905f65",
+      "title": "🏛 Northern Crown Financial — Castle District Branch (Neverwinter)",
+      "revision": "2026-08-20T20:00:17.413Z",
+      "body_hash": "f7e59b0ab1bc4b2291aeea3124e4a37af8f7caafb728740faf70d6d6a21a52ec",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b081f28447e5247b0265b1"
+        ],
+        "Garrison": "NCF security detail, standard Neverwinter branch protocols. Side-entrance access controlled separately from street-level counter.",
+        "Name": "Northern Crown Financial — Castle District Branch (Neverwinter)",
+        "Notes": "Castle District branch of Northern Crown Financial (Arik's banking arm). Distinct from NCF HQ at the Dock/Enclave district border — HQ handles institutional volume, Castle District handles noble and elite clientele who prefer presentation over throughput. Private upstairs dining room was the venue of Shi'van and Arik's first face-to-face meeting, 30th Eleint 1493 DR, seventh bell. Shi'van's Neverwinter banking relationship opened here: 5,000 gp account (2,000 gp liquid + 3,000 gp 30-day note). Aldous Kerne (tiefling, counter manager) and Portia Cavell (real estate) are named contact staff. Kerne flagged NRTC's 18-month account history during opening; Shi'van ordered separate relationship managers.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[session-34-the-brothers-city-log.md](http://session-34-the-brothers-city-log.md)",
+        "Status": "Allied",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081f79f8fea8c31905f65"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81fc-ab24-cad55e8da100",
+      "title": "🧺 Petra Voss Laundry (Candle Street Cut-Out)",
+      "revision": "2026-04-20T00:30:30.169Z",
+      "body_hash": "835af0ff81ea251ce3a5b82025bc33c7280f87c82a8706bc315fcba2117604b8",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Petra Voss (proprietor, 43, recruited asset). Small commercial laundry crew (numbers not detailed). No standing hostile presence at the premises. Watchers (Ship Kurth mobile team) hand off at shift change outside the laundry, not inside. Voss commercial accounts: Gilded Sparrow, Nag's Head, Copper Cup, Sailor's Grief, Helmstar House, Silver Sail.",
+        "Name": "Petra Voss Laundry (Candle Street Cut-Out)",
+        "Notes": "Legitimate laundry operated by Petra Voss (43, Waterdeep native, inherited from mother). Cut-out node for Ship Kurth / Luskan communication channel. Three-layer architecture: watchers → Voss laundry (cut-out) → weekly courier via Northgate stables (3 stops: Thornhold, Red Larch, Triboar) → Fish Street Luskan receiving office. Channel identified Session 31 Day 661 via Brannock's 8-day Sparrow surveillance that widened at day 6 to tail the watchers. Firth assessment: Voss recruited, low-level, doesn't know full picture. DO NOT TOUCH VOSS. Commercial accounts service 4 taverns + 2 inns including Nag's Head (4 streets from Institut) and Helmstar House (Hollingsford circle). Brother: Renald Voss — Luskan Maritime Registry, Ship Kurth 1491 commercial bond co-signatory, registered agent for Northwatch Consulting (Ravencrest-Harrison claim financial guarantee).",
+        "Population": 0,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "[session-31-the-homecoming-prose.md](http://session-31-the-homecoming-prose.md) / [session-32-the-eye-opens-prose.md](http://session-32-the-eye-opens-prose.md) / [session-31-the-homecoming-log.md](http://session-31-the-homecoming-log.md)",
+        "Status": "Hostile",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-19",
+        "url": "https://app.notion.com/p/348e821484b081fcab24cad55e8da100"
+      }
+    },
+    {
+      "source_id": "34be8214-84b0-810d-88da-c87a2a6c5e5e",
+      "title": "⚖️ Haulver & Cray Notary Side-Room",
+      "revision": "2026-08-20T19:52:45.519Z",
+      "body_hash": "230f524738e21ba93efea89c6123c5bfa9403347ba35b351717df6423e46a070",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Haulver & Cray clerical staff (\\~6, two floors up). No security on side-door entrance.",
+        "Name": "Haulver & Cray Notary Side-Room",
+        "Notes": "Phase I encounter site for the Hundred Eyes arc — the room where Marieke Veyn ran her containment meeting in S40 Day 733. 22×16 ft, 9 ft ceiling, dim, single exit. Hired through intermediary; the firm's partners do not ask what the side-room is for. NOT a combat room. Pivot point is when Shi'van refuses the false binary; the satchel opens. Marieke seated at far end with satchel; Vale near door as furniture; Oakheart at center as good-faith witness. Victory condition met S40: memorandum recovered, Vale identified as continuity hand, one Sea Ward circle cooled for one day. Future use: follow-up conversations with Oakheart possible. Marieke will not return to this specific room (it's burned for her now).",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[hundred-eyes-locations.md](http://hundred-eyes-locations.md)",
+        "Status": "Allied",
+        "Strategic Value": "Low",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-22",
+        "url": "https://app.notion.com/p/34be821484b0810d88dac87a2a6c5e5e"
+      }
+    },
+    {
+      "source_id": "34be8214-84b0-810d-946d-d27352f7df76",
+      "title": "🏠 Ironside Boarding House (Anchor Lane)",
+      "revision": "2026-04-23T03:20:38.389Z",
+      "body_hash": "7db97196a87bd0fa2d5fef9cd2cc34537bea46edffe7773ad0b73855c42d0ba1",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Mistress Granet (proprietress) + 4-6 civilian lodgers + boarding-house boy. No security.",
+        "Name": "Ironside Boarding House (Anchor Lane)",
+        "Notes": "Phase II third combat node. Dock Ward fringe boarding house, three-story timber. Garlan (panicking lower-tier asset attempting to defect/sell info) in ROOM 7, third floor, east end. Drop bar inside. Iron-shuttered window facing back courtyard. Halver's cleanup crew approaching to silence him. Shi'van must intercept first. WATCH CLOCK: 4 minutes if common room violence; longer if contained to upper floors. Halver enters as lodgers (Stealth approach). Garlan opens door only for code phrase — leaked or not is GM call. Halver retreat condition: cannot reach Garlan without sustained engagement = withdraws. Garlan ALIVE = burns Halver for rest of arc + names cleanup chain structure + identifies intermediary who reports to Marieke. Garlan DEAD = Halver still attributable but testimony gone. Stair telegraphs weight; Garlan listens.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[hundred-eyes-locations.md](http://hundred-eyes-locations.md)",
+        "Status": "Contested",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-22",
+        "url": "https://app.notion.com/p/34be821484b0810d946dd27352f7df76"
+      }
+    },
+    {
+      "source_id": "34be8214-84b0-811f-a74c-efdfc7e6d2aa",
+      "title": "🌂 Greymantle Alley",
+      "revision": "2026-04-23T03:20:38.389Z",
+      "body_hash": "e5505d566e97304853cce0c0d10523603471bb1081024fde3f25408824b944b3",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "2-3 Xanathar lane watchers at handoff times. Empty otherwise.",
+        "Name": "Greymantle Alley",
+        "Notes": "Phase I first combat node. Service alley in Trades Ward, 3 blocks east of Street of Silks. 62×8 ft. Single lamp bracket at 30-ft mark provides only light at dusk. Wet cobbles — DX 11 to move faster than walk. RACE AGAINST THE LAMP — capture Harl before he commits to the lamp circle, OR manage the lamp itself. Harl WILL burn paper before he runs (reflex). Separated shoulder = both hands compromised. Prone on wet cobbles = stationary. Watchers signal and run — morale 25% casualties or named officer (Harl) down. Combat noise reaches both adjacent streets in 2 exchanges. Recovers: relay packet (coded) + Harl's leather wallet (Handout 2).",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[hundred-eyes-locations.md](http://hundred-eyes-locations.md), [hundred-eyes-handouts.md](http://hundred-eyes-handouts.md)",
+        "Status": "Contested",
+        "Strategic Value": "Low",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-22",
+        "url": "https://app.notion.com/p/34be821484b0811fa74cefdfc7e6d2aa"
+      }
+    },
+    {
+      "source_id": "34be8214-84b0-814d-8b94-c755aff46399",
+      "title": "📚 Ashwell & Merrith Commercial Archives",
+      "revision": "2026-08-20T14:57:47.937Z",
+      "body_hash": "f99eaa88fb3f2348a2042b8ec4c489b1ca00c017eb00662d1711e5ebc25a4cb3",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Mr. Ashwell (proprietor, off-site evening) + 1 clerk (reception). No security on the records room beyond the combination lock door.",
+        "Name": "Ashwell & Merrith Commercial Archives",
+        "Notes": "LOCKED Phase III combat node — Sanjar document-objective/withdrawal encounter. Street of Glances, Castle Ward. 42×28 ft records room with 5 aisles (A1-A5), 4 ft wide, 7-ft shelving. Combination-lock door operated only from reception side — ONE-WAY VALVE once entered. Sanjar in dark A5 east end stationary 11 min, 42 ft from archive door. Target: TULL & HADWICK 1493 box, A3 aisle 2nd shelf unit from north, 4th shelf. Sanjar's tactical: stillness until target approached; aisles favor him (4 ft = single-file combat). SEREN-SPECIFIC: Per-14 check on first sight allows identification of blindness/compensation, enabling rhythm disruption (-2 to his attack for 2 rounds). Watch clock 6 min if violence becomes evident (clerk sends for help). Sanjar withdrawal: requests clerk open door, OR waits for someone to open it, exits in confusion. DOES NOT FORCE DOOR. LIVE RULING: designed to favor standoff/withdrawal; no plot immunity or automatic escape; binding action and dice control the result.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[hundred-eyes-locations.md](http://hundred-eyes-locations.md), [hundred-eyes-maps.md](http://hundred-eyes-maps.md)",
+        "Status": "Contested",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-22",
+        "url": "https://app.notion.com/p/34be821484b0814d8b94c755aff46399"
+      }
+    },
+    {
+      "source_id": "34be8214-84b0-8157-b4ca-d00d6b8a9107",
+      "title": "📦 Tull & Hadwick Bonded Freight Yard",
+      "revision": "2026-04-23T03:20:38.389Z",
+      "body_hash": "54ed3616a82b556831d95951dcde54f84e3b59bba5a9c8e4c703d7b258ad0f29",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Bram Tull (owner) + 4 hired yard guards + 1 rooftop runner + 1 horse. Daytime: working drivers cycle through (\\~5).",
+        "Name": "Tull & Hadwick Bonded Freight Yard",
+        "Notes": "Phase II second combat node. Trades Ward, Copper Lane. 80×60 ft yard + 80×20 ft shed (15 ft ceiling) + 15×12 ft office. THE SHELL-CARRIER YARD. Bram Tull (owner-operator) runs dual-accounting structure: legitimate freight + private packet relay through the third wagon (W3) false-bottom panel. CRITICAL CLUE: secondary tally books in W3, Search-13 in 3 min or Per-12 hurried in 1 min. SECONDARY CLUE: sealed letter in office strongbox (Handout 4) names D. Crane on Sword Street as legal side-door forwarding contact. ROOFTOP RUNNER must be neutralized first or whistle alerts yard. Horse panics round 2 if combat in shed. Bram emerges round 3 with freight hook (reach 2 in 4-ft lanes). Lamp oil hazard at south end of shed — fire reaches W3 in 4 rounds. Wicket door is guards' escape route. Combat noise covered by cooperage business; short engagements pass unnoticed.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[hundred-eyes-locations.md](http://hundred-eyes-locations.md), [hundred-eyes-maps.md](http://hundred-eyes-maps.md), [hundred-eyes-handouts.md](http://hundred-eyes-handouts.md)",
+        "Status": "Hostile",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-22",
+        "url": "https://app.notion.com/p/34be821484b08157b4cad00d6b8a9107"
+      }
+    },
+    {
+      "source_id": "34be8214-84b0-815e-92aa-d44c0e72913e",
+      "title": "📖 Cordell's Reading Room (Selduth Street)",
+      "revision": "2026-04-23T03:20:38.389Z",
+      "body_hash": "d0416dc514689499935ff9c217fbfce7372306ff8cca2acbcba3ef7210426bde",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Marta Cordell (haberdasher, ground floor, civilian). Reading circle: 17 nominal members (\\~4-6 typical attendance). Nessa Vale present at packet handoff times. 2 courier runners outside.",
+        "Name": "Cordell's Reading Room (Selduth Street)",
+        "Notes": "Phase II combat node. Above Cordell's Haberdashery on Selduth Street, Castle Ward, 1 block east of Waterdeep Way intersection. Upper floor accessed by EXTERIOR east-side stair (12 steps, iron railing). Marta Cordell does not know what the upstairs reading circle actually does. 32×22 ft main room + 12×8 ft anteroom (Nessa Vale's working space, lockbox here). RACE CONDITION: 6 sec from hearing stair to opening lockbox + 8-10 sec stair runner delay = 14-16 sec before contact reaches anteroom. Nessa burns relay papers (lamp, 6 sec) before abandoning. Stair has structural weakness — second impact in same session could drop it. North window in anteroom opens to 3-story drop (not exit; but packets can be passed out IF arranged contact below — not tonight). City clerk attendee is genuine and useful post-encounter witness. No Watch clock. Recovers: relay confirmation stack + second sealed relay packet + city clerk testimony. Once cleared, Marieke's lower lattice is functionally burned.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[hundred-eyes-locations.md](http://hundred-eyes-locations.md)",
+        "Status": "Hostile",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-22",
+        "url": "https://app.notion.com/p/34be821484b0815e92aad44c0e72913e"
+      }
+    },
+    {
+      "source_id": "34be8214-84b0-81a4-9941-f02a691409b5",
+      "title": "🔨 Verandine Private Chamber",
+      "revision": "2026-04-23T03:20:38.389Z",
+      "body_hash": "09eb9d0a2a17c9f74aa108ca305bebfb5385c396813ee38b05339e6e56e4dd29",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Verandine staff (3-4 civilian) + Marieke + 2 bodyguards (1 visible Elite, 1 concealed crossbow Elite) + 1 retrieval hand in service corridor.",
+        "Name": "Verandine Private Chamber",
+        "Notes": "Phase III climax — Marieke's FINAL private-solution attempt. Sword Street, Sea Ward, 4 doors east of Waterdeep Way. Ground floor of a townhouse, meeting house operating 15 years. Marieke's regular venue. 28×22 ft main chamber, 12 ft ceiling, well-lit (no shadows — intentional). Carpeted (muffles footsteps). NO STREET-FACING WINDOWS. Sound-proofed walls. NO WATCH CLOCK. Marieke at table head (south, nearest garden door). Bodyguard A visible left of table. Bodyguard B concealed BEHIND DECORATIVE SCREEN with loaded crossbow (Per-12 careful entry sees feet beneath; Per-10 if specifically looking). Marieke's signal: LEFT HAND FLAT ON TABLE. Marieke's exit: garden door → over 6-ft wall (Climbing-10 athletic, Acrobatics-12 Seren). Padlocked garden street door cannot be opened from inside. Service corridor retrieval hand enters room round 2 if bodyguards engaged. Victory: Marieke in hand before she clears the garden wall. Once captured/attributable, Phase IV opens — Voyne's response determined by whether contract renewals are complete.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[hundred-eyes-locations.md](http://hundred-eyes-locations.md)",
+        "Status": "Contested",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-22",
+        "url": "https://app.notion.com/p/34be821484b081a49941f02a691409b5"
+      }
+    },
+    {
+      "source_id": "34ce8214-84b0-8116-b30f-fc437701a31b",
+      "title": "Sembia",
+      "revision": "2026-08-20T19:53:42.922Z",
+      "body_hash": "a6e09ed12fe7238cd01ebf98bb8befee8184e6b6b06a1e0ceb443852e6e1507a",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface",
+          "Jörmun"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/32ae821484b081d59df3eac77416c849"
+        ],
+        "Garrison": "No empire garrison. Operation Evening Star runs under cover identity (Vesper Aldaine / Tessavere Aldaine). Sembian mercenary companies serve as the enforcement arm of Council commercial interest — currently blocking Dalelands transit.",
+        "Name": "Sembia",
+        "Notes": "Heartlands mercantile power at southwestern Sea of Fallen Stars. Oligarchic merchant confederation governed by Council of Merchants. Controls three strategic ports (Selgaunt, Saerloon, Yhaunn) — the continent's maritime hub. Critical terminus for the Continental Waterway. Operation Evening Star active: Lirien Nightwalker as Vesper Aldaine, Tessavere Aldaine Veil staff. Daran Sorvath identified Council member. Sembian mercenaries currently blocking Dalelands transit at Council direction. Strategic posture: empire should appear power-with-options, not power-with-a-problem.",
+        "Region": [
+          "Sembia"
+        ],
+        "Source File": "[corridor-geographic-analysis-sembian-terminus.md](http://corridor-geographic-analysis-sembian-terminus.md); [sembian-council-of-merchants.md](http://sembian-council-of-merchants.md); [daran-sorvath-sembian-merchant-prince.md](http://daran-sorvath-sembian-merchant-prince.md); [operation-evening-star-vesper-legend.md](http://operation-evening-star-vesper-legend.md); [tessavere-aldaine-veil-staff.md](http://tessavere-aldaine-veil-staff.md)",
+        "Status": "Contested",
+        "Strategic Value": "Critical",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-24",
+        "url": "https://app.notion.com/p/34ce821484b08116b30ffc437701a31b"
+      }
+    },
+    {
+      "source_id": "34ce8214-84b0-8119-a8f4-e7cbe9ab9375",
+      "title": "Dock Ward Warehouse Node — Waterdeep (47 Herring Lane)",
+      "revision": "2026-08-20T03:20:57.079Z",
+      "body_hash": "e11fc4d0007d8b2d4d97de19a2dcaa00b7d589036020ca32ee496b42c5666302",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Dock Ward Warehouse Node — Waterdeep (47 Herring Lane)",
+        "Notes": "Single-story stone-and-timber secure warehouse in Waterdeep's Dock Ward industrial zone, 47 Herring Lane. Not public-facing; no commercial signage; presents as one of many working Dock Ward warehouses. Receiving bay (18-ft goods-door, 30 ft deep, raised loading platform, dwarven-specified 1,200-lb block-and-tackle rigging). Main floor (90x60 ft, fitted stone on gravel drainage sub-base, 54 10x10 grid cells for general storage, 8-ft central corridor). Contents: Gauntlgrym-forged metal stock (steel plate, tool steel, weapons-blanks for Bloodaxe Legion), Silversheen southbound goods (aluminum, dwarven tooling, specialty metalwork), Sword Coast Circle enchanted-item consignments, NCF reserves in transit. PREMIUM ENCHANTED-STORAGE SECTION at back (30x20, lead-lined floor/walls/ceiling behind finish plaster per Veldrin Snowfall spec — blocks ambient magical cross-interference and scrying). 65 lockable wooden chests + 6 stone-lined bays, rented annually by Sword Coast Circle clients. Access via 1 of 4 keys + rotating monthly countersign. Warehouse Master: Runa Goldbeard (dwarven, Gauntlgrym-trained, recruited via Brunar Battleforge, sleeps on-site in attached apartment). Assistant: Jeren (human, paper-track discipline). Security: Runa's overnight presence, dwarven-tumbler locks on every external door, pair of Gauntlgrym-trained warhounds in receiving bay overnight, Dorn Ironlock's NCF-adjacent rotating daily watch on Herring Lane (3 operatives staggered, civilian-dressed), Veldrin's magical wards tuned to detect magical lock-bypass attempts (not block magic entirely). One attempted break-in two years ago: warhounds resolved before escalation; thief delivered to Waterdeep watch with Runa's written report not mentioning lead lining / wards / client system.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "Forward Canon Locks Audit 24 April 2026 — Locations-DB gap pass. Business Registry `321e8214-84b0-8132-bcc9-ef2290e366bc` + Waterdeep industrial-quarter canon + Gauntlgrym-Silversheen integration.",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-24",
+        "url": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 175,
+      "UNKNOWN": 1412,
+      "CONFLICT": 9,
+      "SUPERSEDED": 13,
+      "MISSING_DATA": 4,
+      "FUTURE": 4,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 205,
+      "UNMEASURED": 1415
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 175,
+      "UNREVIEWED": 1415,
+      "CONFLICT": 7,
+      "SUPERSEDED": 12,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 4,
+      "ECONOMIC_CONTEXT": 3
+    }
+  }
+}
