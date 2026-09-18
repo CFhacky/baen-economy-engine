@@ -101,6 +101,15 @@ class EmpireCliTests(unittest.TestCase):
         self.assertFalse(payload["canonical"])
         self.assertIn("Baen Empire Economy", render_report(payload))
 
+    def test_run_and_sandbox_are_distinct_commands(self):
+        from baen_economy.empire_cli import build_parser
+
+        run_args = build_parser().parse_args(["run", "--seed", "actual"])
+        sandbox_args = build_parser().parse_args(["sandbox", "--seed", "synthetic"])
+        self.assertEqual(run_args.command, "run")
+        self.assertEqual(sandbox_args.command, "sandbox")
+        self.assertEqual(run_args.census, sandbox_args.census)
+
 
 if __name__ == "__main__":
     unittest.main()
