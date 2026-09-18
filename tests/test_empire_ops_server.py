@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import http.client
 import json
+import tempfile
 import unittest
+from pathlib import Path
 
 from baen_economy.empire_ops_server import create_server, start_server
 
@@ -27,7 +29,7 @@ class EmpireOpsServerTests(unittest.TestCase):
             create_server(host="0.0.0.0")
 
     def test_app_and_bootstrap_expose_real_source_state(self):
-        with start_server(port=0) as running:
+        with tempfile.TemporaryDirectory() as directory, start_server(port=0, store_path=Path(directory) / "empire.sqlite") as running:
             status, headers, raw = self.request(running, "GET", "/")
             self.assertEqual(status, 200)
             self.assertIn("text/html", headers["content-type"])
@@ -59,7 +61,7 @@ class EmpireOpsServerTests(unittest.TestCase):
 
     def test_preview_runs_controlling_empire_business_path(self):
         raw_seed = "app-integration-seed-must-not-persist"
-        with start_server(port=0) as running:
+        with tempfile.TemporaryDirectory() as directory, start_server(port=0, store_path=Path(directory) / "empire.sqlite") as running:
             status, _, raw = self.request(
                 running,
                 "POST",
@@ -84,8 +86,52 @@ class EmpireOpsServerTests(unittest.TestCase):
             self.assertFalse(payload["safety"]["raw_seed_persisted"])
             self.assertNotIn(raw_seed, raw.decode("utf-8", errors="replace"))
 
+    def test_save_reopen_compare_and_export_through_http(self):
+        raw_seed = "http-save-seed-not-persisted"
+        with tempfile.TemporaryDirectory() as directory:
+            database = Path(directory) / "empire.sqlite"
+            request = {
+                "seed": raw_seed,
+                "month_label": "Day 7 Hammer 1495 DR — saved app test",
+                "market_condition": "unknown",
+                "vara_active": False,
+            }
+            with start_server(port=0, store_path=database) as running:
+                for run_id, seed in (("app-a", raw_seed), ("app-b", "second-http-seed")):
+                    payload = dict(request, seed=seed)
+                    status, _, raw = self.request(
+                        running,
+                        "POST",
+                        "/api/runs",
+                        {"run_id": run_id, "label": run_id, "request": payload},
+                    )
+                    self.assertEqual(status, 201, raw.decode("utf-8", errors="replace"))
+                self.assertNotIn(raw_seed.encode(), database.read_bytes())
+                status, _, raw = self.request(running, "GET", "/api/runs")
+                self.assertEqual(status, 200)
+                self.assertEqual(len(json.loads(raw)["data"]["runs"]), 2)
+                status, _, raw = self.request(
+                    running, "GET", "/api/compare?left=app-a&right=app-b"
+                )
+                self.assertEqual(status, 200)
+                self.assertEqual(
+                    json.loads(raw)["data"]["schema"],
+                    "tnp.economy.empire-ops-comparison/1",
+                )
+                status, headers, raw = self.request(
+                    running, "GET", "/api/runs/app-a/export?format=html"
+                )
+                self.assertEqual(status, 200)
+                self.assertIn("text/html", headers["content-type"])
+                self.assertIn(b"Baen Empire Monthly Business Phase", raw)
+
+            with start_server(port=0, store_path=database) as reopened:
+                status, _, raw = self.request(reopened, "GET", "/api/runs/app-a")
+                self.assertEqual(status, 200)
+                self.assertEqual(json.loads(raw)["data"]["run_id"], "app-a")
+
     def test_invalid_preview_and_unsafe_routes_fail_closed(self):
-        with start_server(port=0) as running:
+        with tempfile.TemporaryDirectory() as directory, start_server(port=0, store_path=Path(directory) / "empire.sqlite") as running:
             status, _, raw = self.request(
                 running,
                 "POST",

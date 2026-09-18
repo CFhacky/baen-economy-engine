@@ -41,7 +41,7 @@ ul.clean{list-style:none;padding:0;margin:0}ul.clean li{padding:8px 0;border-bot
 pre{white-space:pre-wrap;word-break:break-word;background:#090e14;border:1px solid var(--line);padding:15px;border-radius:9px;max-height:620px;overflow:auto;color:#d7e2ec}
 .statusline{min-height:22px;color:var(--muted);margin-top:8px}
 .goodtext{color:var(--good)}.warntext{color:var(--warn)}.badtext{color:var(--bad)}
-.hidden{display:none}
+.hidden{display:none} body.player .gm-only{display:none!important}
 @media(max-width:1000px){.card,.card.wide{grid-column:span 6}.controls{grid-template-columns:1fr 1fr}.controls>div{min-width:0}}
 @media(max-width:650px){header,main{padding-left:14px;padding-right:14px}.card,.card.wide{grid-column:1/-1}.controls{grid-template-columns:1fr}.metric{font-size:23px}}
 </style>
@@ -50,6 +50,7 @@ pre{white-space:pre-wrap;word-break:break-word;background:#090e14;border:1px sol
 <header>
   <h1>Baen Economy Engine</h1>
   <p class="sub">Empire operator for the current Hammer 1495 source state. This application exposes what is known, what is mapped, what is still blocked, and lets you run a deterministic non-canonical business-phase preview.</p>
+  <div style="max-width:260px;margin-top:14px"><label for="view-mode">Interface</label><select id="view-mode"><option value="gm">GM / source authority</option><option value="player">Player briefing</option></select></div>
   <div class="badges">
     <span class="badge warn" id="canon-badge">Canonical month: loading…</span>
     <span class="badge good">Notion writes: 0</span>
@@ -91,7 +92,7 @@ pre{white-space:pre-wrap;word-break:break-word;background:#090e14;border:1px sol
       <h2>Source → product semantic domains</h2>
       <div id="domains">Loading…</div>
     </div>
-    <div class="card wide">
+    <div class="card wide gm-only">
       <h2>Upstream products</h2>
       <div id="products">Loading…</div>
     </div>
@@ -102,9 +103,33 @@ pre{white-space:pre-wrap;word-break:break-word;background:#090e14;border:1px sol
       <h2>Known physical/source state</h2>
       <div id="known-state">Loading…</div>
     </div>
-    <div class="card wide">
+    <div class="card wide gm-only">
       <h2>Current unresolved gates</h2>
       <ul class="clean" id="unresolved"><li>Loading…</li></ul>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card full">
+      <h2>Whole-Empire system lanes</h2>
+      <div id="system-lanes">Loading…</div>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card full">
+      <h2>Saved monthly previews</h2>
+      <div class="controls" style="grid-template-columns:1.2fr 2fr auto 1.4fr 1.4fr auto">
+        <div><label for="save-id">Run ID</label><input id="save-id" placeholder="hammer-1495-a"></div>
+        <div><label for="save-label">Label</label><input id="save-label" value="Hammer 1495 review"></div>
+        <div><label>&nbsp;</label><button id="save" class="secondary">Save current</button></div>
+        <div><label for="compare-left">Compare left</label><select id="compare-left"></select></div>
+        <div><label for="compare-right">Compare right</label><select id="compare-right"></select></div>
+        <div><label>&nbsp;</label><button id="compare" class="secondary">Compare</button></div>
+      </div>
+      <div class="statusline" id="save-status">Saved previews are append-only local artifacts outside the repository.</div>
+      <div id="saved-runs"></div>
+      <pre id="comparison" class="hidden"></pre>
     </div>
   </section>
 
@@ -122,6 +147,8 @@ pre{white-space:pre-wrap;word-break:break-word;background:#090e14;border:1px sol
 (function(){
   "use strict";
   var latestReport = "";
+  var latestRequest = null;
+  var savedRuns = [];
   function el(id){ return document.getElementById(id); }
   function esc(value){ return String(value == null ? "" : value).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c];}); }
   function num(value){ return new Intl.NumberFormat("en-US").format(Number(value || 0)); }
@@ -159,6 +186,12 @@ pre{white-space:pre-wrap;word-break:break-word;background:#090e14;border:1px sol
     kh += '<div class="domain"><div class="domain-title"><span>Food sector</span><span class="small">'+food.length+' financial/source rows</span></div><div class="small">Physical outputs remain distinct from financial evidence.</div></div>';
     el("known-state").innerHTML=kh;
 
+    var lanes=data.system_lanes||{}, lhtml='<table><thead><tr><th>System</th><th>Status</th><th>Current basis</th></tr></thead><tbody>';
+    Object.keys(lanes).forEach(function(key){var row=lanes[key];lhtml+='<tr><td><strong>'+esc(key.replace(/_/g," "))+'</strong></td><td class="'+statusClass(row.status)+'">'+esc(row.status)+'</td><td>'+esc(row.basis)+'</td></tr>';});
+    el("system-lanes").innerHTML=lhtml+'</tbody></table>';
+    savedRuns=data.saved_runs||[];
+    renderSavedRuns();
+
     var unresolved=[];
     (k.unresolved||[]).forEach(function(x){unresolved.push(x);});
     Object.keys(data.semantic_domains).forEach(function(key){
@@ -191,6 +224,7 @@ pre{white-space:pre-wrap;word-break:break-word;background:#090e14;border:1px sol
       var j=await r.json();
       if(!r.ok||!j.ok) throw new Error((j.error&&j.error.message)||"preview failed");
       var p=j.data.result;
+      latestRequest=body;
       el("preview-summary").classList.remove("hidden");
       el("report-wrap").classList.remove("hidden");
       el("p-admitted").textContent=num(p.admission.admitted_entities);
@@ -207,6 +241,38 @@ pre{white-space:pre-wrap;word-break:break-word;background:#090e14;border:1px sol
     }finally{ button.disabled=false; }
   }
 
+  function renderSavedRuns(){
+    var opts=savedRuns.map(function(r){return '<option value="'+esc(r.run_id)+'">'+esc(r.run_id+" — "+r.label)+'</option>';}).join("");
+    el("compare-left").innerHTML=opts;
+    el("compare-right").innerHTML=opts;
+    if(savedRuns.length>1)el("compare-right").selectedIndex=1;
+    var html='<table><thead><tr><th>Run</th><th>Label</th><th>Revenue</th><th>Net range</th><th>Exports</th></tr></thead><tbody>';
+    savedRuns.forEach(function(r){var s=r.summary||{};html+='<tr><td>'+esc(r.run_id)+'</td><td>'+esc(r.label)+'</td><td>'+esc(s.proposed_revenue_gp||"—")+'</td><td>'+esc((s.proposed_net_range_gp||[]).join(" – ")||"—")+'</td><td><a href="/api/runs/'+encodeURIComponent(r.run_id)+'/export?format=html" target="_blank">HTML</a> · <a href="/api/runs/'+encodeURIComponent(r.run_id)+'/export?format=md" target="_blank">MD</a> · <a href="/api/runs/'+encodeURIComponent(r.run_id)+'/export?format=json" target="_blank">JSON</a></td></tr>';});
+    el("saved-runs").innerHTML=html+'</tbody></table>';
+  }
+  async function refreshRuns(){
+    var r=await fetch("/api/runs");var j=await r.json();if(r.ok&&j.ok){savedRuns=j.data.runs||[];renderSavedRuns();}
+  }
+  async function saveCurrent(){
+    if(!latestRequest){el("save-status").textContent="Run a preview before saving.";el("save-status").className="statusline warntext";return;}
+    var runId=el("save-id").value.trim(),label=el("save-label").value.trim();
+    try{
+      var r=await fetch("/api/runs",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({run_id:runId,label:label,request:latestRequest})});
+      var j=await r.json();if(!r.ok||!j.ok)throw new Error((j.error&&j.error.message)||"save failed");
+      el("save-status").textContent="Saved "+j.data.run_id+". Raw replay seed was not persisted.";el("save-status").className="statusline goodtext";
+      await refreshRuns();
+    }catch(err){el("save-status").textContent="Save failed closed: "+err.message;el("save-status").className="statusline badtext";}
+  }
+  async function compareRuns(){
+    var left=el("compare-left").value,right=el("compare-right").value;if(!left||!right)return;
+    try{
+      var r=await fetch("/api/compare?left="+encodeURIComponent(left)+"&right="+encodeURIComponent(right));var j=await r.json();if(!r.ok||!j.ok)throw new Error((j.error&&j.error.message)||"compare failed");
+      el("comparison").classList.remove("hidden");el("comparison").textContent=JSON.stringify(j.data,null,2);
+    }catch(err){el("comparison").classList.remove("hidden");el("comparison").textContent="Comparison failed: "+err.message;}
+  }
+  el("view-mode").addEventListener("change",function(){document.body.classList.toggle("player",this.value==="player");});
+  el("save").addEventListener("click",saveCurrent);
+  el("compare").addEventListener("click",compareRuns);
   el("run").addEventListener("click",runPreview);
   el("download").addEventListener("click",function(){
     if(!latestReport)return;

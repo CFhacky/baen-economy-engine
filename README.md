@@ -33,7 +33,7 @@ OPEN-BAEN-ECONOMY-APP.cmd
 
 That launches the local **Baen Economy Engine** application on \`127.0.0.1\` and opens it in your browser. The app is the Empire-level operator rather than a static report: it shows the live source-census state, semantic coverage, the five source→product domains, upstream-product mapping state, known physical/source facts, unresolved gates, and it can execute the controlling source-grounded Hammer-1495 monthly business preview.
 
-The app is deliberately preview-only. It has no Notion-write endpoint, no canonical-ledger endpoint, and no campaign-time advancement path. A successful preview remains review material until explicitly committed in play.
+The app is deliberately preview-only. It has no Notion-write endpoint, no canonical-ledger endpoint, and no campaign-time advancement path. A successful preview remains review material until explicitly committed in play. Saved previews are append-only local artifacts stored by default at `Documents\\Baen Economy\\baen-empire-operator.sqlite`; the app can reopen them, compare two runs, and export HTML, Markdown, or JSON without requiring you to inspect SQLite.
 
 You can also launch it from a shell:
 

@@ -25,9 +25,11 @@ from .empire_source_products import (
     source_semantic_domains,
 )
 from .empire_ops_app import APP_HTML
+from .empire_ops_store import EmpireOpsStore, EmpireOpsStoreError
 
 LOOPBACK_HOST = "127.0.0.1"
 DEFAULT_MAX_BODY_BYTES = 256 * 1024
+DEFAULT_STORE_PATH = Path.home() / "Documents" / "Baen Economy" / "baen-empire-operator.sqlite"
 
 
 class EmpireOpsServerError(ValueError):
@@ -43,6 +45,14 @@ def build_bootstrap(*, census_path: Path = DEFAULT_CENSUS) -> dict[str, Any]:
         "semantic_coverage": source_semantic_coverage(domains),
         "known_state": source_known_state(),
         "products": product_status(),
+        "system_lanes": {
+            "population_labour": {"status": "PARTIAL_SOURCE_MAPPED", "basis": "Neverwinter/Waterdeep census and admitted commercial labour; Forgedeep and settlement-wide labour pools unresolved"},
+            "production_supply": {"status": "PARTIAL_SOURCE_MAPPED", "basis": "source-backed industrial lines exist; input recipes and opening inventories remain incomplete"},
+            "consumption_prices": {"status": "BLOCKED", "basis": "household baskets, general commodity prices, and physical food outputs are not source-backed"},
+            "transport_trade": {"status": "PARTIAL_SOURCE_MAPPED", "basis": "five arterial distances and one steel flow are mapped; route capacities/losses and OpenTTD unit bridge remain unresolved"},
+            "banking_treasury": {"status": "PARTIAL_SOURCE_MAPPED", "basis": "loan portfolio and financial authority exist; current trial balance, reserves, and exact liquid cash remain unresolved"},
+            "migration_shocks": {"status": "BLOCKED", "basis": "migration rates and shock probabilities remain unresolved and are not invented on the actual lane"},
+        },
         "safety": {
             "canonical": False,
             "notion_write_capability": False,
@@ -99,11 +109,19 @@ class EmpireOpsHTTPServer(ThreadingHTTPServer):
         app_html: str,
         max_body_bytes: int,
         census_path: Path,
+        store_path: Path,
     ) -> None:
         self.app_html = app_html
         self.max_body_bytes = max_body_bytes
         self.census_path = census_path
+        self.store = EmpireOpsStore(store_path)
         super().__init__(server_address, EmpireOpsHandler)
+
+    def server_close(self) -> None:
+        try:
+            self.store.close()
+        finally:
+            super().server_close()
 
     @property
     def port(self) -> int:
@@ -223,10 +241,51 @@ class EmpireOpsHandler(BaseHTTPRequestHandler):
         if path == "/api/bootstrap":
             try:
                 payload = build_bootstrap(census_path=self.server.census_path)
+                payload["saved_runs"] = self.server.store.list_runs()
             except (EmpireSourceProductError, OSError, ValueError) as exc:
                 self._json_error(409, "source_state_blocked", str(exc))
                 return
             self._json(200, {"ok": True, "data": payload})
+            return
+        if path == "/api/runs":
+            self._json(200, {"ok": True, "data": {"runs": self.server.store.list_runs()}})
+            return
+        if path.startswith("/api/runs/"):
+            tail = path[len("/api/runs/"):]
+            if tail.endswith("/export"):
+                run_id = tail[:-len("/export")].rstrip("/")
+                query = urlsplit(self.path).query
+                fmt = "html"
+                for part in query.split("&"):
+                    if part.startswith("format="):
+                        fmt = part.split("=", 1)[1]
+                try:
+                    content_type, body = self.server.store.export(run_id, fmt)
+                except EmpireOpsStoreError as exc:
+                    self._json_error(404, "saved_run_not_found", str(exc))
+                    return
+                self._send(200, body, content_type)
+                return
+            try:
+                row = self.server.store.get(tail)
+            except EmpireOpsStoreError as exc:
+                self._json_error(404, "saved_run_not_found", str(exc))
+                return
+            self._json(200, {"ok": True, "data": row})
+            return
+        if path == "/api/compare":
+            query = urlsplit(self.path).query
+            params = {}
+            for part in query.split("&"):
+                if "=" in part:
+                    key, value = part.split("=", 1)
+                    params[key] = value
+            try:
+                data = self.server.store.compare(params.get("left"), params.get("right"))
+            except EmpireOpsStoreError as exc:
+                self._json_error(400, "comparison_blocked", str(exc))
+                return
+            self._json(200, {"ok": True, "data": data})
             return
         self._json_error(404, "not_found", "Route not found.")
 
@@ -234,6 +293,31 @@ class EmpireOpsHandler(BaseHTTPRequestHandler):
         if not self._allowed_request():
             return
         path = urlsplit(self.path).path
+        if path == "/api/runs":
+            try:
+                body = self._read_json()
+                request = body.get("request")
+                if not isinstance(request, dict):
+                    raise EmpireOpsServerError("request must be an object")
+                payload = run_preview(request)
+                saved = self.server.store.save(
+                    run_id=body.get("run_id"),
+                    label=body.get("label"),
+                    request=request,
+                    result=payload["result"],
+                    report=payload["report"],
+                )
+            except EmpireOpsServerError as exc:
+                self._json_error(400, "invalid_request", str(exc))
+                return
+            except EmpireOpsStoreError as exc:
+                self._json_error(409, "save_conflict", str(exc))
+                return
+            except (EmpireBusinessError, EmpireSourceProductError, OSError, ValueError) as exc:
+                self._json_error(409, "preview_blocked", str(exc))
+                return
+            self._json(201, {"ok": True, "data": saved})
+            return
         if path != "/api/preview":
             self._json_error(404, "not_found", "Route not found.")
             return
@@ -256,6 +340,7 @@ def create_server(
     census_path: Path = DEFAULT_CENSUS,
     app_html: str = APP_HTML,
     max_body_bytes: int = DEFAULT_MAX_BODY_BYTES,
+    store_path: Path = DEFAULT_STORE_PATH,
 ) -> EmpireOpsHTTPServer:
     if host != LOOPBACK_HOST:
         raise EmpireOpsServerError("the Empire operator may bind only 127.0.0.1")
@@ -268,6 +353,7 @@ def create_server(
         app_html=app_html,
         max_body_bytes=max_body_bytes,
         census_path=census_path,
+        store_path=store_path,
     )
 
 
@@ -328,6 +414,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--port", type=int, default=0, help="local port; 0 chooses a free port")
     parser.add_argument("--host", default=LOOPBACK_HOST, help="must remain 127.0.0.1")
     parser.add_argument("--census", type=Path, default=DEFAULT_CENSUS)
+    parser.add_argument("--database", "--store", dest="store", type=Path, default=DEFAULT_STORE_PATH)
     parser.add_argument("--open", action="store_true", help="open the app in the default browser")
     parser.add_argument("--max-body-bytes", type=int, default=DEFAULT_MAX_BODY_BYTES)
     return parser
@@ -341,6 +428,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             port=args.port,
             census_path=args.census,
             max_body_bytes=args.max_body_bytes,
+            store_path=args.store,
         )
     except (EmpireOpsServerError, OSError, ValueError) as exc:
         print(f"error: {exc}", file=sys.stderr)
