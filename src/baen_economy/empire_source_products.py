@@ -284,7 +284,7 @@ def _product_number(value: object) -> int | str:
 
 def _load_payload(path: Path) -> dict[str, Any]:
     try:
-        payload = json.loads(path.read_text(encoding="utf-8"), parse_float=Decimal)
+        payload = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
         raise EmpireSourceProductError(f"cannot read source-input authority: {path}: {exc}") from exc
     if not isinstance(payload, dict) or payload.get("schema") != "tnp.economy.source-input-authority/1":
@@ -391,7 +391,7 @@ def _source_ref(row: Mapping[str, Any], fact_key: str) -> dict[str, Any]:
 
 def _load_semantic_evidence(path: Path = DEFAULT_SEMANTIC_EVIDENCE) -> dict[str, Any]:
     try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
+        payload = json.loads(path.read_text(encoding="utf-8"), parse_float=Decimal)
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
         raise EmpireSourceProductError(f"cannot read semantic evidence: {path}: {exc}") from exc
     if (
