@@ -63,6 +63,22 @@ class EmpireCloseTests(unittest.TestCase):
         self.assertEqual(calc["ncf.named_active_loans_recovered_gp"]["value"],30000)
         self.assertTrue(any(r["key"]=="ncf.remaining_loan_book_2270000_gp" for r in lane["unresolved"]))
 
+    def test_empire_close_reuses_strict_agriculture_runtime_instead_of_inventing_food_state(self):
+        result=close_status()
+        food=result["lanes"]["food"]
+        self.assertEqual(
+            food["existing_runtime"]["fixture"],
+            "fixtures/agriculture/agriculture-canon-v1.json",
+        )
+        facts={row["key"]:row for row in food["facts"]}
+        self.assertEqual(
+            facts["agricultural_shelters.confirmed_outputs"]["value"],
+            ["greenhouse produce","tomatoes","year-round tomatoes"],
+        )
+        self.assertEqual(facts["converted_quarry.confirmed_species"]["value"],["Tilapia"])
+        self.assertTrue(any(row["key"]=="blacklake.species_allocation_within_7_pools" for row in food["unresolved"]))
+        self.assertFalse(food["existing_runtime"]["current_month_advance_authorized"])
+
     def test_phase_one_is_complete_and_remaining_system_gaps_are_classified(self):
         result=close_status()
         phases={row["id"]:row for row in result["phase_progress"]}

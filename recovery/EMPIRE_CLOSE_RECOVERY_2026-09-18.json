@@ -358,7 +358,7 @@
       ]
     },
     "food": {
-      "status": "PHYSICAL_DESIGN_PARTIAL_ACTUAL_OUTPUT_UNKNOWN",
+      "status": "EXISTING_AGRICULTURE_CANON_BOUND_ACTUAL_OUTPUT_STILL_UNKNOWN",
       "facts": [
         {
           "key": "blacklake.pool_count",
@@ -422,37 +422,98 @@
           "unit": "gp/month",
           "authority": "SOURCE-DERIVED",
           "source": "Agricultural Shelter Zones"
+        },
+        {
+          "key": "agricultural_shelters.confirmed_outputs",
+          "value": [
+            "greenhouse produce",
+            "tomatoes",
+            "year-round tomatoes"
+          ],
+          "authority": "SOURCE-DERIVED",
+          "source": "agriculture-canon-v1 / Agricultural Shelter Zones"
+        },
+        {
+          "key": "agricultural_shelters.tomatoes_confirmed_planted",
+          "value": true,
+          "authority": "SOURCE-DERIVED",
+          "source": "agriculture-canon-v1"
+        },
+        {
+          "key": "converted_quarry.confirmed_species",
+          "value": [
+            "Tilapia"
+          ],
+          "authority": "SOURCE-DERIVED",
+          "source": "agriculture-canon-v1 / Converted Quarry"
+        },
+        {
+          "key": "reservoir_fisheries.confirmed_outputs",
+          "value": [
+            "fish",
+            "trout",
+            "salmon"
+          ],
+          "authority": "SOURCE-DERIVED",
+          "source": "agriculture-canon-v1 / Reservoir Fisheries"
         }
       ],
       "unresolved": [
         {
-          "key": "blacklake.species_and_volumes",
-          "method": "SURVEY_THEN_RESEARCH",
-          "reason": "Current page explicitly says specific species and volumes need session confirmation."
+          "key": "food.opening_inventories_by_site_commodity",
+          "method": "PHYSICAL_COUNT_OR_PERPETUAL_INVENTORY_RECONSTRUCTION",
+          "reason": "Existing agriculture canon deliberately leaves opening inventories unresolved."
         },
         {
-          "key": "blacklake.pool_geometry",
-          "method": "RECOVER_OR_SURVEY",
-          "reason": "Seven pools exist but current physical dimensions are not established on the operating page."
+          "key": "blacklake.species_allocation_within_7_pools",
+          "method": "TARGETED_SURVEY_OR_SESSION_CONFIRMATION",
+          "reason": "Blacklake confirms 7 pools and output classes; species/volumes are explicitly unresolved. Generic technical species list is design reference only."
         },
         {
-          "key": "agricultural_shelters.physical_scale_and_output",
-          "method": "SURVEY_THEN_RESEARCH",
-          "reason": "Registry supplies finances/staff but not sufficient acreage/crop/output state."
+          "key": "blacklake.pool_geometry_and_biomass",
+          "method": "TARGETED_PHYSICAL_SURVEY",
+          "reason": "Operating page does not establish numeric dimensions, cohorts or biomass."
+        },
+        {
+          "key": "agricultural_shelters.baseline_physical_yield_and_acreage",
+          "method": "TARGETED_PHYSICAL_SURVEY",
+          "reason": "Tomatoes/greenhouse produce are confirmed, but baseline yield and acreage remain null in current agriculture canon."
+        },
+        {
+          "key": "food.storage_spoilage_and_opening_stock",
+          "method": "PHYSICAL_COUNT_AND_STORAGE_SURVEY",
+          "reason": "Current agriculture canon explicitly preserves storage/spoilage/opening stock as unresolved."
+        },
+        {
+          "key": "food.population_ration_requirements",
+          "method": "DEMOGRAPHIC_MODEL_AFTER_POPULATION",
+          "reason": "Requires settlement populations and a ratified food-basket model."
         }
       ],
       "cautions": [
         {
-          "key": "aquaculture_technical_specifications",
-          "status": "PLANNING_REFERENCE_NOT_ACTUAL",
-          "note": "Neverwinter's Warmth contains detailed basin/species/yield design constants but is an internal-planning appendix; do not treat it as proof Blacklake was built to every specification."
+          "key": "technical_species_design",
+          "status": "TECHNICAL_DESIGN_ONLY",
+          "note": "15 named species and their technical stocking/yield ranges remain available for planning but cannot be promoted to Day-7 actual species allocation."
         },
         {
-          "key": "blacklake_actuals_vs_neverwinter_warmth",
-          "status": "DATA_GRAIN_GUARD",
-          "note": "The technical appendix supplies generic basin/species engineering constants. It does not establish the geometry or species of Blacklake's seven operating pools."
+          "key": "pond_topology",
+          "status": "CONFLICT",
+          "note": "Blacklake Registry has 7 pools; later/technical NMWC material has 10 ponds. Existing agriculture canon blocks double counting."
+        },
+        {
+          "key": "shelter_output",
+          "status": "CURRENT_SOURCE_BOUNDARY",
+          "note": "Shelters are greenhouse produce/tomatoes at Day 7; do not backfill later grain/feed scenarios into current actual."
         }
-      ]
+      ],
+      "existing_runtime": {
+        "fixture": "fixtures/agriculture/agriculture-canon-v1.json",
+        "loader": "src/baen_economy/agriculture_source.py",
+        "safety": "Strict fail-closed source loader; current actual frozen at Day 7 Hammer 1495 DR; technical designs cannot execute as current actual.",
+        "current_actual_date": "Day 7 Hammer 1495 DR, midday Hell-cycle",
+        "current_month_advance_authorized": false
+      }
     },
     "forgedeep": {
       "status": "CURRENT_POPULATION_UNRESOLVED",
@@ -801,9 +862,10 @@
     },
     {
       "id": "food-survey",
-      "label": "Recover/survey actual food facilities",
-      "method": "SURVEY_THEN_RESEARCH",
+      "label": "Complete targeted food physical survey using existing agriculture canon",
+      "method": "TARGETED_SURVEY_ON_EXISTING_RUNTIME",
       "user_action_required": false,
+      "note": "Do not rebuild agriculture. Recover only missing Day-7 physical geometry, biomass, opening stock, storage and baseline yield.",
       "unlocks": [
         "physical food output",
         "consumption lane",
@@ -881,6 +943,11 @@
       "id": "2026-09-18-batch-4",
       "authority": "SYSTEM",
       "note": "Phase 1 source-recovery classification is complete: all remaining whole-economy gaps are now explicit unresolved items with named resolution methods. Phase 2 external/engineering research is active."
+    },
+    {
+      "id": "2026-09-18-batch-5",
+      "authority": "SYSTEM + SOURCE-DERIVED",
+      "note": "Empire Close now binds to the repository's existing strict agriculture canon/runtime instead of creating a duplicate food model. Current tomatoes/produce, seven-pool Blacklake, converted-quarry Tilapia, and reservoir trout/salmon are preserved; only genuinely missing physical state remains unresolved."
     }
   ]
 }
