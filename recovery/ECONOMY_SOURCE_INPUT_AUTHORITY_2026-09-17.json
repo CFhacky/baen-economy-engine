@@ -5,82 +5,38 @@
   "rule": "Actual Empire execution may consume USER-RULED, SOURCE-DERIVED, or UPSTREAM-ADOPTED inputs. MODEL-PROPOSED/scenario_assumption inputs are sandbox-only. Unknown stays unknown.",
   "facts": [
     {
-      "key": "finance.monthly_recurring_revenue_arik",
-      "value_gp_per_month": 245000,
+      "key": "agricultural_shelters.employees",
+      "value": 8,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
-        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
-        "title": "Empire Financial State — Current Reference"
-      },
-      "temporal_note": "Arik-side aggregate; current realistic range below is medium-confidence."
-    },
-    {
-      "key": "finance.monthly_recurring_revenue_current_range",
-      "min_gp_per_month": 280000,
-      "max_gp_per_month": 320000,
-      "authority": "SOURCE-DERIVED",
-      "confidence": "medium",
-      "source": {
-        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
-        "title": "Empire Financial State — Current Reference"
+        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
+        "title": "Agricultural Shelter Zones"
       }
     },
     {
-      "key": "finance.monthly_recurring_profit_current_range",
-      "min_gp_per_month": 75000,
-      "max_gp_per_month": 90000,
-      "authority": "SOURCE-DERIVED",
-      "confidence": "medium",
-      "source": {
-        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
-        "title": "Empire Financial State — Current Reference"
-      }
-    },
-    {
-      "key": "finance.ncf_active_loan_portfolio",
-      "value_gp": 2300000,
+      "key": "agricultural_shelters.monthly_cost_gp",
+      "value": 1050,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
-        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
-        "title": "Empire Financial State — Current Reference"
+        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
+        "title": "Agricultural Shelter Zones"
       }
     },
     {
-      "key": "finance.hard_asset_portfolio",
-      "value_gp_approx": 18000000,
-      "authority": "SOURCE-DERIVED",
-      "confidence": "medium",
-      "source": {
-        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
-        "title": "Empire Financial State — Current Reference"
-      }
-    },
-    {
-      "key": "finance.shimmerdeep_liquidity_target",
-      "value_gp": 450000,
+      "key": "agricultural_shelters.monthly_revenue_gp",
+      "value": 1500,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
-        "notion_page": "34ce8214-84b0-8111-9fd4-c41feef5634e",
-        "title": "Shimmerdeep Cradle"
-      },
-      "note": "Protected net-settled liquidity target; approximately 400K current gap plus 50K operating buffer."
+        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
+        "title": "Agricultural Shelter Zones"
+      }
     },
     {
       "key": "arterial.employees",
       "value": 150,
-      "authority": "SOURCE-DERIVED",
-      "confidence": "high",
-      "source": {
-        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
-        "title": "Arterial Road Network"
-      }
-    },
-    {
-      "key": "arterial.monthly_revenue_gp",
-      "value": 22000,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
@@ -99,8 +55,18 @@
       }
     },
     {
-      "key": "arterial.route.neverwinter_luskan.distance_miles",
-      "value": 120,
+      "key": "arterial.monthly_revenue_gp",
+      "value": 22000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      }
+    },
+    {
+      "key": "arterial.route.forgedeep_guardians_gate.distance_miles",
+      "value": 40,
       "approximate": true,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
@@ -112,6 +78,17 @@
     {
       "key": "arterial.route.neverwinter_gauntlgrym.distance_miles",
       "value": 80,
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      }
+    },
+    {
+      "key": "arterial.route.neverwinter_luskan.distance_miles",
+      "value": 120,
       "approximate": true,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
@@ -143,19 +120,38 @@
       }
     },
     {
-      "key": "arterial.route.forgedeep_guardians_gate.distance_miles",
-      "value": 40,
-      "approximate": true,
+      "key": "blacklake_aquaculture.employees",
+      "value": 15,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
-        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
-        "title": "Arterial Road Network"
+        "notion_page": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+        "title": "Blacklake Aquaculture (7 pools)"
       }
     },
     {
-      "key": "brickworks.employees",
-      "value": 30,
+      "key": "blacklake_aquaculture.monthly_cost_gp",
+      "value": 5850,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+        "title": "Blacklake Aquaculture (7 pools)"
+      }
+    },
+    {
+      "key": "blacklake_aquaculture.monthly_revenue_gp",
+      "value": 7500,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+        "title": "Blacklake Aquaculture (7 pools)"
+      }
+    },
+    {
+      "key": "brickworks.annual_wages_gp",
+      "value": 21000,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
@@ -164,8 +160,8 @@
       }
     },
     {
-      "key": "brickworks.monthly_revenue_gp",
-      "value": 3333,
+      "key": "brickworks.employees",
+      "value": 30,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
@@ -194,8 +190,8 @@
       }
     },
     {
-      "key": "brickworks.annual_wages_gp",
-      "value": 21000,
+      "key": "brickworks.monthly_revenue_gp",
+      "value": 3333,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
@@ -206,16 +202,6 @@
     {
       "key": "clay_quarries.employees",
       "value": 12,
-      "authority": "SOURCE-DERIVED",
-      "confidence": "high",
-      "source": {
-        "notion_page": "321e8214-84b0-81c6-9bde-c30dd49bc5b6",
-        "title": "Neverwinter Clay Quarries"
-      }
-    },
-    {
-      "key": "clay_quarries.monthly_output_tons",
-      "value": 2000,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
@@ -244,38 +230,82 @@
       }
     },
     {
-      "key": "agricultural_shelters.employees",
-      "value": 8,
+      "key": "clay_quarries.monthly_output_tons",
+      "value": 2000,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
-        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
-        "title": "Agricultural Shelter Zones"
+        "notion_page": "321e8214-84b0-81c6-9bde-c30dd49bc5b6",
+        "title": "Neverwinter Clay Quarries"
       }
     },
     {
-      "key": "agricultural_shelters.monthly_revenue_gp",
-      "value": 1500,
+      "key": "finance.hard_asset_portfolio",
+      "value_gp_approx": 18000000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "medium",
+      "source": {
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
+      }
+    },
+    {
+      "key": "finance.monthly_recurring_profit_current_range",
+      "min_gp_per_month": 75000,
+      "max_gp_per_month": 90000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "medium",
+      "source": {
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
+      }
+    },
+    {
+      "key": "finance.monthly_recurring_revenue_arik",
+      "value_gp_per_month": 245000,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
-        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
-        "title": "Agricultural Shelter Zones"
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
+      },
+      "temporal_note": "Arik-side aggregate; current realistic range below is medium-confidence."
+    },
+    {
+      "key": "finance.monthly_recurring_revenue_current_range",
+      "min_gp_per_month": 280000,
+      "max_gp_per_month": 320000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "medium",
+      "source": {
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
       }
     },
     {
-      "key": "agricultural_shelters.monthly_cost_gp",
-      "value": 1050,
+      "key": "finance.ncf_active_loan_portfolio",
+      "value_gp": 2300000,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
-        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
-        "title": "Agricultural Shelter Zones"
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
       }
     },
     {
-      "key": "blacklake_aquaculture.employees",
-      "value": 15,
+      "key": "finance.shimmerdeep_liquidity_target",
+      "value_gp": 450000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "34ce8214-84b0-8111-9fd4-c41feef5634e",
+        "title": "Shimmerdeep Cradle"
+      },
+      "note": "Protected net-settled liquidity target; approximately 400K current gap plus 50K operating buffer."
+    },
+    {
+      "key": "food_sector.aquaculture_employees",
+      "value": 55,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
@@ -284,8 +314,19 @@
       }
     },
     {
-      "key": "blacklake_aquaculture.monthly_revenue_gp",
-      "value": 7500,
+      "key": "food_sector.aquaculture_monthly_revenue_gp",
+      "value": 25000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+        "title": "Blacklake Aquaculture (7 pools)"
+      },
+      "note": "Network total across Blacklake, Converted Quarry, BG pools, Reservoir Fisheries."
+    },
+    {
+      "key": "food_sector.combined_employees",
+      "value": 63,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
@@ -294,13 +335,45 @@
       }
     },
     {
-      "key": "blacklake_aquaculture.monthly_cost_gp",
-      "value": 5850,
+      "key": "food_sector.combined_revenue_gp_per_month",
+      "value": 26500,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
         "notion_page": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
         "title": "Blacklake Aquaculture (7 pools)"
+      },
+      "note": "Aquaculture network + Agricultural Shelter Zones."
+    },
+    {
+      "key": "forgedeep.city_development.monthly_cost_gp",
+      "value": 15000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b0-9469-f6c9d92a22d5",
+        "title": "Forgedeep City Development"
+      },
+      "temporal_note": "Operational page carries a population chronology caveat; do not infer current population from the stale/current mixed paragraph."
+    },
+    {
+      "key": "forgedeep.city_development.monthly_revenue_gp",
+      "value": 0,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b0-9469-f6c9d92a22d5",
+        "title": "Forgedeep City Development"
+      }
+    },
+    {
+      "key": "ncf.active_loans_gp",
+      "value": 2300000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+        "title": "Northern Crown Financial"
       }
     },
     {
@@ -324,34 +397,128 @@
       }
     },
     {
-      "key": "ncf.active_loans_gp",
-      "value": 2300000,
+      "key": "silversheen.current_gross_revenue_gp_per_month",
+      "value": 57600,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
+      "derivation": "180 tons/month × 320 gp/ton",
       "source": {
-        "notion_page": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
-        "title": "Northern Crown Financial"
+        "notion_page": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+        "title": "Silversheen Trading (Aluminum)"
       }
     },
     {
-      "key": "forgedeep.city_development.monthly_cost_gp",
-      "value": 15000,
+      "key": "silversheen.current_output_aluminum_tons_per_month",
+      "value": 180,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
-        "notion_page": "321e8214-84b0-81b0-9469-f6c9d92a22d5",
-        "title": "Forgedeep City Development"
+        "notion_page": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+        "title": "Silversheen Trading (Aluminum)"
       },
-      "temporal_note": "Operational page carries a population chronology caveat; do not infer current population from the stale/current mixed paragraph."
+      "temporal_note": "Hammer 1495 ruling; supersedes 150 t/mo Eleint 1494 baseline."
     },
     {
-      "key": "forgedeep.city_development.monthly_revenue_gp",
-      "value": 0,
+      "key": "silversheen.current_unit_price_gp_per_ton",
+      "value": 320,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
-        "notion_page": "321e8214-84b0-81b0-9469-f6c9d92a22d5",
-        "title": "Forgedeep City Development"
+        "notion_page": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+        "title": "Silversheen Trading (Aluminum)"
+      },
+      "note": "Narrative states 180 t/mo at 320 gp/ton."
+    },
+    {
+      "key": "silversheen.employees_forgedeep_processing",
+      "value": 45,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+        "title": "Silversheen Trading (Aluminum)"
+      }
+    },
+    {
+      "key": "star_metal_hills.bauxite_output_tons_per_month",
+      "value": 800,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+        "title": "Silversheen Trading (Aluminum)"
+      },
+      "note": "Source identifies separate Star Metal Hills bauxite operation."
+    },
+    {
+      "key": "star_metal_hills.employees",
+      "value": 35,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+        "title": "Silversheen Trading (Aluminum)"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.employees",
+      "value": 77,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.legionnaire_output_units_per_month",
+      "value": 12,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      },
+      "temporal_note": "Eleint 1494 operational rate; no later source found in this pass changing the line rate."
+    },
+    {
+      "key": "warborn_neverwinter.maximum_legionnaire_capacity_units_per_month",
+      "value": 15,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.monthly_cost_gp",
+      "value": 20000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.monthly_revenue_gp",
+      "value": 48000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.monthly_wages_gp",
+      "value": 8900,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
       }
     }
   ],
