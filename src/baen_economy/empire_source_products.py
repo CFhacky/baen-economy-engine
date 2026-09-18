@@ -550,6 +550,12 @@ def source_semantic_domains(
             "can_execute_balance_sheet": False,
             "known": [
                 _fact_snapshot(facts, "ncf.active_loans_gp", unit="gp"),
+                _fact_snapshot(
+                    facts,
+                    "finance.ncf_active_loan_portfolio",
+                    value_field="value_gp",
+                    unit="gp",
+                ),
                 _fact_snapshot(facts, "ncf.employees", unit="employees"),
                 _fact_snapshot(facts, "ncf.monthly_revenue_gp", unit="gp/month"),
                 _fact_snapshot(
