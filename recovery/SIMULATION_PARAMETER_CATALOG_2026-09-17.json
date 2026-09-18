@@ -490,6 +490,54 @@
       ]
     },
     {
+      "id": "transport.heavy_corridor_crossings_per_day",
+      "domain": "trade_routes",
+      "unit": "crossings/day",
+      "distribution": "triangular",
+      "low": 500,
+      "mode": 750,
+      "high": 1200,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "SOURCE-DERIVED crystal-network tier definition: Heavy Corridor = 500+ daily crossings; upper bound/mode are simulation priors"
+      ]
+    },
+    {
+      "id": "transport.light_spur_crossings_per_day",
+      "domain": "trade_routes",
+      "unit": "crossings/day",
+      "distribution": "triangular",
+      "low": 10,
+      "mode": 50,
+      "high": 99,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "SOURCE-DERIVED crystal-network tier definition: Light Spur = under 100 daily crossings"
+      ]
+    },
+    {
+      "id": "transport.medium_corridor_crossings_per_day",
+      "domain": "trade_routes",
+      "unit": "crossings/day",
+      "distribution": "triangular",
+      "low": 100,
+      "mode": 250,
+      "high": 499,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "SOURCE-DERIVED crystal-network tier definition: Medium Corridor = 100–499 daily crossings"
+      ]
+    },
+    {
       "id": "transport.priority_freight_miles_per_day",
       "domain": "trade_routes",
       "unit": "miles/day",
