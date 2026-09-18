@@ -163,6 +163,12 @@ class EmpireOperationsTests(unittest.TestCase):
         self.assertEqual(domains["population_labour"]["status"], "PARTIAL_SOURCE_BACKED")
         self.assertEqual(domains["construction_capital"]["status"], "PARTIAL_SOURCE_BACKED")
         self.assertEqual(domains["military_contracts"]["status"], "PARTIAL_SOURCE_BACKED")
+        coverage = physical["semantic_coverage"]
+        self.assertEqual(coverage["status"], "PARTIAL_SOURCE_MAPPED")
+        self.assertGreater(coverage["mapped_record_count"], 0)
+        self.assertGreater(coverage["moved_from_unknown"], 0)
+        self.assertLess(coverage["unknown_after_overlay"], coverage["unknown_before"])
+        self.assertEqual(coverage["simulated_after_overlay"], 0)
 
     def test_report_is_a_vara_style_review_surface(self):
         result = run_empire_business_turn(seed="report")
@@ -180,6 +186,8 @@ class EmpireOperationsTests(unittest.TestCase):
         self.assertIn("Food financials (no physical volumes)", report)
         self.assertIn("Arterial route register", report)
         self.assertIn("Entity labor snapshot", report)
+        self.assertIn("Semantic coverage overlay", report)
+        self.assertIn("SOURCE_MAPPED", report)
         self.assertIn("Source → product semantic domains", report)
         self.assertIn("Finance / Banking", report)
         self.assertIn("ncf.active_loans_gp", report)
