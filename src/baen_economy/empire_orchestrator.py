@@ -492,6 +492,58 @@ def _openttd_check(
     }
 
 
+def _explicit_scenario_assumptions(scenario: Mapping[str, object]) -> list[dict[str, Any]]:
+    """Return only explicit synthetic/model-proposed inputs that can drive results.
+
+    Unlike the historical scenario inventory, this does not count an object
+    merely because the preview is non-canonical. Source-linked entities may be
+    non-canonical *outputs* without being invented inputs.
+    """
+
+    entries: list[dict[str, Any]] = []
+
+    def walk(value: object, path: str) -> None:
+        if isinstance(value, Mapping):
+            authority = value.get("authority")
+            source_ref = value.get("source_ref")
+            assumed = (
+                authority in {"scenario_assumption", "MODEL-PROPOSED"}
+                or (
+                    isinstance(source_ref, str)
+                    and source_ref.startswith("scenario_assumption:")
+                )
+            )
+            if assumed:
+                identity = (
+                    value.get("id")
+                    or value.get("entity_id")
+                    or value.get("route_id")
+                    or value.get("settlement_id")
+                    or value.get("commodity_id")
+                    or path
+                )
+                entries.append(
+                    {
+                        "path": path,
+                        "identity": str(identity),
+                        "authority": authority,
+                        "source_ref": source_ref,
+                    }
+                )
+            for key, item in value.items():
+                walk(item, f"{path}.{key}" if path else str(key))
+        elif isinstance(value, list):
+            for index, item in enumerate(value):
+                walk(item, f"{path}[{index}]")
+
+    walk(scenario, "")
+    unique = {
+        (entry["path"], entry["identity"]): entry
+        for entry in entries
+    }
+    return sorted(unique.values(), key=lambda row: (row["path"], row["identity"]))
+
+
 def _scenario_assumptions(scenario: Mapping[str, object]) -> dict[str, Any]:
     """Inventory unresolved/model-proposed inputs still driving the preview."""
 
@@ -548,12 +600,27 @@ def run_empire_month(
     census_path: Path = DEFAULT_CENSUS,
     scenario_path: Path = DEFAULT_SCENARIO,
     require_products: bool = False,
+    allow_synthetic_scenario: bool = False,
 ) -> dict[str, Any]:
     if not seed:
         raise EmpireRunError("seed is required")
     census = _load_json(census_path)
     scenario = whole_economy.load_scenario(scenario_path)
     rebased, overrides, blockers = rebase_scenario(scenario, census)
+    explicit_assumptions = _explicit_scenario_assumptions(rebased)
+    if explicit_assumptions and not allow_synthetic_scenario:
+        preview = ", ".join(
+            f"{row['path']} ({row['identity']})"
+            for row in explicit_assumptions[:8]
+        )
+        if len(explicit_assumptions) > 8:
+            preview += f", ... +{len(explicit_assumptions) - 8} more"
+        raise EmpireRunError(
+            "actual Empire run is source-gated: "
+            f"{len(explicit_assumptions)} explicit scenario/model-proposed inputs "
+            f"still drive the scenario: {preview}. "
+            "Use the sandbox command only for synthetic testing."
+        )
     opening = whole_economy.initial_state(rebased)
     month = whole_economy.run_month(rebased, opening, seed)
     result = month["result"]
@@ -640,6 +707,7 @@ def run_empire_month(
         "scenario_id": rebased["scenario_id"],
         "source_overrides": overrides,
         "scenario_assumptions": _scenario_assumptions(rebased),
+        "explicit_synthetic_inputs": explicit_assumptions,
         "blockers": blockers,
         "baen_core": result,
         "products": products,
