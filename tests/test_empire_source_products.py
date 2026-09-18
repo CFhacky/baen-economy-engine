@@ -144,14 +144,17 @@ class EmpireSourceProductsTests(unittest.TestCase):
             21,
         )
         self.assertTrue(
-            any("headcount" in row["reason"] for row in military["unresolved"])
+            any(
+                row["status"] == "CONFLICT" and "personnel" in row["reason"]
+                for row in military["unresolved"]
+            )
         )
 
     def test_openttd_source_candidate_maps_real_steel_but_refuses_unruled_unit_bridge(self):
         mapped = _map_openttd_source_candidate()
         self.assertEqual(mapped["status"], "MAPPED_BLOCKED")
         self.assertFalse(mapped["invoked"])
-        self.assertEqual(mapped["source_flow"]["quantity_tons_per_month"], 1.5)
+        self.assertEqual(mapped["source_flow"]["quantity_tons_per_month"], "1.5")
         self.assertEqual(mapped["source_flow"]["distance_miles"], 85)
         self.assertEqual(mapped["source_flow"]["transit_days"], 2)
         self.assertEqual(mapped["upstream_semantics"]["cargo_type"], 9)
