@@ -88,7 +88,8 @@ class EmpireCliTests(unittest.TestCase):
         by_name = {row["name"]: row["status"] for row in payload["products"]}
         self.assertIn("business-phase events", by_name["Mesa"])
         self.assertIn("Warborn 12/15", by_name["FreeCol"])
-        self.assertIn("not invoked in actual run", by_name["OpenTTD"])
+        self.assertIn("source-mapped", by_name["OpenTTD"])
+        self.assertIn("miles→tiles", by_name["OpenTTD"])
         self.assertIn("not invoked in actual run", by_name["Veloren"])
         self.assertIn("not invoked in actual run", by_name["Brunnfeld Agentic World"])
         self.assertIn("production-only lines", by_name["Unknown Horizons"])
