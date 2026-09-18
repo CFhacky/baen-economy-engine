@@ -8,11 +8,11 @@ from baen_economy.simulation_parameters import resolve_catalog, resolve_paramete
 class SimulationParameterTests(unittest.TestCase):
     def test_catalog_resolves_all_parameters_and_preserves_debt(self):
         result = resolve_catalog(seed="parameter-catalog-a")
-        self.assertEqual(result["parameter_count"], 31)
-        self.assertEqual(result["needs_enumeration_count"], 31)
+        self.assertEqual(result["parameter_count"], 34)
+        self.assertEqual(result["needs_enumeration_count"], 34)
         self.assertEqual(
             len(set(row["id"] for row in result["parameters"])),
-            31,
+            34,
         )
 
     def test_same_seed_is_reproducible_and_other_seed_changes_draws(self):
