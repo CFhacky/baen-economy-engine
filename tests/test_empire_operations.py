@@ -140,9 +140,19 @@ class EmpireOperationsTests(unittest.TestCase):
         self.assertTrue(any(item.startswith("sector:") for item in event_ids))
         self.assertIn("expense-control", event_ids)
         self.assertFalse(any("shock" in item or "migration" in item for item in event_ids))
-        self.assertIn(
+        self.assertNotIn(
             "Silversheen Warborn aluminum allocation",
             " ".join(result["unresolved"]),
+        )
+        military = physical["semantic_domains"]["military_contracts"]
+        military_known = {row["key"]: row for row in military["known"]}
+        self.assertEqual(
+            military_known["silversheen.warborn_aluminum_allocation_percent"]["value"],
+            20,
+        )
+        self.assertEqual(
+            military_known["silversheen.warborn_aluminum_allocation_tons_per_month"]["value"],
+            36,
         )
         known = physical["known_state"]
         census = {row["id"]: row for row in known["census"]}

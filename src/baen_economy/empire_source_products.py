@@ -118,7 +118,6 @@ PRODUCTION_LINE_SPECS: tuple[ProductionLineSpec, ...] = (
         unresolved_inputs=(
             "Hammer-1495 monthly cost after the 180 t/mo ruling is not restated",
             "bauxite-to-aluminum conversion coefficient is not source-backed",
-            "Warborn aluminum allocation is conflicted: 30 t/mo quantity vs 20% of current output",
         ),
     ),
     ProductionLineSpec(
