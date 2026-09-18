@@ -1053,7 +1053,7 @@
       }
     },
     "ncf_finance": {
-      "status": "PARTIAL_RECOVERED_CONFLICTED",
+      "status": "PARTIAL_RECONCILIATION_BUILT",
       "facts": [
         {
           "key": "ncf.active_loan_portfolio_gp",
@@ -1133,6 +1133,14 @@
           "unit": "annual percent",
           "authority": "SOURCE-DERIVED",
           "source": "Northern Crown Financial"
+        },
+        {
+          "key": "auction_one.opening_net_settled_gp",
+          "value": 0,
+          "unit": "gp in Auction One only",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/3c4e821484b08184af9bc4cba0339d5a",
+          "note": "Live run state is unplayed/date unseated; zero is not empire opening cash. 450000 gp protected target remains unreduced; earlier 410K realization excluded."
         }
       ],
       "calculated": [
@@ -1197,7 +1205,6 @@
           "resolution_method": "SOURCE_PRECEDENCE",
           "reason": "The newer parent Northern Crown Financial page is the controlling current source. The 23,250 gp branch roll-up is retained as a stale subordinate aggregation for audit traceability.",
           "rejected_for_current_use": [
-            22000,
             23250
           ]
         }
@@ -1225,7 +1232,9 @@
           "included_in_day7_named_loan_total": false,
           "reason": "Top-of-page ruling excludes this from ESAMT draws. Later ledger entries and repayments must be reconciled before Day-7 recognition."
         }
-      ]
+      ],
+      "reconciliation_runtime": "src/baen_economy/financial_close.py",
+      "settlement_evidence": "recovery/FINANCIAL_CLOSE_2026-09-18.json"
     },
     "land_bank": {
       "status": "USER_RULED_GEOMETRY_PARTIAL",
@@ -1519,7 +1528,8 @@
         "reserves",
         "interest income",
         "Crownworks financing"
-      ]
+      ],
+      "note": "Partial trial-balance and loan-register view implemented. 2.3M parent asset includes 30K named anchors and 2.27M unitemized. Unknown reserves/deposits/equity remain unknown, with no balancing plug. Auction One has 0 settled; 450K protected target remains."
     },
     {
       "id": "forgedeep-pop",
@@ -1554,7 +1564,8 @@
       "unlocks": [
         "land asset value",
         "development/rent model"
-      ]
+      ],
+      "note": "Ownership register separates legal title, beneficial ownership, operating equity and client trust interests. Geometry and parcel schedules remain unresolved; no appraisal is counted as cash."
     },
     {
       "id": "crownworks",

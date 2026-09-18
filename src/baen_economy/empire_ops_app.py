@@ -365,6 +365,23 @@ function renderBootstrap(data){
     '<details><summary>Internal vehicle capacity <span class="status good">INTERNAL ONLY</span></summary><div class="detail-body">Earthmover road/Jeep configuration: <strong>'+(tr.earthmover_jeep_road_configuration?"YES":"NO")+'</strong>. External sales: <strong>'+(tr.external_sales?"YES":"NO")+'</strong>.<br>Stonebearer payload: <strong>'+esc(tr.stonebearer_payload_tons||"—")+' short tons</strong>. Four vehicles at the comparison duty cycle give a <strong>'+esc(tr.brickworks_short_haul_capacity_tons_per_day_min||"—")+'–'+esc(tr.brickworks_short_haul_capacity_tons_per_day_max||"—")+' tons/day benchmark</strong>. Actual assignments include differing trip counts and a backup unit; this is not spare freight capacity. Ratified empire fleet: <strong>'+esc(tr.ratified_empire_fleet.Stonebearer)+' Stonebearers, '+esc(tr.ratified_empire_fleet.Groundshaper)+' Groundshapers, '+esc(tr.ratified_empire_fleet.Ironmaw)+' Ironmaws</strong>. Route capacity still requires assignments and road-mode specifications.<br>The separate Roadrider programme is a later design. Its speed and build rate do not define the current earthmovers.</div></details>'+
     '<details><summary>NCF lending <span class="status warn">PARTIAL BOOK</span></summary><div class="detail-body">Current active loan principal: <strong>'+money(ln.active_loan_principal_gp||0)+' gp</strong>. Current aggregate NCF revenue: <strong>'+money(ln.monthly_ncf_revenue_gp||0)+' gp/month</strong>. Existing rate anchors include <strong>8%</strong> secured facility lending and <strong>12%</strong> voyage finance. The engine deliberately does not infer an average portfolio APR or reserve ratio from these figures.</div></details>';
 
+  var fc=data.financial_close||{};
+  if(fc.loans){
+    var book=fc.loans, cash=fc.protected_liquidity;
+    el("corridor-finance").innerHTML+=
+      '<details open><summary>Financial close <span class="status warn">INCOMPLETE OPENING BOOK</span></summary><div class="detail-body">'+
+      '<div class="quick-grid"><div class="quick"><strong>'+money(book.named_principal_gp)+' gp</strong><span>named active loan anchors</span></div>'+
+      '<div class="quick"><strong>'+money(book.unitemized_principal_gp)+' gp</strong><span>unitemized within the 2.3M portfolio</span></div>'+
+      '<div class="quick"><strong>UNKNOWN</strong><span>exact opening treasury cash</span></div></div>'+
+      '<p>The parent portfolio already includes the named loans. The 30,000 gp Snowfall commitment is undrawn. Historical estate and Institut loans require repayment and overlap reconciliation before inclusion.</p>'+
+      '<div class="table-wrap"><table><thead><tr><th>Borrower</th><th>Principal</th><th>Annual rate</th></tr></thead><tbody>'+
+      book.active.map(function(r){return '<tr><td>'+esc(r.borrower)+'</td><td>'+money(r.principal_gp)+' gp</td><td>'+esc(r.annual_rate_percent)+'%</td></tr>';}).join('')+
+      '</tbody></table></div><p>NCF reserves, deposits, other liabilities and equity remain unknown. No balancing figure has been invented. Client ESAMT holdings are excluded from NCF-owned assets.</p>'+
+      '<p><strong>Auction One: '+money(cash.net_settled_gp)+' gp net settled; '+money(cash.remaining_gp)+' gp remains to the protected target.</strong> The sale is unplayed. Face values, reserve prices and receivables are not cash. The prior roughly 410,000 gp liquidation is excluded.</p>'+
+      '<p>Land register: titleholder, unique acreage, cost basis, appraisal, leases, mineral/timber/water rights, liens and realized gains remain to be reconciled. Appreciation does not fund operations.</p>'+
+      '<p>Accepted journal movements can be tracked exactly while an unknown opening balance keeps the closing balance unknown. This report does not authorize capital spending.</p></div></details>';
+  }
+
   var ec=data.empire_close||{};
   el("close-accepted").textContent=num(ec.accepted_values||0);
   el("close-unresolved").textContent=num(ec.unresolved_items||0);

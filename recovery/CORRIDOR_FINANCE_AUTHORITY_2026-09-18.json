@@ -205,11 +205,6 @@
   ],
   "unresolved": [
     {
-      "key": "transport.earthmover.total_current_fleet",
-      "authority": "UNRESOLVED",
-      "reason": "Current read-only retrieval confirms the 1495 Heavy Machinery fleet and a four-Stonebearer Brickworks allocation, but not yet the empire-wide Ironmaw/Stonebearer/Groundshaper count or monthly build rate."
-    },
-    {
       "key": "arterial.land_bank.net_titled_acres",
       "authority": "UNRESOLVED",
       "reason": "The USER-RULED corridor is 8 miles each side, but a consolidated titled-acreage figure needs unique segment geometry, overlap removal, and treatment of pre-existing urban/public/sovereign parcels. Gross corridor envelope can be calculated now."
@@ -285,5 +280,13 @@
       "applies_to_arterial": false,
       "roll_authorized": false
     }
-  }
+  },
+  "resolved_items": [
+    {
+      "key": "transport.earthmover.total_current_fleet",
+      "authority": "UNRESOLVED",
+      "reason": "Current read-only retrieval confirms the 1495 Heavy Machinery fleet and a four-Stonebearer Brickworks allocation, but not yet the empire-wide Ironmaw/Stonebearer/Groundshaper count or monthly build rate.",
+      "resolution": "User-ratified 10 Stonebearers, 5 Groundshapers, 5 Ironmaws; see MACHINERY_PROGRAMME_2026-09-18.json"
+    }
+  ]
 }
