@@ -23,7 +23,7 @@ from .empire_orchestrator import (
     render_empire_month,
     run_empire_month,
 )
-from .product_stack import ProductStackError, product_environment
+from .product_stack import ProductStackError, product_environment, source_product_environment
 from .empire_operations import (
     EmpireBusinessError,
     render_empire_business_report,
@@ -373,6 +373,19 @@ def build_parser() -> argparse.ArgumentParser:
         help="apply the explicit +3 Vara-active modifier for this preview",
     )
     run.add_argument("--format", choices=("json", "report"), default="report")
+    run.add_argument(
+        "--no-prepare-products",
+        dest="prepare_products",
+        action="store_false",
+        help="skip acquisition of Mesa/Unknown Horizons/FreeCol and report their runtime gates instead",
+    )
+    run.set_defaults(prepare_products=True)
+    run.add_argument(
+        "--product-root",
+        type=Path,
+        default=Path(".upstream/baen-source-products"),
+        help="persistent cache for upstream products that have source-backed actual-run inputs",
+    )
 
     sandbox = sub.add_parser(
         "sandbox",
@@ -429,12 +442,21 @@ def main(argv: Sequence[str] | None = None) -> int:
                     print(f"- {item['name']}: {item['boundary']} — {item['status']}")
             return 0
         if args.command == "run":
-            payload = run_empire_business_turn(
-                seed=args.seed,
-                month_label=args.month,
-                market_condition=args.market,
-                vara_active=args.vara_active,
-            )
+            if args.prepare_products:
+                with source_product_environment(args.product_root):
+                    payload = run_empire_business_turn(
+                        seed=args.seed,
+                        month_label=args.month,
+                        market_condition=args.market,
+                        vara_active=args.vara_active,
+                    )
+            else:
+                payload = run_empire_business_turn(
+                    seed=args.seed,
+                    month_label=args.month,
+                    market_condition=args.market,
+                    vara_active=args.vara_active,
+                )
             if args.format == "json":
                 _json(payload)
             else:
