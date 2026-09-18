@@ -779,8 +779,8 @@
         },
         {
           "key": "labor.empire_wide_occupation_pools",
-          "method": "POPULATION_AND_EMPLOYMENT_RECONCILIATION",
-          "reason": "Business employee counts exist, but settlement labour supply and wage schedules are not yet source-backed."
+          "method": "SOURCEBOOK_URBAN_LABOR_ANCHORS_PLUS_CAMPAIGN_EMPLOYMENT_RECONCILIATION",
+          "reason": "DMG II now provides a sourcebook urban-guild anchor (~10% active guild members and occupation mix), but Baen settlement labor still requires current population and known employer rosters; the sourcebook anchor cannot replace campaign employment."
         },
         {
           "key": "market.opening_prices",
@@ -794,8 +794,8 @@
         },
         {
           "key": "settlement.social_class_shares_and_consumption_baskets",
-          "method": "SOURCEBOOK_UPKEEP_ANCHORS_PLUS_DEMOGRAPHIC_MODEL",
-          "reason": "D&D 3.5 upkeep/laborer anchors now exist, but they do not by themselves define Baen settlement class shares or physical food baskets."
+          "method": "SOURCEBOOK_UPKEEP_FOOD_AND_DISTRICT_ANCHORS_PLUS_RATIFIED_DEMOGRAPHIC_MODEL",
+          "reason": "Sourcebook upkeep, food-tier, guild, and district-structure anchors now exist. District shares are not population shares, so household class shares and physical food baskets still require a ratified demographic model."
         },
         {
           "key": "migration_rates",
@@ -958,6 +958,11 @@
       "id": "2026-09-18-sourcebook-economic-constants",
       "authority": "UPSTREAM-ADOPTED",
       "note": "Added book-RAW economic/transport anchors from New Path Engine and the user Library, including Forgotten Realms Silver Marches flour/salt values, D&D 3.5 upkeep, GURPS Teamster/draft-horse references, and WFRP road-speed/income comparators. None are promoted to campaign current state automatically."
+    },
+    {
+      "id": "2026-09-18-sourcebook-demography",
+      "authority": "UPSTREAM-ADOPTED",
+      "note": "Added DMG II medieval-urban guild participation/occupation mix, DMG city social-class district structure, and WFRP food-tier comparators. All are constraints/reference anchors, not automatic Baen demographic state."
     }
   ],
   "sourcebook_routing": {

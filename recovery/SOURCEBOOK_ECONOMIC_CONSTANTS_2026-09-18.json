@@ -222,6 +222,131 @@
         }
       ],
       "note": "Relative occupational-income comparator only. No WFRP-gc to Faerun-gp conversion is adopted."
+    },
+    {
+      "id": "dmg2-urban-labor",
+      "system": "D&D 3.5e",
+      "book": "Dungeon Master's Guide II",
+      "citation": "Mercantile Guilds and Occupations, PDF pp. 91–94",
+      "library_ref": "turn476file0 / turn476file2 / turn476file4",
+      "facts": [
+        {
+          "key": "dnd35.city.active_guild_members_fraction_approx",
+          "value": 0.1,
+          "unit": "fraction of city population"
+        },
+        {
+          "key": "dnd35.guild_occupation.artisan_fraction",
+          "value": 0.04,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.construction_fraction",
+          "value": 0.06,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.craftsman_fraction",
+          "value": 0.2,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.food_trade_fraction",
+          "value": 0.12,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.garment_trade_fraction",
+          "value": 0.25,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.labor_fraction",
+          "value": 0.13,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.merchant_fraction",
+          "value": 0.05,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.profession_fraction",
+          "value": 0.05,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.service_fraction",
+          "value": 0.1,
+          "unit": "fraction of active guild members"
+        }
+      ],
+      "note": "This is a medieval-style D&D urban guild structure, not a total working-age population model. Proprietor counts may exclude apprentices, employees, and family labor."
+    },
+    {
+      "id": "dmg35-city-social-class-districts",
+      "system": "D&D 3.5e",
+      "book": "Dungeon Master's Guide",
+      "citation": "City districts / social class and neighborhoods",
+      "library_ref": "turn476file1 / turn476file5 / turn476file9",
+      "facts": [
+        {
+          "key": "dnd35.small_city.upper_class_district_fraction",
+          "value": 0.1,
+          "unit": "fraction of districts"
+        },
+        {
+          "key": "dnd35.small_city.middle_class_district_fraction",
+          "value": 0.3,
+          "unit": "fraction of districts"
+        },
+        {
+          "key": "dnd35.small_city.lower_class_district_fraction",
+          "value": 0.6,
+          "unit": "fraction of districts"
+        },
+        {
+          "key": "dnd35.large_city.upper_class_district_fraction",
+          "value": 0.15,
+          "unit": "fraction of districts"
+        },
+        {
+          "key": "dnd35.large_city.middle_class_district_fraction",
+          "value": 0.3,
+          "unit": "fraction of districts"
+        },
+        {
+          "key": "dnd35.large_city.lower_class_district_fraction",
+          "value": 0.55,
+          "unit": "fraction of districts"
+        }
+      ],
+      "note": "District shares are not population shares. Do not use them directly as household class shares without a separate density model."
+    },
+    {
+      "id": "old-world-food-day",
+      "system": "WFRP 2e",
+      "book": "Old World Armoury",
+      "citation": "Table AP–10: Food & Drink",
+      "library_ref": "turn477file5",
+      "facts": [
+        {
+          "key": "wfrp.food_per_day.poor_cost_p",
+          "value": 5,
+          "unit": "p/day"
+        },
+        {
+          "key": "wfrp.food_per_day.average_cost_p",
+          "value": 10,
+          "unit": "p/day"
+        },
+        {
+          "key": "wfrp.food_per_day.good_cost_p",
+          "value": 18,
+          "unit": "p/day"
+        }
+      ],
+      "note": "Relative food-cost tier comparator only. No p/s/gc to Faerun gp conversion is adopted."
     }
   ],
   "model_guardrails": [
