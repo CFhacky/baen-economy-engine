@@ -128,11 +128,11 @@ class EmpireOperationsTests(unittest.TestCase):
         self.assertIn(products["mesa"]["status"], {"USED_IN_RUN", "UNAVAILABLE"})
         self.assertIn(products["freecol"]["status"], {"USED_IN_RUN", "UNAVAILABLE"})
         self.assertIn(products["unknown_horizons"]["status"], {"USED_IN_RUN", "UNAVAILABLE"})
-        self.assertEqual(products["openttd"]["status"], "NOT_INVOKED")
+        self.assertEqual(products["openttd"]["status"], "MAPPED_BLOCKED")
         self.assertEqual(products["veloren"]["status"], "NOT_INVOKED")
         self.assertEqual(products["brunnfeld"]["status"], "NOT_INVOKED")
         self.assertIn(
-            "route freight capacities",
+            "unit bridge",
             products["openttd"]["reason"],
         )
         mesa = products["mesa"]
@@ -154,6 +154,15 @@ class EmpireOperationsTests(unittest.TestCase):
         self.assertTrue(
             all(row["physical_output"] is None for row in known["food_financials"])
         )
+        domains = physical["semantic_domains"]
+        self.assertEqual(domains["finance_banking"]["status"], "PARTIAL_CONFLICT")
+        self.assertEqual(
+            domains["infrastructure_logistics"]["status"],
+            "PARTIAL_SOURCE_BACKED",
+        )
+        self.assertEqual(domains["population_labour"]["status"], "PARTIAL_SOURCE_BACKED")
+        self.assertEqual(domains["construction_capital"]["status"], "PARTIAL_SOURCE_BACKED")
+        self.assertEqual(domains["military_contracts"]["status"], "PARTIAL_SOURCE_BACKED")
 
     def test_report_is_a_vara_style_review_surface(self):
         result = run_empire_business_turn(seed="report")
@@ -171,6 +180,10 @@ class EmpireOperationsTests(unittest.TestCase):
         self.assertIn("Food financials (no physical volumes)", report)
         self.assertIn("Arterial route register", report)
         self.assertIn("Entity labor snapshot", report)
+        self.assertIn("Source → product semantic domains", report)
+        self.assertIn("Finance / Banking", report)
+        self.assertIn("ncf.active_loans_gp", report)
+        self.assertIn("warborn.contract.priority_legionnaire_units", report)
         self.assertIn("Forgedeep", report)
 
 
