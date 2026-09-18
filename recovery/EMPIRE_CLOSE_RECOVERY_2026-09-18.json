@@ -115,6 +115,48 @@
           "authority": "SOURCE-DERIVED",
           "source": "Baen Northern Industrial Yards + Baen Brickworks",
           "note": "Northern Industrial Yards' Stonebearer Maintenance Depot explicitly lists 4 heavy haulers and says the fleet is shared with Brickworks. This reconciles to the four BW-1–BW-4 Brickworks Stonebearers; do not double-count as eight."
+        },
+        {
+          "key": "heavy_machinery.production_parent",
+          "value": "Gauntlgrym Tools Partnership",
+          "authority": "SOURCE-DERIVED",
+          "source": "Gauntlgrym Tools Partnership; Baen Light Vehicle Program",
+          "note": "The light-vehicle program explicitly places new vehicle assembly beside the existing Stonebearer line under Gauntlgrym Tools Partnership. This establishes a real heavy-machine production line rather than a hypothetical future factory."
+        },
+        {
+          "key": "gauntlgrym_tools.operational_since",
+          "value": "Kythorn 1494 DR",
+          "authority": "SOURCE-DERIVED",
+          "source": "Gauntlgrym Tools Partnership",
+          "note": "The 50/50 JV is operational by Kythorn 1494 and supplies forge infrastructure, senior smiths, manufacturing refinement, testing and quality discipline."
+        },
+        {
+          "key": "heavy_machinery.stonebearer_line_exists",
+          "value": true,
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Light Vehicle Program",
+          "note": "The source explicitly says Roadrider assembly is a new line beside the Stonebearer line, sharing fixtures where geometry allows."
+        },
+        {
+          "key": "forgedeep.heavy_machinery_workshops_exist",
+          "value": true,
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep",
+          "note": "Forgedeep's Industrial Level explicitly contains heavy machinery workshops."
+        },
+        {
+          "key": "workshop7.gauntlgrym_forgedeep_span",
+          "value": true,
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep",
+          "note": "The pre-campaign Gauntlgrym Tool Partnership event states Workshop 7 spans Gauntlgrym and extends beneath Forgedeep; this supports R&D/precision integration but does not by itself define mass-production throughput."
+        },
+        {
+          "key": "heavy_machinery.1495_construction_engine",
+          "value": true,
+          "authority": "SOURCE-DERIVED",
+          "source": "Arik Bridge Plan — Early 1495 → Uktar 1498 DR",
+          "note": "The 1495 bridge explicitly names the Ironmaw/Stonebearer/Groundshaper fleet as the year's mechanical construction engine for early canal work, Longsaddle terraforming and Athenaeum groundwork."
         }
       ],
       "unresolved": [
@@ -124,9 +166,19 @@
           "reason": "The shared Neverwinter Stonebearer fleet is now fixed at four, but no source gives empire-wide Ironmaw/Stonebearer/Groundshaper totals. A physical count alone cannot produce an unspecified hidden fact; recover production history first, then precommit a bounded generation method for only the residual fleet."
         },
         {
+          "key": "empire.heavy_machinery.current_roster",
+          "method": "WORKLOAD_BACKSOLVE_THEN_BOUND_RESIDUAL",
+          "reason": "The sources prove an operating 1495 fleet and four named/shared Stonebearers, but never state the empire-wide Ironmaw/Stonebearer/Groundshaper count. Recover project workload and machine performance first; only residual unrecorded fleet state may be generated."
+        },
+        {
           "key": "empire.heavy_machinery.current_build_rate",
-          "method": "RECOVER",
-          "reason": "Roadrider future production figures are not the existing earthmover build rate."
+          "method": "DERIVE_FROM_RATIFIED_FLEET_AND_PRODUCTION_WINDOW",
+          "reason": "An existing Stonebearer production line is source-established, but no monthly Ironmaw/Stonebearer/Groundshaper output rate was authored. After current fleet requirement and earliest production window are bounded, derive the minimum/credible ramp rather than inventing a rate."
+        },
+        {
+          "key": "heavy_machinery.ironmaw_groundshaper_performance",
+          "method": "RECOVER_MACHINE_DOCUMENT_OR_TECHNICAL_DESIGN",
+          "reason": "Stonebearer haul performance is sourced; equivalent Ironmaw/Groundshaper work-rate specifications have not yet been recovered. If absent from the actual machine document, they must be designed once under the evidence-first protocol."
         }
       ]
     },
@@ -168,7 +220,8 @@
           "value": 2,
           "unit": "barges",
           "authority": "SOURCE-DERIVED",
-          "source": "Baen Empire Complete Quarry Network"
+          "source": "Baen Empire Complete Quarry Network",
+          "note": "Two barges are operationally dedicated to Western Limestone. USER-RULED boundary: dedicated service is not evidence of Baen legal ownership."
         },
         {
           "key": "western_limestone.luskan_frequency",
@@ -350,13 +403,20 @@
           "unit": "minutes",
           "authority": "SOURCE-DERIVED",
           "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "empire.owned_barge_fleet_explicitly_established",
+          "value": false,
+          "authority": "USER-RULED",
+          "source": "User ruling 2026-09-18",
+          "note": "No Baen-owned barge fleet has been established in campaign canon. Existing dedicated or planned barges must not be converted into owned fleet assets without a separate title/acquisition fact."
         }
       ],
       "unresolved": [
         {
           "key": "hunding.current_barge_fleet",
-          "method": "RECOVER_PHYSICAL_COUNT",
-          "reason": "Operational waterway status does not state a consolidated current barge fleet."
+          "method": "SEPARATE_OWNERSHIP_FROM_CONTRACTED_DEDICATED_CAPACITY",
+          "reason": "No Baen-owned fleet is currently established. Source mentions dedicated Western Limestone barges and standard Hunding vessel classes, but legal ownership and consolidated available fleet remain unresolved."
         },
         {
           "key": "hunding.current_bulk_capacity",
@@ -826,15 +886,16 @@
   "action_queue": [
     {
       "id": "fleet-roster",
-      "label": "Recover machinery production history, then resolve only the residual empire fleet",
-      "method": "RECOVER_THEN_BOUNDED_LATENT_STATE",
+      "label": "Canonize 1495 Heavy Machinery fleet and production ramp",
+      "method": "WORKLOAD_BACKSOLVE_THEN_BOUND_RESIDUAL",
       "user_action_required": false,
+      "note": "Use existing Stonebearer line + 1495 construction workload; recover Ironmaw/Groundshaper specs, solve minimum fleet, then derive the production ramp. Ask Chad only if a machine specification or manufacturing-architecture choice is genuinely absent.",
       "unlocks": [
         "road transport capacity",
         "construction capacity",
-        "machine allocation"
-      ],
-      "note": "Neverwinter is now fixed at four shared Stonebearers; do not double-count Brickworks and Industrial Yards."
+        "machine allocation",
+        "heavy-machinery production rate"
+      ]
     },
     {
       "id": "wagon-register",
@@ -977,6 +1038,11 @@
       "id": "2026-09-18-neverwinter-stonebearers",
       "authority": "SOURCE-DERIVED",
       "note": "Reconciled the Northern Industrial Yards maintenance depot with Brickworks: both refer to the same four Stonebearers. The engine now treats Neverwinter's shared fleet as four, not eight, while leaving the empire-wide residual fleet unresolved."
+    },
+    {
+      "id": "2026-09-18-heavy-machinery-source-recovery",
+      "authority": "SOURCE-DERIVED + USER-RULED",
+      "note": "Recovered an existing Stonebearer production line under Gauntlgrym Tools Partnership, Forgedeep heavy-machinery workshops, and Workshop 7's Gauntlgrym/Forgedeep span. Current total fleet and heavy-machine monthly output were never authored and will be workload-backsolved rather than guessed. User confirmed no Baen-owned barge fleet has been explicitly established."
     }
   ],
   "sourcebook_routing": {

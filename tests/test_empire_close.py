@@ -106,6 +106,24 @@ class EmpireCloseTests(unittest.TestCase):
             for row in lane["unresolved"]
         ))
 
+    def test_heavy_machinery_line_exists_but_rate_and_total_fleet_remain_uninvented(self):
+        result=close_status()
+        lane=result["lanes"]["heavy_machinery"]
+        facts={row["key"]:row for row in lane["facts"]}
+        self.assertEqual(facts["heavy_machinery.production_parent"]["value"],"Gauntlgrym Tools Partnership")
+        self.assertTrue(facts["heavy_machinery.stonebearer_line_exists"]["value"])
+        self.assertTrue(facts["forgedeep.heavy_machinery_workshops_exist"]["value"])
+        methods={row["key"]:row["method"] for row in lane["unresolved"]}
+        self.assertEqual(methods["empire.heavy_machinery.current_roster"],"WORKLOAD_BACKSOLVE_THEN_BOUND_RESIDUAL")
+        self.assertEqual(methods["empire.heavy_machinery.current_build_rate"],"DERIVE_FROM_RATIFIED_FLEET_AND_PRODUCTION_WINDOW")
+
+    def test_dedicated_barges_are_not_promoted_to_baen_owned_fleet(self):
+        result=close_status()
+        canal=result["lanes"]["canal_waterway"]
+        facts={row["key"]:row for row in canal["facts"]}
+        self.assertFalse(facts["empire.owned_barge_fleet_explicitly_established"]["value"])
+        self.assertEqual(facts["empire.owned_barge_fleet_explicitly_established"]["authority"],"USER-RULED")
+
     def test_phase_one_is_complete_and_remaining_system_gaps_are_classified(self):
         result=close_status()
         phases={row["id"]:row for row in result["phase_progress"]}
