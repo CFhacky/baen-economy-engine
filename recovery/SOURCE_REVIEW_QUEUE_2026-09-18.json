@@ -7,16 +7,20 @@
   "source_execution_snapshot_hash": "67d8e69b9e883d40b652a0b0a71f59883e205bc07445daa78de76279c0538160",
   "retained_core_records": 1620,
   "semantic_status_counts": {
-    "UNKNOWN": 1607,
-    "SOURCE_MAPPED": 9,
+    "UNKNOWN": 1604,
+    "SOURCE_MAPPED": 10,
     "SUPERSEDED": 2,
-    "CONFLICT": 2
+    "CONFLICT": 2,
+    "CONTEXT_ONLY": 2
   },
   "body_review_status_counts": {
-    "UNMEASURED": 1620
+    "UNMEASURED": 1616,
+    "REVIEWED": 4
   },
   "review_disposition_counts": {
-    "UNREVIEWED": 1620
+    "UNREVIEWED": 1616,
+    "ECONOMIC_INPUT": 2,
+    "ECONOMIC_CONTEXT": 2
   },
   "completion_rule": "Every row must have a body_review_status of REVIEWED or NO_BODY_NOT_APPLICABLE, a non-null review_disposition, and driver_owners for ECONOMIC_INPUT dispositions.",
   "records": [
@@ -385,14 +389,29 @@
       "source_url": "https://app.notion.com/321e821484b0810187d5cfa2a74f31f0",
       "census_hash": "fdf8792bd30343cd",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-12T23:45:57.592Z",
+      "body_hash": "c6a18a8d00fcc7ff88f24ae1137f136f3f42449be60523fa0baec7ed382f0601",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "business_finance",
+        "population_labour",
+        "infrastructure_logistics",
+        "settlements"
+      ],
+      "driver_owners": [
+        "business_financial_flows",
+        "population",
+        "labor_supply",
+        "trade_routes"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Two of five villages are complete: Neverwinter-Luskan approximately 100 population and Neverwinter-Gauntlgrym approximately 80 population; three other villages remain planned.",
+        "Source also records 12 employees, 1333 gp/month revenue and 800 gp/month cost.",
+        "Page state is last updated Eleint 1494; these facts are source inputs with temporal provenance, not permission to infer Hammer-1495 growth."
+      ]
     },
     {
       "stable_source_id": "notion:page:321e8214-84b0-8101-9287-cb7fdf65e5a9",
@@ -1168,13 +1187,28 @@
       "census_hash": "e0912e0ffb0d2e92",
       "census_coverage": "UNKNOWN",
       "semantic_status": "SOURCE_MAPPED",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-12T20:55:22.334Z",
+      "body_hash": "e2ebf10e36b469064fdeba4330a5e191d2d8024c33f175d8dd1b547854f3eefa",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "infrastructure_logistics",
+        "business_finance",
+        "population_labour",
+        "construction_capital"
+      ],
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Day-7-relevant road operating facts include 500+ operational miles, 150 staff, 22000 gp/month revenue, 19360 gp/month cost, and an approximate route table.",
+        "The body states 1200+ arterial acres owned, but this does not resolve unique titled acreage, beneficial ownership, cost basis, ESAMT interests, or Hunding interests.",
+        "Suzail/Baldur's Gate extensions and canal-integration revenue are incomplete/projected and are not admitted as current route capacity.",
+        "Route distances are source approximations and do not silently override more specific source mappings."
+      ]
     },
     {
       "stable_source_id": "notion:page:321e8214-84b0-81cf-b8ef-c87bd6feaaf7",
@@ -4380,14 +4414,22 @@
       "source_url": "https://app.notion.com/34ce821484b081efb974fa3f64c20be8",
       "census_hash": "f57dae35fe34de9d",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-13T10:38:48.479Z",
+      "body_hash": "f9b00554b47aa03d86e086102d0f24003e93d567d49ae11f9a829920cc0b5892",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "economic_domains": [
+        "infrastructure_logistics",
+        "crystal_network_mechanics"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Living tracker says Last Updated Kythorn 1494 DR. RL/BAR/NCM/SAS/TRM/NDB values are therefore historical relative to Day 7 Hammer 1495 unless separately bridged.",
+        "The later-added Deep Road cross-reference describes Alturiak/Tarsakh 1495 events, which are future relative to the campaign boundary and are excluded from Day-7 state.",
+        "Historical crystal-segment distances can corroborate infrastructure context but do not establish current freight capacity."
+      ]
     },
     {
       "stable_source_id": "notion:page:34ce8214-84b0-81f1-b228-e214adb50c0b",
@@ -5298,14 +5340,24 @@
       "source_url": "https://app.notion.com/37de821484b081549c6bd10986768d97",
       "census_hash": "d2267961af3ba61e",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-07-24T20:24:35.687Z",
+      "body_hash": "626d4fbac7da68dc8488d7356ddc37c8879b9a871c237d8fe60ddb0762dcaca9",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "economic_domains": [
+        "business_finance",
+        "population_labour",
+        "construction_capital",
+        "land_housing"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "The page explicitly states Canonical Property Holdings — Current at Hammer 1496 DR and that all figures below are post-bridge canon; its current portfolio totals are excluded from Day 7 Hammer 1495.",
+        "The page contains retrospective 1494/1495 events and a Hammer-1495 revenue growth-line point, but those later-consolidated facts require contemporaneous corroboration before admission as Day-7 opening state.",
+        "Hammer-1496 Longsaddle conveyance/freehold statements and other later ownership actions cannot resolve Day-7 ESAMT, Arterial, or Hunding title/equity."
+      ]
     },
     {
       "stable_source_id": "notion:page:37de8214-84b0-81d1-bf05-cd5b4111d5bc",

@@ -80,6 +80,19 @@ ALLOWED_REVIEW_DISPOSITIONS = frozenset({
     "NO_BODY_NOT_APPLICABLE",
 })
 
+DISPOSITION_SEMANTIC_STATUS = {
+    "ECONOMIC_INPUT": "SOURCE_MAPPED",
+    "ECONOMIC_CONTEXT": "CONTEXT_ONLY",
+    "NON_ECONOMIC": "CONTEXT_ONLY",
+    "HISTORICAL_ONLY": "HISTORICAL",
+    "FUTURE_ONLY": "FUTURE",
+    "SUPERSEDED": "SUPERSEDED",
+    "CONFLICT": "CONFLICT",
+    "MISSING_DATA": "MISSING_DATA",
+    "MISSING_MECHANICS": "MISSING_MECHANICS",
+    "NO_BODY_NOT_APPLICABLE": "CONTEXT_ONLY",
+}
+
 BODY_COMPLETE_STATUSES = frozenset({"REVIEWED", "NO_BODY_NOT_APPLICABLE"})
 
 
@@ -200,8 +213,6 @@ def completeness_report(
     mapped_ids = _mapped_source_ids(semantic)
     if len(mapped_ids) > baseline_unknown:
         raise CompletenessError("semantic mapped IDs exceed baseline UNKNOWN population")
-    current_unknown = baseline_unknown - len(mapped_ids)
-    semantic_non_unknown = core - current_unknown
 
     execution_core = _execution_core_records(execution)
     if len(execution_core) != core:
@@ -249,6 +260,21 @@ def completeness_report(
         normalized = _normalized_source_id(str(source.get("id", stable)))
         if expected_status == "UNKNOWN" and normalized in mapped_ids:
             expected_status = "SOURCE_MAPPED"
+
+        # A completed body review is allowed to advance an UNKNOWN/static census
+        # status into an explicit semantic disposition. This is the finite path
+        # from acquisition to proven review; it is not a simulation result.
+        disposition = queue_row.get("review_disposition")
+        body_status = queue_row.get("body_review_status")
+        if disposition is not None:
+            if body_status not in BODY_COMPLETE_STATUSES:
+                raise CompletenessError(
+                    f"semantic disposition without completed body review: {stable}"
+                )
+            if disposition not in DISPOSITION_SEMANTIC_STATUS:
+                raise CompletenessError(f"invalid source review disposition {disposition!r}")
+            expected_status = DISPOSITION_SEMANTIC_STATUS[disposition]
+
         expected_semantic_counts[str(expected_status)] += 1
         if queue_row.get("semantic_status") != expected_status:
             semantic_mismatches.append(stable)
@@ -258,8 +284,9 @@ def completeness_report(
         raise CompletenessError(
             f"review queue semantic status drifted for {len(semantic_mismatches)} records"
         )
-    if expected_semantic_counts.get("UNKNOWN", 0) != current_unknown:
-        raise CompletenessError("queue UNKNOWN count disagrees with semantic overlay")
+
+    current_unknown = expected_semantic_counts.get("UNKNOWN", 0)
+    semantic_non_unknown = core - current_unknown
 
     body_target = body.get("retained_core_target")
     if body_target != core:
@@ -268,11 +295,36 @@ def completeness_report(
     body_status_counts = Counter(str(row.get("body_review_status")) for row in queue_records)
     body_reviewed = sum(body_status_counts.get(status, 0) for status in BODY_COMPLETE_STATUSES)
     body_unread = core - body_reviewed
+    hashed_body_receipts = 0
+    for stable, row in queue_by_id.items():
+        body_status = row.get("body_review_status")
+        if body_status == "REVIEWED":
+            revision = row.get("body_revision")
+            digest = row.get("body_hash")
+            if not isinstance(revision, str) or not revision:
+                raise CompletenessError(f"reviewed source lacks body revision: {stable}")
+            if (
+                not isinstance(digest, str)
+                or len(digest) != 64
+                or any(ch not in "0123456789abcdef" for ch in digest)
+            ):
+                raise CompletenessError(f"reviewed source lacks SHA-256 body hash: {stable}")
+            hashed_body_receipts += 1
+        elif body_status == "NO_BODY_NOT_APPLICABLE":
+            if row.get("body_hash") is not None:
+                raise CompletenessError(f"no-body source unexpectedly has body hash: {stable}")
+        elif body_status != "UNMEASURED":
+            raise CompletenessError(f"unknown body review status {body_status!r}")
+
+    if body.get("reviewed_retained_core") != body_reviewed:
+        raise CompletenessError("body review receipt reviewed count disagrees with queue")
+    if body.get("unread_retained_core") != body_unread:
+        raise CompletenessError("body review receipt unread count disagrees with queue")
+    if body.get("hashed_body_receipts") != hashed_body_receipts:
+        raise CompletenessError("body review receipt hash count disagrees with queue")
+
     body_review_complete = (
         body.get("tracking_status") == "COMPLETE"
-        and body.get("reviewed_retained_core") == core
-        and body.get("unread_retained_core") == 0
-        and body.get("hashed_body_receipts") == core
         and body_reviewed == core
         and body_unread == 0
     )
@@ -284,8 +336,12 @@ def completeness_report(
     for stable, row in queue_by_id.items():
         disposition = row.get("review_disposition")
         if disposition is None:
+            if row.get("body_review_status") in BODY_COMPLETE_STATUSES:
+                raise CompletenessError(f"completed body review lacks disposition: {stable}")
             undispositioned_records.append(stable)
             continue
+        if row.get("body_review_status") not in BODY_COMPLETE_STATUSES:
+            raise CompletenessError(f"uncompleted body review has disposition: {stable}")
         if disposition not in ALLOWED_REVIEW_DISPOSITIONS:
             raise CompletenessError(f"invalid source review disposition {disposition!r}")
         disposition_counts[disposition] += 1

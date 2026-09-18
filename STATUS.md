@@ -106,13 +106,13 @@ The authoritative operator check is `python tools/check_completeness.py`, backed
 Current proof state:
 
 - collection acquisition: **PASS**;
-- retained-core semantic disposition: **FAIL — 13/1,620 dispositioned, 1,607 UNKNOWN** after the current 9-record semantic overlay;
-- exhaustive private source-body review: **FAIL / NOT YET EXHAUSTIVELY MEASURED**;
+- retained-core semantic status: **FAIL — 16/1,620 non-UNKNOWN, 1,604 UNKNOWN** after the current overlay plus body-review batch 001;
+- exhaustive private source-body review: **IN PROGRESS — 4/1,620 REVIEWED, 1,616 UNREAD**;
 - 16-driver registry presence/disposition: **PASS as an inventory/control surface, not as execution readiness**;
 - coverage claim: **CLOSED**;
 - canonical execution readiness: **CLOSED**.
 
-Private GM prose does not need to be copied into this public repository. Exhaustive body review can be proven with stable source IDs, revision timestamps, body hashes, and explicit dispositions. Selective source requeries do not count as exhaustive coverage.
+Private GM prose does not need to be copied into this public repository. Exhaustive body review can be proven with stable source IDs, revision timestamps, body hashes, and explicit dispositions. Selective source requeries do not count as exhaustive coverage. Reviewed bodies are recorded in deterministic batch receipts with revision timestamps and SHA-256 digests.
 
 ## Immediate development queue
 

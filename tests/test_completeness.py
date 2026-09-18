@@ -25,24 +25,28 @@ class CompletenessTests(unittest.TestCase):
         self.assertEqual(queue["semantic_status_mismatches"], 0)
 
         self.assertFalse(semantic["pass"])
-        self.assertEqual(semantic["non_unknown"], 13)
-        self.assertEqual(semantic["unknown"], 1607)
+        self.assertEqual(semantic["non_unknown"], 16)
+        self.assertEqual(semantic["unknown"], 1604)
         self.assertEqual(semantic["new_source_mapped_ids"], 9)
         self.assertEqual(
             semantic["status_counts"],
-            {"CONFLICT": 2, "SOURCE_MAPPED": 9, "SUPERSEDED": 2, "UNKNOWN": 1607},
+            {"CONFLICT": 2, "CONTEXT_ONLY": 2, "SOURCE_MAPPED": 10, "SUPERSEDED": 2, "UNKNOWN": 1604},
         )
 
         self.assertFalse(bodies["pass"])
-        self.assertEqual(bodies["tracking_status"], "QUEUE_MATERIALIZED_REVIEW_NOT_STARTED")
-        self.assertEqual(bodies["reviewed_retained_core"], 0)
-        self.assertEqual(bodies["unread_retained_core"], 1620)
-        self.assertEqual(bodies["body_status_counts"], {"UNMEASURED": 1620})
+        self.assertEqual(bodies["tracking_status"], "IN_PROGRESS")
+        self.assertEqual(bodies["reviewed_retained_core"], 4)
+        self.assertEqual(bodies["unread_retained_core"], 1616)
+        self.assertEqual(bodies["body_status_counts"], {"REVIEWED": 4, "UNMEASURED": 1616})
         self.assertEqual(bodies["historical_checkpoint"]["page_body_acquired_false"], 372)
 
         self.assertFalse(dispositions["pass"])
-        self.assertEqual(dispositions["dispositioned"], 0)
-        self.assertEqual(dispositions["undispositioned"], 1620)
+        self.assertEqual(dispositions["dispositioned"], 4)
+        self.assertEqual(dispositions["undispositioned"], 1616)
+        self.assertEqual(
+            dispositions["disposition_counts"],
+            {"ECONOMIC_CONTEXT": 2, "ECONOMIC_INPUT": 2},
+        )
 
         self.assertFalse(report["coverage_claim_allowed"])
         self.assertFalse(report["canonical_execution_ready"])

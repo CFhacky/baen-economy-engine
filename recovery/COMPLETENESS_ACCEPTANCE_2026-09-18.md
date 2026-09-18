@@ -18,10 +18,10 @@ At the current branch state:
   - 1,627 stored records including 7 contextual authority records;
   - 0 identified core records left unmaterialized.
 - source-record semantic disposition: **FAIL**
-  - 13 / 1,620 retained core records are currently non-UNKNOWN after the current semantic overlay;
-  - **1,607 remain UNKNOWN**;
+  - 16 / 1,620 retained core records are currently non-UNKNOWN after semantic overlay plus completed body-review batch 001;
+  - **1,604 remain UNKNOWN**;
   - the 9 current-live semantic mappings in `SOURCE_SEMANTIC_EVIDENCE_2026-09-18.json` are counted only because that artifact explicitly says they move from UNKNOWN.
-- exhaustive source-body review: **FAIL / NOT YET MEASURED**
+- exhaustive source-body review: **IN PROGRESS / 4 OF 1,620 REVIEWED**
   - the standalone repo intentionally does not publish the private detailed Registry body snapshot;
   - no checked-in receipt currently proves that all 1,620 retained source bodies were read and dispositioned;
   - selective live-source requeries do not count as exhaustive coverage.
@@ -132,3 +132,15 @@ This means future remembered facts become either:
 - evidence that a source changed after its recorded revision/hash, which is a source-drift event.
 
 They are no longer an unbounded instruction to “search again and hope.”
+
+
+## Batch 001 — Arterial / registry body review
+
+The first fixed-queue batch is persisted as `recovery/SOURCE_REVIEW_BATCH_001_2026-09-18.json`.
+
+- 4 source bodies were fetched read-only from live Notion;
+- all 4 were complete (`truncated=false`, zero unknown blocks);
+- all 4 have revision timestamps and SHA-256 body digests;
+- Arterial Road Network and Arterial Township Development are `ECONOMIC_INPUT`;
+- Arterial Road Crystal Network and the Hammer-1496 Housing Portfolio are `ECONOMIC_CONTEXT` because their body state is temporally unsafe for Day-7 opening-state use;
+- UNKNOWN fell from 1,607 to **1,604** without inventing a value.
