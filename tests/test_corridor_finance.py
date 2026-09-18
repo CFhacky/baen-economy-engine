@@ -1,0 +1,38 @@
+from __future__ import annotations
+
+import unittest
+
+from baen_economy.corridor_finance import corridor_finance_snapshot
+
+class CorridorFinanceTests(unittest.TestCase):
+    def test_user_ruled_corridor_math_is_not_mistaken_for_net_title(self):
+        snap=corridor_finance_snapshot()
+        land=snap["land_bank"]
+        self.assertEqual(land["half_width_each_side_miles"],"8")
+        self.assertEqual(land["full_corridor_width_miles"],"16")
+        self.assertEqual(land["operational_network_miles_lower_bound"],"500")
+        self.assertEqual(land["gross_corridor_square_miles_lower_bound"],"8000")
+        self.assertEqual(land["gross_corridor_acres_lower_bound"],"5120000")
+        self.assertTrue(land["not_actual_titled_acreage"])
+
+    def test_stonebearer_short_haul_capacity_uses_only_sourced_four_unit_allocation(self):
+        snap=corridor_finance_snapshot()
+        transport=snap["internal_transport"]
+        self.assertFalse(transport["external_sales"])
+        self.assertTrue(transport["earthmover_jeep_road_configuration"])
+        self.assertEqual(transport["stonebearer_payload_tons"],"15")
+        self.assertEqual(transport["brickworks_allocated_stonebearers"],4)
+        self.assertEqual(transport["brickworks_short_haul_capacity_tons_per_day_min"],"360")
+        self.assertEqual(transport["brickworks_short_haul_capacity_tons_per_day_max"],"420")
+        self.assertIn("Empire-wide",transport["unresolved"])
+
+    def test_ncf_portfolio_keeps_rate_anchors_without_fake_average_apr(self):
+        snap=corridor_finance_snapshot()
+        lending=snap["ncf_lending"]
+        self.assertEqual(lending["active_loan_principal_gp"],2300000)
+        self.assertEqual(lending["monthly_ncf_revenue_gp"],22000)
+        self.assertEqual([r["annual_rate_pct"] for r in lending["rate_anchors"]],[8,12])
+        self.assertTrue(lending["do_not_infer_average_apr"])
+
+if __name__=="__main__":
+    unittest.main()

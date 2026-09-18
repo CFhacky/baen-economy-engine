@@ -215,6 +215,10 @@ pre{white-space:pre-wrap;word-break:break-word;background:#090e14;border:1px sol
       <div id="system-lanes">Loading…</div>
     </div>
     <div class="card full">
+      <h2>Corridor land, internal transport & NCF lending</h2>
+      <div id="corridor-finance">Loading…</div>
+    </div>
+    <div class="card full">
       <h2>Source → product domains</h2>
       <div id="domains">Loading…</div>
     </div>
@@ -325,6 +329,12 @@ function renderBootstrap(data){
     '<div class="quick-grid"><div class="quick"><strong>'+num(c.mapped_record_count)+' source-mapped</strong><span>'+num(c.moved_from_unknown)+' moved from UNKNOWN</span></div>'+
     '<div class="quick"><strong>'+num(c.unknown_after_overlay)+' UNKNOWN</strong><span>after semantic overlay</span></div>'+
     '<div class="quick"><strong>'+num(c.simulated_after_overlay)+' SIMULATED</strong><span>canonical simulation coverage</span></div></div>';
+
+  var cf=data.corridor_finance||{}, land=cf.land_bank||{}, tr=cf.internal_transport||{}, ln=cf.ncf_lending||{};
+  el("corridor-finance").innerHTML=
+    '<details open><summary>NCF arterial land bank <span class="status warn">USER-RULED</span></summary><div class="detail-body"><strong>8 miles each side</strong> of the arterial centerline; NCF / controlled shells / subsidiaries are beneficial owners.<br><br>At the sourced <strong>500+ operational network-mile</strong> lower bound, the gross geometric corridor is at least <strong>'+num(land.gross_corridor_acres_lower_bound||0)+' acres</strong>. This is not yet the de-overlapped titled-acre ledger. The older 1,200+ acre Arterial figure is retained as the directly-booked/legacy parcel figure pending consolidation.</div></details>'+
+    '<details><summary>Internal vehicle capacity <span class="status good">INTERNAL ONLY</span></summary><div class="detail-body">Earthmover road/Jeep configuration: <strong>'+(tr.earthmover_jeep_road_configuration?"YES":"NO")+'</strong>. External sales: <strong>'+(tr.external_sales?"YES":"NO")+'</strong>.<br>Stonebearer payload: <strong>'+esc(tr.stonebearer_payload_tons||"—")+' tons</strong>. The four sourced Brickworks-assigned units provide <strong>'+esc(tr.brickworks_short_haul_capacity_tons_per_day_min||"—")+'–'+esc(tr.brickworks_short_haul_capacity_tons_per_day_max||"—")+' tons/day</strong> on their sourced short-haul cycle. Empire-wide fleet count remains unresolved.</div></details>'+
+    '<details><summary>NCF lending <span class="status warn">PARTIAL BOOK</span></summary><div class="detail-body">Current active loan principal: <strong>'+money(ln.active_loan_principal_gp||0)+' gp</strong>. Current aggregate NCF revenue: <strong>'+money(ln.monthly_ncf_revenue_gp||0)+' gp/month</strong>. Existing rate anchors include <strong>8%</strong> secured facility lending and <strong>12%</strong> voyage finance. The engine deliberately does not infer an average portfolio APR or reserve ratio from these figures.</div></details>';
 
   var lanes=data.system_lanes||{}, laneHtml="";
   Object.keys(lanes).forEach(function(key){

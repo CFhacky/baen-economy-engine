@@ -1,0 +1,233 @@
+{
+  "schema": "tnp.economy.corridor-finance-authority/1",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "rule": "USER-RULED facts control over older source wording. Source observations are read-only evidence. Derived calculations are arithmetic only and do not invent purchase prices, title geometry, reserve ratios, or fleet counts.",
+  "user_rules": [
+    {
+      "key": "arterial.land_bank.half_width_each_side_miles",
+      "value": 8,
+      "unit": "miles each side of arterial centerline",
+      "authority": "USER-RULED",
+      "ruling": "All land within eight miles to either side of the arterial road has already been purchased by Northern Crown Financial or NCF-controlled shell companies/subsidiaries."
+    },
+    {
+      "key": "transport.internal_vehicle.external_sales",
+      "value": false,
+      "authority": "USER-RULED",
+      "ruling": "Empire earthmoving / road-configurable vehicle capacity is internal strategic capacity and is not sold to outsiders."
+    },
+    {
+      "key": "transport.earthmover.jeep_road_configuration",
+      "value": true,
+      "authority": "USER-RULED",
+      "ruling": "The empire's earthmoving vehicles can enter a Jeep/road transport configuration and therefore count toward internal transport capacity when assigned to that role.",
+      "source_reconciliation": "The existing Baen Light Vehicle Program page describes Jeep-class LUVs as heavy-machinery derivatives. This user ruling expands current capability; do not erase it merely because the older page describes a derivative program."
+    }
+  ],
+  "source_observations": [
+    {
+      "key": "arterial.operational_network_miles_lower_bound",
+      "value": 500,
+      "unit": "unique-network miles lower bound",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      },
+      "note": "Page states total operational 500+ miles. Use 500 only as a lower-bound geometry input."
+    },
+    {
+      "key": "arterial.legacy_direct_owned_acres",
+      "value": 1200,
+      "unit": "acres lower bound",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
+      },
+      "note": "Page says 1,200+ acres owned. Under the later USER-RULED eight-mile beneficial-ownership corridor this is treated as the older/directly-booked Arterial parcel figure, not total consolidated NCF beneficial ownership."
+    },
+    {
+      "key": "stonebearer.payload_lb",
+      "value": 30000,
+      "unit": "lb",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      }
+    },
+    {
+      "key": "stonebearer.loaded_speed_mph",
+      "value": 4,
+      "unit": "mph",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      }
+    },
+    {
+      "key": "stonebearer.empty_speed_mph",
+      "value": 6,
+      "unit": "mph",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      }
+    },
+    {
+      "key": "stonebearer.short_haul_trips_per_day_min",
+      "value": 6,
+      "unit": "trips/day",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      }
+    },
+    {
+      "key": "stonebearer.short_haul_trips_per_day_max",
+      "value": 7,
+      "unit": "trips/day",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      }
+    },
+    {
+      "key": "stonebearer.brickworks_allocated_units",
+      "value": 4,
+      "unit": "vehicles",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "321e8214-84b0-816c-87fb-f0fee22835ad",
+        "title": "Baen Brickworks"
+      },
+      "note": "BW-1 through BW-4; this is an allocation, not the empire-wide fleet count."
+    },
+    {
+      "key": "roadrider.cargo_lb",
+      "value": 900,
+      "unit": "lb light cargo",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "397e8214-84b0-813c-b746-ecbef4e0c773",
+        "title": "Baen Light Vehicle Program — LUV (Roadrider) & AIC (Wardrake)"
+      }
+    },
+    {
+      "key": "roadrider.road_speed_mph",
+      "value": 32,
+      "unit": "mph",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "397e8214-84b0-813c-b746-ecbef4e0c773",
+        "title": "Baen Light Vehicle Program — LUV (Roadrider) & AIC (Wardrake)"
+      }
+    },
+    {
+      "key": "roadrider.core_endurance_hours",
+      "value": 14,
+      "unit": "hours/core set",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "397e8214-84b0-813c-b746-ecbef4e0c773",
+        "title": "Baen Light Vehicle Program — LUV (Roadrider) & AIC (Wardrake)"
+      }
+    },
+    {
+      "key": "roadrider.initial_production_units_per_month",
+      "value": 6,
+      "unit": "vehicles/month",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "397e8214-84b0-813c-b746-ecbef4e0c773",
+        "title": "Baen Light Vehicle Program — LUV (Roadrider) & AIC (Wardrake)"
+      }
+    },
+    {
+      "key": "roadrider.mature_production_units_per_month",
+      "value": 15,
+      "unit": "vehicles/month",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "397e8214-84b0-813c-b746-ecbef4e0c773",
+        "title": "Baen Light Vehicle Program — LUV (Roadrider) & AIC (Wardrake)"
+      }
+    },
+    {
+      "key": "ncf.active_loan_portfolio_gp",
+      "value": 2300000,
+      "unit": "gp principal outstanding",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+        "title": "Northern Crown Financial"
+      }
+    },
+    {
+      "key": "ncf.monthly_revenue_gp",
+      "value": 22000,
+      "unit": "gp/month",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+        "title": "Northern Crown Financial"
+      },
+      "note": "Do not infer portfolio APR from this aggregate; NCF revenue also includes non-interest services."
+    },
+    {
+      "key": "ncf.rate_anchor.snowfall_secured_facility_pct",
+      "value": 8,
+      "unit": "percent annual",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+        "title": "Northern Crown Financial"
+      },
+      "note": "30,000 gp staged Snowfall Hearthworks facility; approved, not yet drawn at Day 7 Hammer."
+    },
+    {
+      "key": "ncf.rate_anchor.swiftfingers_voyage_pct",
+      "value": 12,
+      "unit": "percent annual",
+      "authority": "SOURCE-DERIVED",
+      "source": {
+        "notion_page": "34ce8214-84b0-81d9-b2b1-ef25dd47d10a",
+        "title": "Captain Philo Swiftfingers"
+      },
+      "note": "5,000 gp voyage-financing loan, 12-month term, collateralized against partial cargo rights; active and current."
+    }
+  ],
+  "unresolved": [
+    {
+      "key": "transport.earthmover.total_current_fleet",
+      "authority": "UNRESOLVED",
+      "reason": "Current read-only retrieval confirms the 1495 Heavy Machinery fleet and a four-Stonebearer Brickworks allocation, but not yet the empire-wide Ironmaw/Stonebearer/Groundshaper count or monthly build rate."
+    },
+    {
+      "key": "arterial.land_bank.net_titled_acres",
+      "authority": "UNRESOLVED",
+      "reason": "The USER-RULED corridor is 8 miles each side, but a consolidated titled-acreage figure needs unique segment geometry, overlap removal, and treatment of pre-existing urban/public/sovereign parcels. Gross corridor envelope can be calculated now."
+    },
+    {
+      "key": "arterial.land_bank.cost_basis_and_current_value",
+      "authority": "UNRESOLVED",
+      "reason": "Purchase prices, parcel-by-parcel cost basis, and current comparable-sale values have not yet been reconstructed."
+    },
+    {
+      "key": "ncf.current_trial_balance",
+      "authority": "UNRESOLVED",
+      "reason": "The 2.3M gp active-loan asset is current, but funding liabilities, deposits/reserves, repayments, and consolidated balance-sheet state remain unreconciled."
+    },
+    {
+      "key": "gold_lending_house.operational_status",
+      "authority": "UNRESOLVED",
+      "reason": "The separate Luskan Gold Lending House page is explicitly Unconfirmed/stale-seed. Gold lending is already a canonical NCF core service; do not double-count a separate business until operational status is established."
+    }
+  ]
+}
