@@ -58,7 +58,10 @@ class EmpireOpsServerTests(unittest.TestCase):
             self.assertEqual(status, 200)
             self.assertIn("text/html", headers["content-type"])
             self.assertIn(b"Baen Economy Engine", raw)
-            self.assertIn(b"Source", raw)
+            self.assertIn(b"Run current Hammer 1495", raw)
+            self.assertIn(b"Businesses", raw)
+            self.assertIn(b"Saved runs", raw)
+            self.assertIn(b"Advanced preview options", raw)
 
             status, _, raw = self.request(running, "GET", "/api/bootstrap")
             self.assertEqual(status, 200, raw.decode("utf-8", errors="replace"))
