@@ -493,7 +493,7 @@
       "monthly_revenue_gp": "57600",
       "monthly_cost_gp": null,
       "employees": "45",
-      "revenue_authority": "notion:321e821484b08155bf9bcea55e2c7669",
+      "revenue_authority": "notion:321e821484b08155bf9bcea55e2c7669#hammer-1495-page-body-ruling",
       "revenue_rationale": "Hammer 1495 ruling: 180 tons/month × 320 gp/ton supersedes Eleint 1494 48,400 gp baseline.",
       "cost_authority": null,
       "cost_rationale": "Current Hammer-1495 output/revenue supersedes old baseline; current cost not independently reconciled.",
