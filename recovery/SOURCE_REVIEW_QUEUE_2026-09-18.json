@@ -7,25 +7,25 @@
   "source_execution_snapshot_hash": "67d8e69b9e883d40b652a0b0a71f59883e205bc07445daa78de76279c0538160",
   "retained_core_records": 1620,
   "semantic_status_counts": {
-    "SOURCE_MAPPED": 230,
-    "UNKNOWN": 1348,
+    "SOURCE_MAPPED": 235,
+    "UNKNOWN": 1342,
     "CONFLICT": 12,
     "SUPERSEDED": 14,
     "MISSING_DATA": 4,
-    "FUTURE": 9,
+    "FUTURE": 10,
     "CONTEXT_ONLY": 3
   },
   "body_review_status_counts": {
-    "REVIEWED": 269,
-    "UNMEASURED": 1351
+    "REVIEWED": 275,
+    "UNMEASURED": 1345
   },
   "review_disposition_counts": {
-    "ECONOMIC_INPUT": 230,
-    "UNREVIEWED": 1351,
+    "ECONOMIC_INPUT": 235,
+    "UNREVIEWED": 1345,
     "CONFLICT": 10,
     "SUPERSEDED": 13,
     "MISSING_DATA": 4,
-    "FUTURE_ONLY": 9,
+    "FUTURE_ONLY": 10,
     "ECONOMIC_CONTEXT": 3
   },
   "completion_rule": "Every row must have a body_review_status of REVIEWED or NO_BODY_NOT_APPLICABLE, a non-null review_disposition, and driver_owners for ECONOMIC_INPUT dispositions.",
@@ -8988,14 +8988,23 @@
       "source_url": "https://app.notion.com/3c2e821484b081ec8167fd325ff1717b",
       "census_hash": "53d8a1d0b4f1ad40",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T03:29:49.167Z",
+      "body_hash": "3857968f8e8ae638df96d0dcf91c2f024b3264920f821d1934af0d640145d96a",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "locations"
+      ],
+      "driver_owners": [
+        "population",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: ECONOMIC_INPUT."
+      ]
     },
     {
       "stable_source_id": "notion:page:3c2e8214-84b0-81f2-8447-e5247b0265b1",
@@ -9102,14 +9111,19 @@
       "source_url": "https://app.notion.com/3c3e821484b0815ebb1ac5e598d3d634",
       "census_hash": "27bdb647841f26ff",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "FUTURE",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-21T04:45:11.673Z",
+      "body_hash": "fb138da7b57f225d1a8fd1bb0f88194e48e8da92718dda0f2db5d0b8a169974a",
+      "review_disposition": "FUTURE_ONLY",
+      "economic_domains": [
+        "locations"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: FUTURE_ONLY."
+      ]
     },
     {
       "stable_source_id": "notion:page:3cee8214-84b0-815b-ac54-e46e900f6d55",
@@ -9119,14 +9133,23 @@
       "source_url": "https://app.notion.com/3cee821484b0815bac54e46e900f6d55",
       "census_hash": "a6460afc7e65103a",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-02T00:59:56.450Z",
+      "body_hash": "b5fcfcc3621a3b5298d66781721a2c1ab76540fa76f4ff1384d8957228f9a708",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "locations"
+      ],
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: ECONOMIC_INPUT."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d1e8214-84b0-814e-aee1-db8532d9b16f",
@@ -9136,14 +9159,23 @@
       "source_url": "https://app.notion.com/3d1e821484b0814eaee1db8532d9b16f",
       "census_hash": "8cca62fa728507a3",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-04T16:16:24.213Z",
+      "body_hash": "c13b31f72a990e53916e82f29d22e5182aee4f446f1fabf85210322369145d9d",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "locations"
+      ],
+      "driver_owners": [
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: ECONOMIC_INPUT."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d1e8214-84b0-8150-a65c-c6032705f27d",
@@ -9153,14 +9185,22 @@
       "source_url": "https://app.notion.com/3d1e821484b08150a65cc6032705f27d",
       "census_hash": "159cc16ad4591573",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-04T16:16:24.213Z",
+      "body_hash": "9f96c0efc5abda106824a83ac7b0cb2148aee53c0b0c8c113a5cdb749fb023eb",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "locations"
+      ],
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows"
+      ],
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: ECONOMIC_INPUT."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d1e8214-84b0-81d1-8583-d99753254127",
@@ -9170,14 +9210,25 @@
       "source_url": "https://app.notion.com/3d1e821484b081d18583d99753254127",
       "census_hash": "fd9ab35a0a8dc7c6",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-04T18:20:49.137Z",
+      "body_hash": "9dda52eeac141d9039e0745b82eb1ae754a776709b0103895642cce29bebd705",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "locations"
+      ],
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "food_supply",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: ECONOMIC_INPUT."
+      ]
     },
     {
       "stable_source_id": "notion:page:2fbe8214-84b0-8107-acf7-f676edf6542c",
