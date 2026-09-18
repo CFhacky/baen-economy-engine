@@ -103,6 +103,10 @@ class EmpireOperationsTests(unittest.TestCase):
         self.assertEqual(
             ids,
             [
+                "treasury_quarries",
+                "azurite_quarries",
+                "western_limestone",
+                "western_sandstone",
                 "brickworks",
                 "clay_quarries",
                 "silversheen_aluminum",
