@@ -7,22 +7,23 @@
   "source_execution_snapshot_hash": "67d8e69b9e883d40b652a0b0a71f59883e205bc07445daa78de76279c0538160",
   "retained_core_records": 1620,
   "semantic_status_counts": {
-    "UNKNOWN": 1597,
-    "SOURCE_MAPPED": 16,
+    "UNKNOWN": 1587,
+    "SOURCE_MAPPED": 23,
     "SUPERSEDED": 2,
     "MISSING_DATA": 1,
-    "CONFLICT": 2,
+    "CONFLICT": 5,
     "CONTEXT_ONLY": 2
   },
   "body_review_status_counts": {
-    "UNMEASURED": 1608,
-    "REVIEWED": 12
+    "UNMEASURED": 1597,
+    "REVIEWED": 23
   },
   "review_disposition_counts": {
-    "UNREVIEWED": 1608,
-    "ECONOMIC_INPUT": 9,
+    "UNREVIEWED": 1597,
+    "ECONOMIC_INPUT": 17,
     "MISSING_DATA": 1,
-    "ECONOMIC_CONTEXT": 2
+    "ECONOMIC_CONTEXT": 2,
+    "CONFLICT": 3
   },
   "completion_rule": "Every row must have a body_review_status of REVIEWED or NO_BODY_NOT_APPLICABLE, a non-null review_disposition, and driver_owners for ECONOMIC_INPUT dispositions.",
   "records": [
@@ -438,14 +439,27 @@
       "source_url": "https://app.notion.com/321e821484b081019287cb7fdf65e5a9",
       "census_hash": "e43ed5d4c587cd4a",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-13T00:03:51.286Z",
+      "body_hash": "830ec3f0d54dcfcbfab0da500a6e605ebb7e1491265b8900a9136cb3de9bddd0",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "industrial_production",
+        "resource_extraction",
+        "business_finance",
+        "labor"
+      ],
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Live Registry source: 12000 tons/month limestone, 25 employees, 6000 gp/month revenue, 4800 gp/month cost.",
+        "Production is a flow; the page supplies no quantified finished-stone inventory."
+      ]
     },
     {
       "stable_source_id": "notion:page:321e8214-84b0-8104-815a-fe1101e6f8f1",
@@ -552,13 +566,27 @@
       "census_hash": "b167f330be743e89",
       "census_coverage": "UNKNOWN",
       "semantic_status": "SOURCE_MAPPED",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-22T15:01:09.916Z",
+      "body_hash": "c2ad6a02363e560aac285ef4836f88410c91a04a85fb4fd9b429bbdd4c213db1",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "industrial_production",
+        "resource_extraction",
+        "business_finance",
+        "labor"
+      ],
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Live Registry source: 8000 tons/month total across stone types, 55 employees, 7917 gp/month revenue, 4750 gp/month cost; body gives stone-type production breakdown.",
+        "Its embedded 29000-ton network roll-up is secondary context; live per-entity rows remain controlling.",
+        "No quantified on-hand inventory is supplied."
+      ]
     },
     {
       "stable_source_id": "notion:page:321e8214-84b0-8112-ab9e-cd6f5eba18e8",
@@ -953,14 +981,29 @@
       "source_url": "https://app.notion.com/321e821484b0816c87fbf0fee22835ad",
       "census_hash": "2496a684a1699a00",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-29T00:10:15.607Z",
+      "body_hash": "7d3cc9d087f846ab0ebc41f2dc61b8dfb662e47d25da76c265d32d018de16b4f",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "industrial_production",
+        "construction_materials",
+        "machinery_logistics",
+        "labor"
+      ],
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply",
+        "trade_routes"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Live source: 75000 fired bricks/month plus approximately 72000 Pressmark blocks/month capacity from 12 presses; 30 Brickworks employees, 3333 gp/month revenue, 2233 gp/month cost.",
+        "Body explicitly assigns four Stonebearers BW-1 through BW-4 across Brickworks, Clay Quarries and backup/Treasury hauling; this corroborates the already-ratified 4-of-10 Stonebearer allocation.",
+        "Production capacities do not state finished-goods stock-on-hand."
+      ]
     },
     {
       "stable_source_id": "notion:page:321e8214-84b0-816d-8ca6-d53a98b8ba6d",
@@ -1070,14 +1113,27 @@
       "source_url": "https://app.notion.com/321e821484b08192b481f813840aadd3",
       "census_hash": "632174cc3468af0b",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-13T00:04:07.370Z",
+      "body_hash": "fe4341480a19408a79e9ba4cb3399a2c6c609e857712aefe31dc6e99b585b213",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "industrial_production",
+        "resource_extraction",
+        "business_finance",
+        "labor"
+      ],
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Live Registry source: 6000 tons/month sandstone, 18 employees, 4000 gp/month revenue, 3200 gp/month cost.",
+        "No quantified on-hand inventory is supplied."
+      ]
     },
     {
       "stable_source_id": "notion:page:321e8214-84b0-819e-840a-ea69126c3105",
@@ -1155,14 +1211,27 @@
       "source_url": "https://app.notion.com/321e821484b081b28e6dc97122a34793",
       "census_hash": "388855cdf2edd207",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-12T23:43:17.855Z",
+      "body_hash": "6a81f614113647f5981c9c546ed4f5c08f39ccacdb97fa65feaf11b76e6a99ef",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "industrial_production",
+        "resource_extraction",
+        "business_finance",
+        "labor"
+      ],
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Live Registry source: 200 tons/month azurite, 20 employees, 5000 gp/month revenue at 40% margin and 3000 gp/month cost.",
+        "No quantified azurite stock-on-hand is supplied."
+      ]
     },
     {
       "stable_source_id": "notion:page:321e8214-84b0-81b3-8d51-dcbc19edd667",
@@ -1240,14 +1309,26 @@
       "source_url": "https://app.notion.com/321e821484b081c69bdec30dd49bc5b6",
       "census_hash": "4fbcb85749c075d9",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-13T00:04:22.632Z",
+      "body_hash": "0bf270b422b8291ce1d9116c7f34a9b205983990996e4b33e15fc49fb7ad716d",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "industrial_production",
+        "resource_extraction",
+        "construction_materials"
+      ],
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Live Registry source: 2000 tons/month clay, 12 employees, 1500 gp/month cost, zero external revenue; output transfers internally to Brickworks.",
+        "No quantified clay stock-on-hand is supplied."
+      ]
     },
     {
       "stable_source_id": "notion:page:321e8214-84b0-81cb-b112-e8cab733e992",
@@ -1257,14 +1338,29 @@
       "source_url": "https://app.notion.com/321e821484b081cbb112e8cab733e992",
       "census_hash": "1f9dea189026b55b",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T03:32:32.499Z",
+      "body_hash": "1db41f455f26b9587dfd6abf9ac3553bcb530ee04fd700a0eb822d518dc73eec",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "industrial_production",
+        "resource_extraction",
+        "aluminum_chain",
+        "transport"
+      ],
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply",
+        "trade_routes"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Live source: 800 tons/month bauxite extraction, approximately 150 tons finished aluminum yield after smelting, 35 employees, 3500 gp/month operating cost, zero external revenue because output transfers internally.",
+        "Year-2/Year-5 capacity figures are projections and excluded from current state.",
+        "No current ore/ingot stock-on-hand quantity is supplied."
+      ]
     },
     {
       "stable_source_id": "notion:page:321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
@@ -1340,14 +1436,30 @@
       "source_url": "https://app.notion.com/321e821484b081d99801d601f9503056",
       "census_hash": "7afe563a15e1c526",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-12T21:59:16.857Z",
+      "body_hash": "5267629eac9677f76ec99b224a80a5df4037017b48c53444acd7bfd2890a3e89",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "construction_materials",
+        "supply_chain",
+        "transport_planning",
+        "labor"
+      ],
+      "driver_owners": [
+        "industrial_production",
+        "inventories",
+        "trade_routes",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Source explicitly states the empire currently owns none of its timber supply; Dawnwood is an operational eight-worker seed sawmill/construction-site tool, not a scaled timber business.",
+        "Barge capacity is a future Phase-4 acquire-or-build project, not present owned fleet.",
+        "Current internal timber demand is supplied from the open market; quantified owned timber inventory is therefore not established by this page."
+      ]
     },
     {
       "stable_source_id": "notion:page:321e8214-84b0-81dc-ae68-d45f3e3801db",
@@ -25569,14 +25681,24 @@
       "source_url": "https://app.notion.com/32ce821484b081169f00c05855df2ecf",
       "census_hash": "b2d70f3edc5b3f7a",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONFLICT",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-23T19:06:41.591Z",
+      "body_hash": "5a9b2668098d48221b2aefae7585474953f853ea1bd2ab1e9576e1858076d43c",
+      "review_disposition": "CONFLICT",
+      "economic_domains": [
+        "industrial_production",
+        "resource_extraction",
+        "inventories",
+        "transport"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Consolidation carries useful extraction-chain context but conflicts with live Registry on Treasury tonnage and should not control current operating quantities.",
+        "Projected Hunding/aluminum expansion is not current Day-7 state.",
+        "No quantified on-hand material inventory is supplied."
+      ]
     },
     {
       "stable_source_id": "notion:page:32ce8214-84b0-811c-85a6-df524fff79a3",
@@ -25688,14 +25810,24 @@
       "source_url": "https://app.notion.com/32ce821484b08167973af7ea7023a7b1",
       "census_hash": "d1c9986d94218408",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONFLICT",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-23T19:10:41.712Z",
+      "body_hash": "9bdb22ffd0e7c4c76539c9945f438b56a3e7d7b07f3b4952c46dec1842f007bd",
+      "review_disposition": "CONFLICT",
+      "economic_domains": [
+        "industrial_production",
+        "resource_extraction",
+        "inventories",
+        "transport"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "This variant adds a qualitative strategic stockpile: aluminum ingots, vaultstone, azurite, and a three-month construction-stone supply, but gives no quantities for those holdings.",
+        "Its Treasury production summary conflicts with live Registry authority; use live per-entity pages for operating values.",
+        "Stockpile wording is retained as context only and does not close the inventory-quantity blocker."
+      ]
     },
     {
       "stable_source_id": "notion:page:32ce8214-84b0-816a-86d4-c2eb2a0bff46",
@@ -25909,14 +26041,24 @@
       "source_url": "https://app.notion.com/32ce821484b081c9b718f051b17ac057",
       "census_hash": "3a07be8779800cef",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONFLICT",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-23T20:47:18.961Z",
+      "body_hash": "fc9b7d6e059c08390c3f92f4243f965b32bae3f35007a56178529d796accab8d",
+      "review_disposition": "CONFLICT",
+      "economic_domains": [
+        "industrial_production",
+        "resource_extraction",
+        "transport_assets",
+        "inventories"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "The consolidation's quarry workforce figures materially conflict with live Business Registry entries and therefore cannot outrank those live entities.",
+        "Claims of two dedicated stone barges and 50+ heavy stone wagons are quarantined: the conflicting consolidation is not sufficient proof of owned fleet inventory.",
+        "The 29000 tons/month network headline is a production-flow summary, not an on-hand stock count."
+      ]
     },
     {
       "stable_source_id": "notion:page:32ce8214-84b0-81cd-b150-cad92a8fdaae",

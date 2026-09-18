@@ -181,5 +181,14 @@
   "future_roadrider_backdated": false,
   "canonical_month_authorized": false,
   "campaign_time_advanced": false,
-  "notion_writes": 0
+  "notion_writes": 0,
+  "source_body_verification": {
+    "brickworks": {
+      "source_id": "321e8214-84b0-816c-87fb-f0fee22835ad",
+      "revision": "2026-03-29T00:10:15.607Z",
+      "sha256": "7d3cc9d087f846ab0ebc41f2dc61b8dfb662e47d25da76c265d32d018de16b4f",
+      "verified_claim": "BW-1 through BW-4 allocated to Brickworks/Clay/Treasury hauling"
+    },
+    "effect": "Corroborates existing four-Stonebearer Neverwinter_Brickworks allocation; does not change Day-7 fleet totals."
+  }
 }

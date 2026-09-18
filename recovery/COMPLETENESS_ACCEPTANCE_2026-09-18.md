@@ -18,10 +18,10 @@ At the current branch state:
   - 1,627 stored records including 7 contextual authority records;
   - 0 identified core records left unmaterialized.
 - source-record semantic disposition: **FAIL**
-  - 23 / 1,620 retained core records are currently non-UNKNOWN after semantic overlay plus completed body-review batches 001–002;
-  - **1,597 remain UNKNOWN**;
+  - 33 / 1,620 retained core records are currently non-UNKNOWN after semantic overlay plus completed body-review batches 001–003;
+  - **1,587 remain UNKNOWN**;
   - the 9 current-live semantic mappings in `SOURCE_SEMANTIC_EVIDENCE_2026-09-18.json` are counted only because that artifact explicitly says they move from UNKNOWN.
-- exhaustive source-body review: **IN PROGRESS / 12 OF 1,620 REVIEWED**
+- exhaustive source-body review: **IN PROGRESS / 23 OF 1,620 REVIEWED**
   - the standalone repo intentionally does not publish the private detailed Registry body snapshot;
   - no checked-in receipt currently proves that all 1,620 retained source bodies were read and dispositioned;
   - selective live-source requeries do not count as exhaustive coverage.
@@ -156,3 +156,8 @@ Eight finance bodies were read and hashed. The batch did **not** discover a hidd
 - SSAMT's 12,000 gp corpus is client trust property, not NCF-owned reserves;
 - Gold Lending House remains explicitly unconfirmed and is not booked;
 - UNKNOWN fell from 1,604 to **1,597** without filling any balance-sheet hole with a guess.
+
+
+## Batch 003 — resources / inventory body review
+
+Eleven bodies were reviewed across live quarries, Brickworks, timber and older consolidation artifacts. Live per-entity operating flows are now separated from unsafe consolidations. The pass found **no quantified opening stock-on-hand**. It also quarantined uncorroborated “2 stone barges / 50+ wagons” fleet claims, confirmed the current timber supply gap, and independently corroborated the existing four-Stonebearer Brickworks allocation. UNKNOWN is now **1,587**.
