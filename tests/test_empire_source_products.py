@@ -90,6 +90,14 @@ class EmpireSourceProductsTests(unittest.TestCase):
         finance = domains["finance_banking"]
         finance_known = {row["key"]: row for row in finance["known"]}
         self.assertEqual(finance_known["ncf.active_loans_gp"]["value"], 2300000)
+        self.assertEqual(
+            finance_known["finance.ncf_active_loan_portfolio"]["value"],
+            2300000,
+        )
+        self.assertEqual(
+            finance_known["finance.ncf_active_loan_portfolio"]["source"]["title"],
+            "Empire Financial State — Current Reference",
+        )
         self.assertFalse(finance["can_execute_balance_sheet"])
         self.assertTrue(
             any(row["key"] == "ncf.current_trial_balance" for row in finance["unresolved"])
