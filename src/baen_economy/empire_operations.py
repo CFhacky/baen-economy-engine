@@ -862,5 +862,28 @@ def render_empire_business_report(payload: Mapping[str, Any]) -> str:
                 f"- {labor.get('double_count_rule')}",
             ]
         )
+    domains = physical.get("semantic_domains") or {}
+    if domains:
+        lines.extend(["", "## Source → product semantic domains", ""])
+        for domain_name in (
+            "finance_banking",
+            "infrastructure_logistics",
+            "population_labour",
+            "construction_capital",
+            "military_contracts",
+        ):
+            domain = domains.get(domain_name) or {}
+            title = domain_name.replace("_", " / ").title()
+            lines.append(f"### {title} — {domain.get('status', 'UNKNOWN')}")
+            for row in domain.get("known") or []:
+                unit = f" {row.get('unit')}" if row.get("unit") else ""
+                lines.append(
+                    f"- {row['key']}: **{row['value']}{unit}** ({row.get('authority')})."
+                )
+            for row in domain.get("unresolved") or []:
+                lines.append(
+                    f"- UNRESOLVED — {row.get('key')}: {row.get('reason')}"
+                )
+            lines.append("")
     lines.append("")
     return "\n".join(lines)
