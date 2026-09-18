@@ -963,11 +963,13 @@
       "USER-RULED",
       "LIVE_NOTION",
       "RATIFIED_PROTOCOL",
-      "NEW_PATH_ENGINE_SOURCEBOOK_RAW",
-      "USER_LIBRARY_SOURCEBOOK_CORPUS",
+      "NEW_PATH_ENGINE_BOOK_RAW",
+      "USER_LIBRARY_BOOK_CORPUS",
       "EXTERNAL_RESEARCH",
       "MODEL-PROPOSED"
     ],
-    "note": "Absence from a harvested New Path Engine family is not evidence of absence from the sourcebook corpus."
+    "note": "Absence from a harvested New Path Engine family is not evidence of absence from the sourcebook corpus.",
+    "book_raw_authority": "UPSTREAM-ADOPTED",
+    "book_raw_provenance_kind": "SOURCEBOOK_RAW"
   }
 }

@@ -51,8 +51,8 @@ corpus.
 ## Provenance labels
 
 - Campaign fact from user / current Notion: USER-RULED or SOURCE-DERIVED.
-- Book-RAW value from The New Path Engine: SOURCEBOOK-RAW.
-- Book-RAW value recovered directly from the Library corpus: SOURCEBOOK-RAW.
+- Book-RAW value from The New Path Engine: UPSTREAM-ADOPTED with `provenance_kind: SOURCEBOOK_RAW`.
+- Book-RAW value recovered directly from the Library corpus: UPSTREAM-ADOPTED with `provenance_kind: SOURCEBOOK_RAW`.
 - External historical / engineering constant: UPSTREAM-ADOPTED.
 - Proposed bridging assumption: MODEL-PROPOSED and non-executable.
 

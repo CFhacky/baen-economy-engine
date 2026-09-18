@@ -90,9 +90,10 @@ class EmpireCloseTests(unittest.TestCase):
         routing=raw["sourcebook_routing"]
         self.assertEqual(routing["new_path_engine_repo"],"CFhacky/the-new-path-engine")
         self.assertLess(
-            routing["order"].index("NEW_PATH_ENGINE_SOURCEBOOK_RAW"),
+            routing["order"].index("NEW_PATH_ENGINE_BOOK_RAW"),
             routing["order"].index("EXTERNAL_RESEARCH"),
         )
+        self.assertEqual(routing["book_raw_authority"],"UPSTREAM-ADOPTED")
 
     def test_phase_one_is_complete_and_remaining_system_gaps_are_classified(self):
         result=close_status()
