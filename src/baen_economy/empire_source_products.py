@@ -29,6 +29,9 @@ DEFAULT_SOURCE_INPUTS = (
 DEFAULT_SEMANTIC_EVIDENCE = (
     PROJECT_ROOT / "recovery/SOURCE_SEMANTIC_EVIDENCE_2026-09-18.json"
 )
+DEFAULT_CENSUS_SNAPSHOT = (
+    PROJECT_ROOT / "recovery/LIVE_EMPIRE_SOURCE_CENSUS_EXECUTION_SNAPSHOT_2026-09-17.json"
+)
 
 
 class EmpireSourceProductError(ValueError):
@@ -572,6 +575,11 @@ def source_semantic_domains(
                 *[_fact_snapshot(facts, key, unit="miles") for key in arterial_route_keys],
                 _fact_snapshot(
                     facts,
+                    "warborn_neverwinter.current_precision_tool_steel_tons_per_month",
+                    unit="tons/month",
+                ),
+                _fact_snapshot(
+                    facts,
                     "warborn_neverwinter.gauntlgrym_freight_distance_miles",
                     unit="miles",
                 ),
@@ -662,6 +670,84 @@ def source_semantic_domains(
                 *evidence_unresolved("military_contracts"),
             ],
         },
+    }
+
+
+def source_semantic_coverage(
+    domains: Mapping[str, Mapping[str, Any]],
+    census_path: Path = DEFAULT_CENSUS_SNAPSHOT,
+) -> dict[str, Any]:
+    """Overlay executable semantic mapping on the preserved census snapshot.
+
+    The dated census remains immutable recovery evidence. This overlay only
+    reclassifies records that have concrete mapped facts in the current engine;
+    it does not call them SIMULATED.
+    """
+
+    try:
+        census = json.loads(census_path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise EmpireSourceProductError(f"cannot read census snapshot: {census_path}: {exc}") from exc
+    stored = census.get("storedCoverage")
+    flags = census.get("flags")
+    if not isinstance(stored, dict) or not isinstance(flags, list):
+        raise EmpireSourceProductError("census snapshot lacks coverage state")
+
+    prior_by_id = {
+        str(row.get("id")): str(row.get("coverage"))
+        for row in flags
+        if isinstance(row, dict) and row.get("id") and row.get("coverage")
+    }
+    pages: dict[str, dict[str, Any]] = {}
+    for domain_name, domain in domains.items():
+        if not isinstance(domain, Mapping):
+            continue
+        for row in domain.get("known") or []:
+            if not isinstance(row, Mapping):
+                continue
+            source = row.get("source")
+            if not isinstance(source, Mapping):
+                continue
+            page_id = source.get("notion_page")
+            if not page_id:
+                continue
+            page_id = str(page_id)
+            record = pages.setdefault(
+                page_id,
+                {
+                    "source_record_id": page_id,
+                    "title": source.get("title"),
+                    "prior_coverage": prior_by_id.get(page_id, "UNKNOWN"),
+                    "new_coverage": "SOURCE_MAPPED",
+                    "domains": [],
+                    "fact_keys": [],
+                    "simulated": False,
+                },
+            )
+            if domain_name not in record["domains"]:
+                record["domains"].append(domain_name)
+            fact_key = row.get("key")
+            if fact_key and fact_key not in record["fact_keys"]:
+                record["fact_keys"].append(str(fact_key))
+
+    mapped = sorted(pages.values(), key=lambda row: row["source_record_id"])
+    moved_from_unknown = sum(row["prior_coverage"] == "UNKNOWN" for row in mapped)
+    unknown_before = int(stored.get("UNKNOWN") or 0)
+    if moved_from_unknown > unknown_before:
+        raise EmpireSourceProductError("semantic coverage overlay exceeds UNKNOWN census count")
+    return {
+        "status": "PARTIAL_SOURCE_MAPPED",
+        "basis": (
+            "Unique source pages with concrete runtime semantic facts; dated census "
+            "snapshot is preserved and SIMULATED remains zero"
+        ),
+        "mapped_records": mapped,
+        "mapped_record_count": len(mapped),
+        "moved_from_unknown": moved_from_unknown,
+        "unknown_before": unknown_before,
+        "unknown_after_overlay": unknown_before - moved_from_unknown,
+        "simulated_before": int(stored.get("SIMULATED") or 0),
+        "simulated_after_overlay": 0,
     }
 
 
@@ -1117,6 +1203,7 @@ def map_source_backed_physical_layer(
     lines = source_production_lines(source_path)
     known_state = source_known_state(source_path)
     semantic_domains = source_semantic_domains(source_path, semantic_evidence_path)
+    semantic_coverage = source_semantic_coverage(semantic_domains)
     products = {
         "mesa": _map_mesa(
             seed=seed,
@@ -1165,6 +1252,7 @@ def map_source_backed_physical_layer(
         "production_lines": lines,
         "known_state": known_state,
         "semantic_domains": semantic_domains,
+        "semantic_coverage": semantic_coverage,
         "products": products,
         "products_used": mapped,
         "dormant": list(DORMANT_PRODUCTS),
