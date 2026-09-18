@@ -1257,6 +1257,14 @@
           "authority": "USER-RULED",
           "source": "Chad 2026-09-18: ESAMT has an aspect where Shivan is buying into the Arterial and the Hunding family over time; already documented.",
           "note": "Confirms progressive interests, not a percentage, installment, title transfer or settlement date."
+        },
+        {
+          "key": "hunding.family_share_full_acquisition_year_dr",
+          "value": 1582,
+          "unit": "DR year",
+          "authority": "USER-RULED",
+          "source": "Chad 2026-09-18: The later date is for the full acquisition of their share.",
+          "temporal_scope": "FORWARD_COMPLETION_NOT_DAY7_FULL_OWNERSHIP"
         }
       ],
       "calculated": [
@@ -1287,7 +1295,7 @@
         {
           "key": "esamt.day7_arterial_hunding_interests",
           "method": "RECOVER_EXISTING_ACQUISITION_TERMS",
-          "reason": "Recover documented installments, dates, share classes, ownership percentages, rights and settlements. Unknown is not zero; NCF management of the trust is not beneficial ownership of its investments."
+          "reason": "Progressive buy-in confirmed; full Hunding-family share acquisition completes in 1582. User tentatively recalls current Hunding stake around 12–15 percent; exact percentage, denominator, installments, rights and settlements remain to be recovered. This recollection is not an exact holding or an Arterial percentage. NCF trust management is not beneficial ownership."
         }
       ],
       "temporal_exclusions": [
@@ -1297,14 +1305,42 @@
           "reason": "Post-bridge portfolio totals, rents, 99-year Longsaddle conveyance and later authorizations are not Day-7-Hammer-1495 state."
         }
       ],
-      "conflicts": [
+      "conflicts": [],
+      "resolved_discrepancies": [
         {
           "key": "hunding.acquisition_chronology",
-          "reason": "Hunding Acquisition history explicitly dates Shi'van/Institut 285000 gp acquisition to 1582; live canal page assigns 285000 gp acquisition and patent transfer to Arik in 1494. Preserve both pending reconciliation with user-confirmed progressive buy-in; no Day-7 automatic full IP ownership.",
-          "sources": [
-            "https://app.notion.com/p/32ce821484b0817bac7de6e95c90fd00",
-            "https://app.notion.com/p/348e821484b081628111fba51071e587"
+          "authority": "USER-RULED",
+          "resolution": "The 1582 date is completion of acquisition of the Hunding family share after progressive buy-in, not the initial acquisition date.",
+          "source": "Chad 2026-09-18 clarification",
+          "prior_conflict": {
+            "key": "hunding.acquisition_chronology",
+            "reason": "Hunding Acquisition history explicitly dates Shi'van/Institut 285000 gp acquisition to 1582; live canal page assigns 285000 gp acquisition and patent transfer to Arik in 1494. Preserve both pending reconciliation with user-confirmed progressive buy-in; no Day-7 automatic full IP ownership.",
+            "sources": [
+              "https://app.notion.com/p/32ce821484b0817bac7de6e95c90fd00",
+              "https://app.notion.com/p/348e821484b081628111fba51071e587"
+            ]
+          },
+          "remaining_unknowns": [
+            "allocation of source amounts between acquisition stages",
+            "exact Day-7 equity percentage and denominator",
+            "installment/payment history",
+            "precise IP, licensing and title interests"
           ]
+        }
+      ],
+      "tentative_recollections": [
+        {
+          "authority": "UNRESOLVED",
+          "reported_by": "Chad",
+          "reported_on": "2026-09-18",
+          "minimum_percent": 12,
+          "maximum_percent": 15,
+          "certainty": "TENTATIVE_USER_RECOLLECTION",
+          "scope": "Current Hunding stake, from immediate conversation context; exact denominator (whole enterprise or family share) remains unresolved.",
+          "source_quote": "Yeah, I don't remember exactly, but I think it was somewhere around 12 to 15 percent, uh, at current date. I don't remember.",
+          "admitted_as_exact_opening_equity": false,
+          "applies_to_arterial": false,
+          "roll_authorized": false
         }
       ]
     },

@@ -255,7 +255,7 @@
       "https://app.notion.com/p/32ce821484b0817bac7de6e95c90fd00",
       "https://app.notion.com/p/348e821484b081628111fba51071e587"
     ],
-    "temporal_guard": "ESAMT Alturiak-1495 balances and Hunding 1582 acquisition cannot be backdated to Day 7 Hammer 1495",
+    "temporal_guard": "1582 is the user-confirmed completion of acquisition of the Hunding family share, not the start of the progressive buy-in. Neither full acquisition nor Alturiak-1495 ESAMT balances are backdated to Day 7 Hammer 1495.",
     "ownership_layers": [
       "land legal title",
       "land beneficial ownership",
@@ -264,6 +264,26 @@
       "Hunding IP and licenses",
       "royalties",
       "settled installments"
-    ]
+    ],
+    "hunding_acquisition_completion": {
+      "year_dr": 1582,
+      "authority": "USER-RULED",
+      "source": "Chad 2026-09-18: The later date is for the full acquisition of their share.",
+      "meaning": "Completion of acquisition of the Hunding family share after progressive buy-in; not the start of participation.",
+      "day7_full_acquisition": false
+    },
+    "hunding_current_stake_recollection": {
+      "authority": "UNRESOLVED",
+      "reported_by": "Chad",
+      "reported_on": "2026-09-18",
+      "minimum_percent": 12,
+      "maximum_percent": 15,
+      "certainty": "TENTATIVE_USER_RECOLLECTION",
+      "scope": "Current Hunding stake, from immediate conversation context; exact denominator (whole enterprise or family share) remains unresolved.",
+      "source_quote": "Yeah, I don't remember exactly, but I think it was somewhere around 12 to 15 percent, uh, at current date. I don't remember.",
+      "admitted_as_exact_opening_equity": false,
+      "applies_to_arterial": false,
+      "roll_authorized": false
+    }
   }
 }

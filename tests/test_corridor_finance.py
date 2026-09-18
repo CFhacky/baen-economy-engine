@@ -13,6 +13,14 @@ class CorridorFinanceTests(unittest.TestCase):
         self.assertIsNone(interests["settled_cost_basis_gp"])
         self.assertTrue(interests["manager_is_not_beneficial_owner"])
         self.assertTrue(interests["does_not_transfer_corridor_land_title"])
+        self.assertEqual(interests["hunding_acquisition_completion"]["year_dr"], 1582)
+        self.assertFalse(interests["hunding_acquisition_completion"]["day7_full_acquisition"])
+        recollection = interests["hunding_current_stake_recollection"]
+        self.assertEqual(recollection["authority"], "UNRESOLVED")
+        self.assertEqual((recollection["minimum_percent"], recollection["maximum_percent"]), (12, 15))
+        self.assertFalse(recollection["admitted_as_exact_opening_equity"])
+        self.assertFalse(recollection["applies_to_arterial"])
+        self.assertFalse(recollection["roll_authorized"])
         self.assertEqual(snap["internal_transport"]["ratified_empire_fleet"], {"Stonebearer": 10, "Groundshaper": 5, "Ironmaw": 5})
 
     def test_user_ruled_corridor_math_is_not_mistaken_for_net_title(self):
