@@ -784,8 +784,8 @@
         },
         {
           "key": "market.opening_prices",
-          "method": "PRICE_SOURCE_RECOVERY_THEN_MARKET_MODEL",
-          "reason": "Current sandbox commodity prices are model-authored, not campaign authority."
+          "method": "SOURCEBOOK_ANCHORS_PLUS_LOCAL_MARKET_RECOVERY",
+          "reason": "Sourcebook anchors now exist (including a Silver Marches regional cross-check), but local Day-7 prices still require campaign observations or an explicitly adopted market-basis rule."
         },
         {
           "key": "market_demand_quantities",
@@ -794,8 +794,8 @@
         },
         {
           "key": "settlement.social_class_shares_and_consumption_baskets",
-          "method": "DEMOGRAPHIC_RESEARCH_AND_RATIFIED_MODEL",
-          "reason": "Current class shares and household baskets are not established campaign facts."
+          "method": "SOURCEBOOK_UPKEEP_ANCHORS_PLUS_DEMOGRAPHIC_MODEL",
+          "reason": "D&D 3.5 upkeep/laborer anchors now exist, but they do not by themselves define Baen settlement class shares or physical food baskets."
         },
         {
           "key": "migration_rates",
@@ -953,6 +953,11 @@
       "id": "2026-09-18-sourcebook-routing",
       "authority": "USER-RULED + SOURCE-ROUTED",
       "note": "User reminded the Economy Engine that The New Path Engine contains harvested sourcebook data. Phase-2 research now checks that book-RAW layer before Library corpus and external research."
+    },
+    {
+      "id": "2026-09-18-sourcebook-economic-constants",
+      "authority": "UPSTREAM-ADOPTED",
+      "note": "Added book-RAW economic/transport anchors from New Path Engine and the user Library, including Forgotten Realms Silver Marches flour/salt values, D&D 3.5 upkeep, GURPS Teamster/draft-horse references, and WFRP road-speed/income comparators. None are promoted to campaign current state automatically."
     }
   ],
   "sourcebook_routing": {
@@ -971,5 +976,6 @@
     "note": "Absence from a harvested New Path Engine family is not evidence of absence from the sourcebook corpus.",
     "book_raw_authority": "UPSTREAM-ADOPTED",
     "book_raw_provenance_kind": "SOURCEBOOK_RAW"
-  }
+  },
+  "sourcebook_economic_constants": "recovery/SOURCEBOOK_ECONOMIC_CONSTANTS_2026-09-18.json"
 }
