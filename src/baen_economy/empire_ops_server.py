@@ -52,7 +52,7 @@ def build_bootstrap(*, census_path: Path = DEFAULT_CENSUS) -> dict[str, Any]:
         "corridor_finance": corridor_finance_snapshot(),
         "empire_close": close_status(),
         "system_lanes": {
-            "population_labour": {"status": "PARTIAL_SOURCE_MAPPED", "basis": "Neverwinter/Waterdeep census and admitted commercial labour; Forgedeep and settlement-wide labour pools unresolved"},
+            "population_labour": {"status": "PARTIAL_SOURCE_MAPPED", "basis": "Neverwinter/Waterdeep census, user-ratified Forgedeep population and admitted commercial labour; settlement-wide labour pools remain unresolved"},
             "production_supply": {"status": "PARTIAL_SOURCE_MAPPED", "basis": "source-backed industrial lines exist; input recipes and opening inventories remain incomplete"},
             "consumption_prices": {"status": "BLOCKED", "basis": "household baskets, general commodity prices, and physical food outputs are not source-backed"},
             "transport_trade": {"status": "PARTIAL_SOURCE_MAPPED", "basis": "five arterial distances and one steel flow are mapped; route capacities/losses and OpenTTD unit bridge remain unresolved"},

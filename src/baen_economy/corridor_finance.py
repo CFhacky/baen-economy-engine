@@ -10,6 +10,8 @@ import json
 from pathlib import Path
 from typing import Any, Mapping
 
+from .empire_close import load_close_recovery
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_AUTHORITY = PROJECT_ROOT / "recovery/CORRIDOR_FINANCE_AUTHORITY_2026-09-18.json"
 
@@ -47,6 +49,7 @@ def corridor_land_bank_summary(path: Path = DEFAULT_AUTHORITY) -> dict[str, Any]
     return {
         "status":"PARTIAL_USER_RULED",
         "beneficial_owner":"Northern Crown Financial / NCF-controlled shells and subsidiaries",
+        "esamt_interests":data.get("esamt_interests"),
         "half_width_each_side_miles":str(half),
         "full_corridor_width_miles":str(full_width),
         "operational_network_miles_lower_bound":str(miles),
@@ -68,8 +71,13 @@ def internal_transport_summary(path: Path = DEFAULT_AUTHORITY) -> dict[str, Any]
     fleet=Decimal(str(facts["stonebearer.brickworks_allocated_units"]["value"]))
     trips_min=Decimal(str(facts["stonebearer.short_haul_trips_per_day_min"]["value"]))
     trips_max=Decimal(str(facts["stonebearer.short_haul_trips_per_day_max"]["value"]))
+    programme=load_close_recovery()["lanes"]["heavy_machinery"]["ratified_programme"]
     return {
         "status":"PARTIAL_SOURCE_BACKED",
+        "ratified_empire_fleet":programme["day7_fleet"],
+        "regular_monthly_capacity":programme["regular_monthly_capacity"],
+        "fleet_authority":programme["authority"],
+        "allocation":programme["allocation"],
         "external_sales":rules["transport.internal_vehicle.external_sales"]["value"],
         "earthmover_jeep_road_configuration":rules["transport.earthmover.jeep_road_configuration"]["value"],
         "stonebearer_payload_tons":str(payload_tons),
@@ -93,7 +101,7 @@ def internal_transport_summary(path: Path = DEFAULT_AUTHORITY) -> dict[str, Any]
             "initial_units_per_month":facts["roadrider.initial_production_units_per_month"]["value"],
             "mature_units_per_month":facts["roadrider.mature_production_units_per_month"]["value"],
         },
-        "unresolved":"Empire-wide current earthmover count/build rate and route-specific assignment remain to be recovered; do not multiply the four-unit Brickworks allocation into a whole-empire fleet."
+        "unresolved":"Empire-wide fleet and manufacturing capacity are ratified; route-specific assignments, road-mode performance, raw-material BOM and historical settlement remain unresolved."
     }
 
 def ncf_lending_summary(path: Path = DEFAULT_AUTHORITY) -> dict[str, Any]:

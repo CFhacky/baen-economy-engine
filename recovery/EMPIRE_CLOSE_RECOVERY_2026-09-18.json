@@ -63,7 +63,7 @@
   ],
   "lanes": {
     "heavy_machinery": {
-      "status": "PARTIAL_RECOVERED",
+      "status": "RATIFIED_HISTORY_TECHNICAL_GAPS",
       "facts": [
         {
           "key": "brickworks.stonebearer_allocated_units",
@@ -237,33 +237,37 @@
           "authority": "SOURCE-DERIVED",
           "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
           "note": "The adaptation has no explicit dated acceptance record in this section."
+        },
+        {
+          "key": "empire.heavy_machinery.stonebearer.current_units",
+          "value": 10,
+          "unit": "vehicles",
+          "authority": "USER-RULED",
+          "source": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+          "origin_authority": "MODEL-PROPOSED"
+        },
+        {
+          "key": "empire.heavy_machinery.groundshaper.current_units",
+          "value": 5,
+          "unit": "vehicles",
+          "authority": "USER-RULED",
+          "source": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+          "origin_authority": "MODEL-PROPOSED"
+        },
+        {
+          "key": "empire.heavy_machinery.ironmaw.current_units",
+          "value": 5,
+          "unit": "vehicles",
+          "authority": "USER-RULED",
+          "source": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+          "origin_authority": "MODEL-PROPOSED"
         }
       ],
       "unresolved": [
         {
-          "key": "empire.heavy_machinery.current_roster_outside_neverwinter",
-          "method": "BOUNDED_LATENT_STATE_AFTER_PRODUCTION_HISTORY_RECOVERY",
-          "reason": "The shared Neverwinter Stonebearer fleet is now fixed at four, but no source gives empire-wide Ironmaw/Stonebearer/Groundshaper totals. A physical count alone cannot produce an unspecified hidden fact; recover production history first, then precommit a bounded generation method for only the residual fleet."
-        },
-        {
-          "key": "empire.heavy_machinery.current_roster",
-          "method": "WORKLOAD_BACKSOLVE_THEN_BOUND_RESIDUAL",
-          "reason": "The sources prove an operating 1495 fleet and four named/shared Stonebearers, but never state the empire-wide Ironmaw/Stonebearer/Groundshaper count. Recover project workload and machine performance first; only residual unrecorded fleet state may be generated."
-        },
-        {
-          "key": "empire.heavy_machinery.current_build_rate",
-          "method": "DERIVE_FROM_RATIFIED_FLEET_AND_PRODUCTION_WINDOW",
-          "reason": "An existing Stonebearer production line is source-established, but no monthly Ironmaw/Stonebearer/Groundshaper output rate has been recovered. After current fleet requirement and earliest production window are bounded, derive the minimum/credible ramp rather than inventing a rate."
-        },
-        {
           "key": "heavy_machinery.ironmaw_groundshaper_performance",
           "method": "RECOVER_MACHINE_DOCUMENT_OR_TECHNICAL_DESIGN",
           "reason": "Stonebearer haul performance is sourced; equivalent Ironmaw/Groundshaper work-rate specifications have not yet been recovered. If absent from the actual machine document, they must be designed once under the evidence-first protocol."
-        },
-        {
-          "key": "heavy_machinery.first_acceptance_date",
-          "method": "ORIGINAL_MACHINE_DOCUMENT_OR_RATIFIED_RETROSPECTIVE_HISTORY",
-          "reason": "Neither the partnership opening nor Brickworks opening date dates its machinery. Longsaddle mixes early-1495 and Nightal-1495 state; later excavation cannot set a Day-7 fleet."
         },
         {
           "key": "heavy_machinery.factory_bom_workforce_and_cost",
@@ -274,6 +278,11 @@
           "key": "heavy_machinery.road_configuration_performance",
           "method": "SPECIFY_UNDER_EXISTING_USER_RULING",
           "reason": "Road/Jeep configuration is USER-RULED. Separate future Roadrider speed, payload and production rates cannot supply its unrecorded performance."
+        },
+        {
+          "key": "heavy_machinery.staff_and_historical_settlement",
+          "method": "RECONCILE_APPROVED_ESTABLISHMENT",
+          "reason": "Approved positions are not additive employees; historical funding, cash settlement and spares opening stock remain unknown."
         }
       ],
       "calculated": [
@@ -321,7 +330,218 @@
           "https://app.notion.com/p/321e821484b08116ac1bcc07c68ff15f",
           "https://app.notion.com/p/2fbe821484b081a1997ed3b747e8c556"
         ]
-      }
+      },
+      "ratified_programme": {
+        "schema": "tnp.economy.machinery-programme/1",
+        "authority": "USER-RULED",
+        "origin_authority": "MODEL-PROPOSED",
+        "approval": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+        "campaign_boundary": "Day 7 Hammer 1495 DR",
+        "primary_factory": "Gauntlgrym Tools Partnership",
+        "support_sites": {
+          "Forgedeep / Workshop 7": "precision, development, repairs, specialist support",
+          "Neverwinter": "existing four-machine depot, charging and dispatch"
+        },
+        "commissioning": "Kythorn 1494; retrospective approved history, not recovered first acceptance date",
+        "production_history": [
+          {
+            "month": "Flamerule 1494",
+            "Stonebearer": 1,
+            "Groundshaper": 1,
+            "Ironmaw": 0
+          },
+          {
+            "month": "Eleasis 1494",
+            "Stonebearer": 1,
+            "Groundshaper": 0,
+            "Ironmaw": 1
+          },
+          {
+            "month": "Eleint 1494",
+            "Stonebearer": 2,
+            "Groundshaper": 1,
+            "Ironmaw": 1
+          },
+          {
+            "month": "Marpenoth 1494",
+            "Stonebearer": 2,
+            "Groundshaper": 1,
+            "Ironmaw": 1
+          },
+          {
+            "month": "Uktar 1494",
+            "Stonebearer": 2,
+            "Groundshaper": 1,
+            "Ironmaw": 1
+          },
+          {
+            "month": "Nightal 1494",
+            "Stonebearer": 2,
+            "Groundshaper": 1,
+            "Ironmaw": 1
+          }
+        ],
+        "earlier_unlisted_production": 0,
+        "retirements_and_disposals": 0,
+        "day7_fleet": {
+          "Stonebearer": 10,
+          "Groundshaper": 5,
+          "Ironmaw": 5
+        },
+        "regular_monthly_capacity": {
+          "Stonebearer": 2,
+          "Groundshaper": 1,
+          "Ironmaw": 1
+        },
+        "automatic_delivery": false,
+        "productive_hours_per_worker_month": 160,
+        "factory_positions": {
+          "assembly_fitters": 12,
+          "kit_fabricators": 8,
+          "integration": 2,
+          "acceptance": 2,
+          "support": 4
+        },
+        "hours_per_unit": {
+          "Stonebearer": {
+            "assembly": 320,
+            "kit": 240,
+            "integration": 80,
+            "acceptance": 64
+          },
+          "Groundshaper": {
+            "assembly": 640,
+            "kit": 400,
+            "integration": 80,
+            "acceptance": 64
+          },
+          "Ironmaw": {
+            "assembly": 640,
+            "kit": 400,
+            "integration": 80,
+            "acceptance": 64
+          }
+        },
+        "monthly_wages_gp": {
+          "assembly_fitter": 30,
+          "kit_fabricator": 45,
+          "integration": 100,
+          "acceptance": 60,
+          "support": 15
+        },
+        "factory_wages_total_gp": 1100,
+        "labor_included_in_equipment_allowance": true,
+        "component_bom": {
+          "per_machine": {
+            "chassis_drive_kit": 1,
+            "echo_core": 1,
+            "erata_integration": 1,
+            "service_kit": 1,
+            "acceptance_record": 1
+          },
+          "attachments": {
+            "Stonebearer": "dump bed and hydraulic package",
+            "Groundshaper": "grading/shaping package",
+            "Ironmaw": "excavation/cutting package"
+          },
+          "raw_material_masses": null,
+          "material_losses": null,
+          "energy_consumption": null,
+          "note": "Stonebearer architecture sourced; Groundshaper/Ironmaw common architecture adopted by approval, not recovered specifications."
+        },
+        "costs": {
+          "equipped_unit_gp": {
+            "Stonebearer": 8000,
+            "Groundshaper": 10000,
+            "Ironmaw": 12500
+          },
+          "Stonebearer_cost_source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "accepted_equipment_allowance_gp": 192500,
+          "tooling_qualification_allowance_gp": 30000,
+          "spares_budget_gp": 15000,
+          "historical_programme_envelope_gp": 237500,
+          "regular_monthly_equipment_value_gp": 38500,
+          "historical_cash_settlement": null,
+          "day7_cash_debit_gp": 0,
+          "spares_opening_inventory": null
+        },
+        "allocation": {
+          "Neverwinter_Brickworks": {
+            "Stonebearer": 4,
+            "Groundshaper": 0,
+            "Ironmaw": 0
+          },
+          "construction_pool": {
+            "Stonebearer": 6,
+            "Groundshaper": 4,
+            "Ironmaw": 4
+          },
+          "maintenance_proving_reserve": {
+            "Stonebearer": 0,
+            "Groundshaper": 1,
+            "Ironmaw": 1
+          }
+        },
+        "staffing": {
+          "existing_brickworks_drivers": 12,
+          "existing_brickworks_mechanics": 2,
+          "other_fleet_mechanic_positions": 8,
+          "field_pool_primary_operator_positions": 14,
+          "headcount_addition": null,
+          "note": "Establishments require reconciliation to named existing staff; not additive employment."
+        },
+        "acceptance": [
+          "serial and chassis identity",
+          "core/integration and workshop record",
+          "drive, steering, braking and control isolation",
+          "attachment operation",
+          "Stonebearer trials within 30000 lb and 15 cubic yards",
+          "road-mode conversion and documented transport trial",
+          "defect correction and retest before admission"
+        ],
+        "ownership": "Baen title on accepted internal delivery; partnership 50/50 ownership is not title to delivered machines",
+        "dispatch_rule": "One assignment per machine per time interval; transport removes construction hours",
+        "external_sales": false,
+        "unresolved": [
+          "Ironmaw/Groundshaper rated performance",
+          "road-mode performance",
+          "raw-material BOM, yield and consumables",
+          "historical funding and settlement",
+          "named workforce reconciliation",
+          "spares opening stock"
+        ],
+        "crownworks_authorized": false,
+        "future_roadrider_backdated": false,
+        "canonical_month_authorized": false,
+        "campaign_time_advanced": false,
+        "notion_writes": 0
+      },
+      "resolved_items": [
+        {
+          "key": "empire.heavy_machinery.current_roster_outside_neverwinter",
+          "method": "BOUNDED_LATENT_STATE_AFTER_PRODUCTION_HISTORY_RECOVERY",
+          "reason": "The shared Neverwinter Stonebearer fleet is now fixed at four, but no source gives empire-wide Ironmaw/Stonebearer/Groundshaper totals. A physical count alone cannot produce an unspecified hidden fact; recover production history first, then precommit a bounded generation method for only the residual fleet.",
+          "resolution": "USER-RULED programme approved 2026-09-18"
+        },
+        {
+          "key": "empire.heavy_machinery.current_roster",
+          "method": "WORKLOAD_BACKSOLVE_THEN_BOUND_RESIDUAL",
+          "reason": "The sources prove an operating 1495 fleet and four named/shared Stonebearers, but never state the empire-wide Ironmaw/Stonebearer/Groundshaper count. Recover project workload and machine performance first; only residual unrecorded fleet state may be generated.",
+          "resolution": "USER-RULED programme approved 2026-09-18"
+        },
+        {
+          "key": "empire.heavy_machinery.current_build_rate",
+          "method": "DERIVE_FROM_RATIFIED_FLEET_AND_PRODUCTION_WINDOW",
+          "reason": "An existing Stonebearer production line is source-established, but no monthly Ironmaw/Stonebearer/Groundshaper output rate has been recovered. After current fleet requirement and earliest production window are bounded, derive the minimum/credible ramp rather than inventing a rate.",
+          "resolution": "USER-RULED programme approved 2026-09-18"
+        },
+        {
+          "key": "heavy_machinery.first_acceptance_date",
+          "method": "ORIGINAL_MACHINE_DOCUMENT_OR_RATIFIED_RETROSPECTIVE_HISTORY",
+          "reason": "Neither the partnership opening nor Brickworks opening date dates its machinery. Longsaddle mixes early-1495 and Nightal-1495 state; later excavation cannot set a Day-7 fleet.",
+          "resolution": "USER-RULED programme approved 2026-09-18"
+        }
+      ]
     },
     "conventional_freight": {
       "status": "PARTIAL_RECOVERED",
@@ -758,7 +978,7 @@
       "survey_guard": "A required in-world measurement is not completed by asking an NPC in prose. Unauthored state requires a bounded sourced generation procedure or user ruling; no fictional survey result is inserted."
     },
     "forgedeep": {
-      "status": "CURRENT_POPULATION_UNRESOLVED",
+      "status": "CURRENT_POPULATION_USER_RULED",
       "facts": [
         {
           "key": "forgedeep.population_eleint_1494",
@@ -774,7 +994,7 @@
           "unit": "people",
           "authority": "SOURCE-DERIVED",
           "source": "Forgedeep City Development",
-          "note": "Page calls 1,400–1,600 a staged band; not yet accepted as current census."
+          "note": "Source band adopted as Day-7 envelope by user approval 2026-09-18."
         },
         {
           "key": "forgedeep.staged_next_visit_band_max",
@@ -795,15 +1015,42 @@
           "value": 30,
           "authority": "SOURCE-DERIVED",
           "source": "Forgedeep City Development"
+        },
+        {
+          "key": "forgedeep.current_population_day7_hammer",
+          "value": 1599,
+          "unit": "residents",
+          "authority": "USER-RULED",
+          "source": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+          "provenance_method": "APPROVED_BOUNDED_DRAW",
+          "receipt": "recovery/FORGEDEEP_POPULATION_RESOLUTION_2026-09-18.json",
+          "note": "Total settlement population; no civilian/military/age/occupation partition inferred"
         }
       ],
-      "unresolved": [
+      "resolved_items": [
         {
           "key": "forgedeep.current_population_day7_hammer",
           "method": "ROLL_AFTER_INTERPRETATION_LOCK",
           "reason": "Live authority and July audit explicitly preserve 450 as historical and current population as pending; staged 1,400–1,600 band is available for bounded resolution."
         }
-      ]
+      ],
+      "unresolved": [],
+      "resolution_receipt": {
+        "schema": "tnp.economy.bounded-state-resolution/1",
+        "authority": "USER-RULED",
+        "approval": "Chad: Approved overall. 2026-09-18; approves prior packet uniform integer 1400–1600, one draw without reroll",
+        "campaign_boundary": "Day 7 Hammer 1495 DR",
+        "method": "uniform integer via secrets.randbelow(201) + 1400",
+        "minimum": 1400,
+        "maximum": 1600,
+        "offset": 199,
+        "value": 1599,
+        "draw_count": 1,
+        "recorded_at_utc": "2026-09-18T21:58:23.013072+00:00",
+        "campaign_time_advanced": false,
+        "notion_writes": 0,
+        "scope": "Total settlement population; no civilian/military/age/occupation partition inferred"
+      }
     },
     "ncf_finance": {
       "status": "PARTIAL_RECOVERED_CONFLICTED",
@@ -1003,6 +1250,13 @@
           "unit": "acres",
           "authority": "SOURCE-DERIVED",
           "source": "Arterial Road Network"
+        },
+        {
+          "key": "esamt.progressive_arterial_hunding_buy_in",
+          "value": true,
+          "authority": "USER-RULED",
+          "source": "Chad 2026-09-18: ESAMT has an aspect where Shivan is buying into the Arterial and the Hunding family over time; already documented.",
+          "note": "Confirms progressive interests, not a percentage, installment, title transfer or settlement date."
         }
       ],
       "calculated": [
@@ -1029,6 +1283,11 @@
           "key": "arterial.land_cost_basis_and_value",
           "method": "RECOVER_THEN_APPRAISE",
           "reason": "No uniform gp/acre value may be invented."
+        },
+        {
+          "key": "esamt.day7_arterial_hunding_interests",
+          "method": "RECOVER_EXISTING_ACQUISITION_TERMS",
+          "reason": "Recover documented installments, dates, share classes, ownership percentages, rights and settlements. Unknown is not zero; NCF management of the trust is not beneficial ownership of its investments."
         }
       ],
       "temporal_exclusions": [
@@ -1036,6 +1295,16 @@
           "source": "https://app.notion.com/p/37de821484b081549c6bd10986768d97",
           "effective_date": "Hammer 1496 DR",
           "reason": "Post-bridge portfolio totals, rents, 99-year Longsaddle conveyance and later authorizations are not Day-7-Hammer-1495 state."
+        }
+      ],
+      "conflicts": [
+        {
+          "key": "hunding.acquisition_chronology",
+          "reason": "Hunding Acquisition history explicitly dates Shi'van/Institut 285000 gp acquisition to 1582; live canal page assigns 285000 gp acquisition and patent transfer to Arik in 1494. Preserve both pending reconciliation with user-confirmed progressive buy-in; no Day-7 automatic full IP ownership.",
+          "sources": [
+            "https://app.notion.com/p/32ce821484b0817bac7de6e95c90fd00",
+            "https://app.notion.com/p/348e821484b081628111fba51071e587"
+          ]
         }
       ]
     },
@@ -1184,10 +1453,10 @@
   "action_queue": [
     {
       "id": "fleet-roster",
-      "label": "Canonize 1495 Heavy Machinery fleet and production ramp",
-      "method": "WORKLOAD_BACKSOLVE_THEN_BOUND_RESIDUAL",
+      "label": "Complete technical specifications and reconcile machinery staffing",
+      "method": "RECONCILE_RATIFIED_PROGRAMME",
       "user_action_required": false,
-      "note": "Production line exists. Recover original machine sheet or stage one retrospective production-history proposal in chat; author approval is required for invented dates, rates, BOM or fleet. Routine recovery remains autonomous.",
+      "note": "10 Stonebearers, 5 Groundshapers, 5 Ironmaws and production ramp approved. Remaining work is technical performance, raw-material BOM, personnel and historical settlement.",
       "unlocks": [
         "road transport capacity",
         "construction capacity",
@@ -1218,15 +1487,16 @@
     },
     {
       "id": "forgedeep-pop",
-      "label": "Canonize Forgedeep current population",
-      "method": "ROLL_AFTER_INTERPRETATION_LOCK",
-      "user_action_required": true,
-      "decision": "Accept/reject use of the sourced 1,400–1,600 staged band as the bounded Day-7 census envelope.",
+      "label": "Forgedeep population resolved: 1599",
+      "method": "APPROVED_BOUNDED_DRAW",
+      "user_action_required": false,
+      "decision": "Approved and executed once; no further approval needed.",
       "unlocks": [
         "Forgedeep labour",
         "food demand",
         "housing demand"
-      ]
+      ],
+      "status": "RESOLVED"
     },
     {
       "id": "food-survey",

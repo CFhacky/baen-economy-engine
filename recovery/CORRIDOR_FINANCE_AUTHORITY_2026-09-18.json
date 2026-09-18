@@ -229,5 +229,41 @@
       "authority": "UNRESOLVED",
       "reason": "The separate Luskan Gold Lending House page is explicitly Unconfirmed/stale-seed. Gold lending is already a canonical NCF core service; do not double-count a separate business until operational status is established."
     }
-  ]
+  ],
+  "esamt_interests": {
+    "authority": "USER-RULED",
+    "progressive_buy_in_confirmed": true,
+    "source": "User clarification 2026-09-18",
+    "beneficiary": "Shi'van Baen'und",
+    "vehicle": "ESAMT",
+    "manager": "NCF Waterdeep",
+    "targets": [
+      "Arterial interests",
+      "Hunding family engineering interests"
+    ],
+    "day7_percentage": null,
+    "installment_schedule": null,
+    "settled_cost_basis_gp": null,
+    "rights_scope": null,
+    "not_zero": true,
+    "manager_is_not_beneficial_owner": true,
+    "does_not_transfer_corridor_land_title": true,
+    "source_recovery_status": "Exact staged agreement not recovered from searched Notion, private GitHub main and Library results",
+    "source_pages": [
+      "https://app.notion.com/p/372e821484b08145a784ebd92a58e8a5",
+      "https://app.notion.com/p/321e821484b081ceb8cefafb60bf5d8c",
+      "https://app.notion.com/p/32ce821484b0817bac7de6e95c90fd00",
+      "https://app.notion.com/p/348e821484b081628111fba51071e587"
+    ],
+    "temporal_guard": "ESAMT Alturiak-1495 balances and Hunding 1582 acquisition cannot be backdated to Day 7 Hammer 1495",
+    "ownership_layers": [
+      "land legal title",
+      "land beneficial ownership",
+      "operating-entity equity",
+      "control rights",
+      "Hunding IP and licenses",
+      "royalties",
+      "settled installments"
+    ]
+  }
 }

@@ -5,6 +5,16 @@ import unittest
 from baen_economy.corridor_finance import corridor_finance_snapshot
 
 class CorridorFinanceTests(unittest.TestCase):
+    def test_progressive_esamt_interests_do_not_invent_shares_or_transfer_land(self):
+        snap = corridor_finance_snapshot()
+        interests = snap["land_bank"]["esamt_interests"]
+        self.assertTrue(interests["progressive_buy_in_confirmed"])
+        self.assertIsNone(interests["day7_percentage"])
+        self.assertIsNone(interests["settled_cost_basis_gp"])
+        self.assertTrue(interests["manager_is_not_beneficial_owner"])
+        self.assertTrue(interests["does_not_transfer_corridor_land_title"])
+        self.assertEqual(snap["internal_transport"]["ratified_empire_fleet"], {"Stonebearer": 10, "Groundshaper": 5, "Ironmaw": 5})
+
     def test_user_ruled_corridor_math_is_not_mistaken_for_net_title(self):
         snap=corridor_finance_snapshot()
         land=snap["land_bank"]

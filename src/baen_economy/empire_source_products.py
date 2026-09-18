@@ -379,6 +379,7 @@ def _source_ref(row: Mapping[str, Any], fact_key: str) -> dict[str, Any]:
         "notion_page": source["notion_page"],
         "title": source.get("title"),
         "fact_key": fact_key,
+        **{key: source[key] for key in ("approval", "receipt") if key in source},
     }
 
 
@@ -649,6 +650,8 @@ def source_semantic_domains(
         "population_labour": {
             "status": "PARTIAL_SOURCE_BACKED",
             "known": [
+                *([_fact_snapshot(facts, "forgedeep.current_population", unit="residents")]
+                  if "forgedeep.current_population" in facts else []),
                 _fact_snapshot(facts, "neverwinter.current_population", unit="people"),
                 _fact_snapshot(facts, "waterdeep.current_population", unit="people"),
                 _fact_snapshot(facts, "ncf.employees", unit="employees"),
@@ -660,7 +663,8 @@ def source_semantic_domains(
                 "Do not sum them over the admitted commercial headcount."
             ),
             "unresolved": [
-                _blocker_snapshot(blockers, "forgedeep.current_population"),
+                *([_blocker_snapshot(blockers, "forgedeep.current_population")]
+                  if "forgedeep.current_population" not in facts else []),
                 _blocker_snapshot(blockers, "labor.empire_wide_occupation_pools"),
                 *evidence_unresolved("population_labour"),
             ],
@@ -928,25 +932,37 @@ def source_known_state(
                 "note": row.get("note"),
             }
         )
+    population_fact = facts.get("forgedeep.current_population")
     forgedeep = blockers.get("forgedeep.current_population")
-    if forgedeep is None:
+    if forgedeep is None and population_fact is None:
         raise EmpireSourceProductError("missing Forgedeep population blocker")
-    census.append(
-        {
-            "id": "forgedeep",
-            "settlement": "Forgedeep",
+    if population_fact is not None:
+        census.append({
+            "id": "forgedeep", "settlement": "Forgedeep",
             "role": "chartered underground citadel",
-            "population": None,
-            "status": str(forgedeep.get("status") or "MISSING_DATA"),
-            "reason": str(forgedeep.get("reason")),
-            "source": {
-                "notion_page": (forgedeep.get("source") or {}).get("notion_page"),
-                "title": (forgedeep.get("source") or {}).get("title"),
-                "fact_key": "forgedeep.current_population",
-            },
-        }
-    )
-    unresolved.append("Forgedeep civilian population remains unknown")
+            "population": _exact_number(population_fact, "forgedeep.current_population"),
+            "status": "USER_RULED", "authority": population_fact["authority"],
+            "source": _source_ref(population_fact, "forgedeep.current_population"),
+            "note": population_fact.get("note"),
+        })
+        unresolved.append("Forgedeep civilian/military, age and occupation partitions remain unknown")
+    else:
+        census.append(
+            {
+                "id": "forgedeep",
+                "settlement": "Forgedeep",
+                "role": "chartered underground citadel",
+                "population": None,
+                "status": str(forgedeep.get("status") or "MISSING_DATA"),
+                "reason": str(forgedeep.get("reason")),
+                "source": {
+                    "notion_page": (forgedeep.get("source") or {}).get("notion_page"),
+                    "title": (forgedeep.get("source") or {}).get("title"),
+                    "fact_key": "forgedeep.current_population",
+                },
+            }
+        )
+        unresolved.append("Forgedeep civilian population remains unknown")
     overview = blockers.get("neverwinter.population_overview_paragraph")
     if overview:
         unresolved.append(str(overview.get("reason")))

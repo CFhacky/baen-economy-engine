@@ -800,6 +800,18 @@
         "notion_page": "321e8214-84b0-8192-b481-f813840aadd3",
         "title": "Western Sandstone Quarries"
       }
+    },
+    {
+      "key": "forgedeep.current_population",
+      "value": 1599,
+      "authority": "USER-RULED",
+      "source": {
+        "notion_page": "2fbe8214-84b0-81a1-997e-d3b747e8c556",
+        "title": "Forgedeep",
+        "approval": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+        "receipt": "recovery/FORGEDEEP_POPULATION_RESOLUTION_2026-09-18.json"
+      },
+      "note": "Total settlement population; no civilian/military/age/occupation partition inferred"
     }
   ],
   "blockers": [
@@ -855,16 +867,6 @@
       "source": {
         "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
         "title": "Empire Financial State — Current Reference"
-      }
-    },
-    {
-      "key": "forgedeep.current_population",
-      "status": "MISSING_DATA",
-      "reason": "Controlling runtime and LIVE STATE both leave occupancy/population unanswered. Location Population is null. City Development mixes a 450 figure with a staged 1,400–1,600 band and future Year-1 2,000 / decade 50,000 targets; none of those are current civilian population.",
-      "source": {
-        "notion_page": "3cbe8214-84b0-8178-a34a-d28e7ba76000",
-        "title": "Forgedeep Economic Return — LIVE STATE",
-        "last_edited_at": "2026-08-29T19:27:05.899Z"
       }
     },
     {
@@ -986,6 +988,20 @@
         "allocation_percent": 20,
         "warborn_allocation_tons_per_month": 36
       }
+    }
+  ],
+  "resolved_blockers": [
+    {
+      "key": "forgedeep.current_population",
+      "status": "MISSING_DATA",
+      "reason": "Controlling runtime and LIVE STATE both leave occupancy/population unanswered. Location Population is null. City Development mixes a 450 figure with a staged 1,400–1,600 band and future Year-1 2,000 / decade 50,000 targets; none of those are current civilian population.",
+      "source": {
+        "notion_page": "3cbe8214-84b0-8178-a34a-d28e7ba76000",
+        "title": "Forgedeep Economic Return — LIVE STATE",
+        "last_edited_at": "2026-08-29T19:27:05.899Z"
+      },
+      "resolution": "User-approved bounded draw",
+      "receipt": "recovery/FORGEDEEP_POPULATION_RESOLUTION_2026-09-18.json"
     }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "schema": "tnp.economy.bounded-state-resolution/1",
+  "authority": "USER-RULED",
+  "approval": "Chad: Approved overall. 2026-09-18; approves prior packet uniform integer 1400\u20131600, one draw without reroll",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "method": "uniform integer via secrets.randbelow(201) + 1400",
+  "minimum": 1400,
+  "maximum": 1600,
+  "offset": 199,
+  "value": 1599,
+  "draw_count": 1,
+  "recorded_at_utc": "2026-09-18T21:58:23.013072+00:00",
+  "campaign_time_advanced": false,
+  "notion_writes": 0,
+  "scope": "Total settlement population; no civilian/military/age/occupation partition inferred"
+}

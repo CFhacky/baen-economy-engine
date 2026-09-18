@@ -24,7 +24,7 @@ class EmpireCloseTests(unittest.TestCase):
         self.assertFalse(result["ready_for_canonical_month"])
         self.assertGreater(result["accepted_values"],20)
         self.assertGreater(result["unresolved_items"],5)
-        self.assertEqual({r["id"] for r in result["user_actions"]},{"forgedeep-pop","crownworks"})
+        self.assertEqual({r["id"] for r in result["user_actions"]},{"crownworks"})
         self.assertIn("fleet-roster",{r["id"] for r in result["routine_actions"]})
 
     def test_current_rail_does_not_promote_future_deep_road(self):
@@ -110,10 +110,7 @@ class EmpireCloseTests(unittest.TestCase):
         facts={row["key"]:row for row in lane["facts"]}
         self.assertEqual(facts["neverwinter.stonebearer_shared_fleet_units"]["value"],4)
         self.assertIn("do not double-count",facts["neverwinter.stonebearer_shared_fleet_units"]["note"])
-        self.assertTrue(any(
-            row["key"]=="empire.heavy_machinery.current_roster_outside_neverwinter"
-            for row in lane["unresolved"]
-        ))
+        self.assertEqual(lane["ratified_programme"]["day7_fleet"]["Stonebearer"], 10)
 
     def test_heavy_machinery_line_exists_but_rate_and_total_fleet_remain_uninvented(self):
         result=close_status()
@@ -125,8 +122,8 @@ class EmpireCloseTests(unittest.TestCase):
         self.assertTrue(facts["heavy_machinery.production_active_by_day7_hammer_1495"]["value"])
         self.assertEqual(facts["heavy_machinery.production_active_by_day7_hammer_1495"]["authority"],"USER-RULED")
         methods={row["key"]:row["method"] for row in lane["unresolved"]}
-        self.assertEqual(methods["empire.heavy_machinery.current_roster"],"WORKLOAD_BACKSOLVE_THEN_BOUND_RESIDUAL")
-        self.assertEqual(methods["empire.heavy_machinery.current_build_rate"],"DERIVE_FROM_RATIFIED_FLEET_AND_PRODUCTION_WINDOW")
+        self.assertNotIn("empire.heavy_machinery.current_roster", methods)
+        self.assertNotIn("empire.heavy_machinery.current_build_rate", methods)
 
     def test_dedicated_barges_are_not_promoted_to_baen_owned_fleet(self):
         result=close_status()
@@ -163,7 +160,33 @@ class EmpireCloseTests(unittest.TestCase):
         facts={row["key"]:row for row in lane["facts"]}
         self.assertEqual(facts["brickworks.stonebearer_equipped_batch_cost_gp"]["value"],32000)
         self.assertFalse(lane["source_recovery"]["original_machine_document_recovered"])
-        self.assertTrue(any(r["key"]=="heavy_machinery.first_acceptance_date" for r in lane["unresolved"]))
+        self.assertTrue(any(r["key"]=="heavy_machinery.first_acceptance_date" for r in lane["resolved_items"]))
+        self.assertEqual(lane["ratified_programme"]["origin_authority"], "MODEL-PROPOSED")
+
+    def test_ratified_fleet_reconciles_deliveries_allocation_and_factory_bottlenecks(self):
+        programme = load_close_recovery()["lanes"]["heavy_machinery"]["ratified_programme"]
+        root = Path(__file__).resolve().parents[1]
+        self.assertEqual(programme, json.loads((root / "recovery/MACHINERY_PROGRAMME_2026-09-18.json").read_text()))
+        for chassis, count in programme["day7_fleet"].items():
+            self.assertEqual(sum(row[chassis] for row in programme["production_history"]), count)
+            self.assertEqual(sum(row[chassis] for row in programme["allocation"].values()), count)
+        for function, staff_key in (("assembly", "assembly_fitters"), ("kit", "kit_fabricators"), ("integration", "integration"), ("acceptance", "acceptance")):
+            hours = sum(n * programme["hours_per_unit"][c][function] for c, n in programme["regular_monthly_capacity"].items())
+            self.assertLessEqual(hours, 160 * programme["factory_positions"][staff_key])
+        self.assertFalse(programme["automatic_delivery"])
+        self.assertIsNone(programme["component_bom"]["raw_material_masses"])
+        self.assertEqual(programme["costs"]["day7_cash_debit_gp"], 0)
+
+    def test_approved_population_draw_is_stable_and_preserves_historical_450(self):
+        lane = load_close_recovery()["lanes"]["forgedeep"]
+        rows = {r["key"]: r for r in lane["facts"]}
+        receipt = lane["resolution_receipt"]
+        self.assertEqual(receipt["draw_count"], 1)
+        self.assertEqual(receipt["value"], receipt["minimum"] + receipt["offset"])
+        self.assertLessEqual(receipt["value"], receipt["maximum"])
+        self.assertEqual(rows["forgedeep.population_eleint_1494"]["value"], 450)
+        self.assertEqual(rows["forgedeep.current_population_day7_hammer"]["value"], 1599)
+        self.assertFalse(close_status()["ready_for_canonical_month"])
 
     def test_historical_loans_and_warehouse_capacity_do_not_create_opening_assets(self):
         lanes=close_status()["lanes"]

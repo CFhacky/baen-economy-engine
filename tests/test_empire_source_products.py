@@ -65,8 +65,8 @@ class EmpireSourceProductsTests(unittest.TestCase):
         by_id = {row["id"]: row for row in state["census"]}
         self.assertEqual(by_id["neverwinter"]["population"], 75000)
         self.assertEqual(by_id["waterdeep"]["population"], 130000)
-        self.assertIsNone(by_id["forgedeep"]["population"])
-        self.assertEqual(by_id["forgedeep"]["status"], "MISSING_DATA")
+        self.assertEqual(by_id["forgedeep"]["population"], 1599)
+        self.assertEqual(by_id["forgedeep"]["status"], "USER_RULED")
         food = {row["id"]: row for row in state["food_financials"]}
         self.assertEqual(food["agricultural_shelters"]["monthly_revenue_gp"], 1500)
         self.assertEqual(food["blacklake_aquaculture"]["employees"], 15)
@@ -78,7 +78,7 @@ class EmpireSourceProductsTests(unittest.TestCase):
             self.assertTrue(row["approximate"])
             self.assertIsNone(row["capacity"])
         joined = " ".join(state["unresolved"])
-        self.assertIn("Forgedeep civilian population remains unknown", joined)
+        self.assertIn("Forgedeep civilian/military, age and occupation partitions remain unknown", joined)
         self.assertIn("80,000", joined)
         payload = json.loads(Path(DEFAULT_SOURCE_INPUTS).read_text(encoding="utf-8"))
         keys = {row["key"] for row in payload["facts"]}
@@ -124,7 +124,7 @@ class EmpireSourceProductsTests(unittest.TestCase):
 
         population = domains["population_labour"]
         self.assertIn("not additive", population["aggregation_rule"])
-        self.assertTrue(
+        self.assertFalse(
             any(row["key"] == "forgedeep.current_population" for row in population["unresolved"])
         )
 

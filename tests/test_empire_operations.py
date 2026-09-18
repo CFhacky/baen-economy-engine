@@ -158,7 +158,7 @@ class EmpireOperationsTests(unittest.TestCase):
         census = {row["id"]: row for row in known["census"]}
         self.assertEqual(census["neverwinter"]["population"], 75000)
         self.assertEqual(census["waterdeep"]["population"], 130000)
-        self.assertIsNone(census["forgedeep"]["population"])
+        self.assertEqual(census["forgedeep"]["population"], 1599)
         self.assertEqual(known["labor"]["admitted_commercial_employees"], 1084)
         self.assertEqual(len(known["arterial_routes"]), 5)
         self.assertTrue(
@@ -175,13 +175,12 @@ class EmpireOperationsTests(unittest.TestCase):
         self.assertEqual(domains["military_contracts"]["status"], "PARTIAL_SOURCE_BACKED")
         coverage = physical["semantic_coverage"]
         self.assertEqual(coverage["status"], "PARTIAL_SOURCE_MAPPED")
-        self.assertEqual(coverage["mapped_record_count"], 11)
+        self.assertEqual(coverage["mapped_record_count"], 12)
         self.assertEqual(coverage["moved_from_unknown"], 9)
         self.assertEqual(coverage["unknown_before"], 1616)
         self.assertEqual(coverage["unknown_after_overlay"], 1607)
         outside = [r for r in coverage["mapped_records"] if r["prior_coverage"] == "OUTSIDE_CENSUS"]
-        self.assertEqual(len(outside), 1)
-        self.assertEqual(outside[0]["title"], "Silversheen Trading (Aluminum)")
+        self.assertEqual({r["title"] for r in outside}, {"Forgedeep", "Silversheen Trading (Aluminum)"})
         self.assertEqual(coverage["simulated_after_overlay"], 0)
 
     def test_report_is_a_vara_style_review_surface(self):
