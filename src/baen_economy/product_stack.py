@@ -213,6 +213,48 @@ def _terminate(process: subprocess.Popen) -> None:
         process.wait(timeout=5)
 
 
+def prepare_source_products(root: Path) -> dict[str, Path]:
+    """Prepare only upstream products with admissible Hammer-1495 inputs.
+
+    Actual campaign execution currently has source-backed inputs for:
+    - Mesa event scheduling,
+    - Unknown Horizons production-only line validation,
+    - FreeCol actual-vs-maximum Warborn production.
+
+    OpenTTD, Veloren, and Brunnfeld are deliberately not prepared here because
+    their required current route/stock/market inputs remain fail-closed.
+    """
+
+    root = root.expanduser().resolve()
+    root.mkdir(parents=True, exist_ok=True)
+    _ensure_mesa()
+    return {
+        "unknown_horizons": _ensure_unknown_horizons(root),
+        "freecol": _ensure_freecol(root),
+    }
+
+
+@contextmanager
+def source_product_environment(root: Path) -> Iterator[dict[str, Path]]:
+    """Expose only source-admissible upstream products to the actual run."""
+
+    paths = prepare_source_products(root)
+    old_env = {
+        key: os.environ.get(key)
+        for key in ("UNKNOWN_HORIZONS_CHECKOUT", "FREECOL_CHECKOUT")
+    }
+    try:
+        os.environ["UNKNOWN_HORIZONS_CHECKOUT"] = str(paths["unknown_horizons"])
+        os.environ["FREECOL_CHECKOUT"] = str(paths["freecol"])
+        yield paths
+    finally:
+        for key, value in old_env.items():
+            if value is None:
+                os.environ.pop(key, None)
+            else:
+                os.environ[key] = value
+
+
 def prepare_products(
     root: Path,
     *,
