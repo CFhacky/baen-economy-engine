@@ -19,7 +19,7 @@ No upstream product supplies campaign canon. Population, money, recipes, wages, 
 | Veloren | `e633eb8ca15ae97bb5ef5a039fcf6844e96ad704` | GPL Rust workspace; economy lives in `veloren-world`; `Economy::tick` is public but the economic state needed for Baen injection is private | **PINNED GPL-SIDE RUST ADAPTER**. The exact checkout receives a deliberately narrow state-injection seam inside the GPL tree; the actual simulation remains Veloren's `Economy::tick`, and Baen reads Veloren's own `EconomyInfo` and `SitePrices` output. | **IMPLEMENTED / CI-PROVEN** |
 | OpenTTD | `1aca0b60a8024f295e1d0ad2a3407b3dac838099` | GPL native C++ game with a dedicated-server product and documented admin network explicitly intended for external applications | **HEADLESS PRODUCT / ADMIN API**. CI builds the exact dedicated server, boots it, authenticates through the real admin protocol, and polls live product state/economy packets. Baen does not copy `DeliverGoods` into Python as the product integration. | **IMPLEMENTED / CI-PROVEN** |
 
-All six runtime boundaries above executed successfully in GitHub Actions run **#115** (`35280499380`) at code head `c8d5830745f709838a3effe9ac9a4e588cc5f86f`.
+All six runtime boundaries above were reconfirmed successfully in GitHub Actions run **#254** (`35304371375`) at code head `52f6fb05605e10f5a528eb496501051646411dbd`. The older #115 run remains the historical baseline recorded in the recovery handoff.
 
 ## Implemented direct-product files
 
@@ -48,6 +48,16 @@ All six runtime boundaries above executed successfully in GitHub Actions run **#
 A green product boundary means Baen can execute the pinned upstream product and obtain its output through the documented or deliberately isolated boundary above. It does **not** mean every mechanic, balance constant, state variable, or default from that product has been adopted into the Baen economy.
 
 Source-to-product mapping remains a separate acceptance problem. Any consequential mapping must still be traceable to campaign/source authority or explicitly labeled as unresolved/model-proposed rather than silently inheriting an upstream default.
+
+### Current Hammer-1495 semantic mapping
+
+The actual source lane now exposes typed mappings for **finance/banking, infrastructure/logistics, population/labour, construction/capital, and military/standing contracts** through `empire_source_products.py`. Record-level coverage is tracked as a separate overlay; it does not rewrite the dated census snapshot and it does not promote any record to SIMULATED.
+
+A concrete OpenTTD candidate now exists: the source authority records approximately **1.5 tons/month of Warborn precision tool steel from the Gauntlgrym partnership**, while the Northern Industrial Yards source records the **85-mile / 2-day Gauntlgrym-Forgedeep freight corridor**. Pinned OpenTTD defines cargo id **9 / `CT_STEEL`** in tons. That semantic join is persisted in `recovery/SOURCE_SEMANTIC_EVIDENCE_2026-09-18.json`.
+
+OpenTTD remains **MAPPED_BLOCKED** on the actual lane. The pinned product income function accepts integer cargo pieces and OpenTTD tile distance; there is no USER-RULED or SOURCE-DERIVED campaign-mile→tile mapping and no adopted rule for converting **1.5 source tons** to integer cargo pieces. The engine therefore refuses to call the product income function rather than silently treating miles as tiles or rounding the shipment.
+
+The semantic coverage overlay currently maps **10 source records**. Nine were verified current members of the live Business Registry or Locations collections and therefore move from census **UNKNOWN** to **SOURCE_MAPPED** in the overlay (**1,616 → 1,607**). The tenth, `Empire Financial State — Current Reference`, retains its explicit **MISSING_DATA** coverage. **SIMULATED remains 0**.
 
 ## Compatibility adapters are not products
 
