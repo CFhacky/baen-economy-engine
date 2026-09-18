@@ -99,6 +99,8 @@ The source-grounded monthly business phase is the default `baen-empire run` path
 
 The runtime also exposes typed source→product semantic domains for finance/banking, infrastructure/logistics, population/labour, construction/capital, and military/standing contracts. Mapping a fact does not make an incomplete domain executable.
 
+The current semantic coverage overlay maps **10 source records** in those domains. **9 verified current-live collection records move from UNKNOWN to SOURCE_MAPPED**, so overlay UNKNOWN is **1,607** rather than 1,616; the Current Financial State record retains its existing explicit MISSING_DATA class. **SIMULATED remains 0**.
+
 Remaining source-to-simulator gaps:
 
 1. exact current liquid cash (still a ~400K Shimmerdeep/Crown gap / 450K protected target, not a cash figure);
