@@ -108,7 +108,10 @@ class EmpireCliTests(unittest.TestCase):
         sandbox_args = build_parser().parse_args(["sandbox", "--seed", "synthetic"])
         self.assertEqual(run_args.command, "run")
         self.assertEqual(sandbox_args.command, "sandbox")
-        self.assertEqual(run_args.census, sandbox_args.census)
+        self.assertEqual(run_args.market, "unknown")
+        self.assertFalse(run_args.vara_active)
+        self.assertTrue(hasattr(sandbox_args, "scenario"))
+        self.assertFalse(hasattr(run_args, "scenario"))
 
 
 if __name__ == "__main__":
