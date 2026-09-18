@@ -862,6 +862,23 @@ def render_empire_business_report(payload: Mapping[str, Any]) -> str:
                 f"- {labor.get('double_count_rule')}",
             ]
         )
+    coverage = physical.get("semantic_coverage") or {}
+    if coverage:
+        lines.extend(
+            [
+                "",
+                "## Semantic coverage overlay",
+                "",
+                f"- Source-mapped records: **{coverage.get('mapped_record_count')}**.",
+                (
+                    f"- UNKNOWN: **{coverage.get('unknown_before')} → "
+                    f"{coverage.get('unknown_after_overlay')}** "
+                    f"({coverage.get('moved_from_unknown')} records moved to SOURCE_MAPPED)."
+                ),
+                f"- SIMULATED: **{coverage.get('simulated_after_overlay')}**.",
+                "",
+            ]
+        )
     domains = physical.get("semantic_domains") or {}
     if domains:
         lines.extend(["", "## Source → product semantic domains", ""])
