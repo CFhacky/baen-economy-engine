@@ -81,7 +81,7 @@ jobs:
       - name: Execute the exact user-facing whole-Empire command
         run: |
           mkdir -p reports
-          baen-empire run \
+          baen-empire sandbox \
             --seed "hammer-1495-e2e" \
             --product-root "$RUNNER_TEMP/baen-product-stack" \
             --openttd-baseset /usr/share/games/openttd/baseset \
@@ -95,3 +95,11 @@ jobs:
           grep -q "freecol.*USED_IN_RUN" reports/Empire-E2E-Preview.md
           grep -q "veloren.*USED_IN_RUN" reports/Empire-E2E-Preview.md
           grep -q "openttd.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+      - name: Prove actual Empire run fails closed on synthetic inputs
+        run: |
+          set +e
+          output=$(baen-empire run --seed "must-be-source-grounded" --no-prepare-products 2>&1)
+          status=$?
+          set -e
+          test "$status" -ne 0
+          echo "$output" | grep -q "actual Empire run is source-gated"
