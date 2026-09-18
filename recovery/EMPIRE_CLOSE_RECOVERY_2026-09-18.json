@@ -30,7 +30,7 @@
       "id": 2,
       "name": "External Constants & Engineering Research",
       "status": "IN_PROGRESS",
-      "exit": "Research relationships sourced/versioned; no campaign quantities invented."
+      "exit": "Research relationships sourced/versioned after New Path Engine → Library corpus → external-source routing; no campaign quantities invented."
     },
     {
       "id": 3,
@@ -948,6 +948,26 @@
       "id": "2026-09-18-batch-5",
       "authority": "SYSTEM + SOURCE-DERIVED",
       "note": "Empire Close now binds to the repository's existing strict agriculture canon/runtime instead of creating a duplicate food model. Current tomatoes/produce, seven-pool Blacklake, converted-quarry Tilapia, and reservoir trout/salmon are preserved; only genuinely missing physical state remains unresolved."
+    },
+    {
+      "id": "2026-09-18-sourcebook-routing",
+      "authority": "USER-RULED + SOURCE-ROUTED",
+      "note": "User reminded the Economy Engine that The New Path Engine contains harvested sourcebook data. Phase-2 research now checks that book-RAW layer before Library corpus and external research."
     }
-  ]
+  ],
+  "sourcebook_routing": {
+    "procedure": "recovery/SOURCEBOOK_ROUTING_2026-09-18.md",
+    "new_path_engine_repo": "CFhacky/the-new-path-engine",
+    "authority": "BOOK_RAW_BELOW_CAMPAIGN_CANON",
+    "order": [
+      "USER-RULED",
+      "LIVE_NOTION",
+      "RATIFIED_PROTOCOL",
+      "NEW_PATH_ENGINE_SOURCEBOOK_RAW",
+      "USER_LIBRARY_SOURCEBOOK_CORPUS",
+      "EXTERNAL_RESEARCH",
+      "MODEL-PROPOSED"
+    ],
+    "note": "Absence from a harvested New Path Engine family is not evidence of absence from the sourcebook corpus."
+  }
 }

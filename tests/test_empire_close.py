@@ -79,6 +79,21 @@ class EmpireCloseTests(unittest.TestCase):
         self.assertTrue(any(row["key"]=="blacklake.species_allocation_within_7_pools" for row in food["unresolved"]))
         self.assertFalse(food["existing_runtime"]["current_month_advance_authorized"])
 
+    def test_sourcebook_research_routes_through_new_path_engine_first(self):
+        result=close_status()
+        # The close payload is validated by the loader; the routing document is
+        # an execution procedure, not a campaign fact.
+        import json
+        from pathlib import Path
+        root=Path(__file__).resolve().parents[1]
+        raw=json.loads((root/"recovery/EMPIRE_CLOSE_RECOVERY_2026-09-18.json").read_text(encoding="utf-8"))
+        routing=raw["sourcebook_routing"]
+        self.assertEqual(routing["new_path_engine_repo"],"CFhacky/the-new-path-engine")
+        self.assertLess(
+            routing["order"].index("NEW_PATH_ENGINE_SOURCEBOOK_RAW"),
+            routing["order"].index("EXTERNAL_RESEARCH"),
+        )
+
     def test_phase_one_is_complete_and_remaining_system_gaps_are_classified(self):
         result=close_status()
         phases={row["id"]:row for row in result["phase_progress"]}
