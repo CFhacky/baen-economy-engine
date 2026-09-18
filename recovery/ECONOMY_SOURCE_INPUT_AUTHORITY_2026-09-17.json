@@ -535,8 +535,104 @@
       "note": "Current Registry page states 8,000 tons/month across granite, marble, basalt, vaultstone, and mixed stone."
     },
     {
+      "key": "warborn_neverwinter.current_abrasives_tons_per_month",
+      "value": 0.5,
+      "unit": "tons/month",
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.current_bronze_fittings_tons_per_month",
+      "value": 0.25,
+      "unit": "tons/month",
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.current_copper_tons_per_month",
+      "value": 0.3,
+      "unit": "tons/month",
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.current_crystal_components_per_month",
+      "value": 120,
+      "unit": "components/month",
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.current_cutting_oils_gallons_per_month",
+      "value": 50,
+      "unit": "gallons/month",
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.current_precision_tool_steel_tons_per_month",
+      "value": 1.5,
+      "unit": "tons/month",
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.current_silver_lbs_per_month",
+      "value": 50,
+      "unit": "lb/month",
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
       "key": "warborn_neverwinter.employees",
       "value": 77,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.hell_iron_lbs_per_unit",
+      "value": 800,
+      "unit": "lb/unit",
+      "approximate": true,
       "authority": "SOURCE-DERIVED",
       "confidence": "high",
       "source": {
@@ -554,6 +650,18 @@
         "title": "Warborn Production - Neverwinter"
       },
       "temporal_note": "Eleint 1494 operational rate; no later source found in this pass changing the line rate."
+    },
+    {
+      "key": "warborn_neverwinter.material_buffer_months",
+      "value": 3,
+      "unit": "months",
+      "authority": "SOURCE-DERIVED",
+      "confidence": "medium",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter"
+      },
+      "note": "Source states a 3-month material buffer but does not enumerate a current warehouse count; do not turn this duration into inventory quantities without explicit stock records."
     },
     {
       "key": "warborn_neverwinter.maximum_legionnaire_capacity_units_per_month",
