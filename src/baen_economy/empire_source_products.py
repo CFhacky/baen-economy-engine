@@ -391,7 +391,7 @@ def _source_ref(row: Mapping[str, Any], fact_key: str) -> dict[str, Any]:
 
 def _load_semantic_evidence(path: Path = DEFAULT_SEMANTIC_EVIDENCE) -> dict[str, Any]:
     try:
-        payload = json.loads(path.read_text(encoding="utf-8"), parse_float=Decimal)
+        payload = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
         raise EmpireSourceProductError(f"cannot read semantic evidence: {path}: {exc}") from exc
     if (
@@ -454,6 +454,25 @@ def _blocker_snapshot(
     }
 
 
+def _operator_safe_source_value(value: object) -> object:
+    """Return source/evidence data in canonical operator-safe JSON form."""
+
+    if isinstance(value, (float, Decimal)):
+        return _product_number(value)
+    if isinstance(value, Mapping):
+        return {
+            str(key): _operator_safe_source_value(item)
+            for key, item in value.items()
+        }
+    if isinstance(value, (tuple, list)):
+        return [_operator_safe_source_value(item) for item in value]
+    if isinstance(value, (str, int, bool)) or value is None:
+        return value
+    raise EmpireSourceProductError(
+        f"unsupported semantic evidence value: {type(value).__name__}"
+    )
+
+
 def _semantic_mapping(evidence: Mapping[str, Any], mapping_id: str) -> dict[str, Any]:
     mappings = evidence.get("mappings")
     if not isinstance(mappings, list):
@@ -467,7 +486,10 @@ def _semantic_mapping(evidence: Mapping[str, Any], mapping_id: str) -> dict[str,
         raise EmpireSourceProductError(
             f"semantic mapping {mapping_id} must exist exactly once"
         )
-    return dict(matches[0])
+    safe = _operator_safe_source_value(dict(matches[0]))
+    if not isinstance(safe, dict):
+        raise EmpireSourceProductError(f"semantic mapping {mapping_id} is malformed")
+    return safe
 
 
 def source_semantic_domains(
