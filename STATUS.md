@@ -93,6 +93,27 @@ The current validated code head is `c8d5830745f709838a3effe9ac9a4e588cc5f86f`. G
 
 See `VALIDATION_STANDALONE.md` for the executable evidence.
 
+## Completeness proof gate
+
+A green source census is no longer treated as proof of complete source review.
+
+The authoritative operator check is `python tools/check_completeness.py`, backed by:
+
+- `src/baen_economy/completeness.py`
+- `recovery/COMPLETENESS_ACCEPTANCE_2026-09-18.md`
+- `recovery/SOURCE_BODY_REVIEW_RECEIPT_2026-09-18.json`
+
+Current proof state:
+
+- collection acquisition: **PASS**;
+- retained-core semantic disposition: **FAIL — 13/1,620 dispositioned, 1,607 UNKNOWN** after the current 9-record semantic overlay;
+- exhaustive private source-body review: **FAIL / NOT YET EXHAUSTIVELY MEASURED**;
+- 16-driver registry presence/disposition: **PASS as an inventory/control surface, not as execution readiness**;
+- coverage claim: **CLOSED**;
+- canonical execution readiness: **CLOSED**.
+
+Private GM prose does not need to be copied into this public repository. Exhaustive body review can be proven with stable source IDs, revision timestamps, body hashes, and explicit dispositions. Selective source requeries do not count as exhaustive coverage.
+
 ## Immediate development queue
 
 The source-grounded monthly business phase is the default `baen-empire run` path. Known industrial output lines, Neverwinter/Waterdeep census, food-sector financials, complete arterial distances, and admitted commercial headcount are now reported from source authority. Mesa schedules those business-phase events when installed, and FreeCol may consume Warborn 12/15 when its checkout is present. OpenTTD now has a real Warborn/Gauntlgrym precision-steel source flow mapped to the pinned product's CT_STEEL semantics, but remains **MAPPED_BLOCKED** because campaign miles→tiles and 1.5 source tons→integer OpenTTD cargo pieces have no adopted authority. Veloren and Brunnfeld remain dormant. Forgedeep occupancy, food physical volumes, route capacities, and the OpenTTD unit bridge stay unknown.
