@@ -180,6 +180,42 @@
           "authority": "SOURCE-DERIVED",
           "source": "Baen Empire Complete Quarry Network",
           "note": "Do not assume these two western-quarry barges are 100-ton Hunding standard barges; source does not identify their class."
+        },
+        {
+          "key": "nrtc.current_wagon_count",
+          "value": 4,
+          "unit": "wagons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Road Trading Company — Business Record",
+          "note": "Affiliated commercial capacity: Shi'van holds 25%; do not classify as wholly Empire-owned."
+        },
+        {
+          "key": "nrtc.neverwinter_runs_per_month_min",
+          "value": 2,
+          "unit": "runs/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Road Trading Company — Business Record"
+        },
+        {
+          "key": "nrtc.neverwinter_runs_per_month_max",
+          "value": 3,
+          "unit": "runs/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Road Trading Company — Business Record"
+        },
+        {
+          "key": "nrtc.drivers_per_typical_run",
+          "value": 2,
+          "unit": "drivers",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Road Trading Company — Business Record"
+        },
+        {
+          "key": "nrtc.contract_guards_per_wagon_neverwinter_corridor",
+          "value": 2,
+          "unit": "guards/wagon",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Road Trading Company — Business Record"
         }
       ],
       "unresolved": [
@@ -198,7 +234,8 @@
           "method": "RECOVER",
           "reason": "No consolidated current register yet."
         }
-      ]
+      ],
+      "research_constants_ref": "recovery/TRANSPORT_RESEARCH_CONSTANTS_2026-09-18.json"
     },
     "rail": {
       "status": "CURRENT_TRUNK_ZERO_FUTURE_DESIGN_KNOWN",
@@ -564,17 +601,7 @@
           "formula": "30000 / 2300000 * 100"
         }
       ],
-      "conflicts": [
-        {
-          "key": "ncf.monthly_revenue_total",
-          "claims": [
-            22000,
-            23250
-          ],
-          "method": "RECONCILE_PARENT_BRANCH_CONSOLIDATION",
-          "reason": "Parent current page and branch table disagree by 1,250 gp/month."
-        }
-      ],
+      "conflicts": [],
       "unresolved": [
         {
           "key": "ncf.current_trial_balance",
@@ -602,6 +629,19 @@
           "key": "dorothea_pre_ncf_default",
           "status": "HISTORICAL_NOT_ACTIVE_LOAN",
           "note": "Dorothea Varnilly's old 40,000 gp Gundwynd default predates NCF's purchase of her portfolio. Do not count the original 40,000 gp as current NCF principal without a surviving-balance record."
+        }
+      ],
+      "resolved_discrepancies": [
+        {
+          "key": "ncf.monthly_revenue_total",
+          "selected_value_gp_per_month": 22000,
+          "authority": "SOURCE-DERIVED",
+          "resolution_method": "SOURCE_PRECEDENCE",
+          "reason": "The newer parent Northern Crown Financial page is the controlling current source. The 23,250 gp branch roll-up is retained as a stale subordinate aggregation for audit traceability.",
+          "rejected_for_current_use": [
+            22000,
+            23250
+          ]
         }
       ]
     },
@@ -737,6 +777,11 @@
       "id": "2026-09-18-batch-2",
       "authority": "SOURCE-DERIVED",
       "note": "Phase-1 batch added current Hunding vessel/lock engineering constants while retaining current fleet count as unresolved; added explicit guards against treating proposed/generic vessel and aquaculture designs as current physical stock."
+    },
+    {
+      "id": "2026-09-18-batch-3",
+      "authority": "SOURCE-DERIVED + UPSTREAM-ADOPTED",
+      "note": "Recovered NRTC's four-wagon affiliated commercial fleet; resolved the NCF 22,000 vs 23,250 revenue discrepancy by current-parent source precedence; added historical/FAO transport comparators without overwriting Baen's explicit 20–40 ton specialized heavy-wagon source fact."
     }
   ]
 }

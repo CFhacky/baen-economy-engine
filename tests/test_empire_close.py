@@ -43,6 +43,19 @@ class EmpireCloseTests(unittest.TestCase):
             "TWO_BARGES_CONFIRMED_CAPACITY_NOT_IDENTIFIED",
         )
 
+    def test_affiliated_nrtc_capacity_is_recovered_without_calling_it_empire_owned(self):
+        result=close_status()
+        facts={row["key"]:row for row in result["lanes"]["conventional_freight"]["facts"]}
+        self.assertEqual(facts["nrtc.current_wagon_count"]["value"],4)
+        self.assertIn("Affiliated commercial capacity",facts["nrtc.current_wagon_count"]["note"])
+
+    def test_ncf_parent_revenue_precedence_closes_stale_branch_rollup_discrepancy(self):
+        result=close_status()
+        lane=result["lanes"]["ncf_finance"]
+        self.assertFalse(any(row["key"]=="ncf.monthly_revenue_total" for row in lane.get("conflicts",[])))
+        resolved={row["key"]:row for row in lane["resolved_discrepancies"]}
+        self.assertEqual(resolved["ncf.monthly_revenue_total"]["selected_value_gp_per_month"],22000)
+
     def test_ncf_named_loans_do_not_fill_unknown_portfolio(self):
         result=close_status()
         lane=result["lanes"]["ncf_finance"]
