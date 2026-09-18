@@ -104,8 +104,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install standalone package
-        run: python -m pip install -e .
+      - name: Install standalone package with Mesa extra
+        run: python -m pip install -e '.[mesa]'
       - name: Execute source-grounded Hammer-1495 business phase
         run: |
           mkdir -p reports
@@ -118,4 +118,9 @@ jobs:
           grep -Fq "Expense control" reports/Empire-Business-Phase.md
           grep -Fq "Entity complications" reports/Empire-Business-Phase.md
           grep -Fq "Vara briefing" reports/Empire-Business-Phase.md
+          grep -Fq "Source-backed production lines" reports/Empire-Business-Phase.md
+          grep -Fq "Warborn Production - Neverwinter" reports/Empire-Business-Phase.md
+          grep -Fq "PARTIAL_SOURCE_BACKED" reports/Empire-Business-Phase.md
+          grep -Fq "mesa" reports/Empire-Business-Phase.md
+          grep -Fq "NOT_INVOKED" reports/Empire-Business-Phase.md
           grep -Fq "Notion writes: **0**" reports/Empire-Business-Phase.md

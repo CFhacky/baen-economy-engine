@@ -41,9 +41,11 @@ baen-empire run --seed "hammer-1495-a"
 4. rolls the empire Administration expense-control check;
 5. selects **3–5 admitted entities** for the campaign d20 complication table;
 6. applies only source-known Neglect penalties;
-7. produces a zero-write **Vara briefing** and review artifact.
+7. produces a zero-write **Vara briefing** and review artifact;
+8. reports the five source-backed industrial output lines (Brickworks, Clay Quarries, Silversheen, Star Metal Hills, Warborn Neverwinter) without inventing conversion ratios or inventories;
+9. maps Mesa onto the campaign business-phase events when installed, maps FreeCol onto Warborn 12/15 actual-versus-maximum when `FREECOL_CHECKOUT` is set, and keeps OpenTTD/Veloren/Brunnfeld dormant because their required current inputs are still missing.
 
-The current admission ledger contains **37 source-admitted operating entities** and **53 excluded/future/unresolved rows**. Its recurring commercial revenue baseline is **299,266 gp/month**, independently inside the Current Financial State authority band of **280,000–320,000 gp/month**. The engine does **not** invent an exact current cash balance or exact consolidated cost where source authority does not provide one; expense/net remain ranges when the books only support ranges.
+The current admission ledger contains **37 source-admitted operating entities** and **53 excluded/future/unresolved rows**. Its recurring commercial revenue baseline is **299,266 gp/month**, independently inside the Current Financial State authority band of **280,000–320,000 gp/month**. The engine does **not** invent an exact current cash balance or exact consolidated cost where source authority does not provide one; expense/net remain ranges when the books only support ranges. Silversheen's Hammer-1495 180 t/mo × 320 gp/t revenue is admitted; its Eleint 1494 cost table is **not** silently scaled. The Warborn aluminum allocation remains an explicit 30 t/mo vs 20% conflict after that production ruling.
 
 Market condition is unknown by default and therefore supplies no modifier. You may make an explicit preview ruling:
 
@@ -61,7 +63,7 @@ The older regional stock-flow model and the six upstream product runtimes remain
 baen-empire sandbox --seed "sandbox-a"
 ```
 
-Mesa, Brunnfeld, Unknown Horizons, FreeCol, Veloren, and OpenTTD are invoked in actual campaign work only when their required current inputs are source-backed. A product being runnable is not permission to manufacture Baen state.
+Mesa, Brunnfeld, Unknown Horizons, FreeCol, Veloren, and OpenTTD are invoked in actual campaign work only when their required current inputs are source-backed. A product being runnable is not permission to manufacture Baen state. The default `baen-empire run` path now uses Mesa as an event scheduler for the source-derived business phase when the optional extra is installed; it still will not call OpenTTD, Veloren, or Brunnfeld to fill missing route, stock, or price authority.
 
 The admission and mechanics authority receipts are:
 

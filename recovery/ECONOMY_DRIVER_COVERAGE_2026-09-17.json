@@ -13,11 +13,13 @@
       ],
       "known": [
         "90 Registry records acquired",
+        "Hammer-1495 admission ledger: 37 admitted / 53 excluded",
         "entity revenue/cost/employees/capital where temporally valid",
         "current aggregate revenue/profit bands"
       ],
       "blocks": [
-        "temporal/accounting classification still required before consolidated total",
+        "NCF current consolidated monthly cost / trial balance still missing",
+        "Silversheen Hammer-1495 cost table not restated after 180 t/mo ruling",
         "parent/child overlaps such as NCF must not double-count"
       ]
     },
@@ -38,7 +40,8 @@
       ],
       "blocks": [
         "many other enterprise physical outputs absent",
-        "some input coefficients absent"
+        "some input coefficients absent",
+        "Silversheen Warborn allocation 30 t/mo vs 20% after 180 t/mo ruling"
       ]
     },
     {
@@ -223,21 +226,23 @@
         "UPSTREAM-ADOPTED"
       ],
       "known": [
-        "Mesa event runtime"
+        "Mesa event runtime",
+        "actual-run maps SOURCE-DERIVED empire-operations-engine business-phase events when Mesa is installed"
       ],
       "blocks": []
     }
   ],
-  "actual_run_status": "BLOCKED_FOR_FULL_PHYSICAL_MONTH",
+  "actual_run_status": "SOURCE_GROUNDED_BUSINESS_PHASE_PLUS_KNOWN_PRODUCTION",
   "executable_now": [
     "business financial/entity reporting without unsafe consolidation",
     "known industrial production lines",
-    "event scheduling"
+    "event scheduling of the campaign business-phase receipts"
   ],
   "next_source_targets": [
-    "temporal/accounting classification of Registry",
     "opening inventories",
     "NCF trial balance/current reserves",
+    "Silversheen Hammer-1495 monthly cost restatement",
+    "Silversheen/Warborn aluminum allocation quantity-versus-ratio ruling",
     "route capacities/loss rates",
     "Forgedeep civilian population",
     "food physical outputs",

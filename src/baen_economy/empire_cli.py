@@ -43,37 +43,56 @@ PRODUCTS = (
         "name": "Mesa",
         "boundary": "direct Python library",
         "mapping": "event scheduling/data collection",
-        "status": "runtime-integrated; Empire semantic mapping incomplete",
+        "status": (
+            "runtime-integrated; actual-run maps SOURCE-DERIVED empire-operations-engine "
+            "business-phase events when Mesa is installed"
+        ),
     },
     {
         "name": "Brunnfeld Agentic World",
         "boundary": "HTTP sidecar service",
         "mapping": "agent/market state",
-        "status": "runtime-integrated; Empire semantic mapping incomplete",
+        "status": (
+            "runtime-integrated; not invoked in actual run — market prices and demand "
+            "quantities are not source-backed"
+        ),
     },
     {
         "name": "Unknown Horizons",
         "boundary": "separate pinned Python product process",
         "mapping": "production lines/chains",
-        "status": "runtime-integrated; Empire semantic mapping incomplete",
+        "status": (
+            "runtime-integrated; actual-run may instantiate production-only lines from "
+            "sourced industrial outputs when UNKNOWN_HORIZONS_CHECKOUT is set; consume "
+            "coefficients stay unmapped"
+        ),
     },
     {
         "name": "FreeCol",
         "boundary": "JVM product harness",
         "mapping": "actual-versus-maximum production",
-        "status": "runtime-integrated; Empire semantic mapping incomplete",
+        "status": (
+            "runtime-integrated; actual-run maps SOURCE-DERIVED Warborn 12/15 "
+            "actual-versus-maximum when FREECOL_CHECKOUT is set"
+        ),
     },
     {
         "name": "Veloren",
         "boundary": "pinned GPL-side Rust adapter",
         "mapping": "settlement economy/stocks/prices",
-        "status": "runtime-integrated; Empire semantic mapping incomplete",
+        "status": (
+            "runtime-integrated; not invoked in actual run — opening stocks and general "
+            "commodity prices are not source-backed"
+        ),
     },
     {
         "name": "OpenTTD",
         "boundary": "headless dedicated server/admin API",
         "mapping": "transport/company economy telemetry",
-        "status": "runtime-integrated; Empire semantic mapping incomplete",
+        "status": (
+            "runtime-integrated; not invoked in actual run — route freight capacities "
+            "and loss rates are not source-backed"
+        ),
     },
 )
 

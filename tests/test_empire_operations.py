@@ -94,11 +94,52 @@ class EmpireOperationsTests(unittest.TestCase):
 
     def test_physical_products_are_components_not_fake_data_sources(self):
         result = run_empire_business_turn(seed="product-boundary")
-        self.assertEqual(
-            result["physical_subsystems"]["status"],
-            "DORMANT_UNTIL_SOURCE_BACKED",
+        physical = result["physical_subsystems"]
+        self.assertEqual(physical["status"], "PARTIAL_SOURCE_BACKED")
+        self.assertFalse(
+            any(row["recipe_invented"] for row in physical["production_lines"])
         )
-        self.assertIn("not invoked", result["physical_subsystems"]["reason"])
+        ids = [row["id"] for row in physical["production_lines"]]
+        self.assertEqual(
+            ids,
+            [
+                "brickworks",
+                "clay_quarries",
+                "silversheen_aluminum",
+                "star_metal_hills_bauxite",
+                "warborn_neverwinter",
+            ],
+        )
+        warborn = next(row for row in physical["production_lines"] if row["id"] == "warborn_neverwinter")
+        self.assertEqual(warborn["quantity"], 12)
+        self.assertEqual(warborn["maximum"], 15)
+        brick = next(row for row in physical["production_lines"] if row["id"] == "brickworks")
+        self.assertEqual(brick["quantity"], 75000)
+        self.assertTrue(any("clay-to-brick" in item for item in brick["unresolved_inputs"]))
+        silversheen = next(
+            row for row in physical["production_lines"] if row["id"] == "silversheen_aluminum"
+        )
+        self.assertEqual(silversheen["quantity"], 180)
+        products = physical["products"]
+        self.assertIn(products["mesa"]["status"], {"USED_IN_RUN", "UNAVAILABLE"})
+        self.assertIn(products["freecol"]["status"], {"USED_IN_RUN", "UNAVAILABLE"})
+        self.assertIn(products["unknown_horizons"]["status"], {"USED_IN_RUN", "UNAVAILABLE"})
+        self.assertEqual(products["openttd"]["status"], "NOT_INVOKED")
+        self.assertEqual(products["veloren"]["status"], "NOT_INVOKED")
+        self.assertEqual(products["brunnfeld"]["status"], "NOT_INVOKED")
+        self.assertIn(
+            "route freight capacities",
+            products["openttd"]["reason"],
+        )
+        mesa = products["mesa"]
+        event_ids = mesa.get("executed_event_ids") or mesa.get("intended_event_ids") or []
+        self.assertTrue(any(item.startswith("sector:") for item in event_ids))
+        self.assertIn("expense-control", event_ids)
+        self.assertFalse(any("shock" in item or "migration" in item for item in event_ids))
+        self.assertIn(
+            "Silversheen Warborn aluminum allocation",
+            " ".join(result["unresolved"]),
+        )
 
     def test_report_is_a_vara_style_review_surface(self):
         result = run_empire_business_turn(seed="report")
@@ -109,6 +150,9 @@ class EmpireOperationsTests(unittest.TestCase):
         self.assertIn("Entity complications", report)
         self.assertIn("Vara briefing", report)
         self.assertIn("Notion writes: **0**", report)
+        self.assertIn("Source-backed production lines", report)
+        self.assertIn("Baen Brickworks", report)
+        self.assertIn("Warborn Production - Neverwinter", report)
 
 
 if __name__ == "__main__":

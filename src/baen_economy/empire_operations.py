@@ -29,6 +29,7 @@ from typing import Any, Mapping, Sequence
 from .operator_codec import canonical_hash
 from .operator_dice import _die, classify_3d6
 from .registry_export import VerifiedRegistryExport, load_registry_export
+from .empire_source_products import map_source_backed_physical_layer
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -610,6 +611,18 @@ def run_empire_business_turn(
         if row["final_outcome"] is None
     )
 
+    physical = map_source_backed_physical_layer(
+        seed=seed,
+        month_label=month_label,
+        sector_results=sector_results,
+        expense_control={
+            "roll": expense_roll,
+            "expense_factor": str(expense_factor),
+        },
+        complications=complications,
+    )
+    unresolved.extend(physical["unresolved"])
+
     result: dict[str, Any] = {
         "schema": SCHEMA,
         "mode": "SOURCE_GROUNDED_PREVIEW",
@@ -657,14 +670,7 @@ def run_empire_business_turn(
         "entity_complications": complications,
         "vara_briefing": briefing,
         "unresolved": unresolved,
-        "physical_subsystems": {
-            "status": "DORMANT_UNTIL_SOURCE_BACKED",
-            "reason": (
-                "Veloren/OpenTTD/FreeCol/Unknown-Horizons/Brunnfeld physical submodels "
-                "are not invoked unless the required current campaign inputs are source-backed. "
-                "They remain real integrated components, not substitute data sources."
-            ),
-        },
+        "physical_subsystems": physical,
         "authority": {
             "inputs": "SOURCE-DERIVED / USER-RULED only",
             "mechanics": "SOURCE-DERIVED campaign rules; upstream products adopted only when mapped",
@@ -756,13 +762,35 @@ def render_empire_business_report(payload: Mapping[str, Any]) -> str:
         lines.append(f"- {item}")
     if not payload["unresolved"]:
         lines.append("- None.")
+    physical = payload["physical_subsystems"]
     lines.extend(
         [
             "",
-            "## Physical subsystem boundary",
-            "",
-            f"- **{payload['physical_subsystems']['status']}** — {payload['physical_subsystems']['reason']}",
+            "## Source-backed production lines",
             "",
         ]
     )
+    for row in physical.get("production_lines") or []:
+        maximum = f"; max {row['maximum']}" if row.get("maximum") is not None else ""
+        lines.append(
+            f"- **{row['entity']}** — {row['quantity']} {row['unit']}{maximum} "
+            f"({row['authority']}; {row['employees']} employees)."
+        )
+    products = physical.get("products") or {}
+    lines.extend(
+        [
+            "",
+            "## Physical subsystem / product mapping",
+            "",
+            f"- **{physical['status']}** — {physical['reason']}",
+            "",
+        ]
+    )
+    for name in ("mesa", "freecol", "unknown_horizons", "openttd", "veloren", "brunnfeld"):
+        item = products.get(name) or {}
+        status = item.get("status", "UNKNOWN")
+        extra = item.get("reason") or item.get("blocker") or item.get("provenance") or ""
+        suffix = f" — {extra}" if extra else ""
+        lines.append(f"- **{name}**: {status}{suffix}")
+    lines.append("")
     return "\n".join(lines)

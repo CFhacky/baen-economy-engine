@@ -625,6 +625,26 @@
       "key": "opening_entity_cash_and_deposits",
       "status": "MISSING_DATA",
       "reason": "Most of the sandbox's 34 opening account balances are not tied to a current treasury/bank ledger."
+    },
+    {
+      "key": "silversheen.current_monthly_cost_gp",
+      "status": "MISSING_DATA",
+      "reason": "Registry Monthly Cost 29040 and the page cost table are the Eleint 1494 150 t/mo envelope. The Hammer-1495 ruling restated output/revenue to 180 t/mo × 320 gp/t but did not restate the cost table. Do not scale 29040 by 180/150.",
+      "source": {
+        "notion_page": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+        "title": "Silversheen Trading (Aluminum)",
+        "last_edited_at": "2026-07-28T14:28:20.993Z"
+      }
+    },
+    {
+      "key": "silversheen.warborn_aluminum_allocation",
+      "status": "CONFLICT",
+      "reason": "Warborn Neverwinter and Silversheen both state a 30 t/mo allocation and '20% of current output'. Those agree at the Eleint 1494 150 t/mo baseline. After the Hammer-1495 180 t/mo ruling, 20% would be 36 t/mo. Quantity-versus-ratio is unresolved; neither value is selected.",
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter",
+        "last_edited_at": "2026-08-21T03:20:13.902Z"
+      }
     }
   ]
 }

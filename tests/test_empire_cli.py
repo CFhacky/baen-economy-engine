@@ -85,7 +85,13 @@ class EmpireCliTests(unittest.TestCase):
     def test_products_are_explicit_about_mapping_gap(self):
         payload = product_status()
         self.assertEqual(len(payload["products"]), 6)
-        self.assertTrue(all("semantic mapping incomplete" in row["status"] for row in payload["products"]))
+        by_name = {row["name"]: row["status"] for row in payload["products"]}
+        self.assertIn("business-phase events", by_name["Mesa"])
+        self.assertIn("Warborn 12/15", by_name["FreeCol"])
+        self.assertIn("not invoked in actual run", by_name["OpenTTD"])
+        self.assertIn("not invoked in actual run", by_name["Veloren"])
+        self.assertIn("not invoked in actual run", by_name["Brunnfeld Agentic World"])
+        self.assertIn("production-only lines", by_name["Unknown Horizons"])
 
     def test_actual_repository_empire_preview_resolves_real_registry(self):
         payload = empire_preview(

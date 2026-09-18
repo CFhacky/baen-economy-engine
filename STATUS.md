@@ -95,17 +95,20 @@ See `VALIDATION_STANDALONE.md` for the executable evidence.
 
 ## Immediate development queue
 
-The ten-collection census and the six upstream runtime boundaries are no longer the missing deliverables. The next work is source-to-simulator semantic coverage and adoption, including:
+The source-grounded monthly business phase is the default `baen-empire run` path. Known industrial output lines are now reported from source authority, Mesa schedules those business-phase events when installed, and FreeCol may consume Warborn 12/15 when its checkout is present. OpenTTD, Veloren, and Brunnfeld remain dormant on the actual path.
 
-1. finance/banking evidence outside the Business Registry;
-2. infrastructure/logistics evidence outside Locations;
-3. population/labour authority;
-4. construction/capital programmes;
-5. military formations and standing contracts;
-6. explicit mapping of campaign source fields into the now-proven upstream/product and Baen execution surfaces;
-7. explicit mechanics/data blockers where no source authority exists.
+Remaining source-to-simulator gaps:
 
-The practical target is to move records from `UNKNOWN` to justified executable coverage states without inventing balances, quantities, prices, wages, opening stocks, or campaign events.
+1. exact current liquid cash (still a ~400K Shimmerdeep/Crown gap / 450K protected target, not a cash figure);
+2. NCF trial balance / current reserves / consolidated monthly cost;
+3. Silversheen Hammer-1495 monthly cost restatement and the 30 t/mo vs 20% Warborn allocation ruling;
+4. opening inventories, settlement labour pools, general commodity prices, household baskets;
+5. route freight capacities/loss rates;
+6. Forgedeep civilian population;
+7. food physical outputs;
+8. shock probabilities and migration rates.
+
+Do not revive synthetic sandbox values to close those gaps.
 
 ## Not canonical or complete
 
