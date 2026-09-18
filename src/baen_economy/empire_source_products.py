@@ -43,6 +43,42 @@ class ProductionLineSpec:
 
 PRODUCTION_LINE_SPECS: tuple[ProductionLineSpec, ...] = (
     ProductionLineSpec(
+        id="treasury_quarries",
+        entity="Treasury Stone Quarries",
+        sector="Mining/Quarrying",
+        quantity_key="treasury_quarries.monthly_output_tons",
+        unit="tons stone/month",
+        employees_key="treasury_quarries.employees",
+        unresolved_inputs=("opening finished-stone inventories are not source-backed",),
+    ),
+    ProductionLineSpec(
+        id="azurite_quarries",
+        entity="Azurite Decorative Quarries",
+        sector="Mining/Quarrying",
+        quantity_key="azurite_quarries.monthly_output_tons",
+        unit="tons azurite/month",
+        employees_key="azurite_quarries.employees",
+        unresolved_inputs=("opening azurite inventories are not source-backed",),
+    ),
+    ProductionLineSpec(
+        id="western_limestone",
+        entity="Western Limestone Quarries",
+        sector="Mining/Quarrying",
+        quantity_key="western_limestone.monthly_output_tons",
+        unit="tons limestone/month",
+        employees_key="western_limestone.employees",
+        unresolved_inputs=("opening limestone inventories are not source-backed",),
+    ),
+    ProductionLineSpec(
+        id="western_sandstone",
+        entity="Western Sandstone Quarries",
+        sector="Mining/Quarrying",
+        quantity_key="western_sandstone.monthly_output_tons",
+        unit="tons sandstone/month",
+        employees_key="western_sandstone.employees",
+        unresolved_inputs=("opening sandstone inventories are not source-backed",),
+    ),
+    ProductionLineSpec(
         id="brickworks",
         entity="Baen Brickworks",
         sector="Manufacturing",
