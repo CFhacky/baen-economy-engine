@@ -1,0 +1,119 @@
+{
+  "schema": "tnp.economy.source-semantic-evidence/1",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "rule": "This file records source-to-product semantic evidence only. SOURCE-DERIVED observations may be mapped; unresolved conversions remain UNRESOLVED and are not replaced by MODEL-PROPOSED values on the actual-run lane.",
+  "mappings": [
+    {
+      "id": "warborn_gauntlgrym_precision_steel_flow",
+      "domain": "infrastructure_logistics",
+      "authority": "SOURCE-DERIVED",
+      "status": "ACTIVE_OBSERVED_FLOW",
+      "quantity_fact_key": "warborn_neverwinter.current_precision_tool_steel_tons_per_month",
+      "distance_fact_key": "warborn_neverwinter.gauntlgrym_freight_distance_miles",
+      "transit_fact_key": "warborn_neverwinter.gauntlgrym_freight_transit_days",
+      "source_values": {
+        "quantity_tons_per_month": 1.5,
+        "distance_miles": 85,
+        "transit_days": 2
+      },
+      "source": {
+        "warborn_registry_page": {
+          "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+          "title": "Warborn Production - Neverwinter",
+          "last_edited_at": "2026-08-21T03:20:13.904Z"
+        },
+        "industrial_yards_page": {
+          "notion_page": "333e8214-84b0-8120-a75e-f11a243ab6d5",
+          "title": "Baen Northern Industrial Yards (Warborn Production Neverwinter)",
+          "last_edited_at": "2026-08-20T03:20:39.596Z"
+        }
+      },
+      "evidence": [
+        "Warborn Production - Neverwinter lists approximately 1.5 tons/month of precision tool steel and identifies the Gauntlgrym partnership as its source.",
+        "The Northern Industrial Yards material-flow section identifies northbound Gauntlgrym-Forgedeep inputs to the Warborn facility over an approximately 85-mile freight road with 2-day transit."
+      ],
+      "limits": [
+        "This is an observed/source-backed flow, not proof of total route capacity.",
+        "No freight loss rate is asserted.",
+        "No campaign-mile to OpenTTD-tile conversion is asserted.",
+        "No fractional-ton to OpenTTD integer-piece rounding rule is asserted."
+      ]
+    },
+    {
+      "id": "warborn_zariel_priority_contract",
+      "domain": "military_contracts",
+      "authority": "SOURCE-DERIVED",
+      "status": "ACTIVE_CONTRACT",
+      "terms": {
+        "priority_legionnaire_units": 5000,
+        "priority_term_months": 24,
+        "solar_guard_units": 21,
+        "solar_guard_term_months": 12
+      },
+      "source": {
+        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+        "title": "Warborn Production - Neverwinter",
+        "last_edited_at": "2026-08-21T03:20:13.904Z"
+      },
+      "limits": [
+        "Contract quantities constrain/report demand; they do not authorize future production.",
+        "No campaign time is advanced and no delivery is posted by this mapping."
+      ]
+    }
+  ],
+  "upstream_semantics": {
+    "openttd": {
+      "authority": "UPSTREAM-ADOPTED",
+      "repository": "OpenTTD/OpenTTD",
+      "commit": "1aca0b60a8024f295e1d0ad2a3407b3dac838099",
+      "source_file": "src/table/cargo_const.h",
+      "cargo_type": 9,
+      "cargo_label": "CT_STEEL",
+      "cargo_unit": "tons",
+      "income_function": "GetTransportedGoodsIncome",
+      "input_contract": [
+        "integer cargo pieces",
+        "distance in OpenTTD tiles",
+        "days in transit converted by the pinned GPL-side adapter to OpenTTD transit periods"
+      ]
+    }
+  },
+  "conflicts": [
+    {
+      "id": "warborn_location_registry_headcount_cost_drift",
+      "domain": "military_contracts",
+      "status": "CONFLICT",
+      "authority": "UNRESOLVED",
+      "reason": "The Industrial Yards page reports 86 total personnel, 9,100 gp wages and 21,000 gp total cost, while the later-edited Business Registry authority selected by the engine reports 77 employees, 8,900 gp wages and 20,000 gp monthly cost. The semantic layer keeps the existing selected Registry values and does not blend the two sources.",
+      "source": [
+        {
+          "notion_page": "333e8214-84b0-8120-a75e-f11a243ab6d5",
+          "title": "Baen Northern Industrial Yards (Warborn Production Neverwinter)",
+          "last_edited_at": "2026-08-20T03:20:39.596Z"
+        },
+        {
+          "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+          "title": "Warborn Production - Neverwinter",
+          "last_edited_at": "2026-08-21T03:20:13.904Z"
+        }
+      ]
+    }
+  ],
+  "unresolved_context": [
+    {
+      "id": "esamt_capital_deployment_mechanics",
+      "domain": "construction_capital",
+      "status": "MISSING_MECHANICS",
+      "authority": "UNRESOLVED",
+      "reason": "The active ESAMT Financial & Investment System defines 16 capital-deployment categories, but the engine does not yet ingest that capital-deployment layer. Its stale Day-605 state is not promoted to the Day-7-Hammer-1495 opening state.",
+      "source": {
+        "census_flag_id": "338e8214-84b0-81e3-9d8c-dcd4d6c896c7#mechanics",
+        "snapshot": "recovery/LIVE_EMPIRE_SOURCE_CENSUS_EXECUTION_SNAPSHOT_2026-09-17.json"
+      }
+    }
+  ],
+  "provenance": "Read-only live Notion verification plus exact pinned OpenTTD source inspection on 2026-09-18. No Notion writes. No campaign-time advance."
+}
