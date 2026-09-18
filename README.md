@@ -4,7 +4,7 @@ Public, standalone, usable **without Grok**.
 
 This repository is the software home of the fail-closed monthly economy engine for **The New Path / Baen Empire**. The private campaign vault and live Notion workspace remain campaign/source authorities; this repository contains the engine, source snapshots/receipts needed for reproducible operation, tests, APIs, and non-canonical preview tooling.
 
-Canonical campaign time remains frozen at **Day 7 Hammer 1495 DR**. Preview months are `scenario_assumption`. They post **zero** canonical ledger entries, write **zero** Notion rows, and do not advance campaign time.
+Canonical campaign time remains frozen at **Day 7 Hammer 1495 DR**. The default `baen-empire run` path is now a **source-grounded, non-canonical monthly business-phase preview**: it reads the verified Registry slice and controlling Notion mechanics, posts **zero** canonical ledger entries, writes **zero** Notion rows, and does not advance campaign time. The old stock-flow scenario is retained only under `baen-empire sandbox` and is explicitly synthetic.
 
 The standalone extraction baseline is `main@dd80d730427967dc78fe7b965b6a6d5875c9f3a2`, extracted from private-vault engine head `2cfb0c5`. Private-vault recovery PR [#192](https://github.com/CFhacky/campaign-development-vault/pull/192) remains provenance/recovery history rather than the software-development home of this package.
 
@@ -25,26 +25,50 @@ The old 372-row human recovery report is preserved as historical evidence and is
 
 ## Use this first
 
-After installing the branch, the user-facing entry point is **\`baen-empire\`**. You do not need to start Mesa, Brunnfeld, FreeCol, Veloren, OpenTTD, or Unknown Horizons by hand just to get a coherent Baen report.
+The actual Hammer-1495 operating path is:
 
-\`\`\`bash
-pip install -e ".[mesa]"
+```bash
+pip install -e .
 baen-empire status
-baen-empire products
-baen-empire preview --seed "hammer-1495-a" --month "Hammer 1495 preview"
-\`\`\`
+baen-empire run --seed "hammer-1495-a"
+```
 
-The third command produces one Markdown Empire report. It includes the current census boundary/counts, resolves every eligible Business Registry row through the existing source-bound monthly business preview, totals proposed revenue/cost/net, shows the largest positive/negative business previews, and states the current status of all six upstream products.
+`baen-empire run` follows the campaign's controlling `empire-operations-engine` / `hybrid-business-ops` monthly business phase rather than the synthetic regional macro model:
 
-For one business instead of the whole Registry:
+1. verifies the 90-row Business Registry export;
+2. applies the explicit Day-7-Hammer-1495 admission ledger;
+3. rolls **once per active commercial sector** using the campaign's Merchant-15 table;
+4. rolls the empire Administration expense-control check;
+5. selects **3–5 admitted entities** for the campaign d20 complication table;
+6. applies only source-known Neglect penalties;
+7. produces a zero-write **Vara briefing** and review artifact.
 
-\`\`\`bash
-baen-empire preview --entity "Baen Brickworks" --seed "brickworks-a" --month "Hammer 1495 preview"
-\`\`\`
+The current admission ledger contains **37 source-admitted operating entities** and **53 excluded/future/unresolved rows**. Its recurring commercial revenue baseline is **299,266 gp/month**, independently inside the Current Financial State authority band of **280,000–320,000 gp/month**. The engine does **not** invent an exact current cash balance or exact consolidated cost where source authority does not provide one; expense/net remain ranges when the books only support ranges.
 
-Use \`--format json\` for machine-readable output or \`--format summary\` for a short terminal result.
+Market condition is unknown by default and therefore supplies no modifier. You may make an explicit preview ruling:
 
-**Current boundary:** this command is genuinely useful now, but it is still a non-canonical preview. It does not pretend that the six upstream runtimes have complete source-to-product semantic mappings. Those mappings remain a separate engineering gate; missing opening cash, labour, stocks, reserve policy, and other unresolved authority stay unresolved rather than being invented.
+```bash
+baen-empire run --seed "hammer-1495-a" --market boom --vara-active
+```
+
+Those flags affect that preview only; they do not mutate canon.
+
+### Synthetic / product-stack sandbox
+
+The older regional stock-flow model and the six upstream product runtimes remain useful engineering components, but they are **not** allowed to supply missing campaign facts. They now live behind:
+
+```bash
+baen-empire sandbox --seed "sandbox-a"
+```
+
+Mesa, Brunnfeld, Unknown Horizons, FreeCol, Veloren, and OpenTTD are invoked in actual campaign work only when their required current inputs are source-backed. A product being runnable is not permission to manufacture Baen state.
+
+The admission and mechanics authority receipts are:
+
+- `recovery/BUSINESS_REGISTRY_ADMISSION_HAMMER_1495.json`
+- `recovery/EMPIRE_BUSINESS_MECHANICS_AUTHORITY_2026-09-17.json`
+- `recovery/ECONOMY_SOURCE_INPUT_AUTHORITY_2026-09-17.json`
+- `recovery/ECONOMY_DRIVER_COVERAGE_2026-09-17.json`
 
 ## What other apps call
 
@@ -71,16 +95,13 @@ curl -sX POST http://127.0.0.1:8090/v1/preview \
 
 CORS is open (`Access-Control-Allow-Origin: *`). Schema: `tnp.economy.tick-result/1` plus the existing `tnp.business.month-preview/1` row payloads.
 
-## What a preview month does
+## What the actual monthly business phase does
 
-For each eligible commercial Registry row it:
+The controlling monthly path does **not** roll every Registry entity independently. It uses the campaign rule as written: one sector revenue roll per active sector, then the empire expense-control roll, then 3–5 entity complication checks and Neglect effects.
 
-1. binds source Employees / Monthly Revenue / Monthly Cost cells;
-2. rolls Merchant-15 revenue and Administration-16 expense with deterministic HMAC-SHA256-seeded 3d6;
-3. applies the GURPS outcome factors;
-4. returns proposed gp totals labeled **not canon**.
+The source-admission layer prevents known accounting/timeline errors such as NCF parent+branch double counting, 1496–1498 forward rows entering Hammer 1495, the separately governed ESAMT/Shi'van portfolio being silently folded into Arik's current books, and projected Warborn/Sea Gate/Desertsmouth figures being treated as current recurring revenue.
 
-It will **not** invent opening cash, labour, cities, stock, or missing source facts; consolidate parent and child bank rows without an explicit treatment; treat capital invested as liquidity; advance campaign time; write Notion; or accept a canonical month while the source-to-simulator gate is closed.
+The current exact consolidated liquid cash, NCF monthly consolidated cost, Silversheen Hammer-1495 cost, and several physical-economy inputs remain unresolved. They are reported as unresolved or ranges; they are not replaced by convenient values.
 
 ## Public upstream products
 
