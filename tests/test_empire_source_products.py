@@ -13,6 +13,8 @@ from baen_economy.empire_source_products import (
     PRODUCTION_LINE_SPECS,
     source_known_state,
     source_production_lines,
+    source_semantic_domains,
+    _map_openttd_source_candidate,
 )
 
 
@@ -82,6 +84,79 @@ class EmpireSourceProductsTests(unittest.TestCase):
             self.assertIn(spec["revenue_key"], keys)
         for _route_id, _label, key in ARTERIAL_ROUTE_SPECS:
             self.assertIn(key, keys)
+
+    def test_semantic_domains_map_recovered_evidence_without_closing_real_gaps(self):
+        domains = source_semantic_domains()
+        finance = domains["finance_banking"]
+        finance_known = {row["key"]: row for row in finance["known"]}
+        self.assertEqual(finance_known["ncf.active_loans_gp"]["value"], 2300000)
+        self.assertFalse(finance["can_execute_balance_sheet"])
+        self.assertTrue(
+            any(row["key"] == "ncf.current_trial_balance" for row in finance["unresolved"])
+        )
+
+        logistics = domains["infrastructure_logistics"]
+        logistics_known = {row["key"]: row for row in logistics["known"]}
+        self.assertEqual(
+            logistics_known["warborn_neverwinter.gauntlgrym_freight_distance_miles"]["value"],
+            85,
+        )
+        self.assertEqual(
+            logistics_known["warborn_neverwinter.gauntlgrym_freight_transit_days"]["value"],
+            2,
+        )
+        self.assertTrue(
+            any(row["key"] == "arterial.route_capacity" for row in logistics["unresolved"])
+        )
+
+        population = domains["population_labour"]
+        self.assertIn("not additive", population["aggregation_rule"])
+        self.assertTrue(
+            any(row["key"] == "forgedeep.current_population" for row in population["unresolved"])
+        )
+
+        construction = domains["construction_capital"]
+        construction_known = {row["key"]: row for row in construction["known"]}
+        self.assertEqual(
+            construction_known["forgedeep.city_development.monthly_cost_gp"]["value"],
+            15000,
+        )
+        self.assertTrue(
+            any(row["status"] == "MISSING_MECHANICS" for row in construction["unresolved"])
+        )
+
+        military = domains["military_contracts"]
+        military_known = {row["key"]: row for row in military["known"]}
+        self.assertEqual(
+            military_known["warborn.contract.priority_legionnaire_units"]["value"],
+            5000,
+        )
+        self.assertEqual(
+            military_known["warborn.contract.solar_guard_units"]["value"],
+            21,
+        )
+        self.assertTrue(
+            any("headcount" in row["reason"] for row in military["unresolved"])
+        )
+
+    def test_openttd_source_candidate_maps_real_steel_but_refuses_unruled_unit_bridge(self):
+        mapped = _map_openttd_source_candidate()
+        self.assertEqual(mapped["status"], "MAPPED_BLOCKED")
+        self.assertFalse(mapped["invoked"])
+        self.assertEqual(mapped["source_flow"]["quantity_tons_per_month"], 1.5)
+        self.assertEqual(mapped["source_flow"]["distance_miles"], 85)
+        self.assertEqual(mapped["source_flow"]["transit_days"], 2)
+        self.assertEqual(mapped["upstream_semantics"]["cargo_type"], 9)
+        self.assertEqual(mapped["upstream_semantics"]["cargo_label"], "CT_STEEL")
+        self.assertEqual(mapped["upstream_semantics"]["cargo_unit"], "tons")
+        self.assertEqual(mapped["upstream_semantics"]["authority"], "UPSTREAM-ADOPTED")
+        self.assertEqual(
+            {row["authority"] for row in mapped["blockers"]},
+            {"UNRESOLVED"},
+        )
+        joined = " ".join(row["reason"] for row in mapped["blockers"])
+        self.assertIn("miles", joined)
+        self.assertIn("1.5", joined)
 
 
 if __name__ == "__main__":
