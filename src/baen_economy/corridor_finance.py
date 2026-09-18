@@ -50,12 +50,12 @@ def corridor_land_bank_summary(path: Path = DEFAULT_AUTHORITY) -> dict[str, Any]
         "half_width_each_side_miles":str(half),
         "full_corridor_width_miles":str(full_width),
         "operational_network_miles_lower_bound":str(miles),
-        "gross_corridor_square_miles_lower_bound":str(square_miles),
-        "gross_corridor_acres_lower_bound":str(gross_acres),
+        "gross_strip_square_miles_at_500_mile_floor":str(square_miles),
+        "gross_strip_acres_at_500_mile_floor":str(gross_acres),
         "legacy_direct_arterial_acres_lower_bound":facts["arterial.legacy_direct_owned_acres"]["value"],
         "authority":"USER-RULED + SOURCE-DERIVED arithmetic",
         "not_actual_titled_acreage":True,
-        "reason":"Gross corridor envelope is calculable now; consolidated titled acres require de-overlapped segment geometry and title reconciliation."
+        "reason":"This is the sum of 16-mile-wide strips using the sourced 500-mile network floor, before route-overlap subtraction. It is not a lower bound on unique titled area; consolidated titled acres require unique geometry, overlap removal, exclusions, and title reconciliation."
     }
 
 def internal_transport_summary(path: Path = DEFAULT_AUTHORITY) -> dict[str, Any]:

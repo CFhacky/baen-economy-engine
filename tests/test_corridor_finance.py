@@ -11,8 +11,8 @@ class CorridorFinanceTests(unittest.TestCase):
         self.assertEqual(land["half_width_each_side_miles"],"8")
         self.assertEqual(land["full_corridor_width_miles"],"16")
         self.assertEqual(land["operational_network_miles_lower_bound"],"500")
-        self.assertEqual(land["gross_corridor_square_miles_lower_bound"],"8000")
-        self.assertEqual(land["gross_corridor_acres_lower_bound"],"5120000")
+        self.assertEqual(land["gross_strip_square_miles_at_500_mile_floor"],"8000")
+        self.assertEqual(land["gross_strip_acres_at_500_mile_floor"],"5120000")
         self.assertTrue(land["not_actual_titled_acreage"])
 
     def test_stonebearer_short_haul_capacity_uses_only_sourced_four_unit_allocation(self):
