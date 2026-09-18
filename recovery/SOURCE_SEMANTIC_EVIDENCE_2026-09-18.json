@@ -115,5 +115,32 @@
       }
     }
   ],
-  "provenance": "Read-only live Notion verification plus exact pinned OpenTTD source inspection on 2026-09-18. No Notion writes. No campaign-time advance."
+  "provenance": "Read-only live Notion verification plus exact pinned OpenTTD source inspection on 2026-09-18. No Notion writes. No campaign-time advance.",
+  "current_collection_membership": {
+    "verified_read_only_at": "2026-09-18",
+    "collections": {
+      "business_registry": {
+        "data_source": "collection://3c5f887a-4219-4ae6-a18a-82cf2d1841db",
+        "name": "Baen Empire - Business Registry",
+        "source_record_ids": [
+          "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+          "34ce8214-84b0-8111-9fd4-c41feef5634e",
+          "321e8214-84b0-81b0-9469-f6c9d92a22d5",
+          "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+          "321e8214-84b0-8111-8df6-fb5d6377ba0a",
+          "321e8214-84b0-81b3-8d51-dcbc19edd667"
+        ]
+      },
+      "locations": {
+        "data_source": "collection://4b453810-16af-43eb-86ff-927da765a17f",
+        "name": "The New Path - Locations",
+        "source_record_ids": [
+          "2fbe8214-84b0-8189-8b97-c6329f9f29a5",
+          "333e8214-84b0-8120-a75e-f11a243ab6d5",
+          "2fbe8214-84b0-81a8-8f59-cf002a2906a1"
+        ]
+      }
+    },
+    "rule": "Only these verified current collection members may be counted as moved from census UNKNOWN by this semantic batch. Contextual authority pages retain their prior explicit coverage class."
+  }
 }
