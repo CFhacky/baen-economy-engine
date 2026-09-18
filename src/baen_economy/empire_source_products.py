@@ -676,6 +676,7 @@ def source_semantic_domains(
 def source_semantic_coverage(
     domains: Mapping[str, Mapping[str, Any]],
     census_path: Path = DEFAULT_CENSUS_SNAPSHOT,
+    semantic_evidence_path: Path = DEFAULT_SEMANTIC_EVIDENCE,
 ) -> dict[str, Any]:
     """Overlay executable semantic mapping on the preserved census snapshot.
 
@@ -692,6 +693,15 @@ def source_semantic_coverage(
     flags = census.get("flags")
     if not isinstance(stored, dict) or not isinstance(flags, list):
         raise EmpireSourceProductError("census snapshot lacks coverage state")
+    evidence = _load_semantic_evidence(semantic_evidence_path)
+    membership = evidence.get("current_collection_membership")
+    if not isinstance(membership, dict) or not isinstance(membership.get("collections"), dict):
+        raise EmpireSourceProductError("semantic evidence lacks verified collection membership")
+    current_member_ids: set[str] = set()
+    for collection in membership["collections"].values():
+        if not isinstance(collection, dict) or not isinstance(collection.get("source_record_ids"), list):
+            raise EmpireSourceProductError("semantic collection membership is malformed")
+        current_member_ids.update(str(value) for value in collection["source_record_ids"])
 
     prior_by_id = {
         str(row.get("id")): str(row.get("coverage"))
@@ -717,7 +727,11 @@ def source_semantic_coverage(
                 {
                     "source_record_id": page_id,
                     "title": source.get("title"),
-                    "prior_coverage": prior_by_id.get(page_id, "UNKNOWN"),
+                    "prior_coverage": (
+                        prior_by_id[page_id]
+                        if page_id in prior_by_id
+                        else ("UNKNOWN" if page_id in current_member_ids else "OUTSIDE_CENSUS")
+                    ),
                     "new_coverage": "SOURCE_MAPPED",
                     "domains": [],
                     "fact_keys": [],
@@ -1203,7 +1217,10 @@ def map_source_backed_physical_layer(
     lines = source_production_lines(source_path)
     known_state = source_known_state(source_path)
     semantic_domains = source_semantic_domains(source_path, semantic_evidence_path)
-    semantic_coverage = source_semantic_coverage(semantic_domains)
+    semantic_coverage = source_semantic_coverage(
+        semantic_domains,
+        semantic_evidence_path=semantic_evidence_path,
+    )
     products = {
         "mesa": _map_mesa(
             seed=seed,
