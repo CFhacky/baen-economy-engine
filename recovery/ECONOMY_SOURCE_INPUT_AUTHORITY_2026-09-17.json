@@ -650,12 +650,21 @@
   ],
   "blockers": [
     {
-      "key": "finance.opening_liquid_cash",
+      "key": "agricultural_shelters.physical_output_volume",
       "status": "MISSING_DATA",
-      "reason": "Current liquid reserves are explicitly indeterminate; stale 800K figure must not be used.",
+      "reason": "Registry gives revenue/employees but no source-backed monthly crop tonnage or crop mix sufficient for physical simulation.",
       "source": {
-        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
-        "title": "Empire Financial State — Current Reference"
+        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
+        "title": "Agricultural Shelter Zones"
+      }
+    },
+    {
+      "key": "arterial.route_capacity",
+      "status": "MISSING_DATA",
+      "reason": "Distances/revenue/workforce are sourced; monthly freight capacities used by the sandbox are not.",
+      "source": {
+        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+        "title": "Arterial Road Network"
       }
     },
     {
@@ -665,35 +674,6 @@
       "source": {
         "notion_page": "3c2e8214-84b0-81c0-85ee-cc74c2bcb35b",
         "title": "Northern Crown Monetary System"
-      }
-    },
-    {
-      "key": "forgedeep.current_population",
-      "status": "MISSING_DATA",
-      "reason": "Controlling runtime and LIVE STATE both leave occupancy/population unanswered. Location Population is null. City Development mixes a 450 figure with a staged 1,400–1,600 band and future Year-1 2,000 / decade 50,000 targets; none of those are current civilian population.",
-      "source": {
-        "notion_page": "3cbe8214-84b0-8178-a34a-d28e7ba76000",
-        "title": "Forgedeep Economic Return — LIVE STATE",
-        "last_edited_at": "2026-08-29T19:27:05.899Z"
-      }
-    },
-    {
-      "key": "neverwinter.population_overview_paragraph",
-      "status": "CONFLICT",
-      "reason": "Neverwinter Locations Population property is 75000 and Quick Facts says ~75,000; the Overview heading says ~80,000. The actual path uses the Locations Population property only and does not select 80000.",
-      "source": {
-        "notion_page": "2fbe8214-84b0-8189-8b97-c6329f9f29a5",
-        "title": "Neverwinter",
-        "last_edited_at": "2026-04-20T20:33:05.466Z"
-      }
-    },
-    {
-      "key": "agricultural_shelters.physical_output_volume",
-      "status": "MISSING_DATA",
-      "reason": "Registry gives revenue/employees but no source-backed monthly crop tonnage or crop mix sufficient for physical simulation.",
-      "source": {
-        "notion_page": "321e8214-84b0-81e0-9660-eacd14973b2f",
-        "title": "Agricultural Shelter Zones"
       }
     },
     {
@@ -715,18 +695,23 @@
       }
     },
     {
-      "key": "arterial.route_capacity",
+      "key": "finance.opening_liquid_cash",
       "status": "MISSING_DATA",
-      "reason": "Distances/revenue/workforce are sourced; monthly freight capacities used by the sandbox are not.",
+      "reason": "Current liquid reserves are explicitly indeterminate; stale 800K figure must not be used.",
       "source": {
-        "notion_page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
-        "title": "Arterial Road Network"
+        "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+        "title": "Empire Financial State — Current Reference"
       }
     },
     {
-      "key": "market.opening_prices",
+      "key": "forgedeep.current_population",
       "status": "MISSING_DATA",
-      "reason": "The sandbox commodity price table is not grounded in a current campaign source."
+      "reason": "Controlling runtime and LIVE STATE both leave occupancy/population unanswered. Location Population is null. City Development mixes a 450 figure with a staged 1,400–1,600 band and future Year-1 2,000 / decade 50,000 targets; none of those are current civilian population.",
+      "source": {
+        "notion_page": "3cbe8214-84b0-8178-a34a-d28e7ba76000",
+        "title": "Forgedeep Economic Return — LIVE STATE",
+        "last_edited_at": "2026-08-29T19:27:05.899Z"
+      }
     },
     {
       "key": "labor.empire_wide_occupation_pools",
@@ -734,9 +719,14 @@
       "reason": "Business-specific employee counts exist, but the sandbox settlement occupation pools and wage schedules are not source-backed."
     },
     {
-      "key": "settlement.social_class_shares_and_consumption_baskets",
+      "key": "market_demand_quantities",
       "status": "MISSING_DATA",
-      "reason": "Sandbox class shares, food baskets, and substitution ratios are not established in current campaign authority."
+      "reason": "Sandbox entity demand quantities are model-authored rather than derived from current orders/contracts."
+    },
+    {
+      "key": "market.opening_prices",
+      "status": "MISSING_DATA",
+      "reason": "The sandbox commodity price table is not grounded in a current campaign source."
     },
     {
       "key": "migration_rates",
@@ -744,14 +734,41 @@
       "reason": "Sandbox migration links/rates are model-authored and not current campaign facts."
     },
     {
-      "key": "shock_probabilities",
+      "key": "ncf.current_monthly_cost_gp",
       "status": "MISSING_DATA",
-      "reason": "Sandbox weather/harvest/war/monster/political shock probabilities are model-authored."
+      "reason": "NCF's current page states 22,000 gp/month revenue and 85 employees but does not state a safe consolidated current monthly cost. Child-branch costs cannot be summed into the parent without a current consolidation treatment.",
+      "source": {
+        "notion_page": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+        "title": "Northern Crown Financial"
+      }
     },
     {
-      "key": "market_demand_quantities",
+      "key": "ncf.current_trial_balance",
       "status": "MISSING_DATA",
-      "reason": "Sandbox entity demand quantities are model-authored rather than derived from current orders/contracts."
+      "reason": "Live NCF/Financial Ledger search finds the 2.3M gp active-loan portfolio, branch structure, reserve-management doctrine, and specific client facilities, but no Day-7-Hammer-1495 consolidated deposits/reserves/liabilities trial balance. Older 800K reserve figures are historical and must not be promoted.",
+      "source": {
+        "notion_page": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+        "title": "Northern Crown Financial",
+        "corroborating_pages": [
+          "341e8214-84b0-81a9-b91b-e3e4102c6848",
+          "34ce8214-84b0-81d7-abb5-f5d9cf153d72"
+        ]
+      }
+    },
+    {
+      "key": "neverwinter.population_overview_paragraph",
+      "status": "CONFLICT",
+      "reason": "Neverwinter Locations Population property is 75000 and Quick Facts says ~75,000; the Overview heading says ~80,000. The actual path uses the Locations Population property only and does not select 80000.",
+      "source": {
+        "notion_page": "2fbe8214-84b0-8189-8b97-c6329f9f29a5",
+        "title": "Neverwinter",
+        "last_edited_at": "2026-04-20T20:33:05.466Z"
+      }
+    },
+    {
+      "key": "opening_entity_cash_and_deposits",
+      "status": "MISSING_DATA",
+      "reason": "Most of the sandbox's 34 opening account balances are not tied to a current treasury/bank ledger."
     },
     {
       "key": "opening_inventories",
@@ -759,9 +776,14 @@
       "reason": "Most of the sandbox's 29 opening inventories are not tied to warehouse counts or current source records."
     },
     {
-      "key": "opening_entity_cash_and_deposits",
+      "key": "settlement.social_class_shares_and_consumption_baskets",
       "status": "MISSING_DATA",
-      "reason": "Most of the sandbox's 34 opening account balances are not tied to a current treasury/bank ledger."
+      "reason": "Sandbox class shares, food baskets, and substitution ratios are not established in current campaign authority."
+    },
+    {
+      "key": "shock_probabilities",
+      "status": "MISSING_DATA",
+      "reason": "Sandbox weather/harvest/war/monster/political shock probabilities are model-authored."
     },
     {
       "key": "silversheen.current_monthly_cost_gp",
@@ -781,7 +803,32 @@
         "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
         "title": "Warborn Production - Neverwinter",
         "last_edited_at": "2026-08-21T03:20:13.902Z"
-      }
+      },
+      "claims": [
+        {
+          "value": "30 tons/month",
+          "status": "SOURCE-DERIVED",
+          "source": {
+            "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+            "title": "Warborn Production - Neverwinter"
+          }
+        },
+        {
+          "value": "20% of current output",
+          "status": "SOURCE-DERIVED",
+          "source": {
+            "notion_page": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+            "title": "Silversheen Trading (Aluminum)"
+          }
+        },
+        {
+          "value": "36 tons/month",
+          "status": "DERIVED_BUT_NOT_ADOPTED",
+          "derivation": "20% × 180 tons/month Hammer-1495 Silversheen output",
+          "note": "Recorded only to expose the contradiction; not an execution input."
+        }
+      ],
+      "selected_value": null
     }
   ]
 }
