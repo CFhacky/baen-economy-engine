@@ -107,13 +107,21 @@
           "value": false,
           "authority": "USER-RULED",
           "source": "User ruling 2026-09-18"
+        },
+        {
+          "key": "neverwinter.stonebearer_shared_fleet_units",
+          "value": 4,
+          "unit": "Stonebearers",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Northern Industrial Yards + Baen Brickworks",
+          "note": "Northern Industrial Yards' Stonebearer Maintenance Depot explicitly lists 4 heavy haulers and says the fleet is shared with Brickworks. This reconciles to the four BW-1–BW-4 Brickworks Stonebearers; do not double-count as eight."
         }
       ],
       "unresolved": [
         {
-          "key": "empire.heavy_machinery.current_roster",
-          "method": "RECOVER_PHYSICAL_COUNT",
-          "reason": "No trustworthy Day-7 total Ironmaw/Stonebearer/Groundshaper roster found yet."
+          "key": "empire.heavy_machinery.current_roster_outside_neverwinter",
+          "method": "BOUNDED_LATENT_STATE_AFTER_PRODUCTION_HISTORY_RECOVERY",
+          "reason": "The shared Neverwinter Stonebearer fleet is now fixed at four, but no source gives empire-wide Ironmaw/Stonebearer/Groundshaper totals. A physical count alone cannot produce an unspecified hidden fact; recover production history first, then precommit a bounded generation method for only the residual fleet."
         },
         {
           "key": "empire.heavy_machinery.current_build_rate",
@@ -818,14 +826,15 @@
   "action_queue": [
     {
       "id": "fleet-roster",
-      "label": "Recover actual Heavy Machinery roster",
-      "method": "RECOVER_PHYSICAL_COUNT",
+      "label": "Recover machinery production history, then resolve only the residual empire fleet",
+      "method": "RECOVER_THEN_BOUNDED_LATENT_STATE",
       "user_action_required": false,
       "unlocks": [
         "road transport capacity",
         "construction capacity",
         "machine allocation"
-      ]
+      ],
+      "note": "Neverwinter is now fixed at four shared Stonebearers; do not double-count Brickworks and Industrial Yards."
     },
     {
       "id": "wagon-register",
@@ -963,6 +972,11 @@
       "id": "2026-09-18-sourcebook-demography",
       "authority": "UPSTREAM-ADOPTED",
       "note": "Added DMG II medieval-urban guild participation/occupation mix, DMG city social-class district structure, and WFRP food-tier comparators. All are constraints/reference anchors, not automatic Baen demographic state."
+    },
+    {
+      "id": "2026-09-18-neverwinter-stonebearers",
+      "authority": "SOURCE-DERIVED",
+      "note": "Reconciled the Northern Industrial Yards maintenance depot with Brickworks: both refer to the same four Stonebearers. The engine now treats Neverwinter's shared fleet as four, not eight, while leaving the empire-wide residual fleet unresolved."
     }
   ],
   "sourcebook_routing": {

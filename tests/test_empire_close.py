@@ -95,6 +95,17 @@ class EmpireCloseTests(unittest.TestCase):
         )
         self.assertEqual(routing["book_raw_authority"],"UPSTREAM-ADOPTED")
 
+    def test_neverwinter_stonebearer_mentions_reconcile_to_one_four_unit_shared_fleet(self):
+        result=close_status()
+        lane=result["lanes"]["heavy_machinery"]
+        facts={row["key"]:row for row in lane["facts"]}
+        self.assertEqual(facts["neverwinter.stonebearer_shared_fleet_units"]["value"],4)
+        self.assertIn("do not double-count",facts["neverwinter.stonebearer_shared_fleet_units"]["note"])
+        self.assertTrue(any(
+            row["key"]=="empire.heavy_machinery.current_roster_outside_neverwinter"
+            for row in lane["unresolved"]
+        ))
+
     def test_phase_one_is_complete_and_remaining_system_gaps_are_classified(self):
         result=close_status()
         phases={row["id"]:row for row in result["phase_progress"]}
