@@ -141,6 +141,9 @@ jobs:
           grep -Fq "**freecol**: USED_IN_RUN" reports/Empire-Business-Phase.md
           grep -Fq "**unknown_horizons**: USED_IN_RUN" reports/Empire-Business-Phase.md
           grep -Fq "**openttd**: MAPPED_BLOCKED" reports/Empire-Business-Phase.md
+          grep -Fq "Semantic coverage overlay" reports/Empire-Business-Phase.md
+          grep -Fq "SOURCE_MAPPED" reports/Empire-Business-Phase.md
+          grep -Fq "SIMULATED: **0**" reports/Empire-Business-Phase.md
           grep -Fq "Source → product semantic domains" reports/Empire-Business-Phase.md
           grep -Fq "ncf.active_loans_gp" reports/Empire-Business-Phase.md
           grep -Fq "warborn.contract.priority_legionnaire_units" reports/Empire-Business-Phase.md
