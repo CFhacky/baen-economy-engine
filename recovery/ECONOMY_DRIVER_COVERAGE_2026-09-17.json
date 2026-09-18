@@ -47,16 +47,18 @@
     {
       "driver": "population",
       "status": "PARTIAL_SOURCE_BACKED",
-      "can_execute": false,
+      "can_execute": true,
       "authority": [
         "SOURCE-DERIVED"
       ],
       "known": [
-        "Neverwinter 75,000 from census",
-        "Waterdeep 130,000 from census"
+        "Neverwinter 75,000 from Locations Population property",
+        "Waterdeep 130,000 from Locations Population property"
       ],
       "blocks": [
-        "Forgedeep civilian population explicitly unresolved"
+        "Forgedeep civilian population explicitly unresolved",
+        "Neverwinter Overview ~80,000 is not selected against the 75,000 property",
+        "settlement-wide consumption cannot run without Forgedeep occupancy"
       ]
     },
     {
@@ -101,34 +103,36 @@
     {
       "driver": "labor_supply",
       "status": "PARTIAL_SOURCE_BACKED",
-      "can_execute": false,
+      "can_execute": true,
       "authority": [
         "SOURCE-DERIVED"
       ],
       "known": [
+        "1084 admitted commercial employees from Registry admission",
         "business-specific headcounts",
         "Warborn wage schedule",
         "Brickworks annual wages"
       ],
       "blocks": [
-        "settlement-wide occupation pools and unemployment not established"
+        "settlement-wide occupation pools and unemployment not established",
+        "named production/food/arterial headcounts must not be added on top of admitted commercial employees"
       ]
     },
     {
       "driver": "trade_routes",
       "status": "PARTIAL_SOURCE_BACKED",
-      "can_execute": false,
+      "can_execute": true,
       "authority": [
-        "SOURCE-DERIVED",
-        "UPSTREAM-ADOPTED"
+        "SOURCE-DERIVED"
       ],
       "known": [
-        "key arterial route distances",
-        "road workforce/revenue/cost",
-        "OpenTTD transport-income mechanic"
+        "five complete arterial route distances (approximate)",
+        "road workforce/revenue/cost"
       ],
       "blocks": [
-        "route freight capacities/loss rates not source-backed for actual month"
+        "route freight capacities/loss rates not source-backed for actual month",
+        "OpenTTD stays NOT_INVOKED until capacities exist",
+        "Suzail and Baldur's Gate extensions are incomplete and are not current operating routes"
       ]
     },
     {
@@ -146,16 +150,20 @@
     {
       "driver": "food_supply",
       "status": "PARTIAL_SOURCE_BACKED",
-      "can_execute": false,
+      "can_execute": true,
       "authority": [
         "SOURCE-DERIVED"
       ],
       "known": [
-        "food-sector financial totals and headcount"
+        "Agricultural Shelter Zones 8 staff / 1500 gp revenue / 1050 gp cost",
+        "Blacklake entity 15 staff / 7500 gp revenue / 5850 gp cost",
+        "aquaculture network 55 staff / 25000 gp revenue",
+        "combined food financials 63 staff / 26500 gp revenue"
       ],
       "blocks": [
         "Agricultural Shelter physical output missing",
-        "Blacklake physical species/volume explicitly unconfirmed"
+        "Blacklake physical species/volume explicitly unconfirmed",
+        "do not derive tonnage from gp figures"
       ]
     },
     {
@@ -232,10 +240,14 @@
       "blocks": []
     }
   ],
-  "actual_run_status": "SOURCE_GROUNDED_BUSINESS_PHASE_PLUS_KNOWN_PRODUCTION",
+  "actual_run_status": "SOURCE_GROUNDED_BUSINESS_PHASE_PLUS_KNOWN_PRODUCTION_AND_KNOWN_STATE",
   "executable_now": [
     "business financial/entity reporting without unsafe consolidation",
     "known industrial production lines",
+    "Neverwinter/Waterdeep census populations with Forgedeep fail-closed",
+    "food-sector financials without physical volumes",
+    "complete arterial distances without freight capacity",
+    "admitted entity-level commercial headcount without settlement unemployment",
     "event scheduling of the campaign business-phase receipts"
   ],
   "next_source_targets": [

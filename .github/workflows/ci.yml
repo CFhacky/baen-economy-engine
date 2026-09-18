@@ -120,6 +120,10 @@ jobs:
           grep -Fq "Vara briefing" reports/Empire-Business-Phase.md
           grep -Fq "Source-backed production lines" reports/Empire-Business-Phase.md
           grep -Fq "Warborn Production - Neverwinter" reports/Empire-Business-Phase.md
+          grep -Fq "Source-backed census" reports/Empire-Business-Phase.md
+          grep -Fq "Food financials (no physical volumes)" reports/Empire-Business-Phase.md
+          grep -Fq "Arterial route register" reports/Empire-Business-Phase.md
+          grep -Fq "Entity labor snapshot" reports/Empire-Business-Phase.md
           grep -Fq "PARTIAL_SOURCE_BACKED" reports/Empire-Business-Phase.md
           grep -Fq "mesa" reports/Empire-Business-Phase.md
           grep -Fq "NOT_INVOKED" reports/Empire-Business-Phase.md

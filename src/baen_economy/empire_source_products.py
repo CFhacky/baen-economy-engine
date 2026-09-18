@@ -124,8 +124,91 @@ ALLOCATION_CONFLICT = (
     "180 t/mo ruling"
 )
 
+CENSUS_SPECS: tuple[dict[str, str], ...] = (
+    {
+        "id": "neverwinter",
+        "settlement": "Neverwinter",
+        "population_key": "neverwinter.current_population",
+        "role": "Arik-side headquarters city",
+    },
+    {
+        "id": "waterdeep",
+        "settlement": "Waterdeep",
+        "population_key": "waterdeep.current_population",
+        "role": "allied trading-partner city",
+    },
+)
 
-def _load_facts(path: Path) -> dict[str, dict[str, Any]]:
+FOOD_ENTITY_SPECS: tuple[dict[str, str], ...] = (
+    {
+        "id": "agricultural_shelters",
+        "entity": "Agricultural Shelter Zones",
+        "kind": "entity",
+        "employees_key": "agricultural_shelters.employees",
+        "revenue_key": "agricultural_shelters.monthly_revenue_gp",
+        "cost_key": "agricultural_shelters.monthly_cost_gp",
+        "physical_blocker": "agricultural_shelters.physical_output_volume",
+    },
+    {
+        "id": "blacklake_aquaculture",
+        "entity": "Blacklake Aquaculture (7 pools)",
+        "kind": "entity",
+        "employees_key": "blacklake_aquaculture.employees",
+        "revenue_key": "blacklake_aquaculture.monthly_revenue_gp",
+        "cost_key": "blacklake_aquaculture.monthly_cost_gp",
+        "physical_blocker": "blacklake_aquaculture.physical_output_volume",
+    },
+)
+
+FOOD_AGGREGATE_SPECS: tuple[dict[str, str], ...] = (
+    {
+        "id": "aquaculture_network",
+        "entity": "Aquaculture network (Blacklake + Converted Quarry + BG pools + Reservoir Fisheries)",
+        "kind": "aggregate",
+        "employees_key": "food_sector.aquaculture_employees",
+        "revenue_key": "food_sector.aquaculture_monthly_revenue_gp",
+        "note": "Includes the Blacklake entity. Do not add Blacklake on top of this total.",
+    },
+    {
+        "id": "combined_food_financials",
+        "entity": "Combined food financials (aquaculture network + Agricultural Shelter Zones)",
+        "kind": "aggregate",
+        "employees_key": "food_sector.combined_employees",
+        "revenue_key": "food_sector.combined_revenue_gp_per_month",
+        "note": "Financial layer only. Do not derive physical crop or fish volume from these gp figures.",
+    },
+)
+
+ARTERIAL_ROUTE_SPECS: tuple[tuple[str, str, str], ...] = (
+    (
+        "forgedeep_guardians_gate",
+        "Forgedeep → Guardian's Gate",
+        "arterial.route.forgedeep_guardians_gate.distance_miles",
+    ),
+    (
+        "neverwinter_gauntlgrym",
+        "Neverwinter → Gauntlgrym",
+        "arterial.route.neverwinter_gauntlgrym.distance_miles",
+    ),
+    (
+        "neverwinter_luskan",
+        "Neverwinter → Luskan",
+        "arterial.route.neverwinter_luskan.distance_miles",
+    ),
+    (
+        "neverwinter_mirabar",
+        "Neverwinter → Mirabar",
+        "arterial.route.neverwinter_mirabar.distance_miles",
+    ),
+    (
+        "neverwinter_waterdeep",
+        "Neverwinter → Waterdeep",
+        "arterial.route.neverwinter_waterdeep.distance_miles",
+    ),
+)
+
+
+def _load_payload(path: Path) -> dict[str, Any]:
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
@@ -134,6 +217,10 @@ def _load_facts(path: Path) -> dict[str, dict[str, Any]]:
         raise EmpireSourceProductError("source-input authority schema is unsupported")
     if payload.get("rule") is None:
         raise EmpireSourceProductError("source-input authority lacks the actual-run rule")
+    return payload
+
+
+def _index_facts(payload: Mapping[str, Any]) -> dict[str, dict[str, Any]]:
     facts = payload.get("facts")
     if not isinstance(facts, list):
         raise EmpireSourceProductError("source-input authority has no facts array")
@@ -147,6 +234,24 @@ def _load_facts(path: Path) -> dict[str, dict[str, Any]]:
             raise EmpireSourceProductError(f"duplicate source-input fact: {row['key']}")
         indexed[row["key"]] = row
     return indexed
+
+
+def _index_blockers(payload: Mapping[str, Any]) -> dict[str, dict[str, Any]]:
+    blockers = payload.get("blockers")
+    if not isinstance(blockers, list):
+        raise EmpireSourceProductError("source-input authority has no blockers array")
+    indexed: dict[str, dict[str, Any]] = {}
+    for row in blockers:
+        if not isinstance(row, dict) or not isinstance(row.get("key"), str):
+            raise EmpireSourceProductError("source-input blocker is malformed")
+        if row["key"] in indexed:
+            raise EmpireSourceProductError(f"duplicate source-input blocker: {row['key']}")
+        indexed[row["key"]] = row
+    return indexed
+
+
+def _load_facts(path: Path) -> dict[str, dict[str, Any]]:
+    return _index_facts(_load_payload(path))
 
 
 def _exact_number(row: Mapping[str, Any], label: str) -> int | float:
@@ -197,6 +302,148 @@ def source_production_lines(
             line["maximum_fact_key"] = spec.maximum_key
         lines.append(line)
     return lines
+
+
+def _source_ref(row: Mapping[str, Any], fact_key: str) -> dict[str, Any]:
+    source = row.get("source")
+    if not isinstance(source, dict) or not source.get("notion_page"):
+        raise EmpireSourceProductError(f"{fact_key} lacks Notion provenance")
+    return {
+        "notion_page": source["notion_page"],
+        "title": source.get("title"),
+        "fact_key": fact_key,
+    }
+
+
+def source_known_state(
+    source_path: Path = DEFAULT_SOURCE_INPUTS,
+) -> dict[str, Any]:
+    payload = _load_payload(source_path)
+    facts = _index_facts(payload)
+    blockers = _index_blockers(payload)
+    unresolved: list[str] = []
+
+    census: list[dict[str, Any]] = []
+    for spec in CENSUS_SPECS:
+        row = facts.get(spec["population_key"])
+        if row is None:
+            raise EmpireSourceProductError(f"missing source fact for {spec['population_key']}")
+        census.append(
+            {
+                "id": spec["id"],
+                "settlement": spec["settlement"],
+                "role": spec["role"],
+                "population": _exact_number(row, spec["population_key"]),
+                "status": "SOURCE_BACKED",
+                "authority": row["authority"],
+                "source": _source_ref(row, spec["population_key"]),
+                "note": row.get("note"),
+            }
+        )
+    forgedeep = blockers.get("forgedeep.current_population")
+    if forgedeep is None:
+        raise EmpireSourceProductError("missing Forgedeep population blocker")
+    census.append(
+        {
+            "id": "forgedeep",
+            "settlement": "Forgedeep",
+            "role": "chartered underground citadel",
+            "population": None,
+            "status": str(forgedeep.get("status") or "MISSING_DATA"),
+            "reason": str(forgedeep.get("reason")),
+            "source": {
+                "notion_page": (forgedeep.get("source") or {}).get("notion_page"),
+                "title": (forgedeep.get("source") or {}).get("title"),
+                "fact_key": "forgedeep.current_population",
+            },
+        }
+    )
+    unresolved.append("Forgedeep civilian population remains unknown")
+    overview = blockers.get("neverwinter.population_overview_paragraph")
+    if overview:
+        unresolved.append(str(overview.get("reason")))
+
+    food: list[dict[str, Any]] = []
+    for spec in FOOD_ENTITY_SPECS:
+        employees = facts.get(spec["employees_key"])
+        revenue = facts.get(spec["revenue_key"])
+        cost = facts.get(spec["cost_key"])
+        if employees is None or revenue is None or cost is None:
+            raise EmpireSourceProductError(f"missing food financial facts for {spec['id']}")
+        physical = blockers.get(spec["physical_blocker"])
+        if physical is None:
+            raise EmpireSourceProductError(f"missing physical-output blocker for {spec['id']}")
+        food.append(
+            {
+                "id": spec["id"],
+                "entity": spec["entity"],
+                "kind": spec["kind"],
+                "employees": _exact_number(employees, spec["employees_key"]),
+                "monthly_revenue_gp": _exact_number(revenue, spec["revenue_key"]),
+                "monthly_cost_gp": _exact_number(cost, spec["cost_key"]),
+                "physical_output": None,
+                "physical_output_status": str(physical.get("status") or "MISSING_DATA"),
+                "authority": revenue["authority"],
+                "source": _source_ref(revenue, spec["revenue_key"]),
+                "unresolved": str(physical.get("reason")),
+            }
+        )
+        unresolved.append(f"{spec['entity']}: {physical.get('reason')}")
+    for spec in FOOD_AGGREGATE_SPECS:
+        employees = facts.get(spec["employees_key"])
+        revenue = facts.get(spec["revenue_key"])
+        if employees is None or revenue is None:
+            raise EmpireSourceProductError(f"missing food aggregate facts for {spec['id']}")
+        food.append(
+            {
+                "id": spec["id"],
+                "entity": spec["entity"],
+                "kind": spec["kind"],
+                "employees": _exact_number(employees, spec["employees_key"]),
+                "monthly_revenue_gp": _exact_number(revenue, spec["revenue_key"]),
+                "physical_output": None,
+                "physical_output_status": "NOT_DERIVED",
+                "authority": revenue["authority"],
+                "source": _source_ref(revenue, spec["revenue_key"]),
+                "note": spec["note"],
+            }
+        )
+
+    routes: list[dict[str, Any]] = []
+    for route_id, label, key in ARTERIAL_ROUTE_SPECS:
+        row = facts.get(key)
+        if row is None:
+            raise EmpireSourceProductError(f"missing arterial distance fact {key}")
+        routes.append(
+            {
+                "id": route_id,
+                "route": label,
+                "distance_miles": _exact_number(row, key),
+                "approximate": bool(row.get("approximate")),
+                "status": "COMPLETE",
+                "capacity": None,
+                "authority": row["authority"],
+                "source": _source_ref(row, key),
+            }
+        )
+    capacity = blockers.get("arterial.route_capacity")
+    if capacity is None:
+        raise EmpireSourceProductError("missing arterial capacity blocker")
+    unresolved.append(str(capacity.get("reason")))
+
+    return {
+        "status": "PARTIAL_SOURCE_BACKED",
+        "census": census,
+        "food_financials": food,
+        "arterial_routes": routes,
+        "unresolved": unresolved,
+        "reason": (
+            "Neverwinter and Waterdeep populations, food-sector gp/headcount, and five "
+            "complete arterial distances are SOURCE-DERIVED. Forgedeep occupancy, food "
+            "physical volumes, and route freight capacities stay unknown. OpenTTD is "
+            "not invoked from distances alone."
+        ),
+    }
 
 
 def _mesa_seed(seed: str) -> int:
@@ -428,6 +675,7 @@ def map_source_backed_physical_layer(
     source_path: Path = DEFAULT_SOURCE_INPUTS,
 ) -> dict[str, Any]:
     lines = source_production_lines(source_path)
+    known_state = source_known_state(source_path)
     products = {
         "mesa": _map_mesa(
             seed=seed,
@@ -452,6 +700,7 @@ def map_source_backed_physical_layer(
         },
     }
     unresolved = [ALLOCATION_CONFLICT]
+    unresolved.extend(known_state["unresolved"])
     for row in lines:
         unresolved.extend(f"{row['entity']}: {item}" for item in row["unresolved_inputs"])
     mapped = [
@@ -462,14 +711,16 @@ def map_source_backed_physical_layer(
     return {
         "status": "PARTIAL_SOURCE_BACKED",
         "reason": (
-            "Known industrial output lines are reported from SOURCE-DERIVED facts. "
-            "Mesa schedules the campaign business-phase events when installed. "
-            "FreeCol/Unknown Horizons may consume those sourced outputs when their "
-            "checkouts are present. OpenTTD, Veloren, and Brunnfeld stay dormant "
-            "because route capacities, opening stocks, and market prices are not "
-            "source-backed. No conversion ratio, inventory, or price was invented."
+            "Known industrial output lines, Neverwinter/Waterdeep census, food-sector "
+            "financials, and complete arterial distances are reported from SOURCE-DERIVED "
+            "facts. Mesa schedules the campaign business-phase events when installed. "
+            "FreeCol/Unknown Horizons may consume sourced industrial outputs when their "
+            "checkouts are present. OpenTTD, Veloren, and Brunnfeld stay dormant because "
+            "route capacities, opening stocks, and market prices are not source-backed. "
+            "No conversion ratio, inventory, population, or price was invented."
         ),
         "production_lines": lines,
+        "known_state": known_state,
         "products": products,
         "products_used": mapped,
         "dormant": list(DORMANT_PRODUCTS),

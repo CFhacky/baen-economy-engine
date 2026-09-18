@@ -140,6 +140,16 @@ class EmpireOperationsTests(unittest.TestCase):
             "Silversheen Warborn aluminum allocation",
             " ".join(result["unresolved"]),
         )
+        known = physical["known_state"]
+        census = {row["id"]: row for row in known["census"]}
+        self.assertEqual(census["neverwinter"]["population"], 75000)
+        self.assertEqual(census["waterdeep"]["population"], 130000)
+        self.assertIsNone(census["forgedeep"]["population"])
+        self.assertEqual(known["labor"]["admitted_commercial_employees"], 1084)
+        self.assertEqual(len(known["arterial_routes"]), 5)
+        self.assertTrue(
+            all(row["physical_output"] is None for row in known["food_financials"])
+        )
 
     def test_report_is_a_vara_style_review_surface(self):
         result = run_empire_business_turn(seed="report")
@@ -153,6 +163,11 @@ class EmpireOperationsTests(unittest.TestCase):
         self.assertIn("Source-backed production lines", report)
         self.assertIn("Baen Brickworks", report)
         self.assertIn("Warborn Production - Neverwinter", report)
+        self.assertIn("Source-backed census", report)
+        self.assertIn("Food financials (no physical volumes)", report)
+        self.assertIn("Arterial route register", report)
+        self.assertIn("Entity labor snapshot", report)
+        self.assertIn("Forgedeep", report)
 
 
 if __name__ == "__main__":

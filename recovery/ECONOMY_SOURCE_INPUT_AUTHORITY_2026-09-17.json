@@ -520,6 +520,30 @@
         "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
         "title": "Warborn Production - Neverwinter"
       }
+    },
+    {
+      "key": "neverwinter.current_population",
+      "value": 75000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "2fbe8214-84b0-8189-8b97-c6329f9f29a5",
+        "title": "Neverwinter",
+        "last_edited_at": "2026-04-20T20:33:05.466Z"
+      },
+      "note": "Locations DB Population property. The page Quick Facts table also says ~75,000. The Overview heading says ~80,000 and is not selected."
+    },
+    {
+      "key": "waterdeep.current_population",
+      "value": 130000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "2fbe8214-84b0-81a8-8f59-cf002a2906a1",
+        "title": "Waterdeep",
+        "last_edited_at": "2026-04-20T20:36:53.089Z"
+      },
+      "note": "Locations DB Population property. Page overview agrees at ~130,000."
     }
   ],
   "blockers": [
@@ -544,10 +568,21 @@
     {
       "key": "forgedeep.current_population",
       "status": "MISSING_DATA",
-      "reason": "Controlling runtime requires occupancy/population evidence; City Development page mixes a 450 figure with a staged 1,400–1,600 band and future targets.",
+      "reason": "Controlling runtime and LIVE STATE both leave occupancy/population unanswered. Location Population is null. City Development mixes a 450 figure with a staged 1,400–1,600 band and future Year-1 2,000 / decade 50,000 targets; none of those are current civilian population.",
       "source": {
-        "notion_page": "3cbe8214-84b0-81a5-a0b4-c363b94c0aa8",
-        "title": "Forgedeep Economic Return — CONTROLLING RUNTIME"
+        "notion_page": "3cbe8214-84b0-8178-a34a-d28e7ba76000",
+        "title": "Forgedeep Economic Return — LIVE STATE",
+        "last_edited_at": "2026-08-29T19:27:05.899Z"
+      }
+    },
+    {
+      "key": "neverwinter.population_overview_paragraph",
+      "status": "CONFLICT",
+      "reason": "Neverwinter Locations Population property is 75000 and Quick Facts says ~75,000; the Overview heading says ~80,000. The actual path uses the Locations Population property only and does not select 80000.",
+      "source": {
+        "notion_page": "2fbe8214-84b0-8189-8b97-c6329f9f29a5",
+        "title": "Neverwinter",
+        "last_edited_at": "2026-04-20T20:33:05.466Z"
       }
     },
     {

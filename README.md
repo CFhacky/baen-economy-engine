@@ -43,7 +43,8 @@ baen-empire run --seed "hammer-1495-a"
 6. applies only source-known Neglect penalties;
 7. produces a zero-write **Vara briefing** and review artifact;
 8. reports the five source-backed industrial output lines (Brickworks, Clay Quarries, Silversheen, Star Metal Hills, Warborn Neverwinter) without inventing conversion ratios or inventories;
-9. maps Mesa onto the campaign business-phase events when installed, maps FreeCol onto Warborn 12/15 actual-versus-maximum when `FREECOL_CHECKOUT` is set, and keeps OpenTTD/Veloren/Brunnfeld dormant because their required current inputs are still missing.
+9. reports Neverwinter 75,000 / Waterdeep 130,000 census, food-sector gp/headcount without physical volumes, five complete arterial distances without freight capacity, and the 1,084 admitted commercial employees without inventing unemployment pools;
+10. maps Mesa onto the campaign business-phase events when installed, maps FreeCol onto Warborn 12/15 actual-versus-maximum when `FREECOL_CHECKOUT` is set, and keeps OpenTTD/Veloren/Brunnfeld dormant because their required current inputs are still missing.
 
 The current admission ledger contains **37 source-admitted operating entities** and **53 excluded/future/unresolved rows**. Its recurring commercial revenue baseline is **299,266 gp/month**, independently inside the Current Financial State authority band of **280,000–320,000 gp/month**. The engine does **not** invent an exact current cash balance or exact consolidated cost where source authority does not provide one; expense/net remain ranges when the books only support ranges. Silversheen's Hammer-1495 180 t/mo × 320 gp/t revenue is admitted; its Eleint 1494 cost table is **not** silently scaled. The Warborn aluminum allocation remains an explicit 30 t/mo vs 20% conflict after that production ruling.
 

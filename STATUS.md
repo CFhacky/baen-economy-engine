@@ -95,7 +95,7 @@ See `VALIDATION_STANDALONE.md` for the executable evidence.
 
 ## Immediate development queue
 
-The source-grounded monthly business phase is the default `baen-empire run` path. Known industrial output lines are now reported from source authority, Mesa schedules those business-phase events when installed, and FreeCol may consume Warborn 12/15 when its checkout is present. OpenTTD, Veloren, and Brunnfeld remain dormant on the actual path.
+The source-grounded monthly business phase is the default `baen-empire run` path. Known industrial output lines, Neverwinter/Waterdeep census, food-sector financials, complete arterial distances, and admitted commercial headcount are now reported from source authority. Mesa schedules those business-phase events when installed, and FreeCol may consume Warborn 12/15 when its checkout is present. OpenTTD, Veloren, and Brunnfeld remain dormant on the actual path. Forgedeep occupancy, food physical volumes, and route capacities stay unknown.
 
 Remaining source-to-simulator gaps:
 

@@ -621,6 +621,21 @@ def run_empire_business_turn(
         },
         complications=complications,
     )
+    known_state = physical.setdefault("known_state", {})
+    known_state["labor"] = {
+        "status": "PARTIAL_SOURCE_BACKED",
+        "admitted_commercial_employees": employee_total,
+        "admitted_entities": len(admitted),
+        "authority": "SOURCE-DERIVED",
+        "double_count_rule": (
+            "Named production, food, and arterial headcounts are already inside the "
+            "admitted commercial slice where those entities were admitted. They are "
+            "not added on top of admitted_commercial_employees."
+        ),
+        "unresolved": (
+            "Settlement-wide occupation pools and unemployment are not source-backed."
+        ),
+    }
     unresolved.extend(physical["unresolved"])
 
     result: dict[str, Any] = {
@@ -792,5 +807,60 @@ def render_empire_business_report(payload: Mapping[str, Any]) -> str:
         extra = item.get("reason") or item.get("blocker") or item.get("provenance") or ""
         suffix = f" — {extra}" if extra else ""
         lines.append(f"- **{name}**: {status}{suffix}")
+    known = physical.get("known_state") or {}
+    lines.extend(
+        [
+            "",
+            "## Source-backed census",
+            "",
+        ]
+    )
+    for row in known.get("census") or []:
+        if row.get("population") is None:
+            lines.append(
+                f"- **{row['settlement']}** — unknown ({row.get('status')}; "
+                f"{row.get('reason') or 'current civilian population is not source-backed'})."
+            )
+        else:
+            lines.append(
+                f"- **{row['settlement']}** — {row['population']} ({row.get('authority')}; "
+                f"{row.get('role')})."
+            )
+    lines.extend(["", "## Food financials (no physical volumes)", ""])
+    for row in known.get("food_financials") or []:
+        cost = (
+            f"; cost {row['monthly_cost_gp']} gp"
+            if row.get("monthly_cost_gp") is not None
+            else ""
+        )
+        physical_status = row.get("physical_output_status") or "MISSING_DATA"
+        lines.append(
+            f"- **{row['entity']}** — {row['employees']} staff; "
+            f"{row['monthly_revenue_gp']} gp/month{cost} "
+            f"(physical output {physical_status})."
+        )
+    lines.extend(["", "## Arterial route register", ""])
+    for row in known.get("arterial_routes") or []:
+        approx = "approximately " if row.get("approximate") else ""
+        lines.append(
+            f"- **{row['route']}** — {approx}{row['distance_miles']} miles "
+            f"({row.get('status')}; freight capacity unknown)."
+        )
+    labor = known.get("labor") or {}
+    if labor:
+        lines.extend(
+            [
+                "",
+                "## Entity labor snapshot",
+                "",
+                (
+                    f"- Admitted commercial employees: **{labor.get('admitted_commercial_employees')}** "
+                    f"across **{labor.get('admitted_entities')}** entities "
+                    f"({labor.get('authority')})."
+                ),
+                f"- {labor.get('unresolved')}",
+                f"- {labor.get('double_count_rule')}",
+            ]
+        )
     lines.append("")
     return "\n".join(lines)
