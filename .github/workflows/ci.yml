@@ -140,7 +140,10 @@ jobs:
           grep -Fq "**mesa**: USED_IN_RUN" reports/Empire-Business-Phase.md
           grep -Fq "**freecol**: USED_IN_RUN" reports/Empire-Business-Phase.md
           grep -Fq "**unknown_horizons**: USED_IN_RUN" reports/Empire-Business-Phase.md
-          grep -Fq "**openttd**: NOT_INVOKED" reports/Empire-Business-Phase.md
+          grep -Fq "**openttd**: MAPPED_BLOCKED" reports/Empire-Business-Phase.md
+          grep -Fq "Source → product semantic domains" reports/Empire-Business-Phase.md
+          grep -Fq "ncf.active_loans_gp" reports/Empire-Business-Phase.md
+          grep -Fq "warborn.contract.priority_legionnaire_units" reports/Empire-Business-Phase.md
           grep -Fq "**veloren**: NOT_INVOKED" reports/Empire-Business-Phase.md
           grep -Fq "**brunnfeld**: NOT_INVOKED" reports/Empire-Business-Phase.md
           grep -Fq "Notion writes: **0**" reports/Empire-Business-Phase.md
