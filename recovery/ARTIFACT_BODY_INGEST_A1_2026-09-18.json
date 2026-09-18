@@ -1,0 +1,567 @@
+{
+  "schema": "tnp.economy.artifact-body-ingest/1",
+  "batch": "A1",
+  "records": [
+    {
+      "source_id": "2fbe8214-84b0-8112-bb14-c9ecc43c05cc",
+      "title": "Horadric Cube",
+      "revision": "2026-02-02T23:51:12.078Z",
+      "body_hash": "e6c8681f3d709f04430b2ff6d1041cdfeb3784a7703d6065d68578158956932f",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/32ae821484b0814bae70f01f40c60ed5"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "Anauroch Operations",
+        "Name": "Horadric Cube",
+        "Notes": "TYPE: Transmutation artifact (Diablo 2 mechanics integrated into campaign)<br><br>FUNCTION: Transmute items according to specific recipes. Items placed inside can be combined, upgraded, or broken down into components.<br><br>KNOWN RECIPES:<br>• 3 low runes → 1 mid rune<br>• 3 mid runes → 1 high rune<br>• Upgrade item quality<br>• Socket items<br>• Transmute gems/materials<br><br>SUCCESSFUL TRANSMUTATIONS:<br>• Ice Crown of Hrothgar → Winterheart Rune + Crown's Truth (Roll 19: Perfect)<br><br>TRANSMUTATION MECHANICS:<br>• d20 roll determines quality<br>• 1-3: Rejection<br>• 4-8: Partial transmutation<br>• 9-14: Standard transmutation<br>• 15-18: Enhanced transmutation<br>• 19-20: Perfect transmutation (reveals hidden nature)<br><br>CURRENT STATUS: Under study - learning transmutation principles. Basic transmutations understood, complex recipes being discovered through experimentation.<br><br>AVAILABLE RUNES: Eld, Tir, Tal, Ith, Nef (low tier), Ral, Shael (mid tier)",
+        "Origin": "Diablo 2 — Horadric artifact, transmutation via recipes",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fbe821484b08112bb14c9ecc43c05cc"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-8117-9c4d-d77e400f1df4",
+      "title": "Storm Seer's Diadem",
+      "revision": "2026-03-23T22:15:26.075Z",
+      "body_hash": "7b4ad71dc42d38b4cab49233e5b91d102a2a558e5a16faac70cc3822d8f17e04",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b0811c9ecad6e4fe49add5"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "With Elara (New Cormanthor)",
+        "Name": "Storm Seer's Diadem",
+        "Notes": "Wedding gift from Arik, Frieren, and Seliara; seven-fold barrier",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "[elara-wedding-gift-storm-seers-diadem.md](http://elara-wedding-gift-storm-seers-diadem.md)",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-21",
+        "url": "https://app.notion.com/p/2fbe821484b081179c4dd77e400f1df4"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-811e-ac74-ea58eac8e3d0",
+      "title": "Juggernaut Golem Manual",
+      "revision": "2026-02-02T23:51:12.078Z",
+      "body_hash": "9ab83e22faa232f46e1c2f0dae1e38857ee15791bea64f4d3a399c8cb2ead1c0",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface",
+          "Multiple"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b08149aa8fe1cab9515844"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "Bregan D'aerthe",
+        "Name": "Juggernaut Golem Manual",
+        "Notes": "RECOVERY: Recovered from Raazalkul's hoard during Abyssal raid. Divided to Kimmuriel during treasure distribution.<br><br>KNOWN PROPERTIES:<br>• Construct design specifications<br>• Arcane formulae for animation<br>• Animation theory<br><br>REQUIREMENTS: Requires specialized materials for construction.<br><br>POTENTIAL:<br>• Unprecedented construct creation<br>• Animation advancement<br>• War machine development<br><br>NOTE: Needs fuller documentation on what kind of golem this creates. Reference D&D Juggernaut stats?",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fbe821484b0811eac74ea58eac8e3d0"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-8121-bcdf-c75e2808425f",
+      "title": "Stormheart Node",
+      "revision": "2026-09-11T22:02:46.439Z",
+      "body_hash": "cc59789a0304792d1f6eb0a19de0f8c3588d3d6c6e405015e00c93aa310f57fa",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface",
+          "Multiple"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081a79c20db298627cd04"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "Fully integrated into Arik's body",
+        "Name": "Stormheart Node",
+        "Notes": "Lightning mastery, body integration, Storm Lord transformation",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-09-04",
+        "url": "https://app.notion.com/p/2fbe821484b08121bcdfc75e2808425f"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-8123-a435-e16a45b35472",
+      "title": "Nightwind",
+      "revision": "2026-08-20T19:02:52.119Z",
+      "body_hash": "85448a38c38aa88c0544f7f0bf5df4510b81c552317bad84d9f2bc5c4df8a4b7",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__YES__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b08141bf48df1d18e5b712"
+        ],
+        "Item Class": "Major Artifact",
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "With Lirien (Veil Operations)",
+        "Name": "Nightwind",
+        "Notes": "Sentient artifact shadow bastard sword (+3). Tier 1 (355 GURPS pts). Wielder chain: Selarial Moonshadow (deceased) → Arik Baen'und → Lirien Nightwalker (current). Shadow-forged steel, bypasses DR/magic, DR/cold iron, DR/silver. 18–20 crit range. Shadow Rend: +2d6 negative energy per hit. Spiritual Pressure: HD-differential Shadow Weight (not fear, not mind-affecting — progressive paralysis scaled by power gap). Soul Hunger with SP economy fueling active abilities. Shadow Step 5/day. Shadow Ward (spell absorption/reflection). Shadow Grasping (Evard's tentacles from targets' own shadows). Shadow Network Anchor (6 waypoints, Veil backbone). Acid Fang evolution path: kill Maladrax (CR 21 ancient black, Vast Swamp) → consume soul → blade evolves to +4 with unified corrosive spiritual pressure. Full mechanical rebuild completed 2026-06-01.",
+        "Origin": "Shadow plane origins",
+        "Sentient": "__YES__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Weapon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-01",
+        "url": "https://app.notion.com/p/2fbe821484b08123a435e16a45b35472"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-812c-aa37-fd4d1d45c0d0",
+      "title": "The Cinderheart",
+      "revision": "2026-02-02T23:51:12.078Z",
+      "body_hash": "483c54c6c07d07d92e5c022a0ce1d9abfcff89f6c94021e5e4d7f8a3d8b5cfcc",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Evolution Potential": "__YES__",
+        "Holder": [
+          "https://app.notion.com/p/32ae821484b0814bae70f01f40c60ed5"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "Anauroch Operations",
+        "Name": "The Cinderheart",
+        "Notes": "ORIGIN: Core torn from Xolroth, the Walking Kiln (CR 12+ construct). Originally contained 1000+ compressed souls as power source.<br><br>CURRENT STATE:<br>• Souls released - but CAPACITY remains<br>• Architecture that held 1000 screaming dead intact<br>• Houses The Lament's hook (transferred from Seliara)<br>• Fragment of anti-Jaghut weapon forged by Netherese arcanists<br>• Actively resonating with Ring of Baal'amon<br>• Pulling toward Shard of First Winter<br>• Can be sensed by Valerius across unknown distance<br><br>PLANNED USE: Core component of Cindermane Charger construct mount.<br><br>CINDERMANE PROJECT COMPONENTS NEEDED:<br>• Fire Binding Agent (fire drake gland acquired via Gary)<br>• Command Anchor (blood bond planned)<br>• Dragonne skeleton (acquired - 13ft frame)<br>• Ancient skull replacement (TBD)<br>• Soul primer (first kill ignition)<br><br>INSPIRATION: WoW Cindermane Charger - fire-aspected soul-harvesting mount",
+        "Origin": "Xolroth's core — 1000+ soul capacity, houses Lament's hook",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fbe821484b0812caa37fd4d1d45c0d0"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-8151-8051-dab5e5a562b0",
+      "title": "Ring of Baal'amon",
+      "revision": "2026-02-02T23:49:52.810Z",
+      "body_hash": "2e64e70dd2b066a15168e37dd2e7b9597a7813b15ef7b46c990d431f9c2b6567",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Evolution Potential": "__YES__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081569f34f92c71e3b019"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "Jörmun's Operations (Anauroch)",
+        "Name": "Ring of Baal'amon",
+        "Notes": "PHYSICAL: Thick gold band, perpetually cold. Abyssal inscription: 'Baal'amon' (The Frozen Betrayer / Winter's Last General). Contains animated scene of frozen battlefield with demon corpses, massive demonic figure collapsed at center with mortal blade in heart. Ice trail forms where wearer walks.<br><br>PROPERTIES (11 charges/day, refresh at dawn):<br>• Cold Resistance (passive)<br>• Winter's Fortitude: Advantage on CON saves below freezing<br>• Speak/understand Abyssal<br>• Demonic Authority (1 charge): CR 5 or lower fiends WIS DC 15 or frightened 1 min<br>• Sleet Storm (3 charges): No concentration<br>• Ice Storm 5th level (5 charges): Black ice with red veins<br>• Ice Form (hidden power, 1/day): Transform to perfect ice sculpture, immune to ALL damage, 1 hour, can't move/act<br><br>SIDE EFFECTS:<br>• Fiends always sense you've slain their kind (disadvantage on Deception vs fiends)<br>• Extreme cold triggers Baal'amon's dying memories as whispers<br>• Killing fiends shows their final moments in the winter scene<br>• Leaves thin ice trail when walking<br>• Prophetic nightmares of coming winter/doom<br><br>EVOLUTION TIERS:<br>• Tier 2 (Stirring): Glacial Genesis, Omtose Phellack Resonance, Whisper Clarity<br>• Tier 3 (Awakened): Raise Glacier, Sublimation Engine, Baal'amon's Hold<br><br>HISTORY: 2,800 years old, 8 previous owners including a Modron who catalogued it (#7734-B-Cold-Artifact-Demonic). Baal'amon commanded three legions during Blood War's 'Frozen Offensive.' Reached Hell through mortal trading souls for it.<br><br>JAGHUT CONNECTION: Part of an 'insurance network' of artifacts left by fleeing Jaghut. Connected to Ice Crown of Hrothgar (transmuted), Omtose Phellack magic. 'There are more.'",
+        "Origin": "Jaghut insurance network — 2800 years old",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-21",
+        "url": "https://app.notion.com/p/2fbe821484b081518051dab5e5a562b0"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-8163-8009-cef58be2f6fd",
+      "title": "Threadbaum Repeater (Model 1494)",
+      "revision": "2026-02-02T23:38:01.802Z",
+      "body_hash": "62335ff3111ae9097e9a518cfe09c20417256896ecab1cb2612225c2f1ef1a2a",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Rare",
+        "Location": "Gauntlgrym Manufacturing Facility",
+        "Name": "Threadbaum Repeater (Model 1494)",
+        "Notes": "Alchemical pistol, mass-manufacturable, TL4\\^ technology",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "[threadbaum-repeater-gurps-stats.md](http://threadbaum-repeater-gurps-stats.md)",
+        "Status": "Active",
+        "Type": "Weapon",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fbe821484b081638009cef58be2f6fd"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-816e-a343-e35cda73e1f5",
+      "title": "Frostfang",
+      "revision": "2026-03-24T01:14:38.998Z",
+      "body_hash": "dab16aff3ec3b7d8a2e832c782d4a2a78df709c08eace34e1f2cce08e0e70f6c",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Evolution Potential": "__YES__",
+        "Holder": [
+          "https://app.notion.com/p/32ae821484b0814bae70f01f40c60ed5"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "With Jörmun (Anauroch)",
+        "Name": "Frostfang",
+        "Notes": "TYPE: Masterwork greatsword<br><br>CURRENT PROPERTIES:<br>• Masterwork quality (+1 to hit in GURPS terms)<br>• Jörmun's innate cold integrates automatically - no frost enchantment needed<br>• 'He's the magic' - the sword is just well-made steel<br><br>RAVAGER INTEGRATION: Primary weapon for Ironhall Ravager martial system. All Tier 1 abilities now unlocked (Charge, Cleave, Mortal Strike, Critical Surge, Deep Wounds).<br><br>UPGRADE PATH:<br>• Keen (crit range 17-20) - synergizes with Critical Surge<br>• +1/+2 enhancement for accuracy<br>• Winterheart Rune fusion available (from transmuted Ice Crown)<br>• Three empty sockets on haft for future runeword installation<br><br>NOTE: No frost enchantment needed - redundant with Jörmun's lindwurm cold abilities.",
+        "Origin": "Masterwork greatsword — 3 empty sockets, Ravager Tier 1 unlocked",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Weapon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-21",
+        "url": "https://app.notion.com/p/2fbe821484b0816ea343e35cda73e1f5"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-8187-b7ce-ff383dc979a2",
+      "title": "Ring of Arcturus",
+      "revision": "2026-08-09T21:11:41.064Z",
+      "body_hash": "03ac6c940914a979866e675a30a09d4b818f084474d94b794157ccf747077971",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__YES__",
+        "Holder": [
+          "https://app.notion.com/p/2fce821484b081afa7d9ec281f82da74"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "With Empyrean (Main Party)",
+        "Name": "Ring of Arcturus",
+        "Notes": "PHYSICAL: Two-finger ring of Calimshan gold, organic web pattern connecting middle and ring fingers. Star sapphire (quail's egg size) contains visible pacing figure. Always warm. Cannot be removed while attuned. Leaves Lichtenberg electrical scarring after heavy use.<br><br>CONTAINED SOUL: Arcturus the Storm Sage - Netherese combat mage obsessed with 'solidifying energy into graspable form.' Killed during magical duel when he tried to grasp opponent's lightning bolt. Final words: 'See? Tangible! Note this down!'<br><br>SPELLS (Charges refresh at dawn):<br>• Greater Invisibility (2/day): 1 min, doesn't break on attacks<br>• Mass Confusion (1/day): 30ft radius, WIS DC 17<br>• Dominate Person (1/day): 1 hour, WIS DC 17<br>• Judrajim's Barrier (6/day): 10x10 ft wall of force, AC 18, 25 HP, 10 min<br>• Bolt of the Gods (2/day): 7th level - can be held as +2 melee weapon (4d8 lightning) or thrown (8d6 lightning, 5ft radius, 120ft range)<br><br>CURSE EFFECTS:<br>• Electrical Scarring: Lichtenberg figures after extended use<br>• Academic Compulsion: Daily INT DC 15 or 10-min lecture<br>• Sympathetic Shock: +1d6 psychic damage from lightning attacks (Arcturus critiques positioning)<br><br>RELATIONSHIP SYSTEM: -5 to +5 scale tracking Arcturus's disposition. Creative spell use gains points, repetitive casting loses them. At -3: 10% spell failure. At +5: New spell development possible.<br><br>ORIGIN: Created by Arik's Dodecahedron, extracting Arcturus's soul from Tempest's collection. Gold from lightning-struck mountain veins.<br><br>SYNERGIES: Bolt of the Gods conducts through Kiss of Betrayal (blood blade). Barriers compensate for lost flight.",
+        "Origin": "Netherese — soul trapped in star sapphire",
+        "Sentient": "__YES__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Legacy Attuned [SUPERSEDED]",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fbe821484b08187b7ceff383dc979a2"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-8194-988a-ccc65d1e43a3",
+      "title": "Mask of Varn / The Pale Name",
+      "revision": "2026-02-02T23:39:22.299Z",
+      "body_hash": "b914ac65007bd983db6c0ff2bf7b6fe4f93af1c6e6b69892dd11143690483908",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface",
+          "Multiple"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081a79c20db298627cd04"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "With Arik (between dimensions)",
+        "Name": "Mask of Varn / The Pale Name",
+        "Notes": "Identity/truth manipulation, evolved into Pale Name cosmic authority",
+        "Origin": "The Pale Name — identity manipulation artifact",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-21",
+        "url": "https://app.notion.com/p/2fbe821484b08194988accc65d1e43a3"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-8198-8777-d8b8f8c019af",
+      "title": "Gram - Sword of Grief",
+      "revision": "2026-02-02T23:51:12.078Z",
+      "body_hash": "78013dbae025a300806b87226e2425e083b627f8872bdd8d4286c470315de3e0",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface",
+          "Multiple"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/356e821484b081be8911d80bb120cd36"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "Bregan D'aerthe Operations",
+        "Name": "Gram - Sword of Grief",
+        "Notes": "TYPE: Massive two-handed sword<br><br>PHYSICAL: Serpent visible in hilt. Edge glows with faint poisonous light.<br><br>KNOWN PROPERTIES:<br>• Poisonous edge<br>• 10% chance of level drain on hit<br>• Sentient weapon (serpent intelligence)<br>• Intelligence recognized compatibility with Zaknafein's fighting style<br><br>POTENTIAL ABILITIES:<br>• Serpent perception enhancement<br>• Poison effect amplification<br>• Sorrow manipulation<br><br>WIELDER ACCEPTANCE: Blade 'chose' Zaknafein during Raazalkul raid - accepted him after brief test.<br><br>COMBAT PROVEN: Proved 'well matched' against Tempest in sparring with Arik.<br><br>CURRENT LOADOUT: Paired with Paws of the Cheetah - speed boots allow Zaknafein to match Arik's dimensional phasing with raw speed.<br><br>RECOVERY: Acquired from Raazalkul's treasure hoard during Abyssal Raid. Allocated to Bregan D'aerthe as part of treasure division, specifically under Zaknafein's stewardship.<br><br>ALLIANCE VALUE: Strengthens Bregan D'aerthe partnership.<br><br>NOTE: Needs fuller mechanical stat block (attack bonus, exact damage dice, specific serpent abilities).",
+        "Origin": "Bregan D'aerthe artifact — serpent sentient",
+        "Sentient": "__YES__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Weapon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-21",
+        "url": "https://app.notion.com/p/2fbe821484b081988777d8b8f8c019af"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-81b9-bc25-d6b23462444e",
+      "title": "Winterheart Rune",
+      "revision": "2026-02-02T23:51:12.078Z",
+      "body_hash": "ba732ab39a3522b2c96016ba994a581697388467c0055a86dfcd8f608c965b91",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/32ae821484b0814bae70f01f40c60ed5"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "Jörmun's Inventory",
+        "Name": "Winterheart Rune",
+        "Notes": "ORIGIN: Created via Perfect Transmutation (Roll 19) of Ice Crown of Hrothgar in Horadric Cube.<br><br>PROPERTIES (Choose one when used):<br>• Create cold immunity for ANY item<br>• Grant anti-magic field (1/day) to weapon<br>• Fuse with Frostfang for permanent upgrade<br><br>ACCOMPANYING KNOWLEDGE (Crown's Truth):<br>'The Jaghut who made this crown was fleeing something. They left artifacts across Faerûn as insurance. Baal'amon's ring is one. This crown was another. There are more.'<br><br>NOTE: Single-use crafting component. Decision pending on how to use it.",
+        "Origin": "Horadric Cube transmutation — Ice Crown converted",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Consumable",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fbe821484b081b9bc25d6b23462444e"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-81c6-8673-f5d9c16da7c2",
+      "title": "Tempest",
+      "revision": "2026-06-27T14:22:46.857Z",
+      "body_hash": "2581c4fe5ba70724180f43221ce44a3f2ea94e6ccb56fcb35c34ace59753f761",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface",
+          "Multiple"
+        ],
+        "Evolution Potential": "__YES__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081a79c20db298627cd04"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "With Arik (between dimensions)",
+        "Name": "Tempest",
+        "Notes": "Sentient storm greatsword, soul-devouring, demon-slaying",
+        "Origin": "Abyssal — Demon Lord's weapon",
+        "Sentient": "__YES__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Weapon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-21",
+        "url": "https://app.notion.com/p/2fbe821484b081c68673f5d9c16da7c2"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-81cc-9650-c34687346ff2",
+      "title": "Mask of the Claimed Hamingja",
+      "revision": "2026-03-23T19:41:18.965Z",
+      "body_hash": "f14823b03df555fcba626e944c2f198c70c6b366779c425f9e06f4292af9abc0",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/32ae821484b0814bae70f01f40c60ed5"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Unique",
+        "Location": "With Jörmun's retinue",
+        "Name": "Mask of the Claimed Hamingja",
+        "Notes": "Seiðr artifact, body/mind transformation, Odin's endorsement",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "[mask-of-the-claimed-hamingja.md](http://mask-of-the-claimed-hamingja.md)",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-21",
+        "url": "https://app.notion.com/p/2fbe821484b081cc9650c34687346ff2"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-81d9-9b65-ff63ee662525",
+      "title": "The Lament",
+      "revision": "2026-02-02T23:51:12.078Z",
+      "body_hash": "b261a20b1e920635428855ba5e40f2a3cbeb89b757eaf56ddd664d906d9efcae",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/32ae821484b0814bae70f01f40c60ed5"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "Anauroch Operations",
+        "Name": "The Lament",
+        "Notes": "TYPE: Soul-eating sword (Arthas/Frostmourne parallel)<br><br>HISTORY:<br>• Wielded by Valerius, the Pale Sentinel for 15 centuries<br>• Contains approximately 15 centuries worth of consumed souls<br>• Valerius was last of Netherese Spellguard<br>• Valerius destroyed; sword now dormant<br><br>KNOWN PROPERTIES:<br>• Soul consumption - devours essence of those it kills<br>• Wielder sustainment - kept Valerius 'alive' for 1500 years<br>• Corruption risk - claiming it risks being consumed<br>• Sentient will - sometimes overrides wielder<br><br>CURRENT STATUS: Dormant. Power fading without wielder. Can be claimed (risk), contained, destroyed (method unknown), or fed to Cinderheart.<br><br>THE HOOK: Fragment of The Lament exists in the Cinderheart. Valerius could sense it. Creates bait/weapon opportunity.<br><br>POTENTIAL FATES:<br>• Claim it (risk consumption)<br>• Fuse with Cinderheart via Horadric Cube (redirect hunger to construct)<br>• Extract souls for other uses<br>• Destroy (method unknown)<br><br>NOTE: Incomplete specs. Need full mechanical stat block if claimed.",
+        "Origin": "Valerius's soul-eating sword — 1500 years of souls",
+        "Sentient": "__YES__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Weapon",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fbe821484b081d99b65ff63ee662525"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 235,
+      "UNKNOWN": 1326,
+      "CONFLICT": 12,
+      "SUPERSEDED": 30,
+      "MISSING_DATA": 4,
+      "FUTURE": 10,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 291,
+      "UNMEASURED": 1329
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 235,
+      "UNREVIEWED": 1329,
+      "CONFLICT": 10,
+      "SUPERSEDED": 29,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 10,
+      "ECONOMIC_CONTEXT": 3
+    }
+  }
+}
