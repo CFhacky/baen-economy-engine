@@ -19,7 +19,7 @@ from baen_economy.empire_source_products import (
 class EmpireSourceProductsTests(unittest.TestCase):
     def test_production_lines_are_loaded_from_source_authority(self):
         lines = source_production_lines()
-        self.assertEqual(len(lines), 5)
+        self.assertEqual(len(lines), 9)
         by_id = {row["id"]: row for row in lines}
         self.assertEqual(by_id["brickworks"]["quantity"], 75000)
         self.assertEqual(by_id["clay_quarries"]["quantity"], 2000)
@@ -27,6 +27,10 @@ class EmpireSourceProductsTests(unittest.TestCase):
         self.assertEqual(by_id["star_metal_hills_bauxite"]["quantity"], 800)
         self.assertEqual(by_id["warborn_neverwinter"]["quantity"], 12)
         self.assertEqual(by_id["warborn_neverwinter"]["maximum"], 15)
+        self.assertEqual(by_id["treasury_quarries"]["quantity"], 8000)
+        self.assertEqual(by_id["azurite_quarries"]["quantity"], 200)
+        self.assertEqual(by_id["western_limestone"]["quantity"], 12000)
+        self.assertEqual(by_id["western_sandstone"]["quantity"], 6000)
         for row in lines:
             self.assertEqual(row["authority"], "SOURCE-DERIVED")
             self.assertFalse(row["recipe_invented"])
