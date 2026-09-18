@@ -165,9 +165,10 @@ class EmpireOperationsTests(unittest.TestCase):
         self.assertEqual(domains["military_contracts"]["status"], "PARTIAL_SOURCE_BACKED")
         coverage = physical["semantic_coverage"]
         self.assertEqual(coverage["status"], "PARTIAL_SOURCE_MAPPED")
-        self.assertGreater(coverage["mapped_record_count"], 0)
-        self.assertGreater(coverage["moved_from_unknown"], 0)
-        self.assertLess(coverage["unknown_after_overlay"], coverage["unknown_before"])
+        self.assertEqual(coverage["mapped_record_count"], 10)
+        self.assertEqual(coverage["moved_from_unknown"], 9)
+        self.assertEqual(coverage["unknown_before"], 1616)
+        self.assertEqual(coverage["unknown_after_overlay"], 1607)
         self.assertEqual(coverage["simulated_after_overlay"], 0)
 
     def test_report_is_a_vara_style_review_surface(self):
