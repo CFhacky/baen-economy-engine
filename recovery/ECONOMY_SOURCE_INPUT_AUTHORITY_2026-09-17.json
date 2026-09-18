@@ -472,6 +472,18 @@
       "temporal_note": "Hammer 1495 ruling; supersedes 150 t/mo Eleint 1494 baseline."
     },
     {
+      "key": "silversheen.warborn_aluminum_allocation_percent",
+      "value": 20,
+      "unit": "percent of current Silversheen aluminum output",
+      "authority": "USER-RULED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+        "title": "Silversheen Trading (Aluminum)"
+      },
+      "note": "User ruling 2026-09-18: Warborn receives 20% of Silversheen production no matter what the current output is. The older 30 tons/month wording is superseded as a fixed quantity; at the current 180 tons/month output this evaluates to 36 tons/month."
+    },
+    {
       "key": "silversheen.current_unit_price_gp_per_ton",
       "value": 320,
       "authority": "SOURCE-DERIVED",
@@ -936,17 +948,16 @@
         "title": "Silversheen Trading (Aluminum)",
         "last_edited_at": "2026-07-28T14:28:20.993Z"
       }
-    },
+    }
+  ],
+  "resolved_conflicts": [
     {
       "key": "silversheen.warborn_aluminum_allocation",
-      "status": "CONFLICT",
-      "reason": "Warborn Neverwinter and Silversheen both state a 30 t/mo allocation and '20% of current output'. Those agree at the Eleint 1494 150 t/mo baseline. After the Hammer-1495 180 t/mo ruling, 20% would be 36 t/mo. Quantity-versus-ratio is unresolved; neither value is selected.",
-      "source": {
-        "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
-        "title": "Warborn Production - Neverwinter",
-        "last_edited_at": "2026-08-21T03:20:13.902Z"
-      },
-      "claims": [
+      "prior_status": "CONFLICT",
+      "resolution": "20% of current Silversheen production governs at all output levels; fixed 30 tons/month is superseded.",
+      "authority": "USER-RULED",
+      "ruled_at": "2026-09-18",
+      "prior_claims": [
         {
           "value": "30 tons/month",
           "status": "SOURCE-DERIVED",
@@ -970,7 +981,11 @@
           "note": "Recorded only to expose the contradiction; not an execution input."
         }
       ],
-      "selected_value": null
+      "current_evaluation": {
+        "silversheen_output_tons_per_month": 180,
+        "allocation_percent": 20,
+        "warborn_allocation_tons_per_month": 36
+      }
     }
   ]
 }

@@ -167,12 +167,6 @@ DORMANT_PRODUCTS: tuple[dict[str, str], ...] = (
     },
 )
 
-ALLOCATION_CONFLICT = (
-    "Silversheen Warborn aluminum allocation: 30 t/mo quantity vs 20% of current "
-    "output; they agreed at Eleint 1494 150 t/mo and conflict after the Hammer-1495 "
-    "180 t/mo ruling"
-)
-
 CENSUS_SPECS: tuple[dict[str, str], ...] = (
     {
         "id": "neverwinter",
@@ -533,6 +527,33 @@ def source_semantic_domains(
             )
         return rows
 
+    allocation_rule = _fact_snapshot(
+        facts,
+        "silversheen.warborn_aluminum_allocation_percent",
+        unit="percent of current Silversheen aluminum output",
+    )
+    silversheen_output = _fact_snapshot(
+        facts,
+        "silversheen.current_output_aluminum_tons_per_month",
+        unit="tons/month",
+    )
+    allocation_tons = (
+        Decimal(str(silversheen_output["value"]))
+        * Decimal(str(allocation_rule["value"]))
+        / Decimal("100")
+    )
+    current_allocation = {
+        "key": "silversheen.warborn_aluminum_allocation_tons_per_month",
+        "value": _product_number(allocation_tons),
+        "unit": "tons/month",
+        "authority": "USER-RULED",
+        "source": allocation_rule["source"],
+        "note": (
+            "Derived dynamically from the USER-RULED 20% share of current Silversheen "
+            "production; it changes whenever current Silversheen output changes."
+        ),
+    }
+
     contract_source = contract.get("source")
     contract_terms = contract.get("terms")
     if not isinstance(contract_source, dict) or not isinstance(contract_terms, dict):
@@ -690,6 +711,8 @@ def source_semantic_domains(
                     "warborn_neverwinter.monthly_revenue_gp",
                     unit="gp/month",
                 ),
+                allocation_rule,
+                current_allocation,
                 *contract_rows,
             ],
             "execution_rule": (
@@ -697,7 +720,6 @@ def source_semantic_domains(
                 "They do not authorize future facility output or campaign-time advancement."
             ),
             "unresolved": [
-                _blocker_snapshot(blockers, "silversheen.warborn_aluminum_allocation"),
                 *evidence_unresolved("military_contracts"),
             ],
         },
@@ -1276,8 +1298,7 @@ def map_source_backed_physical_layer(
             "reason": DORMANT_PRODUCTS[2]["reason"],
         },
     }
-    unresolved = [ALLOCATION_CONFLICT]
-    unresolved.extend(known_state["unresolved"])
+    unresolved = list(known_state["unresolved"])
     for row in lines:
         unresolved.extend(f"{row['entity']}: {item}" for item in row["unresolved_inputs"])
     mapped = [

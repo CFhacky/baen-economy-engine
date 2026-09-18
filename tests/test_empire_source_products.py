@@ -48,11 +48,16 @@ class EmpireSourceProductsTests(unittest.TestCase):
             if spec.maximum_key:
                 self.assertIn(spec.maximum_key, keys)
 
-    def test_silversheen_cost_and_allocation_remain_fail_closed(self):
+    def test_silversheen_cost_remains_blocked_but_warborn_share_is_user_ruled(self):
         payload = json.loads(Path(DEFAULT_SOURCE_INPUTS).read_text(encoding="utf-8"))
         blockers = {row["key"]: row for row in payload["blockers"]}
+        facts = {row["key"]: row for row in payload["facts"]}
         self.assertEqual(blockers["silversheen.current_monthly_cost_gp"]["status"], "MISSING_DATA")
-        self.assertEqual(blockers["silversheen.warborn_aluminum_allocation"]["status"], "CONFLICT")
+        self.assertNotIn("silversheen.warborn_aluminum_allocation", blockers)
+        allocation = facts["silversheen.warborn_aluminum_allocation_percent"]
+        self.assertEqual(allocation["value"], 20)
+        self.assertEqual(allocation["authority"], "USER-RULED")
+        self.assertIn("no matter what", allocation["note"])
         self.assertIn("Do not scale", blockers["silversheen.current_monthly_cost_gp"]["reason"])
 
     def test_known_state_reports_census_food_and_routes_without_inventing(self):
@@ -142,6 +147,21 @@ class EmpireSourceProductsTests(unittest.TestCase):
         self.assertEqual(
             military_known["warborn.contract.solar_guard_units"]["value"],
             21,
+        )
+        self.assertEqual(
+            military_known["silversheen.warborn_aluminum_allocation_percent"]["value"],
+            20,
+        )
+        self.assertEqual(
+            military_known["silversheen.warborn_aluminum_allocation_tons_per_month"]["value"],
+            36,
+        )
+        self.assertEqual(
+            military_known["silversheen.warborn_aluminum_allocation_tons_per_month"]["authority"],
+            "USER-RULED",
+        )
+        self.assertFalse(
+            any(row["key"] == "silversheen.warborn_aluminum_allocation" for row in military["unresolved"])
         )
         self.assertTrue(
             any(
