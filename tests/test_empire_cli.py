@@ -119,6 +119,18 @@ class EmpireCliTests(unittest.TestCase):
         self.assertTrue(hasattr(sandbox_args, "scenario"))
         self.assertFalse(hasattr(run_args, "scenario"))
 
+    def test_run_prepares_only_source_products_by_default(self):
+        from baen_economy.empire_cli import build_parser
+
+        args = build_parser().parse_args(["run", "--seed", "source-products"])
+        self.assertTrue(args.prepare_products)
+        self.assertEqual(args.product_root, Path(".upstream/baen-source-products"))
+
+        no_products = build_parser().parse_args(
+            ["run", "--seed", "source-products", "--no-prepare-products"]
+        )
+        self.assertFalse(no_products.prepare_products)
+
 
 if __name__ == "__main__":
     unittest.main()
