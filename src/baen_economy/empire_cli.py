@@ -90,8 +90,10 @@ PRODUCTS = (
         "boundary": "headless dedicated server/admin API",
         "mapping": "transport/company economy telemetry",
         "status": (
-            "runtime-integrated; not invoked in actual run — route freight capacities "
-            "and loss rates are not source-backed"
+            "runtime-integrated; a real Warborn/Gauntlgrym precision-steel flow is "
+            "source-mapped to OpenTTD steel cargo, but actual-run invocation remains "
+            "blocked until campaign miles→tiles and fractional tons→integer cargo pieces "
+            "have USER-RULED or SOURCE-DERIVED semantics"
         ),
     },
 )
