@@ -10,6 +10,7 @@ capacities stay unknown.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from decimal import Decimal
 import hashlib
 import json
 import os
@@ -17,6 +18,7 @@ from pathlib import Path
 from typing import Any, Mapping, Sequence
 
 from .mesa_runtime import MesaProductEvent, MesaRuntimeUnavailable, mesa_available, run_mesa_preview
+from .domain import canonical_decimal
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -242,6 +244,31 @@ ARTERIAL_ROUTE_SPECS: tuple[tuple[str, str, str], ...] = (
         "arterial.route.neverwinter_waterdeep.distance_miles",
     ),
 )
+
+
+def _product_number(value: object) -> int | str:
+    """Convert upstream numeric output to durable exact operator-safe form."""
+
+    if type(value) is bool:
+        raise EmpireSourceProductError("upstream product returned boolean numeric output")
+    if type(value) is int:
+        return value
+    if isinstance(value, float):
+        decimal = Decimal(str(value))
+        if not decimal.is_finite():
+            raise EmpireSourceProductError("upstream product returned non-finite numeric output")
+        if decimal == decimal.to_integral_value():
+            return int(decimal)
+        return canonical_decimal(decimal)
+    if isinstance(value, Decimal):
+        if not value.is_finite():
+            raise EmpireSourceProductError("upstream product returned non-finite Decimal")
+        if value == value.to_integral_value():
+            return int(value)
+        return canonical_decimal(value)
+    raise EmpireSourceProductError(
+        f"unsupported upstream numeric output: {type(value).__name__}"
+    )
 
 
 def _load_payload(path: Path) -> dict[str, Any]:
@@ -685,8 +712,12 @@ def _map_unknown_horizons(lines: Sequence[Mapping[str, Any]]) -> dict[str, Any]:
             {
                 "line_id": result.line_id,
                 "entity": row["entity"],
-                "produced": {str(k): v for k, v in result.produced.items()},
-                "consumed": {str(k): v for k, v in result.consumed.items()},
+                "produced": {
+                    str(k): _product_number(v) for k, v in result.produced.items()
+                },
+                "consumed": {
+                    str(k): _product_number(v) for k, v in result.consumed.items()
+                },
             }
         )
     return {
