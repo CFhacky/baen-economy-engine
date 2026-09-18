@@ -88,7 +88,7 @@ jobs:
             --build-jobs 2 \
             --format report | tee reports/Empire-E2E-Preview.md
           test -s reports/Empire-E2E-Preview.md
-          grep -q "Whole-Economy Month" reports/Empire-E2E-Preview.md
+          grep -Fq "Whole-Economy Month" reports/Empire-E2E-Preview.md
           grep -q "mesa.*USED_IN_RUN" reports/Empire-E2E-Preview.md
           grep -q "brunnfeld.*USED_IN_RUN" reports/Empire-E2E-Preview.md
           grep -q "unknown_horizons.*USED_IN_RUN" reports/Empire-E2E-Preview.md
@@ -111,11 +111,11 @@ jobs:
           mkdir -p reports
           baen-empire run --seed "hammer-1495-source-ci" --format report | tee reports/Empire-Business-Phase.md
           test -s reports/Empire-Business-Phase.md
-          grep -q "Baen Empire Monthly Business Phase" reports/Empire-Business-Phase.md
-          grep -q "Admitted Registry entities: **37**" reports/Empire-Business-Phase.md
-          grep -q "299266 gp/month" reports/Empire-Business-Phase.md
-          grep -q "Sector revenue rolls" reports/Empire-Business-Phase.md
-          grep -q "Expense control" reports/Empire-Business-Phase.md
-          grep -q "Entity complications" reports/Empire-Business-Phase.md
-          grep -q "Vara briefing" reports/Empire-Business-Phase.md
-          grep -q "Notion writes: **0**" reports/Empire-Business-Phase.md
+          grep -Fq "Baen Empire Monthly Business Phase" reports/Empire-Business-Phase.md
+          grep -Fq "Admitted Registry entities: **37**" reports/Empire-Business-Phase.md
+          grep -Fq "299266 gp/month" reports/Empire-Business-Phase.md
+          grep -Fq "Sector revenue rolls" reports/Empire-Business-Phase.md
+          grep -Fq "Expense control" reports/Empire-Business-Phase.md
+          grep -Fq "Entity complications" reports/Empire-Business-Phase.md
+          grep -Fq "Vara briefing" reports/Empire-Business-Phase.md
+          grep -Fq "Notion writes: **0**" reports/Empire-Business-Phase.md
