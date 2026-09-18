@@ -514,6 +514,18 @@
       }
     },
     {
+      "key": "star_metal_hills.gauntlgrym_route_distance_miles",
+      "value": 80,
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "32be8214-84b0-812b-97c9-f057203aeef8",
+        "title": "Star Metal Hills Mining Complex"
+      },
+      "note": "Current location page states Star Metal Hills → road ~80 miles → Gauntlgrym and daily wagon runs."
+    },
+    {
       "key": "treasury_quarries.employees",
       "value": 55,
       "authority": "SOURCE-DERIVED",
@@ -627,6 +639,28 @@
         "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
         "title": "Warborn Production - Neverwinter"
       }
+    },
+    {
+      "key": "warborn_neverwinter.gauntlgrym_freight_distance_miles",
+      "value": 85,
+      "approximate": true,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "333e8214-84b0-8120-a75e-f11a243ab6d5",
+        "title": "Baen Northern Industrial Yards (Warborn Production Neverwinter)"
+      }
+    },
+    {
+      "key": "warborn_neverwinter.gauntlgrym_freight_transit_days",
+      "value": 2,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "333e8214-84b0-8120-a75e-f11a243ab6d5",
+        "title": "Baen Northern Industrial Yards (Warborn Production Neverwinter)"
+      },
+      "note": "Inbound Gauntlgrym–Forgedeep corridor is described as ~85-mile freight road, 2 days."
     },
     {
       "key": "warborn_neverwinter.hell_iron_lbs_per_unit",
