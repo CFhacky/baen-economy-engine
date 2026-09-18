@@ -7,10 +7,8 @@
   "notion_writes": 0,
   "rules": {
     "actual_authorities": [
-      "SOURCE-DERIVED",
       "USER-RULED",
-      "CALCULATED",
-      "ROLLED-AND-BOUND",
+      "SOURCE-DERIVED",
       "UPSTREAM-ADOPTED"
     ],
     "rejected_from_actual": [
@@ -164,6 +162,81 @@
           "authority": "USER-RULED",
           "source": "User ruling 2026-09-18",
           "note": "The Ironmaw/Stonebearer/Groundshaper production system is already in production by 1495. Exact initial commissioning date and monthly production rate remain unresolved."
+        },
+        {
+          "key": "brickworks.stonebearer_chassis_batch_cost_gp",
+          "value": 18000,
+          "unit": "gp for four chassis",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad"
+        },
+        {
+          "key": "brickworks.stonebearer_core_batch_cost_gp",
+          "value": 8000,
+          "unit": "gp for four cores",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad"
+        },
+        {
+          "key": "brickworks.stonebearer_erata_batch_cost_gp",
+          "value": 6000,
+          "unit": "gp for four integrations",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad"
+        },
+        {
+          "key": "brickworks.stonebearer_equipped_batch_cost_gp",
+          "value": 32000,
+          "unit": "gp for four equipped vehicles",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "note": "Acquisition/installation cost anchor; not a factory cost ledger or current cash expenditure."
+        },
+        {
+          "key": "brickworks.stonebearer_drivers",
+          "value": 12,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "note": "Three eight-hour shifts. Do not infer three times the documented daily trip count."
+        },
+        {
+          "key": "brickworks.stonebearer_mechanics",
+          "value": 2,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad"
+        },
+        {
+          "key": "brickworks.charging_bays",
+          "value": 5,
+          "unit": "bays",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "note": "Four assigned vehicles plus one visiting bay; not five vehicles."
+        },
+        {
+          "key": "brickworks.stonebearer_recharge_minutes",
+          "value": 90,
+          "unit": "minutes empty to full",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad"
+        },
+        {
+          "key": "stonebearer.dump_bed_volume",
+          "value": 15,
+          "unit": "cubic yards",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "note": "Volume ceiling and 30000 lb mass ceiling both apply; neither replaces the other."
+        },
+        {
+          "key": "stonebearer.design_lineage",
+          "value": "Longsaddle Valley terraforming fleet",
+          "unit": "source statement",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "note": "The adaptation has no explicit dated acceptance record in this section."
         }
       ],
       "unresolved": [
@@ -186,8 +259,69 @@
           "key": "heavy_machinery.ironmaw_groundshaper_performance",
           "method": "RECOVER_MACHINE_DOCUMENT_OR_TECHNICAL_DESIGN",
           "reason": "Stonebearer haul performance is sourced; equivalent Ironmaw/Groundshaper work-rate specifications have not yet been recovered. If absent from the actual machine document, they must be designed once under the evidence-first protocol."
+        },
+        {
+          "key": "heavy_machinery.first_acceptance_date",
+          "method": "ORIGINAL_MACHINE_DOCUMENT_OR_RATIFIED_RETROSPECTIVE_HISTORY",
+          "reason": "Neither the partnership opening nor Brickworks opening dates dates its machinery. Longsaddle mixes early-1495 and Nightal-1495 state; later excavation cannot set a Day-7 fleet."
+        },
+        {
+          "key": "heavy_machinery.factory_bom_workforce_and_cost",
+          "method": "ORIGINAL_MACHINE_DOCUMENT_THEN_ONE_RATIFIED_PROGRAMME",
+          "reason": "32000 gp for four equipped Stonebearers is sourced. Factory labor hours, material masses, yield, Ironmaw/Groundshaper costs, and accepted monthly output are not yet recovered."
+        },
+        {
+          "key": "heavy_machinery.road_configuration_performance",
+          "method": "SPECIFY_UNDER_EXISTING_USER_RULING",
+          "reason": "Road/Jeep configuration is USER-RULED. Separate future Roadrider speed, payload and production rates cannot supply its unrecorded performance."
         }
-      ]
+      ],
+      "calculated": [
+        {
+          "key": "stonebearer.equipped_unit_cost_gp",
+          "value": 8000,
+          "unit": "gp per equipped vehicle",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "formula": "(18000 + 8000 + 6000) / 4",
+          "derivation_method": "ARITHMETIC"
+        }
+      ],
+      "source_recovery": {
+        "checked_on": "2026-09-18",
+        "original_machine_document_recovered": false,
+        "manufacturing_existence": "Existing Stonebearer line explicitly named by the Light Vehicle Program; Gauntlgrym JV provides facility/smiths/testing. Forgedeep workshops also explicitly exist.",
+        "negative_search_scope": "Live Notion Ironmaw/Groundshaper/Heavy Machinery searches; private campaign-development-vault main tree and indexed code search; Library exact-title and content searches. No claim of corpus-wide absence.",
+        "standalone_new_factory_required": false,
+        "dates": [
+          {
+            "event": "Gauntlgrym Tools Partnership operational",
+            "date": "Kythorn 1494",
+            "machine_commissioning_date": false
+          },
+          {
+            "event": "Brickworks business operational",
+            "date": "Ches 1494",
+            "machine_commissioning_date": false
+          },
+          {
+            "event": "Roadrider tooling starts",
+            "date": "mid-1495",
+            "available_day7_hammer_1495": false
+          },
+          {
+            "event": "Roadrider chassis proof after bound seven-month research",
+            "date": "Hammer–Alturiak 1496",
+            "available_day7_hammer_1495": false
+          }
+        ],
+        "source_urls": [
+          "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "https://app.notion.com/p/397e821484b0813cb746ecbef4e0c773",
+          "https://app.notion.com/p/321e821484b08116ac1bcc07c68ff15f",
+          "https://app.notion.com/p/2fbe821484b081a1997ed3b747e8c556"
+        ]
+      }
     },
     "conventional_freight": {
       "status": "PARTIAL_RECOVERED",
@@ -588,7 +722,40 @@
         "safety": "Strict fail-closed source loader; current actual frozen at Day 7 Hammer 1495 DR; technical designs cannot execute as current actual.",
         "current_actual_date": "Day 7 Hammer 1495 DR, midday Hell-cycle",
         "current_month_advance_authorized": false
-      }
+      },
+      "targeted_survey_requirements": [
+        {
+          "owner": "Mila Dunwright",
+          "site": "Blacklake",
+          "source": "https://app.notion.com/p/321e821484b08112ab9ecd6f5eba18e8",
+          "fields": [
+            "pool ID and measured area/depth",
+            "species by pool",
+            "cohort count and mean weight",
+            "opening harvested stock",
+            "feed stock and ration",
+            "harvest dates and losses",
+            "storage capacity and preservation"
+          ],
+          "status": "REQUIRED_NOT_PERFORMED"
+        },
+        {
+          "owner": "Primrose Greenthistle",
+          "site": "Agricultural Shelter Zones",
+          "source": "https://app.notion.com/p/321e821484b081e09660eacd14973b2f",
+          "fields": [
+            "site IDs and growing area",
+            "planted crop and stage",
+            "measured baseline yield",
+            "opening produce by batch",
+            "seed and input stocks",
+            "preservation/storage capacity",
+            "spoilage history"
+          ],
+          "status": "REQUIRED_NOT_PERFORMED"
+        }
+      ],
+      "survey_guard": "A required in-world measurement is not completed by asking an NPC in prose. Unauthored state requires a bounded sourced generation procedure or user ruling; no fictional survey result is inserted."
     },
     "forgedeep": {
       "status": "CURRENT_POPULATION_UNRESOLVED",
@@ -726,15 +893,18 @@
           "key": "ncf.named_active_loans_recovered_gp",
           "value": 30000,
           "unit": "gp",
-          "authority": "CALCULATED",
-          "formula": "15000 + 10000 + 5000"
+          "authority": "SOURCE-DERIVED",
+          "formula": "15000 + 10000 + 5000",
+          "derivation_method": "ARITHMETIC"
         },
         {
           "key": "ncf.named_active_loan_coverage_pct",
-          "value": 1.3043478261,
+          "value": "1.3043478261",
           "unit": "percent of 2.3M portfolio",
-          "authority": "CALCULATED",
-          "formula": "30000 / 2300000 * 100"
+          "authority": "SOURCE-DERIVED",
+          "formula": "30000 / 2300000 * 100",
+          "derivation_method": "ARITHMETIC",
+          "rounding": "10 decimal places; informational percentage only"
         }
       ],
       "conflicts": [],
@@ -758,6 +928,11 @@
           "key": "ncf.remaining_loan_book_2270000_gp",
           "method": "RECOVER_LOAN_FILES",
           "reason": "Named recovered active loans cover only ~1.30% of reported principal; do not generate charming borrowers to fill the rest."
+        },
+        {
+          "key": "ncf.historical_client_loans_day7_reconciliation",
+          "method": "RECONCILE_CLIENT_SUBLEDGER_WITH_CURRENT_PARENT",
+          "reason": "Recover rollforward of 127000 gp estate loan at 4% and separate 132000 gp Institut mortgage at 6%; do not add estate loan to ESAMT aggregate twice or promote 1493 balances to Day 7."
         }
       ],
       "cautions": [
@@ -778,6 +953,30 @@
             22000,
             23250
           ]
+        }
+      ],
+      "historical_loan_evidence": [
+        {
+          "key": "celestial_compass.estate_loan",
+          "authority": "SOURCE-DERIVED",
+          "principal_gp": 127000,
+          "annual_rate_pct": 4,
+          "source": "https://app.notion.com/p/347e821484b08142a46bc164ca8aeaf0",
+          "temporal_scope": "1493 origination; page also calls it outstanding in early-1495 summary",
+          "day7_principal_gp": null,
+          "included_in_day7_named_loan_total": false,
+          "reason": "Reconcile against ESAMT aggregate and repayment history before additive portfolio recognition."
+        },
+        {
+          "key": "institut.separate_commercial_mortgage",
+          "authority": "SOURCE-DERIVED",
+          "principal_gp": 132000,
+          "annual_rate_pct": 6,
+          "source": "https://app.notion.com/p/341e821484b081a9b91be3e4102c6848",
+          "temporal_scope": "Session 31 ruling in 1493 ledger",
+          "day7_principal_gp": null,
+          "included_in_day7_named_loan_total": false,
+          "reason": "Top-of-page ruling excludes this from ESAMT draws. Later ledger entries and repayments must be reconciled before Day-7 recognition."
         }
       ]
     },
@@ -811,8 +1010,13 @@
           "key": "arterial.gross_strip_area_at_500_mile_floor",
           "value": 5120000,
           "unit": "gross strip-acres before overlap removal",
-          "authority": "CALCULATED",
-          "formula": "500 miles * 16 mile width * 640 acres/sq mi"
+          "authority": "SOURCE-DERIVED",
+          "formula": "500 miles * 16 mile width * 640 acres/sq mi",
+          "derivation_method": "ARITHMETIC",
+          "input_authorities": [
+            "USER-RULED",
+            "SOURCE-DERIVED"
+          ]
         }
       ],
       "unresolved": [
@@ -825,6 +1029,13 @@
           "key": "arterial.land_cost_basis_and_value",
           "method": "RECOVER_THEN_APPRAISE",
           "reason": "No uniform gp/acre value may be invented."
+        }
+      ],
+      "temporal_exclusions": [
+        {
+          "source": "https://app.notion.com/p/37de821484b081549c6bd10986768d97",
+          "effective_date": "Hammer 1496 DR",
+          "reason": "Post-bridge portfolio totals, rents, 99-year Longsaddle conveyance and later authorizations are not Day-7-Hammer-1495 state."
         }
       ]
     },
@@ -888,6 +1099,86 @@
           "reason": "Current ESAMT system defines capital-deployment mechanics, but stale historical balances must not be imported into Day-7 opening state."
         }
       ]
+    },
+    "warehouse_inventory": {
+      "status": "PARTIAL_RECOVERED",
+      "facts": [
+        {
+          "key": "waterdeep.warehouse.main_floor_length_ft",
+          "value": 90,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375"
+        },
+        {
+          "key": "waterdeep.warehouse.main_floor_width_ft",
+          "value": 60,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375"
+        },
+        {
+          "key": "waterdeep.warehouse.claimed_storage_cells",
+          "value": 54,
+          "unit": "10 by 10 ft cells",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375",
+          "note": "Source claim conflicts with the stated circulation; not usable net storage capacity."
+        },
+        {
+          "key": "waterdeep.warehouse.central_aisle_width_ft",
+          "value": 8,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375"
+        },
+        {
+          "key": "waterdeep.warehouse.enchanted_chests",
+          "value": 65,
+          "unit": "storage containers",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375",
+          "note": "Capacity, not item count, ownership, occupancy or value."
+        },
+        {
+          "key": "waterdeep.warehouse.large_item_bays",
+          "value": 6,
+          "unit": "bays",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375"
+        },
+        {
+          "key": "waterdeep.warehouse.custody_classes",
+          "value": [
+            "Baen goods in transit",
+            "Silversheen goods",
+            "client consignments",
+            "NCF reserves in transit"
+          ],
+          "unit": "source-described classes",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375",
+          "note": "Physical custody does not establish Baen beneficial ownership."
+        }
+      ],
+      "conflicts": [
+        {
+          "key": "waterdeep.warehouse.net_storage_geometry",
+          "reason": "90*60 = 54*10*10 = 5400 sq ft, leaving zero for the stated eight-foot lengthwise aisle and cross-aisle. Net storage cannot be booked from all 54 nominal cells."
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "warehouse.day7_inventory",
+          "method": "DATED_STOCK_LEDGER_OR_RATIFIED_RECONSTRUCTION",
+          "reason": "Need per lot: quantity/unit, owner, custodian, location, dated receipt/dispatch, cost, liens, condition, spoilage and commitments. Facility capacity is not opening inventory."
+        },
+        {
+          "key": "waterdeep.warehouse.net_usable_capacity",
+          "method": "RECONCILE_SOURCE_GEOMETRY",
+          "reason": "Requires corrected cell/aisle plan, allowable stack height and floor loading. Do not multiply gross floor area by invented density."
+        }
+      ]
     }
   },
   "action_queue": [
@@ -896,7 +1187,7 @@
       "label": "Canonize 1495 Heavy Machinery fleet and production ramp",
       "method": "WORKLOAD_BACKSOLVE_THEN_BOUND_RESIDUAL",
       "user_action_required": false,
-      "note": "Use existing Stonebearer line + 1495 construction workload; recover Ironmaw/Groundshaper specs, solve minimum fleet, then derive the production ramp. Ask Chad only if a machine specification or manufacturing-architecture choice is genuinely absent.",
+      "note": "Production line exists. Recover original machine sheet or stage one retrospective production-history proposal in chat; author approval is required for invented dates, rates, BOM or fleet. Routine recovery remains autonomous.",
       "unlocks": [
         "road transport capacity",
         "construction capacity",
@@ -991,7 +1282,8 @@
         "production supply",
         "shortages",
         "bankable warehouse receipts"
-      ]
+      ],
+      "note": "Waterdeep warehouse geometry conflict identified; capacity and client consignments must not become Baen-owned stock."
     },
     {
       "id": "market-price-basket",
@@ -1055,6 +1347,11 @@
       "id": "2026-09-18-heavy-machinery-active-1495",
       "authority": "USER-RULED",
       "note": "Heavy machinery production is active by Day 7 Hammer 1495. This does not establish the original commissioning month or monthly output."
+    },
+    {
+      "id": "2026-09-18-continuation-source-check",
+      "authority": "SOURCE-DERIVED",
+      "note": "Live pages establish 32000 gp equipped four-Stonebearer batch; recover factory existence without inventing throughput. Quarantine Roadrider forward dates, Longsaddle mixed chronology, Hammer-1496 portfolio and historical client loans. Warehouse storage-grid/aisle conflict remains explicit. Arithmetic is a provenance method, never a sixth authority class."
     }
   ],
   "sourcebook_routing": {

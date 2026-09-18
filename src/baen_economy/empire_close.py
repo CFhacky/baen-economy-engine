@@ -11,7 +11,7 @@ DEFAULT_CLOSE_RECOVERY = PROJECT_ROOT / "recovery/EMPIRE_CLOSE_RECOVERY_2026-09-
 class EmpireCloseError(ValueError):
     pass
 
-_ACCEPTED = {"SOURCE-DERIVED","USER-RULED","CALCULATED","ROLLED-AND-BOUND","UPSTREAM-ADOPTED"}
+_ACCEPTED = {"SOURCE-DERIVED", "USER-RULED", "UPSTREAM-ADOPTED"}
 
 def load_close_recovery(path: Path = DEFAULT_CLOSE_RECOVERY) -> dict[str, Any]:
     try:
@@ -20,12 +20,17 @@ def load_close_recovery(path: Path = DEFAULT_CLOSE_RECOVERY) -> dict[str, Any]:
         raise EmpireCloseError(f"cannot read Empire Close recovery: {exc}") from exc
     if payload.get("schema")!="tnp.economy.empire-close-recovery/1":
         raise EmpireCloseError("unsupported Empire Close recovery schema")
-    if payload.get("canonical") is not False or payload.get("campaign_time_advanced") is not False:
+    if (payload.get("canonical") is not False
+            or payload.get("campaign_time_advanced") is not False
+            or payload.get("notion_writes") != 0):
         raise EmpireCloseError("Empire Close recovery must remain non-canonical and zero-time")
     _validate_authority(payload)
     return payload
 
 def _validate_authority(payload: Mapping[str, Any]) -> None:
+    # Calculation and dice are provenance methods, never extra authorities.
+    if set(payload.get("rules", {}).get("actual_authorities", [])) != _ACCEPTED:
+        raise EmpireCloseError("actual authorities must use the approved three executable classes")
     lanes=payload.get("lanes")
     if not isinstance(lanes,dict):
         raise EmpireCloseError("lanes must be an object")

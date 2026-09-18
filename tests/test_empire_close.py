@@ -134,19 +134,36 @@ class EmpireCloseTests(unittest.TestCase):
         gaps=result["lanes"]["system_gaps"]
         methods={row["key"]:row["method"] for row in gaps["unresolved"]}
         self.assertEqual(methods["opening_inventories"],"PHYSICAL_COUNT_OR_PERPETUAL_INVENTORY_RECONSTRUCTION")
-        self.assertEqual(methods["market.opening_prices"],"PRICE_SOURCE_RECOVERY_THEN_MARKET_MODEL")
+        self.assertEqual(methods["market.opening_prices"],"SOURCEBOOK_ANCHORS_PLUS_LOCAL_MARKET_RECOVERY")
         self.assertIn("shock_probabilities",methods)
 
     def test_non_executable_fact_fails_closed(self):
-        payload=load_close_recovery()
-        payload["lanes"]["heavy_machinery"]["facts"].append(
-            {"key":"bad","value":99,"authority":"MODEL-PROPOSED"}
-        )
-        with tempfile.TemporaryDirectory() as td:
-            path=Path(td)/"bad.json"
-            path.write_text(json.dumps(payload),encoding="utf-8")
-            with self.assertRaises(EmpireCloseError):
-                load_close_recovery(path)
+        for authority in ("MODEL-PROPOSED", "UNRESOLVED", "CALCULATED", "ROLLED-AND-BOUND"):
+            with self.subTest(authority=authority), tempfile.TemporaryDirectory() as td:
+                payload=load_close_recovery()
+                payload["lanes"]["heavy_machinery"]["facts"].append(
+                    {"key":"bad","value":99,"authority":authority}
+                )
+                path=Path(td)/"bad.json"
+                path.write_text(json.dumps(payload),encoding="utf-8")
+                with self.assertRaises(EmpireCloseError):
+                    load_close_recovery(path)
+
+    def test_recovered_machine_cost_is_not_a_production_history(self):
+        lane=close_status()["lanes"]["heavy_machinery"]
+        facts={row["key"]:row for row in lane["facts"]}
+        self.assertEqual(facts["brickworks.stonebearer_equipped_batch_cost_gp"]["value"],32000)
+        self.assertFalse(lane["source_recovery"]["original_machine_document_recovered"])
+        self.assertTrue(any(r["key"]=="heavy_machinery.first_acceptance_date" for r in lane["unresolved"]))
+
+    def test_historical_loans_and_warehouse_capacity_do_not_create_opening_assets(self):
+        lanes=close_status()["lanes"]
+        for loan in lanes["ncf_finance"]["historical_loan_evidence"]:
+            self.assertIsNone(loan["day7_principal_gp"])
+            self.assertFalse(loan["included_in_day7_named_loan_total"])
+        warehouse=lanes["warehouse_inventory"]
+        self.assertEqual(warehouse["conflicts"][0]["key"],"waterdeep.warehouse.net_storage_geometry")
+        self.assertTrue(any(r["key"]=="warehouse.day7_inventory" for r in warehouse["unresolved"]))
 
 if __name__=="__main__":
     unittest.main()

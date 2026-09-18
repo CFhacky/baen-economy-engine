@@ -14,6 +14,7 @@ class CorridorFinanceTests(unittest.TestCase):
         self.assertEqual(land["gross_strip_square_miles_at_500_mile_floor"],"8000")
         self.assertEqual(land["gross_strip_acres_at_500_mile_floor"],"5120000")
         self.assertTrue(land["not_actual_titled_acreage"])
+        self.assertEqual(land["authority"],"SOURCE-DERIVED")
 
     def test_stonebearer_short_haul_capacity_uses_only_sourced_four_unit_allocation(self):
         snap=corridor_finance_snapshot()
@@ -25,6 +26,16 @@ class CorridorFinanceTests(unittest.TestCase):
         self.assertEqual(transport["brickworks_short_haul_capacity_tons_per_day_min"],"360")
         self.assertEqual(transport["brickworks_short_haul_capacity_tons_per_day_max"],"420")
         self.assertIn("Empire-wide",transport["unresolved"])
+        self.assertIsNone(transport["actual_assigned_tons_per_day"])
+        self.assertIsNone(transport["unallocated_transport_capacity_tons_per_day"])
+
+    def test_future_roadrider_does_not_supply_current_earthmover_performance(self):
+        transport=corridor_finance_snapshot()["internal_transport"]
+        future=transport["roadrider_dedicated_line"]
+        self.assertTrue(transport["earthmover_jeep_road_configuration"])
+        self.assertFalse(future["available_at_campaign_boundary"])
+        self.assertTrue(future["not_earthmover_road_mode_specs"])
+        self.assertEqual(future["temporal_scope"],"FORWARD_DESIGN")
 
     def test_ncf_portfolio_keeps_rate_anchors_without_fake_average_apr(self):
         snap=corridor_finance_snapshot()

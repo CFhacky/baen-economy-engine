@@ -53,7 +53,9 @@ def corridor_land_bank_summary(path: Path = DEFAULT_AUTHORITY) -> dict[str, Any]
         "gross_strip_square_miles_at_500_mile_floor":str(square_miles),
         "gross_strip_acres_at_500_mile_floor":str(gross_acres),
         "legacy_direct_arterial_acres_lower_bound":facts["arterial.legacy_direct_owned_acres"]["value"],
-        "authority":"USER-RULED + SOURCE-DERIVED arithmetic",
+        "authority":"SOURCE-DERIVED",
+        "derivation_method":"ARITHMETIC",
+        "input_authorities":["USER-RULED", "SOURCE-DERIVED"],
         "not_actual_titled_acreage":True,
         "reason":"This is the sum of 16-mile-wide strips using the sourced 500-mile network floor, before route-overlap subtraction. It is not a lower bound on unique titled area; consolidated titled acres require unique geometry, overlap removal, exclusions, and title reconciliation."
     }
@@ -74,9 +76,17 @@ def internal_transport_summary(path: Path = DEFAULT_AUTHORITY) -> dict[str, Any]
         "brickworks_allocated_stonebearers":int(fleet),
         "brickworks_short_haul_capacity_tons_per_day_min":str(payload_tons*fleet*trips_min),
         "brickworks_short_haul_capacity_tons_per_day_max":str(payload_tons*fleet*trips_max),
+        "capacity_basis":"Four vehicles at the comparison duty cycle; benchmark only, not actual assigned output or spare capacity.",
+        "actual_assigned_tons_per_day":None,
+        "unallocated_transport_capacity_tons_per_day":None,
         "loaded_speed_mph":facts["stonebearer.loaded_speed_mph"]["value"],
         "empty_speed_mph":facts["stonebearer.empty_speed_mph"]["value"],
         "roadrider_dedicated_line":{
+            "temporal_scope":"FORWARD_DESIGN",
+            "available_at_campaign_boundary":False,
+            "tooling_start":"mid-1495 DR",
+            "chassis_proof_window":"Hammer–Alturiak 1496 DR",
+            "not_earthmover_road_mode_specs":True,
             "cargo_lb":facts["roadrider.cargo_lb"]["value"],
             "road_speed_mph":facts["roadrider.road_speed_mph"]["value"],
             "core_endurance_hours":facts["roadrider.core_endurance_hours"]["value"],
