@@ -120,6 +120,26 @@
       }
     },
     {
+      "key": "azurite_quarries.employees",
+      "value": 20,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b2-8e6d-c97122a34793",
+        "title": "Azurite Decorative Quarries"
+      }
+    },
+    {
+      "key": "azurite_quarries.monthly_output_tons",
+      "value": 200,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-81b2-8e6d-c97122a34793",
+        "title": "Azurite Decorative Quarries"
+      }
+    },
+    {
       "key": "blacklake_aquaculture.employees",
       "value": 15,
       "authority": "SOURCE-DERIVED",
@@ -397,6 +417,39 @@
       }
     },
     {
+      "key": "neverwinter.current_population",
+      "value": 75000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "2fbe8214-84b0-8189-8b97-c6329f9f29a5",
+        "title": "Neverwinter",
+        "last_edited_at": "2026-04-20T20:33:05.466Z"
+      },
+      "note": "Locations DB Population property. The page Quick Facts table also says ~75,000. The Overview heading says ~80,000 and is not selected."
+    },
+    {
+      "key": "quarry_network.total_employees",
+      "value": 165,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8111-8df6-fb5d6377ba0a",
+        "title": "Treasury Stone Quarries"
+      }
+    },
+    {
+      "key": "quarry_network.total_monthly_output_tons",
+      "value": 29000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8111-8df6-fb5d6377ba0a",
+        "title": "Treasury Stone Quarries"
+      },
+      "note": "Current Treasury page's complete-network table totals Treasury 8000 + Azurite 200 + Limestone 12000 + Sandstone 6000 + Star Metal 800 + Clay 2000 = 29,000 tons/month."
+    },
+    {
       "key": "silversheen.current_gross_revenue_gp_per_month",
       "value": 57600,
       "authority": "SOURCE-DERIVED",
@@ -461,6 +514,27 @@
       }
     },
     {
+      "key": "treasury_quarries.employees",
+      "value": 55,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8111-8df6-fb5d6377ba0a",
+        "title": "Treasury Stone Quarries"
+      }
+    },
+    {
+      "key": "treasury_quarries.monthly_output_tons",
+      "value": 8000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8111-8df6-fb5d6377ba0a",
+        "title": "Treasury Stone Quarries"
+      },
+      "note": "Current Registry page states 8,000 tons/month across granite, marble, basalt, vaultstone, and mixed stone."
+    },
+    {
       "key": "warborn_neverwinter.employees",
       "value": 77,
       "authority": "SOURCE-DERIVED",
@@ -522,18 +596,6 @@
       }
     },
     {
-      "key": "neverwinter.current_population",
-      "value": 75000,
-      "authority": "SOURCE-DERIVED",
-      "confidence": "high",
-      "source": {
-        "notion_page": "2fbe8214-84b0-8189-8b97-c6329f9f29a5",
-        "title": "Neverwinter",
-        "last_edited_at": "2026-04-20T20:33:05.466Z"
-      },
-      "note": "Locations DB Population property. The page Quick Facts table also says ~75,000. The Overview heading says ~80,000 and is not selected."
-    },
-    {
       "key": "waterdeep.current_population",
       "value": 130000,
       "authority": "SOURCE-DERIVED",
@@ -544,6 +606,46 @@
         "last_edited_at": "2026-04-20T20:36:53.089Z"
       },
       "note": "Locations DB Population property. Page overview agrees at ~130,000."
+    },
+    {
+      "key": "western_limestone.employees",
+      "value": 25,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8101-9287-cb7fdf65e5a9",
+        "title": "Western Limestone Quarries"
+      }
+    },
+    {
+      "key": "western_limestone.monthly_output_tons",
+      "value": 12000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8101-9287-cb7fdf65e5a9",
+        "title": "Western Limestone Quarries"
+      }
+    },
+    {
+      "key": "western_sandstone.employees",
+      "value": 18,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8192-b481-f813840aadd3",
+        "title": "Western Sandstone Quarries"
+      }
+    },
+    {
+      "key": "western_sandstone.monthly_output_tons",
+      "value": 6000,
+      "authority": "SOURCE-DERIVED",
+      "confidence": "high",
+      "source": {
+        "notion_page": "321e8214-84b0-8192-b481-f813840aadd3",
+        "title": "Western Sandstone Quarries"
+      }
     }
   ],
   "blockers": [
