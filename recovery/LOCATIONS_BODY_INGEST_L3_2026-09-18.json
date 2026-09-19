@@ -1,0 +1,601 @@
+{
+  "schema": "tnp.economy.locations-body-ingest/1",
+  "batch": "L3",
+  "captured_at": "2026-09-18",
+  "target": 16,
+  "reviewed": 16,
+  "failed": 0,
+  "records": [
+    {
+      "source_id": "33ae8214-84b0-8114-9c37-c6f48cf2f139",
+      "title": "Northman's Cairn",
+      "revision": "2026-08-20T19:52:51.226Z",
+      "body_hash": "2a52d656ea73d7cdfb48b8334db5d74341aae8b2ce1aba73151b5c2aae14c912",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Northman's Cairn",
+        "Notes": "Open-air Norse sacred site. Field Ward, northern edge near the Trollwall. Stone cairn, twelve feet high, rune-carved. Maintained by Uthgardt and northern traders. Offerings of mead, iron, carved bone. Not a temple — no clergy, no services. A place where northmen leave things for the gods and the gods decide whether to notice. Smells of old fire and wet stone. Ground consecrated by decades of use. Nearest Watch patrol passes every forty minutes. Dark between the lamp posts. The kind of place where someone left hooded and beaten would be found at dawn by the first northman who came to pour mead on the stones.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "",
+        "Status": "Allied",
+        "Strategic Value": "Low",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-06",
+        "url": "https://app.notion.com/p/33ae821484b081149c37c6f48cf2f139"
+      }
+    },
+    {
+      "source_id": "33de8214-84b0-8152-a773-ce4b13c010d3",
+      "title": "Dunbarrow's Hilltop (Greypeak Foothills)",
+      "revision": "2026-08-20T03:29:55.320Z",
+      "body_hash": "50e94ef03a980335ebdc938d758ab714f4b7558612e71c96f6e2c9198ddeda9b",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b081a28d13e2c252a26647"
+        ],
+        "Garrison": "",
+        "Name": "Dunbarrow's Hilltop (Greypeak Foothills)",
+        "Notes": "Fortified hilltop camp, Greypeak foothills, \\~40 miles north of Ravencrest Estate. Old shepherding enclosure expanded — stone walls, timber palisade, watchtower. 18 months of construction. \\~45 occupants. Serena Blackwood's scouts provide early warning perimeter. Approaches: steep from south and west, gentler slope from north and east (where Bloodaxe pressure comes from). Water source: spring-fed stream 200 yards downhill (vulnerability). Robb's military challenge: assault a fortified hilltop position with scouts deployed.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "",
+        "Status": "Hostile",
+        "Strategic Value": "Moderate",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-09",
+        "url": "https://app.notion.com/p/33de821484b08152a773ce4b13c010d3"
+      }
+    },
+    {
+      "source_id": "33de8214-84b0-8191-ab65-da92a203b331",
+      "title": "Chauntea Temple Ruins (Stone Bridge Company)",
+      "revision": "2026-08-20T03:29:52.713Z",
+      "body_hash": "050ca7532140064742d99649a9f0cf30f0933a15de2b6a2b7e27cc71a6ed7f6d",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b081238b13dd743507d18c"
+        ],
+        "Garrison": "",
+        "Name": "Chauntea Temple Ruins (Stone Bridge Company)",
+        "Notes": "Collapsed Chauntea temple complex, 8 miles north of Stone Bridge ford on the Dessarin. Stone Bridge Company winter base. Semi-permanent camp within old temple walls. Divine silence killed the temple — priestess left 3 years ago, wards failed, building collapsed. Now occupied by \\~30 veteran bandits who use the remaining walls for shelter. Irony: a temple abandoned because the gods went quiet, now home to men abandoned because the economy collapsed.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "",
+        "Status": "Hostile",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-09",
+        "url": "https://app.notion.com/p/33de821484b08191ab65da92a203b331"
+      }
+    },
+    {
+      "source_id": "33ee8214-84b0-8139-b02c-e643bdb0b08e",
+      "title": "🏔 Karak Durath — The Underhalls",
+      "revision": "2026-04-18T22:52:47.487Z",
+      "body_hash": "cd879f7e1fa2c89bf82ea0dd52fedd1c5a2a38568ba30c280b41f86440a13199",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Undead (Sir Geoffrey Hart wight lord + retinue, Level 2-3). Besilmer undead (Levels 2-4). Commander Thordak revenant (Level 4). Upperdark creatures (Level 5).",
+        "Name": "Karak Durath — The Underhalls",
+        "Notes": "Besilmer satellite complex beneath Ravencrest Estate. 5 progressive levels (48 rooms). Discovery via geological survey subsidence. Divine Silence has degraded Moradin's wards — upper wards failed, mid-level intermittent, deep wards weakening.<br><br>Canon: Besilmer founded −4420 DR by Torhild Flametongue. Sign: wheel over a plow. Surface agricultural kingdom. Karak Durath = satellite trade-forge waystation, not Tyar-Besil (which is under the Sumber Hills per Princes of the Apocalypse).<br><br>Contains: mithril deposits (L3), Great Anvil of Moradin (L3), sapphire crystal for Ring of Silver Threads (L3 shrine), Besilmer genealogical records, Underdark connection to Kenafin route (L5). Elder Elemental Eye pre-drow carvings beneath Kenafin waymarkers (L5). Knights of the Silver Horn 911 DR scout remains (L1).<br><br>Bosses: Sir Geoffrey Hart (wight lord, L2-3, CR 10) + Commander Thordak Irongate (revenant, L4, CR 10, diplomacy-resolvable). Myconid colony (L2, potential allies). Phase spiders (L3 shrine approach).<br><br>Full module: [besilmer-underhalls-complete-module.md](http://besilmer-underhalls-complete-module.md)<br>Supplement 1: [karak-durath-flavor-enhancements.md](http://karak-durath-flavor-enhancements.md)<br>Supplement 2: [karak-durath-canonical-lore-integration.md](http://karak-durath-canonical-lore-integration.md)<br><br>Cross-refs: [Module Hub](https://www.notion.so/33ee821484b081ac9c4fe9f63e090f40) \\| [Shrine](https://www.notion.so/340e821484b0812097a3fb2bfe099b18) \\| [Thordak](https://www.notion.so/33ee821484b081988ecedab5e3f98a76) \\| [Hart](https://www.notion.so/33ee821484b081dd82a3e4871748b436) \\| [Ravencrest Surface](https://www.notion.so/340e821484b081a38bd6fe7df84566de) \\| [Ring of Silver Threads](https://www.notion.so/340e821484b0815eb4baedbe34b4ecd5)",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[besilmer-underhalls-complete-module.md](http://besilmer-underhalls-complete-module.md)",
+        "Status": "Unexplored",
+        "Strategic Value": "Critical",
+        "Sub-Locations": [
+          "https://app.notion.com/p/340e821484b0812097a3fb2bfe099b18"
+        ],
+        "Type": "Dungeon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-10",
+        "url": "https://app.notion.com/p/33ee821484b08139b02ce643bdb0b08e"
+      }
+    },
+    {
+      "source_id": "340e8214-84b0-8120-97a3-fb2bfe099b18",
+      "title": "⛏ The Soul Forger's Repose (Moradin Shrine, Karak Durath L3)",
+      "revision": "2026-08-20T03:22:10.674Z",
+      "body_hash": "19dbdbfe4a4524cacebe4702c2fb48508fb1d26f411c53c789091d0c9261d9a9",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "None — sealed/abandoned",
+        "Name": "The Soul Forger's Repose (Moradin Shrine, Karak Durath L3)",
+        "Notes": "SEALED. Besilmer-era Moradin devotional shrine on Level 3 of Karak Durath beneath Ravencrest estate. Deliberately collapsed corridor + active defensive ward (RESOLVED: Besilmer Stone Golem CR 11, deactivates on Dethek stand-down phrase, Einar automatic). NEW Room 3-4a: Phase spider nest (3, CR 5 each) in Ethereal-thin gallery before shrine approach — sapphire divine charge creates exclusion boundary. Shimmer of Drowned Stars accelerated recharge in this zone.<br><br>Contains: 300-450ct sapphire crystal (exceptional cornflower blue, strong Moradin divine residue, +2 enchantment). Full deposit 500-850ct (primary + fractured root). Besilmer mithral/adamantine devotional metalwork (hammer, tongs, anvil miniature). Sapphire is component for Ring of Silver Threads project — enough for TWO rings, not three.<br><br>Supplement doc: [karak-durath-flavor-enhancements.md](http://karak-durath-flavor-enhancements.md)<br><br>NOT YET DISCOVERED.",
+        "Parent Location": [
+          "https://app.notion.com/p/33ee821484b08139b02ce643bdb0b08e"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[ravencrest-estate-geological-exploration-potential.md](http://ravencrest-estate-geological-exploration-potential.md)",
+        "Status": "Unexplored",
+        "Strategic Value": "Critical",
+        "Type": "Dungeon",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/340e821484b0812097a3fb2bfe099b18"
+      }
+    },
+    {
+      "source_id": "340e8214-84b0-81a3-8bd6-fe7df84566de",
+      "title": "Ravencrest Estate (Surface)",
+      "revision": "2026-08-20T19:58:49.121Z",
+      "body_hash": "0028051758976c939f0cd9d2b4bbe600b8a34d06b9c7ed3f437afa16b4a8c4d2",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Phase 1 construction live (BC-4471, Days 730–1050). Harrison WITHDREW — claim resolved in Baen'und favor.",
+        "Name": "Ravencrest Estate (Surface)",
+        "Notes": "18,147 acres, Dessarin River, NE of Waterdeep. Ancestral Baen'und claim (Zaerthin, 1317 DR). CONTROLLED. Geoffrey Harrison withdrew; Harrison family occupation remains historical land-use evidence, not an active competing claim. Phase 1 construction is live under BC-4471 and the manor is half-built on Day 904. Karak Durath (Underhalls) exists separately in Locations DB.<br><br>CANON CONNECTION: Besilmer military maps (Karak Durath L4 War Room) show a road from Karak Durath to the Vale of Dancing Waters — Torhild Flametongue's summer palace and the Shrine of the Tender Oath (Sharindlar, dwarven goddess of love/fertility). The Vale is canon-located west of Dessarin near Stone Bridge, upriver from the estate. Road alignment may survive beneath modern landscape — additional legal evidence + pilgrimage route on estate corridor. Diplomatic implications for Mithral Hall relationship.<br><br>Cross-refs: [Karak Durath](https://app.notion.com/p/33ee821484b08139b02ce643bdb0b08e) \\| [Module Hub](https://app.notion.com/p/33ee821484b081ac9c4fe9f63e090f40) \\| [Shrine](https://app.notion.com/p/340e821484b0812097a3fb2bfe099b18)",
+        "Population": 180,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[ravencrest-estate-current-state-assessment.md](http://ravencrest-estate-current-state-assessment.md), [ravencrest-estate-geological-exploration-potential.md](http://ravencrest-estate-geological-exploration-potential.md)",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Sub-Locations": [
+          "https://app.notion.com/p/348e821484b081d8b39bd2d00f403644"
+        ],
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-08-20",
+        "url": "https://app.notion.com/p/340e821484b081a38bd6fe7df84566de"
+      }
+    },
+    {
+      "source_id": "340e8214-84b0-81aa-8867-cb57d9730332",
+      "title": "🏛 Fellowes Hall",
+      "revision": "2026-08-20T19:51:32.929Z",
+      "body_hash": "0abfe50840385142a59e923abd42b6e396c3dfc09c1aedba05a82e07dd43b181",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "Alderman Hugh Pemberton (Arbiter — older brother of Magistrate Pemberton, uncle of Arthur Pemberton who filed the Harrison competing Ravencrest claim). Nine-member quarterly committee rotating by discipline: Edith Carr (Textiles/Dock Ward), Gerald Ashton (Metals/Castle Ward), Ralph Ogden (Timber/Northern Ward), Martha Lennox (Provisioning), Simon Blackett (Maritime/Dock Ward), Agnes Whitfield (Building Trades/Infrastructure Commission ally), Thomas Hartwell (Leather/Aldenmere swing vote), Penelope Crane (Apothecary/Sea Ward), Alderman Oliver Hatch (General Commerce). Clerk's offices ground floor. Surveyors' Guild shares west wing. Convocation Chamber 120-seat gallery capacity during sessions. No standing garrison outside convocations.",
+        "Name": "Fellowes Hall",
+        "Notes": "Waterdeep's oldest professional arbitration board (\\~1157 DR). Quarterly convocations evaluate trade innovation, settle guild disputes, arbitrate commercial standards. The Convocation Chamber seats 120 in tiered gallery with 9-member committee on raised dais. Marcel presents Day 654 (18th Eleasis). Arbiter Hugh Pemberton is Arthur Pemberton's uncle (Ravencrest Harrison claim connection). Shares building with Surveyors' Guild (west wing).",
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "",
+        "Status": "Allied",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-12",
+        "url": "https://app.notion.com/p/340e821484b081aa8867cb57d9730332"
+      }
+    },
+    {
+      "source_id": "341e8214-84b0-81ba-97e0-c8e16ed2cc23",
+      "title": "🐦 The Gilded Sparrow",
+      "revision": "2026-04-13T01:45:09.597Z",
+      "body_hash": "c233f6efdca2aec2e6e6b912fcb4a58c12386a6845c7b9634952133a8f9bfcdb",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Oswin Thatch (innkeeper, 22 years, late fifties, sees everything and opines on nothing). Innkeeper's wife (cook). Innkeeper's nephew (errand boy, 13, meal-delivery route to Room 4). HOSTILE PRESENCE: Luskan static watcher in Room 4 since 10th Eleasis, window facing Institut main entrance 60 yards north, nightly departures between 2nd and 4th bell. Brannock tasked with innkeeper approach (cover options: traveling merchant / Trades Ward lunch regular / landlord's agent). No friendly garrison — this is an active intelligence target, not a Shi'van-controlled facility.",
+        "Name": "The Gilded Sparrow",
+        "Notes": "Inn, Saddler's Lane, Trades Ward. 60 yards from Institut. 12 rooms. Innkeeper Oswin Thatch (22 years). Room 4 = Luskan static watcher since 10th Eleasis. Window faces Institut main entrance. Brannock tasked with innkeeper approach. Active intelligence target.",
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "",
+        "Status": "Contested",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-12",
+        "url": "https://app.notion.com/p/341e821484b081ba97e0c8e16ed2cc23"
+      }
+    },
+    {
+      "source_id": "343e8214-84b0-8189-acca-dbcdefeb2bc2",
+      "title": "The Windcaller's Roost",
+      "revision": "2026-04-15T13:27:17.822Z",
+      "body_hash": "132c9be4272c89f35148307b19fae0ad210156f23e3bf80fc97de9d7fbf5c7f5",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "",
+        "Name": "The Windcaller's Roost",
+        "Notes": "Hippogryph nesting cliff, Icespear Peak, Sword Mountains. 2,800 ft. Currently occupied by corrupted manticore (Thornmaw). Emerald Wardens waystation below at 1,800 ft. Module C5 adventure location. Full module in project knowledge.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "",
+        "Status": "Hostile",
+        "Strategic Value": "High",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-15",
+        "url": "https://app.notion.com/p/343e821484b08189accadbcdefeb2bc2"
+      }
+    },
+    {
+      "source_id": "344e8214-84b0-816d-bd56-e1308c52a6f6",
+      "title": "🏇 Pelham's Grounds",
+      "revision": "2026-08-20T03:24:03.356Z",
+      "body_hash": "edb48336002c0b1e88ea1c3647936872be5ba34f55b7bb651af1d370309ceab1",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Pelham's Grounds",
+        "Notes": "Session 30/32: B. Taranis equestrian facility, Sea Ward. Selarial Moonshadow directing. Polo team established (8 riders). Autumn circuit mid-Eleint to late Marpenoth. Full system: Pelham's Grounds Polo System page in System References DB.",
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "[pelhams-grounds-polo-system.md](http://pelhams-grounds-polo-system.md) — uploaded to Notion as \"Pelham's Grounds Polo System\" (System References DB, 3a4e8214-84b0-81fa-9059-f42673dcefee)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-07-21",
+        "url": "https://app.notion.com/p/344e821484b0816dbd56e1308c52a6f6"
+      }
+    },
+    {
+      "source_id": "347e8214-84b0-8130-aaca-cba4e0320d9a",
+      "title": "🏪 14 Blackwatch Lane — Baen'und & Dior'elle Showroom",
+      "revision": "2026-08-20T03:22:54.269Z",
+      "body_hash": "e6d7a7cd8475be9c8201c12ee41c29eaf3cd899948c64d5f822cc8c662ac81fe",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Marcel Dior'Elle lead tenant and client-facing authority. Violet Gralhund-Hasting pipeline candidate (deferred pending Eye of Dagaz training). Interim staffing under Marcel when present. No on-site overnight staff. Exterior DC 25 locks, DC 30 + magical layer on overnight secure storage. Alarm tied to Watch response (Edmund Brightwater ward stone lineage). Firth Observer Network passive awareness of approaches. Tessavere/Husteem cultural pre-positioning channel active.",
+        "Name": "14 Blackwatch Lane — Baen'und & Dior'elle Showroom",
+        "Notes": "Sea Ward commercial premises. 24-month lease signed Day 548 (8th Mirtul 1493). 60gp/month rent, 1,500gp improvement investment. Former wine merchant tasting gallery with commercial-grade mezzanine reinforcement retained as private viewing gallery. Agent: Phillip Thatcher, Thatcher & Cole. Marcel lead tenant; Shi'van financial and fixtures. Violet pipeline candidate for staffing. Lease expires \\~8th Mirtul 1495. Showroom is TRANSLATION not expansion — consultation space, not production. 'Trades Ward = the house (craft). Sea Ward = the showroom (discovery).' All Baen'und & Dior'elle collections sold here (Founding, Suit, Verdant Court, Scepter & Shadow, Midnight, Daylight, Gentlemen's Revolution, Children of the Night). Mezzanine mezzanine private viewing supports the Marcel Experience consultation protocol. Pre-positioned in Sea Ward via Lady Tessavere's salon showing Institut protection-wear originals through Melinda Husteem intermediaries. Citizens' Action League broadsheet campaign is background civic friction. Aldenmere competitor filed TOC Reg 12(3)(b) standards petition.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Population": 2,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "Migrated from Creation Registry page 335e8214-84b0-8189-9dc0-d7b1d14cb116 during Day 724 audit. Session 13 acquisition. Original source: [session-13-the-weight-of-names-log.md](http://session-13-the-weight-of-names-log.md).",
+        "Status": "Controlled",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-19",
+        "url": "https://app.notion.com/p/347e821484b08130aacacba4e0320d9a"
+      }
+    },
+    {
+      "source_id": "347e8214-84b0-8142-a46b-c164ca8aeaf0",
+      "title": "🧭 Celestial Compass Estate",
+      "revision": "2026-08-20T03:23:07.878Z",
+      "body_hash": "80327273885ba3a12fc1f32cc0bf49a4d41d2ae8ced3ca4fda17332d17fc548e",
+      "disposition": "CONFLICT",
+      "semantic_status": "CONFLICT",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Ward stones (Edmund Brightwater transfer), magical locks DC 30, trapped basement corridor, anti-scrying private quarters (Archmage Torrino). No standing garrison. Brannock/Tesserly on Veil call. Peri's network aware but non-hostile.",
+        "Name": "Celestial Compass Estate",
+        "Notes": "Shi'van's primary residence and operational HQ. 47-53 Sapphire Street, North Ward, Waterdeep. Four former townhouses unified under copper roof. Eight-pointed star / compass rose motif throughout (stars not spiders, navigation not webs). Four wings (N/E/S/W) enclose private courtyard with Stellar Basin fountain. Hidden rooftop greenhouse on East Wing (cannabis, 5 strains). Acquired and renovated early 1493 DR. Valued 150,000+ gp. 127,000gp NCF loan against it. Shared aesthetic space with Einar's runic geometry.",
+        "Population": 9,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "[celestial-compass-estate-revised.md](http://celestial-compass-estate-revised.md)",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-19",
+        "url": "https://app.notion.com/p/347e821484b08142a46bc164ca8aeaf0"
+      }
+    },
+    {
+      "source_id": "347e8214-84b0-814b-b10e-f27635d0da69",
+      "title": "🚬 Angel's Fall at the Devil's Gate",
+      "revision": "2026-08-20T03:22:59.486Z",
+      "body_hash": "a4a534901fd953ec482e2ed9aeac80ebc9148eb7aeb5ebcaad9cb0a2f1243501",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Multiple"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Bloodaxe Legion detachment under the Prelate of the Legion. Designed to be held by \\~20–30 disciplined defenders against substantially larger raider/cultist forces. Ceremonial honour guard visible in peace mode; full garrison concealed in cliff-face quarters and Tier 2 service passages.",
+        "Name": "Angel's Fall at the Devil's Gate",
+        "Notes": "Cross-campaign location. Imperial folly + concealed fortification at a strategic river crossing in the Starmetal Hills. PUBLIC: Devotional monument to a nameless Winged Champion pinning a daemon at the threshold of the underworld; commissioned by the Prelate of the Legion. ACTUAL: Arik commissioned this as a private memorial to Selarial after her death between dimensions. The Sanguinius-coded angel is Selarial; the chained daemon is the corruption that took her; the Devil's Gate behind them is the threshold she did not return from. Three-tier design (Pilgrim's Ring, Watcher's Galleries, Angel's Crown) functioning as both pilgrimage destination and Tier 10-12 fortified node. Knowledge of the second reading is restricted to Arik, the Prelate, the master sculptor, Lirien (Memory Palace), and the Empyrean. Selene does NOT know. Shi'van does NOT know. Norse-Faerunian threshold resonance for cross-campaign use: Hel's gate / Bifrost / Fugue Plane / Kelemvor's domain all overlay the literal site. **Eye of Verdandi canonical event locked:** Option 4 - on Shi'van's first visit wearing the Eye actively, the chained daemon's stone face tracks her for a fraction of a second from the Reflecting Walk (Tier 1 Zone B). Visible only through the Eye. Shi'van alone with the event. Creates forced-decision axis if she mentions it to Arik or Lirien; valid outcome if she tells no one. Does not repeat automatically. Full canon detail on page body.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "Design bible v0.1 imported 2026-04-18. Original document workshopped externally; canonicalized to cross-campaign Notion structure with Selarial-memorial layer added during canonical placement.",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-18",
+        "url": "https://app.notion.com/p/347e821484b0814bb10ef27635d0da69"
+      }
+    },
+    {
+      "source_id": "347e8214-84b0-8162-b8fa-cdfa7b0b3e3e",
+      "title": "📚 Candlekeep",
+      "revision": "2026-08-20T19:52:33.927Z",
+      "body_hash": "f29785d818a745ae9119f9e60d9e5b7ef56dda97b04d166450eeb1c0eeb07adf",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b081c7bc58f1c6a4a8ae20"
+        ],
+        "Garrison": "Keeper of the Tomes (office), First Reader, subordinate Readers, the Avowed (monastic order of Oghma serving as librarians, scribes, researchers, guardians). Outer gate always attended. Chronicle of Years to Come held in dedicated vault with own Reader complement. Inner ring access restricted by Reader authorization. Numbers not publicly known; order runs hundreds.",
+        "Name": "Candlekeep",
+        "Notes": "Library-fortress on the Sword Coast, south of Baldur's Gate, overlooking the Sea of Swords. Oghma-dedicated, Avowed monastic order. Entry requires a genuinely valuable manuscript not already in the collection — gold cannot buy access. Six walls, six gates. Contains Alaundo's prophecies (the Chronicle of Years to Come), continuously maintained by Readers. Sage Kellam Brightwater was Avowed here 15 years before self-exile. Gallows-Marked prophecy held in Chronicle operational records — not yet surfaced in-campaign. Kellam and Edmund Brightwater both have institutional knowledge of the prophecy; neither has raised it with Shi'van. Horizon threat if Candlekeep opens a file on Shi'van directly. Future visit requires gift (Verdandi Collar documentation, Drathen maker's-mark reconstruction, or similar qualifying scholarly work).",
+        "Population": 0,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "Sage_Kellam_-_Character_[Sheet.md](http://Sheet.md) / [session-36-prose.md](http://session-36-prose.md)",
+        "Status": "Unexplored",
+        "Strategic Value": "High",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-19",
+        "url": "https://app.notion.com/p/347e821484b08162b8facdfa7b0b3e3e"
+      }
+    },
+    {
+      "source_id": "347e8214-84b0-81a8-894d-ebd644477ba1",
+      "title": "🏛️ Institut de Tissage Arcanique",
+      "revision": "2026-08-20T19:52:22.416Z",
+      "body_hash": "56f2f6a16158ff22e08312d9bf94444ea862c7a2961402d705bcd59166e28b00",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Marcel Dior'Elle operational authority. Rosalie Hatch production floor lead. 81 total (67 employees + 14 active apprentices: 43 seamstresses, 8 smiths, 6 builders, 10 support, 14 specialists, 8 masters, 15 journeymen). Security: DC 25 exterior locks, DC 30 on experimental workshop and vault. Veil counter-intel sweeps monthly. Underground tunnel access from old smuggling network (secured).",
+        "Name": "Institut de Tissage Arcanique",
+        "Notes": "Shi'van's flagship enterprise. Former sailcloth factory, North Ward, converted by Master Thomas Brennan. Gothic-cathedral architecture using ship-building timber techniques. 60,000 sq ft primary production. Revenue \\~28,000gp/month steady-state (\\~45K with active major contract). Operating cost \\~17,500gp/month. Founded Day 393, 1493 DR. Monopoly on protective textiles (20-year patent, metal-textile integration). Creates STOCK (pre-made components) — assembly is hours, not days. Memory Thread Calibration Arrays proprietary. Shi'van Patronesse, Marcel Design Director (full operational authority), Silverhair Chief Artificer, Violet Gralhund-Hasting Senior Apprentice, Rosalie Hatch Production Floor Lead. ESAMT primary revenue engine. Business Registry entry created 2026-05-31.",
+        "Population": 81,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "INSTITUT_DE_TISSAGE_ARCANIQUE",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-31",
+        "url": "https://app.notion.com/p/347e821484b081a8894debd644477ba1"
+      }
+    },
+    {
+      "source_id": "347e8214-84b0-81b7-9a99-f4016179ac7f",
+      "title": "⚖️ Commerce Court — Trades Ward Judiciary Annex",
+      "revision": "2026-08-20T19:52:05.702Z",
+      "body_hash": "eaa026378e119ffb42330ff106c17d85d238aa52bbc3042ec63dd59dab051eb0",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "Waterdeep Guard detachment handling court security (standard judiciary complement). Five-magistrate committee per chamber during proceedings. Rotating clerking pool shared with Trades Ward Council Annex. No standing garrison outside proceedings. Firth observer network has infiltrated the clerking pool (Tabitha Sorn contact, Day 584).",
+        "Name": "Commerce Court — Trades Ward Judiciary Annex",
+        "Notes": "Primary legal theater for Shi'van's commercial operations. Trades Ward, Waterdeep. Chamber One (60×40ft, vaulted, four columns carved with commercial charter) is the principal hearing space. Chamber Three in the adjacent Trades Ward Council Annex (40×30ft, tallow-candle-smelling) hosts the Infrastructure Commission. Shi'van won the Ravenscroft / Ship Kurth / NHH petition here 4-1 on Day 592 (22nd Kythorn 1493 DR) — eleven properties frozen, Ravenscroft license suspended, Lords' Alliance referral filed. Committee that ruled: Hartwick (Chair), Cressen, Hale, Fell, Pemberton (lone dissent). Voss sanctions hearing scheduled 25th Kythorn. No appeals once a committee rules. Section 22, 9(d), Rule 11, 31(c) procedural options. Vesper habitually watches from Chamber Three second row left.",
+        "Population": 0,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "[session-21-the-hearing-log.md](http://session-21-the-hearing-log.md) / [session-8c-hearing-week-log.md](http://session-8c-hearing-week-log.md)",
+        "Status": "Allied",
+        "Strategic Value": "Critical",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-19",
+        "url": "https://app.notion.com/p/347e821484b081b79a99f4016179ac7f"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 119,
+      "UNKNOWN": 1476,
+      "CONFLICT": 8,
+      "SUPERSEDED": 7,
+      "MISSING_DATA": 4,
+      "FUTURE": 3,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 141,
+      "UNMEASURED": 1479
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 119,
+      "UNREVIEWED": 1479,
+      "CONFLICT": 6,
+      "SUPERSEDED": 6,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 3,
+      "ECONOMIC_CONTEXT": 3
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

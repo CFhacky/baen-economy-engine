@@ -1,0 +1,159 @@
+{
+  "schema": "tnp.economy.empire-business-mechanics/1",
+  "as_of": "2026-09-17",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "authority": "SOURCE-DERIVED",
+  "sources": [
+    {
+      "ref": "notion:349e821484b081f9b319dfe1ec009277",
+      "title": "empire-operations-engine"
+    },
+    {
+      "ref": "notion:349e821484b08104a487dc6827a4d2a2",
+      "title": "hybrid-business-ops"
+    },
+    {
+      "ref": "notion:37de821484b0817b9dcce11f6432e8e1",
+      "title": "Empire Session Protocol — The Empire Turn"
+    },
+    {
+      "ref": "notion:34ce821484b081d7abb5f5d9cf153d72",
+      "title": "Empire Financial State — Current Reference"
+    }
+  ],
+  "registry_is_single_source_of_truth": true,
+  "active_sectors": [
+    "Banking",
+    "Construction",
+    "Infrastructure",
+    "Manufacturing",
+    "Mining/Quarrying",
+    "Aquaculture",
+    "Agriculture",
+    "Real Estate",
+    "Trade",
+    "Hospitality"
+  ],
+  "revenue_check": {
+    "dice": "3d6",
+    "base_target": 15,
+    "skill": "Merchant",
+    "skill_holder": "Vara Torsten",
+    "modifiers": {
+      "market_boom": 4,
+      "market_stable": 0,
+      "market_recession": -2,
+      "revenue_streams_4_to_6": 1,
+      "revenue_streams_7_plus": 2,
+      "vara_active": 3,
+      "competent_manager_each": 1,
+      "competent_manager_max": 3,
+      "monopoly_position": 2
+    },
+    "effects": {
+      "critical_success": "1.25",
+      "success_by_5_plus": "1.15",
+      "success": "1.05",
+      "exact_target": "1.00",
+      "failure": "0.90",
+      "failure_by_5_plus": "0.80",
+      "critical_failure": "0.70"
+    }
+  },
+  "expense_check": {
+    "dice": "3d6",
+    "base_target": 16,
+    "skill": "Administration",
+    "skill_holder": "Vara Torsten",
+    "modifiers": {
+      "size_under_50": 2,
+      "size_50_to_200": 0,
+      "size_200_to_1000": -2,
+      "size_1000_plus": -4,
+      "excellent_accounting": 2,
+      "rapid_expansion": -3
+    },
+    "effects": {
+      "critical_success": "0.90",
+      "success_by_5_plus": "1.00",
+      "success": "1.05",
+      "exact_target": "1.05",
+      "failure": "1.15",
+      "failure_by_5_plus": "1.15",
+      "critical_failure": "1.25"
+    }
+  },
+  "entity_complications": {
+    "selection_count_min": 3,
+    "selection_count_max": 5,
+    "dice": "d20",
+    "bands": {
+      "crisis": [
+        1,
+        3
+      ],
+      "complication": [
+        4,
+        7
+      ],
+      "normal": [
+        8,
+        14
+      ],
+      "success": [
+        15,
+        18
+      ],
+      "opportunity": [
+        19,
+        20
+      ]
+    },
+    "neglect": {
+      "Neglected": "subtract 4 from d20 before banding",
+      "Critical": "automatic complication; raw 1-3 remains crisis"
+    }
+  },
+  "severity_routing": {
+    "sector": {
+      "critical_failure": "URGENT",
+      "failure_by_5_plus": "URGENT",
+      "failure": "DEVELOPING",
+      "exact_target": "BACKGROUND",
+      "success": "BACKGROUND",
+      "success_by_5_plus": "POSITIVE",
+      "critical_success": "POSITIVE"
+    },
+    "entity": {
+      "crisis": "URGENT",
+      "complication": "DEVELOPING",
+      "normal": "BACKGROUND",
+      "success": "POSITIVE",
+      "opportunity": "POSITIVE",
+      "unresolved": "UNRESOLVED"
+    }
+  },
+  "current_conditions": {
+    "market_condition": "UNRESOLVED",
+    "vara_active_modifier": false,
+    "excellent_accounting_modifier": false,
+    "rapid_expansion_modifier": true,
+    "rapid_expansion_authority": "notion:34ce821484b081d7abb5f5d9cf153d72",
+    "rapid_expansion_rationale": "Current Financial State explicitly warns that continued aggressive expansion deepens the liquidity shortfall."
+  },
+  "current_financial_envelope": {
+    "admitted_operating_revenue_gp": "299266",
+    "crosscheck_revenue_range_gp": [
+      "280000",
+      "320000"
+    ],
+    "recurring_profit_range_gp": [
+      "75000",
+      "90000"
+    ],
+    "exact_liquid_cash": null,
+    "exact_consolidated_expense": null,
+    "exact_consolidated_net": null
+  },
+  "no_write_preview": true
+}

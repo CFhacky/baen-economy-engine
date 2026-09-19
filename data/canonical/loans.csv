@@ -1,0 +1,4 @@
+loan_id,lender_actor_id,borrower_actor_id,principal,outstanding,outstanding_state_origin,rate,term,status,delinquency,collateral,provenance,state_origin,source_evidence,slice
+loan:ncf:halbor-dunn,actor:institution:ncf,actor:npc:halbor-dunn,3000,,UNKNOWN,0.14,18 months,DELINQUENT,two months,,SOURCE-DERIVED,SOURCE,Halbor NPC review,NCF
+loan:ncf:snowfall-undrawn,actor:institution:ncf,actor:borrowers:ncf:unresolved,30000,0,SOURCE,,,APPROVED_UNDRAWN,,Snowfall facility,SOURCE-DERIVED,SOURCE,approved undrawn Day 7,NCF
+loan:ncf:unresolved-portfolio,actor:institution:ncf,actor:borrowers:ncf:unresolved,2297000,2297000,DERIVED,,,AGGREGATE_UNRESOLVED,,,SOURCE-DERIVED,DERIVED,2300000-3000; Snowfall excluded,NCF

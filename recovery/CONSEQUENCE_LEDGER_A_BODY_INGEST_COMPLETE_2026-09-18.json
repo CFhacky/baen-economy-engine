@@ -1,0 +1,152 @@
+{
+  "schema": "tnp.economy.source-class-body-ingest/1",
+  "source_class": "consequence_ledger_a",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "review_mode": "read-only live Notion page fetch",
+  "body_hash_method": "SHA-256 over exact parsed Notion fetch text field; private body prose is not persisted",
+  "target": 11,
+  "reviewed": 11,
+  "failed": 0,
+  "complete": true,
+  "disposition_counts": {
+    "ECONOMIC_INPUT": 9,
+    "SUPERSEDED": 1,
+    "CONFLICT": 1
+  },
+  "records": [
+    {
+      "source_id": "323e8214-84b0-8134-a432-f9a1e4d3f8b3",
+      "title": "Discuss eastern deployment resource allocation with Korgan",
+      "revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "e64fa0326d1f9b83004183eb734a0cffd8e66fe12f238a9b0d219c1b861302da",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-8146-a6ed-c334fb99592d",
+      "title": "Prepare Forgedeep charter review before oversight committee visit",
+      "revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "87c0a5aaff3671cb201a2b0c70c268402a5f3b4f5fcba5145f59486599dcd1b8",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "323e8214-84b0-818b-848f-c2463bd5270a",
+      "title": "Talk about baby names this weekend",
+      "revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "c4796d001648aac50baf327bb8f6a1535980f7c8a87a7c49024ff222aa685e6a",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-8190-808c-c962243ce5af",
+      "title": "Inspect unidentified crystals at Star Metal Hills eastern gallery",
+      "revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "5d9dbb61b667115668a935fe402b8824c05f8491ed103d2ff46be54a2448918c",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-8199-9808-c4cb7a0fb555",
+      "title": "Zariel contract: production milestones per agreed schedule",
+      "revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "154d23fb094c1c8be1422e1289a4a514501515ce39724f4a5568f10ba80900a0",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-81a5-ab8c-e281286128a1",
+      "title": "Investigate timber market before Dassyr consolidates supply chains",
+      "revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "9412982e03f2e29025f1c3e47ce50c3d00a8af99f95ad1866124cae96abc2cf7",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-81b5-9e37-ea05de7941b4",
+      "title": "Attend Coronal Remembrance — elven ceremony for fallen Cormanthor leaders",
+      "revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "a7e8664c5841cede8bd93929a82896e40b337df0e397ce44f73fa0abcbe9c49b",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "population"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-81d6-9a15-e4ad05af6f0c",
+      "title": "Attend Harvest Remembrance ceremony as notable citizen",
+      "revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "7a94f0139865eca9dce47989a5136f7f3cd527210e50915f7d41292a3a4f4b50",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "labor_supply"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-81db-885e-d9acb18225b8",
+      "title": "Check on Mila Dunwright's aquaculture operation — something felt off",
+      "revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "529efa9b8efd718c35a6fb11cd80cd33a31045e72e652679ab031f9465268205",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "food_supply",
+        "event_scheduling"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-81e4-b90b-ef7ddeed74c4",
+      "title": "Review Kalnar's experimental construction technique proposal",
+      "revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "9b18a0b2eea78c506d047593e5ce84a286750c4c1e7c89f503974461d41da051",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "event_scheduling"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-81e7-a912-fe3389a5f75a",
+      "title": "Provide engineering support for Gauntlgrym lower mine expansion",
+      "revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "bd75748fa977e6f9cddcd81fcc63dce0924700fa6e18635ee8ff34d4a546a80f",
+      "disposition": "CONFLICT",
+      "semantic_status": "CONFLICT",
+      "driver_owners": []
+    }
+  ],
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

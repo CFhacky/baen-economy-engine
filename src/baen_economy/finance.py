@@ -243,6 +243,48 @@ class JournalBook:
         self._assert_all_sources_active()
         return tuple(self._events[key] for key in sorted(self._events))
 
+    def position_report(
+        self, opening_balances: Mapping[tuple[str, str], Decimal | None]
+    ) -> dict[str, object]:
+        """Read accepted movements without treating unknown opening balances as zero.
+
+        Balances use signed journal amounts (debit positive). The supplied
+        openings must precede this book's event window. This does not post,
+        authorize spending, or infer uncharted accounts or opening equity.
+        """
+        pairs = {(account, currency) for account, spec in self._chart.items()
+                 for currency in spec.currencies}
+        if not isinstance(opening_balances, Mapping) or set(opening_balances) - pairs:
+            raise JournalError("opening balances must reference opened account/currency pairs")
+        for value in opening_balances.values():
+            if value is not None and (type(value) is not Decimal or not value.is_finite()):
+                raise JournalError("opening balances must be finite Decimals or unknown")
+        events = self.events  # also rejects corrected/inactive sources
+        with localcontext(_new_finance_decimal_context()):
+            movements = {pair: Decimal(0) for pair in pairs}
+            for event in events:
+                event.validate(self._chart)
+                for posting in event.postings:
+                    movements[posting.account, posting.currency] += posting.amount
+            rows = []
+            for account, currency in sorted(pairs):
+                opening = opening_balances.get((account, currency))
+                movement = movements[account, currency]
+                rows.append({
+                    "account": account, "currency": currency,
+                    "opening": None if opening is None else str(opening),
+                    "movement": str(movement),
+                    "closing": None if opening is None else str(opening + movement),
+                })
+        return {
+            "scope": "Only opened accounts and accepted events in this book",
+            "event_count": len(events),
+            "source_event_ids": [event.event_id for event in events],
+            "accounts": rows,
+            "opening_complete": all(row["opening"] is not None for row in rows),
+            "postings_created": 0,
+        }
+
     def _assert_all_sources_active(self) -> None:
         inactive = [
             event_id

@@ -1,0 +1,152 @@
+name: baen-economy-engine CI
+
+on:
+  push:
+    branches:
+      - main
+      - codex/reconcile-standalone-authority-20260917
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: baen-economy-${{ github.event.pull_request.head.ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install exact Mesa upstream product on Python 3.12
+        if: matrix.python-version == '3.12'
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e '.[mesa]'
+      - name: Compile Python source, tests, and tools
+        run: python -m compileall -q src tests tools
+      - name: Run public standalone regression suite
+        env:
+          PYTHONPATH: src
+        run: python tools/run_standalone_tests.py
+      - name: Verify import surface
+        env:
+          PYTHONPATH: src
+        run: |
+          python - <<'PY'
+          import sys
+          import baen_economy
+          import baen_economy.http_api
+          import baen_economy.operator_cli
+          import baen_economy.food_cli
+          import baen_economy.whole_economy_cli
+          import baen_economy.empire_cli
+          if sys.version_info >= (3, 12):
+              import mesa
+              assert mesa.__version__ == baen_economy.MESA_VERSION
+              assert baen_economy.mesa_available()
+          print("standalone import surface OK")
+          PY
+
+  sandbox-products-e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "11"
+      - uses: dtolnay/rust-toolchain@nightly
+      - name: Install product build/runtime dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ant build-essential cmake mold openttd-opengfx openttd-opensfx openttd-openmsx
+          python -m pip install --upgrade pip
+          python -m pip install -e '.[mesa]'
+      - name: Execute synthetic all-products sandbox
+        run: |
+          mkdir -p reports
+          baen-empire sandbox \
+            --seed "hammer-1495-e2e" \
+            --product-root "$RUNNER_TEMP/baen-product-stack" \
+            --openttd-baseset /usr/share/games/openttd/baseset \
+            --build-jobs 2 \
+            --format report | tee reports/Empire-E2E-Preview.md
+          test -s reports/Empire-E2E-Preview.md
+          grep -Fq "Whole-Economy Month" reports/Empire-E2E-Preview.md
+          grep -q "mesa.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+          grep -q "brunnfeld.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+          grep -q "unknown_horizons.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+          grep -q "freecol.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+          grep -q "veloren.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+          grep -q "openttd.*USED_IN_RUN" reports/Empire-E2E-Preview.md
+
+
+  empire-actual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "11"
+      - name: Install source-product build/runtime dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ant
+          python -m pip install --upgrade pip
+          python -m pip install -e '.[mesa]'
+      - name: Execute source-grounded Hammer-1495 business phase with mapped products
+        run: |
+          mkdir -p reports
+          baen-empire run \
+            --seed "hammer-1495-source-ci" \
+            --product-root "$RUNNER_TEMP/baen-source-products" \
+            --format report | tee reports/Empire-Business-Phase.md
+          test -s reports/Empire-Business-Phase.md
+          grep -Fq "Baen Empire Monthly Business Phase" reports/Empire-Business-Phase.md
+          grep -Fq "Admitted Registry entities: **37**" reports/Empire-Business-Phase.md
+          grep -Fq "299266 gp/month" reports/Empire-Business-Phase.md
+          grep -Fq "Sector revenue rolls" reports/Empire-Business-Phase.md
+          grep -Fq "Expense control" reports/Empire-Business-Phase.md
+          grep -Fq "Entity complications" reports/Empire-Business-Phase.md
+          grep -Fq "Vara briefing" reports/Empire-Business-Phase.md
+          grep -Fq "Source-backed production lines" reports/Empire-Business-Phase.md
+          grep -Fq "Warborn Production - Neverwinter" reports/Empire-Business-Phase.md
+          grep -Fq "Treasury Stone Quarries" reports/Empire-Business-Phase.md
+          grep -Fq "Western Limestone Quarries" reports/Empire-Business-Phase.md
+          grep -Fq "Source-backed census" reports/Empire-Business-Phase.md
+          grep -Fq "Food financials (no physical volumes)" reports/Empire-Business-Phase.md
+          grep -Fq "Arterial route register" reports/Empire-Business-Phase.md
+          grep -Fq "Entity labor snapshot" reports/Empire-Business-Phase.md
+          grep -Fq "**mesa**: USED_IN_RUN" reports/Empire-Business-Phase.md
+          grep -Fq "**freecol**: USED_IN_RUN" reports/Empire-Business-Phase.md
+          grep -Fq "**unknown_horizons**: USED_IN_RUN" reports/Empire-Business-Phase.md
+          grep -Fq "**openttd**: MAPPED_BLOCKED" reports/Empire-Business-Phase.md
+          grep -Fq "Semantic coverage overlay" reports/Empire-Business-Phase.md
+          grep -Fq "SOURCE_MAPPED" reports/Empire-Business-Phase.md
+          grep -Fq "SIMULATED: **0**" reports/Empire-Business-Phase.md
+          grep -Fq "Source → product semantic domains" reports/Empire-Business-Phase.md
+          grep -Fq "ncf.active_loans_gp" reports/Empire-Business-Phase.md
+          grep -Fq "warborn.contract.priority_legionnaire_units" reports/Empire-Business-Phase.md
+          grep -Fq "**veloren**: NOT_INVOKED" reports/Empire-Business-Phase.md
+          grep -Fq "**brunnfeld**: NOT_INVOKED" reports/Empire-Business-Phase.md
+          grep -Fq "Notion writes: **0**" reports/Empire-Business-Phase.md

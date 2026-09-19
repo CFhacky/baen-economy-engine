@@ -1,0 +1,36 @@
+actor_id,display_name,actor_type,source_id,status,source_headcount,notes,provenance,state_origin,source_evidence,slice
+actor:institution:ncf,Northern Crown Financial,BANK,2fbe8214-84b0-816a-b0b8-e7e7ed41fe29,ACTIVE,85,"85 employees, 22000 gp/month, 2.3M active loans",SOURCE-DERIVED,SOURCE,NCF parent body + NCF_SOURCE_BODY_FINDINGS_2026-09-18.json,NCF
+actor:institution:ncf-neverwinter,NCF Neverwinter Branch,BANK,321e8214-84b0-8175-997c-c81e61c35015,ACTIVE,35,Eleint 1494 baseline; costs HISTORICAL_ONLY,SOURCE-DERIVED,SOURCE,ncf-consolidation.json,NCF
+actor:institution:ncf-luskan,NCF Luskan Branch,BANK,321e8214-84b0-812d-82f9-cc0add910698,ACTIVE,30,12% voyage / 14% inventory; Eleint baseline,SOURCE-DERIVED,SOURCE,NCF Luskan branch body,NCF
+actor:institution:ncf-waterdeep,NCF Waterdeep Branch,BANK,321e8214-84b0-8169-bde3-cc7112ca328d,ACTIVE,12,SSAMT domicile,SOURCE-DERIVED,SOURCE,ncf-consolidation.json,NCF
+actor:institution:ncf-suzail,NCF Suzail Branch,BANK,321e8214-84b0-8109-a55a-f30bd40fa6cb,ACTIVE,8,Eleint 1494 baseline,SOURCE-DERIVED,SOURCE,ncf-consolidation.json,NCF
+actor:workforce:ncf:unresolved,NCF anonymous staff remainder,WORKFORCE_POOL,2fbe8214-84b0-816a-b0b8-e7e7ed41fe29,ACTIVE,84,85 minus named A. Pell,SOURCE-DERIVED,DERIVED,parent 85 minus A. Pell,NCF
+actor:borrowers:ncf:unresolved,NCF unresolved active-loan remainder,OTHER_INSTITUTION,2fbe8214-84b0-816a-b0b8-e7e7ed41fe29,ACTIVE,,2297000 gp unresolved borrowers,SOURCE-DERIVED,DERIVED,2300000 minus Halbor 3000,NCF
+actor:trust:ssamt,SSAMT operational trust,TRUST,392e8214-84b0-81ef-b0a9-d73f9b9757d7,ACTIVE,,12000 liquid + corridor receivables; client trust not NCF asset,SOURCE-DERIVED,SOURCE,SSAMT trust body,NCF
+actor:business:thorn-and-silver,Thorn & Silver Exchange,BUSINESS,,ACTIVE,,2000/mo; consolidation overlap unresolved,SOURCE-DERIVED,SOURCE,NCF_SOURCE_BODY_FINDINGS,NCF
+actor:business:gold-lending-house,Gold Lending House,BUSINESS,321e8214-84b0-81e7-a5ec-fd25ff8299dc,UNCONFIRMED,,Design only; do not book zeros,UNRESOLVED,UNKNOWN,UNCONFIRMED page,NCF
+actor:business:silversheen-trading,Silversheen Trading,BUSINESS,34ce8214-84b0-812e-b41e-f8f7c55f9761,ACTIVE,,NCF 60 / Gauntlgrym 40,SOURCE-DERIVED,SOURCE,Brunar Battleforge,NCF
+actor:npc:a-pell,A. Pell,PERSON,34be8214-84b0-8173-ae18-e7c66a236fe7,ACTIVE,,NCF draftsman; salary UNKNOWN,SOURCE-DERIVED,SOURCE,NPC ingest A. Pell,NCF
+actor:npc:halbor-dunn,Merchant Halbor Dunn,PERSON,34ce8214-84b0-811f-aac7-cae9276b8d8e,ACTIVE,,Named NCF borrower,SOURCE-DERIVED,SOURCE,3000gp 14% 18mo two months delinquent,NCF
+actor:npc:brunar-battleforge,Brunar Battleforge,PERSON,34ce8214-84b0-812e-b41e-f8f7c55f9761,ACTIVE,,Silversheen evidence,SOURCE-DERIVED,SOURCE,NPC Brunar,NCF
+actor:npc:helena-brightwater,Helena Brightwater,PERSON,,ACTIVE,,SSAMT paper-cap discretion,SOURCE-DERIVED,SOURCE,SSAMT trust body,NCF
+actor:npc:seren-brightwater,Seren Brightwater,PERSON,,ACTIVE,,ECONOMIC_INPUT; role unquantified,MODEL-PROPOSED,UNKNOWN,NPC title only,NCF
+actor:institution:institut-baenund,Institut Baen'und,RESEARCH_INSTITUTION,2fbe8214-84b0-81d9-bc8b-d10ad1ba785a,ACTIVE,,Later empire wrapper. Equal owners Shi'van Baen'und and Marcel Dior'Elle. Do not fold Tissage 67 into Institut research headcount.,SOURCE-DERIVED,SOURCE,faction Institut Baen'und + user ruling 2026-09-19,INSTITUT
+actor:programme:burning-gate,Project Burning Gate,PROGRAMME,34ce8214-84b0-8125-b0cc-fa8966ff42f0,ACTIVE,30,30 staff; external cash ~800000; nominal 3600000,SOURCE-DERIVED,SOURCE,business_registry Project Burning Gate,INSTITUT
+actor:workforce:institut:unresolved,Institut anonymous staff remainder,WORKFORCE_POOL,2fbe8214-84b0-81d9-bc8b-d10ad1ba785a,ACTIVE,,No Institut-wide headcount sourced; Tissage 67 stays on Tissage,UNRESOLVED,UNKNOWN,missing aggregate,INSTITUT
+actor:npc:shivan-baenund,Shi'van Baen'und,PERSON,2fce8214-84b0-811e-b260-c801033cada4,ACTIVE,,Founder of Tissage; equal partner with Marcel on Tissage and Institut,SOURCE-DERIVED,SOURCE,faction + user ruling 2026-09-19,BOTH
+actor:npc:marcel-diorelle,Marcel Dior'Elle,PERSON,334e8214-84b0-8177-9e8a-d9142a561c46,ACTIVE,,Equal partner with Shi'van; Institut Creative Director; full operational authority on the floor,SOURCE-DERIVED,SOURCE,NPC Marcel Dior'Elle + user ruling 2026-09-19,INSTITUT
+actor:npc:arik-baen,Arik Baen,PERSON,,ACTIVE,,Burning Gate approver; Warborn and Baen Enterprises principal; imperial household head,SOURCE-DERIVED,SOURCE,Burning Gate leadership + Warborn location + user ruling 2026-09-19,BOTH
+actor:household:imperial-arik,Imperial Household of Arik Baen,HOUSEHOLD,,ACTIVE,,Legal/economic bucket for assets that are Arik personally rather than Institut or NCF,SOURCE-DERIVED,SOURCE,user ruling 2026-09-19,HOUSEHOLD
+actor:institution:baen-enterprises,Baen Enterprises,CONGLOMERATE,2fbe8214-84b0-81ef-80a5-d67f7b7e6f31,ACTIVE,,Arik commercial wrapper; public cover on Warborn Waterdeep; 100% Arik/household,SOURCE-DERIVED,SOURCE,faction Baen Enterprises,HOUSEHOLD
+actor:npc:frieren,Frieren,PERSON,,ACTIVE,,Barrier research,SOURCE-DERIVED,SOURCE,Burning Gate leadership,INSTITUT
+actor:npc:einar,Einar,PERSON,,ACTIVE,,Construct production counterparty,SOURCE-DERIVED,SOURCE,Burning Gate leadership,INSTITUT
+actor:npc:jormun,Jormun,PERSON,,ACTIVE,,Nafnfestr founder; Institut personnel on breeding ops,SOURCE-DERIVED,SOURCE,registry snapshot Leadership,INSTITUT
+actor:business:tissage-shivan,Tissage (Shi'van textile floor),BUSINESS,2fce8214-84b0-811e-b260-c801033cada4,ACTIVE,67,Came first as Shi'van's business. Still exists as 67-employee three-shift floor. Owned equally by Shi'van and Marcel. Nested under later Institut empire.,SOURCE-DERIVED,SOURCE,Tessa/Rosalie + user ruling 2026-09-19,INSTITUT
+actor:business:baenund-and-diorelle,Baen'und & Dior'Elle,BUSINESS,,ACTIVE,,Equal partnership vehicle; Blackwatch Lane showroom Sea Ward,SOURCE-DERIVED,SOURCE,organizational hierarchy equal partnership,INSTITUT
+actor:npc:tessa-whitmore,Tessa Whitmore,PERSON,340e8214-84b0-81c6-9930-d60365a2a905,ACTIVE,,Junior designer on Tissage textile floor,SOURCE-DERIVED,SOURCE,NPC Tessa Whitmore,INSTITUT
+actor:npc:rosalie-hatch,Rosalie Hatch,PERSON,341e8214-84b0-815b-be77-d1cdad7615e2,ACTIVE,,Tissage floor lead 67 employees,SOURCE-DERIVED,SOURCE,NPC Rosalie Hatch,INSTITUT
+actor:facility:warborn-mega,Waterdeep Warborn Mega-Facility,FACILITY,348e8214-84b0-8192-95d8-f81988611e45,ACTIVE,200,"Investment 1127000 authorized by Arik 20 Eleint 1494; wages 22900/mo; opex ~85000/mo; owner imperial household not Institut",SOURCE-DERIVED,SOURCE,Waterdeep Warborn Mega-Facility + user ruling 2026-09-19,HOUSEHOLD
+actor:npc:rurik-hellbrace,Rurik Hellbrace,PERSON,34ce8214-84b0-81ad-a6ff-d2603211edde,ACTIVE,,Facility manager; household employee not Institut,SOURCE-DERIVED,SOURCE,L6 + Warborn location page,HOUSEHOLD
+actor:facility:component-factory-neverwinter,Baen'und Component Factory Site Neverwinter,FACILITY,,ACTIVE,,215000 ESAMT cap; fit-out pending,SOURCE-DERIVED,SOURCE,LOCATIONS_BODY_INGEST_L6,INSTITUT
+actor:business:nafnfestr,Nafnfestr breeding operations,BUSINESS,,ACTIVE,,Registry parent Institut; not exploded as separate legal default,SOURCE-DERIVED,SOURCE,business-registry-2026-08-29,INSTITUT

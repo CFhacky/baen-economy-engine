@@ -1,0 +1,194 @@
+{
+  "schema": "tnp.economy.machinery-programme/1",
+  "authority": "USER-RULED",
+  "origin_authority": "MODEL-PROPOSED",
+  "approval": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "primary_factory": "Gauntlgrym Tools Partnership",
+  "support_sites": {
+    "Forgedeep / Workshop 7": "precision, development, repairs, specialist support",
+    "Neverwinter": "existing four-machine depot, charging and dispatch"
+  },
+  "commissioning": "Kythorn 1494; retrospective approved history, not recovered first acceptance date",
+  "production_history": [
+    {
+      "month": "Flamerule 1494",
+      "Stonebearer": 1,
+      "Groundshaper": 1,
+      "Ironmaw": 0
+    },
+    {
+      "month": "Eleasis 1494",
+      "Stonebearer": 1,
+      "Groundshaper": 0,
+      "Ironmaw": 1
+    },
+    {
+      "month": "Eleint 1494",
+      "Stonebearer": 2,
+      "Groundshaper": 1,
+      "Ironmaw": 1
+    },
+    {
+      "month": "Marpenoth 1494",
+      "Stonebearer": 2,
+      "Groundshaper": 1,
+      "Ironmaw": 1
+    },
+    {
+      "month": "Uktar 1494",
+      "Stonebearer": 2,
+      "Groundshaper": 1,
+      "Ironmaw": 1
+    },
+    {
+      "month": "Nightal 1494",
+      "Stonebearer": 2,
+      "Groundshaper": 1,
+      "Ironmaw": 1
+    }
+  ],
+  "earlier_unlisted_production": 0,
+  "retirements_and_disposals": 0,
+  "day7_fleet": {
+    "Stonebearer": 10,
+    "Groundshaper": 5,
+    "Ironmaw": 5
+  },
+  "regular_monthly_capacity": {
+    "Stonebearer": 2,
+    "Groundshaper": 1,
+    "Ironmaw": 1
+  },
+  "automatic_delivery": false,
+  "productive_hours_per_worker_month": 160,
+  "factory_positions": {
+    "assembly_fitters": 12,
+    "kit_fabricators": 8,
+    "integration": 2,
+    "acceptance": 2,
+    "support": 4
+  },
+  "hours_per_unit": {
+    "Stonebearer": {
+      "assembly": 320,
+      "kit": 240,
+      "integration": 80,
+      "acceptance": 64
+    },
+    "Groundshaper": {
+      "assembly": 640,
+      "kit": 400,
+      "integration": 80,
+      "acceptance": 64
+    },
+    "Ironmaw": {
+      "assembly": 640,
+      "kit": 400,
+      "integration": 80,
+      "acceptance": 64
+    }
+  },
+  "monthly_wages_gp": {
+    "assembly_fitter": 30,
+    "kit_fabricator": 45,
+    "integration": 100,
+    "acceptance": 60,
+    "support": 15
+  },
+  "factory_wages_total_gp": 1100,
+  "labor_included_in_equipment_allowance": true,
+  "component_bom": {
+    "per_machine": {
+      "chassis_drive_kit": 1,
+      "echo_core": 1,
+      "erata_integration": 1,
+      "service_kit": 1,
+      "acceptance_record": 1
+    },
+    "attachments": {
+      "Stonebearer": "dump bed and hydraulic package",
+      "Groundshaper": "grading/shaping package",
+      "Ironmaw": "excavation/cutting package"
+    },
+    "raw_material_masses": null,
+    "material_losses": null,
+    "energy_consumption": null,
+    "note": "Stonebearer architecture sourced; Groundshaper/Ironmaw common architecture adopted by approval, not recovered specifications."
+  },
+  "costs": {
+    "equipped_unit_gp": {
+      "Stonebearer": 8000,
+      "Groundshaper": 10000,
+      "Ironmaw": 12500
+    },
+    "Stonebearer_cost_source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+    "accepted_equipment_allowance_gp": 192500,
+    "tooling_qualification_allowance_gp": 30000,
+    "spares_budget_gp": 15000,
+    "historical_programme_envelope_gp": 237500,
+    "regular_monthly_equipment_value_gp": 38500,
+    "historical_cash_settlement": null,
+    "day7_cash_debit_gp": 0,
+    "spares_opening_inventory": null
+  },
+  "allocation": {
+    "Neverwinter_Brickworks": {
+      "Stonebearer": 4,
+      "Groundshaper": 0,
+      "Ironmaw": 0
+    },
+    "construction_pool": {
+      "Stonebearer": 6,
+      "Groundshaper": 4,
+      "Ironmaw": 4
+    },
+    "maintenance_proving_reserve": {
+      "Stonebearer": 0,
+      "Groundshaper": 1,
+      "Ironmaw": 1
+    }
+  },
+  "staffing": {
+    "existing_brickworks_drivers": 12,
+    "existing_brickworks_mechanics": 2,
+    "other_fleet_mechanic_positions": 8,
+    "field_pool_primary_operator_positions": 14,
+    "headcount_addition": null,
+    "note": "Establishments require reconciliation to named existing staff; not additive employment."
+  },
+  "acceptance": [
+    "serial and chassis identity",
+    "core/integration and workshop record",
+    "drive, steering, braking and control isolation",
+    "attachment operation",
+    "Stonebearer trials within 30000 lb and 15 cubic yards",
+    "road-mode conversion and documented transport trial",
+    "defect correction and retest before admission"
+  ],
+  "ownership": "Baen title on accepted internal delivery; partnership 50/50 ownership is not title to delivered machines",
+  "dispatch_rule": "One assignment per machine per time interval; transport removes construction hours",
+  "external_sales": false,
+  "unresolved": [
+    "Ironmaw/Groundshaper rated performance",
+    "road-mode performance",
+    "raw-material BOM, yield and consumables",
+    "historical funding and settlement",
+    "named workforce reconciliation",
+    "spares opening stock"
+  ],
+  "crownworks_authorized": false,
+  "future_roadrider_backdated": false,
+  "canonical_month_authorized": false,
+  "campaign_time_advanced": false,
+  "notion_writes": 0,
+  "source_body_verification": {
+    "brickworks": {
+      "source_id": "321e8214-84b0-816c-87fb-f0fee22835ad",
+      "revision": "2026-03-29T00:10:15.607Z",
+      "sha256": "7d3cc9d087f846ab0ebc41f2dc61b8dfb662e47d25da76c265d32d018de16b4f",
+      "verified_claim": "BW-1 through BW-4 allocated to Brickworks/Clay/Treasury hauling"
+    },
+    "effect": "Corroborates existing four-Stonebearer Neverwinter_Brickworks allocation; does not change Day-7 fleet totals."
+  }
+}
