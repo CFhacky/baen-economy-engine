@@ -1,0 +1,20 @@
+employment_id,facility_id,pool_name,headcount,headcount_state,wage_rate,wage_state,source_url
+emp:ncf-parent,fac:ncf-parent,NCF staff (parent card),85,SOURCE,,,https://app.notion.com/2fbe821484b0816ab0b8e7e7ed41fe29
+emp:ncf-nw,fac:ncf-nw,NCF Neverwinter branch,35,SOURCE,,,https://app.notion.com/321e821484b08175997cc81e61c35015
+emp:ncf-luskan,fac:ncf-luskan,NCF Luskan branch,30,SOURCE,,,https://app.notion.com/321e821484b0812d82f9cc0add910698
+emp:ncf-wd,fac:ncf-wd,NCF Waterdeep branch,12,SOURCE,,,https://app.notion.com/321e821484b08169bde3cc7112ca328d
+emp:ncf-suzail,fac:ncf-suzail,NCF Suzail branch,8,SOURCE,,,https://app.notion.com/321e821484b08109a55af30bd40fa6cb
+emp:tissage,fac:tissage,Tissage / Institut card headcount,81,SOURCE,,,https://app.notion.com/372e821484b081d98c19e650c16b687f
+emp:silversheen,fac:silversheen,Silversheen staff,45,SOURCE,,,https://app.notion.com/321e821484b08155bf9bcea55e2c7669
+emp:warborn-nw,fac:warborn-nw,Neverwinter Warborn hall,77,SOURCE,,,https://app.notion.com/321e821484b081b38d51dcbc19edd667
+emp:warborn-wd,fac:warborn-wd,Waterdeep Warborn hall,200,SOURCE,,,https://app.notion.com/321e821484b0816a8684d3df85527df8
+emp:burning-gate,fac:burning-gate,Burning Gate staff,30,SOURCE,,,https://app.notion.com/34ce821484b08125b0ccfa8966ff42f0
+emp:bloodaxe,fac:bloodaxe,Bloodaxe Legion roster,10000,SOURCE,,,https://app.notion.com/321e821484b0812dbba0e10b75086a02
+emp:brickworks,fac:brickworks,Brickworks,30,SOURCE,,,https://app.notion.com/321e821484b0816c87fbf0fee22835ad
+emp:construction-hq,fac:construction-hq,Construction HQ,120,SOURCE,,,https://app.notion.com/321e821484b081229dceefa0c3c48170
+emp:nmwc,fac:nmwc,NMWC,120,SOURCE,,,https://app.notion.com/34ce821484b0815b8025e995ced7c996
+emp:arterial-road,fac:arterial-road,Arterial Road Network,150,SOURCE,,,https://app.notion.com/321e821484b081ceb8cefafb60bf5d8c
+emp:shimmerdeep,fac:shimmerdeep,Shimmerdeep Cradle,300,SOURCE,,,https://app.notion.com/34ce821484b081119fd4c41feef5634e
+emp:munitions,fac:munitions,Neverwinter Munitions,43,SOURCE,,,https://app.notion.com/362e821484b081e98ce5d318425ffcde
+emp:treasury-stone,fac:treasury-stone,Treasury Stone Quarries,55,SOURCE,,,https://app.notion.com/321e821484b081118df6fb5d6377ba0a
+emp:formicorps,fac:formicorps,Formicorps (card headcount),0,SOURCE,,,https://app.notion.com/34ce821484b081b995b9f3426792b6bc
