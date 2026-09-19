@@ -12,13 +12,13 @@
     "CONFLICT": 15,
     "SUPERSEDED": 220,
     "MISSING_DATA": 4,
-    "UNKNOWN": 957,
-    "CONTEXT_ONLY": 61,
+    "UNKNOWN": 956,
+    "CONTEXT_ONLY": 62,
     "HISTORICAL": 3
   },
   "body_review_status_counts": {
-    "REVIEWED": 661,
-    "UNMEASURED": 959
+    "REVIEWED": 662,
+    "UNMEASURED": 958
   },
   "review_disposition_counts": {
     "ECONOMIC_INPUT": 313,
@@ -26,8 +26,8 @@
     "CONFLICT": 13,
     "SUPERSEDED": 220,
     "MISSING_DATA": 4,
-    "UNREVIEWED": 959,
-    "ECONOMIC_CONTEXT": 31,
+    "UNREVIEWED": 958,
+    "ECONOMIC_CONTEXT": 32,
     "NON_ECONOMIC": 30,
     "HISTORICAL_ONLY": 3
   },
@@ -18004,14 +18004,19 @@
       "source_url": "https://app.notion.com/3d2e821484b081fd89bce788a05ce495",
       "census_hash": "8b8cfbcf1e1cea31",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-06T18:08:04.860Z",
+      "body_hash": "c46e1b8c90c70c4b25a90147410c7f4ae957e3fb3b8012f591321ed6347f0ac7",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Economic relevance retained as context without forcing a current engine quantity."
+      ]
     },
     {
       "stable_source_id": "notion:page:322e8214-84b0-8105-8b06-eaf2edafabfb",
