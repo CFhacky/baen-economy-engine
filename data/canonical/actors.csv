@@ -20,7 +20,9 @@ actor:programme:burning-gate,Project Burning Gate,PROGRAMME,34ce8214-84b0-8125-b
 actor:workforce:institut:unresolved,Institut anonymous staff remainder,WORKFORCE_POOL,2fbe8214-84b0-81d9-bc8b-d10ad1ba785a,ACTIVE,,No Institut-wide headcount sourced; Tissage 67 stays on Tissage,UNRESOLVED,UNKNOWN,missing aggregate,INSTITUT
 actor:npc:shivan-baenund,Shi'van Baen'und,PERSON,2fce8214-84b0-811e-b260-c801033cada4,ACTIVE,,Founder of Tissage; equal partner with Marcel on Tissage and Institut,SOURCE-DERIVED,SOURCE,faction + user ruling 2026-09-19,BOTH
 actor:npc:marcel-diorelle,Marcel Dior'Elle,PERSON,334e8214-84b0-8177-9e8a-d9142a561c46,ACTIVE,,Equal partner with Shi'van; Institut Creative Director; full operational authority on the floor,SOURCE-DERIVED,SOURCE,NPC Marcel Dior'Elle + user ruling 2026-09-19,INSTITUT
-actor:npc:arik-baen,Arik Baen,PERSON,,ACTIVE,,Burning Gate approver; not auto employee,SOURCE-DERIVED,SOURCE,Burning Gate leadership,INSTITUT
+actor:npc:arik-baen,Arik Baen,PERSON,,ACTIVE,,Burning Gate approver; Warborn and Baen Enterprises principal; imperial household head,SOURCE-DERIVED,SOURCE,Burning Gate leadership + Warborn location + user ruling 2026-09-19,BOTH
+actor:household:imperial-arik,Imperial Household of Arik Baen,HOUSEHOLD,,ACTIVE,,Legal/economic bucket for assets that are Arik personally rather than Institut or NCF,SOURCE-DERIVED,SOURCE,user ruling 2026-09-19,HOUSEHOLD
+actor:institution:baen-enterprises,Baen Enterprises,CONGLOMERATE,2fbe8214-84b0-81ef-80a5-d67f7b7e6f31,ACTIVE,,Arik commercial wrapper; public cover on Warborn Waterdeep; 100% Arik/household,SOURCE-DERIVED,SOURCE,faction Baen Enterprises,HOUSEHOLD
 actor:npc:frieren,Frieren,PERSON,,ACTIVE,,Barrier research,SOURCE-DERIVED,SOURCE,Burning Gate leadership,INSTITUT
 actor:npc:einar,Einar,PERSON,,ACTIVE,,Construct production counterparty,SOURCE-DERIVED,SOURCE,Burning Gate leadership,INSTITUT
 actor:npc:jormun,Jormun,PERSON,,ACTIVE,,Nafnfestr founder; Institut personnel on breeding ops,SOURCE-DERIVED,SOURCE,registry snapshot Leadership,INSTITUT
@@ -28,7 +30,7 @@ actor:business:tissage-shivan,Tissage (Shi'van textile floor),BUSINESS,2fce8214-
 actor:business:baenund-and-diorelle,Baen'und & Dior'Elle,BUSINESS,,ACTIVE,,Equal partnership vehicle; Blackwatch Lane showroom Sea Ward,SOURCE-DERIVED,SOURCE,organizational hierarchy equal partnership,INSTITUT
 actor:npc:tessa-whitmore,Tessa Whitmore,PERSON,340e8214-84b0-81c6-9930-d60365a2a905,ACTIVE,,Junior designer on Tissage textile floor,SOURCE-DERIVED,SOURCE,NPC Tessa Whitmore,INSTITUT
 actor:npc:rosalie-hatch,Rosalie Hatch,PERSON,341e8214-84b0-815b-be77-d1cdad7615e2,ACTIVE,,Tissage floor lead 67 employees,SOURCE-DERIVED,SOURCE,NPC Rosalie Hatch,INSTITUT
-actor:facility:warborn-mega,Waterdeep Warborn Mega-Facility,FACILITY,,ACTIVE,,Investment 1127000; 200-job cover; owner UNKNOWN,SOURCE-DERIVED,SOURCE,LOCATIONS_BODY_INGEST_L6,INSTITUT
-actor:npc:rurik-hellbrace,Rurik Hellbrace,PERSON,,ACTIVE,,Facility manager; not proven Institut employee,SOURCE-DERIVED,SOURCE,L6 facility manager,INSTITUT
+actor:facility:warborn-mega,Waterdeep Warborn Mega-Facility,FACILITY,348e8214-84b0-8192-95d8-f81988611e45,ACTIVE,200,"Investment 1127000 authorized by Arik 20 Eleint 1494; wages 22900/mo; opex ~85000/mo; owner imperial household not Institut",SOURCE-DERIVED,SOURCE,Waterdeep Warborn Mega-Facility + user ruling 2026-09-19,HOUSEHOLD
+actor:npc:rurik-hellbrace,Rurik Hellbrace,PERSON,34ce8214-84b0-81ad-a6ff-d2603211edde,ACTIVE,,Facility manager; household employee not Institut,SOURCE-DERIVED,SOURCE,L6 + Warborn location page,HOUSEHOLD
 actor:facility:component-factory-neverwinter,Baen'und Component Factory Site Neverwinter,FACILITY,,ACTIVE,,215000 ESAMT cap; fit-out pending,SOURCE-DERIVED,SOURCE,LOCATIONS_BODY_INGEST_L6,INSTITUT
 actor:business:nafnfestr,Nafnfestr breeding operations,BUSINESS,,ACTIVE,,Registry parent Institut; not exploded as separate legal default,SOURCE-DERIVED,SOURCE,business-registry-2026-08-29,INSTITUT
