@@ -1,0 +1,181 @@
+{
+  "schema": "tnp.economy.artifact-body-ingest/1",
+  "batch": "A8",
+  "captured_at": "2026-09-18",
+  "target": 16,
+  "reviewed": 16,
+  "failed": 0,
+  "records": [
+    {
+      "source_id": "334e8214-84b0-815d-b7b0-c5000ae1eb91",
+      "title": "🕷️ The Spider's Courtesy",
+      "revision": "2026-03-31T13:21:31.999Z",
+      "body_hash": "8e224998628c4f0b0210919a6a925b65d5da8f7c58ffc4d2883c83380391f8ea",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "334e8214-84b0-8187-a0ea-c96374c6d97c",
+      "title": "🔶 The Baen'und Symbol",
+      "revision": "2026-03-31T13:23:26.106Z",
+      "body_hash": "be1bc161a57f054f7866967ab2a91aa52733f92d5e29a7f4e374376a895b3b4c",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "33ce8214-84b0-81d8-9f1e-d6b55ce12188",
+      "title": "🔬 Deep Iron Specimen — Dual-Lattice Discovery",
+      "revision": "2026-04-08T23:12:59.261Z",
+      "body_hash": "6f29fba37a644fc517f3fc4e8c9a3e1fd5fa6687274e2eb26205fefd263fbc2d",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "33ee8214-84b0-8119-9635-e822bd790a70",
+      "title": "Vardrung (Ward-Thunder)",
+      "revision": "2026-04-18T23:13:43.469Z",
+      "body_hash": "e7b447225e58ea28d9560d6ccde4eed74035b0c10c749e2dff57d94771d61db6",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "33ee8214-84b0-814f-829c-fa296c91aa7c",
+      "title": "🩸 The Bloodtide Blade",
+      "revision": "2026-04-18T23:14:30.694Z",
+      "body_hash": "153e9a29ece7c12b4a9e751e2f35da94dde6326a57be791583070f5e7e32cea0",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "33ee8214-84b0-81be-b22e-e667d8b24f40",
+      "title": "💀 Remains of Varkos Thul (Thayan Necromancer)",
+      "revision": "2026-04-10T02:57:51.269Z",
+      "body_hash": "e63f4a9b870f214a47d92ccc80ec23749595be1d0d9e53c70d35c03927c5a198",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "33ee8214-84b0-81c6-bcbc-cd1a0b7323b5",
+      "title": "Shield of the Dwarf-Friend",
+      "revision": "2026-04-18T23:15:27.506Z",
+      "body_hash": "3208866223abf3bd731bb855b594e067b3ce7df1ea26fdbe58236f9c6d2372dd",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "33ee8214-84b0-81d2-8abb-cbce423a1be0",
+      "title": "Grimjaw (Daudi-Tonn)",
+      "revision": "2026-04-18T23:07:47.771Z",
+      "body_hash": "01cf46d4a77fbba59655e67a79810a66435e964f1bdd37c79ec1b92f042578ad",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "33ee8214-84b0-81ee-836f-fe98b7b3cbb3",
+      "title": "The White Hart's Plate",
+      "revision": "2026-04-18T23:09:56.436Z",
+      "body_hash": "88bb244c51ffec74e22395645bd2c9d9da14ef3e214900f020a95949f4e3b1f8",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "345e8214-84b0-8177-95b6-efe7cbd23415",
+      "title": "Marcel's Signet — Shi'van's daily ring",
+      "revision": "2026-04-17T01:19:49.699Z",
+      "body_hash": "1bf1249ab23bb47a4d23898497280862569a7ed9f7040e660c2864144e7b06af",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "345e8214-84b0-8198-a05c-d78af11d2678",
+      "title": "💍 Marcel's Signet Ring",
+      "revision": "2026-04-17T18:13:49.705Z",
+      "body_hash": "165ec7df304be45f6b8f91e061e3ea2c6a8406570b17100f117bb33383d36ce7",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-8110-a780-d0ba426c7dc4",
+      "title": "The Maw — Borgin's Chain-Fed Heavy Weapon",
+      "revision": "2026-04-24T14:25:12.244Z",
+      "body_hash": "bd3431c0b777f568be3a2cc36d6cb3b49b1e12e969e398c862b86f4de5aa3f1b",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ee8214-84b0-8101-a9d2-cf18106cd660",
+      "title": "🗡️ Bonescythe Raiment",
+      "revision": "2026-08-09T21:11:40.471Z",
+      "body_hash": "3c44c321c80743dfb430b6d4c28917df97fd5aa6c8f65e3431946c04139aaab5",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ee8214-84b0-8104-917f-d3dc24a5de3e",
+      "title": "🛡️ Dreadnaught's Battlegear",
+      "revision": "2026-04-26T04:11:40.599Z",
+      "body_hash": "33f4739fc5f2d6de371f819b933df22912f377c610e8e94dfa9469677b132484",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ee8214-84b0-812d-813c-d759d4762865",
+      "title": "⚡ Stormwarden's Plate",
+      "revision": "2026-04-26T20:04:30.232Z",
+      "body_hash": "2a7c98d6c08fcb9763b81ef2f68663cee29140b12681c7341993a25713b174be",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ee8214-84b0-81e0-af22-fe8a89d63343",
+      "title": "⚜️ Plagueheart Raiment",
+      "revision": "2026-04-26T04:11:40.599Z",
+      "body_hash": "37a008f78729cd42c476ad7b19d5622a9f0923aa0252f1c360f05e45cb9e2ed4",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 235,
+      "UNKNOWN": 1214,
+      "CONFLICT": 12,
+      "SUPERSEDED": 142,
+      "MISSING_DATA": 4,
+      "FUTURE": 10,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 403,
+      "UNMEASURED": 1217
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 235,
+      "UNREVIEWED": 1217,
+      "CONFLICT": 10,
+      "SUPERSEDED": 141,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 10,
+      "ECONOMIC_CONTEXT": 3
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}
