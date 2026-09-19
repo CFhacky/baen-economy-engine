@@ -7,27 +7,27 @@
   "source_execution_snapshot_hash": "67d8e69b9e883d40b652a0b0a71f59883e205bc07445daa78de76279c0538160",
   "retained_core_records": 1620,
   "semantic_status_counts": {
-    "SOURCE_MAPPED": 331,
+    "SOURCE_MAPPED": 334,
     "FUTURE": 48,
     "CONFLICT": 15,
     "SUPERSEDED": 224,
     "MISSING_DATA": 4,
-    "UNKNOWN": 930,
     "CONTEXT_ONLY": 62,
+    "UNKNOWN": 927,
     "HISTORICAL": 6
   },
   "body_review_status_counts": {
-    "REVIEWED": 688,
-    "UNMEASURED": 932
+    "REVIEWED": 693,
+    "UNMEASURED": 927
   },
   "review_disposition_counts": {
-    "ECONOMIC_INPUT": 331,
+    "ECONOMIC_INPUT": 334,
     "FUTURE_ONLY": 48,
-    "CONFLICT": 13,
+    "CONFLICT": 15,
     "SUPERSEDED": 224,
     "MISSING_DATA": 4,
-    "UNREVIEWED": 932,
     "ECONOMIC_CONTEXT": 33,
+    "UNREVIEWED": 927,
     "HISTORICAL_ONLY": 6,
     "NON_ECONOMIC": 29
   },
@@ -2588,14 +2588,23 @@
       "source_url": "https://app.notion.com/323e821484b081db885ed9acb18225b8",
       "census_hash": "2aef9c44d6d70e32",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "529efa9b8efd718c35a6fb11cd80cd33a31045e72e652679ab031f9465268205",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "consequence_obligations"
+      ],
+      "driver_owners": [
+        "exogenous_shocks",
+        "food_supply",
+        "event_scheduling"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Live consequence/commitment with direct economic effect routed to the affected engine drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:323e8214-84b0-81e4-b90b-ef7ddeed74c4",
@@ -2605,14 +2614,22 @@
       "source_url": "https://app.notion.com/323e821484b081e4b90bef7ddeed74c4",
       "census_hash": "893db8cfeeb2350b",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "9b18a0b2eea78c506d047593e5ce84a286750c4c1e7c89f503974461d41da051",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "consequence_obligations"
+      ],
+      "driver_owners": [
+        "industrial_production",
+        "event_scheduling"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Live consequence/commitment with direct economic effect routed to the affected engine drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:323e8214-84b0-81e7-8275-d1f27d8a270d",
@@ -2622,14 +2639,23 @@
       "source_url": "https://app.notion.com/323e821484b081e78275d1f27d8a270d",
       "census_hash": "fbe5e205a12e5f65",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-14T20:43:08.922Z",
+      "body_hash": "37819eedd980a50a493f968e627f609e798cdcf9a103241a42427b6016f1c342",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "consequence_obligations"
+      ],
+      "driver_owners": [
+        "labor_supply",
+        "industrial_production",
+        "event_scheduling"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Live consequence/commitment with direct economic effect routed to the affected engine drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:323e8214-84b0-81e7-a912-fe3389a5f75a",
@@ -2640,13 +2666,18 @@
       "census_hash": "62ce9ea8b297facd",
       "census_coverage": "CONFLICT",
       "semantic_status": "CONFLICT",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-14T02:00:35.339Z",
+      "body_hash": "bd75748fa977e6f9cddcd81fcc63dce0924700fa6e18635ee8ff34d4a546a80f",
+      "review_disposition": "CONFLICT",
+      "economic_domains": [
+        "consequence_obligations"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Duplicate/overlapping Gauntlgrym lower-mine obligation is quarantined as a conflict pending authority reconciliation."
+      ]
     },
     {
       "stable_source_id": "notion:page:323e8214-84b0-81ed-8ab7-ed48df5c2d07",
@@ -2657,13 +2688,18 @@
       "census_hash": "ff2a174b3d68876e",
       "census_coverage": "CONFLICT",
       "semantic_status": "CONFLICT",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-14T02:10:03.406Z",
+      "body_hash": "8540501d68468af39c6c68e30f8b514e3462c81af458dd1618056291951f69b0",
+      "review_disposition": "CONFLICT",
+      "economic_domains": [
+        "consequence_obligations"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Duplicate/overlapping Gauntlgrym lower-mine obligation is quarantined as a conflict pending authority reconciliation."
+      ]
     },
     {
       "stable_source_id": "notion:page:324e8214-84b0-813f-b1c6-ecc41384257b",
