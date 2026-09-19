@@ -8,22 +8,22 @@
   "retained_core_records": 1620,
   "semantic_status_counts": {
     "SOURCE_MAPPED": 235,
-    "UNKNOWN": 1150,
+    "UNKNOWN": 1139,
     "CONFLICT": 12,
-    "SUPERSEDED": 206,
+    "SUPERSEDED": 217,
     "MISSING_DATA": 4,
     "FUTURE": 10,
     "CONTEXT_ONLY": 3
   },
   "body_review_status_counts": {
-    "REVIEWED": 467,
-    "UNMEASURED": 1153
+    "REVIEWED": 478,
+    "UNMEASURED": 1142
   },
   "review_disposition_counts": {
     "ECONOMIC_INPUT": 235,
-    "UNREVIEWED": 1153,
+    "UNREVIEWED": 1142,
     "CONFLICT": 10,
-    "SUPERSEDED": 205,
+    "SUPERSEDED": 216,
     "MISSING_DATA": 4,
     "FUTURE_ONLY": 10,
     "ECONOMIC_CONTEXT": 3
@@ -31257,14 +31257,19 @@
       "source_url": "https://app.notion.com/3b3e821484b081f0af0ff783f5cf4430",
       "census_hash": "bdb40b98685e06f0",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-05T02:00:32.772Z",
+      "body_hash": "5416a3d68f3b881f8109370689137579301f549541fa8e59c65cfb7e94ee114a",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "inventories_materials_hoards_assets"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: SUPERSEDED."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d0e8214-84b0-8117-bf36-e610340b6ef5",
@@ -31274,14 +31279,19 @@
       "source_url": "https://app.notion.com/3d0e821484b08117bf36e610340b6ef5",
       "census_hash": "8969ba0ef03f3185",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-03T21:39:23.395Z",
+      "body_hash": "350c3873fc6ee26cfbd60d5e635fafc7bdb553c804255f722ba6253dd4ce0f3e",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "inventories_materials_hoards_assets"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: SUPERSEDED."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d1e8214-84b0-8144-9f97-df6345ca66aa",
@@ -31291,14 +31301,19 @@
       "source_url": "https://app.notion.com/3d1e821484b081449f97df6345ca66aa",
       "census_hash": "c91172335e981b97",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-04T15:20:35.673Z",
+      "body_hash": "fe3227d90ac786c29cadd1278994941e0073cbb2d951e786993ddf076f0ef3b4",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "inventories_materials_hoards_assets"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: SUPERSEDED."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d2e8214-84b0-8126-a07a-fb3f709900b9",
@@ -31308,14 +31323,19 @@
       "source_url": "https://app.notion.com/3d2e821484b08126a07afb3f709900b9",
       "census_hash": "96bd5c3788462886",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-05T23:50:32.456Z",
+      "body_hash": "1b302edc173fcd0f851dc6ce0058d6708471fca210903c86a3d75450553a2637",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "inventories_materials_hoards_assets"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: SUPERSEDED."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d2e8214-84b0-8142-b50d-dd7dcbb6f85a",
@@ -31325,14 +31345,19 @@
       "source_url": "https://app.notion.com/3d2e821484b08142b50ddd7dcbb6f85a",
       "census_hash": "353d0e7b4f87a7e7",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-05T23:50:18.441Z",
+      "body_hash": "c2c46e546f7862f20f5bf683cf38efa9e0413f2e565ee2c8e5ab8ee7b5e8de3a",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "inventories_materials_hoards_assets"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: SUPERSEDED."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d2e8214-84b0-8143-bd20-c7652b06ed91",
@@ -31342,14 +31367,19 @@
       "source_url": "https://app.notion.com/3d2e821484b08143bd20c7652b06ed91",
       "census_hash": "e40ae7fdb6147039",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-05T23:50:18.441Z",
+      "body_hash": "5c99f547c6c6db69ab071c036613b3014a7dc0c34c2d474225bcd05996f4af8b",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "inventories_materials_hoards_assets"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: SUPERSEDED."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d2e8214-84b0-816c-a49a-c5d2829c9ec0",
@@ -31359,14 +31389,19 @@
       "source_url": "https://app.notion.com/3d2e821484b0816ca49ac5d2829c9ec0",
       "census_hash": "1f97662bebb5a6bc",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-05T23:48:16.920Z",
+      "body_hash": "c8ca3fb97ea251cae7f6d081761aa9838804a1b39be6185f3d6b3150a20dd0c2",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "inventories_materials_hoards_assets"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: SUPERSEDED."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d2e8214-84b0-81a0-b999-fb5bd637048f",
@@ -31376,14 +31411,19 @@
       "source_url": "https://app.notion.com/3d2e821484b081a0b999fb5bd637048f",
       "census_hash": "e1792cbb78d306cc",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-05T23:50:18.441Z",
+      "body_hash": "1fbdf87949501ad16f1ea3b6a877669dcd286916dba8736c1e04c6c69958d197",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "inventories_materials_hoards_assets"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: SUPERSEDED."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d2e8214-84b0-81b3-9abd-fb6f43561863",
@@ -31393,14 +31433,19 @@
       "source_url": "https://app.notion.com/3d2e821484b081b39abdfb6f43561863",
       "census_hash": "7e633800b5fa05ec",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-05T23:50:18.441Z",
+      "body_hash": "054d64a95a5633b692cb943956e2f691d7b2d5609a7d0537d2a80d19bcf963cd",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "inventories_materials_hoards_assets"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: SUPERSEDED."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d9e8214-84b0-8129-ad90-e4e2e2aeea74",
@@ -31410,14 +31455,19 @@
       "source_url": "https://app.notion.com/3d9e821484b08129ad90e4e2e2aeea74",
       "census_hash": "f729dd5a342b014e",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-12T12:49:18.716Z",
+      "body_hash": "e73e347819cf771f1833ef211dd6422373e8527e0fd72a5d63f19c6129c31511",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "inventories_materials_hoards_assets"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: SUPERSEDED."
+      ]
     },
     {
       "stable_source_id": "notion:page:3d9e8214-84b0-8150-8462-ccac0b268f17",
@@ -31427,14 +31477,19 @@
       "source_url": "https://app.notion.com/3d9e821484b081508462ccac0b268f17",
       "census_hash": "205015e87e291dc3",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-12T12:49:18.716Z",
+      "body_hash": "311faac15582995992a06c4525df43f22a019a71599db5d554b613f694c93953",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "inventories_materials_hoards_assets"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Bulk full-body ingest from live Notion; complete body.",
+        "Conservative classification: SUPERSEDED."
+      ]
     }
   ],
   "notion_writes": 0,
