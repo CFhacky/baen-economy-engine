@@ -1,0 +1,181 @@
+{
+  "schema": "tnp.economy.artifact-body-ingest/1",
+  "batch": "A11",
+  "captured_at": "2026-09-18",
+  "target": 16,
+  "reviewed": 16,
+  "failed": 0,
+  "records": [
+    {
+      "source_id": "37de8214-84b0-81fe-a3cb-fcd53c449f77",
+      "title": "Spear of Golden Clarity",
+      "revision": "2026-07-11T19:26:28.171Z",
+      "body_hash": "347993ed3b622e9303214edac18269ea524d80d4a1de69c0301cb883a002c2c4",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37fe8214-84b0-8149-88dc-e3b9230ac098",
+      "title": "The Stormrider's Grasp",
+      "revision": "2026-08-09T21:11:44.630Z",
+      "body_hash": "f4ae222e92490cc06976b601ac775281a45b1c9cfdada1ff3407117ce8cd4fae",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "380e8214-84b0-8116-b6fd-d8f5c69fab50",
+      "title": "Ring of Abyssal Authority",
+      "revision": "2026-06-15T13:39:30.703Z",
+      "body_hash": "df625130868bcb8497277df6cc02f20944933a42e2b52a95bbe137b4cab97d42",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "380e8214-84b0-8138-a54a-e34c471565b8",
+      "title": "The Necrotic Net",
+      "revision": "2026-09-04T15:06:23.591Z",
+      "body_hash": "9198b38891a460d7577c7ca3736cfb1021d8d84cab83772f7618238d93721384",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "380e8214-84b0-816e-aefd-c609ed3b3019",
+      "title": "Tactician's Scourge",
+      "revision": "2026-06-15T13:39:30.703Z",
+      "body_hash": "f84992861a8b7a644db7bd2081e92518882ae22ad5f915c367287adcf7e09849",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "380e8214-84b0-8196-8c6c-e7358f40d261",
+      "title": "Demonic Angel Armor",
+      "revision": "2026-09-05T23:48:25.318Z",
+      "body_hash": "3b5285d6d9505de559d71f555ef732a7891d5f662ae871079c3279db6d7aefe9",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "380e8214-84b0-81b7-85b1-e71d718d5076",
+      "title": "Forge of Infinite Forms",
+      "revision": "2026-06-15T13:39:30.703Z",
+      "body_hash": "6e795e55604579e04c4307616467a2d7a94f71b84a982365492d5fada2791334",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "380e8214-84b0-81fc-8163-d0422cc76c14",
+      "title": "Deceiver's Mirror",
+      "revision": "2026-06-15T13:39:30.703Z",
+      "body_hash": "de807e54fd96dddbb0742a6d11cd92d9daa1d1af3943893892a4dd36d55426c5",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "381e8214-84b0-8169-84f6-ebb4592db3e0",
+      "title": "The Cradlestone",
+      "revision": "2026-06-16T21:30:48.671Z",
+      "body_hash": "bdc3d36c6cd4dbd8421ad9ba837174c81dea6e66cda2e15119eb794a2dbb6a7e",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "387e8214-84b0-81c5-8857-eae1a4e679ea",
+      "title": "Caltrop's Tithe",
+      "revision": "2026-06-22T15:43:52.197Z",
+      "body_hash": "302c4d19fc70216dec309d266be5b1bff4a8f6ee6ba1187476a7509c5b131d05",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "387e8214-84b0-81f2-b421-e969125f6062",
+      "title": "Pale Knell",
+      "revision": "2026-06-22T15:43:52.197Z",
+      "body_hash": "8c52a1d648f2936675e376211ecbddc0603ce9477b484ff5dab257db389a2974",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "388e8214-84b0-8115-839e-ed224b71b732",
+      "title": "King's Tear",
+      "revision": "2026-06-23T02:26:06.298Z",
+      "body_hash": "7fc0ddf2306af8f20af282fea40f624e6a4d3b178070750c6694d1d8dfcaa6cb",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "388e8214-84b0-8192-852a-e927a2e14a22",
+      "title": "Surtur's Doom",
+      "revision": "2026-06-23T11:31:59.570Z",
+      "body_hash": "753097e0ba17346d807c62c9acabb9f817110cd1fc1af8a6e7d91ea0299a5dd5",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "38ae8214-84b0-81c0-abd1-d3fba4f17add",
+      "title": "The Sovereign's Second Skin",
+      "revision": "2026-06-25T17:51:24.958Z",
+      "body_hash": "101bf9a149a12bffae872594735bd2da60b8c8421fb20d6b196edb19f82bff2a",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "38de8214-84b0-810a-8f91-df9e5816e502",
+      "title": "THE CAGE",
+      "revision": "2026-06-28T10:44:56.725Z",
+      "body_hash": "00bfe534ae15b2b91880f1bd0647bb2390e242d22688fdb8d6fcd11d212ac395",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "390e8214-84b0-8101-85fe-d03d723eddea",
+      "title": "The Crimson Symbiote",
+      "revision": "2026-08-09T21:11:42.823Z",
+      "body_hash": "b5692024fa859dd75427a590b062e40cac656073fd33116a0df308ef46559b56",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 235,
+      "UNKNOWN": 1166,
+      "CONFLICT": 12,
+      "SUPERSEDED": 190,
+      "MISSING_DATA": 4,
+      "FUTURE": 10,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 451,
+      "UNMEASURED": 1169
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 235,
+      "UNREVIEWED": 1169,
+      "CONFLICT": 10,
+      "SUPERSEDED": 189,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 10,
+      "ECONOMIC_CONTEXT": 3
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}
