@@ -10,24 +10,24 @@
     "SOURCE_MAPPED": 334,
     "FUTURE": 48,
     "CONFLICT": 15,
-    "SUPERSEDED": 224,
+    "SUPERSEDED": 225,
     "MISSING_DATA": 4,
-    "CONTEXT_ONLY": 62,
-    "UNKNOWN": 927,
+    "CONTEXT_ONLY": 68,
+    "UNKNOWN": 920,
     "HISTORICAL": 6
   },
   "body_review_status_counts": {
-    "REVIEWED": 693,
-    "UNMEASURED": 927
+    "REVIEWED": 700,
+    "UNMEASURED": 920
   },
   "review_disposition_counts": {
     "ECONOMIC_INPUT": 334,
     "FUTURE_ONLY": 48,
     "CONFLICT": 15,
-    "SUPERSEDED": 224,
+    "SUPERSEDED": 225,
     "MISSING_DATA": 4,
-    "ECONOMIC_CONTEXT": 33,
-    "UNREVIEWED": 927,
+    "ECONOMIC_CONTEXT": 39,
+    "UNREVIEWED": 920,
     "HISTORICAL_ONLY": 6,
     "NON_ECONOMIC": 29
   },
@@ -18268,14 +18268,19 @@
       "source_url": "https://app.notion.com/322e821484b081058b06eaf2edafabfb",
       "census_hash": "29a1bdff9f460e95",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-13T13:36:48.977Z",
+      "body_hash": "f499d05ca6f11fae9746736bb2df54e744f30cf50ec69634caa146cb20c96253",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "economic_domains": [
+        "demand_perception_context"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Public-perception / exposure tracker retained as economic-market context; it supplies no quantified current demand input."
+      ]
     },
     {
       "stable_source_id": "notion:page:322e8214-84b0-811a-8deb-c8366c406c57",
@@ -18285,14 +18290,19 @@
       "source_url": "https://app.notion.com/322e821484b0811a8debc8366c406c57",
       "census_hash": "6422650bbf55432e",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "SUPERSEDED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-24T22:00:24.732Z",
+      "body_hash": "1d8409d50501bb0f1383d5e663e01d28b7139dd39c68d466c3fc20437ff1b652",
+      "review_disposition": "SUPERSEDED",
+      "economic_domains": [
+        "demand_perception_context"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Tracker explicitly marks itself superseded; excluded from current context."
+      ]
     },
     {
       "stable_source_id": "notion:page:322e8214-84b0-8124-85b1-f52591fed56c",
@@ -18302,14 +18312,19 @@
       "source_url": "https://app.notion.com/322e821484b0812485b1f52591fed56c",
       "census_hash": "cdff1365b4f91793",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-13T13:36:48.977Z",
+      "body_hash": "04c2968458aaf76f32b4bc21339ed5b8c1f3571a0c15a305b70c27c3206cf010",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "economic_domains": [
+        "demand_perception_context"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Public-perception / exposure tracker retained as economic-market context; it supplies no quantified current demand input."
+      ]
     },
     {
       "stable_source_id": "notion:page:322e8214-84b0-812a-ac87-e2ed91e086eb",
@@ -18319,14 +18334,19 @@
       "source_url": "https://app.notion.com/322e821484b0812aac87e2ed91e086eb",
       "census_hash": "2dded0e98b2a7e41",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-13T13:36:48.977Z",
+      "body_hash": "a1ecfa68928d89f284e4f1382ab2c643ee6fc5b8b7feb0fd20ac1d7f97a3a8ad",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "economic_domains": [
+        "demand_perception_context"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Public-perception / exposure tracker retained as economic-market context; it supplies no quantified current demand input."
+      ]
     },
     {
       "stable_source_id": "notion:page:322e8214-84b0-813e-9e06-eb4997f7b829",
@@ -18336,14 +18356,19 @@
       "source_url": "https://app.notion.com/322e821484b0813e9e06eb4997f7b829",
       "census_hash": "18a8525d6cbaf070",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-13T13:36:48.977Z",
+      "body_hash": "517911698f99583a11e0541102c22e1fe370069b9f42e21d2dff80cad728a185",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "economic_domains": [
+        "demand_perception_context"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Public-perception / exposure tracker retained as economic-market context; it supplies no quantified current demand input."
+      ]
     },
     {
       "stable_source_id": "notion:page:322e8214-84b0-815e-9621-e932b560ace3",
@@ -18353,14 +18378,19 @@
       "source_url": "https://app.notion.com/322e821484b0815e9621e932b560ace3",
       "census_hash": "eb66c2a9481b4546",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-13T13:36:48.977Z",
+      "body_hash": "fab7c62ffa60102b4a60faff47fda9f227720f0bd92a3dbe02c79842eaaf0f94",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "economic_domains": [
+        "demand_perception_context"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Public-perception / exposure tracker retained as economic-market context; it supplies no quantified current demand input."
+      ]
     },
     {
       "stable_source_id": "notion:page:322e8214-84b0-81c7-babc-eb147b518770",
@@ -18370,14 +18400,19 @@
       "source_url": "https://app.notion.com/322e821484b081c7babceb147b518770",
       "census_hash": "4ca5e4b2ea3b7b87",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-13T13:36:48.977Z",
+      "body_hash": "ee3d54183ec6e62f9d09b0b6698569c5cc3d06553c4212215fa6f7ff74b28fa6",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "economic_domains": [
+        "demand_perception_context"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Public-perception / exposure tracker retained as economic-market context; it supplies no quantified current demand input."
+      ]
     },
     {
       "stable_source_id": "notion:page:34ce8214-84b0-81ad-a6ff-d2603211edde",
