@@ -2,6 +2,10 @@ ownership_id,owner_actor_id,asset_actor_id,interest_type,percent,percent_state_o
 own:ncf-control-claim,actor:npc:arik-baen,actor:institution:ncf,CONTROL_CLAIM,50,SOURCE,50% + final authority; five Pillars 10% each; no equity booked,SOURCE-DERIVED,SOURCE,NCF
 own:ncf-silversheen,actor:institution:ncf,actor:business:silversheen-trading,LEGAL,60,SOURCE,NCF 60 / Gauntlgrym 40,SOURCE-DERIVED,SOURCE,NCF
 own:ssamt-corpus,actor:trust:ssamt,actor:trust:ssamt,TRUST_CORPUS,100,SOURCE,not NCF-owned,SOURCE-DERIVED,SOURCE,NCF
-own:shivan-tissage,actor:npc:shivan-baenund,actor:business:tissage-shivan,FOUNDER,UNKNOWN,UNKNOWN,Tissage is Shi'van's original business and still his,SOURCE-DERIVED,SOURCE,INSTITUT
-own:institut-over-tissage,actor:institution:institut-baenund,actor:business:tissage-shivan,OVERARCHING_EMPIRE,UNKNOWN,UNKNOWN,Institut sprang up later; empire entangled and overarching; Tissage remains distinct operating business,SOURCE-DERIVED,SOURCE,INSTITUT
-own:shivan-institut-director,actor:npc:shivan-baenund,actor:institution:institut-baenund,CONTROL_CLAIM,UNKNOWN,UNKNOWN,Director of the later Institut empire wrapper,SOURCE-DERIVED,SOURCE,INSTITUT
+own:shivan-tissage,actor:npc:shivan-baenund,actor:business:tissage-shivan,EQUAL_PARTNER,50,SOURCE,Equal partner with Marcel; Tissage remains her original floor,SOURCE-DERIVED,SOURCE,INSTITUT
+own:marcel-tissage,actor:npc:marcel-diorelle,actor:business:tissage-shivan,EQUAL_PARTNER,50,SOURCE,Equal partner with Shi'van,SOURCE-DERIVED,SOURCE,INSTITUT
+own:shivan-institut,actor:npc:shivan-baenund,actor:institution:institut-baenund,EQUAL_PARTNER,50,SOURCE,Equal partner; later empire wrapper,SOURCE-DERIVED,SOURCE,INSTITUT
+own:marcel-institut,actor:npc:marcel-diorelle,actor:institution:institut-baenund,EQUAL_PARTNER,50,SOURCE,Equal partner; Creative Director full operational authority,SOURCE-DERIVED,SOURCE,INSTITUT
+own:shivan-partnership,actor:npc:shivan-baenund,actor:business:baenund-and-diorelle,EQUAL_PARTNER,50,SOURCE,Named partnership vehicle,SOURCE-DERIVED,SOURCE,INSTITUT
+own:marcel-partnership,actor:npc:marcel-diorelle,actor:business:baenund-and-diorelle,EQUAL_PARTNER,50,SOURCE,Named partnership vehicle,SOURCE-DERIVED,SOURCE,INSTITUT
+own:institut-over-tissage,actor:institution:institut-baenund,actor:business:tissage-shivan,OVERARCHING_EMPIRE,,SOURCE,Institut sprang up later; empire entangled; Tissage remains distinct operating business,SOURCE-DERIVED,SOURCE,INSTITUT
