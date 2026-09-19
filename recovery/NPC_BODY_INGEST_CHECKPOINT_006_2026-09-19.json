@@ -1,0 +1,35 @@
+{
+  "schema": "tnp.economy.npc-body-ingest-checkpoint/1",
+  "captured_at": "2026-09-19",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "branch": "codex/reconcile-standalone-authority-20260917",
+  "parent_head": "07fecbc07a0f3bc0f1d986bece7b693e511a95b4",
+  "source_class": "npcs",
+  "npc_target": 920,
+  "remaining_of_original_96": 0,
+  "packs_completing_the_96": [
+    "recovery/NPC_BODY_INGEST_REMAINING_A_2026-09-19.json",
+    "recovery/NPC_BODY_INGEST_REMAINING_B_2026-09-19.json",
+    "recovery/NPC_BODY_INGEST_REMAINING_C_2026-09-19.json"
+  ],
+  "pack_counts": {"A": 36, "B": 32, "C": 28, "sum": 96},
+  "open_conflicts": [
+    "Geoffrey Harrison livestock: 341e ~200 head / two riders vs 343e 60 head / 1 hired hand.",
+    "Dolgrin Coalmantle: 341e proposal-within-60-days vs 343e now-hauling."
+  ],
+  "economic_input_this_session": [
+    "Master Goldweaver 1,010,000gp ESAMT ruby",
+    "Lord Ghallen 50,000gp shadow contract / 4 operatives",
+    "Carrath Voyne 70%->92% component coverage",
+    "T. Merrow 24 Baen Construction draftsmen",
+    "Bram Tull 340gp + 2sp/8sp dual tally",
+    "Torrin Stonecutter first hire + 20 local hires",
+    "Halbor Dunn 3,000gp @14% delinquent",
+    "Brunar Battleforge Silversheen 60/40",
+    "Grimnar Stonehewer 2,000+3,500gp / 40+ craftsmen",
+    "Cassander 2,000 devil faculty"
+  ],
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}
