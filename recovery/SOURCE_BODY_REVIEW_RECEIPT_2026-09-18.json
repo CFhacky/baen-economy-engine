@@ -9,9 +9,9 @@
   "current_live_target": 1381,
   "contextual_authority_records": 7,
   "tracking_status": "IN_PROGRESS",
-  "reviewed_retained_core": 605,
-  "unread_retained_core": 1015,
-  "hashed_body_receipts": 605,
+  "reviewed_retained_core": 662,
+  "unread_retained_core": 958,
+  "hashed_body_receipts": 662,
   "selective_reads_are_not_exhaustive_coverage": true,
   "known_limitation": "The live census proves collection membership and query-visible properties. VALIDATION_STANDALONE.md explicitly records that the detailed Registry page-body snapshot is private and intentionally unpublished. No existing checked-in artifact proves exhaustive body reads across all retained source records.",
   "completion_rule": "COMPLETE only when every retained core record has a body-read receipt or an explicit no-body/not-applicable disposition, with stable source ID, source revision/edit timestamp, content hash where a body exists, and economic review disposition.",
@@ -41,6 +41,7 @@
     "recovery/SOURCE_REVIEW_BATCH_001_2026-09-18.json",
     "recovery/SOURCE_REVIEW_BATCH_002_2026-09-18.json",
     "recovery/SOURCE_REVIEW_BATCH_003_2026-09-18.json",
-    "recovery/CONTRACTS_BODY_INGEST_C1_2026-09-18.json"
+    "recovery/CONTRACTS_BODY_INGEST_C1_2026-09-18.json",
+    "recovery/CONTRACTS_BODY_INGEST_COMPLETE_2026-09-18.json"
   ]
 }
