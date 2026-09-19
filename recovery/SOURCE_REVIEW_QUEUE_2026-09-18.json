@@ -8,27 +8,27 @@
   "retained_core_records": 1620,
   "semantic_status_counts": {
     "SOURCE_MAPPED": 306,
-    "FUTURE": 37,
+    "FUTURE": 42,
     "CONFLICT": 15,
     "SUPERSEDED": 220,
     "MISSING_DATA": 4,
-    "UNKNOWN": 1005,
-    "CONTEXT_ONLY": 32,
+    "UNKNOWN": 997,
+    "CONTEXT_ONLY": 35,
     "HISTORICAL": 1
   },
   "body_review_status_counts": {
-    "REVIEWED": 613,
-    "UNMEASURED": 1007
+    "REVIEWED": 621,
+    "UNMEASURED": 999
   },
   "review_disposition_counts": {
     "ECONOMIC_INPUT": 306,
-    "FUTURE_ONLY": 37,
+    "FUTURE_ONLY": 42,
     "CONFLICT": 13,
     "SUPERSEDED": 220,
     "MISSING_DATA": 4,
-    "UNREVIEWED": 1007,
+    "UNREVIEWED": 999,
     "ECONOMIC_CONTEXT": 16,
-    "NON_ECONOMIC": 16,
+    "NON_ECONOMIC": 19,
     "HISTORICAL_ONLY": 1
   },
   "completion_rule": "Every row must have a body_review_status of REVIEWED or NO_BODY_NOT_APPLICABLE, a non-null review_disposition, and driver_owners for ECONOMIC_INPUT dispositions.",
@@ -16918,14 +16918,19 @@
       "source_url": "https://app.notion.com/34ce821484b081eeafb7c48bc1ee80ce",
       "census_hash": "a11dde9d78e9e515",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-01T23:37:34.924Z",
+      "body_hash": "a0e67b52c183e526ea74a816c91580aa66b188c2a6bf8db92bac1ce110b6fbf8",
+      "review_disposition": "NON_ECONOMIC",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "No current economy-engine input identified from the reviewed body."
+      ]
     },
     {
       "stable_source_id": "notion:page:34ce8214-84b0-81fa-99d7-d36af1a74988",
@@ -16935,14 +16940,19 @@
       "source_url": "https://app.notion.com/34ce821484b081fa99d7d36af1a74988",
       "census_hash": "3074e3629837a513",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-26T23:51:15.500Z",
+      "body_hash": "e78b1f38a0156b02e4fb1d511db7a432611558ab94e8ced8266a675597d5ea12",
+      "review_disposition": "NON_ECONOMIC",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "No current economy-engine input identified from the reviewed body."
+      ]
     },
     {
       "stable_source_id": "notion:page:34ce8214-84b0-81fe-8976-e1ecb57e005f",
@@ -16952,14 +16962,19 @@
       "source_url": "https://app.notion.com/34ce821484b081fe8976e1ecb57e005f",
       "census_hash": "159233ba852572c2",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "FUTURE",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-26T21:27:57.072Z",
+      "body_hash": "74f630f14c0d08fc9bca65aeef8e4f4ec1f1acd2f4ad0c7337ca7c7e69d60887",
+      "review_disposition": "FUTURE_ONLY",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Future-dated material excluded from Day-7 Hammer-1495 current inputs."
+      ]
     },
     {
       "stable_source_id": "notion:page:35fe8214-84b0-817f-bae1-d36167441d14",
@@ -16969,14 +16984,19 @@
       "source_url": "https://app.notion.com/35fe821484b0817fbae1d36167441d14",
       "census_hash": "b1245d14e3c40ef1",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "FUTURE",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-05-13T21:41:19.035Z",
+      "body_hash": "72d1c7331186dd087492d17b136d5093a1f2870a16be101cafd90f340853ab82",
+      "review_disposition": "FUTURE_ONLY",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Future-dated material excluded from Day-7 Hammer-1495 current inputs."
+      ]
     },
     {
       "stable_source_id": "notion:page:376e8214-84b0-8142-95e9-e47e05135e38",
@@ -16986,14 +17006,19 @@
       "source_url": "https://app.notion.com/376e821484b0814295e9e47e05135e38",
       "census_hash": "42e3f6359a367ceb",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "FUTURE",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T19:32:35.539Z",
+      "body_hash": "15f9690197a5fd0ffc62d6ff43d0614ae4fe729fd79fea36476987804c8eb03c",
+      "review_disposition": "FUTURE_ONLY",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Future-dated material excluded from Day-7 Hammer-1495 current inputs."
+      ]
     },
     {
       "stable_source_id": "notion:page:376e8214-84b0-8161-9d53-da377a744993",
@@ -17003,14 +17028,19 @@
       "source_url": "https://app.notion.com/376e821484b081619d53da377a744993",
       "census_hash": "693dc9ed79a84106",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-06-05T17:28:45.414Z",
+      "body_hash": "038ce47b67103d06d6efce81ad4a6f6f785b0aeeeb221b9cce00ccaaf9c51632",
+      "review_disposition": "NON_ECONOMIC",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "No current economy-engine input identified from the reviewed body."
+      ]
     },
     {
       "stable_source_id": "notion:page:376e8214-84b0-817b-b3e9-ed6ad82b3708",
@@ -17020,14 +17050,19 @@
       "source_url": "https://app.notion.com/376e821484b0817bb3e9ed6ad82b3708",
       "census_hash": "9d2f21cc4dd42383",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "FUTURE",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T19:32:28.349Z",
+      "body_hash": "ed5ba7fc58de64902338293732bd6636a2cc9e6b7c1a3184f56be00f58dd05e0",
+      "review_disposition": "FUTURE_ONLY",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Future-dated material excluded from Day-7 Hammer-1495 current inputs."
+      ]
     },
     {
       "stable_source_id": "notion:page:376e8214-84b0-818e-96cd-f37c3938ab61",
@@ -17037,14 +17072,19 @@
       "source_url": "https://app.notion.com/376e821484b0818e96cdf37c3938ab61",
       "census_hash": "82266e20b61d641a",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "FUTURE",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-06-05T17:43:59.689Z",
+      "body_hash": "a20c5fd0cc644c2446708c12c7ccbae40f9dd13ad9b34754d1b87ee4c311c01e",
+      "review_disposition": "FUTURE_ONLY",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Future-dated material excluded from Day-7 Hammer-1495 current inputs."
+      ]
     },
     {
       "stable_source_id": "notion:page:376e8214-84b0-81a3-af47-e0dc614425b0",
