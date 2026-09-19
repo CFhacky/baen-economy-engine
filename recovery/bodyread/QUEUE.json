@@ -141,7 +141,7 @@
   "status": "Scaling",
   "sector": "Manufacturing",
   "weight": 403000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:cerulean",
@@ -150,7 +150,7 @@
   "status": "Under Construction",
   "sector": "Infrastructure",
   "weight": 356000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:quarry-aqua",
@@ -159,7 +159,7 @@
   "status": "Operational",
   "sector": "Aquaculture",
   "weight": 302000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:ncf-parent",
@@ -177,7 +177,7 @@
   "status": "Operational",
   "sector": "Real Estate",
   "weight": 232000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:ncf-nw",
@@ -186,7 +186,7 @@
   "status": "Operational",
   "sector": "Banking",
   "weight": 207400.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:blacklake",
@@ -195,7 +195,7 @@
   "status": "Operational",
   "sector": "Aquaculture",
   "weight": 200200.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:athenaeum",
@@ -204,7 +204,7 @@
   "status": "Planning",
   "sector": "Education",
   "weight": 200000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:ncf-luskan",
@@ -213,7 +213,7 @@
   "status": "Operational",
   "sector": "Banking",
   "weight": 192876.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:wyrmhelm",
@@ -231,7 +231,7 @@
   "status": "Operational",
   "sector": "Mining/Quarrying",
   "weight": 172004.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:dawnwood",
@@ -240,7 +240,7 @@
   "status": "Under Construction",
   "sector": "Real Estate",
   "weight": 164000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:construction-hq",
@@ -249,7 +249,7 @@
   "status": "Operational",
   "sector": "Construction",
   "weight": 151500.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:hunding",
@@ -258,7 +258,7 @@
   "status": "Under Construction",
   "sector": "Infrastructure",
   "weight": 146000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:w-limestone",
@@ -267,7 +267,7 @@
   "status": "Operational",
   "sector": "Mining/Quarrying",
   "weight": 144600.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:munitions",
@@ -276,7 +276,7 @@
   "status": "Operational",
   "sector": "Manufacturing",
   "weight": 144000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:skyreach",
@@ -285,7 +285,7 @@
   "status": "Operational",
   "sector": "Military",
   "weight": 137400.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:verdant-cascades",
@@ -294,7 +294,7 @@
   "status": "Operational",
   "sector": "Infrastructure",
   "weight": 137000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:celestial-springs",
@@ -303,7 +303,7 @@
   "status": "Operational",
   "sector": "Infrastructure",
   "weight": 126000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:shoreline",
@@ -321,7 +321,7 @@
   "status": "Operational",
   "sector": "Banking",
   "weight": 118400.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:azurite",
@@ -330,7 +330,7 @@
   "status": "Operational",
   "sector": "Mining/Quarrying",
   "weight": 108000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:venetian-bay",
@@ -348,7 +348,7 @@
   "status": "Operational",
   "sector": "Mining/Quarrying",
   "weight": 96400.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:canal-housing",
@@ -384,7 +384,7 @@
   "status": "Operational",
   "sector": "Manufacturing",
   "weight": 90000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:lustrous-blade",
@@ -402,7 +402,7 @@
   "status": "Under Construction",
   "sector": "Manufacturing",
   "weight": 83356.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:vault-construction",
@@ -483,7 +483,7 @@
   "status": "Scaling",
   "sector": "Mining/Quarrying",
   "weight": 67000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:hammer-smithy",
@@ -636,7 +636,7 @@
   "status": "Operational",
   "sector": "Mining/Quarrying",
   "weight": 23000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:timber",
