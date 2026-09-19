@@ -7,31 +7,31 @@
   "source_execution_snapshot_hash": "67d8e69b9e883d40b652a0b0a71f59883e205bc07445daa78de76279c0538160",
   "retained_core_records": 1620,
   "semantic_status_counts": {
-    "SOURCE_MAPPED": 658,
+    "SOURCE_MAPPED": 664,
     "FUTURE": 48,
     "CONFLICT": 15,
     "SUPERSEDED": 227,
     "MISSING_DATA": 4,
-    "CONTEXT_ONLY": 491,
+    "CONTEXT_ONLY": 500,
     "HISTORICAL": 21,
-    "UNKNOWN": 156
+    "UNKNOWN": 141
   },
   "body_review_status_counts": {
-    "REVIEWED": 1157,
-    "NO_BODY_NOT_APPLICABLE": 307,
-    "UNMEASURED": 156
+    "REVIEWED": 1170,
+    "NO_BODY_NOT_APPLICABLE": 309,
+    "UNMEASURED": 141
   },
   "review_disposition_counts": {
-    "ECONOMIC_INPUT": 658,
+    "ECONOMIC_INPUT": 664,
     "FUTURE_ONLY": 48,
     "CONFLICT": 15,
     "SUPERSEDED": 227,
     "MISSING_DATA": 4,
-    "ECONOMIC_CONTEXT": 80,
-    "NO_BODY_NOT_APPLICABLE": 307,
+    "ECONOMIC_CONTEXT": 81,
+    "NO_BODY_NOT_APPLICABLE": 309,
     "HISTORICAL_ONLY": 21,
-    "NON_ECONOMIC": 104,
-    "UNREVIEWED": 156
+    "NON_ECONOMIC": 110,
+    "UNREVIEWED": 141
   },
   "completion_rule": "Every row must have a body_review_status of REVIEWED or NO_BODY_NOT_APPLICABLE, a non-null review_disposition, and driver_owners for ECONOMIC_INPUT dispositions.",
   "records": [
@@ -29336,14 +29336,17 @@
       "source_url": "https://app.notion.com/33de821484b081ca902be217b19cc308",
       "census_hash": "3a93d28fe30afa5e",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-18T22:36:15.259Z",
+      "body_hash": "2f816f64041381757798cb60a8d5ded534fffbf66108639243c30373d0722dec",
+      "review_disposition": "NON_ECONOMIC",
       "economic_domains": [],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: no safe current economic driver input detected."
+      ]
     },
     {
       "stable_source_id": "notion:page:33de8214-84b0-81de-9b44-e3b588c3fc33",
@@ -29353,14 +29356,17 @@
       "source_url": "https://app.notion.com/33de821484b081de9b44e3b588c3fc33",
       "census_hash": "3f049238a440bc4f",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-09T02:37:02.385Z",
+      "body_hash": "2766bd3200dd0390ca5713c916e550d84a8a2734af76c6b21a9b3b36f6e11479",
+      "review_disposition": "ECONOMIC_CONTEXT",
       "economic_domains": [],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: economically relevant role/operations without a safe current quantitative input."
+      ]
     },
     {
       "stable_source_id": "notion:page:33de8214-84b0-81e9-85c3-ddecd8587808",
@@ -29370,14 +29376,17 @@
       "source_url": "https://app.notion.com/33de821484b081e985c3ddecd8587808",
       "census_hash": "a898c5dbc6b4ac3f",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-09T16:17:43.568Z",
+      "body_hash": "cfd7dd99099a33d06767a054603a3d5167062818fb9067772fad8be0ec477ab1",
+      "review_disposition": "NON_ECONOMIC",
       "economic_domains": [],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: no safe current economic driver input detected."
+      ]
     },
     {
       "stable_source_id": "notion:page:33de8214-84b0-81ee-829a-c327e32cef3d",
@@ -29387,14 +29396,22 @@
       "source_url": "https://app.notion.com/33de821484b081ee829ac327e32cef3d",
       "census_hash": "a9fea91689ddc24a",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-09T02:37:27.585Z",
+      "body_hash": "e4b936f55f277b235cb78474af18aff86640ba88cb7c9566fc37b4af3cf61f65",
+      "review_disposition": "ECONOMIC_INPUT",
       "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "driver_owners": [
+        "industrial_production",
+        "inventories",
+        "tax_rent_tithe_obligations",
+        "trade_routes"
+      ],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: explicit current economic quantities/operations detected; routed to driver owners."
+      ]
     },
     {
       "stable_source_id": "notion:page:33de8214-84b0-81ef-9a37-fc6fed4ca689",
@@ -29404,14 +29421,21 @@
       "source_url": "https://app.notion.com/33de821484b081ef9a37fc6fed4ca689",
       "census_hash": "66329687fd1a7c1a",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-22T22:02:43.214Z",
+      "body_hash": "a9e70ffc9cb8fc8df44ba126280c9e70f41e772197c262a1eabbf2f42d141f5d",
+      "review_disposition": "ECONOMIC_INPUT",
       "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "driver_owners": [
+        "food_supply",
+        "tax_rent_tithe_obligations",
+        "trade_routes"
+      ],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: explicit current economic quantities/operations detected; routed to driver owners."
+      ]
     },
     {
       "stable_source_id": "notion:page:33ee8214-84b0-8126-9c2d-e6bd241cc7f3",
@@ -29421,14 +29445,19 @@
       "source_url": "https://app.notion.com/33ee821484b081269c2de6bd241cc7f3",
       "census_hash": "6f5179e12d8e6501",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-10T21:05:24.461Z",
+      "body_hash": "cecf96835fbc59d4c3f371c890a89e00aeb6192d474a1e9a1214dd4cf66c93d0",
+      "review_disposition": "ECONOMIC_INPUT",
       "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "driver_owners": [
+        "trade_routes"
+      ],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: explicit current economic quantities/operations detected; routed to driver owners."
+      ]
     },
     {
       "stable_source_id": "notion:page:33ee8214-84b0-8198-8ece-dab5e3f98a76",
@@ -29438,14 +29467,22 @@
       "source_url": "https://app.notion.com/33ee821484b081988ecedab5e3f98a76",
       "census_hash": "3a5fb0014a2646fc",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-18T22:14:39.486Z",
+      "body_hash": "c9a9f9cc74685052bb62229f8b174040068d67cc7d35e31d872a49097ffd4795",
+      "review_disposition": "ECONOMIC_INPUT",
       "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "driver_owners": [
+        "food_supply",
+        "industrial_production",
+        "inventories",
+        "population"
+      ],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: explicit current economic quantities/operations detected; routed to driver owners."
+      ]
     },
     {
       "stable_source_id": "notion:page:33ee8214-84b0-819a-817b-d6d17f0db20f",
@@ -29455,14 +29492,17 @@
       "source_url": "https://app.notion.com/33ee821484b0819a817bd6d17f0db20f",
       "census_hash": "c38ea6eb8aac8190",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-10T13:06:29.165Z",
+      "body_hash": "c1fec5f988e93363ff370f8cb897fba21c2d37f7b8d8ead873a2bce4beab20af",
+      "review_disposition": "NON_ECONOMIC",
       "economic_domains": [],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: no safe current economic driver input detected."
+      ]
     },
     {
       "stable_source_id": "notion:page:33ee8214-84b0-81dd-82a3-e4871748b436",
@@ -29472,14 +29512,25 @@
       "source_url": "https://app.notion.com/33ee821484b081dd82a3e4871748b436",
       "census_hash": "846958f1e954fb70",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-18T22:52:37.549Z",
+      "body_hash": "b65968a3e1e2ac6f1117168f7b0fa4930c9e066198be5321a18b0868f995288c",
+      "review_disposition": "ECONOMIC_INPUT",
       "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "driver_owners": [
+        "banking_balance_sheet",
+        "business_financial_flows",
+        "food_supply",
+        "industrial_production",
+        "inventories",
+        "opening_liquidity",
+        "trade_routes"
+      ],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: explicit current economic quantities/operations detected; routed to driver owners."
+      ]
     },
     {
       "stable_source_id": "notion:page:33ee8214-84b0-81e8-8d26-ea93639c36dd",
@@ -29489,14 +29540,17 @@
       "source_url": "https://app.notion.com/33ee821484b081e88d26ea93639c36dd",
       "census_hash": "b48a30ca348fb1d7",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-10T21:05:24.461Z",
+      "body_hash": "fb5e75fd49ffbb58295a54c290a0f3745297c5be7ba6bb713eb9c8d30a55a7dc",
+      "review_disposition": "NON_ECONOMIC",
       "economic_domains": [],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: no safe current economic driver input detected."
+      ]
     },
     {
       "stable_source_id": "notion:page:33fe8214-84b0-8103-a94e-fced94c46d7f",
@@ -29506,14 +29560,17 @@
       "source_url": "https://app.notion.com/33fe821484b08103a94efced94c46d7f",
       "census_hash": "a805b416339c8750",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-11T18:15:34.491Z",
+      "body_hash": "64167cf606906ec8185595c45e9f408b6775f15c79f28aa21ace0fbce84999cd",
+      "review_disposition": "NON_ECONOMIC",
       "economic_domains": [],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: no safe current economic driver input detected."
+      ]
     },
     {
       "stable_source_id": "notion:page:33fe8214-84b0-8111-90ca-cdacd0bcbcb2",
@@ -29523,14 +29580,17 @@
       "source_url": "https://app.notion.com/33fe821484b0811190cacdacd0bcbcb2",
       "census_hash": "26e017d0f666dab5",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "NO_BODY_NOT_APPLICABLE",
+      "body_revision": "2026-04-11T01:24:31.036Z",
       "body_hash": null,
-      "review_disposition": null,
+      "review_disposition": "NO_BODY_NOT_APPLICABLE",
       "economic_domains": [],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: no safe current economic driver input detected."
+      ]
     },
     {
       "stable_source_id": "notion:page:33fe8214-84b0-8122-9816-cbf12a0e7d1c",
@@ -29540,14 +29600,17 @@
       "source_url": "https://app.notion.com/33fe821484b081229816cbf12a0e7d1c",
       "census_hash": "238bc45db5872d79",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "NO_BODY_NOT_APPLICABLE",
+      "body_revision": "2026-04-11T00:45:33.464Z",
       "body_hash": null,
-      "review_disposition": null,
+      "review_disposition": "NO_BODY_NOT_APPLICABLE",
       "economic_domains": [],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: no safe current economic driver input detected."
+      ]
     },
     {
       "stable_source_id": "notion:page:33fe8214-84b0-812d-b667-caa349bbc4a8",
@@ -29557,14 +29620,21 @@
       "source_url": "https://app.notion.com/33fe821484b0812db667caa349bbc4a8",
       "census_hash": "0d5883534b1f6272",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-13T22:48:39.204Z",
+      "body_hash": "41497c578c95854f792b57fc82ab05002648f64211dea6f174252015952bd720",
+      "review_disposition": "ECONOMIC_INPUT",
       "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "driver_owners": [
+        "business_financial_flows",
+        "food_supply",
+        "trade_routes"
+      ],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: explicit current economic quantities/operations detected; routed to driver owners."
+      ]
     },
     {
       "stable_source_id": "notion:page:33fe8214-84b0-812e-a0e8-d7d8760f2608",
@@ -29574,14 +29644,17 @@
       "source_url": "https://app.notion.com/33fe821484b0812ea0e8d7d8760f2608",
       "census_hash": "8d0fc94c30cca221",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-11T18:15:34.491Z",
+      "body_hash": "86b163ab358f97cd4f8062e5b018e21143fab5b64dc0733f2d0fd7c70c8d4707",
+      "review_disposition": "NON_ECONOMIC",
       "economic_domains": [],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "NPC deterministic triage: no safe current economic driver input detected."
+      ]
     },
     {
       "stable_source_id": "notion:page:33fe8214-84b0-816d-8ba5-c398d3ea9825",
