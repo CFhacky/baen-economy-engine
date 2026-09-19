@@ -9,3 +9,7 @@ own:marcel-institut,actor:npc:marcel-diorelle,actor:institution:institut-baenund
 own:shivan-partnership,actor:npc:shivan-baenund,actor:business:baenund-and-diorelle,EQUAL_PARTNER,50,SOURCE,Named partnership vehicle,SOURCE-DERIVED,SOURCE,INSTITUT
 own:marcel-partnership,actor:npc:marcel-diorelle,actor:business:baenund-and-diorelle,EQUAL_PARTNER,50,SOURCE,Named partnership vehicle,SOURCE-DERIVED,SOURCE,INSTITUT
 own:institut-over-tissage,actor:institution:institut-baenund,actor:business:tissage-shivan,OVERARCHING_EMPIRE,,SOURCE,Institut sprang up later; empire entangled; Tissage remains distinct operating business,SOURCE-DERIVED,SOURCE,INSTITUT
+own:arik-baen-enterprises,actor:npc:arik-baen,actor:institution:baen-enterprises,LEGAL,100,SOURCE,Arik commercial cover empire,SOURCE-DERIVED,SOURCE,HOUSEHOLD
+own:household-baen-enterprises,actor:household:imperial-arik,actor:institution:baen-enterprises,HOUSEHOLD,100,SOURCE,Imperial household holds the commercial wrapper,SOURCE-DERIVED,SOURCE,HOUSEHOLD
+own:arik-warborn-wd,actor:npc:arik-baen,actor:facility:warborn-mega,LEGAL,100,SOURCE,Arik authorized 1127000 gp 20 Eleint 1494; not Institut,SOURCE-DERIVED,SOURCE,HOUSEHOLD
+own:household-warborn-wd,actor:household:imperial-arik,actor:facility:warborn-mega,HOUSEHOLD,100,SOURCE,User ruling 2026-09-19: Warborn is entirely Arik / imperial household,SOURCE-DERIVED,SOURCE,HOUSEHOLD
