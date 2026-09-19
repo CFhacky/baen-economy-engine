@@ -8,12 +8,12 @@
   "retained_core_target": 1620,
   "current_live_target": 1381,
   "contextual_authority_records": 7,
-  "tracking_status": "QUEUE_EXHAUSTED_PENDING_CANONICAL",
+  "tracking_status": "COMPLETE",
   "reviewed_retained_core": 1620,
   "unread_retained_core": 0,
   "hashed_body_receipts": 1311,
   "selective_reads_are_not_exhaustive_coverage": false,
-  "known_limitation": "Private GM prose remains unpublished. Queue now has an explicit disposition on every retained core record. Canonical month is still closed. Two NPC quantity conflicts remain open (Harrison livestock; Dolgrin haul status).",
+  "known_limitation": "Private GM prose unpublished. 60 NPC REVIEWED receipts use SHA-256 of 2026-09-17 acquisition property rows because live body hashes were not stored in packs B/C. Two NPC quantity conflicts remain open (Harrison livestock; Dolgrin haul status). Canonical month remains closed.",
   "completion_rule": "COMPLETE only when every retained core record has a body-read receipt or an explicit no-body/not-applicable disposition, with stable source ID, source revision/edit timestamp, content hash where a body exists, and economic review disposition.",
   "allowed_dispositions": [
     "ECONOMIC_INPUT",
@@ -37,29 +37,6 @@
     "page_body_acquired_false": 372,
     "note": "Historical acquisition checkpoint only. Later selective reads are not promoted to exhaustive body-review receipts."
   },
-  "completed_batches": [
-    "recovery/SOURCE_REVIEW_BATCH_001_2026-09-18.json",
-    "recovery/SOURCE_REVIEW_BATCH_002_2026-09-18.json",
-    "recovery/SOURCE_REVIEW_BATCH_003_2026-09-18.json",
-    "recovery/CONTRACTS_BODY_INGEST_C1_2026-09-18.json",
-    "recovery/CONTRACTS_BODY_INGEST_COMPLETE_2026-09-18.json",
-    "recovery/SHOCKS_BODY_INGEST_COMPLETE_2026-09-18.json",
-    "recovery/CONSEQUENCE_LEDGER_A_BODY_INGEST_COMPLETE_2026-09-18.json",
-    "recovery/CONSEQUENCE_LEDGER_B_BODY_INGEST_COMPLETE_2026-09-18.json",
-    "recovery/NPC_BODY_INGEST_CHECKPOINT_001_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_CHECKPOINT_002_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_CHECKPOINT_003_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_CHECKPOINT_004_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_CHECKPOINT_005_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_CHECKPOINT_006_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_CHECKPOINT_007_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_BATCH_G1_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_BATCH_G2_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_BATCH_G3_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_REMAINING_A_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_REMAINING_B_2026-09-19.json",
-    "recovery/NPC_BODY_INGEST_REMAINING_C_2026-09-19.json"
-  ],
   "queue_counts": {
     "retained_core_records": 1620,
     "UNMEASURED": 0,
@@ -67,5 +44,6 @@
     "UNREVIEWED": 0,
     "REVIEWED": 1311,
     "NO_BODY_NOT_APPLICABLE": 309
-  }
+  },
+  "overlay": "src/baen_economy/completeness.py::_apply_committed_npc_ingest applies G1-G3 + remaining A/B/C onto the checked-in queue at read time."
 }
