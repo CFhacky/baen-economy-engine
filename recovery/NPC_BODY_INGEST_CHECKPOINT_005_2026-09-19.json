@@ -1,0 +1,23 @@
+{
+  "schema": "tnp.economy.npc-body-ingest-checkpoint/1",
+  "captured_at": "2026-09-19",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "branch": "codex/reconcile-standalone-authority-20260917",
+  "parent_head": "0dd9aecb35e05937efdebe99f19e1c43bee1ea9f",
+  "source_class": "npcs",
+  "npc_target": 920,
+  "npc_body_status_counts_after_g1_g2_g3": {
+    "REVIEWED": 515,
+    "NO_BODY_NOT_APPLICABLE": 309,
+    "UNMEASURED": 96
+  },
+  "batches": [
+    "recovery/NPC_BODY_INGEST_BATCH_G1_2026-09-19.json",
+    "recovery/NPC_BODY_INGEST_BATCH_G2_2026-09-19.json",
+    "recovery/NPC_BODY_INGEST_BATCH_G3_2026-09-19.json"
+  ],
+  "open_conflict": "Geoffrey Harrison livestock: 341e page ~200 head / two riders vs 343e page 60 head / 1 hired hand.",
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}
