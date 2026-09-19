@@ -1,0 +1,117 @@
+{
+  "schema": "tnp.economy.npc-body-ingest-batch/1",
+  "captured_at": "2026-09-19",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "branch": "codex/reconcile-standalone-authority-20260917",
+  "parent_head": "0813297b4a335b48993ed9034116a6c88ddd603b",
+  "records": [
+    {
+      "stable_source_id": "notion:page:33fe8214-84b0-816d-8ba5-c398d3ea9825",
+      "source_id": "33fe8214-84b0-816d-8ba5-c398d3ea9825",
+      "title": "Darva Oldfen",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-11T14:20:29.624Z",
+      "body_hash": "068e84e09db6104541e4caccd3255642394bcabdda5baeab39311c6ac19c8627",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": [],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "Property-only midwife/refugee camp organiser; no population or wage quantities."
+      ]
+    },
+    {
+      "stable_source_id": "notion:page:33fe8214-84b0-81b4-81be-e2c0b38b445e",
+      "source_id": "33fe8214-84b0-81b4-81be-e2c0b38b445e",
+      "title": "Aldric Poole",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-11T14:20:29.624Z",
+      "body_hash": "c5dcd310c945be224e1d2c8725b489d08b7a001c667197998f0952a02593529e",
+      "review_disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": [],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "Property-only Watch desk sergeant; patrol-gap intelligence only."
+      ]
+    },
+    {
+      "stable_source_id": "notion:page:33fe8214-84b0-81e3-be31-e7900a8f9da8",
+      "source_id": "33fe8214-84b0-81e3-be31-e7900a8f9da8",
+      "title": "Dorian Hale",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-11T01:24:31.036Z",
+      "body_hash": "32c73b116a94a0e3c70a6f635bff7eb39eea3f9281a6fdb8a4933b648e84ee88",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": [],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "Property-only B. Taranis coordinator; pending meeting, no current contract quantities."
+      ]
+    },
+    {
+      "stable_source_id": "notion:page:33fe8214-84b0-81ea-a497-fbdf6f403bb8",
+      "source_id": "33fe8214-84b0-81ea-a497-fbdf6f403bb8",
+      "title": "Corinne Aldwych",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-11T18:15:34.491Z",
+      "body_hash": "b1ba3308a7269abce00fbd45aa9ebe2706bb10b2409d5a93a6e46defe5d329cc",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": [],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "Aldwych & Daughters land surveyor; Ravencrest neighbour sale is historical context, no current survey fees."
+      ]
+    },
+    {
+      "stable_source_id": "notion:page:340e8214-84b0-8113-be2f-cf5484e1ace9",
+      "source_id": "340e8214-84b0-8113-be2f-cf5484e1ace9",
+      "title": "Louisa Gralhund",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-12T03:17:20.711Z",
+      "body_hash": "53cef1771e86425ca45a9f4a6c2eef4be9d9d71720b6daa9aa84386e339647c3",
+      "review_disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": [],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "Gralhund family debt contributor; 2K joint-account flight is a historical event, outstanding debt stock not quantified."
+      ]
+    },
+    {
+      "stable_source_id": "notion:page:340e8214-84b0-8116-9bb3-da52af16a25a",
+      "source_id": "340e8214-84b0-8116-9bb3-da52af16a25a",
+      "title": "Civilar Geoffrey Marshall",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-12T06:10:55.930Z",
+      "body_hash": "4b44f18a9d949024d0dc2ce9ae7b77d41d20550f1f40370621f1c8d6fd0eed6a",
+      "review_disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": [],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "Castle Ward Inspector-Commandant character sheet; GURPS/D&D stats are not current economic inputs."
+      ]
+    },
+    {
+      "stable_source_id": "notion:page:340e8214-84b0-8130-901d-dfe790b55f4c",
+      "source_id": "340e8214-84b0-8130-901d-dfe790b55f4c",
+      "title": "[SUPERSEDED] Arthur Pemberton duplicate — see canonical page 341e8214-84b0-8197",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-17T18:17:45.117Z",
+      "body_hash": "812583f010ad4ef92bbb0000a110d60238c4945441241f4187ab8d9954497f1c",
+      "review_disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "review_notes": [
+        "Full read-only Notion page fetch; complete page marker present and no truncation/unknown-block flag returned.",
+        "Page-level SUPERSEDED duplicate; canonical Arthur Pemberton is 341e8214-84b0-8197-b89f-cd1edd3c7c19."
+      ]
+    }
+  ],
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}
