@@ -1,31 +1,32 @@
-# Warborn working book — 2026-09-19
+# Warborn working book — 2026-09-19 (price correction)
 
-Skills applied: empire-operations-engine (Notion registry/location = numbers), surface-campaign-master-gm (Arik clock), organizational-operations (household owner), hybrid-business-ops (not rolled).
+## Unit economics from Implementation Plan (32ce8214-84b0-81e3-af28-fbad8a122a09)
 
-## Locked
-- Owner: Arik / imperial household. Wrapper: Baen Enterprises. Not Institut.
-- First output Waterdeep: Kythorn 1493.
-- Phase clock: Arik Day 7 Hammer 1495.
-- Designed throughput (location card): 100-150 Legionnaire/mo optimized + 2 Solar Guard/mo.
-- Size: 200,000 sq ft, 200 heads, wages 22,900, op cost ~85,000.
-- Neverwinter sourced run-rate: 12 x 4,000 = 48,000 rev / 20,000 cost / 28,000 net.
-- Contract: 5,000 Legionnaire in 24 months from Eleint 20 1494 = 208.33/mo required.
-- Payroll/settlement: unmodeled.
-- No monthly phase rolled.
+| Frame | Sale (she pays) | Build cost | Keep (profit) |
+|---|---:|---:|---:|
+| Legionnaire | 30,000 | 6,000 | 4,000 |
+| Solar Guard | 100,000 | 20,000 | 80,000 |
 
-## Capacity-implied Waterdeep (location card x elapsed months)
-Kythorn 1493 → Hammer 1495 ≈ 19 months at designed band.
-- 100/mo x 19 = 1,900 frames
-- 150/mo x 19 = 2,850 frames
-At contract 4,000/frame: 7.6M … 11.4M implied billings.
-Location-card full-scale money 6.44M/mo x 19 is 122.36M — that uses the other P&L and is not mixed into the 4,000 model.
-These are capacity x time, not invoice rows.
+Hell iron: Zariel provides.
 
-## Network vs 5,000 tranche
-If Waterdeep mid-band 125/mo + Neverwinter 12 = 137/mo against 208 required. Still short without Forgedeep or the high end plus overtime.
-If high 150 + 12 = 162. Short 46.
+4,000 is NOT the invoice. Neverwinter 48,000 and priority 21,680,000 are profit-line totals.
 
-## Two P&Ls left on the pages
-- Registry: 150 x 4,000 = 600,000 / 95,900 / 504,100
-- Location: 6,440,000 / ~85,000 / ~4,725,000
-Not collapsed.
+## First tranche if invoiced at sale price
+- 5,000 × 30,000 = 150,000,000
+- 21 × 100,000 = 2,100,000
+- Sale total 152,100,000
+- Profit total 21,680,000 (the number that was labeled revenue)
+
+## Neverwinter month (12 Legionnaire)
+- Sale 360,000
+- If cost 6,000 each = 72,000 out; keep 288,000
+- Books on the page instead: 48,000 in / 20,000 out / 28,000 keep (profit booked as revenue; costs not 12 × 6,000)
+
+## 6,440,000 / month
+208 × 30,000 + 2 × 100,000 = 6,440,000. Network sale at required pace, not Waterdeep alone.
+
+## Second catalog (Contract registry Patterns table)
+Standard sale 150,000 cost 43,000. Major 400,000 min cost 95,000. Elite 200,000+. Unreconciled with 30,000 sheet.
+
+## Plant status (unchanged)
+Waterdeep producing since Kythorn 1493. Designed 100-150/mo. Owner Arik household. Clock Hammer 1495. Forgedeep is Year 2 hall, not the live line.
