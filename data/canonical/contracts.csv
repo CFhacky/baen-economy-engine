@@ -1,0 +1,2 @@
+contract_id,display_name,source_url,counterparty,owner_actor_id,status,sale_legionnaire,sale_solar,keep_legionnaire,keep_solar,first_pile_legionnaire,first_pile_solar,invoice_first_pile,keep_first_pile,monthly_revenue_property,notes,state_origin
+ctr:zariel-line-a,Zariel Warborn Contract,https://app.notion.com/34ce821484b081febf14f062ef3cb91b,Zariel,actor:household:imperial-arik,Operational,30000,100000,4000,80000,5000,21,152100000,21680000,360000,Line A only. Line B prestige patterns off this row. Monthly Revenue property is Neverwinter invoices not network 6.44M.,SOURCE
