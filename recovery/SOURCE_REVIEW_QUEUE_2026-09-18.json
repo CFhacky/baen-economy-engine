@@ -27,8 +27,8 @@
     "SUPERSEDED": 220,
     "MISSING_DATA": 4,
     "UNREVIEWED": 958,
-    "ECONOMIC_CONTEXT": 32,
-    "NON_ECONOMIC": 30,
+    "ECONOMIC_CONTEXT": 33,
+    "NON_ECONOMIC": 29,
     "HISTORICAL_ONLY": 3
   },
   "completion_rule": "Every row must have a body_review_status of REVIEWED or NO_BODY_NOT_APPLICABLE, a non-null review_disposition, and driver_owners for ECONOMIC_INPUT dispositions.",
@@ -17189,14 +17189,14 @@
       "body_review_status": "REVIEWED",
       "body_revision": "2026-06-07T14:58:20.676Z",
       "body_hash": "8bca05464a3ca67176ad22113a41efc38b128a1e62184e96ce08ef1b23b06553",
-      "review_disposition": "NON_ECONOMIC",
+      "review_disposition": "ECONOMIC_CONTEXT",
       "economic_domains": [
         "contracts_orders_obligations_threads"
       ],
       "driver_owners": [],
       "review_notes": [
         "Full read-only body fetch; truncated=false; unknown_block_count=0.",
-        "No current economy-engine input identified from the reviewed body."
+        "Active trafficking pipeline has trade-route / illicit-demand relevance but no quantified current engine input; retained as ECONOMIC_CONTEXT."
       ]
     },
     {
