@@ -1,0 +1,216 @@
+{
+  "schema": "tnp.economy.faction-body-ingest/1",
+  "batch": "F2",
+  "captured_at": "2026-09-18",
+  "target": 16,
+  "reviewed": 16,
+  "failed": 0,
+  "records": [
+    {
+      "source_id": "34ce8214-84b0-814d-853b-cfc46b2a0d36",
+      "title": "Al-Rashid Clan",
+      "revision": "2026-04-24T18:24:01.674Z",
+      "body_hash": "49abe19edc6ef418096de5e8b5eed5ff0e2b956f06bbf9e84a27de345a802887",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes"
+      ]
+    },
+    {
+      "source_id": "34ce8214-84b0-815b-beb3-e3673d49d14b",
+      "title": "Shade Remnant",
+      "revision": "2026-07-30T01:06:44.786Z",
+      "body_hash": "5f1f29746e87a6440c116ed5b1a736241f47b2d182226c0df0eb92099bfdaae5",
+      "disposition": "CONFLICT",
+      "semantic_status": "CONFLICT",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-8199-afdb-e5a9fa617158",
+      "title": "House Amaranthe",
+      "revision": "2026-04-24T18:24:01.674Z",
+      "body_hash": "b9ae544f3b3bc589141177a34432b57598b4ec517db05846f85f616e95f514d0",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-819d-920a-fb6683f4e988",
+      "title": "The Thayan Delegation — Red Wizards of Thay",
+      "revision": "2026-04-24T14:25:20.282Z",
+      "body_hash": "b2f9ef471440cdd457d380872eec4c221b6d527d89efa6a44e45b84eccc5a664",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "labor_supply"
+      ]
+    },
+    {
+      "source_id": "34ce8214-84b0-81a4-bd09-f7f074b83cd2",
+      "title": "The Argent Tide (Silver-Eyed Faction)",
+      "revision": "2026-04-24T16:27:43.904Z",
+      "body_hash": "9c720357482f7f5b938a2b9a8f6d494f52e5bce51b6aeeec891519007c3aa325",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81a7-9506-ffca52327874",
+      "title": "Purist Assassination Cell",
+      "revision": "2026-04-24T18:24:01.674Z",
+      "body_hash": "84533366e151566775bbe546be92f173ab7a63c7f78be4cc559976068de489d5",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "labor_supply",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "34ce8214-84b0-81ac-ab5e-ce56184c8614",
+      "title": "Al-Saif Clan",
+      "revision": "2026-04-24T18:24:01.674Z",
+      "body_hash": "197dff2a3f9d66fdcd1be582e37158a5f51feeb17cf7b12ffe57da7a651bfec6",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes"
+      ]
+    },
+    {
+      "source_id": "34ce8214-84b0-81ad-8efe-c4119b8d50b3",
+      "title": "Angel Wing Griffon Corps",
+      "revision": "2026-06-21T17:59:14.566Z",
+      "body_hash": "3e5ac568802941da461830683c34532391774706ab4ae2d26d79ab42a89baed2",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81b0-a14b-c768b5efbcd7",
+      "title": "Order of the Storm's Edge (Emperor's Talons)",
+      "revision": "2026-09-09T22:08:35.906Z",
+      "body_hash": "34a93f3b01251afb502eeb29c407e6bb6f48d5bd621bb6a4e6419e6ad7a0873a",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81d8-97ee-dbe2fb005457",
+      "title": "The Zhentarim",
+      "revision": "2026-04-24T14:25:20.282Z",
+      "body_hash": "2c4f47a1dc656fa66458ea3f241928f9fae6a1fcda63e0c897f51b2d62f4d132",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81ed-8658-d74dbf3f7539",
+      "title": "Cult of the Dragon — Eastern Cells",
+      "revision": "2026-04-24T14:25:20.282Z",
+      "body_hash": "74456692a08ed9feca91524467182a85ab5772bd92be8e4d71b06c1360464af2",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "labor_supply"
+      ]
+    },
+    {
+      "source_id": "34ce8214-84b0-81f1-b228-e214adb50c0b",
+      "title": "Bloodaxe Halfling Scout-Sniper Section",
+      "revision": "2026-04-24T18:24:01.674Z",
+      "body_hash": "2e1c9ac0e47b09f9127e69fe2838e2a5d89e298e7f7be5edb8ed69bbdd524444",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes"
+      ]
+    },
+    {
+      "source_id": "34ce8214-84b0-81f2-8cd4-c990f5b90e97",
+      "title": "Margaster Asmodean Cell",
+      "revision": "2026-04-24T18:24:01.674Z",
+      "body_hash": "12b3e6d2815bf09b0e72773a1815a1f08522bd2dcf6e209c6f43e4a44b2c67b1",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes"
+      ]
+    },
+    {
+      "source_id": "368e8214-84b0-8117-9096-d8c6a32bd357",
+      "title": "The Elturel Cohort",
+      "revision": "2026-08-03T18:08:02.504Z",
+      "body_hash": "918e1a02bac3a230ef041dadd3459b2ec3d1ce1f86da4ecd2b530a3a049502f8",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "population"
+      ]
+    },
+    {
+      "source_id": "36ae8214-84b0-8105-b235-e03f513232a8",
+      "title": "The Sunbroken Lances",
+      "revision": "2026-05-24T15:24:38.489Z",
+      "body_hash": "42c0d97aeecde529f8417a85a75428460063340e7eff03fbf87a90cd23359474",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes"
+      ]
+    },
+    {
+      "source_id": "36ae8214-84b0-8113-8a6c-f90a3b8207f7",
+      "title": "The Oak Father's Circle of the Delimbiyr",
+      "revision": "2026-05-24T11:19:26.322Z",
+      "body_hash": "4a9660dec711faea01ca13a62c951948b463b7574a3e4055f67dc96d24298dc9",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes"
+      ]
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 253,
+      "FUTURE": 20,
+      "CONFLICT": 15,
+      "SUPERSEDED": 218,
+      "MISSING_DATA": 4,
+      "UNKNOWN": 1107,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 510,
+      "UNMEASURED": 1110
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 253,
+      "FUTURE_ONLY": 20,
+      "CONFLICT": 13,
+      "SUPERSEDED": 217,
+      "MISSING_DATA": 4,
+      "UNREVIEWED": 1110,
+      "ECONOMIC_CONTEXT": 3
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}
