@@ -7,28 +7,28 @@
   "source_execution_snapshot_hash": "67d8e69b9e883d40b652a0b0a71f59883e205bc07445daa78de76279c0538160",
   "retained_core_records": 1620,
   "semantic_status_counts": {
-    "SOURCE_MAPPED": 320,
+    "SOURCE_MAPPED": 327,
     "FUTURE": 47,
     "CONFLICT": 15,
     "SUPERSEDED": 220,
     "MISSING_DATA": 4,
-    "UNKNOWN": 948,
+    "UNKNOWN": 940,
     "CONTEXT_ONLY": 62,
-    "HISTORICAL": 4
+    "HISTORICAL": 5
   },
   "body_review_status_counts": {
-    "REVIEWED": 670,
-    "UNMEASURED": 950
+    "REVIEWED": 678,
+    "UNMEASURED": 942
   },
   "review_disposition_counts": {
-    "ECONOMIC_INPUT": 320,
+    "ECONOMIC_INPUT": 327,
     "FUTURE_ONLY": 47,
     "CONFLICT": 13,
     "SUPERSEDED": 220,
     "MISSING_DATA": 4,
-    "UNREVIEWED": 950,
+    "UNREVIEWED": 942,
     "ECONOMIC_CONTEXT": 33,
-    "HISTORICAL_ONLY": 4,
+    "HISTORICAL_ONLY": 5,
     "NON_ECONOMIC": 29
   },
   "completion_rule": "Every row must have a body_review_status of REVIEWED or NO_BODY_NOT_APPLICABLE, a non-null review_disposition, and driver_owners for ECONOMIC_INPUT dispositions.",
@@ -15784,14 +15784,19 @@
       "source_url": "https://app.notion.com/32ae821484b08143a1f9f839721cd4ae",
       "census_hash": "589ea4aed6d31396",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "HISTORICAL",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T18:13:36.569Z",
+      "body_hash": "f3e772e968735b2760db173ab97153e3b89f70b20840a2b31c5c9e106848264a",
+      "review_disposition": "HISTORICAL_ONLY",
+      "economic_domains": [
+        "shocks_shortages_threats"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Resolved threat retained as historical provenance."
+      ]
     },
     {
       "stable_source_id": "notion:page:32ae8214-84b0-81c5-8236-fd78ee7d902e",
@@ -15801,14 +15806,26 @@
       "source_url": "https://app.notion.com/32ae821484b081c58236fd78ee7d902e",
       "census_hash": "0d9e61f2f97929d2",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T18:13:02.890Z",
+      "body_hash": "eb688eec3d430640ef938a318ac3457cf97e1e1c39468f588331db341c4eab8a",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "shocks_shortages_threats"
+      ],
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "population",
+        "labor_supply",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Current shock/shortage/threat routed to exogenous-shock processing and affected economic drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:32ae8214-84b0-81d4-ad7c-cbfcc831cd48",
@@ -15818,14 +15835,25 @@
       "source_url": "https://app.notion.com/32ae821484b081d4ad7ccbfcc831cd48",
       "census_hash": "e58d6cd0bc723fc2",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T18:13:30.604Z",
+      "body_hash": "7d7e8fcf6e4127e40f3101ca63e9351df6855bd062dfdd74c609dbfc99fbaae3",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "shocks_shortages_threats"
+      ],
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "food_supply",
+        "labor_supply",
+        "industrial_production"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Current shock/shortage/threat routed to exogenous-shock processing and affected economic drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:32ce8214-84b0-8163-aaa8-d02ba6908824",
@@ -15835,14 +15863,23 @@
       "source_url": "https://app.notion.com/32ce821484b08163aaa8d02ba6908824",
       "census_hash": "78d4ae9252cded8b",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T18:11:58.175Z",
+      "body_hash": "bb918d1384f8f4f8f4dd16247964f8e556083772e8b611c73bb3b2c8c6ebbc15",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "shocks_shortages_threats"
+      ],
+      "driver_owners": [
+        "exogenous_shocks",
+        "food_supply",
+        "population"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Current shock/shortage/threat routed to exogenous-shock processing and affected economic drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:32ce8214-84b0-8173-92e5-ff75c8103a5b",
@@ -15852,14 +15889,26 @@
       "source_url": "https://app.notion.com/32ce821484b0817392e5ff75c8103a5b",
       "census_hash": "9d1b399375a41b82",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T18:13:10.602Z",
+      "body_hash": "029e58e04f0d19aa995a70db64ee0c5a3fb8c9a8b08dd99df211b30c3950c3ab",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "shocks_shortages_threats"
+      ],
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "population",
+        "labor_supply",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Current shock/shortage/threat routed to exogenous-shock processing and affected economic drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:32ce8214-84b0-81c0-a3f8-e0d6d682a29d",
@@ -15869,14 +15918,25 @@
       "source_url": "https://app.notion.com/32ce821484b081c0a3f8e0d6d682a29d",
       "census_hash": "37df8d0449c6f574",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T18:12:04.361Z",
+      "body_hash": "0d36372b7631ab3f03570f85c0616106ba3201ca35326712d9a06e3d55ccf78d",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "shocks_shortages_threats"
+      ],
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "population",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Current shock/shortage/threat routed to exogenous-shock processing and affected economic drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:32ce8214-84b0-81cb-ba5c-dfa5658e8d83",
@@ -15886,14 +15946,22 @@
       "source_url": "https://app.notion.com/32ce821484b081cbba5cdfa5658e8d83",
       "census_hash": "efabf02c5263973f",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T18:12:10.141Z",
+      "body_hash": "ece35c98385d56a396a78a1aa1772a30fb5b94c1891c4ce2fcec5a3da77754c0",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "shocks_shortages_threats"
+      ],
+      "driver_owners": [
+        "exogenous_shocks",
+        "industrial_production"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Current shock/shortage/threat routed to exogenous-shock processing and affected economic drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:34ce8214-84b0-810e-befb-d63cc496acd4",
@@ -15903,14 +15971,22 @@
       "source_url": "https://app.notion.com/34ce821484b0810ebefbd63cc496acd4",
       "census_hash": "347bd278c1ce22b5",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-04-24T14:01:26.362Z",
+      "body_hash": "e2f244797ca4f4eda7ff85b0aa156874bcb6300c832e48ae0e5736f1d00e6b40",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "shocks_shortages_threats"
+      ],
+      "driver_owners": [
+        "exogenous_shocks",
+        "industrial_production"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Current shock/shortage/threat routed to exogenous-shock processing and affected economic drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:34ce8214-84b0-8157-9c86-e3451061fe94",
