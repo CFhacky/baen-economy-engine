@@ -213,7 +213,8 @@
   "armory": "230,000 gp value retained internal: 35,000 raw materials + 120,000 magical items + 75,000+ knowledge/documents. Not booked anywhere as an asset.",
   "maintenance_backlog": "SE corner tower at 40% structural integrity, 25,000 gp reconstruction estimate, 4 months. Full system overhaul recommended at 15,000 gp/year. Neither is booked.",
   "strategic_math": "Body argues the castle displaces a static garrison chain of ~5,000 troops across 10 forts, equivalent to ~50,000 gp/month in salaries \u2014 'pays for itself within 2-3 months'.",
-  "diplomatic": "Skyreach is the credentialing venue for the first permanent Kara-Tur trade ambassador on Continental soil; expected first ambassador Tian Renji, then relocating to Forgedeep."
+  "diplomatic": "Skyreach is the credentialing venue for the first permanent Kara-Tur trade ambassador on Continental soil; expected first ambassador Tian Renji, then relocating to Forgedeep.",
+  "double_count": "See fac:castle-ops \u2014 same fortification, both rows carry 5,200 gp/mo."
  },
  "fac:w-limestone": {
   "numbers": "12,000 tons/month \u2014 largest quarry by tonnage. 25 staff, 6,000/mo, 20% margin, 15,000 capital, ROI 96%. Feeds road maintenance aggregate.",
@@ -269,5 +270,322 @@
   "workforce_35": "1 foreman, 12 experienced miners, 15 labourers, 5 Bloodaxe security rotation, 2 geologist/surveyors. Zero external revenue by design, 3,500/mo cost.",
   "SECRET": "Renna Galtspur cannot read. She runs the site on verbal reporting, notched sticks and knotted cords; the geologist writes reports and she reviews them verbally. Named vulnerability: she cannot verify written orders or contracts, so a forged authorisation to redirect ore shipments costs her a day in verbal confirmation.",
   "unexploited": "Eastern gallery holds unidentified blue-green crystals \u2014 possibly the rare earth deposits the surveys mention. Untouched. Rare earths and unspecified strategic minerals are noted but not exploited."
+ },
+ "fac:castle-ops": {
+  "LIKELY_DOUBLE_COUNT": "Castle Operations describes itself as the garrison, maintenance and power management of 'the empire's primary fortification (Skyreach Castle, claimed during the Storm King's Castle session)'. fac:skyreach carries 28 employees at 5,200 gp/mo and fac:castle-ops carries 80 employees at 5,200 gp/mo. Same castle, same cost figure, two registry rows. Either 5,200 is booked twice or the two rows split crew vs garrison with a duplicated cost box. Flag as a suspected double count \u2014 5,200/mo and up to 108 heads.",
+  "cost_5200": "garrison wages 3,200 + food and provisions 800 + power management 500 + equipment maintenance 400 + misc 300.",
+  "workforce_80": "1 castle commander, 5 officers, 25 veteran soldiers, 30 regular soldiers, 12 support (cooks, quartermasters, stable hands), 7 power/maintenance technicians. All Bloodaxe Legion.",
+  "STALE_LINE": "Body says the 80 are 'a subset of the broader Bloodaxe Legion (50+ veterans total under Korgan/Sarah)'. 50+ total is impossible against the ruled 10,000 and against the Legion page's own 20 cohorts. This is a fossil from an early draft \u2014 flag as stale, do not reconcile.",
+  "SECRET": "Sergeant Haldric Orm cannot read. Twenty-three years of concealment through auditory eidetic memory, symbol-marked watch rosters and 'I think better when someone reads it to me'. Named vulnerability: a forged directive with Korgan's seal would pass his inspection if the verbal summary sounded correct.",
+  "SYSTEMIC": "Haldric is the SECOND illiterate site commander found (Renna Galtspur at Star Metal Hills is the first), and both pages name the same exploit \u2014 forged written orders. Two of the empire's strategic sites share one attack surface."
+ },
+ "fac:veil": {
+  "employees_0_explained": "Employee count is CLASSIFIED, hence 0 in the registry. Revenue is 'strategic value only' by design, not a hole.",
+  "CASSIEN_DEAD": "Cassien, Drift Architect and Social Warfare Specialist, KILLED Eleint 1494 DR. The Drift Architect position was closed permanently and the capability absorbed structurally into the Veil rather than refilled. Virelle Saan and Morna Thresher now run direct-social under Lirien. Athkatla network restoration at ~60%.",
+  "lirien_absent": "Director is currently between dimensions with the party; operations continue on established protocols but strategic direction is degraded.",
+  "bottleneck": "One of three HIGH-risk dependencies alongside Arterial Roads and NCF. No redundant system.",
+  "operatives": "THORNWOLF / Sarangerel (Operation Lacquer Road, Kara-Tur urushi; Garden Keeper counter-intel). WHISPER / Corvan Ashford (mentor to TRUE, Shoon recon). TRUE / Maeve Byrne (under assessment, Athkatla). Virelle Saan and Morna Thresher (former Drift). Named Mist: Tavia Merrow, Calder Darrow.",
+  "open_thread": "Mistress Cordelia Vance, Royal Spymaster of Tethyr and Aldric's knowing agent, is cousin to Aurelian Vance, a Veil involuntary asset. LIRIEN DOES NOT YET KNOW her operative has a cousin running intelligence for the power that orchestrated the Crusade.",
+  "crusade_losses": "Two operatives lost in the 1494 Crusade: 'Whisper' (voice-stealer who could mimic 47 people; all 47 voices died with her) and 'Silk' (sun elf, 12 years, Lirien's mentor, killed by mundane crossbow ambush). Lirien now carries Silk's working knife under her left sleeve."
+ },
+ "fac:dock-security": {
+  "numbers": "200 reformed thieves \u2014 former Xanathar Guild remnants (60 absorbed peacefully), Shadow Thieves muscle, independents. ~54,750 gp/year, 50% margin, 274% ROI on 10,000 capital. 60% crime reduction in coverage areas.",
+  "ceo": "Ossian the Mimir, former Shadow Thieves guildmaster, a soul in a floating skull construct, runs the organisation that replaced his old one. Peri holds strategic oversight.",
+  "intelligence": "200 pairs of eyes in the Dock Ward feeding the Information Brokerage. Model: insurance policies replacing protection rackets \u2014 guaranteed compensation for losses under protection."
+ },
+ "fac:shoreline": {
+  "workforce_15": "1 project lead under Kalnar, 3 marine engineers, 6 skilled masons, 3 divers/underwater workers, 2 administrative. 5,417/mo at 40% margin, 18,000 capital, ROI 144%. Near-monopoly on coastal construction in the Neverwinter region; demand rises with the bathhouse network and the Hunding Canal."
+ },
+ "fac:venetian-bay": {
+  "numbers": "25 premium waterfront units, ~100 gp/month per unit \u2014 double the Dock District average. 5 staff, 2,500/mo, 60% margin (highest in real estate), ROI 30% (lowest, heavy upfront build). Fully leased. NOTE: the Hammer 1496 portfolio page carries 6,440/mo for the same 25 units after the 1495 rent firming \u2014 this row is the earlier vintage."
+ },
+ "fac:canal-housing": {
+  "numbers": "45 Venetian-style units, ~74 gp/month per unit (higher than Neverwinter on BG market pricing), 8 staff, 3,333/mo, 40% margin, 30,000 capital, ROI 53%. Portfolio page carries 3,863/mo at Hammer 1496.",
+  "character": "Model community \u2014 the one place in Baldur's Gate where the Baen vision is fully realised. Visitors come to look at it."
+ },
+ "fac:bg-aqua": {
+  "COMPLICATION_LIVE": "Environmental issue: canal water quality is depressing yields at ALL THREE sites. The fix is straightforward \u2014 deploy the empire's own hexagonal filtration \u2014 but the money and attention have not been allocated. Page notes the irony that the whole water empire was built on filtration technology.",
+  "SECRET": "Corvin Seastrand is SKIMMING. 2-3% of fish harvest redirected to a nephew's market stall, eighteen months running, ~7,000 gp total. Below audit-flag threshold at current volume \u2014 but the page states he would be caught the moment production scales and Vara's audit expansion tightens accounting, which it inevitably will. The nephew is implicated and BG aquaculture is disrupted during any investigation."
+ },
+ "fac:lustrous-blade": {
+  "CITY_CONFLICT": "Registry City says Waterdeep and the body title says 'Magical Goods Brokerage, Waterdeep' and calls it 'the empire's first footprint in Waterdeep (established 1493)' \u2014 but the registry Notes field says 'Luskan location', and the NCF Luskan branch page lists The Lustrous Blade among its LUSKAN subsidiaries at the same 8 staff / 3,750 gp. Two pages place the same shop in two cities.",
+  "SECRET": "Velanna Moonsedge is skimming repaired magical items. Items she judges 'too damaged to sell' get repaired in her private workshop and sold through a Trades Ward contact, ~500 gp/month, building a nest egg to leave. Named trigger: an item she sold privately turns up in an NCF audit of magical goods inventory and the provenance trail leads back to her workshop.",
+  "loyalty": "Explicitly loyal to her dead mentor's memory \u2014 not to Arik, not to NCF. She runs the shop because it was his life's work."
+ },
+ "fac:vault-construction": {
+  "workforce_12": "1 senior engineer, 4 specialist masons, 2 ward installers, 1 locksmith/mechanism specialist, 3 labourers, 1 administrative. 3,750/mo, 40% margin, 10,000 capital, ROI 180%.",
+  "moat": "Dwarven-influenced engineering from Gauntlgrym knowledge transfer + magical warding + conventional fortification. Every new NCF branch needs a vault; every wealthy client needs secure storage."
+ },
+ "fac:green-vein": {
+  "BOUNDARY": "Registry Status Operational, Date Operational Marpenoth 1495 \u2014 but the whole page is stamped Hammer 1496 DR and the completion was rolled forward 2026-06-12. The 1,500 gp/mo toll figure is a Hammer 1496 number.",
+  "cormyr_terms": "Crown charter on Cormyr's terms: Cormyrean segment is a royal road under Cormyrean law, Crown takes ONE-FIFTH of tolls on Cormyrean territory, Purple Dragon inspection rights exercised irregularly and pointedly.",
+  "CRYSTAL_GAP": "Construction Ambiguity Doctrine applied \u2014 the Cormyrean miles were laid CLEAN, no crystal-infused mortar, because of War Wizard scrutiny. Consequence: the empire's crystal sensory network ENDS AT THE CORMYREAN BORDER. The Veil's coverage gap east of the line is deliberate and known.",
+  "capital": "52,000 total, of which 20,000 through the 40% mark. Toll recovery horizon ~3 years.",
+  "live": "Cormaeril 'road wardenage' levies \u2014 SERIOUS, a House Cormaeril lord levying private tolls to test the charter's edges. Smuggling pattern \u2014 moderate, repeating false manifests, channel indicators point to Shadow Thieves-adjacent networks.",
+  "NAME_CONFLICT": "Body names 'Selah Thorne (NCF Suzail)' holding the branch. The registry NCF Suzail card names Dagny Ironfold as Branch Manager, and Selah Thorn runs Thorn & Silver Exchange in Luskan. Either a name collision or a stale attribution.",
+  "suzail_forward": "NCF Suzail revenue climbing off the 917 gp/mo floor to ~2,800 gp/mo at Hammer 1496, on a five-year path toward 50,000+. Another forward figure."
+ },
+ "fac:brickworks": {
+  "WAGE": "Annual wages 21,000 gp = 1,750/mo for 30 staff (1 foreman, 6 kiln operators, 10 molders, 5 clay processors, 5 transport/loading, 3 administrative). 75,000 bricks/month.",
+  "TWO_UNBOOKED_DIVISIONS": "The body carries two whole operations absent from the registry properties. (1) PRESSMARK DIVISION \u2014 manufactured engineered stone (technical name Compressite), 12 hydraulic presses at 200 blocks/day each, ~72,000 blocks/month, with a full product catalogue and per-unit costs from 0.3 gp (standard paver) to 5.0 gp (iron-reinforced long lintel). Binding agent is Crusite, an alchemical calcium-ite compound from the Gauntlgrym partnership \u2014 the proprietary secret. (2) STONEBEARER LOGISTICS \u2014 4 tracked haul trucks, 12 drivers on three shifts, 2 mechanics, 32,000 gp capital (trucks 18,000 + echo crystal cores 8,000 + Erata consciousness integrations 6,000).",
+  "UNDER_BOOKED": "Registry shows 30 employees and 12,000 capital. The body adds 14 more staff (12 drivers + 2 mechanics) and 32,000 more capital for the Stonebearer fleet alone. facilities.csv understates this entity substantially.",
+  "CLAY_HEADCOUNT_CONFLICT": "Brickworks body says the Clay Quarries run 25 extraction workers. The Clay Quarries registry card says 12. Two figures for the same workforce.",
+  "logistics_effect": "Stonebearer 30,000 lb payload vs 2,000 lb cart. 2,100-2,450 blocks/vehicle/day vs 92. One to two Stonebearers replace 26 carts. Press capacity is now the bottleneck, not transport \u2014 presses 13-16 would add a third more output with zero further transport investment. Eliminates 20+ ox carts and 40+ teamsters.",
+  "SECRET": "Bryndis Halfpenny drinks heavily after shift. Not yet impairing work, but 'the line is thinning' and staff cover for her on bad mornings. She is bound by NCF debt from a failed Secomber bakery and stays because she owes, not because she loves brick."
+ },
+ "fac:wd-trading": {
+  "numbers": "10 staff, 3,333/mo, 48% margin, 18,000 capital. Customs, licensing, cargo verification and commercial representation under a Merchant Syndicate guild licence.",
+  "SECRET_SEVERE": "Jorlan Hask, 23, youngest entity leader in the empire, HAS BEEN WRITING THINGS DOWN. Twelve months of private journal notes on inconsistencies in Arik's public narrative \u2014 tells that do not match the Neverwinter-entrepreneur cover. He has not put it together. The page states outright that someone reading the journal with the right context would be halfway to identifying Arik as a drow. Named crisis: the journal goes missing and nobody knows who took it \u2014 curious thief, competitor, Aldric agent, or a Veil operative on a routine sweep."
+ },
+ "fac:underground-reno": {
+  "workforce_10": "1 senior underground engineer, 4 experienced miners/builders, 3 labourers, 1 safety officer, 1 administrative. 3,500/mo, 40% margin, 8,000 capital, ROI 210%.",
+  "strategic": "The 'Underdark-adjacent' label is deliberate: this team can build Forgedeep's underground citadel, coordinate Gauntlgrym infrastructure, and construct concealed facilities (Veil safe houses, hidden passages). Arik's drow heritage gives him underground-architecture instincts he can pass down as engineering direction without exposing himself."
+ },
+ "fac:commercial-props": {
+  "nature": "An aggregated category, not a single property \u2014 scattered shops, offices and workshop spaces across Neverwinter, Luskan, Waterdeep and possibly elsewhere, leased to third parties. 5 property-management staff, 3,000/mo, 50% margin, 25,000 capital, ROI 72%. Low-effort passive income."
+ },
+ "fac:diplomatic": {
+  "not_a_business": "Explicitly not an entity \u2014 it is the empire's diplomatic and political operations BUDGET, registered so the cost is visible rather than buried in a revenue-breakdown document. Employees 0 and revenue 0 are correct by design.",
+  "VARIABLE_COST": "6,250 gp/month is an AVERAGE, and the page says the cost fluctuates significantly: a quiet month is ~3,000, a summit month 15,000+. facilities.csv carries it as a fixed figure.",
+  "covers": "Increased Veil protection after Shi'van's assassination attempt, diplomatic missions and receptions (Northern Alliance Summit, Elara's refugee integration, Cormyr contacts), diplomacy-linked intelligence, gift protocol, travel, hosting, emergency security."
+ },
+ "fac:dock-mixed": {
+  "numbers": "Phase 1 complete, Phase 2 underway. 8 staff, 2,000/mo, 35,000 capital, ROI 27% \u2014 low because Phase 2 investment is ongoing. Retail, workshop and office space extending the Dock District beyond pure housing."
+ },
+ "fac:hammer-smithy": {
+  "numbers": "15 staff (1 master smith, 4 journeymen, 5 apprentices, 3 support, 2 sales/admin), 2,917/mo = ~35,000/yr, 40% margin, 10,000 capital, ROI 140%.",
+  "role": "The empire's problem-solving forge \u2014 custom commissions nobody else can make. Distinct from Gauntlgrym Tools (precision/aluminium) and Warborn (military). 'The value isn't the revenue, it's the capability.'",
+  "SECRET": "Dalla Ironmantle is illiterate in Common (fluent in Dethek/Dwarvish) and hides it because admitting it feels like inadequacy in the surface world. THIRD illiterate site leader after Renna Galtspur and Haldric Orm.",
+  "apprentices": "Five on rotating two-year terms, selected by being handed a hammer and hot stock. In two years no apprentice has heard her say the word 'good'."
+ },
+ "fac:gg-settlement-superseded": {
+  "CONFIRMED_SUPERSEDED": "Page carries an explicit warning block: superseded older variant, canonical page is Guardian's Gate Ziggurat (348e8214-84b0-8103-b73b-f7df3fb8cec5), retained as a PROPERTY-SHELL with revenue/cost data only, do not edit, moved to bin during Batch 9 stale-page cleanup. My SUPERSEDED consolidation flag on emp:gg-settlement-superseded is correct and now sourced.",
+  "note": "Projected 5-10k/mo at target population. Depends on arterial road access for supply and population growth."
+ },
+ "fac:crownsite-trade": {
+  "SECRET_CONNECTS_A_LIVE_THREAD": "Tamsin Briarcleft files QUARTERLY REPORTS TO PATRIAR HOUSE OBERON \u2014 a favour to the family that gave him his first job, not hostility. This is almost certainly the source of the 'detailed operational knowledge' behind the Q3 1495 House Oberon-aligned zoning challenge against the canal district recorded on the Real Estate portfolio page. The leak and the legal attack are the same thread, and the page frames his dilemma: warn Baen or stay silent.",
+  "other_people": "Gareth Thornfield (networker \u2014 if he left the books would be fine but the network would collapse overnight; his old smuggling contacts want a favour moving something through the canal housing docks, testing whether the former smuggler truly converted). Victor Ashford runs security by the book, ex-Flaming Fist.",
+  "politics": "Ravenguard is transactional \u2014 wants arterial road completion delivered before granting further access."
+ },
+ "fac:ncf-wd": {
+  "CROSS_ARC_LEVERAGE": "Dorothea Varnilly gambles \u2014 private rooms above the Golden Cockatrice, Castle Ward, betting on commodity futures and shipping outcomes. Up 3,000 gp lifetime, so she thinks she is good at it; the page says she is lucky and the luck is finite. She leaves the branch early twice a tenday, and Vara's audit catching the time discrepancies is the named trigger. CRITICAL LINK: Transaction Ledger Day 570 Session 19 records Shi'van's side paying 460 gp to clear Dorothea Varnilly's gambling debt at the Winking Eye. The Institut/ESAMT therefore holds a quiet obligation over NCF Waterdeep's branch manager, across arcs.",
+  "renamed": "Previously 'Iselda Varn' in some documents, renamed to avoid collision with Iselda Vorn, a Zhentarim faction leader in the Dalelands. The empire-operations skill's 'Iselda's gambling surfaces' crisis hook is this person.",
+  "debt_bound": "She ran a Trades Ward lending firm for 22 years until a single 40,000 gp Gundwynd shipping default collapsed it. NCF bought her portfolio at eighteen cents on the gold and gave her the branch as settlement. She cannot leave, be poached, or negotiate from strength, and Nestra understands that perfectly. Three more clean years clears the debt.",
+  "compartmentalisation": "NCF Waterdeep runs TWO sites: the Trade Ward Primary (Dorothea's legitimate branch) and a Coins Ward Financial Center holding clandestine intelligence infrastructure that Dorothea does not know exists. Only Lirien and Arik see both halves. The registry reflects the visible side only.",
+  "growth": "2,750/mo now; projected 15,000-25,000/mo within 2-3 years as the Cerulean opens, the Warborn facility launches and Peri's operations formalise.",
+  "staff": "Helena Brightwater, Senior Loan Officer, co-developed the Enhanced SAMT trust structure with Shi'van. Jonas Creel, head of security, ex-city watch captain. Mireth Starweaver, Entertainment Coordinator \u2014 an unusual role for a bank, implying NCF Waterdeep does more client entertainment than other branches."
+ },
+ "fac:verification": {
+  "economics": "5,000 gp capital returning 22,884 gp/year in profit = 456% ROI, 65% margin \u2014 the best in the empire. Near-zero variable costs (labour, paper, ink), no inventory, no supply chain, reputation as the barrier to entry.",
+  "strategic": "Used to shield NCF operations against Captain interference in Luskan's political environment. 5 staff: 1 senior verifier, 3 verification clerks, 1 administrative."
+ },
+ "fac:thorn-silver": {
+  "WAGE": "Annual wages 18,000 gp = 1,500/mo for 10 staff.",
+  "LOAN_CONFIRMED": "Selah Thorn was acquired through an NCF buyout loan of 10,000 gp at 8%, still active \u2014 the same named loan on the NCF Neverwinter page. She is both client and employee, running the business she once owned. The page calls it 'the NCF model in miniature \u2014 financial control through lending relationships.'",
+  "products": "Currency conversion for Luskan merchant and shipping traffic plus short-term inventory loans at 14%."
+ },
+ "fac:dock-warehouse": {
+  "SECRET": "Donal Crask reports to a Waterdeep noble house \u2014 not for money, out of loyalty to a former navy colleague who works for them. He does not think of it as spying. The house is collecting commercial intelligence on ALL Dock Ward operations, not just Baen's. Named trigger: the house makes a commercial move on information that could only have come from inside the warehouse, and Lirien starts hunting the leak.",
+  "note": "Classified 'Secure Asset' in the Strategic Operations Ledger \u2014 likely includes concealed areas for Veil operations. 8 staff, 1,833/mo, 40% margin."
+ },
+ "fac:split-fountain": {
+  "SECRET": "Tinkle Brassworth is a JARLAXLE PASSIVE OBSERVER for TECHNICAL data. Her Lantanese gnomish engineering guild has financial ties to Bregan D'aerthe; she reports construction methods and material applications, not finances. Named crisis: a Baen engineering innovation appears in a Bregan D'aerthe project in Calimshan \u2014 identical methodology, copied not adapted \u2014 and the Veil traces it to Baldur's Gate.",
+  "JARLAXLE_PATTERN": "This is the THIRD Jarlaxle asset found in the page bodies: Elspeth Vane (geological, Treasury Quarries), Dagny Ironfold (financial, NCF Suzail), Tinkle Brassworth (technical, Baldur's Gate). Three domains, three cities, none of them knowing about the others \u2014 which is exactly the triangulation the empire-operations skill describes.",
+  "plaza": "Local politicians hold rallies at Split Fountain Plaza and the Baen dedication plaque means every speech happens under the Baen name \u2014 credit when things go well, blame when they do not. An unplanned civic stage."
+ },
+ "fac:arterial-township": {
+  "villages": "2 of 5 complete: Village 1 on Neverwinter-Luskan (~100 pop), Village 2 on Neverwinter-Gauntlgrym (~80 pop). Planned: Neverwinter-Waterdeep, Forgedeep connector, southern route. NOTE the Hammer 1496 portfolio page says ALL FIVE Gauntlgrym Road settlements are complete \u2014 a different and later count.",
+  "SECRET": "Osric Bramblewood leaks township activity as family gossip to a cousin in Secomber, a minor merchant's-guild functionary. Not malicious, not targeted \u2014 'the new road brought forty caravans this month' reaches a Secomber merchant who sells it to a competitor planning a RIVAL TOLL ROAD.",
+  "loyalty": "Loyal to Korgan specifically, not to Arik. Korgan hired him personally. He holds the township as long as Korgan's name is on the orders."
+ },
+ "fac:reservoir": {
+  "numbers": "8 staff, 1,667/mo, 22% margin, 8,000 capital, ROI 55%. Marginal scattered sites that do not justify dedicated management.",
+  "SECRET_ACTIVE_BLACKMAIL": "Gerta Millstone (shield dwarf, 179) ran a smuggling operation through Mirabar's sewers a century ago under a different name. An old contact has surfaced at a reservoir site \u2014 'Gerta Millstone. That's not your name.' SHE IS BEING BLACKMAILED NOW. The blackmailer wants a cut of the fish harvest, small at first and growing. The page states she can absorb it alone for a few months before it becomes visible to the empire's financial tracking. This is the only ACTIVE, already-triggered extortion found in the registry."
+ },
+ "fac:safe-harbor": {
+  "numbers": "8 staff, 1,500/mo, 40% margin, 9,000 capital. One of the original 1493 establishments. Doubles as an intelligence listening post and Veil safe house. The Hammer 1496 portfolio page carries 1,545/mo and 20 rooms with a 75/25 public-reserved split.",
+  "SECRET": "Wren Sable knows too much and drinks to cope \u2014 cheap wine alone in the kitchen after closing until the questions stop. She has pieced together more about the shadow operations than her level should allow. Named trigger: drunk, she mentions 'the people who come through room three' to the wrong person, and someone outside the network learns the inn is more than an inn."
+ },
+ "fac:ag-shelter": {
+  "numbers": "8 staff, 1,500/mo, 30% margin, 6,000 capital, ROI 90%. Climate-controlled growing spaces; technology demonstration worth more than the revenue. Year 10 scenarios: conservative 285,000/yr, moderate 2,850,000, aggressive 9,850,000.",
+  "SECRET": "Primrose Greenthistle is skimming greenhouse produce \u2014 surplus sold at farmer's markets under her own name rather than through Baen channels, 200-300 gp/month unreported. She rationalises it as 'the surplus would spoil anyway'. Named trigger: a customer recognises Baen-branded tomato varieties on sale under her name and reports it to the Trading Office.",
+  "tech": "Veldrin's light-channelling crystals produced an unanticipated effect \u2014 third greenhouse ran 20% above expected yield and the tomatoes now grow year-round."
+ },
+ "fac:snowfall": {
+  "FULLY_RESOLVED_FORWARD": "Everything about this entity is mechanically resolved forward without advancing the live clock. Live state at Day 7 Hammer 1495 is Planning, 0 staff, 0/0 \u2014 which is correct. Formation begins 1 Alturiak 1495, opening 1 Eleint 1495.",
+  "finance_confirmed": "Veldrin 75% / NCF 25%. 30,000 gp staged construction and working-capital facility at 8% annual, secured on plant, inventory, receivables and maker IP, SEPARATE from the equity. Veldrin posts a 5,000 gp personal completion guarantee, held not spent, released after the first successful winter. Illustrative 60-month payment on a full draw is 608.29 gp/month. Dividends prohibited until payroll, dues, warranty reserves and debt service are funded.",
+  "forward_numbers": "Opening month: revenue 6,900, operating cost 6,250, operating profit 650, debt service 608.29, cash remainder 41.71 gp. Mature planning centre thereafter: 7,700 revenue / 4,600 cost / 608.29 debt service.",
+  "establishment_24": "3 management/commercial, 3 design and survey, 8 boiler and metal shop, 7 field installation, 3 test/inspection/service. Excludes Veldrin.",
+  "rolls": "Underwriting 3d6 = 17 vs Merchant-14, CRITICAL FAILURE \u2014 the unsecured founder-concentration proposal was rejected and approval survived only under the secured staged-draw structure. Seven-month Complex formation reached 105%. Month-two mixed-metal manifold wept before proof mark, quarantined, consumed 900 gp of a 3,500 gp contingency. Opening expense roll 18 vs Administration-17, automatic critical failure: receiving-and-inventory fraud, copper and bronze invoice weights exceeding stock received. NCF froze the supplier account and imposed dual-signature receiving and independent lot-weight checks. No dividend paid.",
+  "governance": "Veldrin may not sign both the architectural acceptance and Snowfall's final commissioning certificate. Technical certification stays independent of both Veldrin and NCF. Related-party dealings must be disclosed at recorded transfer prices."
+ },
+ "fac:ncf-suzail": {
+  "SECRET_MAJOR": "Dagny Ironfold is a BREGAN D'AERTHE ASSET, turned by Kimmuriel before she ever reached NCF. She found Jarlaxle's network laundering through dwarven trade houses while a junior accountant in the Galenas, talked, and was given the choice: work for us or the people you told have accidents.",
+  "MISSION_SHIFTED": "March 2026 ruling: her original mission was passive observation of NCF. That is now REDUNDANT because Jarlaxle holds a LEGITIMATE BOARD SEAT on the Northern Crown Banking Syndicate and has legal access to NCF financials. Her role has shifted to watching CORMYR \u2014 War Wizard monitoring patterns, Cormyrean government contracts, Purple Dragon military spending. The NCF position is the COVER, not the target.",
+  "OPEN_QUESTION": "Does Jarlaxle know she exists? Kimmuriel may be running her independently \u2014 the page frames this as either prudent contingency planning or the first hairline fracture in Bregan D'aerthe's command structure. Quarterly dead drop behind the cobbler's shop on Eastway.",
+  "irony": "She works for an empire secretly run by a drow, feeding an organisation secretly run by a different drow, and knows neither fact. She hates it, cannot escape it, and would take real protection if it were offered.",
+  "THREE_WAY_SURVEILLANCE": "The branch building hosts three overlapping intelligence operations that do not know about each other: the Veil monitoring Cormyr through legitimate business, Bregan D'aerthe monitoring Cormyr through Dagny, and War Wizards surveilling the building on top of both."
+ },
+ "fac:devil-academy": {
+  "UNBOOKED_CAPITAL": "2,000 anthropomorphization tokens at a stated 100,000 gp TOTAL PROGRAM COST. The registry Capital Invested field is EMPTY. A 100,000 gp deployed program is missing from facilities.csv.",
+  "faculty": "2,000 philosophical devils in seven self-organised schools: Empiricists 400, Ethicists 350, Dialecticians 300, Metaphysicians 300, Logicians 250, Aesthetes 200, Pragmatists 200. Senatorum Infernus graduates from the Silverymoon Exodus.",
+  "revenue": "Explicitly TBD \u2014 tuition, commissioned research, magical item creation and consultation are all under consideration. The 0 revenue is a genuine undecided, not a hole.",
+  "cover": "Neverwinter Academy of Natural Philosophy, at the Crystalline Chasm edge. Ten platforms over an 800m-wide, 1km-deep sealed chasm. Also 2,000 intelligence assets embedded in Neverwinter's academic community."
+ },
+ "fac:timber": {
+  "CRITICAL_SUPPLY_GAP": "The empire owns stone, clay, metal and aluminium but NO timber \u2014 the most consumed construction material by volume arrives entirely on the open market. Estimated current third-party spend 5,000-8,000 gp/month. The page calls it the single largest uncontrolled input cost in the empire.",
+  "TIMBER_PRICES": "Real prices per ton by forest, none of them in any canonical table: Neverwinter Wood construction hardwood 15-25 (ironwood 200+), Ardeep furniture-grade oak/elm 25-40, Kryptgarden bulk pine/fir 8-15 (shipbuilding 30-50), Lurkwood ancient growth 40-80, Dessarin cedar 20-35.",
+  "phase_plan": "Phase 1 Neverwinter Wood: 15,000 capital, 3,000/mo cost, 500 tons/month within 6 months, 30 staff, zero external revenue, 5,000+ internal savings. Phase 2 Ardeep: 50,000-80,000 capital, 800-1,200 t/mo premium, 35,000 revenue, 80 staff. Phase 3 Kryptgarden gated on Old Gnawbone. Phase 4 Dessarin river transport. Mature Year 5: 260 employees, 58,000 revenue, 36,000 cost, 25,000 internal savings \u2014 a top-ten revenue entity.",
+  "ANTAGONIST": "House Dassyr, Waterdeep Trades Ward. Marek Dassyr, 58, timber brokerage and wholesale, 40-50 employees, estimated 8,000-12,000 gp/month. He destroyed the Torsten family \u2014 Vara's family \u2014 with forged documents, bribed inspectors, arson, worker poaching and credit manipulation, no single step prosecutable. Key personnel: Orin Blackwell (security, ex-Flaming Fist, buyable), Tessara Vane (sales director, privately disgusted by the Torsten destruction, a potential Veil asset), Halden Dassyr (heir, 26, would overextend into Baen territory immediately if his father were removed).",
+  "VARA_FAMILY": "Vara is third of five. Oldest sibling runs a counting house in Baldur's Gate (Marek tracks him). Sibling 2 unknown \u2014 possibly debt-bonded, possibly dead. Siblings 4 and 5 are in DEBT BONDAGE in Waterdeep, legal under Waterdeep law, creditors possibly Dassyr-associated. Buying the bonds out is financially trivial for NCF; the question is quiet or loud. She has never asked Arik for help.",
+  "SECRET": "Sable Ashwick is not her real name. Twelve years ago she killed a Dassyr debt collector with a logging spike when he came for her nine-year-old brother, and has moved through logging camps under new names ever since. Her brother, now 21, lives in Red Larch as a cooper's apprentice. A Veil background check on a foreman promotion would surface the Waterdeep manslaughter warrant \u2014 and her hand axe may carry a Torsten family mark, which Vara would recognise on sight."
+ },
+ "fac:crown-eight": {
+  "FAR_FORWARD": "J\u00f6rmun-arc entity, Date Operational Marpenoth 1498 DR, Last Attended Uktar 1498 DR (Session 15). This is THREE YEARS past the Day 7 Hammer 1495 boundary and sits in facilities.csv unmarked.",
+  "cost_730": "garrison wages 400 + maintenance 200 + Water Warden 50 + Baen Factor 80. Revenue: caravan water fees 150-400 + Bedine grazing 50-100 + staging fees 80-200 = 280-700, midpoint 490. Currently running a 30-450 gp/month NET SHORTFALL; breaks even at Phase 3 with Diplomacy 5+.",
+  "CAPITAL_NOT_IN_GP": "Page flags it itself: 'Capital deployment is currently labor-and-magic denominated, not gp \u2014 flag for canonical gp-conversion on next financial review.' That is why Capital Invested reads 0.",
+  "tracks": "Security 6 (Khorzad co-opted +4, half-cohort garrison +2), Diplomacy 7 (Farouk baseline 3, Al-Saif marriage +3, Bedine blessings +2, Khorzad -1), Investment 1. Phase 1->2 gated on Investment reaching 4.",
+  "geography_ruled": "12 August 2026: the Crown occupies the unnamed three-pointed peak immediately south of Aerithae's Rest on the published Faerun map. Published lore confirms ONE underground spring and lake, not eight distinct springs \u2014 whether the campaign's eight mouths tap one aquifer or several is unresolved pending hydrological survey."
+ },
+ "fac:ssamt": {
+  "corpus": "12,000 gp liquid deposited by second bell Day 904, PLUS assignment of Scales & Secrets Trading Co. corridor receivables swept quarterly. Structuring fee 2,400 gp paid to Merileth Dawntracker. Counsel retained annually at the trust's own expense.",
+  "mandate": "May purchase Baen'und paper (Innovations participation, NRTC notes) \u2014 NON-VOTING, capped at 10% of any issue, house right of first refusal on divestment, Helena Brightwater's absolute discretion on timing and price.",
+  "succession": "Sealed-schedule beneficiary: 'the surviving partner of record of Scales & Secrets Trading Company'. Identity under notarial seal in the NCF deep vault, opened only on succession. No name appears on any instrument \u2014 her standing term is NO PAGE.",
+  "purpose": "Answers Skrix Copper-Scale's structural weakness (38% of gross across Zhent-controlled Moonsea wharves) \u2014 wealth the harbormasters cannot reach, growing inside Shi'van's banking orbit. 'Let the debt grow INTO the house instead of sitting in its cellar.'"
+ },
+ "fac:schola": {
+  "scale": "30 employees, 1,000 gp/mo operating cost, 0 revenue. Cost/head = 33 gp/mo, which is the whole operating box, not a wage line. No wage stated anywhere in the body.",
+  "location_conflict": "Property Notes: 'Main campus: Sword Mountains, north of Waterdeep, spur off arterial road, 3 miles into mountain valley. Neverwinter presence is a satellite/feeder campus only.' Body header: 'Location: Neverwinter'. Registry City = Multi-Region. The body header is stale against its own Notes.",
+  "leadership_hole": "Headmaster TBD - NPC NEEDED. Neglect Status = Delegated with no named delegate.",
+  "pipeline": "Tier 2 of 4: Orchard Chapel (basic) -> Schola Ducum (civic/admin) -> Collegium Montis Gladii (advanced) -> Devil Academy / Institut Baen'und (specialist). Feeder = Orchard Chapel. Nessa (Echo Stem Lead) enrolled.",
+  "engine_hook": "Explicitly wired to the GM Consequence Ledger apprenticeship pipeline: 'When entities suffer neglect or leadership vacancies, Schola output determines whether replacement candidates exist.' 30 students/yr is the replacement-rate cap on every vacancy in the registry. Not modelled in any canonical table.",
+  "booking": "Cost centre. 1,000/mo booked, revenue correctly 0."
+ },
+ "fac:collegium": {
+  "property_vs_body": "HARD CONTRADICTION. Properties: Employees 0, Monthly Cost 0, Notes 'Not yet operational - requires Schola Ducum to produce sufficient graduates.' Body (reconciled 29 May 2026): Waterdeep campus is OPERATIONAL with 48 students and six on-site instructors plus roving lecturers. The body's reconciliation note explicitly withdraws the Notes text as 'a crossed thread'.",
+  "reconciliation": "Canonical decision (chat 5a8cb12e): Collegium is a WATERDEEP institution, original campus complete and operational; the Neverwinter River District campus is a satellite of the same institution, not a separate school. Same entity as Locations page 332e8214-84b0-8121-82d7-e120098fb69b.",
+  "unbooked_headcount": "At least 6 on-site instructors + roving lecturers. employment.csv carries nothing. An operational 48-student campus at 0 gp/mo is a page hole, not a free school.",
+  "student_body": "48 students: 60% civic-funded (29), 25% private recommendation (12), 15% street-vetted Drift-sponsored open grants (7). The Drift sponsors 7 seats - an unpriced Drift outflow.",
+  "build": "Designed by Veldrin Snowfall pre-exile, completed under Kalnar Stonebrow. Veil anchor glyphs embedded in two foundation nodes.",
+  "leadership_hole": "Provost TBD - NPC NEEDED. An operational campus with no named head.",
+  "nw_satellite": "River District, 3-4 acre walled compound, Baen brick and pressmark (ties to Brickworks Pressmark division). 15-minute walk from Devil Academy with cross-registration. Under development, no capital figure."
+ },
+ "fac:arterial-crystal": {
+  "not_a_payroll": "Living state tracker, not a revenue or payroll entity. No employees, no revenue, no cost in properties. Correctly typed NOT_A_PAYROLL.",
+  "state": "RL 100 (Cascading, at ceiling). BAR 42 = (SAS 11 + TRM 11 + NDB 2) x NCM 1.75. ~423 active miles across 5 segments.",
+  "stale_clock": "Last Updated Kythorn 1494 DR. Monthly roll log runs Flamerule 1493 -> Mirtul 1494, with Kythorn 1494 marked TBD. Eight months of unrolled network months sit between the last logged roll and the Day-7 Hammer 1495 boundary.",
+  "ongoing_penalty": "Seliara Frostwind absent since Ches 1494: -2 to monthly roll, marked Ongoing. Three-month unsupervised Cascading since Mirtul 1494: fractal drift + Luskan node stress, marked UNADDRESSED. Combined -1 to -2 standing modifier and an audit that has never been run.",
+  "waterdeep_link": "NW -> Waterdeep corridor ~255 mi at ~85%, final stretch pending. Counts for TRM but NOT for NCM. Full connection: SAS 11->16, NCM 1.75->2.5, +15 RL - and fires an Instability roll because RL is already 100. This is the gate sitting under the Waterdeep plant's logistics.",
+  "pending_segments": "Waterdeep->Suzail (NCM ->3.0, +25 RL + Instability), Star Metal Hills (+1 TRM), Athenaeum node (NDB ->+4), Leilon Spur (+1 TRM, foundation laid, no crystal).",
+  "counterintel": "Five unconfirmed surveillance signatures riding the network, pullable by Seliara only on audit completion; Lirien cannot query directly. (A) courier pattern NW<->Luskan, timing matches a suspected Bregan D'aerthe asset, weekly. (B) stationary at an NCF location, irregular late-night movement toward Aldric territory, 2x/month. (C) no consistent cover role, NW->WD corridor. (D) two coordinated signatures on the Gauntlgrym spur - a team. (E) appears, vanishes 3+ weeks, reappears, NW hub + Luskan.",
+  "cross_ref": "Underground sibling added 2026-08-12: Deep Road Network / Deep Road Authority (business entity 3bbe821484b0815fac80dd1c4430327d). Survey began Alturiak 1495 DR, Phase 1 Gauntlgrym<->Mithral Hall ground-break Tarsakh 1495 - both AFTER the Day-7 Hammer 1495 boundary. NW<->Gauntlgrym is the intermodal junction."
+ },
+ "fac:crystal-gardens": {
+  "not_a_business": "Explicit in the body: 'The Gardens are not a revenue-generating property in the direct sense.' Community amenity in the New Harbor planned community, Neverwinter. Return arrives as adjacent real-estate appreciation, not as a cash line.",
+  "boundary_leak": "Last Updated 1498 DR - three years past the Day-7 Hammer 1495 boundary, sitting unmarked in the registry.",
+  "parent": "Baen Real Estate - Housing Portfolio. Same management chain as Dock District Housing and Premium Residences. 'Monthly revenue/cost figures not tracked separately; subsumed into the New Harbor community operating budget' - so the New Harbor operating budget is a cost pool that exists in prose and in no table.",
+  "leadership_hole": "No operator named. Body's own open questions ask who does groundskeeping and water-system maintenance.",
+  "tissage_link": "Bathhouse-grade filtration and crystal-enhanced thermal regulation - 'Institut de Tissage Arcanique's fingerprints, though not marketed as such'. Unpriced internal Tissage work.",
+  "booking": "Correct as a zero-revenue amenity. Should be typed NOT_A_PAYROLL / amenity, not left looking like a dead business."
+ },
+ "fac:crownsite-re": {
+  "boundary_leak": "Last Updated 1498 DR - three years past boundary.",
+  "no_revenue_figure": "Mixed-use property (ground-floor commercial, upper-floor residential) in the Baldur's Gate canal district. Lease renewals trending ~15% above last year's baseline. The body gives a growth RATE and no base: no rent roll, no monthly revenue, no unit count, no cost. Revenue 'flows up into the BG Real Estate sub-portfolio' - which is also unpriced.",
+  "leadership": "Tamsin Briarcleft - half-elf male, 30. Merchant-14, Diplomacy-13, Social Chameleon. Common/Elvish/Chondathan. Genuine believer; grew up without infrastructure in the BG lower city.",
+  "active_breach": "CONFIRMED and already weaponised. Tamsin reports quarterly to patriar House Oberon - a favour to his first employer, not hostile intent, LOW Veil detection difficulty, External Reporting category. House Oberon has used his detailed operational data to mount a ZONING CHALLENGE against Baen's canal district expansion. Nobody has told him it is a problem because nobody knows. Open question is whether he self-reports before Lirien catches him.",
+  "spillover": "Baen's presence is lifting property values within three blocks of its holdings - the empire's own defence against the zoning challenge.",
+  "parent": "Baen Real Estate - Baldur's Gate portfolio, upstream Vara Torsten. Siblings: Split Fountain, Canal Housing Redevelopment, BG aquaculture."
+ },
+ "fac:gold-lending": {
+  "status": "UNCONFIRMED - stays unbooked per handoff rule. Confirmed correct to leave out of the money tables.",
+  "stale_seed_warning": "Page carries its own STALE-SEED WARNING flagged 26 Jun 2026. The source design doc gold-lending-business.md uses RETIRED terminology: 'Treasury metals' / 'converting Treasury metals to legitimate income' is explicitly retired canon (see Mennarn's Folly 34ce821484b081debbfcc4e4aff3134d). NCF's actual capital backing is the SHIMMERDEEP CRADLE silver vein. 'Durevale reinforcements' is pre-canon design language, do not propagate.",
+  "dorn_resolved": "'Dwarven Treasury settlement' RESOLVED 26 Jun 2026: Dorn Ironlock's dwarven connection is to HOUSE IRONLEDGER (Dwarven Vaultkeepers, Gauntlgrym banking-clan relatives), one of the NCF Five Pillars. His Ironlock clan vault-construction tradition aligns with Ironledger's vault-management specialty.",
+  "leadership_conflict": "Source doc names Varrick Silverthorn as public face; this page lists Maren Ashford as Operations Director. Master NCF page and the NPC page both confirm VARRICK as Director and NESTRA DARKWIND as CEO. Unreconciled.",
+  "designed_only": "12 designed personnel (Ops Director, Security Chief, 3 assessment agents, 2 account managers, 2 security, 1 collections, 2 intelligence gatherers disguised as clerks). Employees field carries 12 - a DESIGN figure sitting in a live headcount column on an Unconfirmed row. employment.csv correctly types it UNCONFIRMED_DO_NOT_BOOK.",
+  "intel_function": "Designed as a dual-use asset: client financial data, which Luskan officials accept loans, shipping data, property records. The Northern Archive = comprehensive Luskan financial landscape records. The Crown Room = ultra-private high-value client space. Financial leverage over key Luskan figures is a stated design objective.",
+  "booking": "No change. Do not book."
+ },
+ "fac:lobster-king": {
+  "status": "UNCONFIRMED - stays unbooked. Correct.",
+  "phantom_number": "The Campaign Manager .tsx artifact carries 'Waterdeep Lobster Monopoly' at 36,500 gp/year (3,042/mo), 60% margin, 438% ROI. That artifact is the ONLY source. No project-knowledge file, revenue breakdown or session log carries it. This is exactly the class of number the handoff forbids booking.",
+  "ownership_unclear": "Parent Entity reads 'Peri Ops (allied, not owned)'. Body's own question 1 asks whether this is Baen-owned, a partnership, or an independent ally. Employees 0. Until ownership is ruled, no share of any revenue is attributable to Baen even if the 36,500 were confirmed.",
+  "npc": "The Lobster King - canal farm mogul, FORMER XANATHAR ENFORCER, controls the Waterdeep food supply chain, offering expansion to other cities. GURPS Aquaculture 18, Intimidation 14, Reaction +2. Trust level: business partnership. The Xanathar background is an open liability question on the page.",
+  "booking": "No change. Do not book."
+ },
+ "fac:wd-brokerage": {
+  "status": "UNCONFIRMED - stays unbooked. Correct.",
+  "phantom_number": "Campaign Manager .tsx only: 18,250 gp/year (1,521/mo), 65% margin, 237% ROI, parent Peri's Waterdeep operations, leadership Peri. Body states outright: 'No corresponding entry exists in any project knowledge file, revenue breakdown, or session log.'",
+  "scope_if_real": "Would sell COMMERCIAL intelligence (market conditions, shipping schedules, competitor activity) to merchants and nobles while sensitive intelligence stays in-house with the Veil. One or two people at that margin and volume.",
+  "disposition": "Body's own action required is binary: confirm and populate, or archive/delete the row. Neither has happened since Eleint 20 1494.",
+  "booking": "No change. Do not book."
+ },
+ "fac:maritime-planned": {
+  "status": "PLANNING, and the page says plainly it is a placeholder: 'This entity exists to make the gap visible, not to claim the gap is filled.' Zero across every money field, correctly.",
+  "the_gap": "The empire owns ZERO WATERCRAFT while holding NCF Luskan (port city), the Waterdeep Dock Ward warehouse + trading office + planned Warborn mega-facility, the Hunding Canal inland port at Forgedeep, and Dessarin Valley river potential. Every waterborne ton moves on someone else's ships at someone else's prices. Coastal shipping is the cheapest bulk transport available.",
+  "strategic_pressure": "Jarlaxle's Bregan D'aerthe is establishing legitimate shipping and trade in CALIMSHAN. The empire is building port infrastructure ahead of the fleet - acceptable short term, a vulnerability as volume grows. Cross-reads against the Jarlaxle board seat on the Northern Crown Banking Syndicate and the three passive observers: he is positioned on both the finance and the shipping side of a gap Baen has not closed.",
+  "phase_1_priced": "River barges are the cheapest entry: 6-8 barges at Torsten family scale, 2,000-4,000 gp per barge = 12,000-32,000 gp initial investment. Integrates with Northern Crown Timber Phase 4. This is a REAL, SOURCED capital number for an unmade decision - the only priced line on the page.",
+  "long_horizon": "Magnate's Eye 10-year projection: 500-2,000 wagons, 15-50 warehouses, 8-25 cargo vessels, revenue 2.5M-18M gp. Year 5+ target for the vessels. Far past the Day-7 Hammer 1495 boundary - projection, not state.",
+  "five_components": "1 Wagon manufacturing (immediate), 2 Warehousing network (partially exists), 3 Shipping lines (8-25 by Y5), 4 River barges, 5 Protected caravan services (partially exists via Bloodaxe).",
+  "booking": "Keep at zero. Record the 12,000-32,000 barge package as a priced-but-unauthorised capital option, not as capital invested."
+ },
+ "fac:nw-wood-canal": {
+  "status": "UNDER CONSTRUCTION. Date Operational: Year 3, projected ~1497-1498 DR - two to three years past the Day-7 Hammer 1495 boundary. Zero revenue is correct for the boundary.",
+  "spec": "Forgedeep-to-coast waterway through Neverwinter Wood. TEN Hunding-standard lock stations at 200 x 40 x 25 ft each. ~35-40 miles via the Seven Spires and Helm's Hold junction. Revenue model = transit tolls + barge traffic management. The connective spine of the Northern Sea Gate system.",
+  "leadership": "Lock-Master Dvalin Ferrin, Canal Operations Chief. Channel B internal promotion, Hunding-trained shield dwarf. Ten station lock-masters report to him. NO SECRET - explicitly the most safely-delegable entity in the whole project; over-invests in maintenance by temperament. The one clean leadership line in the Sea Gate cluster.",
+  "neglect_model": "Construction-phase neglect = schedule slip + cost overrun, NOT revenue loss. Construction metric is % complete / timeline, not gp.",
+  "veil": "Light coverage, lock stations only, Detection 5%. Priority targets: lock-gate sabotage, Uthgardt activity on the Wood segment, Zhentarim infiltration.",
+  "threats": "Uthgardt patrols and dryad/treant reactions in the Wood segment. ZHENTARIM SABOTAGE of lock stations - their overland routes are the canal's biggest casualty, so the motive is structural, not incidental. Heritage agitation reaching construction crews.",
+  "adjacency": "Warborn Engineering Campus - North River Site sits opposite Thundertree on the north bank. It may use the waystation as a controlled ferry/landing interface, but its process water, waste, ARTIFACT CONTAINMENT and command systems stay independent of the canal. Deliberate firebreak between the Warborn campus and canal infrastructure.",
+  "booking": "No money lines. Capital cost of ten locks is nowhere on the page - a hole. Keep at zero, mark as pre-boundary construction."
+ },
+ "fac:orchard-chapel": {
+  "not_owned": "PATRONAGE, NOT OWNERSHIP. Parent Entity reads 'Baen Empire - Patronage / Community Assets (not a commercial portfolio branch)'. 'Arik is sponsoring expansion; the chapel retains its own identity and authority.' No Baen equity. Should never carry a revenue line in the empire's books.",
+  "boundary_leak": "Last Updated 1498 DR - three years past boundary.",
+  "revenue": "Working orchard with daily harvest prepared for market delivery - 'modest agricultural revenue', explicitly 'not individually tracked in the consolidated business overview'. No figure exists. Page names this as a canon gap itself, along with dedicated city/township identification and full expansion scope.",
+  "four_functions": "(a) child welfare facility - dormitories, chore structure, acolytes in training; (b) working orchard; (c) community anchor - washing area, chapel grounds, orchard pathways; (d) OPERATIONAL ASSET - discreet meeting location for conversations that should not happen in Neverwinter proper.",
+  "pipeline_tier": "Tier 1 of the education chain: Orchard Chapel -> Schola Ducum -> Collegium -> Devil Academy / Institut. The empire's entire administrative replacement pipeline starts at an institution Baen does not own and cannot compel.",
+  "eilistraee_vector": "A known receiving point for House of Eilistraee communications. Arik met a Dawn Herald messenger here - the messenger knew to route to the chapel rather than Neverwinter. Session-canon, not worldbuilding: Arik has conducted on-site meetings and Brother Feldrin is voiced.",
+  "leadership": "Brother Feldrin, senior cleric, primary Baen contact. Measured, curious, unflappable. Walking the orchard paths with Arik discussing northeastern-barrier expansion; willing to accept Baen involvement in planning. Unnamed young acolytes serve as messengers and labor.",
+  "open": "What 'expansion near the northeastern barrier' means - physical site, operational scope, or inclusion in barrier-zone infrastructure - is not articulated. An unpriced commitment Arik has verbally entered.",
+  "booking": "Zero revenue is correct. Should be typed as a patronage asset, not a dormant business."
+ },
+ "fac:sea-gate-harbor": {
+  "status": "UNDER CONSTRUCTION. Operational Year 4, projected ~1498-1499 DR - three to four years past boundary. Zero revenue correct.",
+  "spec": "The empire's SOVEREIGN western ocean terminus. Commercial-military basin 800 x 400 ft, plus tower forts, chain boom, and breakwater arms. Functions: docking, customs, warehousing, cargo handling.",
+  "leadership_risk": "Captain Halvard Brine, Harbormaster - Channel A EXTERNAL RECRUIT from Luskan, with an ARCANE BROTHERHOOD history flagged as a Veil priority target. Harbor Pilot Wrenna Tidecaller guides the engineered approach. Both Halvard and Wrenna hold the ENGINEERED-GEOGRAPHY SECRET - two people outside the inner circle know the harbor's approach is manufactured.",
+  "single_point_of_failure": "'Seliara Frostwind is a single point of failure for crystal-network installation regardless of delegation.' Cross-reads hard against the Arterial Road Crystal Network page: Seliara has been ABSENT since Ches 1494, carrying a standing -2 monthly penalty and an unaddressed audit. The same missing operator gates both the existing network and the Sea Gate build.",
+  "neglect_model": "Construction neglect = 1 month schedule slip per month neglected + 5-10% cost overrun. Transitions to monthly-revenue tracking on commissioning.",
+  "veil": "Moderate building to Heavy by Year 4, Detection 8% -> 12%. Targets: smugglers, Nelanther agents, Halvard's Brotherhood past.",
+  "threat_timeline": "Moonshae raids Years 1-2 against undefended high-value materials. Waterdeep political/tariff pressure Years 3-6. Nelanther raid Year 7. And: 'Bregan D'aerthe quietly establishing a shipping interest if the harbor drifts (Jarlaxle's market-entry table).' Jarlaxle has a coded entry condition into the empire's own ocean terminus, keyed to neglect.",
+  "booking": "No money lines. No capital figure for an 800x400 ft fortified basin - a hole. Keep at zero, pre-boundary construction."
+ },
+ "fac:sea-gate-shipyard": {
+  "status": "PLANNING. Year 7-8 activation, projected ~1502-1503 DR - seven to eight years past the Day-7 Hammer 1495 boundary. The furthest-future entity in the registry. Neglect Status correctly N/A until activation.",
+  "function": "Vessel construction and repair - 'the industrial capability that turns the harbor from a port into a naval base.' Gated on Tier 3 defenses and the rock fort taking shape.",
+  "leadership_hole": "TBD. Year 7 external recruit via Recruitment Generator Channel A, sourced from Mintarn shipwrights or Northlander builders through Jarl Hrogar Stormborn - CONDITIONAL on his alliance holding. The staffing plan for a naval yard depends on a foreign alliance that may not survive seven years.",
+  "revenue_model": "Vessel output feeds the marine corps; harbor repair revenue on the commercial side. No figures. Nothing to book.",
+  "veil": "Deferred until activation, inherits the harbor's Heavy coverage. The Arcane Brotherhood's Year 5+ interest in the engineered geography is the standing pre-activation watch.",
+  "booking": "Zero across the board is correct. Flag as Y7 projection, not state."
+ },
+ "fac:seven-spires": {
+  "status": "UNDER CONSTRUCTION. Operational Year 4, ~1498-1499 DR - three to four years past boundary.",
+  "misfiled_sector": "Sector logged as Hospitality; the page states the true role is STRATEGIC/DOMESTIC retreat, 'not a commercial venture.' It will never earn hospitality revenue. Booking it as a hospitality business would be a category error.",
+  "assets": "Restored Phalorm retreat-fortress in Neverwinter Wood. Guest pavilions, cascade-and-bathhouse estate, managed demesne forest, and a ROOT TOWER CANAL LOCK - one of the ten Neverwinter Wood Canal locks sits on this estate, so it is simultaneously a retreat and canal infrastructure.",
+  "purpose": "'The empire's discreet venue for powerful guests and secret conversations.'",
+  "leadership_risk": "Castellan Mirewyn Ashlark - Channel A external hire, former Waterdeep great-house manager. 'She notices everything - recruit her as a Veil asset early, or risk her being turned.' An explicit, dated fork: the page tells you the window closes.",
+  "engineering_risk": "'Haunted throughout by the original Seven Spires bedrock-failure (settling-risk complications).' Geothermal pipeline and cascade systems add bespoke failure modes - rupture, miscalculation. The historical structure failed on this ground before.",
+  "veil": "Moderate, Detection 8%. Targets: guest security, Mirewyn's observations, foreign-delegation monitoring during retreats.",
+  "heritage": "The Seven Spires is the SYMBOLIC PHALORM SITE - ties into the Phalorm Heritage Agitation thread that also reaches the canal construction crews. Restoring it is a political act, not just a build.",
+  "booking": "No money lines. Keep at zero; retype away from commercial Hospitality."
+ },
+ "fac:thundertree": {
+  "status": "UNDER CONSTRUCTION, early phase. Date Operational: 'post Venomfang clearance' - a Year-1 milestone, so this is the EARLIEST of the Sea Gate cluster and the only one plausibly near the boundary. Still no money lines.",
+  "function": "Minor canal waystation at the Thundertree ruins - transit/resupply point on the Northern Sea Gate canal segment, anchoring a local timber economy. Established after the Venomfang/Cragmaw clearance.",
+  "leadership_hole": "TBD, minor NPC. Reports under Lock-Master Dvalin Ferrin and the Neverwinter Wood Canal entity.",
+  "external_veto": "'Conditional goodwill of Reidoth, Druid of Neverwinter Wood, governs the timber-economy footprint.' An outside party with no contract holds the throttle on this facility's only revenue basis.",
+  "neglect_model": "Neglect = degrades to a bare stop, timber throughput stalls, the Wood reclaims the cut. Low individual stakes but 'exactly where Wood encounters (Table D) escalate.'",
+  "warborn_firebreak": "The Warborn Engineering Campus - North River Site is locked DIRECTLY ACROSS the Neverwinter River. Its arterial gate handles heavy road freight; a controlled landing/ferry may connect. Explicitly: NO permanent bridge, NO shared utility system, NO automatic timber right. Same firebreak language as the canal page - the Warborn campus is being deliberately walled off from Sea Gate infrastructure. Consistent with the Warborn = 100% Arik / imperial household rule.",
+  "veil": "Folded into the canal's Light coverage. Watch: Uthgardt activity, fey-crossing flicker near New Sharandar, Cragmaw bandit remnants.",
+  "booking": "Zero. Correct."
  }
 }

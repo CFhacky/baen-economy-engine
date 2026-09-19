@@ -312,7 +312,7 @@
   "status": "Operational",
   "sector": "Infrastructure",
   "weight": 122004.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:faske",
@@ -339,7 +339,7 @@
   "status": "Operational",
   "sector": "Real Estate",
   "weight": 102000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:w-sandstone",
@@ -357,7 +357,7 @@
   "status": "Operational",
   "sector": "Real Estate",
   "weight": 93996.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:bg-aqua",
@@ -366,7 +366,7 @@
   "status": "Operational",
   "sector": "Aquaculture",
   "weight": 93196.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:dock-security",
@@ -375,7 +375,7 @@
   "status": "Operational",
   "sector": "Military",
   "weight": 92128.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:gauntlgrym-tools",
@@ -393,7 +393,7 @@
   "status": "Operational",
   "sector": "Trade",
   "weight": 87500.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:stonefire",
@@ -411,7 +411,7 @@
   "status": "Operational",
   "sector": "Construction",
   "weight": 82000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:green-vein",
@@ -420,7 +420,7 @@
   "status": "Operational",
   "sector": "Infrastructure",
   "weight": 79600.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:commercial-props",
@@ -429,7 +429,7 @@
   "status": "Operational",
   "sector": "Real Estate",
   "weight": 79000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:brickworks",
@@ -438,7 +438,7 @@
   "status": "Operational",
   "sector": "Manufacturing",
   "weight": 78792.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:wd-trading",
@@ -447,7 +447,7 @@
   "status": "Operational",
   "sector": "Trade",
   "weight": 78792.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:underground-reno",
@@ -456,7 +456,7 @@
   "status": "Operational",
   "sector": "Construction",
   "weight": 75200.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:diplomatic",
@@ -465,7 +465,7 @@
   "status": "Operational",
   "sector": "Intelligence",
   "weight": 75000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:dock-mixed",
@@ -474,7 +474,7 @@
   "status": "Scaling",
   "sector": "Real Estate",
   "weight": 73400.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:star-metal",
@@ -492,7 +492,7 @@
   "status": "Operational",
   "sector": "Manufacturing",
   "weight": 66004.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:gg-settlement-superseded",
@@ -501,7 +501,7 @@
   "status": "Scaling",
   "sector": "Infrastructure",
   "weight": 66000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:crownsite-trade",
@@ -510,7 +510,7 @@
   "status": "Operational",
   "sector": "Trade",
   "weight": 66000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:ncf-wd",
@@ -519,7 +519,7 @@
   "status": "Operational",
   "sector": "Banking",
   "weight": 65160.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:castle-ops",
@@ -528,7 +528,7 @@
   "status": "Operational",
   "sector": "Military",
   "weight": 62400.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:verification",
@@ -537,7 +537,7 @@
   "status": "Operational",
   "sector": "Banking",
   "weight": 52244.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:thorn-silver",
@@ -546,7 +546,7 @@
   "status": "Operational",
   "sector": "Banking",
   "weight": 48000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:dock-warehouse",
@@ -555,7 +555,7 @@
   "status": "Operational",
   "sector": "Trade",
   "weight": 47196.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:split-fountain",
@@ -564,7 +564,7 @@
   "status": "Operational",
   "sector": "Infrastructure",
   "weight": 47196.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:arterial-township",
@@ -573,7 +573,7 @@
   "status": "Scaling",
   "sector": "Real Estate",
   "weight": 45596.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:reservoir",
@@ -582,7 +582,7 @@
   "status": "Operational",
   "sector": "Aquaculture",
   "weight": 43604.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:safe-harbor",
@@ -591,7 +591,7 @@
   "status": "Operational",
   "sector": "Hospitality",
   "weight": 37800.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:ag-shelter",
@@ -600,7 +600,7 @@
   "status": "Operational",
   "sector": "Agriculture",
   "weight": 36600.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:snowfall",
@@ -609,7 +609,7 @@
   "status": "Planning",
   "sector": "Manufacturing",
   "weight": 30000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:ncf-suzail",
@@ -618,7 +618,7 @@
   "status": "Operational",
   "sector": "Banking",
   "weight": 27604.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:devil-academy",
@@ -627,7 +627,7 @@
   "status": "Operational",
   "sector": "Education",
   "weight": 24000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:clay-quarries",
@@ -645,7 +645,7 @@
   "status": "Planning",
   "sector": "Manufacturing",
   "weight": 17400.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:crown-eight",
@@ -654,7 +654,7 @@
   "status": "Under Construction",
   "sector": "Infrastructure",
   "weight": 14640.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:ssamt",
@@ -663,7 +663,7 @@
   "status": "Operational",
   "sector": "Banking",
   "weight": 12000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:schola",
@@ -672,7 +672,7 @@
   "status": "Operational",
   "sector": "Education",
   "weight": 12000.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:arterial-crystal",
@@ -681,7 +681,7 @@
   "status": "Operational",
   "sector": "Infrastructure",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:collegium",
@@ -690,7 +690,7 @@
   "status": "Operational",
   "sector": "Education",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:crownsite-re",
@@ -699,7 +699,7 @@
   "status": "Operational",
   "sector": "Real Estate",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:crystal-gardens",
@@ -708,7 +708,7 @@
   "status": "Operational",
   "sector": "Real Estate",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:gold-lending",
@@ -717,7 +717,7 @@
   "status": "Unconfirmed",
   "sector": "Banking",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:lobster-king",
@@ -726,7 +726,7 @@
   "status": "Unconfirmed",
   "sector": "Aquaculture",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:maritime-planned",
@@ -735,7 +735,7 @@
   "status": "Planning",
   "sector": "Trade",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:nw-wood-canal",
@@ -744,7 +744,7 @@
   "status": "Under Construction",
   "sector": "Infrastructure",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:orchard-chapel",
@@ -753,7 +753,7 @@
   "status": "Operational",
   "sector": "Agriculture",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:sea-gate-harbor",
@@ -762,7 +762,7 @@
   "status": "Under Construction",
   "sector": "Infrastructure",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:sea-gate-shipyard",
@@ -771,7 +771,7 @@
   "status": "Planning",
   "sector": "Manufacturing",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:seven-spires",
@@ -780,7 +780,7 @@
   "status": "Under Construction",
   "sector": "Hospitality",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:veil",
@@ -789,7 +789,7 @@
   "status": "Operational",
   "sector": "Intelligence",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:thundertree",
@@ -798,7 +798,7 @@
   "status": "Under Construction",
   "sector": "Infrastructure",
   "weight": 0.0,
-  "read": false
+  "read": true
  },
  {
   "facility_id": "fac:wd-brokerage",
@@ -807,6 +807,6 @@
   "status": "Unconfirmed",
   "sector": "Intelligence",
   "weight": 0.0,
-  "read": false
+  "read": true
  }
 ]
