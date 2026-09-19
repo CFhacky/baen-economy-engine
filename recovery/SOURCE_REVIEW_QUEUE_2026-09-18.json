@@ -7,29 +7,29 @@
   "source_execution_snapshot_hash": "67d8e69b9e883d40b652a0b0a71f59883e205bc07445daa78de76279c0538160",
   "retained_core_records": 1620,
   "semantic_status_counts": {
-    "SOURCE_MAPPED": 306,
-    "FUTURE": 42,
+    "SOURCE_MAPPED": 307,
+    "FUTURE": 43,
     "CONFLICT": 15,
     "SUPERSEDED": 220,
     "MISSING_DATA": 4,
-    "UNKNOWN": 997,
-    "CONTEXT_ONLY": 35,
-    "HISTORICAL": 1
+    "UNKNOWN": 989,
+    "CONTEXT_ONLY": 40,
+    "HISTORICAL": 2
   },
   "body_review_status_counts": {
-    "REVIEWED": 621,
-    "UNMEASURED": 999
+    "REVIEWED": 629,
+    "UNMEASURED": 991
   },
   "review_disposition_counts": {
-    "ECONOMIC_INPUT": 306,
-    "FUTURE_ONLY": 42,
+    "ECONOMIC_INPUT": 307,
+    "FUTURE_ONLY": 43,
     "CONFLICT": 13,
     "SUPERSEDED": 220,
     "MISSING_DATA": 4,
-    "UNREVIEWED": 999,
+    "UNREVIEWED": 991,
     "ECONOMIC_CONTEXT": 16,
-    "NON_ECONOMIC": 19,
-    "HISTORICAL_ONLY": 1
+    "NON_ECONOMIC": 24,
+    "HISTORICAL_ONLY": 2
   },
   "completion_rule": "Every row must have a body_review_status of REVIEWED or NO_BODY_NOT_APPLICABLE, a non-null review_disposition, and driver_owners for ECONOMIC_INPUT dispositions.",
   "records": [
@@ -17094,14 +17094,19 @@
       "source_url": "https://app.notion.com/376e821484b081a3af47e0dc614425b0",
       "census_hash": "2b0f364210267dc2",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "FUTURE",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-06-05T17:28:45.414Z",
+      "body_hash": "c69e31db72c73328599595b3ebc6d926933d9bbfcdd1e0ce9ddf65ada14afdb6",
+      "review_disposition": "FUTURE_ONLY",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Future-dated material excluded from Day-7 Hammer-1495 current inputs."
+      ]
     },
     {
       "stable_source_id": "notion:page:376e8214-84b0-81b0-92dc-d31cdb1f4b95",
@@ -17111,14 +17116,22 @@
       "source_url": "https://app.notion.com/376e821484b081b092dcd31cdb1f4b95",
       "census_hash": "ea10531182950504",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-06-05T17:28:45.414Z",
+      "body_hash": "67f68c0542bb3623fdcd953e257843313b56d8141416cebeb05fec4cdf880e0a",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Current economic thread/obligation mapped conservatively to engine drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:376e8214-84b0-81e8-9cc4-fc756045771a",
@@ -17128,14 +17141,19 @@
       "source_url": "https://app.notion.com/376e821484b081e89cc4fc756045771a",
       "census_hash": "c5fefedf237c389a",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-06-05T17:28:45.414Z",
+      "body_hash": "010f00bb69577c229ef831fc897791e6c15a9c97e3695e1f945b10bb9ed9f6f7",
+      "review_disposition": "NON_ECONOMIC",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "No current economy-engine input identified from the reviewed body."
+      ]
     },
     {
       "stable_source_id": "notion:page:378e8214-84b0-8115-ab39-d629bbe5a79f",
@@ -17145,14 +17163,19 @@
       "source_url": "https://app.notion.com/378e821484b08115ab39d629bbe5a79f",
       "census_hash": "21a1bb91d55c80e0",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-15T17:27:15.634Z",
+      "body_hash": "597c00abdb58ca643054789274fb54b052141afc2d3d99e20c822c89cd353b2a",
+      "review_disposition": "NON_ECONOMIC",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "No current economy-engine input identified from the reviewed body."
+      ]
     },
     {
       "stable_source_id": "notion:page:378e8214-84b0-8128-a592-ef4bb2963d68",
@@ -17162,14 +17185,19 @@
       "source_url": "https://app.notion.com/378e821484b08128a592ef4bb2963d68",
       "census_hash": "7bc89d2f809ccdd4",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-06-07T14:58:20.676Z",
+      "body_hash": "8bca05464a3ca67176ad22113a41efc38b128a1e62184e96ce08ef1b23b06553",
+      "review_disposition": "NON_ECONOMIC",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "No current economy-engine input identified from the reviewed body."
+      ]
     },
     {
       "stable_source_id": "notion:page:378e8214-84b0-813b-b352-e83cde408f4c",
@@ -17179,14 +17207,19 @@
       "source_url": "https://app.notion.com/378e821484b0813bb352e83cde408f4c",
       "census_hash": "8805bf7ed2c4bf9b",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T19:32:41.003Z",
+      "body_hash": "3d5be1d529d72ccaa2629b04d052b267298a75c4a9634b3a7964ff69120d3656",
+      "review_disposition": "NON_ECONOMIC",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "No current economy-engine input identified from the reviewed body."
+      ]
     },
     {
       "stable_source_id": "notion:page:378e8214-84b0-8179-a4ff-f77b1031956b",
@@ -17196,14 +17229,19 @@
       "source_url": "https://app.notion.com/378e821484b08179a4fff77b1031956b",
       "census_hash": "423c219e49c9800f",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T19:32:46.666Z",
+      "body_hash": "deecde32c2afddd417e8315a11065928600687bd2590b5bd810ddcaa6e62c6ff",
+      "review_disposition": "NON_ECONOMIC",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "No current economy-engine input identified from the reviewed body."
+      ]
     },
     {
       "stable_source_id": "notion:page:378e8214-84b0-81e6-9ed3-d7ea4377d83c",
@@ -17213,14 +17251,19 @@
       "source_url": "https://app.notion.com/378e821484b081e69ed3d7ea4377d83c",
       "census_hash": "724b540b3d0d3ac7",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
+      "semantic_status": "HISTORICAL",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-09-15T17:27:47.644Z",
+      "body_hash": "8c124b330ec915ee9e98f47decb780a0d1fe32b87c7e7f2b05f57cff8034e853",
+      "review_disposition": "HISTORICAL_ONLY",
+      "economic_domains": [
+        "contracts_orders_obligations_threads"
+      ],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Resolved material retained as historical provenance."
+      ]
     },
     {
       "stable_source_id": "notion:page:37ae8214-84b0-812e-9d1b-ecd035400585",
