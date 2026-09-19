@@ -1,0 +1,22 @@
+collection_name,collection_id,row_count,census_status,engine_use
+Baen Empire - Business Registry,3c5f887a-4219-4ae6-a18a-82cf2d1841db,90,CENSUSED,"facilities.csv, employment.csv, programmes.csv"
+The New Path - Locations,4b453810-16af-43eb-86ff-927da765a17f,182,CENSUSED,
+The New Path - Factions,a14877b1-e048-4814-b0f3-47a556665fc4,79,CENSUSED,
+The New Path - NPCs,ebad4913-73c8-4f39-81c0-0b35b2221d9d,681,CENSUSED,actors.csv; 920 retained incl. 239 provenance rows
+The New Path - Artifacts,0b4e0fd7-51f7-4291-a8ff-ff4f26b8c085,206,CENSUSED,
+The New Path - Threats,6ac1439a-f743-4fb8-a0fd-cf24ed645118,26,CENSUSED,
+The New Path - Plot Threads,e9d15845-0221-4ef0-83fe-f1fc80281f40,89,CENSUSED,
+Public Perception,c2d0aa01-638a-4a72-8760-7e9fb7696fef,7,CENSUSED,
+Consequence Ledger A,e1debaad-0b2f-412e-8b19-8c9a99f48dbe,11,CENSUSED,duplicate authority pair with B
+Consequence Ledger B,88705cad-2c1a-493b-b52c-955bbef8230f,10,CENSUSED,duplicate authority pair with A
+Transaction Ledger,ae367fe3-d5fd-47db-b4d3-eafb13b9d081,49,HARVESTED_THIS_SITTING,transactions.csv — all 49 rows; Shi'van clock Day 234-814
+The New Path - Session Logs,a5071385-7349-4405-a749-197f9a616d7d,81,SCANNED_THIS_SITTING,"S001-S078, 9 arcs; Warborn keyword sweep run, no production counts"
+Prose Scenes,cc6940d9-8ccd-42f0-b71e-b8c593c5b035,182,SCANNED_THIS_SITTING,"Warborn/frame/Silversheen sweep run, no production counts"
+Canon Change Log,83d9b4a3-9489-46e0-b7d5-d17ba224ef68,789,PARTIALLY_HARVESTED,canon_rulings.csv — 10 binding entries; 779 rows unread
+GM Consequence Ledger,96a99cba-2be9-4d8b-a032-b9c3cfc9fbce,272,UNCENSUSED,DISTINCT from Consequence Ledger A and B — a third ledger
+Deferred Dice,da0db9c0-9fb7-4ddf-aff5-f1ac55979873,282,UNCENSUSED,pending rolls with trigger conditions
+Faction Beliefs,ecda3444-2cc0-4922-8c68-ce2eef22054c,57,UNCENSUSED,"distinct from ""The New Path - Factions""; empire-ops skill cross-references it"
+Creation Registry,23327d85-0663-47e8-8032-f436b31a28d8,41,UNCENSUSED,
+Shadow Events,af630205-84eb-44a4-afdb-9819dadbb54a,35,UNCENSUSED,
+Kingdoms & Factions,26dbb39a-3cb0-4a0e-91de-68fb2e28114a,12,UNCENSUSED,
+Character Sheets,4f36bdba-b267-4cf0-a931-80e32ecb7ccb,10,UNCENSUSED,"Shi'van, Arik, Jormun and others"
