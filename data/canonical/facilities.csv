@@ -1,13 +1,91 @@
-facility_id,display_name,source_url,status,sector,city,employees,monthly_revenue,monthly_cost,capital_invested,neglect_status,revenue_state,notes,slice
-fac:ncf-parent,Northern Crown Financial,https://app.notion.com/2fbe821484b0816ab0b8e7e7ed41fe29,Operational,Banking,Multi-Region,85,22000,,,Current,SOURCE,parent card; do not add branch revenues to this 22000,NCF
-fac:ncf-nw,Northern Crown Financial - Neverwinter,https://app.notion.com/321e821484b08175997cc81e61c35015,Operational,Banking,Neverwinter,35,10000,5200,25000,Delegated,HISTORICAL_ONLY,Eleint branch row; parent 22000 already proves rollup stale,NCF
-fac:ncf-luskan,Northern Crown Financial - Luskan,https://app.notion.com/321e821484b0812d82f9cc0add910698,Operational,Banking,Luskan,30,9583,4990,18000,Delegated,HISTORICAL_ONLY,Eleint branch row,NCF
-fac:ncf-wd,Northern Crown Financial - Waterdeep,https://app.notion.com/321e821484b08169bde3cc7112ca328d,Operational,Banking,Waterdeep,12,2750,1430,15000,,HISTORICAL_ONLY,Eleint branch row,NCF
-fac:ncf-suzail,Northern Crown Financial - Suzail,https://app.notion.com/321e821484b08109a55af30bd40fa6cb,Operational,Banking,Suzail,8,917,550,10000,Delegated,HISTORICAL_ONLY,Eleint branch row; Dagny Ironfold,NCF
-fac:gold-lending,Gold Lending House,https://app.notion.com/321e821484b081e7a5ecfd25ff8299dc,Unconfirmed,Banking,Luskan,12,0,0,0,,UNCONFIRMED,do not book zeros as current,NCF
-fac:silversheen,Silversheen Trading (Aluminum),https://app.notion.com/p/34ce821484b0812eb41ef8f7c55f9761,Scaling,Manufacturing,,45,48400,29040,,Current,SOURCE,NCF 60 / Gauntlgrym 40; 30t vs 20pct ruling still open,NCF
-fac:tissage,Institut de Tissage Arcanique,https://app.notion.com/372e821484b081d98c19e650c16b687f,Operational,Manufacturing,Waterdeep,81,28000,17500,132000,Delegated,SOURCE,registry card name; floor 67 remains Tissage operating unit not folded as Institut research,INSTITUT
-fac:burning-gate,Project Burning Gate,https://app.notion.com/34ce821484b08125b0ccfa8966ff42f0,R&D Phase,R&D,Forgedeep,30,0,0,,,SOURCE,800000 external cash is outflow not revenue,INSTITUT
-fac:warborn-nw,Warborn Production - Neverwinter,https://app.notion.com/321e821484b081b38d51dcbc19edd667,Scaling,Manufacturing,Neverwinter,77,360000,20000,,Current,SOURCE,12 x 30000 invoice; cost box 20000 not 12x6000,HOUSEHOLD
-fac:warborn-wd,Warborn Production - Waterdeep,https://app.notion.com/321e821484b0816a8684d3df85527df8,Operational,Manufacturing,Waterdeep,200,3000000,22900,,,SOURCE_BAND_FLOOR,100 x 30000 invoice floor from location-card band; high 150 x 30000 = 4500000; keep 400000-600000; cost box is wages 22900 not frame build cost,HOUSEHOLD
-fac:zariel-contract,Zariel Warborn Contract,https://app.notion.com/34ce821484b081febf14f062ef3cb91b,Operational,,,0,360000,22900,,Current,PARTIAL,property still Neverwinter-only; Waterdeep invoices live on fac:warborn-wd,HOUSEHOLD
+facility_id,display_name,source_url,status,sector,city,employees,monthly_revenue,monthly_cost,capital_invested,neglect_status
+fac:gg-settlement-superseded,[SUPERSEDED] Guardian's Gate Settlement (older variant),https://app.notion.com/321e821484b08119b068e3d4d503eaa3,Scaling,Infrastructure,Guardian's Gate Ziggurat,20,0,3000,30000,Delegated
+fac:ag-shelter,Agricultural Shelter Zones,https://app.notion.com/321e821484b081e09660eacd14973b2f,Operational,Agriculture,Multi-Region,8,1500,1050,6000,Aging
+fac:arterial-crystal,Arterial Road Crystal Network,https://app.notion.com/34ce821484b081efb974fa3f64c20be8,Operational,Infrastructure,Multi-Region,,,,,Neglected
+fac:arterial-road,Arterial Road Network,https://app.notion.com/321e821484b081ceb8cefafb60bf5d8c,Scaling,Infrastructure,Multi-Region,150,22000,19360,65000,Aging
+fac:arterial-township,Arterial Township Development,https://app.notion.com/321e821484b0810187d5cfa2a74f31f0,Scaling,Real Estate,Multi-Region,12,1333,800,20000,Aging
+fac:azurite,Azurite Decorative Quarries,https://app.notion.com/321e821484b081b28e6dc97122a34793,Operational,Mining/Quarrying,Multi-Region,20,5000,3000,12000,Aging
+fac:brickworks,Baen Brickworks,https://app.notion.com/321e821484b0816c87fbf0fee22835ad,Operational,Manufacturing,Neverwinter,30,3333,2233,12000,
+fac:construction-hq,Baen Construction HQ,https://app.notion.com/321e821484b081229dceefa0c3c48170,Operational,Construction,Neverwinter,120,6250,5125,15000,Delegated
+fac:housing-portfolio,Baen Real Estate & Housing Portfolio,https://app.notion.com/37de821484b081549c6bd10986768d97,Operational,Real Estate,Multi-Region,25,28040,9800,,Current
+fac:bg-aqua,BG Aquaculture Pools (3 sites),https://app.notion.com/321e821484b08116a104c6217060c1c5,Operational,Aquaculture,Baldurs Gate,12,3333,2600,22000,Aging
+fac:blacklake,Blacklake Aquaculture (7 pools),https://app.notion.com/321e821484b08112ab9ecd6f5eba18e8,Operational,Aquaculture,Neverwinter,15,7500,5850,40000,Aging
+fac:bloodaxe,Bloodaxe Legion,https://app.notion.com/321e821484b0812dbba0e10b75086a02,Operational,Military,Multi-Region,10000,30000,150000,0,Delegated
+fac:canal-housing,Canal Housing Redevelopment,https://app.notion.com/321e821484b0814c9919d340642e3319,Operational,Real Estate,Baldurs Gate,8,3333,2000,30000,
+fac:castle-ops,Castle Operations,https://app.notion.com/321e821484b081a8b47dc47579a6e346,Operational,Military,Multi-Region,80,0,5200,0,Delegated
+fac:celestial-springs,Celestial Springs Bathhouse,https://app.notion.com/321e821484b0815e97ffe0bcec9a3ebc,Operational,Infrastructure,Neverwinter,30,4000,3000,42000,Delegated
+fac:collegium,Collegium Montis Gladii,https://app.notion.com/324e821484b08175ae3cc451aea28565,Operational,Education,Waterdeep,0,0,0,,N/A
+fac:commercial-props,Commercial Properties (Various),https://app.notion.com/321e821484b081208756cd5f9b876869,Operational,Real Estate,Multi-Region,5,3000,1500,25000,
+fac:quarry-aqua,Converted Quarry Aquaculture (5 sites),https://app.notion.com/321e821484b0811098cfebc200f16c7a,Operational,Aquaculture,Multi-Region,20,12500,9750,35000,Aging
+fac:crown-eight,Crown of Eight Springs,https://app.notion.com/34ce821484b0812f97cce7bf7af67928,Under Construction,Infrastructure,Multi-Region,50,490,730,0,Current
+fac:crownsite-trade,Crownsite Canal Property,https://app.notion.com/321e821484b0816bab1ac84039fbe89f,Operational,Trade,Baldurs Gate,10,2500,1500,18000,Aging
+fac:crownsite-re,Crownsite Canal Property BG,https://app.notion.com/34ce821484b081a98fa4c44ac30bf8ac,Operational,Real Estate,Baldurs Gate,,,,,Delegated
+fac:crystal-gardens,Crystal Gardens,https://app.notion.com/34ce821484b08158a449c58b59fbc2fd,Operational,Real Estate,Neverwinter,,,,,N/A
+fac:dawnwood,Dawnwood Settlement,https://app.notion.com/34ce821484b081c2beeae2858f85995d,Under Construction,Real Estate,Multi-Region,80,0,2000,140000,Current
+fac:deep-road,Deep Road Network (Deep Road Authority),https://app.notion.com/3bbe821484b0815fac80dd1c4430327d,Planning,Infrastructure,Multi-Region,522,,,18700000,N/A
+fac:desertsmouth,Desertsmouth Tunnel,https://app.notion.com/34ce821484b08172b32ef083715f9465,Under Construction,Infrastructure,Multi-Region,0,0,120000,3200000,Delegated
+fac:devil-academy,Devil Academy (Philosophical Faculty),https://app.notion.com/324e821484b081699a22c992b7e05649,Operational,Education,Neverwinter,2000,0,2000,,Delegated
+fac:diplomatic,Diplomatic Operations,https://app.notion.com/321e821484b081408f8ce78bbfd11b30,Operational,Intelligence,Multi-Region,0,0,6250,0,
+fac:dock-housing,Dock District Housing (Ph 1 & 2),https://app.notion.com/321e821484b081faba57e5f9a87ab3a9,Operational,Real Estate,Neverwinter,20,10000,6000,40000,Delegated
+fac:dock-mixed,Dock District Mixed-Use,https://app.notion.com/321e821484b081dcae68d45f3e3801db,Scaling,Real Estate,Neverwinter,8,2000,1200,35000,
+fac:dock-security,Dock Ward Security Corp,https://app.notion.com/321e821484b081b9b209d6dd21f950f8,Operational,Military,Waterdeep,200,4563,2281,10000,
+fac:dock-warehouse,Dock Ward Warehouse,https://app.notion.com/321e821484b08132bcc9ef2290e366bc,Operational,Trade,Waterdeep,8,1833,1100,12000,Delegated
+fac:shoreline,Enhanced Shoreline Systems,https://app.notion.com/321e821484b08151be78c309a7ce8475,Operational,Infrastructure,Neverwinter,15,5417,3250,18000,
+fac:faske,Faske & Halloran,https://app.notion.com/362e821484b0813b9b7ef67d1559fd89,Operational,Banking,Waterdeep,14,1100,850,95000,Delegated
+fac:forgedeep-city,Forgedeep City Development,https://app.notion.com/321e821484b081b09469f6c9d92a22d5,Under Construction,Infrastructure,Forgedeep,30,0,15000,500000,Current
+fac:formicorps,Formicorps,https://app.notion.com/34ce821484b081b995b9f3426792b6bc,Operational,Construction,Forgedeep,0,0,15000,2500000,Current
+fac:gauntlgrym-tools,Gauntlgrym Tools Partnership,https://app.notion.com/321e821484b08116ac1bcc07c68ff15f,Operational,Manufacturing,Gauntlgrym,10,4167,2083,15000,
+fac:gold-lending,Gold Lending House,https://app.notion.com/321e821484b081e7a5ecfd25ff8299dc,Unconfirmed,Banking,Luskan,12,0,0,0,
+fac:green-vein,Green Vein Corridor,https://app.notion.com/321e821484b081449c69fcb641741a06,Operational,Infrastructure,Suzail,12,1500,800,52000,Current
+fac:hunding,Hunding Canal Lock System,https://app.notion.com/321e821484b081b9a4cbf9fd26c7eccf,Under Construction,Infrastructure,Forgedeep,40,0,8000,50000,
+fac:tissage,Institut de Tissage Arcanique,https://app.notion.com/372e821484b081d98c19e650c16b687f,Operational,Manufacturing,Waterdeep,81,28000,17500,132000,Delegated
+fac:lobster-king,Lobster King Operations (Baen-Allied),https://app.notion.com/321e821484b081899107d6fd75176754,Unconfirmed,Aquaculture,Waterdeep,0,0,0,0,
+fac:maritime-planned,Maritime Operations (Planned),https://app.notion.com/321e821484b0816d8ca6d53a98b8ba6d,Planning,Trade,Multi-Region,0,0,0,0,
+fac:athenaeum,Neverwinter Athenaeum,https://app.notion.com/324e821484b0813fb1c6ecc41384257b,Planning,Education,Multi-Region,0,0,0,200000,N/A
+fac:clay-quarries,Neverwinter Clay Quarries,https://app.notion.com/321e821484b081c69bdec30dd49bc5b6,Operational,Mining/Quarrying,Neverwinter,12,0,1500,5000,Aging
+fac:nmwc,Neverwinter Municipal Water Corporation,https://app.notion.com/34ce821484b0815b8025e995ced7c996,Scaling,Infrastructure,Neverwinter,120,25000,20000,500000,Current
+fac:munitions,Neverwinter Munitions Facility,https://app.notion.com/362e821484b081e98ce5d318425ffcde,Operational,Manufacturing,Neverwinter,43,12000,,,Current
+fac:nw-wood-canal,Neverwinter Wood Canal,https://app.notion.com/376e821484b081c195a1d5c3e2ceb4cb,Under Construction,Infrastructure,Multi-Region,,,,,Current
+fac:ncf-parent,Northern Crown Financial,https://app.notion.com/2fbe821484b0816ab0b8e7e7ed41fe29,Operational,Banking,Multi-Region,85,22000,,,Current
+fac:ncf-luskan,Northern Crown Financial - Luskan,https://app.notion.com/321e821484b0812d82f9cc0add910698,Operational,Banking,Luskan,30,9583,4990,18000,Delegated
+fac:ncf-nw,Northern Crown Financial - Neverwinter,https://app.notion.com/321e821484b08175997cc81e61c35015,Operational,Banking,Neverwinter,35,10000,5200,25000,Delegated
+fac:ncf-suzail,Northern Crown Financial - Suzail,https://app.notion.com/321e821484b08109a55af30bd40fa6cb,Operational,Banking,Suzail,8,917,550,10000,Delegated
+fac:ncf-wd,Northern Crown Financial - Waterdeep,https://app.notion.com/321e821484b08169bde3cc7112ca328d,Operational,Banking,Waterdeep,12,2750,1430,15000,
+fac:timber,Northern Crown Timber Operations,https://app.notion.com/321e821484b081d99801d601f9503056,Planning,Manufacturing,Multi-Region,8,0,1200,3000,
+fac:hammer-smithy,Northern Hammer Smithy,https://app.notion.com/321e821484b0819e840aea69126c3105,Operational,Manufacturing,Neverwinter,15,2917,1750,10000,
+fac:orchard-chapel,Orchard Chapel,https://app.notion.com/34ce821484b08130aedbf6d099d79bfb,Operational,Agriculture,Multi-Region,,,,,Delegated
+fac:burning-gate,Project Burning Gate,https://app.notion.com/34ce821484b08125b0ccfa8966ff42f0,R&D Phase,R&D,Forgedeep,30,0,0,800000,Current
+fac:reservoir,Reservoir Fisheries,https://app.notion.com/321e821484b081f6a74cd6ee2b88a08e,Operational,Aquaculture,Multi-Region,8,1667,1300,8000,Aging
+fac:safe-harbor,Safe Harbor Inn,https://app.notion.com/321e821484b081b88ac4d7cb4a1b4b0c,Operational,Hospitality,Luskan,8,1500,900,9000,Aging
+fac:ssamt,Scales & Secrets Asset Management Trust (SSAMT),https://app.notion.com/392e821484b081efb0a9d73f9b9757d7,Operational,Banking,Waterdeep,,,,12000,Delegated
+fac:schola,Schola Ducum Integrata,https://app.notion.com/324e821484b081f3b801f03fc8ec343d,Operational,Education,Multi-Region,30,0,1000,,Delegated
+fac:sea-gate-harbor,Sea Gate Harbor Authority,https://app.notion.com/376e821484b0819e8c07d304487c01bb,Under Construction,Infrastructure,Northern Sea Gate,,,,,Current
+fac:sea-gate-shipyard,Sea Gate Shipyard,https://app.notion.com/376e821484b081db9a8ae682a583b6ee,Planning,Manufacturing,Northern Sea Gate,,,,,N/A
+fac:seven-spires,Seven Spires Estate,https://app.notion.com/376e821484b0812188b4ced3087746f7,Under Construction,Hospitality,Neverwinter,,,,,Current
+fac:shimmerdeep,Shimmerdeep Cradle,https://app.notion.com/34ce821484b081119fd4c41feef5634e,Under Construction,Mining/Quarrying,Forgedeep,300,0,20000,1400000,Current
+fac:silversheen,Silversheen Trading (Aluminum),https://app.notion.com/321e821484b08155bf9bcea55e2c7669,Scaling,Manufacturing,Forgedeep,45,48400,29040,80000,Current
+fac:skyreach,Skyreach Castle,https://app.notion.com/34ce821484b081d7aaf3fb4e6a607477,Operational,Military,Multi-Region,28,0,5200,75000,Current
+fac:snowfall,Snowfall Hearthworks,https://app.notion.com/3c2e821484b081f888a6e1169f9a4df4,Planning,Manufacturing,Neverwinter,0,0,0,30000,N/A
+fac:vault-construction,Specialized Vault Construction,https://app.notion.com/321e821484b0814a9cd7daca52d0c750,Operational,Construction,Neverwinter,12,3750,2250,10000,
+fac:split-fountain,Split Fountain Renovation,https://app.notion.com/321e821484b0817da905f79b60a61485,Operational,Infrastructure,Baldurs Gate,5,1833,1100,12000,Aging
+fac:star-metal,Star Metal Hills Bauxite Mining,https://app.notion.com/321e821484b081cbb112e8cab733e992,Scaling,Mining/Quarrying,Star Metal Hills Mining Complex,35,0,3500,25000,Current
+fac:stonefire,Stonefire Ceramics,https://app.notion.com/37de821484b081d1bf05cd5b4111d5bc,Under Construction,Manufacturing,Forgedeep,67,1479,1909,42700,Current
+fac:cerulean,The Cerulean,https://app.notion.com/321e821484b081cfb8efc87bd6feaaf7,Under Construction,Infrastructure,Waterdeep,43,0,5000,296000,Delegated
+fac:lustrous-blade,The Lustrous Blade,https://app.notion.com/321e821484b081f88632c9a3a854424c,Operational,Trade,Waterdeep,8,3750,1875,20000,Delegated
+fac:veil,The Veil,https://app.notion.com/321e821484b081729b7cdb66323883e8,Operational,Intelligence,Multi-Region,0,0,0,0,Delegated
+fac:thorn-silver,Thorn & Silver Exchange,https://app.notion.com/321e821484b08104815afe1101e6f8f1,Operational,Banking,Luskan,10,2000,1000,12000,
+fac:whisper,Threadbaum Model 1494-L Whisper,https://app.notion.com/34ce821484b08164aa0fd2d0083834c8,Scaling,Manufacturing,Gauntlgrym,40,22000,4500,85000,Delegated
+fac:thundertree,Thundertree Waystation,https://app.notion.com/376e821484b081088810e1d99b58f959,Under Construction,Infrastructure,Neverwinter,,,,,Current
+fac:treasury-stone,Treasury Stone Quarries,https://app.notion.com/321e821484b081118df6fb5d6377ba0a,Operational,Mining/Quarrying,Neverwinter,55,7917,4750,20000,Delegated
+fac:underground-reno,Underground Renovation Services,https://app.notion.com/321e821484b0810c945ff2ee5b1d4841,Operational,Construction,Neverwinter,10,3500,2100,8000,
+fac:venetian-bay,Venetian Bay Housing,https://app.notion.com/321e821484b0814a9a3cea9157b13d6b,Operational,Real Estate,Neverwinter,5,2500,1000,60000,
+fac:verdant-cascades,Verdant Cascades Bathhouse,https://app.notion.com/321e821484b081d4921fffe136c22209,Operational,Infrastructure,Neverwinter,30,5000,3750,32000,Delegated
+fac:verification,Verification Services,https://app.notion.com/321e821484b081f7be17ff26a67e57fb,Operational,Banking,Luskan,5,2917,1020,5000,
+fac:warborn-nw,Warborn Production - Neverwinter,https://app.notion.com/321e821484b081b38d51dcbc19edd667,Scaling,Manufacturing,Neverwinter,77,360000,20000,288000,Current
+fac:warborn-wd,Warborn Production - Waterdeep,https://app.notion.com/321e821484b0816a8684d3df85527df8,Operational,Manufacturing,Waterdeep,200,3000000,22900,907000,
+fac:wd-brokerage,Waterdeep Information Brokerage,https://app.notion.com/321e821484b081a09fdef55820cab72b,Unconfirmed,Intelligence,Waterdeep,0,0,0,0,
+fac:wd-trading,Waterdeep Trading Office,https://app.notion.com/321e821484b081289cb9fbb308ea2536,Operational,Trade,Waterdeep,10,3333,1733,18000,Aging
+fac:w-limestone,Western Limestone Quarries,https://app.notion.com/321e821484b081019287cb7fdf65e5a9,Operational,Mining/Quarrying,Multi-Region,25,6000,4800,15000,Aging
+fac:w-sandstone,Western Sandstone Quarries,https://app.notion.com/321e821484b08192b481f813840aadd3,Operational,Mining/Quarrying,Multi-Region,18,4000,3200,10000,Aging
+fac:wyrmhelm,Wyrmhelm Forgedeep Facility,https://app.notion.com/34ce821484b0812f8577d4d37289da9f,Operational,R&D,Forgedeep,15,0,2000,150000,Current
+fac:zariel-contract,Zariel Warborn Contract,https://app.notion.com/34ce821484b081febf14f062ef3cb91b,Operational,Military,Multi-Region,0,360000,22900,0,Current
