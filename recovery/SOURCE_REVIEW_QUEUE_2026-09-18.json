@@ -7,26 +7,26 @@
   "source_execution_snapshot_hash": "67d8e69b9e883d40b652a0b0a71f59883e205bc07445daa78de76279c0538160",
   "retained_core_records": 1620,
   "semantic_status_counts": {
-    "SOURCE_MAPPED": 334,
+    "SOURCE_MAPPED": 336,
     "FUTURE": 48,
     "CONFLICT": 15,
     "SUPERSEDED": 220,
     "MISSING_DATA": 4,
-    "UNKNOWN": 932,
+    "UNKNOWN": 930,
     "CONTEXT_ONLY": 62,
     "HISTORICAL": 5
   },
   "body_review_status_counts": {
-    "REVIEWED": 686,
-    "UNMEASURED": 934
+    "REVIEWED": 688,
+    "UNMEASURED": 932
   },
   "review_disposition_counts": {
-    "ECONOMIC_INPUT": 334,
+    "ECONOMIC_INPUT": 336,
     "FUTURE_ONLY": 48,
     "CONFLICT": 13,
     "SUPERSEDED": 220,
     "MISSING_DATA": 4,
-    "UNREVIEWED": 934,
+    "UNREVIEWED": 932,
     "ECONOMIC_CONTEXT": 33,
     "HISTORICAL_ONLY": 5,
     "NON_ECONOMIC": 29
@@ -16194,14 +16194,22 @@
       "source_url": "https://app.notion.com/3c2e821484b081478a92d0f61597d4e3",
       "census_hash": "c6bd33356adb0c02",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T18:14:10.780Z",
+      "body_hash": "a442183e356fdea6cbfb2e8824f1968df123b118171b8d37790ad6bcff3e0feb",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "shocks_shortages_threats"
+      ],
+      "driver_owners": [
+        "exogenous_shocks",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Current shock/shortage/threat routed to exogenous-shock processing and affected economic drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:3c2e8214-84b0-815b-a1e0-e6ff5b9979b5",
@@ -16211,14 +16219,24 @@
       "source_url": "https://app.notion.com/3c2e821484b0815ba1e0e6ff5b9979b5",
       "census_hash": "d640049cb121eee5",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
-      "body_revision": null,
-      "body_hash": null,
-      "review_disposition": null,
-      "economic_domains": [],
-      "driver_owners": [],
-      "review_notes": []
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T17:01:00.381Z",
+      "body_hash": "77c05f0923dc1a30ec1ceede6d8cb311f8fbf0681c78dbd4908594fe5cd5bdee",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "shocks_shortages_threats"
+      ],
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "population",
+        "industrial_production"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Current shock/shortage/threat routed to exogenous-shock processing and affected economic drivers."
+      ]
     },
     {
       "stable_source_id": "notion:page:2fbe8214-84b0-8102-a3f6-f3a81524f709",
