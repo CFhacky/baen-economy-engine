@@ -1,20 +1,91 @@
-employment_id,facility_id,pool_name,headcount,headcount_state,wage_rate,wage_state,source_url
-emp:ncf-parent,fac:ncf-parent,NCF staff (parent card),85,SOURCE,,,https://app.notion.com/2fbe821484b0816ab0b8e7e7ed41fe29
-emp:ncf-nw,fac:ncf-nw,NCF Neverwinter branch,35,SOURCE,,,https://app.notion.com/321e821484b08175997cc81e61c35015
-emp:ncf-luskan,fac:ncf-luskan,NCF Luskan branch,30,SOURCE,,,https://app.notion.com/321e821484b0812d82f9cc0add910698
-emp:ncf-wd,fac:ncf-wd,NCF Waterdeep branch,12,SOURCE,,,https://app.notion.com/321e821484b08169bde3cc7112ca328d
-emp:ncf-suzail,fac:ncf-suzail,NCF Suzail branch,8,SOURCE,,,https://app.notion.com/321e821484b08109a55af30bd40fa6cb
-emp:tissage,fac:tissage,Tissage / Institut card headcount,81,SOURCE,,,https://app.notion.com/372e821484b081d98c19e650c16b687f
-emp:silversheen,fac:silversheen,Silversheen staff,45,SOURCE,,,https://app.notion.com/321e821484b08155bf9bcea55e2c7669
-emp:warborn-nw,fac:warborn-nw,Neverwinter Warborn hall,77,SOURCE,,,https://app.notion.com/321e821484b081b38d51dcbc19edd667
-emp:warborn-wd,fac:warborn-wd,Waterdeep Warborn hall,200,SOURCE,,,https://app.notion.com/321e821484b0816a8684d3df85527df8
-emp:burning-gate,fac:burning-gate,Burning Gate staff,30,SOURCE,,,https://app.notion.com/34ce821484b08125b0ccfa8966ff42f0
-emp:bloodaxe,fac:bloodaxe,Bloodaxe Legion roster,10000,SOURCE,,,https://app.notion.com/321e821484b0812dbba0e10b75086a02
-emp:brickworks,fac:brickworks,Brickworks,30,SOURCE,,,https://app.notion.com/321e821484b0816c87fbf0fee22835ad
-emp:construction-hq,fac:construction-hq,Construction HQ,120,SOURCE,,,https://app.notion.com/321e821484b081229dceefa0c3c48170
-emp:nmwc,fac:nmwc,NMWC,120,SOURCE,,,https://app.notion.com/34ce821484b0815b8025e995ced7c996
-emp:arterial-road,fac:arterial-road,Arterial Road Network,150,SOURCE,,,https://app.notion.com/321e821484b081ceb8cefafb60bf5d8c
-emp:shimmerdeep,fac:shimmerdeep,Shimmerdeep Cradle,300,SOURCE,,,https://app.notion.com/34ce821484b081119fd4c41feef5634e
-emp:munitions,fac:munitions,Neverwinter Munitions,43,SOURCE,,,https://app.notion.com/362e821484b081e98ce5d318425ffcde
-emp:treasury-stone,fac:treasury-stone,Treasury Stone Quarries,55,SOURCE,,,https://app.notion.com/321e821484b081118df6fb5d6377ba0a
-emp:formicorps,fac:formicorps,Formicorps (card headcount),0,SOURCE,,,https://app.notion.com/34ce821484b081b995b9f3426792b6bc
+employment_id,facility_id,pool_name,headcount,headcount_state,wage_rate,wage_state,source_url,consolidation,notes
+emp:ag-shelter,fac:ag-shelter,Agricultural Shelter Zones (registry card headcount),8,SOURCE,,,https://app.notion.com/321e821484b081e09660eacd14973b2f,STANDALONE,
+emp:arterial-crystal,fac:arterial-crystal,Arterial Road Crystal Network (registry card headcount),,UNKNOWN,,,https://app.notion.com/34ce821484b081efb974fa3f64c20be8,STANDALONE,Registry card carries no Employees value. Empty stays empty; unknown is not zero.
+emp:arterial-road,fac:arterial-road,Arterial Road Network,150,SOURCE,,,https://app.notion.com/321e821484b081ceb8cefafb60bf5d8c,STANDALONE,
+emp:arterial-township,fac:arterial-township,Arterial Township Development (registry card headcount),12,SOURCE,,,https://app.notion.com/321e821484b0810187d5cfa2a74f31f0,STANDALONE,
+emp:athenaeum,fac:athenaeum,Neverwinter Athenaeum (registry card headcount),0,SOURCE,,,https://app.notion.com/324e821484b0813fb1c6ecc41384257b,STANDALONE,
+emp:azurite,fac:azurite,Azurite Decorative Quarries (registry card headcount),20,SOURCE,,,https://app.notion.com/321e821484b081b28e6dc97122a34793,STANDALONE,
+emp:bg-aqua,fac:bg-aqua,BG Aquaculture Pools (3 sites) (registry card headcount),12,SOURCE,,,https://app.notion.com/321e821484b08116a104c6217060c1c5,STANDALONE,
+emp:blacklake,fac:blacklake,Blacklake Aquaculture (7 pools) (registry card headcount),15,SOURCE,,,https://app.notion.com/321e821484b08112ab9ecd6f5eba18e8,STANDALONE,
+emp:bloodaxe,fac:bloodaxe,Bloodaxe Legion roster,10000,SOURCE,,,https://app.notion.com/321e821484b0812dbba0e10b75086a02,NOT_A_PAYROLL,"Military roster of 10000, not a commercial wage payroll. Card cost 150000/mo."
+emp:brickworks,fac:brickworks,Brickworks,30,SOURCE,,,https://app.notion.com/321e821484b0816c87fbf0fee22835ad,STANDALONE,
+emp:burning-gate,fac:burning-gate,Burning Gate staff,30,SOURCE,,,https://app.notion.com/34ce821484b08125b0ccfa8966ff42f0,STANDALONE,
+emp:canal-housing,fac:canal-housing,Canal Housing Redevelopment (registry card headcount),8,SOURCE,,,https://app.notion.com/321e821484b0814c9919d340642e3319,STANDALONE,
+emp:castle-ops,fac:castle-ops,Castle Operations (registry card headcount),80,SOURCE,,,https://app.notion.com/321e821484b081a8b47dc47579a6e346,STANDALONE,
+emp:celestial-springs,fac:celestial-springs,Celestial Springs Bathhouse (registry card headcount),30,SOURCE,,,https://app.notion.com/321e821484b0815e97ffe0bcec9a3ebc,STANDALONE,
+emp:cerulean,fac:cerulean,The Cerulean (registry card headcount),43,SOURCE,,,https://app.notion.com/321e821484b081cfb8efc87bd6feaaf7,STANDALONE,
+emp:clay-quarries,fac:clay-quarries,Neverwinter Clay Quarries (registry card headcount),12,SOURCE,,,https://app.notion.com/321e821484b081c69bdec30dd49bc5b6,STANDALONE,
+emp:collegium,fac:collegium,Collegium Montis Gladii (registry card headcount),0,SOURCE,,,https://app.notion.com/324e821484b08175ae3cc451aea28565,STANDALONE,
+emp:commercial-props,fac:commercial-props,Commercial Properties (Various) (registry card headcount),5,SOURCE,,,https://app.notion.com/321e821484b081208756cd5f9b876869,STANDALONE,
+emp:construction-hq,fac:construction-hq,Construction HQ,120,SOURCE,,,https://app.notion.com/321e821484b081229dceefa0c3c48170,STANDALONE,
+emp:crown-eight,fac:crown-eight,Crown of Eight Springs (registry card headcount),50,SOURCE,,,https://app.notion.com/34ce821484b0812f97cce7bf7af67928,STANDALONE,
+emp:crownsite-re,fac:crownsite-re,Crownsite Canal Property BG (registry card headcount),,UNKNOWN,,,https://app.notion.com/34ce821484b081a98fa4c44ac30bf8ac,STANDALONE,Registry card carries no Employees value. Empty stays empty; unknown is not zero.
+emp:crownsite-trade,fac:crownsite-trade,Crownsite Canal Property (registry card headcount),10,SOURCE,,,https://app.notion.com/321e821484b0816bab1ac84039fbe89f,STANDALONE,
+emp:crystal-gardens,fac:crystal-gardens,Crystal Gardens (registry card headcount),,UNKNOWN,,,https://app.notion.com/34ce821484b08158a449c58b59fbc2fd,STANDALONE,Registry card carries no Employees value. Empty stays empty; unknown is not zero.
+emp:dawnwood,fac:dawnwood,Dawnwood Settlement (registry card headcount),80,SOURCE,,,https://app.notion.com/34ce821484b081c2beeae2858f85995d,STANDALONE,
+emp:deep-road,fac:deep-road,Deep Road Network (Deep Road Authority) (registry card headcount),522,SOURCE,,,https://app.notion.com/3bbe821484b0815fac80dd1c4430327d,STANDALONE,522 on a Planning-status card. Not a current payroll.
+emp:desertsmouth,fac:desertsmouth,Desertsmouth Tunnel (registry card headcount),0,SOURCE,,,https://app.notion.com/34ce821484b08172b32ef083715f9465,STANDALONE,
+emp:devil-academy,fac:devil-academy,Devil Academy (Philosophical Faculty) (registry card headcount),2000,SOURCE,,,https://app.notion.com/324e821484b081699a22c992b7e05649,NOT_A_PAYROLL,2000 against a 2000/mo cost box. Not a wage payroll; composition unstated.
+emp:diplomatic,fac:diplomatic,Diplomatic Operations (registry card headcount),0,SOURCE,,,https://app.notion.com/321e821484b081408f8ce78bbfd11b30,STANDALONE,
+emp:dock-housing,fac:dock-housing,Dock District Housing (Ph 1 & 2) (registry card headcount),20,SOURCE,,,https://app.notion.com/321e821484b081faba57e5f9a87ab3a9,STANDALONE,
+emp:dock-mixed,fac:dock-mixed,Dock District Mixed-Use (registry card headcount),8,SOURCE,,,https://app.notion.com/321e821484b081dcae68d45f3e3801db,STANDALONE,
+emp:dock-security,fac:dock-security,Dock Ward Security Corp (registry card headcount),200,SOURCE,,,https://app.notion.com/321e821484b081b9b209d6dd21f950f8,EXTERNAL_PARENT,Parent Entity Peri Ops. Not Baen household payroll.
+emp:dock-warehouse,fac:dock-warehouse,Dock Ward Warehouse (registry card headcount),8,SOURCE,,,https://app.notion.com/321e821484b08132bcc9ef2290e366bc,STANDALONE,
+emp:faske,fac:faske,Faske & Halloran (registry card headcount),14,SOURCE,,,https://app.notion.com/362e821484b0813b9b7ef67d1559fd89,STANDALONE,
+emp:forgedeep-city,fac:forgedeep-city,Forgedeep City Development (registry card headcount),30,SOURCE,,,https://app.notion.com/321e821484b081b09469f6c9d92a22d5,STANDALONE,
+emp:formicorps,fac:formicorps,Formicorps (card headcount),0,SOURCE,,,https://app.notion.com/34ce821484b081b995b9f3426792b6bc,STANDALONE,"Card headcount is 0 against a 15000/mo cost box. Colony, not wage staff."
+emp:gauntlgrym-tools,fac:gauntlgrym-tools,Gauntlgrym Tools Partnership (registry card headcount),10,SOURCE,,,https://app.notion.com/321e821484b08116ac1bcc07c68ff15f,STANDALONE,
+emp:gg-settlement-superseded,fac:gg-settlement-superseded,[SUPERSEDED] Guardian's Gate Settlement (older variant) (registry card headcount),20,SOURCE,,,https://app.notion.com/321e821484b08119b068e3d4d503eaa3,SUPERSEDED,Card title marks this an older superseded variant.
+emp:gold-lending,fac:gold-lending,Gold Lending House (registry card headcount),12,SOURCE,,,https://app.notion.com/321e821484b081e7a5ecfd25ff8299dc,UNCONFIRMED_DO_NOT_BOOK,Status Unconfirmed on the registry card. Headcount carried for visibility only.
+emp:green-vein,fac:green-vein,Green Vein Corridor (registry card headcount),12,SOURCE,,,https://app.notion.com/321e821484b081449c69fcb641741a06,STANDALONE,
+emp:hammer-smithy,fac:hammer-smithy,Northern Hammer Smithy (registry card headcount),15,SOURCE,,,https://app.notion.com/321e821484b0819e840aea69126c3105,STANDALONE,
+emp:housing-portfolio,fac:housing-portfolio,Baen Real Estate & Housing Portfolio (registry card headcount),25,SOURCE,,,https://app.notion.com/37de821484b081549c6bd10986768d97,STANDALONE,
+emp:hunding,fac:hunding,Hunding Canal Lock System (registry card headcount),40,SOURCE,,,https://app.notion.com/321e821484b081b9a4cbf9fd26c7eccf,STANDALONE,
+emp:lobster-king,fac:lobster-king,Lobster King Operations (Baen-Allied) (registry card headcount),0,SOURCE,,,https://app.notion.com/321e821484b081899107d6fd75176754,UNCONFIRMED_DO_NOT_BOOK,"Status Unconfirmed. Allied, not owned (Peri Ops)."
+emp:lustrous-blade,fac:lustrous-blade,The Lustrous Blade (registry card headcount),8,SOURCE,,,https://app.notion.com/321e821484b081f88632c9a3a854424c,STANDALONE,
+emp:maritime-planned,fac:maritime-planned,Maritime Operations (Planned) (registry card headcount),0,SOURCE,,,https://app.notion.com/321e821484b0816d8ca6d53a98b8ba6d,STANDALONE,
+emp:munitions,fac:munitions,Neverwinter Munitions,43,SOURCE,,,https://app.notion.com/362e821484b081e98ce5d318425ffcde,STANDALONE,
+emp:ncf-luskan,fac:ncf-luskan,NCF Luskan branch,30,SOURCE,,,https://app.notion.com/321e821484b0812d82f9cc0add910698,CHILD_OF_ROLLUP,Inside the 85 on the NCF parent card. Do not add to parent.
+emp:ncf-nw,fac:ncf-nw,NCF Neverwinter branch,35,SOURCE,,,https://app.notion.com/321e821484b08175997cc81e61c35015,CHILD_OF_ROLLUP,Inside the 85 on the NCF parent card. Do not add to parent.
+emp:ncf-parent,fac:ncf-parent,NCF staff (parent card),85,SOURCE,,,https://app.notion.com/2fbe821484b0816ab0b8e7e7ed41fe29,PARENT_ROLLUP,85 parent headcount equals the four branch rows exactly (35+30+12+8). Headcount reconciles; revenue does not (branches sum 23250 vs parent 22000). Parent wins on revenue.
+emp:ncf-suzail,fac:ncf-suzail,NCF Suzail branch,8,SOURCE,,,https://app.notion.com/321e821484b08109a55af30bd40fa6cb,CHILD_OF_ROLLUP,Inside the 85 on the NCF parent card. Do not add to parent.
+emp:ncf-wd,fac:ncf-wd,NCF Waterdeep branch,12,SOURCE,,,https://app.notion.com/321e821484b08169bde3cc7112ca328d,CHILD_OF_ROLLUP,Inside the 85 on the NCF parent card. Do not add to parent.
+emp:nmwc,fac:nmwc,NMWC,120,SOURCE,,,https://app.notion.com/34ce821484b0815b8025e995ced7c996,STANDALONE,
+emp:nw-wood-canal,fac:nw-wood-canal,Neverwinter Wood Canal (registry card headcount),,UNKNOWN,,,https://app.notion.com/376e821484b081c195a1d5c3e2ceb4cb,STANDALONE,Registry card carries no Employees value. Empty stays empty; unknown is not zero.
+emp:orchard-chapel,fac:orchard-chapel,Orchard Chapel (registry card headcount),,UNKNOWN,,,https://app.notion.com/34ce821484b08130aedbf6d099d79bfb,STANDALONE,Registry card carries no Employees value. Empty stays empty; unknown is not zero.
+emp:quarry-aqua,fac:quarry-aqua,Converted Quarry Aquaculture (5 sites) (registry card headcount),20,SOURCE,,,https://app.notion.com/321e821484b0811098cfebc200f16c7a,STANDALONE,
+emp:reservoir,fac:reservoir,Reservoir Fisheries (registry card headcount),8,SOURCE,,,https://app.notion.com/321e821484b081f6a74cd6ee2b88a08e,STANDALONE,
+emp:safe-harbor,fac:safe-harbor,Safe Harbor Inn (registry card headcount),8,SOURCE,,,https://app.notion.com/321e821484b081b88ac4d7cb4a1b4b0c,STANDALONE,
+emp:schola,fac:schola,Schola Ducum Integrata (registry card headcount),30,SOURCE,,,https://app.notion.com/324e821484b081f3b801f03fc8ec343d,STANDALONE,
+emp:sea-gate-harbor,fac:sea-gate-harbor,Sea Gate Harbor Authority (registry card headcount),,UNKNOWN,,,https://app.notion.com/376e821484b0819e8c07d304487c01bb,STANDALONE,Registry card carries no Employees value. Empty stays empty; unknown is not zero.
+emp:sea-gate-shipyard,fac:sea-gate-shipyard,Sea Gate Shipyard (registry card headcount),,UNKNOWN,,,https://app.notion.com/376e821484b081db9a8ae682a583b6ee,STANDALONE,Registry card carries no Employees value. Empty stays empty; unknown is not zero.
+emp:seven-spires,fac:seven-spires,Seven Spires Estate (registry card headcount),,UNKNOWN,,,https://app.notion.com/376e821484b0812188b4ced3087746f7,STANDALONE,Registry card carries no Employees value. Empty stays empty; unknown is not zero.
+emp:shimmerdeep,fac:shimmerdeep,Shimmerdeep Cradle,300,SOURCE,,,https://app.notion.com/34ce821484b081119fd4c41feef5634e,STANDALONE,
+emp:shoreline,fac:shoreline,Enhanced Shoreline Systems (registry card headcount),15,SOURCE,,,https://app.notion.com/321e821484b08151be78c309a7ce8475,STANDALONE,
+emp:silversheen,fac:silversheen,Silversheen staff,45,SOURCE,,,https://app.notion.com/321e821484b08155bf9bcea55e2c7669,STANDALONE,
+emp:skyreach,fac:skyreach,Skyreach Castle (registry card headcount),28,SOURCE,,,https://app.notion.com/34ce821484b081d7aaf3fb4e6a607477,STANDALONE,
+emp:snowfall,fac:snowfall,Snowfall Hearthworks (registry card headcount),0,SOURCE,,,https://app.notion.com/3c2e821484b081f888a6e1169f9a4df4,STANDALONE,
+emp:split-fountain,fac:split-fountain,Split Fountain Renovation (registry card headcount),5,SOURCE,,,https://app.notion.com/321e821484b0817da905f79b60a61485,STANDALONE,
+emp:ssamt,fac:ssamt,Scales & Secrets Asset Management Trust (SSAMT) (registry card headcount),,UNKNOWN,,,https://app.notion.com/392e821484b081efb0a9d73f9b9757d7,STANDALONE,Registry card carries no Employees value. Empty stays empty; unknown is not zero.
+emp:star-metal,fac:star-metal,Star Metal Hills Bauxite Mining (registry card headcount),35,SOURCE,,,https://app.notion.com/321e821484b081cbb112e8cab733e992,STANDALONE,
+emp:stonefire,fac:stonefire,Stonefire Ceramics (registry card headcount),67,SOURCE,,,https://app.notion.com/37de821484b081d1bf05cd5b4111d5bc,STANDALONE,
+emp:thorn-silver,fac:thorn-silver,Thorn & Silver Exchange (registry card headcount),10,SOURCE,,,https://app.notion.com/321e821484b08104815afe1101e6f8f1,ROLLUP_AMBIGUOUS,Parent Entity is NCF Luskan. Whether these 10 sit inside Luskan 30 is not stated on either card.
+emp:thundertree,fac:thundertree,Thundertree Waystation (registry card headcount),,UNKNOWN,,,https://app.notion.com/376e821484b081088810e1d99b58f959,STANDALONE,Registry card carries no Employees value. Empty stays empty; unknown is not zero.
+emp:timber,fac:timber,Northern Crown Timber Operations (registry card headcount),8,SOURCE,,,https://app.notion.com/321e821484b081d99801d601f9503056,STANDALONE,
+emp:tissage,fac:tissage,Tissage / Institut card headcount,81,SOURCE,,,https://app.notion.com/372e821484b081d98c19e650c16b687f,STANDALONE,
+emp:treasury-stone,fac:treasury-stone,Treasury Stone Quarries,55,SOURCE,,,https://app.notion.com/321e821484b081118df6fb5d6377ba0a,STANDALONE,
+emp:underground-reno,fac:underground-reno,Underground Renovation Services (registry card headcount),10,SOURCE,,,https://app.notion.com/321e821484b0810c945ff2ee5b1d4841,STANDALONE,
+emp:vault-construction,fac:vault-construction,Specialized Vault Construction (registry card headcount),12,SOURCE,,,https://app.notion.com/321e821484b0814a9cd7daca52d0c750,STANDALONE,
+emp:veil,fac:veil,The Veil (registry card headcount),0,SOURCE,,,https://app.notion.com/321e821484b081729b7cdb66323883e8,STANDALONE,Card headcount 0. Named operatives exist on the card assets field; no aggregate booked.
+emp:venetian-bay,fac:venetian-bay,Venetian Bay Housing (registry card headcount),5,SOURCE,,,https://app.notion.com/321e821484b0814a9a3cea9157b13d6b,STANDALONE,
+emp:verdant-cascades,fac:verdant-cascades,Verdant Cascades Bathhouse (registry card headcount),30,SOURCE,,,https://app.notion.com/321e821484b081d4921fffe136c22209,STANDALONE,
+emp:verification,fac:verification,Verification Services (registry card headcount),5,SOURCE,,,https://app.notion.com/321e821484b081f7be17ff26a67e57fb,ROLLUP_AMBIGUOUS,Parent Entity is NCF Luskan. Whether these 5 sit inside Luskan 30 is not stated on either card.
+emp:w-limestone,fac:w-limestone,Western Limestone Quarries (registry card headcount),25,SOURCE,,,https://app.notion.com/321e821484b081019287cb7fdf65e5a9,STANDALONE,
+emp:w-sandstone,fac:w-sandstone,Western Sandstone Quarries (registry card headcount),18,SOURCE,,,https://app.notion.com/321e821484b08192b481f813840aadd3,STANDALONE,
+emp:warborn-nw,fac:warborn-nw,Neverwinter Warborn hall,77,SOURCE,,,https://app.notion.com/321e821484b081b38d51dcbc19edd667,STANDALONE,
+emp:warborn-wd,fac:warborn-wd,Waterdeep Warborn hall,200,SOURCE,,,https://app.notion.com/321e821484b0816a8684d3df85527df8,STANDALONE,
+emp:wd-brokerage,fac:wd-brokerage,Waterdeep Information Brokerage (registry card headcount),0,SOURCE,,,https://app.notion.com/321e821484b081a09fdef55820cab72b,UNCONFIRMED_DO_NOT_BOOK,Status Unconfirmed on the registry card.
+emp:wd-trading,fac:wd-trading,Waterdeep Trading Office (registry card headcount),10,SOURCE,,,https://app.notion.com/321e821484b081289cb9fbb308ea2536,STANDALONE,
+emp:whisper,fac:whisper,Threadbaum Model 1494-L Whisper (registry card headcount),40,SOURCE,,,https://app.notion.com/34ce821484b08164aa0fd2d0083834c8,STANDALONE,
+emp:wyrmhelm,fac:wyrmhelm,Wyrmhelm Forgedeep Facility (registry card headcount),15,SOURCE,,,https://app.notion.com/34ce821484b0812f8577d4d37289da9f,STANDALONE,
+emp:zariel-contract,fac:zariel-contract,Zariel Warborn Contract (registry card headcount),0,SOURCE,,,https://app.notion.com/34ce821484b081febf14f062ef3cb91b,NOT_A_PAYROLL,"Contract card, not a plant. Employees 0 on the card. Delivery headcount sits on warborn-nw and warborn-wd."
