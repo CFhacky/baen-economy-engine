@@ -15,17 +15,17 @@ actor:npc:halbor-dunn,Merchant Halbor Dunn,PERSON,34ce8214-84b0-811f-aac7-cae927
 actor:npc:brunar-battleforge,Brunar Battleforge,PERSON,34ce8214-84b0-812e-b41e-f8f7c55f9761,ACTIVE,,Silversheen evidence,SOURCE-DERIVED,SOURCE,NPC Brunar,NCF
 actor:npc:helena-brightwater,Helena Brightwater,PERSON,,ACTIVE,,SSAMT paper-cap discretion,SOURCE-DERIVED,SOURCE,SSAMT trust body,NCF
 actor:npc:seren-brightwater,Seren Brightwater,PERSON,,ACTIVE,,ECONOMIC_INPUT; role unquantified,MODEL-PROPOSED,UNKNOWN,NPC title only,NCF
-actor:institution:institut-baenund,Institut Baen'und,RESEARCH_INSTITUTION,2fbe8214-84b0-81d9-bc8b-d10ad1ba785a,ACTIVE,,Directed by Shi'van. Do not use Tissage 67.,SOURCE-DERIVED,SOURCE,faction Institut Baen'und,INSTITUT
+actor:institution:institut-baenund,Institut Baen'und,RESEARCH_INSTITUTION,2fbe8214-84b0-81d9-bc8b-d10ad1ba785a,ACTIVE,,Later empire wrapper around Tissage and other Baen'und works. Directed by Shi'van. Do not fold Tissage 67 into Institut research headcount.,SOURCE-DERIVED,SOURCE,faction Institut Baen'und + user ruling 2026-09-19,INSTITUT
 actor:programme:burning-gate,Project Burning Gate,PROGRAMME,34ce8214-84b0-8125-b0cc-fa8966ff42f0,ACTIVE,30,30 staff; external cash ~800000; nominal 3600000,SOURCE-DERIVED,SOURCE,business_registry Project Burning Gate,INSTITUT
-actor:workforce:institut:unresolved,Institut anonymous staff remainder,WORKFORCE_POOL,2fbe8214-84b0-81d9-bc8b-d10ad1ba785a,ACTIVE,,No Institut-wide headcount sourced,UNRESOLVED,UNKNOWN,missing aggregate,INSTITUT
-actor:npc:shivan-baenund,Shi'van Baen'und,PERSON,2fce8214-84b0-811e-b260-c801033cada4,ACTIVE,,Institut director; Tissage is separate identity,SOURCE-DERIVED,SOURCE,faction + Burning Gate lead + NPC,BOTH
+actor:workforce:institut:unresolved,Institut anonymous staff remainder,WORKFORCE_POOL,2fbe8214-84b0-81d9-bc8b-d10ad1ba785a,ACTIVE,,No Institut-wide headcount sourced; Tissage 67 stays on Tissage,UNRESOLVED,UNKNOWN,missing aggregate,INSTITUT
+actor:npc:shivan-baenund,Shi'van Baen'und,PERSON,2fce8214-84b0-811e-b260-c801033cada4,ACTIVE,,Founder of Tissage first; later director of overarching Institut empire,SOURCE-DERIVED,SOURCE,faction + Burning Gate lead + NPC + user ruling 2026-09-19,BOTH
 actor:npc:arik-baen,Arik Baen,PERSON,,ACTIVE,,Burning Gate approver; not auto employee,SOURCE-DERIVED,SOURCE,Burning Gate leadership,INSTITUT
 actor:npc:frieren,Frieren,PERSON,,ACTIVE,,Barrier research,SOURCE-DERIVED,SOURCE,Burning Gate leadership,INSTITUT
 actor:npc:einar,Einar,PERSON,,ACTIVE,,Construct production counterparty,SOURCE-DERIVED,SOURCE,Burning Gate leadership,INSTITUT
 actor:npc:jormun,Jormun,PERSON,,ACTIVE,,Nafnfestr founder; Institut personnel on breeding ops,SOURCE-DERIVED,SOURCE,registry snapshot Leadership,INSTITUT
-actor:business:tissage-shivan,Tissage (Shi'van textile floor),BUSINESS,2fce8214-84b0-811e-b260-c801033cada4,ACTIVE,67,67-employee three-shift floor is TISSAGE not Institut,SOURCE-DERIVED,SOURCE,Tessa Whitmore / Rosalie Hatch notes,INSTITUT
-actor:npc:tessa-whitmore,Tessa Whitmore,PERSON,340e8214-84b0-81c6-9930-d60365a2a905,ACTIVE,,Junior designer on textile floor,SOURCE-DERIVED,SOURCE,NPC Tessa Whitmore,INSTITUT
-actor:npc:rosalie-hatch,Rosalie Hatch,PERSON,341e8214-84b0-815b-be77-d1cdad7615e2,ACTIVE,,Floor lead 67 employees,SOURCE-DERIVED,SOURCE,NPC Rosalie Hatch,INSTITUT
+actor:business:tissage-shivan,Tissage (Shi'van textile floor),BUSINESS,2fce8214-84b0-811e-b260-c801033cada4,ACTIVE,67,Came first as Shi'van's business. Still exists as 67-employee three-shift floor. Nested under later Institut empire; not the same legal actor as Institut research.,SOURCE-DERIVED,SOURCE,Tessa Whitmore / Rosalie Hatch notes + user ruling 2026-09-19,INSTITUT
+actor:npc:tessa-whitmore,Tessa Whitmore,PERSON,340e8214-84b0-81c6-9930-d60365a2a905,ACTIVE,,Junior designer on Tissage textile floor,SOURCE-DERIVED,SOURCE,NPC Tessa Whitmore,INSTITUT
+actor:npc:rosalie-hatch,Rosalie Hatch,PERSON,341e8214-84b0-815b-be77-d1cdad7615e2,ACTIVE,,Tissage floor lead 67 employees,SOURCE-DERIVED,SOURCE,NPC Rosalie Hatch,INSTITUT
 actor:facility:warborn-mega,Waterdeep Warborn Mega-Facility,FACILITY,,ACTIVE,,Investment 1127000; 200-job cover; owner UNKNOWN,SOURCE-DERIVED,SOURCE,LOCATIONS_BODY_INGEST_L6,INSTITUT
 actor:npc:rurik-hellbrace,Rurik Hellbrace,PERSON,,ACTIVE,,Facility manager; not proven Institut employee,SOURCE-DERIVED,SOURCE,L6 facility manager,INSTITUT
 actor:facility:component-factory-neverwinter,Baen'und Component Factory Site Neverwinter,FACILITY,,ACTIVE,,215000 ESAMT cap; fit-out pending,SOURCE-DERIVED,SOURCE,LOCATIONS_BODY_INGEST_L6,INSTITUT
