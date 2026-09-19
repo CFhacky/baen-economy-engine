@@ -12,14 +12,14 @@
     "CONFLICT": 15,
     "SUPERSEDED": 225,
     "MISSING_DATA": 4,
-    "CONTEXT_ONLY": 346,
+    "CONTEXT_ONLY": 347,
     "HISTORICAL": 10,
-    "UNKNOWN": 577
+    "UNKNOWN": 576
   },
   "body_review_status_counts": {
     "REVIEWED": 801,
-    "NO_BODY_NOT_APPLICABLE": 242,
-    "UNMEASURED": 577
+    "NO_BODY_NOT_APPLICABLE": 243,
+    "UNMEASURED": 576
   },
   "review_disposition_counts": {
     "ECONOMIC_INPUT": 395,
@@ -28,10 +28,10 @@
     "SUPERSEDED": 225,
     "MISSING_DATA": 4,
     "ECONOMIC_CONTEXT": 52,
-    "NO_BODY_NOT_APPLICABLE": 242,
+    "NO_BODY_NOT_APPLICABLE": 243,
     "HISTORICAL_ONLY": 10,
     "NON_ECONOMIC": 52,
-    "UNREVIEWED": 577
+    "UNREVIEWED": 576
   },
   "completion_rule": "Every row must have a body_review_status of REVIEWED or NO_BODY_NOT_APPLICABLE, a non-null review_disposition, and driver_owners for ECONOMIC_INPUT dispositions.",
   "records": [
@@ -12633,14 +12633,17 @@
       "source_url": "https://app.notion.com/32ce821484b081970689ea630c52a8a",
       "census_hash": "9e4f7a88731a50e0",
       "census_coverage": "UNKNOWN",
-      "semantic_status": "UNKNOWN",
-      "body_review_status": "UNMEASURED",
+      "semantic_status": "CONTEXT_ONLY",
+      "body_review_status": "NO_BODY_NOT_APPLICABLE",
       "body_revision": null,
       "body_hash": null,
-      "review_disposition": null,
+      "review_disposition": "NO_BODY_NOT_APPLICABLE",
       "economic_domains": [],
       "driver_owners": [],
-      "review_notes": []
+      "review_notes": [
+        "Retained source row explicitly records a truncated live receipt URL and forbids inventing the missing UUID.",
+        "Direct read-only live NPC lookup by exact title returned no current row on 2026-09-19; no retrievable page body exists, so this is an explicit no-body/not-applicable receipt."
+      ]
     },
     {
       "stable_source_id": "notion:page:32ce8214-84b0-81a1-7ebd-ca848c5ba239",
