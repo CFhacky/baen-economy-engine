@@ -1,0 +1,125 @@
+{
+ "fac:tissage": {
+  "conflict_resolved": "45,000 vs 28,000 is NOT a conflict. 28,000 is STEADY-STATE (protection line 15,000 + high fashion 6,000 avg + specialty 4,000 + licensing 1,500 = 26,500-28,000). ~45,000-47,000 is WITH an active institutional commission. The card says outright: 'Monthly Revenue field reflects steady-state.' The Transaction Ledger's 45,000/mo Institut gross is the with-Stelmane figure.",
+  "stelmane": "Duchess Stelmane wardrobe total value 500,000 gp, ~25,000/mo recognition, 40% complete, ~10-12 months remaining. Veil commission 2,000,000 COMPLETED. Watch contract 400 COMPLETED.",
+  "opex_17500": "payroll 9,200 + materials 4,500 + facilities 1,800 + R&D 1,200 + security 300 + benefits 500",
+  "wage": "9,200/mo across 81 (67 employees + 14 active apprentices). 30% above guild standard. Masters ~200, specialists ~150, smiths ~140, journeymen ~120, builders ~100, support ~80, apprentices ~40.",
+  "margins": "steady-state 28,000/17,500 = 10,500 net, 38%. With Stelmane 47,000/17,500 = 29,500 net, 63%.",
+  "capital": "132,000 = Cathedral Workshop 48,000 + 5 looms 80,000 + safety 2,000 + patent 2,000. Matches Transaction Ledger Day 393 rows exactly.",
+  "ip": "IP portfolio valued 2,116,000 gp by Pemberton-Chase, transferred into ESAMT as collateral. Ward-threading alone is 1,385,000 of that (65%) and rests on 14 specialists.",
+  "capacity": "Protection line ~360 units/month against an addressable Waterdeep market of 5,000-8,000. Saturation in 15-24 months, then ~150/mo replacement cycle. 85-employee cap queued.",
+  "headcount_detail": "8 masters, 14 specialists, 15 journeymen, 43 seamstresses, 8 smiths, 6 builders, 10 support, 14 apprentices (trade and skill tiers overlap; unique total 81). Three shifts."
+ },
+ "fac:ncf-parent": {
+  "reserves_FOUND": "I reported NCF reserves as absent from the pages. WRONG. The body carries: ESAMT ~3,177,000 gp asset base, ~6,862,000 gp borrowing capacity, ~582,000 gp outstanding draws. NCF fee income ~2,500 gp/month from the trust.",
+  "esamt_reconciles": "3.177M asset base = ruby 1,013,000 + IP portfolio 2,116,000 = 3,129,000, close to the stated 3.177M.",
+  "draws_two_stamps": "~582,000 outstanding here (Alturiak 1495 baseline) vs 454,116 at Shi'van Day 733 in the Transaction Ledger. Two stamps of the same facility, not a contradiction.",
+  "five_pillars": "NCF 50% + final decision authority; House Goldweaver / Ironledger / Silverquill / Moonwhisper / Shadowcoin 10% each. Shadowcoin IS Jarlaxle's Bregan D'aerthe. Profit split: NCF 30% until capital repaid, then NCF 50% / 10% each.",
+  "silversheen": "Body states NCF manages a 30% Silversheen stake \u2014 independently confirms Canon Change Log 709's 30 NCF against the old 60 in ownership.csv.",
+  "snowfall": "NCF holds 25% ordinary equity plus an approved 30,000 gp staged facility at 8%, secured by company assets/IP plus Veldrin's 5,000 gp completion guarantee. Approved but NOT drawn at Day 7 Hammer. loans.csv rate was blank; it is 8%.",
+  "klauth": "Body rules the ~410K Klauth clean-art realization 'separate prior canon and never re-booked here'. That settles the AHEAD_OF_BOUNDARY question: it is not an opening balance.",
+  "kalnar_stale_confirmed": "Known Assets still reads 'Kalnar Stonebrow (director)'. Canon Change Log 709 corrected that role to Chief Infrastructure Engineer / Baen-Gauntlgrym Liaison. Confirmed stale.",
+  "loans": "2.3M gold in active loans confirmed. Silver-backed currency via the Shimmerdeep Cradle vein. Mirna Goldweaver is CFO of Silversheen Trading."
+ },
+ "fac:silversheen": {
+  "PRICE_FOUND": "320 gp/ton. I reported 'no page states a price per tonne' \u2014 wrong, it is on the body.",
+  "revenue_stale": "At the Hammer 1495 ruled 180 t/mo the body computes ~57,600 gp/mo. The registry Monthly Revenue cell 48,400 is the 150 t/mo Eleint 1494 baseline (150 x 320 = 48,000). The cell is STALE against the ruling in its own Notes field.",
+  "warborn_allocation_CONFIRMED": "Body states '20% of output (30 tons/month) is allocated to Warborn manufacturing'. Confirms my reconciliation exactly: 30 t IS 20%, stamped at the 150 baseline. At 180 t/mo the 20% share is 36 t.",
+  "cost_29040": "ore extraction internal transfer 3,500 + Gauntlgrym smelting fee (50% partner share) 14,520 + processing labour 5,175 + transport 3,000 + facility overhead 1,845 + security 1,000",
+  "wage": "processing labour 5,175/mo for the 45 Forgedeep staff. Gauntlgrym smelting workers are Gauntlgrym employees under the JV, NOT in Baen headcount. Star Metal Hills 35 is a separate entity.",
+  "ownership": "50 Gauntlgrym / 30 NCF / 20 Baen, confirmed in the Notes field and body. ownership.csv is now correct.",
+  "empire_crosscheck": "Body says Silversheen is 19.8% of total empire revenue. At 57,600 that implies total empire revenue ~291,000/mo \u2014 a useful independent check on the headline MRR.",
+  "distribution": "65% surface markets, 35% Bregan D'aerthe (Jarlaxle pricing leverage).",
+  "scaling": "150 t (Eleint 1494) -> 180 t (Uktar 1494) -> 300 t Y2 (~96,000) -> 650 t Y5 (~208,000) -> Y10 mature. Star Metal Hills ore 800 t/mo scaling to 2,100 t/mo by Y5.",
+  "net": "Baen net share 19,360/mo, margin 40%, annual ROI 290%."
+ },
+ "fac:shimmerdeep": {
+  "capital_breakdown": "1,400,000 = infrastructure 500,000 + security 200,000 + extraction equipment 300,000 + vault construction 400,000. Stated 6-month ROI.",
+  "LIQUIDITY_GATE_EXPLAINED": "The '~400k gap / 450k target' from the handoff is defined here: protected requirement is 450,000 gp NET SETTLED liquidity = ~400K gap + 50K operating buffer, supporting Shimmerdeep completion and the Crown rollout.",
+  "klauth_SETTLED": "Body rules it outright: 'auction hammer value and receivables do not count. Only cleared settlement reduces the gate. The historical ~410K Klauth clean-art liquidation is prior canon and is not automatically current spendable Shimmerdeep cash.' The 410K does NOT become an opening balance. AHEAD_OF_BOUNDARY question closed.",
+  "currency": "100% silver backing for the Northern Crown launch, enables 40% reserve maintenance indefinitely, supports 50 billion Crown circulation within 10 years. Y1 full launch, Y2 credit expansion 2.5:1, Y3 continental reserve bank, Y5 global standard.",
+  "security_reconciles": "200 Bloodaxe veterans surface + 100 underground specialists = 300, which is exactly the '300 Cradle detail' in Canon Change Log 709. Plus a 5-mile exclusion zone and griffin air cover.",
+  "clearance": "Level 4 Inner Circle full knowledge; Level 3 management gets only 'strategic metal reserves under evaluation'; below Level 3 nothing.",
+  "authority": "Vara Torsten runs the liquidation/settlement lane. Arik not required unless a sovereign boundary is crossed."
+ },
+ "fac:formicorps": {
+  "employees_0_explained": "Employees 0 is HUMAN staff only. Colony strength ~100,000 ants, self-managing under its queen. Corrected 2026-08-20 per audit ruling C3 \u2014 the colony population is tracked in the body, not the payroll column. My NOT_A_PAYROLL flag was right; this is the reason.",
+  "castes": "Worker 4ft 60% / Soldier 6ft 25% / Myrmarch 8ft 10% / Queen 15ft <1% / Colossal 20ft+ <0.1%.",
+  "economics": "36x construction speed vs traditional. 65-70% cost reduction per project. 24/7, no fatigue or shift cycles. Contested construction \u2014 builds and defends simultaneously. Integrated purple worm farming concentrates precious metals in worm digestive tracts, harvested during caretaker cycles.",
+  "BOUNDARY": "Acquisition 1496 DR, 'Formicorps era opens'. This entity is FORWARD of Day 7 Hammer 1495 and its 2,500,000 capital + 15,000/mo cost sit in facilities.csv as if current. Confirms the Change Log 709 'banded as 1496 forward canon' flag.",
+  "deployments": "Alhoon Engagement Kythorn 1496 (Hunzrin and Barrison Del'Armgo now know Formicorps exist). Continental Waterway 1498, 600-mile canal Waterdeep to Anauroch. Desertsmouth Tunnel 1498, 12-mile bore at 60x60 ft. Crown of Eight Springs Phase 2 gated on Crown Investment score 4.",
+  "why": "Pre-Formicorps labour ceiling: ~2,000 skilled workers, ~5,000 devil pool, ~500 dwarven consultants, ~50,000 cubic yards/month excavation. Formicorps compress 25-50 year timelines to 3-8 years."
+ },
+ "fac:nmwc": {
+  "revenue_basis": "25,000/mo is the midpoint of an annual 185,000-425,000 range (~300K/yr). Stated ROI period 1.3 years on 500,000 gp capital.",
+  "trajectory": "Y1 185-425K/yr, Y3 220-280K stabilised, Y5 mature 600-800K/yr.",
+  "water_empire": "NMWC is the base of a six-entity water structure: NMWC Neverwinter 185-425K/yr operational; NMWC Aquaculture 110-130K/yr Y1; Llorkh Watershed 1,050,000/yr PLANNED on a 3M gp pipeline; Hunding Canal Transport 1,100,000/yr UNDER CONSTRUCTION; Desertsmouth Eastern Water Sales 675,000/yr PLANNING; Anauroch-Edge Water Rights 400,000/yr PLANNING. Only the first is booked revenue today.",
+  "note": "Premium products and water rights layer projected to add 200K gp/yr at maturity. Hunding Canal's 1.1M/yr is the single largest unbooked projected line found so far."
+ },
+ "fac:deep-road": {
+  "body": "BLANK page \u2014 everything is in the properties/Notes.",
+  "headcount_is_a_projection": "522 is '6 boring teams (87/team) at Phase 1 PEAK', not a current payroll. Status is Planning. employment.csv carries 522 as SOURCE headcount on a Planning entity \u2014 it is a peak projection and must be flagged.",
+  "capital_is_a_plan": "18,700,000 on a Planning-status entity. Largest single number in facilities.csv and it is not deployed capital.",
+  "schedule": "Survey begins Alturiak 1495 DR. Phase 1 ground-break Tarsakh 1495. Phase 1 target Kythorn-Flamerule 1497. Phase 1 = Gauntlgrym<->Mithral Hall ~180 mi plus Neverwinter<->Gauntlgrym ~40 mi. Mundane dwarven boring plus crystal explosives, explicitly NO Formicorps.",
+  "revenue": "Projected ~10,500,000 Crowns/yr at Phase 1+2 operation. Every station doubles as a Northern Crown Bank branch \u2014 the Underdark currency adoption vector. Jarlaxle takes a 2% Underdark freight commission as Director of Underdark Operations."
+ },
+ "fac:burning-gate": {
+  "capital_explained": "Nominal project cost 3,600,000 gp. ACTUAL external cash outflow ~800,000 gp. Internal allocation ~2,800,000 gp. The 800,000 in facilities.csv is correctly the external cash, not the nominal.",
+  "internal_breakdown": "Orichalcum extraction 2,400,000 nominal / ~180,000 actual external. Construct production (Einar) 340,000 / ~95,000. Institut enchantment components 220,000 / ~70,000. Dimensional research 90,000 / ~15,000. Frieren barrier development: salaried labour only.",
+  "external_breakdown": "Mithral/adamantine purchased 180,000 + fire elemental contracts 150,000 + external reagents ~85,000 + contingency 100,000.",
+  "doctrine": "1,800 lbs of orichalcum worth 2M+ on the open market, used rather than sold \u2014 opportunity cost, not cash flow. Internal spend circulates 3-4x before leaving the Baen economy.",
+  "purpose_and_clock": "Dragon-slaying / god-killing engagement architecture. Committed ~late 1494 DR on the Shi'van timeline. Target horizon one year: 'Then we burn the garden's champion to ash.'",
+  "canon_hazard": "Page flags itself: the project exists only in conversation memory, no design file. Recommend project-burning-gate.md before the next Shi'van session."
+ },
+ "fac:desertsmouth": {
+  "RECLASSIFIED": "30 Jul 2026 Leviathan Project merge. The 60x60 ft tunnel on this row is now the PILOT BORE, not the canal passage. The canal is the Leviathan Bore: 12.00 miles, 400 ft waterline, 65 ft depth, six two-mile isolation districts, gates at even miles 0-12, keeps at odd miles, ~28 psi head. Alignment LOCKED.",
+  "capital": "3,200,000 reclassified as SUNK PILOT INVESTMENT, not stranded. 120,000/mo continues against pilot works. 7.6-8.78M cu yd and 18-24 months fit the pilot role unchanged.",
+  "DATE_VOIDED": "The registry Date Operational 'projected completion 18-24 months from bore commencement' is explicitly VOID as the waterway schedule. Schedule authority is Leviathan Master Canon IX Amendment 01-B: first through-navigation ~Year 6-7, stable Shadow Sea Year 8-10, unscaled fallback Year 10-12. facilities.csv carries the voided framing.",
+  "EXCAVATION_RATE_OF_RECORD": "Formicorps 150 ft/day per 40,000-body colony = 20,000 cu yd/day = 0.5 cu yd per body per day. This is the campaign's established excavation rate for ALL Leviathan schedule math \u2014 the first hard productivity constant found anywhere in the registry.",
+  "portals": "Western Anauroch portal 4,200 ft, eastern Dagger River portal 4,000 ft, apex 4,400 ft, gravity-fed west-to-east at 0.47% west / 1.89% east. Now downgraded to SURVEY PRIORS, not facts \u2014 no elevation model exists in Leviathan canon.",
+  "strategic": "The corridor's single irreplaceable asset \u2014 cannot be bypassed. Controlled-collapse infrastructure is a use-once option with an 18-24 month rebuild."
+ },
+ "fac:forgedeep-city": {
+  "EMPIRE_MRR": "Body states 'the rest of the empire generates 245,000 gp/month'. This is the headline MRR the handoff called an Eleint snapshot \u2014 now located on a page.",
+  "population": "450 at Eleint 1494, with a staged band 1,400-1,600 pending the next played visit (per the Change Log 709 as-of flag). Targets 2,000 Y1, 8,000 Y3, 20,000 Y5, 50,000 Y10.",
+  "cost_15000": "city administration 5,000 + infrastructure construction 8,000 + security/garrison support 2,000.",
+  "future_revenue": "At 2,000 population (Y1), projected municipal revenue 5,000-10,000 gp/month. Currently pre-revenue.",
+  "CHARTER_CLOCK_DUE": "Provisional charter; review clock runs from the late-1493 founding and matured Hammer-Kythorn 1495 \u2014 DUE AT CURRENT PLAY POSITION, with Arik deployed off-world. Ruled 2026-07-28.",
+  "WARBORN_GAP_ANSWER": "Body names a Future Warborn Facility at Forgedeep, Year 2, 'planned 200+ units/month'. That is the answer to the 46/month Zariel contract shortfall \u2014 the plan the old text assigned ~50/mo to is actually specced at 200+.",
+  "hunding": "Hunding Canal Lock System 30% complete, 400 construction workers, counterweight lock-lift, 40-60% transport cost reduction when operational. Partnership with the Hunding family.",
+  "governance": "Arik as Baen Taranis, City Lord. 9-member council, independent judiciary, own Bloodaxe garrison. First new chartered city in ~200 years."
+ },
+ "fac:wyrmhelm": {
+  "cost_SUPERSEDED": "The 400 gp/dragon/month uniform model is superseded. Current 2,000 gp/mo is plausible only for PARTIAL occupancy at ordinary tempo; full mixed occupancy is provisionally 2,500-3,500 gp/month. facilities.csv 2,000 is a partial-occupancy figure.",
+  "completion_package": "45,000-60,000 gp still required before routine two-Warmother indoor occupancy and major surgery: second hall, hardened apron, embedded weighing slab, restraint arrays, ground-cradle recovery, purge ventilation, load certification.",
+  "biology_locked": "Ordinary Warmothers 75,000-105,000 lb, standard midline ~90,000 lb; Ambrosianeth ~115,000 lb. Footfall zones rated 250,000 lb, landing apron 450,000 lb operational / 700,000 lb sacrificial. Whole-body overhead lifting prohibited; 90-ton ground cradle.",
+  "food": "One-Warmother mode ~577 lb usable carcass/day, 105 tons/year, 13-ton 45-day reserve. Full rated occupancy ~928 lb/day, 169 tons/year, 21-ton reserve (42 preferred for high tempo).",
+  "tiers": "Courser CR 6 scout, Charger CR 11 line cavalry, Warmother CR 15 command. Genetic stock Klauth primary, Aurixalnar secondary from year 2.",
+  "distribution": "Inner Circle bonding window Nightal 1495 - Hammer 1496: Arik (Warmother Ambrosianeth), Korgan (Warmother), Vara (Charger), Shi'van (Charger), Lirien (Courser), Seliara (Charger). Second Warmother gifted to House Amaranthe ~Hammer 1497. Year 10 (1504-05): 500-800 mature, three Wings."
+ },
+ "fac:zariel-contract": {
+  "scope": "200,000 Legionnaire total. 5,000 + 21 Solar Guard is the first tranche, hard deadline ~late 1496, a proving delivery. ~800,000,000 gp total at 4,000/unit over contract life. Remaining deliveries run 50+ years. 'First-tranche schedule performance is the hinge: failure on the 5,000 forfeits credibility on the 195,000.'",
+  "full_scale": "'At projected full Waterdeep scale (~300+ units/month, 747K monthly profit)'. The 150/mo user ruling is the page's designed band; 300+ is the later full-scale target. 747,000/mo profit belongs to that 300+ state, not to 150.",
+  "line_b_catalog": "Major Warborn material 70,000 / total cost 95,000 / sale 400,000 min / margin 305,000. Standard 28,000 / 43,000 / 150,000 / 107,000. Elite 36,000 / 51,000 / 200,000+. Explicitly a prestige shop, NOT the 5,000-frame Zariel invoice.",
+  "legal": "Asmodeus umbrella contract: no-predation clause (Zariel forces cannot target Baen assets or personnel), Warborn extension clauses post-Hell Siege. Held directly by Arik, not NCF.",
+  "capital": "Required production investment 907,000 (Waterdeep) + 288,000 (Neverwinter, complete)."
+ },
+ "fac:arterial-road": {
+  "wage": "15,200/mo total = Road Warden 7,200 + maintenance crews 5,000 + construction crews 3,000. Remainder of the 19,360 cost is materials 2,660 + administrative 1,500.",
+  "revenue_split": "tolls 15,000 + 30-year government maintenance contracts (Neverwinter, Luskan) 5,000 + waystation income 2,000 = 22,000. Net 2,640, margin 12% \u2014 thin BY DESIGN, infrastructure dominance not a profit centre.",
+  "headcount_roles": "60 Road Wardens (patrol, toll collection, bandit deterrence \u2014 and they double as Veil intelligence collectors), 50 maintenance, 25 construction, 10 waystation, 5 administrative.",
+  "network": "500+ miles operational, ~400 more under construction. Neverwinter-Luskan 120mi, -Gauntlgrym 80mi, -Mirabar 150mi, -Waterdeep 300+mi, Forgedeep-Guardian's Gate 40mi (the +12k/mo driver), -Baldur's Gate 400+mi at 60%, -Suzail 500+mi at 40%. Revenue doubled 10,000 -> 22,000 in 4 months on the connector.",
+  "forward": "Projected year-end 30,000+/mo as extensions complete; canal integration adds 8,000-12,000/mo when Hunding Canal Section 1 is operational. 1,200+ acres of arterial land owned.",
+  "risk": "Named the empire's single most critical physical vulnerability \u2014 every sector's logistics is road-dependent."
+ },
+ "fac:housing-portfolio": {
+  "BOUNDARY_FIX_AVAILABLE": "The page's own growth line gives the Day-7 figure directly: 'Kythorn 1494: 15,910 gp/mo -> Hammer 1495: ~16,400 gp/mo -> Hammer 1496: 28,040 gp/mo'. facilities.csv carries 28,040, which is the Hammer 1496 state. THE HAMMER 1495 VALUE IS ~16,400/mo. This is a directly fixable boundary error, not just a flag.",
+  "whole_page_is_1496": "Every figure on the page is post-bridge Hammer 1496 canon, rolled 2026-06-12 via UDRP Strategic Overview mode. Date Operational says so: '1494 DR; current state Hammer 1496 DR'.",
+  "portfolio_1496": "1,442 residential units completed, 11 premium properties, 8 commercial, 1,200+ acres plus Haven's Rest. Total portfolio value 14.5M+ gp. Total real estate revenue ~411,000 gp/year. Occupancy 97%.",
+  "revenue_lines_1496": "Dock District Ph1-3 4,557 + Venetian Bay 6,440 + BG Canal Housing 3,863 + 5 Gauntlgrym Road villages 2,050 + Suzail 1,600 + Waterdeep Noble Quarter 5,000 + Athenaeum 750 + Void Evacuation 1,000 (ramping to ~4,000) + Safe Harbor 1,545 + premium leases 1,235 = 28,040.",
+  "open_conflict": "Athenaeum capital 200,000 (Registry) vs 500,000 (Tracker) still needs a ruling; the page uses the Registry figure provisionally. Also a naming collision: Mithral Gate village vs Mithral Gate (Proving Ground) fortress Location entry.",
+  "live_threats_1496": "Waterdeep guild labour action LIVE. Builder's Guild-backed competitor housing block on the Dock District landward edge, first tenant attrition in Nightal. Lord Neverember summons on the calendar. BG House Oberon zoning filings unresolved.",
+  "metrics": "Employee-Tenant Cross-Index portfolio-wide ~64% (Suzail 97%, Dock 82%, villages 74%, BG canal 31%, Venetian Bay 8%, Noble Quarter 0%). At >=60% a dismissal-turned-eviction auto-generates a perception check.",
+  "wyrmhelm_crossref": "This page still records Wyrmhelm operating cost at the superseded 400 gp/dragon/month. First hatchings landed Nightal 1495; Vara's Charger and Lirien's Courser both hatched and completed Nafnfestr at the turn of the year. Silverymoon Amaranthe satellite re-estimated 130,000-170,000 gp (old 80-100k only viable for a residence/aerie)."
+ }
+}
