@@ -1,0 +1,4 @@
+ownership_id,owner_actor_id,asset_actor_id,interest_type,percent,percent_state_origin,notes,provenance,state_origin,slice
+own:ncf-control-claim,actor:npc:arik-baen,actor:institution:ncf,CONTROL_CLAIM,50,SOURCE,50% + final authority; five Pillars 10% each; no equity booked,SOURCE-DERIVED,SOURCE,NCF
+own:ncf-silversheen,actor:institution:ncf,actor:business:silversheen-trading,LEGAL,60,SOURCE,NCF 60 / Gauntlgrym 40,SOURCE-DERIVED,SOURCE,NCF
+own:ssamt-corpus,actor:trust:ssamt,actor:trust:ssamt,TRUST_CORPUS,100,SOURCE,not NCF-owned,SOURCE-DERIVED,SOURCE,NCF

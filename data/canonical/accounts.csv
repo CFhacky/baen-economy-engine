@@ -1,0 +1,8 @@
+account_id,holder_actor_id,institution_actor_id,account_type,status,opening_balance,opening_balance_state_origin,provenance,state_origin,source_evidence,slice
+acct:ncf:halbor-settlement,actor:npc:halbor-dunn,actor:institution:ncf,CURRENT,PROPOSED,,UNKNOWN,MODEL-PROPOSED,UNKNOWN,borrower settlement policy not ruled,NCF
+acct:ncf:pell-payroll,actor:npc:a-pell,actor:institution:ncf,PAYROLL,PROPOSED,,UNKNOWN,MODEL-PROPOSED,UNKNOWN,payroll policy not ruled,NCF
+acct:trust:ssamt-liquid,actor:trust:ssamt,actor:institution:ncf-waterdeep,TRUST,ACTIVE,12000,SOURCE,SOURCE-DERIVED,SOURCE,12000 gp liquid corpus 29 Tarsakh 1494; Day-7 currency unconfirmed,NCF
+acct:ncf:treasury,actor:institution:ncf,actor:institution:ncf,TREASURY,ACTIVE,,UNKNOWN,SOURCE-DERIVED,UNKNOWN,physical metal reserves; no quantity,NCF
+acct:institut:operating,actor:institution:institut-baenund,actor:institution:ncf,BUSINESS_OPERATING,PROPOSED,,UNKNOWN,MODEL-PROPOSED,UNKNOWN,hypothesized NCF relationship,INSTITUT
+acct:institut:burning-gate-restricted,actor:institution:institut-baenund,actor:institution:ncf,RESTRICTED_FUND,PROPOSED,,UNKNOWN,MODEL-PROPOSED,UNKNOWN,800000 is project outflow not account balance,INSTITUT
+acct:tissage:operating,actor:business:tissage-shivan,actor:institution:ncf,BUSINESS_OPERATING,PROPOSED,,UNKNOWN,MODEL-PROPOSED,UNKNOWN,keep Tissage cash off personal/Institut books,INSTITUT
