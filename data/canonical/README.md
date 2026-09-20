@@ -4,14 +4,16 @@ Human-diffable authority for the economic actor layer.
 SQLite under data/runtime is a build product, not the Git authority.
 
 First slices: Northern Crown Financial and Institut Baen'und.
-Campaign boundary: the **Departure Shelf**, Day 7 Hammer 1495 DR.
-Live play sits past **the Crossing** (1496 DR) with a suspended interval between.
+Campaign boundary: the **registry snapshot**, Hammer 1495 DR on `ARIK_SURFACE`.
+Live play sits on `ARIK_HELL` at **T+7**. Between them: the Crossing (1496 DR,
+month unpinned) and a suspended Reserved Interval.
 
 ## Tables
 
 | file | rows | what it holds |
 |---|---:|---|
-| events.csv | 27 | every dated event, lane-stamped; the spine `runway.py` reads |
+| lane_epochs.csv | 7 | each lane's notation and epoch; the ARIK_HELL epoch is unpinned |
+| events.csv | 28 | every dated event, lane-stamped; the spine `runway.py` reads |
 | timeline.csv | 21 | the two stamps, the Reserved Interval, its carry rules and landing zone |
 | actors.csv | 45 | people, institutions, households, workforce pools, programmes |
 | relationships.csv | 46 | parent/child as written on the cards, with conflict flags |
@@ -51,10 +53,13 @@ Live play sits past **the Crossing** (1496 DR) with a suspended interval between
   correction would fabricate margin (see `corr:silversheen:revenue`), it is
   recorded in `corrections.csv` and the cell is left internally consistent at
   its own stamp. Recording is not punting; back-solving is simulation.
-- **Dates are lane-stamped.** `ARIK:1495.Hammer.07`, `SHIVAN:D911`,
-  `JORMUN:1498.Uktar.01`. `harptos.py` in the-new-path-engine refuses to
-  subtract across lanes, so two clocks cannot be summed by accident. Query the
-  spine with `runway.py` — `runway --interval`, `at`, `lanes`, `audit`.
+- **Dates are lane-stamped, in one of two notations.** Four lanes:
+  `ARIK_SURFACE` and `JORMUN` count in Harptos dates, `SHIVAN` in day-numbers
+  off the Day 904 anchor, and **`ARIK_HELL` counts elapsed Hell-days** —
+  `T+35` is the 35th day of the operation, not the 35th of any month.
+  `harptos.py` refuses to subtract across lanes *or* across notations, and
+  will not turn a count into a date without a declared epoch. Query the spine
+  with `runway.py` — `lanes`, `runway --interval`, `at`, `audit`.
 - **`consolidation` columns exist so nothing is summed twice** - branch payrolls
   into parents, named loans into the 2.3M aggregate, Castle Operations against
   Skyreach.
