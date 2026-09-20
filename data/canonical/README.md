@@ -11,6 +11,7 @@ Live play sits past **the Crossing** (1496 DR) with a suspended interval between
 
 | file | rows | what it holds |
 |---|---:|---|
+| events.csv | 27 | every dated event, lane-stamped; the spine `runway.py` reads |
 | timeline.csv | 21 | the two stamps, the Reserved Interval, its carry rules and landing zone |
 | actors.csv | 45 | people, institutions, households, workforce pools, programmes |
 | relationships.csv | 46 | parent/child as written on the cards, with conflict flags |
@@ -50,6 +51,10 @@ Live play sits past **the Crossing** (1496 DR) with a suspended interval between
   correction would fabricate margin (see `corr:silversheen:revenue`), it is
   recorded in `corrections.csv` and the cell is left internally consistent at
   its own stamp. Recording is not punting; back-solving is simulation.
+- **Dates are lane-stamped.** `ARIK:1495.Hammer.07`, `SHIVAN:D911`,
+  `JORMUN:1498.Uktar.01`. `harptos.py` in the-new-path-engine refuses to
+  subtract across lanes, so two clocks cannot be summed by accident. Query the
+  spine with `runway.py` — `runway --interval`, `at`, `lanes`, `audit`.
 - **`consolidation` columns exist so nothing is summed twice** - branch payrolls
   into parents, named loans into the 2.3M aggregate, Castle Operations against
   Skyreach.
