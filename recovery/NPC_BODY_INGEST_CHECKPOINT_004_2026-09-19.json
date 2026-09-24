@@ -1,0 +1,25 @@
+{
+  "schema": "tnp.economy.npc-body-ingest-checkpoint/1",
+  "captured_at": "2026-09-19",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "branch": "codex/reconcile-standalone-authority-20260917",
+  "parent_head": "fbf37820392e297cc94404bc22cf7a7a7a429985",
+  "source_class": "npcs",
+  "retained_core_records": 1620,
+  "total_complete_records": 1506,
+  "total_remaining_records": 114,
+  "npc_target": 920,
+  "npc_body_status_counts": {
+    "REVIEWED": 497,
+    "NO_BODY_NOT_APPLICABLE": 309,
+    "UNMEASURED": 114
+  },
+  "note": "G1+G2 reviewed 27 live NPC bodies. Queue file not yet rewritten in this commit because 1.57MB exceeds this session writer payload; apply G1+G2 into SOURCE_REVIEW_QUEUE_2026-09-18.json next.",
+  "batches": [
+    "recovery/NPC_BODY_INGEST_BATCH_G1_2026-09-19.json",
+    "recovery/NPC_BODY_INGEST_BATCH_G2_2026-09-19.json"
+  ],
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

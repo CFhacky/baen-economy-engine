@@ -1,0 +1,181 @@
+{
+  "schema": "tnp.economy.artifact-body-ingest/1",
+  "batch": "A10",
+  "captured_at": "2026-09-18",
+  "target": 16,
+  "reviewed": 16,
+  "failed": 0,
+  "records": [
+    {
+      "source_id": "376e8214-84b0-8141-94c6-d1cd8d23853b",
+      "title": "🫲 The Gathering Hand",
+      "revision": "2026-06-05T22:46:16.379Z",
+      "body_hash": "67d3695bfea85e395000b7a930e0df9cc3b10c4406c68b2cecc3f864c649dd6b",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "376e8214-84b0-81fd-bef7-cfe01234e090",
+      "title": "🔪 The Sundering Hand",
+      "revision": "2026-06-05T22:46:16.379Z",
+      "body_hash": "0c3eb68b12b6e3dc1844018de36debc0f4912190ef15540e0ef05528098b8b94",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-8106-b232-ecc764002aae",
+      "title": "Skrahgûl, the Scream-Iron",
+      "revision": "2026-06-07T23:05:29.824Z",
+      "body_hash": "9b61ada1036476cb5db7ee3e613be87a9982a51ba28dc7445af34ed59088127e",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-8137-b971-e52682097d35",
+      "title": "Gressil, Dawn of Ruin",
+      "revision": "2026-06-07T16:41:59.543Z",
+      "body_hash": "32b74c8a889e7913ecaf3be0fdf956ff16d34799c46a6c6e875162e912d29b49",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-814e-88c4-ecd8057d390b",
+      "title": "The Shadowed Necromanteion (Karendir's Working Set)",
+      "revision": "2026-06-07T23:06:53.654Z",
+      "body_hash": "6a6e7c155a60e113f419e2534d2aa918090f1a1515c90135460b7829240e7f3f",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-818b-bdfa-f3ee2936a73f",
+      "title": "The Twelfth House (Vask's Working Set)",
+      "revision": "2026-06-07T23:08:24.651Z",
+      "body_hash": "0b840be242269001b67fabb57990cdfe0d49e6fe2ed134ce2074f29156814e11",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-8191-87f1-c15e4e6b68b9",
+      "title": "The Twin Blades of Azzinoth",
+      "revision": "2026-06-07T16:43:51.069Z",
+      "body_hash": "d297f7f11427e3e8540ea3d0b5d9b6835e0740a7333b7af18a1ba11354afff24",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-81b3-b5dc-e76ff8fb2cb9",
+      "title": "Hood of the Malefic",
+      "revision": "2026-06-07T16:41:59.543Z",
+      "body_hash": "8b1de93d3745f18772c4e36b3e3cb0a561266381ed99d804fd6414d79fbe7799",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-81f4-92c0-f8de7c6e40a7",
+      "title": "The Eye of the Calm",
+      "revision": "2026-06-07T16:41:59.543Z",
+      "body_hash": "164548a20dfe1c4f3d6b0a1d4fc4a925684a493d59bef800374fffd93f8a4657",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "379e8214-84b0-8142-adf7-df391086c195",
+      "title": "Andariel Sapphire",
+      "revision": "2026-06-12T21:36:34.669Z",
+      "body_hash": "7e4ee13901b1b1262ed43ac813171958ca73c2cb4ac5de148df8ce41d677065a",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37ae8214-84b0-8136-be88-fd4fb03ad443",
+      "title": "🌌 The Skuld Mantle",
+      "revision": "2026-06-09T12:14:11.370Z",
+      "body_hash": "eff0a48d5891b62621c9dcfb0b45a2eb9130ae55f9fc5ab9b59f412e72f309d6",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37ae8214-84b0-81c9-8fa3-f7f39a7ebd21",
+      "title": "⚡ Cloak of Wandering Thunder",
+      "revision": "2026-06-23T00:09:27.506Z",
+      "body_hash": "b7eb2a9481a85efc4249967c83a17704bb960ae6a737df9adc7bc61731690028",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37de8214-84b0-8118-b87f-ca51f00bc291",
+      "title": "Guardian Plate of the Eternal Watch",
+      "revision": "2026-09-05T23:49:30.380Z",
+      "body_hash": "0af21d9b0b1fd1a6e4db1989a20ca2bf81b9d4a6b97637ced177e3f3377d7a15",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37de8214-84b0-8141-b3db-f349d087e116",
+      "title": "Aquila Imperialis Pauldron",
+      "revision": "2026-07-11T19:01:32.011Z",
+      "body_hash": "82eb2c7d101fc7a01e2def03787b1cb0b3f828890fa5eaa0e9fc17ed2073617a",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37de8214-84b0-815b-87a5-d73d9d4d2e52",
+      "title": "Spear of Silver Revelation",
+      "revision": "2026-07-11T19:26:32.544Z",
+      "body_hash": "3c2f1c312df5ee420a7b0d3b0b05b59bc28d74a349f3883e8375bf12551a8111",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37de8214-84b0-81c1-b3df-e5f753c92a7d",
+      "title": "Óttalauss — The Fearless",
+      "revision": "2026-06-12T21:27:07.886Z",
+      "body_hash": "6174e2aa42ec5e2f3e7d93b000003eb78b603309e7884a508957eecac1167ad5",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 235,
+      "UNKNOWN": 1182,
+      "CONFLICT": 12,
+      "SUPERSEDED": 174,
+      "MISSING_DATA": 4,
+      "FUTURE": 10,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 435,
+      "UNMEASURED": 1185
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 235,
+      "UNREVIEWED": 1185,
+      "CONFLICT": 10,
+      "SUPERSEDED": 173,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 10,
+      "ECONOMIC_CONTEXT": 3
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

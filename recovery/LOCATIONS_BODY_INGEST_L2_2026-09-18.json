@@ -1,0 +1,642 @@
+{
+  "schema": "tnp.economy.locations-body-ingest/1",
+  "batch": "L2",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "target": 16,
+  "reviewed": 16,
+  "failed": 0,
+  "records": [
+    {
+      "source_id": "32be8214-84b0-8182-a69d-fc6db5991aa2",
+      "title": "Anatomist's Laboratory (Dungeon Module)",
+      "revision": "2026-04-24T22:01:07.878Z",
+      "body_hash": "82403db057653e7cd9162d340664f8c09346eae64f7cddd74fb1b2b0607587e6",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Garrison": "",
+        "Name": "Anatomist's Laboratory (Dungeon Module)",
+        "Notes": "POST-SESSION 10: Vaelthrix eliminated; Sania captured the soul. Phylactery remains at large but rejuvenation blocked while soul is held. Self-destruct prevented; complex not destroyed. Now occupied by Shade Remnant force (separate page). Original module documentation retained as historical reference. See dungeon-state-tables for in-play uncertainty mechanics.",
+        "Region": [
+          "Anauroch"
+        ],
+        "Source File": "",
+        "Status": "Contested",
+        "Strategic Value": "High",
+        "Type": "Dungeon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-24",
+        "url": "https://app.notion.com/p/32be821484b08182a69dfc6db5991aa2"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-818e-9d58-ca579f4756d1",
+      "title": "Veil Safe House — Neverwinter",
+      "revision": "2026-08-20T03:20:24.139Z",
+      "body_hash": "259b7caa735599c4b81c61eba0f471cd7c03b82774022db5ecbb80a96c7b2c25",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b0815fba19e874f0becc19"
+        ],
+        "Garrison": "",
+        "Name": "Veil Safe House — Neverwinter",
+        "Notes": "Basement of a boarding house. Tenants above unaware. Weapons cache.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "",
+        "Status": "Controlled",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-22",
+        "url": "https://app.notion.com/p/32be821484b0818e9d58ca579f4756d1"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-819b-933e-d9b67715dea4",
+      "title": "Schola Ducum Integrata",
+      "revision": "2026-08-20T03:24:10.810Z",
+      "body_hash": "6a0f4731d6e5ce15272c02239ca8653bc919f96a7dbc24c492da1d622c58d701",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Schola Ducum Integrata",
+        "Notes": "Post-Orchard secondary education. Sword Mountains, north of Waterdeep, arterial spur. Campus document needed.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-22",
+        "url": "https://app.notion.com/p/32be821484b0819b933ed9b67715dea4"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-819f-82a4-f6eb9627aaca",
+      "title": "Veil Safe House — Luskan",
+      "revision": "2026-08-20T03:20:31.805Z",
+      "body_hash": "90e79e281096e030a15206b8a4da2a200bb266b8b32ecb902044a067a03dd579",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b0815fba19e874f0becc19"
+        ],
+        "Garrison": "",
+        "Name": "Veil Safe House — Luskan",
+        "Notes": "Former Kurth safe house. Inherited when Kurth eliminated. Arms and disguises.",
+        "Parent Location": [
+          "https://app.notion.com/p/34ce821484b0815daa7ded8836079200"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "",
+        "Status": "Controlled",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-22",
+        "url": "https://app.notion.com/p/32be821484b0819f82a4f6eb9627aaca"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-81ae-9959-f6abfdbca301",
+      "title": "🦉 Peri's Operations Hub (Dock Ward Warehouse)",
+      "revision": "2026-08-20T03:24:05.739Z",
+      "body_hash": "6cd73c8e7fcfccb8ce6b06b02ed4f605a104579cb21fdc2d780dc4533d796c49",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Peri (Veil shadow monk operative, coordinator). Ossian the Mimir (floating skull, former crime lord, criminal expertise consultant, sapphire eyes, continuous detect magic sweeps). Huginn & Muninn (echo-crystal construct ravens, pattern analysis, telepathically connected to 15-20 corvid surveillance network covering 500-ft perimeter). Shadow-monk-trained Veil operatives rotating external watch (2 per shift, concealed on nearby rooftops). Dock Rat child alley observer (11 years old, paid 2 silver/day, signal-stone-through-window protocol). No standing armed garrison — distributed coverage is the defense. Teleport scroll in Peri's wardrobe as nuclear-option extraction (pre-designated Neverwinter arrival point, only Peri and Lirien know).",
+        "Name": "Peri's Operations Hub (Dock Ward Warehouse)",
+        "Notes": "Northern Crown shadow operations center, Dock Ward, Waterdeep. Three streets back from the waterfront, corner lot where a commercial lane meets a residential alley. Two-story stone warehouse (60x40 ft, 2,400 sq ft per floor), originally built for dry-goods storage by a merchant house that went under during the Spellplague. Acquired through a Drift intermediary — deed held by paper entity 'Southharbor Storage Associates' that traces to nothing if investigated. Ground floor: central planning table (8-ft oak, salvaged Calishite teak, Waterdeep city map with three-handwriting-style annotations — Peri's tight script for NC asset positions, Ossian's dictated notes in blocky Dock Rat clerk letters, ravens' geometric symbols designed by Huginn). Ossian's hovering plinth near SW corner (18-inch polished granite, aesthetic not functional — gives visitors a place to look). Raven perches along east wall (6 iron brackets, viewing ports facing east/south/north). Communication crystal panel on north wall (3 crystals — Veil network, NCF Waterdeep, Dock Ward Security Corp; Ossian's detect magic flags tampering). Peri's weapons rack near doors (rapier, shortsword +1, light crossbow with 40 bolts, throwing daggers, locked chest with disguise kit and three social-context outfits). Alchemical stove NW corner for Calishite black tea (Ossian's 'olfactory nostalgia' insistence). Second floor (8-ft ceiling, partitioned): Peri's quarters SW (cot, wardrobe, writing desk with three leather-bound journals — red threats / blue assets / black intelligence — warded to appear as household accounts; wardrobe hidden panel conceals 2,000gp emergency cache + teleport scroll), archive room NW (6 locked filing cabinets by district, shared analysis table — Huginn wants chronological, Muninn wants thematic, they argue daily), empty 1,600 sq ft training space (shadow monk pre-dawn forms, scuff marks show footwork patterns). Pre-dawn rhythm: 5:00 training, 6:30 raven surveillance report + Ossian criminal-pattern review + team argument = planning, field work with Ossian in Seliara-designed concealed spirit lantern (magical-signature dampened, 100-ft telepathic range). Never unoccupied. Contingency extraction through residential alley to Dock Ward Security Corp safe room 4 blocks NE.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "Peri NPC sheet; Operations Hub architectural detail consolidated Day 729 audit pass",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-22",
+        "url": "https://app.notion.com/p/32be821484b081ae9959f6abfdbca301"
+      }
+    },
+    {
+      "source_id": "331e8214-84b0-8198-a08e-e9ccb5698f83",
+      "title": "Crystal Gardens of New Harbor",
+      "revision": "2026-08-20T03:23:16.112Z",
+      "body_hash": "dfd779b2750195557ebac53797676f5945f8e236c1d837b4b68652d68d6f9b75",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Crystal Gardens of New Harbor",
+        "Notes": "Geothermally-heated water garden in New Harbor (Dock District). Born from construction disaster — collapsed buildings, volcanic water table. Spring Garden type plaza. 180x120 ft, seven garden islands, central crystal-clear basin, Spring Wall cascade. Kingfisher nesting site. Property values +15-20%. Construction cost: \\~101,200 gp. Annual maintenance: \\~1,600 gp.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "chat artifact — Crystal Gardens of New Harbor",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/331e821484b08198a08ee9ccb5698f83"
+      }
+    },
+    {
+      "source_id": "332e8214-84b0-8105-9c36-e6ed007fe34d",
+      "title": "Veil Safe House — Neverwinter Docks",
+      "revision": "2026-08-20T03:20:26.556Z",
+      "body_hash": "a97d55a931110d10a248f8edaad93b6dcaf237d2250756634699d95223ff0aac",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b0815fba19e874f0becc19"
+        ],
+        "Garrison": "",
+        "Name": "Veil Safe House — Neverwinter Docks",
+        "Notes": "Underground emergency arms cache and shelter beneath a boarding house two blocks from the harbour. Three layers of separation from Baen property. Run by Henrick (boarding house owner, unaware). Accessed through chandler's yard exit. Maintained monthly by rotating Veil operative.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "workshopped in chat — Veil safe houses",
+        "Status": "Controlled",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/332e821484b081059c36e6ed007fe34d"
+      }
+    },
+    {
+      "source_id": "332e8214-84b0-8118-99f3-f652e6b532ca",
+      "title": "Neverwinter Academy of Natural Philosophy (Devil Academy)",
+      "revision": "2026-08-20T03:20:18.761Z",
+      "body_hash": "d82a9afdde030e2cfa725384cb0792e70c4237d2b80b4eb3dcd8909953a6125d",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Neverwinter Academy of Natural Philosophy (Devil Academy)",
+        "Notes": "2,000 philosophical devil faculty disguised as human professors. Cover: Academy of Natural Philosophy. Located at Crystalline Chasm edge, southeastern Neverwinter. 10 platforms over 800m-wide, 1km-deep sealed Chasm. Dark iron thorned-vine bridge architecture. Mainland campus includes Septagon (7-wing lecture complex), Laboratorium, Faculty Terraces (4 blocks, 500 each), student dormitories, Provost's Hall, concealed Senatorum. Three tribute platforms for Arik, Elara, and Selene. Bonsai caretakers: Crucibane (Aesthete devil) and Pip (age 7, Orchard Chapel).",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "workshopped in chat — Devil Academy and Crystalline Chasm",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/332e821484b0811899f3f652e6b532ca"
+      }
+    },
+    {
+      "source_id": "332e8214-84b0-8121-82d7-e120098fb69b",
+      "title": "Collegium Montis Gladii",
+      "revision": "2026-08-21T03:20:15.964Z",
+      "body_hash": "8175be5b2c880c0ebfad32629756c66825893440ae0d02b0bca4300f45828205",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Collegium Montis Gladii",
+        "Notes": "Dual-campus civil-military academy. Waterdeep campus (original, operational, 48 students). Neverwinter campus (River District, expansion, Boston College model). Produces administrators, not soldiers. Receives Schola Ducum graduates. Pipeline for future department heads, sector leaders, institutional directors. 15-minute walk from Devil Academy.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "workshopped in chat — Collegium and educational infrastructure",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/332e821484b0812182d7e120098fb69b"
+      }
+    },
+    {
+      "source_id": "332e8214-84b0-8126-8f9b-d7f0c40c8ea9",
+      "title": "Orchard Chapel",
+      "revision": "2026-08-20T03:24:00.890Z",
+      "body_hash": "f1e576f8ee9751ed171c7adc5938458505d5e83fcb07beacd2b1d6a79ba20cad",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Orchard Chapel",
+        "Notes": "Rural agrarian monastery and education compound at the edge of Neverwinter Wood (southern stretch). Co-run by Brother Feldrin (Deneir) and Baen Holdings. Feeder institution for Schola Ducum Integrata. Children enter via Dock Rat graduation, Bloodaxe intakes, Drift recommendations, Veil redirection. Sanctified zone — Veil surveillance ends at perimeter. Revenue: 5,000 gp/year.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "02_Infrastructure_[Bundle.md](http://Bundle.md)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/332e821484b081268f9bd7f0c40c8ea9"
+      }
+    },
+    {
+      "source_id": "332e8214-84b0-814a-8efb-de14fadbbd21",
+      "title": "Venetian Bay — Premium Waterfront Development",
+      "revision": "2026-08-20T20:00:07.567Z",
+      "body_hash": "f7feca125fa99cc73d2b251ef50e53c7af5deb085fc127faa428be822672ccb2",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Venetian Bay — Premium Waterfront Development",
+        "Notes": "25 premium townhouses on manufactured land across the Neverwinter River from the Dock District. Pile-driven foundations in harbour-bed clay. Three canals, gondola service. 6,250 gp/month revenue, 100% occupancy, 15-family waiting list. Construction cost: \\~285,000 gp. Can expand north upriver. Additional land creation possible around Moonstone Mask island.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "workshopped in chat — Venetian Bay",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/332e821484b0814a8efbde14fadbbd21"
+      }
+    },
+    {
+      "source_id": "332e8214-84b0-8168-baca-d2c113c751b7",
+      "title": "Shield-Copper Plaza — The Comfort Plague Memorial",
+      "revision": "2026-08-20T03:25:13.575Z",
+      "body_hash": "29903c0b41ced5519635dde51c8e37630eb05e5ebb9b6aee04e09065c637509f",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Shield-Copper Plaza — The Comfort Plague Memorial",
+        "Notes": "First Imperial Scale Crown Plaza. Crater from Arik's destruction of the Gentle One during Comfort Plague crisis. Amphitheatre bowl layout, 120 ft across. 80-foot Gothic clock tower with Hunding mechanism. Brass and quartz clock faces. Radial water channel system in paving. Dark granite bowl, pressmark rim. Copper beech landmark tree. Annual remembrance ceremony.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "workshopped in chat — Shield-Copper Plaza",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/332e821484b08168bacad2c113c751b7"
+      }
+    },
+    {
+      "source_id": "332e8214-84b0-8190-86f1-e0f98c7c3298",
+      "title": "Dock District — The Baen Quarter",
+      "revision": "2026-08-20T03:20:34.224Z",
+      "body_hash": "2c45bc54c444aa270d73b56f5684e5d843934bc8a92ab2075ff195815ae9bde1",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Dock District — The Baen Quarter",
+        "Notes": "Baen's original foothold in Neverwinter. 200+ housing units (Phase 1 worker, Phase 2 family), Crystal Gardens, Northern Hammer Smithy, Baen Construction HQ compound, NCF at Dock/Enclave border. Dock Ward Security Corp. The azurite stripe marks the boundary. Population: young working families, \\~70% Baen-dependent economy. Active tensions: Old Docks vs New Harbor identity, gentrification pressure, unconverted blocks, frame integration ahead.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "workshopped in chat — Dock District neighbourhood",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/332e821484b0819086f1e0f98c7c3298"
+      }
+    },
+    {
+      "source_id": "332e8214-84b0-81d3-bb13-f54b12daf00d",
+      "title": "Neverwinter Working Docks",
+      "revision": "2026-08-20T03:20:21.452Z",
+      "body_hash": "01a1cdf412c23f762ac515af19bd2f6eb0b4d49c457df19240af290408613e28",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Neverwinter Working Docks",
+        "Notes": "Pre-cataclysm harbour infrastructure, western bank of river mouth. Wooden piers, fish market, harbour master's office, customs house, boat repair. City property, not Baen-owned. Baen reaches the docks through NMWC clean water provisioning for ships. Fishing families want stone pier upgrades. The independent 30% of the district's economy lives here.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "workshopped in chat — Working Docks",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/332e821484b081d3bb13f54b12daf00d"
+      }
+    },
+    {
+      "source_id": "333e8214-84b0-8120-a75e-f11a243ab6d5",
+      "title": "🏭 Baen Northern Industrial Yards (Warborn Production Neverwinter)",
+      "revision": "2026-08-20T03:20:39.596Z",
+      "body_hash": "096ccf00c110e407b8638e775f5609de1882c6672d0779d68f7205b06df409ee",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "6 Bloodaxe Legion (plain clothes), crystal surveillance network",
+        "Name": "Baen Northern Industrial Yards (Warborn Production Neverwinter)",
+        "Notes": "Original Warborn production facility. Building 3 within 8-tenant industrial park, 1 mile north of Neverwinter on arterial road. 50,000 sq ft, 12 Legionnaire/month + R&D/prototyping. Backup soul furnace (proof of concept from Inevitable City). Forge Master: Viktor Steelhand. Cover: pressmark component fabrication park.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[warborn-production-neverwinter.md](http://warborn-production-neverwinter.md)",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-29",
+        "url": "https://app.notion.com/p/333e821484b08120a75ef11a243ab6d5"
+      }
+    },
+    {
+      "source_id": "334e8214-84b0-817a-bbc6-d240af9b9d00",
+      "title": "⛓ The Foundation",
+      "revision": "2026-03-31T13:24:07.726Z",
+      "body_hash": "76ff369199473e3c85550420879781defa9bb0ec93ceec35afb5efa86fde14c2",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Cowled Wizard staff, abjuration specialists, response teams",
+        "Name": "The Foundation",
+        "Notes": "Post-Spellhold replacement. Beneath Temple of Waukeen, Athkatla. Reflection wards + spatial compression. 4 levels. Warden: Magister Orlen Sabathar. Anti-Fenwick countermeasures built in. Cowled Wizard faction patron operates from here.",
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "[cowled-wizard-facilities-reference.md](http://cowled-wizard-facilities-reference.md)",
+        "Status": "Hostile",
+        "Strategic Value": "High",
+        "Type": "Dungeon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-31",
+        "url": "https://app.notion.com/p/334e821484b0817abbc6d240af9b9d00"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 105,
+      "UNKNOWN": 1492,
+      "CONFLICT": 7,
+      "SUPERSEDED": 7,
+      "MISSING_DATA": 4,
+      "FUTURE": 3,
+      "CONTEXT_ONLY": 2
+    },
+    "body": {
+      "REVIEWED": 125,
+      "UNMEASURED": 1495
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 105,
+      "UNREVIEWED": 1495,
+      "CONFLICT": 5,
+      "SUPERSEDED": 6,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 3,
+      "ECONOMIC_CONTEXT": 2
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

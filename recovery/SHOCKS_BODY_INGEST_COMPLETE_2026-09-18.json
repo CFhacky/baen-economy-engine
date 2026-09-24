@@ -1,0 +1,360 @@
+{
+  "schema": "tnp.economy.source-class-body-ingest/1",
+  "source_class": "shocks_shortages_threats",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "review_mode": "read-only live Notion page fetch",
+  "body_hash_method": "SHA-256 over exact parsed Notion fetch text field; private body prose is not persisted",
+  "target": 26,
+  "reviewed": 26,
+  "failed": 0,
+  "complete": true,
+  "disposition_counts": {
+    "ECONOMIC_INPUT": 18,
+    "HISTORICAL_ONLY": 3,
+    "SUPERSEDED": 4,
+    "FUTURE_ONLY": 1
+  },
+  "records": [
+    {
+      "source_id": "2fbe8214-84b0-812c-82ba-c2f928ebaea7",
+      "title": "Elara Wedding",
+      "revision": "2026-02-02T22:15:43.228Z",
+      "body_hash": "aa37fc72267a1e30a650bd08bd074c9fb0603e5123e649d66cd47856332cfe13",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "population",
+        "market_prices"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-8157-8a50-cd7f5c109396",
+      "title": "Demon Crisis",
+      "revision": "2026-08-20T16:38:53.540Z",
+      "body_hash": "2260bac719879980554a2baf8fbd9b6d0056f5455dc0e8cef37cae0fcf8e69fe",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "food_supply",
+        "population",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-8184-9527-d457d9de4dbe",
+      "title": "Lords' Alliance Scrutiny",
+      "revision": "2026-04-17T16:58:24.746Z",
+      "body_hash": "3f4938b5ee44039964ef7b066adb57d6a1e6c08696016254998615c5725cecea",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "market_prices",
+        "industrial_production",
+        "business_financial_flows"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-8194-811c-e2cb5300fa3c",
+      "title": "Selarial Missing",
+      "revision": "2026-02-02T22:13:07.482Z",
+      "body_hash": "7248c39e6b383d9f05f8b1016c59b57dc9093df6e14fca2b5bd2c3ee51602477",
+      "disposition": "HISTORICAL_ONLY",
+      "semantic_status": "HISTORICAL",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-8198-96b8-e26bbf37385b",
+      "title": "Aldric Cold War",
+      "revision": "2026-07-03T18:02:35.890Z",
+      "body_hash": "a0840c74c845b0a028e3fde766aeca79966847106c9d481abf43882d9de67eb5",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-81a6-8357-fa4b7a4b6656",
+      "title": "Garden Keeper Observation",
+      "revision": "2026-02-02T22:09:15.398Z",
+      "body_hash": "847e94657ac2483896fac8b30164fc3325821809d739e011e825dd010c89ca04",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "population"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-81b9-a3b3-f34223459db1",
+      "title": "Warborn Delivery Contracts",
+      "revision": "2026-03-23T12:35:27.876Z",
+      "body_hash": "f7cd47763ea0aa5f05ae599477a9ab431c732013382e74adb67013bc7bb8d81f",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "labor_supply",
+        "industrial_production",
+        "business_financial_flows"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-81ce-a50f-e97879d89018",
+      "title": "Vara's Pregnancy",
+      "revision": "2026-08-20T10:52:53.525Z",
+      "body_hash": "aded75c6eec4c099425181dd0bf9b15986d2ea37cb01d0784723ceb4044c1363",
+      "disposition": "HISTORICAL_ONLY",
+      "semantic_status": "HISTORICAL",
+      "driver_owners": []
+    },
+    {
+      "source_id": "32ae8214-84b0-8143-a1f9-f839721cd4ae",
+      "title": "The Anatomist",
+      "revision": "2026-08-20T18:13:36.569Z",
+      "body_hash": "f3e772e968735b2760db173ab97153e3b89f70b20840a2b31c5c9e106848264a",
+      "disposition": "HISTORICAL_ONLY",
+      "semantic_status": "HISTORICAL",
+      "driver_owners": []
+    },
+    {
+      "source_id": "32ae8214-84b0-81c5-8236-fd78ee7d902e",
+      "title": "Purist Assassination Cell",
+      "revision": "2026-08-20T18:13:02.890Z",
+      "body_hash": "eb688eec3d430640ef938a318ac3457cf97e1e1c39468f588331db341c4eab8a",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "population",
+        "labor_supply",
+        "industrial_production",
+        "business_financial_flows"
+      ]
+    },
+    {
+      "source_id": "32ae8214-84b0-81d4-ad7c-cbfcc831cd48",
+      "title": "Eastern Deployment Regional Threats",
+      "revision": "2026-08-20T18:13:30.604Z",
+      "body_hash": "7d7e8fcf6e4127e40f3101ca63e9351df6855bd062dfdd74c609dbfc99fbaae3",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "food_supply",
+        "labor_supply",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "32ce8214-84b0-8163-aaa8-d02ba6908824",
+      "title": "[SUPERSEDED — H9] Aldric Steelgaze — The Eastern Bulwark (Dark Necessity)",
+      "revision": "2026-08-20T18:11:58.175Z",
+      "body_hash": "bb918d1384f8f4f8f4dd16247964f8e556083772e8b611c73bb3b2c8c6ebbc15",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "32ce8214-84b0-8173-92e5-ff75c8103a5b",
+      "title": "[SUPERSEDED — H9] Purist Assassination Cell — Threat Profile (Kythorn 1494)",
+      "revision": "2026-08-20T18:13:10.602Z",
+      "body_hash": "029e58e04f0d19aa995a70db64ee0c5a3fb8c9a8b08dd99df211b30c3950c3ab",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "32ce8214-84b0-81c0-a3f8-e0d6d682a29d",
+      "title": "[SUPERSEDED — H9] Aldric Enhancement Program — Iron Guard, Steel Legion, Sovereign's Chosen",
+      "revision": "2026-08-20T18:12:04.361Z",
+      "body_hash": "0d36372b7631ab3f03570f85c0616106ba3201ca35326712d9a06e3d55ccf78d",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "32ce8214-84b0-81cb-ba5c-dfa5658e8d83",
+      "title": "[SUPERSEDED — H9] Iron Enhancement Program — Creating Superior Soldiers (Aldric)",
+      "revision": "2026-08-20T18:12:10.141Z",
+      "body_hash": "ece35c98385d56a396a78a1aa1772a30fb5b94c1891c4ce2fcec5a3da77754c0",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-810e-befb-d63cc496acd4",
+      "title": "Jon Irenicus — Bhaal's Material-Plane Anchor",
+      "revision": "2026-04-24T14:01:26.362Z",
+      "body_hash": "e2f244797ca4f4eda7ff85b0aa156874bcb6300c832e48ae0e5736f1d00e6b40",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "34ce8214-84b0-8157-9c86-e3451061fe94",
+      "title": "The Ritual Leader (Argent Tide, Silver-Mask)",
+      "revision": "2026-04-24T16:26:20.371Z",
+      "body_hash": "b5b2b50683b83ae664c2e73fa458a9e04a5814c62400259fdb578ae59b46adcd",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "food_supply"
+      ]
+    },
+    {
+      "source_id": "34ce8214-84b0-8186-8871-c437895e88fd",
+      "title": "Vesuvius (Mammon's Six-Fingered Servant)",
+      "revision": "2026-04-24T17:32:21.170Z",
+      "body_hash": "d81ca76f731e06c982c9b8279c85ee7eaf5450d2cfdb87c62e93442319212984",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "food_supply"
+      ]
+    },
+    {
+      "source_id": "34ce8214-84b0-81c8-a6b8-eb43926eb67a",
+      "title": "Mammon (Lord of the Third)",
+      "revision": "2026-04-24T17:33:11.473Z",
+      "body_hash": "0eaa71147e12423d79c0c7b3602d6d35c65268c4484102082efece64689b6dea",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "food_supply",
+        "market_prices",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "34ce8214-84b0-81fe-a514-f934cc9d3f2d",
+      "title": "The Daughter of Tiamat",
+      "revision": "2026-04-24T14:01:26.362Z",
+      "body_hash": "f9ac21fb7e75217fab50198b36a855ab3bae5b54a20d74ab4f454874e995b5e5",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3afe8214-84b0-8168-8637-fff00bbaa137",
+      "title": "Dravakhsha — The First-Crowned",
+      "revision": "2026-08-01T20:06:00.661Z",
+      "body_hash": "3c7f1edba146eb732d2a79318fd9037dbd30b7cdfd372565ff2c8eac36bf9272",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks"
+      ]
+    },
+    {
+      "source_id": "3c2e8214-84b0-8116-bd76-e86a4a22e011",
+      "title": "Sania Valmorra — Soul Capture Research Block",
+      "revision": "2026-08-20T18:14:10.780Z",
+      "body_hash": "327222399b7e1b7382fb0036a5e54cd7de0f54fc7beb1c0405c348b0e7461589",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks"
+      ]
+    },
+    {
+      "source_id": "3c2e8214-84b0-8118-bfa1-f4ca110bd2d0",
+      "title": "House Baenre",
+      "revision": "2026-08-20T17:01:00.381Z",
+      "body_hash": "d120533dcfe506a507d10490984f3efdb9787dc9948f90e2f5ce206b1195437c",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks"
+      ]
+    },
+    {
+      "source_id": "3c2e8214-84b0-8129-945f-d7f6def0e06f",
+      "title": "Anatomist Phylactery — Unrecovered",
+      "revision": "2026-08-20T18:14:10.780Z",
+      "body_hash": "091445cb2ab355a6a80fa85f04952a13eb5687d329ca006d76d9965fe211beac",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "labor_supply"
+      ]
+    },
+    {
+      "source_id": "3c2e8214-84b0-8147-8a92-d0f61597d4e3",
+      "title": "Shade Remnant — Anatomist Laboratory Occupation",
+      "revision": "2026-08-20T18:14:10.780Z",
+      "body_hash": "a442183e356fdea6cbfb2e8824f1968df123b118171b8d37790ad6bcff3e0feb",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "labor_supply"
+      ]
+    },
+    {
+      "source_id": "3c2e8214-84b0-815b-a1e0-e6ff5b9979b5",
+      "title": "The Twisted Rune",
+      "revision": "2026-08-20T17:01:00.381Z",
+      "body_hash": "77c05f0923dc1a30ec1ceede6d8cb311f8fbf0681c78dbd4908594fe5cd5bdee",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "exogenous_shocks",
+        "trade_routes",
+        "population",
+        "industrial_production"
+      ]
+    }
+  ],
+  "queue_counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 331,
+      "FUTURE": 48,
+      "CONFLICT": 15,
+      "SUPERSEDED": 224,
+      "MISSING_DATA": 4,
+      "UNKNOWN": 930,
+      "CONTEXT_ONLY": 62,
+      "HISTORICAL": 6
+    },
+    "body": {
+      "REVIEWED": 688,
+      "UNMEASURED": 932
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 331,
+      "FUTURE_ONLY": 48,
+      "CONFLICT": 13,
+      "SUPERSEDED": 224,
+      "MISSING_DATA": 4,
+      "UNREVIEWED": 932,
+      "ECONOMIC_CONTEXT": 33,
+      "HISTORICAL_ONLY": 6,
+      "NON_ECONOMIC": 29
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

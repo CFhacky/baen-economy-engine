@@ -1,162 +1,142 @@
 # STATUS — Baen Economy Engine
 
-## Current state
+## Repository role
 
-The Gate 0/1 foundation and the agriculture-engine revision are in draft PR #65
-on `codex/baen-economy-engine-mvp`. The branch is deliberately
-stacked on draft PR #48 (`codex/campaign-finance-ledger`) because that PR already
-owns the accounting foundation. No Notion write has occurred.
+`CFhacky/baen-economy-engine` is the software workspace for the Baen Economy Engine. The private `campaign-development-vault` and live Notion workspace remain campaign/source authorities. Private-vault recovery PR #192 is provenance and recovery history, not the primary development lane for this package.
 
-The earlier regional month is now classified only as a synthetic mechanics demo
-and is disabled by default. The campaign-facing path is now an interactive local
-Food-Sector Operator. It validates the dated source corpus, exposes all named
-species/crops as usable planning inputs, and saves/reopens/exports non-canonical
-scenarios without changing the live Day 7 Hammer 1495 state.
+Standalone extraction baseline: `main@dd80d730427967dc78fe7b965b6a6d5875c9f3a2`, extracted from private-vault engine head `2cfb0c5` on 17 September 2026.
 
-## Locked decisions
+Canonical campaign time remains **Day 7 Hammer 1495 DR**. Canonical month execution remains fail-closed.
+
+## Current source census
+
+The latest machine evidence is:
+
+- `recovery/LIVE_EMPIRE_SOURCE_CENSUS_EXECUTION_SNAPSHOT_2026-09-17.json`
+- `recovery/LIVE_CENSUS_RECEIPT_2026-09-17.json`
+- `recovery/CURRENT_CENSUS_STATE_2026-09-17.md`
+
+Current state:
+
+- **1,381 current-live collection members** across ten Notion collections.
+- **239 previously captured NPC pages** retained for provenance although no longer members of the current unfiltered NPC collection.
+- **1,620 retained core source records**.
+- **7 contextual authority records** retained separately.
+- **1,627 total stored records**.
+- All ten identified current live collections have complete query-visible property enumeration.
+- `SIMULATED = 0`; acquisition completeness is not simulation coverage.
+- Coverage remains **CLOSED**.
+
+The older 372-row/five-collection human report is an intermediate checkpoint and is not the current census authority.
+
+## Locked behavioral boundaries
 
 - Campaign facts are never inferred merely to make a model balance.
-- Current, historical, projected, superseded, and unknown values remain distinct.
-- Parent and child rows cannot both enter consolidated totals without an explicit
-  treatment.
-- Quantities and money use decimal arithmetic; binary floating point is forbidden.
-- Resolved runs are deterministic from the accepted parent snapshot, model,
-  ruleset, run plan, and complete authorizing-event envelopes, including
-  provenance and authority.
-- Negative inventory, overspent labour, oversubscribed routes, unbalanced postings,
-  and mutation of an accepted snapshot are hard failures.
-- Notion integration is read-only until a separate acceptance gate is approved.
+- `unknown` is not zero.
+- Current, historical, projected, superseded, conflicting, and missing states remain distinct.
+- Acquired source evidence does not become executable or current merely because it is detailed.
+- Parent and child rows cannot both enter consolidated totals without an explicit treatment.
+- Quantities and money use decimal arithmetic; binary floating point is barred from authoritative arithmetic.
+- Negative inventory, overspent labour, oversubscribed routes, unbalanced postings, and accepted-snapshot mutation are hard failures.
+- Notion is read-only from the engine's current authority boundary.
+- Canonical campaign time does not advance through recovery, test, preview, source-ingestion, or upstream-product operations.
 
-## Implemented and verified locally
+## Implemented engine capabilities inherited into the standalone package
 
-- `OPEN-BAEN-FOOD-OPERATOR.cmd` starts a loopback-only browser application from
-  the project directory and persists only local preview scenarios under the
-  user's Documents folder.
-- The dashboard uses exactly five confirmed food businesses: 63 staff, 26,500 gp
-  revenue, 20,550 gp cost, 5,950 gp arithmetic net, and 111,000 gp capital.
-- The Longsaddle planner reproduces the 1,200 requested / 900 dispatched / 18
-  lost / 882 delivered / 300 consumed / 582 closing / zero-residual low case.
-- The physical-production planners expose all 15 named species and all 12 crops;
-  source technical parameters are locked while capacity, feed, baseline yield,
-  opening stocks, receipts, and consumption remain explicit assumptions.
-- The monthly preview resolves exactly one visible revenue and expense receipt
-  per Agriculture/Aquaculture sector and displays every die, modifier, target,
-  margin, factor, effect, and per-entity application.
-- All four workflow kinds save to an append-only, hash-verified local SQLite
-  store and can be reopened, compared, and exported as printable HTML.
-- A real four-workflow HTTP smoke test saved, reopened, and exported all four
-  plans; the raw replay seed was absent from the database.
+The extracted package contains the existing registry, business, food, agriculture, regional, whole-economy, operator, HTTP API, audit, and banking-sandbox code from the private-vault engine.
 
-- The complete 90-row registry was queried read-only and a diagnostic audit was
-  recorded. Its exact offline receipt, query/page receipt, source schema, 90
-  typed rows, and row/property hashes are now verified and persistable. Its raw
-  sums are explicitly barred from consolidated use.
-- All 90 detailed Registry page bodies were captured read-only and identity-bound
-  to the 90-row receipt. None is treated as mechanically current merely because
-  it was captured.
-- `baen-food report` verifies all seven Agriculture/Aquaculture records. The five
-  confirmed commercial rows reproduce 63 employees, 26,500 gp monthly revenue,
-  20,550 gp monthly cost, 5,950 gp arithmetic net, and 111,000 gp capital as a
-  last-known Eleint 1494 pre-crisis envelope.
-- The live agriculture audit cross-references Business, Location, Plot Thread,
-  Artifact, Financial, System Reference, and Active+ Faction Beliefs records. It
-  binds 26 linked authorities, 15 exact aquaculture species, 12 crop entries,
-  Longsaddle, Ravencrest, Orchard Chapel, Forgedeep, Wyrmhelm, Anauroch, roads,
-  canals, storage, and threat context without flattening their dates.
-- Shelter outputs are restricted to sourced greenhouse produce and tomatoes,
-  with Longsaddle separately identifying shelter-zone cold-frame vegetables.
-  Wheat/barley/rye and aquaculture feed ratios are retained as technical design
-  facts rather than falsely assigned to the shelters.
-- The current actual boundary is Day 7 Hammer 1495. Late Kythorn 1495, Day 904,
-  and Eleint 1498 facts are separately gated. The later Kythorn state records
-  three of eight zones destroyed, Longsaddle as an 11,000-person net importer,
-  a 1,200–1,500-ton procurement target, zero procured tons, and zero resolved
-  outcomes.
-- Exact agriculture calculators cover yield/feed ranges, crop enhancement,
-  fertilizer reduction, procurement coverage, Wyrmhelm carcass demand,
-  multi-period stock flow, shortages, overflow, route capacity/loss, barges,
-  storage, spoilage, and conservation. Every calculation is planning-only.
-- The older Agriculture and Food Baseline launchers redirect to the interactive
-  Food-Sector Operator; the evidence-only HTML workbench remains available by CLI.
-- Snowfall Hearthworks, Operation Laden Table, and NCF source contracts are frozen
-  as `CAN-IMPORT` fixtures with unresolved facts preserved.
-- Typed normalization, deterministic event identity, append-only revision checks,
-  physical stock flow, conservation, route/labour constraints, snapshots, replay,
-  and a strict finance bridge are implemented.
-- Draft finance-ledger PR #48 was independently reviewed; the new engine exports
-  to its Beancount-style boundary but does not adopt its fallback parser as an
-  authoritative runtime.
-- `baen-economy` now initializes and reopens an append-only SQLite preview,
-  dry-runs or atomically commits a month, returns exact retries idempotently,
-  renders a prose-first Vara report, and verifies hashes/lineage/artifacts.
-- The Operation Laden Table `illustrative-low-v1` profile runs two periods and
-  reproduces 900 tons dispatched, 882 delivered, 18 lost, 300 consumed, 582 at
-  Longsaddle, and zero conservation residual.
-- Optional management checks record every 3d6 face, target, modifier, margin,
-  outcome, method, and seed fingerprint but resolve none of the seven binding
-  campaign rolls and have no state or finance effect.
-- Laden banking remains correctly blocked at zero postings: its 200,000–300,000
-  gp target is prospective debt, not revenue, and no draw or settlement exists.
-- The offline Notion artifact is review-only, unapproved, applies zero changes,
-  and has no connector or write API.
-- `baen-business` creates a separate append-only Registry sidecar, resolves a
-  deterministic one-row Merchant-15/Administration-16 monthly preview, persists
-  an exact bundle, reopens/retries/verifies it, and emits a source-property-bound
-  two-field Notion review diff with zero write-eligible or applied items. Merchant-15
-  is restricted to a reviewed commercial-sector allowlist; military,
-  intelligence, education, and R&D rows fail closed.
-- Baen Brickworks has a deliberately partial physical profile: 75,000 bricks and
-  2,000 source-tons of clay per month are retained as source capacity envelopes,
-  while realized output/consumption/inventory and conservation remain blocked.
-- The positive NCF sandbox produces three balanced proposed transactions and
-  seven proposed postings for deposit, loan-credit, and repayment semantics.
-  Posted counts remain zero and the actual journal rejects the scenario events.
-- The open-source adoption register pins every evaluated upstream and separates
-  copied/adapted code from concepts and external validation.
-- With explicit `--allow-synthetic-demo`, `baen-region` runs a mechanics fixture
-  across eight source-identified Registry businesses. Five businesses produce
-  using invented scenario inputs; the month consumes inputs and
-  labour, applies grain/fish storage loss, moves clay/bricks/construction work
-  through same-month handling links, dispatches food on one-period routes, clears
-  local demand, records shortages, and responds from site-local prices.
-- Three delivered inter-business trades enter the sidecar journal once, with
-  goods revenue separated from Arterial Road carriage revenue. Deposit, working-
-  capital loan, interest, principal, and tax amounts are derived from realized
-  receipts/outflows under explicit non-canonical rules rather than fixed demo
-  values.
-- The regional database initializes, commits, reopens, reports, verifies, and
-  replays identically across independent workspaces and ambient Decimal contexts.
-- `PYTHONPATH=src python -m unittest discover -s tests` passes 436 tests.
+Verified historical capabilities include:
 
-## In flight
+- deterministic preview months and exact replay;
+- append-only local preview stores;
+- source-bound registry/business previews;
+- agriculture source validation, production, stock-flow, calendar, logistics, storage/spoilage, and conservation calculations;
+- the Food-Sector Operator and its four workflow types;
+- regional/whole-economy synthetic vertical-slice mechanics behind explicit non-canonical flags;
+- finance-boundary proposals with zero canonical postings;
+- explicit Notion no-write safeguards;
+- source/property/row hashing and provenance checks.
 
-- maintainer review of draft PR #65;
-- user-visible acceptance of the new Food-Sector Operator;
-- source/ruling completion for opening inventories, site-by-site allocations,
-  Longsaddle acreage and rations, aquaculture biomass/feed stocks, storage
-  allocation, and executed deliveries before the first canonical physical month;
-- period-two arrival/settlement and rolling price/finance state for any later
-  approved executable scenario;
-- canon rulings and migration classifications listed in the decision docket.
-- review of `docs/NOTION_WRITE_SAFEGUARDS.md`; the current build still has no
-  writer.
+These capabilities do **not** by themselves establish current campaign values or open the canonical-month gate.
 
-## Not yet canonical or complete
+## Upstream product integration state
 
-No calculated opening balance, commodity quantity, price, wage, production rate,
-or route capacity is canonical merely because it appears in a test fixture or
-locally committed preview. Actual campaign advancement remains blocked until Chad
-accepts the canon/migration decisions and binding rolls are resolved.
+At code head `c8d5830745f709838a3effe9ac9a4e588cc5f86f`, GitHub Actions run **#115** (`35280499380`) proves executable runtime boundaries for all six selected upstream products:
 
-## Whole-economy vertical-slice candidate — 2026-08-29
+- Mesa — direct Python library;
+- Brunnfeld Agentic World — Node service sidecar;
+- Unknown Horizons — separate pinned Python product process;
+- FreeCol — JVM product harness against the real `FreeCol.jar`;
+- Veloren — pinned GPL-side Rust adapter executing the real `veloren-world` economy;
+- OpenTTD — exact dedicated-server build probed through the documented admin network.
 
-A separate, double-clickable regional simulator now runs repeated monthly
-transitions and readable reports. It covers all thirteen categories in the
-request-compliance audit at vertical-slice depth, with exact replay seals,
-physical conservation, double-entry checks, and zero Notion/canonical writes.
-The fixture binds sixteen exact Registry identities while marking every executable
-quantity that lacks canon authority as a non-canonical scenario assumption.
+`src/baen_economy/upstream_adaptations.py` remains compatibility/cross-check code only. Its helpers are not evidence of product integration and are not a substitute for the runtime boundaries above.
 
-This does not close the project. Acreage-to-yield, arrears enforcement, migrant
-wealth transfer, occupation-specific wage pull, and collateral liquidation remain
-open; Chad's user-visible acceptance remains required.
+Product integration is also not canonical semantic adoption. Upstream balances/defaults do not become Baen facts, and source-to-product mappings remain subject to the source/coverage gate.
+
+## Standalone validation state
+
+`VALIDATION.md` remains the detailed **29 August 2026 private-vault validation history** and is not rewritten as if it were freshly executed in this repo.
+
+The first literal full-suite run after extraction executed **511 tests**: **502 passed and 9 errored**. Every error was an extraction boundary, not a failing economy assertion: three Windows launchers had been omitted, four finance checks pointed at the private sibling PR #48 ledger, one food-baseline class required the intentionally unpublished Registry page-body snapshot, and one recovery test asserted the old monorepo workflow path.
+
+The reconciliation branch then:
+
+- restored the three exact Windows launchers from the private-vault extraction source;
+- bundled the pinned PR #48 chart as `fixtures/finance/pr48-accounts.bean` rather than inventing a replacement;
+- added `.github/workflows/ci.yml` for Python 3.11 and 3.12 plus dedicated upstream-product jobs;
+- added `tools/run_standalone_tests.py`, which explicitly lists evidence-only exclusions instead of silently marking them passed;
+- retained fail-closed handling for the unpublished private page-body fixture;
+- replaced “behavior-inspired means integrated” with actual pinned product boundaries for all six selected upstreams.
+
+The current validated code head is `c8d5830745f709838a3effe9ac9a4e588cc5f86f`. GitHub Actions run **#115** (`35280499380`) is green across the full matrix. Python 3.11 ran **544 tests, 0 failures, 3 skips**. Python 3.12 passed the standalone suite and the exact Mesa dependency path. Brunnfeld, Unknown Horizons, FreeCol, Veloren, and OpenTTD dedicated product jobs also passed.
+
+See `VALIDATION_STANDALONE.md` for the executable evidence.
+
+## Completeness proof gate
+
+A green source census is no longer treated as proof of complete source review.
+
+The authoritative operator check is `python tools/check_completeness.py`, backed by:
+
+- `src/baen_economy/completeness.py`
+- `recovery/COMPLETENESS_ACCEPTANCE_2026-09-18.md`
+- `recovery/SOURCE_BODY_REVIEW_RECEIPT_2026-09-18.json`
+
+Current proof state:
+
+- collection acquisition: **PASS**;
+- retained-core semantic status: **FAIL — 33/1,620 non-UNKNOWN, 1,587 UNKNOWN** after the current overlay plus body-review batch 001;
+- exhaustive private source-body review: **IN PROGRESS — 23/1,620 REVIEWED, 1,597 UNREAD**;
+- 16-driver registry presence/disposition: **PASS as an inventory/control surface, not as execution readiness**;
+- coverage claim: **CLOSED**;
+- canonical execution readiness: **CLOSED**.
+
+Private GM prose does not need to be copied into this public repository. Exhaustive body review can be proven with stable source IDs, revision timestamps, body hashes, and explicit dispositions. Selective source requeries do not count as exhaustive coverage. Reviewed bodies are recorded in deterministic batch receipts with revision timestamps and SHA-256 digests.
+
+## Immediate development queue
+
+The source-grounded monthly business phase is the default `baen-empire run` path. Known industrial output lines, Neverwinter/Waterdeep census, food-sector financials, complete arterial distances, and admitted commercial headcount are now reported from source authority. Mesa schedules those business-phase events when installed, and FreeCol may consume Warborn 12/15 when its checkout is present. OpenTTD now has a real Warborn/Gauntlgrym precision-steel source flow mapped to the pinned product's CT_STEEL semantics, but remains **MAPPED_BLOCKED** because campaign miles→tiles and 1.5 source tons→integer OpenTTD cargo pieces have no adopted authority. Veloren and Brunnfeld remain dormant. Forgedeep occupancy, food physical volumes, route capacities, and the OpenTTD unit bridge stay unknown.
+
+The runtime also exposes typed source→product semantic domains for finance/banking, infrastructure/logistics, population/labour, construction/capital, and military/standing contracts. Mapping a fact does not make an incomplete domain executable.
+
+The current semantic coverage overlay maps **10 source records** in those domains. **9 verified current-live collection records move from UNKNOWN to SOURCE_MAPPED**, so overlay UNKNOWN is **1,607** rather than 1,616; the Current Financial State record retains its existing explicit MISSING_DATA class. **SIMULATED remains 0**.
+
+Remaining source-to-simulator gaps:
+
+1. exact current liquid cash (still a ~400K Shimmerdeep/Crown gap / 450K protected target, not a cash figure);
+2. NCF trial balance / current reserves / consolidated monthly cost;
+3. Silversheen Hammer-1495 monthly cost restatement and the 30 t/mo vs 20% Warborn allocation ruling;
+4. opening inventories, settlement labour pools, general commodity prices, household baskets;
+5. route freight capacities/loss rates;
+6. Forgedeep civilian population;
+7. food physical outputs;
+8. shock probabilities and migration rates.
+
+Do not revive synthetic sandbox values to close those gaps.
+
+## Not canonical or complete
+
+No calculated opening balance, commodity quantity, price, wage, production rate, route capacity, projected facility output, upstream default, or test-fixture assumption is canonical merely because it appears in this repository or executes successfully through an upstream product.
+
+The engine is a usable standalone software package. The campaign economy is **not** declared canonically executable yet. `/v1/canonical` must remain blocked until the source-to-simulator coverage gate is genuinely satisfied.

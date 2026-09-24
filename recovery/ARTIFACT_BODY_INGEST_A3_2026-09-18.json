@@ -1,0 +1,535 @@
+{
+  "schema": "tnp.economy.artifact-body-ingest/1",
+  "batch": "A3",
+  "records": [
+    {
+      "source_id": "2fce8214-84b0-8166-ad91-e3e57e4f53ac",
+      "title": "Ethereal Diadem",
+      "revision": "2026-03-24T01:14:55.458Z",
+      "body_hash": "0d72565dc81dd3fc7e4a4a69663a1c6b3b69e2f99604cd85b656a55170b639d7",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "Arik's Private Chambers",
+        "Name": "Ethereal Diadem",
+        "Notes": "PHYSICAL: Diadem with properties enhancing perception beyond material boundaries.<br><br>PROPERTIES:<br>• Enhances perception across planar boundaries<br>• See into ethereal and adjacent planes<br>• Extends sensory range into normally invisible dimensions<br><br>ORIGIN: Acquired from Raazalkul's hoard. Part of Arik's negotiated share.<br><br>STATUS: Currently stored for future use rather than actively worn. Reserved for dimensional research.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b08166ad91e3e57e4f53ac"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8167-9fc6-e3fe75d25cd4",
+      "title": "Command Circlet",
+      "revision": "2026-02-03T00:44:25.886Z",
+      "body_hash": "e7a56bbee4e10e36a4b6e0d277306ab47d7fe889d9ff82c9972af50617fb7229",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Menzoberranzan"
+        ],
+        "Evolution Potential": "__YES__",
+        "Holder": [
+          "https://app.notion.com/p/356e821484b0818bafb2ed1cf5c2652f"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "Worn on Matron's Brow",
+        "Name": "Command Circlet",
+        "Notes": "PHYSICAL: Ancient alloy circlet with diamond inlays. Matron unconsciously touches it - habit growing more pronounced as influence deepens.<br><br>PROPERTIES:<br>• Subtle influence over wearer's decisions<br>• Creates general alignment with creator's objectives<br>• Causes physical touching habit in wearer<br>• Potential dependency development with extended use<br>• Adjusted to reduce crude domination in favor of subtle influence<br><br>SOUL COMPOSITION:<br>• Dhusyl Hunzrin's commanding presence (primary)<br>• Illithid soul reserved for future enhancement<br><br>ORIGIN: Ancient circlet acquired through Bregan D'aerthe. Infused with Dhusyl Hunzrin's soul (Session 5) specifically harvested for commanding presence.<br><br>DESIGN PHILOSOPHY: Creates leader who functions effectively while remaining amenable to guidance rather than crude domination. Matron's natural intelligence continues operating alongside influence.<br><br>POTENTIAL: May be refined for transfer to other targets (Matron Hunzrin, Pharizia).",
+        "Origin": "Dodecahedron crafted — Dhusyl Hunzrin soul (illithid reserved for upgrade)",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b081679fc6e3fe75d25cd4"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-816d-a87b-c03eed540231",
+      "title": "Soul-Enhanced Hand Crossbow",
+      "revision": "2026-02-03T00:43:04.244Z",
+      "body_hash": "1edc81fc4ae8fb80ea6668f8fe342ebd1bdfd080bd88ad287a9c64ce3e32a983",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Menzoberranzan"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Baen Vault - Heir Legacy",
+        "Name": "Soul-Enhanced Hand Crossbow",
+        "Notes": "CREATED: Session 2<br><br>SOUL SOURCE: Half-orc warrior soul (predatory instincts)<br><br>PROPERTIES:<br>• Guided projectiles (minor course correction mid-flight)<br>• Extended accuracy range<br>• Enhanced penetration<br><br>DESIGN: Ranged assassination tool. Bolts seek targets with unnatural accuracy.<br><br>STATUS: VAULTED for heir - superseded by current loadout.",
+        "Origin": "Dodecahedron crafted — half-orc soul",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Vaulted",
+        "Type": "Weapon",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b0816da87bc03eed540231"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-817e-9fb3-d95ee9742ed6",
+      "title": "Wong Fei's Stone",
+      "revision": "2026-02-03T00:43:46.746Z",
+      "body_hash": "6cbb6a533febc63dfb8a59174c098ffe816df518ad84cf49d9e021bf3d8d9153",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081edbf3fcf8f2b5d6111"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Orbiting Selarial's Head",
+        "Name": "Wong Fei's Stone",
+        "Notes": "TYPE: Ioun Stone<br><br>PHYSICAL: Orbits Selarial's head in gentle rotation, creating subtle protective aura.<br><br>PROPERTIES:<br>• Protective capabilities<br>• Regenerative capabilities<br>• Complements elven combat style<br><br>ORIGIN: Acquired by triplet mages specifically for Selarial. Named after merchant from whom it was obtained. Presented alongside linked bag of holding before Abyssal Raid.<br><br>SIGNIFICANCE: Gift from triplets demonstrating recognition of Selarial's value to the network. Enhances her considerable presence.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b0817e9fb3d95ee9742ed6"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-817f-9dd9-d494d3a5efab",
+      "title": "Void-Enhanced Armor",
+      "revision": "2026-03-21T22:45:51.626Z",
+      "body_hash": "2a0d175b592b1c574d21e80bb77940e4a733da486b2d63ebb01645529278ba2b",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Menzoberranzan",
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "Baen Vault - Heir Legacy",
+        "Name": "Void-Enhanced Armor",
+        "Notes": "ORIGIN: Conventional armor damaged during Void Hunter encounter, infused with Void Hunter essence through Dodecahedron.<br><br>PHYSICAL: No longer reflects light consistently. Certain angles reveal depths that shouldn't exist. Portions feel simultaneously solid and insubstantial. Ripples with non-Euclidean patterns. Weighs less than before.<br><br>PROPERTIES:<br>• Partial dimensional shifting<br>• Reality distortion (difficult to perceive/target)<br>• Protection against planar attacks<br>• Modular dimensional state (shift portions more/less substantial)<br>• Enhanced spatial awareness<br>• Unprecedented responsiveness to movement<br>• Protective barrier against dimensional manipulation<br><br>SYNERGIES:<br>• Responds to Shadow Monks' dimensional phasing<br>• Amplifies Arik's phasing capabilities<br>• Complements Dodecahedron's dimensional awareness<br><br>SIGNIFICANCE: First integration of extra-dimensional essence rather than conventional souls. Major evolution in soul enhancement capabilities.<br><br>STATUS: VAULTED - superseded by Pale Death Armor.",
+        "Origin": "Dodecahedron crafted — Void Hunter essence",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Vaulted",
+        "Type": "Armor",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b0817f9dd9d494d3a5efab"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8181-9390-d9fc04c4e038",
+      "title": "Cloak of Refracted Light",
+      "revision": "2026-03-21T22:46:46.754Z",
+      "body_hash": "bff17e17a6e120850a8b8e1514a66fb389e53aa95b7069b2758ab8335e96d4b6",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Baen Vault",
+        "Name": "Cloak of Refracted Light",
+        "Notes": "TYPE: Assassin's cloak<br><br>PHYSICAL: Cloak that bends light around wearer. Appears to shimmer at edges, colors shifting based on viewing angle.<br><br>PROPERTIES:<br>• Advantage on Stealth checks in ANY light conditions (not just darkness)<br>• 1/day Greater Invisibility that doesn't break on attacks for 1 round<br>• Reduces light-based damage by half<br>• Difficult to track visually even when visible<br><br>ORIGIN: Acquired from Raazalkul's hoard. Demon lord likely used it or kept it from a particularly skilled mortal assassin.<br><br>STATUS: Stored in vault. Perfect for Veil operative or vaulted for heir.<br><br>POTENTIAL RECIPIENTS: Senior Veil agent, Lirien's second, or high-value assassination mission loadout.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b081819390d9fc04c4e038"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8182-bb0d-e7332d4c9f6f",
+      "title": "Dimensional Anchor Pendant",
+      "revision": "2026-02-03T00:43:46.746Z",
+      "body_hash": "e41852917e856e2a62aff15763b2f105bbb5709c02d6e13d220587498dfc4573",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081a79c20db298627cd04"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "With Arik (Carried)",
+        "Name": "Dimensional Anchor Pendant",
+        "Notes": "PHYSICAL: Black stone on silver chain that absorbs light.<br><br>PROPERTIES:<br>• Stabilizes wearer's position when traversing dimensional boundaries<br>• Crucial for extradimensional sanctuary development<br>• Prevents unwanted planar displacement<br><br>ORIGIN: Acquired from Raazalkul's treasure hoard during Abyssal Raid. Specifically selected for dimensional research applications.<br><br>SYNERGIES:<br>• Supports dimensional phasing development<br>• Complements void-enhanced armor<br>• Works with Dodecahedron's planar manipulation",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b08182bb0de7332d4c9f6f"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8184-879a-ebd0bc068331",
+      "title": "Vial of Purified Souls",
+      "revision": "2026-02-03T00:44:25.886Z",
+      "body_hash": "464597c2594928a5c0aea1333db49f4eff16ee0ddae4da8823e91fc7e8d68056",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "Arik's Private Chambers",
+        "Name": "Vial of Purified Souls",
+        "Notes": "PHYSICAL: Small crystal vial containing what appears to be swirling mist - actually souls in their most refined form.<br><br>PROPERTIES:<br>• Contains souls in purest form<br>• Ideal research material for soul manipulation experiments<br>• Purpose unknown (demon lord clearly harvested for special purpose)<br><br>ORIGIN: Acquired from Raazalkul's treasure hoard during Abyssal Raid.<br><br>STATUS: Reserved for experimental research rather than immediate use. Research material for Dodecahedron experiments.",
+        "Origin": "Research reserve — purified soul essence",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Consumable",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b08184879aebd0bc068331"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8190-827e-e159f7050a38",
+      "title": "Ring of Abyssal Authority",
+      "revision": "2026-02-03T00:44:44.166Z",
+      "body_hash": "7e718470d3929476a131fd8c3df95db85d85b342d4fb7fe932718f6b67a928b9",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "Hell - Allied Forces",
+        "Name": "Ring of Abyssal Authority",
+        "Notes": "DISTRIBUTED: Given to enforcer devil during Dis Gambit treasure division.<br><br>FUNCTION: Aids in converting captured demonic enemies. Psychological warfare tool.<br><br>STATUS: In allied hands. Full stats TBD if devil returns with item.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Allied Asset",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b08190827ee159f7050a38"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-819c-a791-c0310c9d61c4",
+      "title": "Anti-Detection Amulet",
+      "revision": "2026-03-21T22:46:19.055Z",
+      "body_hash": "1f898264070a24a8a373637d6be93e607688cda1bacfd3cc58515cf8fd9df0d3",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Menzoberranzan"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Baen Vault - Heir Legacy",
+        "Name": "Anti-Detection Amulet",
+        "Notes": "CREATED: Session 7<br><br>SOUL SOURCE: Derro savant soul (partially consumed from Dodecahedron reserves)<br><br>PROPERTIES:<br>• Masks soul energy signatures<br>• Protects against essence-draining attacks<br>• Disrupts magical tracking<br>• Detection of surveillance attempts (grows warm)<br>• Complete invisibility to divination<br><br>HISTORY: Warned of Hellish Sigil in Sorcere. Essential for maintaining secrecy of soul manipulation activities.<br><br>STATUS: VAULTED for heir - critical operational security tool.",
+        "Origin": "Dodecahedron crafted — derro savant soul",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Vaulted",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b0819ca791c0310c9d61c4"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-81a6-ab74-f563ade4361a",
+      "title": "Forge of Infinite Forms",
+      "revision": "2026-02-03T00:44:44.166Z",
+      "body_hash": "df73fd3f184fcc5ccc89fac3830c9de8c402a89ca80c71184c32122d859105fd",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "Hell - Allied Forces",
+        "Name": "Forge of Infinite Forms",
+        "Notes": "DISTRIBUTED: Given to transmuter devil during Dis Gambit treasure division.<br><br>FUNCTION: Gauntlet allowing weapon transmutation (3/day), maintains magical properties through transformation.<br><br>STATUS: In allied hands. Full stats TBD if devil returns with item.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Allied Asset",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b081a6ab74f563ade4361a"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-81a9-92ea-d61f474878f0",
+      "title": "Soul-Enhanced Kukri",
+      "revision": "2026-02-03T00:43:04.244Z",
+      "body_hash": "b4d3d97da33ccd843de1a8e3f87df6023dc22f8947924fa3e3dbbb603fdb4e19",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Menzoberranzan"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Baen Vault - Heir Legacy",
+        "Name": "Soul-Enhanced Kukri",
+        "Notes": "CREATED: Session 2 - First successful soul weapon, proof of concept.<br><br>SOUL SOURCE: Drow warrior souls<br><br>PROPERTIES:<br>• Identifies anatomical weaknesses in targets<br>• Supernatural speed enhancement during combat<br>• Self-maintaining edge (never dulls)<br>• Visual obscurity during motion (difficult to track)<br><br>DESIGN: Primary melee weapon for close assassination work. Blade moves faster than eye can follow.<br><br>STATUS: VAULTED for heir - superseded by Pale Death Armor's integrated combat suite.",
+        "Origin": "Dodecahedron crafted — drow warrior souls",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Vaulted",
+        "Type": "Weapon",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b081a992ead61f474878f0"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-81ae-a0d7-d3482c8c0234",
+      "title": "Linked Bags of Holding",
+      "revision": "2026-02-03T00:44:25.886Z",
+      "body_hash": "95e6b5a3483355e8c04043f2e7b70a18fe7ac63667cd8b15f61c69d185425995",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081a79c20db298627cd04",
+          "https://app.notion.com/p/2fbe821484b081edbf3fcf8f2b5d6111"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Rare",
+        "Location": "One with each holder",
+        "Name": "Linked Bags of Holding",
+        "Notes": "PHYSICAL: Paired extradimensional containers of fine craftsmanship.<br><br>PROPERTIES:<br>• Paired extradimensional spaces<br>• Object transfer regardless of physical distance<br>• Functions across planar boundaries (per triplets' calculations)<br>• Can hold up to a ton of weight combined<br>• Connection can be temporarily sealed via Dodecahedron<br><br>ORIGIN: Crafted by triplet mages through their own initiative. Presented to Selarial before Abyssal Raid along with Wong Fei's Stone.<br><br>PROVEN: Demonstrated value during raid when treasures materialized in Selarial's bag as Arik claimed them.<br><br>MECHANICS: Standard bag capacity, items placed in one appear in other, 1-mile range (confirmed), 1-round delay.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b081aea0d7d3482c8c0234"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-81ba-85ae-c533c78b07c0",
+      "title": "Crystalline Focus Lenses",
+      "revision": "2026-02-03T00:57:39.966Z",
+      "body_hash": "681c88cc397a0953008fd271ecc198e6fb32d1e6d3f59362236076f2d0d36a49",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface",
+          "Multiple"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b08149aa8fe1cab9515844"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Bregan D'aerthe",
+        "Name": "Crystalline Focus Lenses",
+        "Notes": "TYPE: Demon lord's scrying equipment<br><br>PHYSICAL: Set of crystalline lenses that fit over eyes or can be mounted in frames. Surface shifts with captured light from other planes.<br><br>PROPERTIES:<br>• True seeing through specific planar boundaries<br>• Record visual information for later playback<br>• Overlay psychic impressions with visual data (Kimmuriel application)<br>• Detect invisible/ethereal entities<br>• See through magical darkness<br><br>ORIGIN: Acquired from Raazalkul's hoard during Abyssal Raid. Allocated to Bregan D'aerthe during treasure division.<br><br>CURRENT USE: Kimmuriel uses for psionic intelligence enhancement - combining with his mental abilities for superior reconnaissance.<br><br>ALLIANCE VALUE: Strengthens Bregan D'aerthe intelligence capabilities.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b081ba85aec533c78b07c0"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-81cb-8951-f5684792fefd",
+      "title": "Paws of the Cheetah",
+      "revision": "2026-02-03T00:44:25.886Z",
+      "body_hash": "f6c59fa03a7b25be3d96783dfe7f06e4d5b432cd7cb620da849fc1580ff886c3",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface",
+          "Multiple"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/356e821484b081be8911d80bb120cd36"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Worn by Zaknafein",
+        "Name": "Paws of the Cheetah",
+        "Notes": "PHYSICAL: Magical boots of speed that flicker in and out of visibility.<br><br>PROPERTIES:<br>• Supernatural quickness<br>• Movements become almost blurry with speed<br><br>ORIGIN: Acquired from Raazalkul's hoard. Zaknafein immediately equipped them during raid - his personal claim.<br><br>SYNERGIES: Complements Gram for enhanced combat capability. Allows Zaknafein to match Arik's dimensional phasing with raw speed.<br><br>ALLIANCE VALUE: Strengthens Bregan D'aerthe partnership through tangible combat enhancement.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b081cb8951f5684792fefd"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-81ce-821b-eedf61a576c7",
+      "title": "Boots of Temporal Displacement",
+      "revision": "2026-02-03T00:43:46.746Z",
+      "body_hash": "12a23538f2f583843cf2413ec7f5e41ef672a172bba11baa8870981d7c0c785b",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081a79c20db298627cd04"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "With Arik (Carried)",
+        "Name": "Boots of Temporal Displacement",
+        "Notes": "PHYSICAL: Boots that flicker in and out of visibility. Temporal properties create subtle displacement effects.<br><br>PROPERTIES:<br>• Limited manipulation of personal time flow<br>• Temporal displacement for combat advantage<br>• Full capabilities not yet explored<br><br>ORIGIN: Acquired from Raazalkul's hoard. Negotiated as part of Arik's share in exchange for giving Juggernaut Golem Manual to Bregan D'aerthe.<br><br>SYNERGIES: Complements dimensional manipulation abilities.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b081ce821beedf61a576c7"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 235,
+      "UNKNOWN": 1294,
+      "CONFLICT": 12,
+      "SUPERSEDED": 62,
+      "MISSING_DATA": 4,
+      "FUTURE": 10,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 323,
+      "UNMEASURED": 1297
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 235,
+      "UNREVIEWED": 1297,
+      "CONFLICT": 10,
+      "SUPERSEDED": 61,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 10,
+      "ECONOMIC_CONTEXT": 3
+    }
+  }
+}

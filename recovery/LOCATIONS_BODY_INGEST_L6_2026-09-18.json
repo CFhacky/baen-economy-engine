@@ -1,0 +1,649 @@
+{
+  "schema": "tnp.economy.locations-body-ingest/1",
+  "batch": "L6",
+  "records": [
+    {
+      "source_id": "348e8214-84b0-8192-95d8-f81988611e45",
+      "title": "🏭 Waterdeep Warborn Mega-Facility",
+      "revision": "2026-08-21T03:20:16.942Z",
+      "body_hash": "a8c6fd1c984c17fe58f0628c5556d923e673ba0951137771c8072ad77499c0c2",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Bloodaxe Legion rotating garrison (20 standing, 40 surge). Crystal surveillance network. Veil intelligence overlay. Underground vault military-grade. Rurik's 12-dwarf Gauntlgrym-expatriate defense detachment. Dimensional gate chamber separately sealed (5 keyholders only).",
+        "Name": "Waterdeep Warborn Mega-Facility",
+        "Notes": "Primary Warborn production facility and only operational dimensional gate to the Inevitable City in the Material Plane. Dock Ward industrial zone, Waterdeep. 200,000 sq ft footprint. Capacity 100-150 Legionnaire frames/month plus primary soul-binding operations. Facility manager: Rurik Hellbrace (dwarf, Gauntlgrym master smith). Cover: 'Baen Industrial Manufacturing (Heavy)' with declared 200-job civic contribution. Investment: 1,127,000 gp. The gate links only to the Inevitable City; no other destinations.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Population": 200,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b0819295d8f81988611e45"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81a3-b119-cb252796aa61",
+      "title": "🏭 Baen'und Component Factory Site — Neverwinter",
+      "revision": "2026-08-20T03:20:11.899Z",
+      "body_hash": "605b64cb92cc5964f3ef01710efa66ef4ff95e53af80dbda41317d60acb20bac",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Fit-out phase. No permanent staff. Site security pending commitment of layout and shift structure.",
+        "Name": "Baen'und Component Factory Site — Neverwinter",
+        "Notes": "East parcel adjacent to Baen Northern Industrial Yards, Neverwinter industrial zone. Counter-acquired \\~35,000 gp (15K over fair value due to competing Northwatch-adjacent bid). 215,000 gp total capitalization through ESAMT deployment (Session 34 joint-venture agreement with Arik, 30th Eleint 1493 DR). Product scope: skeletal assemblies + limb components for Arik's Warborn program ONLY. Excluded absolutely: soul work, binding, furnace integration. Output priority: Arik's consumption first. Two-week minimum lead time on surge requests. Shi'van's take: overruns, R&D prototypes, experimental configurations. Guild cover letter from Lirien Nightwalker (cover, not endorsement). Ruvik Hasp standing inquiry order for memory metal volumes pending fit-out commitment. Fit-out design pending at Day 717.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Population": 0,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[session-34-the-brothers-city-log.md](http://session-34-the-brothers-city-log.md)",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081a3b119cb252796aa61"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81a6-8349-ecdc1f0efef8",
+      "title": "Longsaddle Valley",
+      "revision": "2026-08-20T03:23:50.647Z",
+      "body_hash": "d1aa2ad9529c12c62be25b7aef23052f21c502d83c32ee8c27fcd0d488c9acd6",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Fort Bloodaxe East and Fort Bloodaxe North under construction at Nightal 1495 DR (palisades complete, barracks 60%, first garrison arrived). Projected full garrison at each fort: \\~300-500 Bloodaxe Legion operatives plus support. Valley interior security: mixed Veil operatives (estate protection, Archives security, grove perimeter), elvish ranger contingent from Elara's forces, local Harpell and Hunding-Harpell informal contribution, wardstone network residue from post-Longsaddle-Confrontation defensive consolidation. Yggdrasil grove site: dedicated monitoring detail under Shi'van's Institut direction, \\~20 personnel on rotating deployment. Royal Archives: discrete Veil detail, location not publicly disclosed.",
+        "Name": "Longsaddle Valley",
+        "Notes": "Mid-North valley on the Long Road between Triboar and Silverymoon. Traditional Harpell family seat. Now physical base of Elara Baen'del's Cormanthyri government-in-exile (\\~10,000 elves, 3 defected Royal Council members, Marshal-Commander Thessian Autumnleaf, Royal Archives) and site of Shi'van Baen'und's Yggdrasil grove proof-of-concept. Strategic purpose: demonstrate Yggdrasil methodology works at scale before eastern deployment to Cormanthor against the Verdant Corruption. Vara's 6-lake terraforming + palatial estate acquisition program underway (Lakes 1-3 complete/underway, Lake 4 in active fae negotiation at Nightal 1495 DR, Lakes 5-6 planned; 15,000 acre-feet total water capacity). Land ownership is explicit strategic directive — Baen Enterprises owns the land that hosts the methodology. Fort Bloodaxe East and Fort Bloodaxe North under construction for perimeter security. Multiracial population (elvish diaspora + Harpells + Longsaddle halflings + Hunding merchant branch + humans) produces breadbasket economy that canonically threatens enemies through prosperity rather than elvish supremacy. Canonical prior event: Longsaddle Confrontation (Tempest destroyed one of three demonic entities infiltrating Hunding family; two escaped; wardstone network consolidated; Hunding transportation partnership secured). Canonical trauma site: Brennan Ashwick's Iron Tide incident (separate, older). NCF Longsaddle branch under Calishite competitive pressure from Nassim im'Dalat.",
+        "Population": 11000,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "conversation canon (Longsaddle terraforming chat `5ed8c131-c704-444b-b607-bdd4d7ae3ad9`, Verdant Corruption canon chat `55652fce-dd6d-4e82-8b1a-7d00c3e02d37`, Covenant blind-spot chat `b8265d4a-0d38-47eb-8a29-d5707bb36018`, Elara dynasty canon chat `1c47a101-51ef-44dd-ba87-5201ba7aa54e`, Purist cell session Nightal 1495 DR state) + project knowledge `yggdrasil_seed_orb.md`, `session-log-klauth-execution.md`, `personal-power-armor-specifications.md`, `The_New_Path_Campaign_-_Session_Summary.md`, `brennan-ashwick-character-sheet.md`, `hunding-acquisition-history.md`, `competitor-actions.md`",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Settlement",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081a68349ecdc1f0efef8"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81a6-907c-e3066551f69b",
+      "title": "🔨 Aldwich Lane Workshop — Neverwinter",
+      "revision": "2026-08-20T03:20:09.314Z",
+      "body_hash": "fe58006d7cca170b8e2f14df60df99a0bcd4906abc997ca334f3d533d4ccf41f",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "No permanent staff. Shi'van worked solo sessions here; Seren on watch rotation when Shi'van was on the bench.",
+        "Name": "Aldwich Lane Workshop — Neverwinter",
+        "Notes": "Shi'van's Neverwinter commercial workshop. 580 sq ft former silversmith space, Aldwich Lane (Merchant District). 65 gp/month, 6-month lease from 30th Eleint 1493 DR. Lease routed through Portia Cavell at NCF Castle District. Teaching piece (Sectioned Anatomical Collar) assembled here across three sessions (29th Eleint, 1st and 3rd Marpenoth). Brettane Fold viewed the Verðandi Collar here 5th Marpenoth. Ruvik Hasp audition and approval as memory metal supplier 7th Marpenoth.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[session-34-the-brothers-city-log.md](http://session-34-the-brothers-city-log.md)",
+        "Status": "Controlled",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081a6907ce3066551f69b"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81a8-a8dd-d69c21b5f1b5",
+      "title": "🌀 Undermountain",
+      "revision": "2026-08-20T03:22:05.073Z",
+      "body_hash": "52f004389c823880eff1ae8aada3ad56b2691cb143b6cf9ee18f2a75ba4c354b",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "No institutional garrison. Halaster Blackcloak (the Mad Mage) — Chosen-tier archmage, ancient, comfortably insane, functionally omnipresent within his dungeon via scrying reach, physical location shifts, historical stability of tolerance for surface Waterdeep through mutual non-engagement. Halaster's apprentices (multiple, various conditions including the Skulls of Skullport as former apprentices transformed). The Xanathar (beholder crime lord resident in upper levels, operates through surface Xanathar Guild). Creature populations by level stratum: Upper levels 1-5 (cultists, hobgoblins, bugbears, duergar scouts, minor undead, Xanathar Guild outposts), Middle levels 6-15 (mind flayers, beholders, assorted constructs, dangerous undead, drow raiding parties, adventuring rivals), Lower levels 16-23 (dragons, formorians, aboleths, powerful constructs, Halaster's personal creations). Multiple dragons at various depths. Inter-level travelers (Halaster's agents, adventurers, Underdark traders transiting to/from Skullport). Harper-aligned undercover operators. No formal surface institutional jurisdiction.",
+        "Name": "Undermountain",
+        "Notes": "Vast ancient multi-level megadungeon beneath Mount Waterdeep. Created/shaped/still ruled by Halaster Blackcloak (the Mad Mage). Canonically largest dungeon on Faerûn. At least 23 named levels of varying character. Connects at deeper strata to broader Underdark. Skullport is Level 3. Halaster's scrying reach extends throughout; agents/constructs/creatures populate levels not personally visited in decades or centuries. Strategic architecture: existed before Waterdeep's modern order, will almost certainly outlast any current configuration. Masked Lords/Open Lord/Archmage/Watch claim no jurisdiction below upper-level antechambers. Halaster's tolerance of Waterdeep is centuries-historical but not guaranteed. Interventions rare, unpredictable, historically non-catastrophic. Primary public ingress Yawning Portal well (Durnan's consent + payment). Secondary ingress Chamber of Mournful Dead (City of the Dead, Sealkeeper coordination). Scattered minor entrances (sealed tombs, forgotten cellars, mountain caves). Underdark connections at depth. Teleport-sealed except sanctioned circles. For Shi'van operations: pure strategic backdrop. Yawning Portal surface interface = operational (Durnan/Mirt/witness-rumor feed). Below well-lip = not operational, no agents, no pursuit. Halaster not her problem (never engaged anything her campaign touches; engagement threshold = existential Waterdeep crisis = same threshold as Walking Statues walking = paired narrative ceilings). Xanathar Guild IS her problem indirectly (Mistshore recruitment → Skullport contractor pipeline → surface attacks). Harpers operate in Undermountain via Laeral institutional pathway (not currently operational). Drathen Baen'und historical polymath scholarship may touch Undermountain-adjacent material via Sage Kellam's Gallows-Marked research (latent). Benefits: absorbs adventurer-energy, keeps Xanathar center-of-mass below surface, maintains strategic ceiling effect, supports Yawning Portal commercial/intelligence venue. Overview entry; level-by-level detail (DotMM twenty-plus levels) deferred to future Locations DB expansion pass when campaign arc requires.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Population": 0,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "WotC canon: Undermountain (2E boxed set), Halls of the High King, Ruins of Undermountain (2E), City of Splendors: Waterdeep (3.5E), Waterdeep: Dragon Heist (5E), Dungeon of the Mad Mage (5E), Forgotten Realms Campaign Setting 3E.",
+        "Status": "Hostile",
+        "Strategic Value": "Critical",
+        "Sub-Locations": [
+          "https://app.notion.com/p/348e821484b08123bbb5f856b260a8e1"
+        ],
+        "Type": "Dungeon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081a8a8ddd69c21b5f1b5"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81b0-810b-dd2083f0362f",
+      "title": "📜 Baen'und Innovations — Waterdeep",
+      "revision": "2026-08-20T03:20:15.656Z",
+      "body_hash": "53ea468670980f62a21a59bf55e12226ffe3c96a5c052640a67e9e9f74ecd9d6",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Shi'van (director). Admin clerk at Institut mezzanine for patent-correspondence routing. Merileth Dawntracker at Spindle Street for legal. NCF Trade Ward banker for capital operations.",
+        "Name": "Baen'und Innovations — Waterdeep",
+        "Notes": "Registered Waterdhavian commercial IP holding entity for Shi'van Baen'und's invention portfolio. Capitalized 10,000 gp through NCF Trade Ward banker's addendum (Session 8A, post-Golden Griffin). 50,000 gp NCF credit line approved, not drawn at Day 717. Sub-accounts: Promethean Production Trust 5,000 gp, Patent Protection Fund 2,000 gp. Operational HQ within the Institut administrative space (Moonstar Lane, North Ward). Legal representation through Merileth Dawntracker (Spindle Street). Holds 27-patent Promethean Device portfolio (20-year protection across three kingdoms), Promethean Lamp Post housing IP, ward-threading protection-grade patent, Summer Crown IP, Lanternlight Purse IP, Eye of Dagaz co-development licensing (Venn, 6 months secured), Memory Thread calibration trade secret, Institut loom designs. Receives 60% revenue from both Rosznar manufacturing and Husteem distribution partnerships. Not a retail storefront — holding-and-licensing entity. Ultimate beneficial ownership via ESAMT.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "Promethean Device Creation Registry (334e8214-84b0-81c8); Baen Enterprises Financial Ledger (341e8214-84b0-81a9); Institut de Tissage Arcanique (347e8214-84b0-81a8); Forward Timeline — Active Horizon (346e8214-84b0-8156)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081b0810bdd2083f0362f"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81bd-a639-ef5dd4981b1a",
+      "title": "Thornfield Estate",
+      "revision": "2026-08-20T03:29:58.399Z",
+      "body_hash": "075b4ae7c2fc028fa6d168b51cdc5b33c692671547310d1c6137f1cf60387907",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/34ce821484b081d897eedbe2fb005457"
+        ],
+        "Garrison": "Domestic staff \\~30 (12 servant cottages, local Dalesfolk vetted by Marrek Greyhand, no Underdark knowledge). Security specialists on-site \\~20 of the broader 80-operative Thornfield Associates security cohort (former Zhentarim operatives, loyalty to Iselda personally, not to any external ideology). Additional security specialists rotate through from road-junction warehousing postings. Underdark trade team personnel at \\~30 operate from the cellar-transit chamber and the cavern network below; not visible to surface garrison. Iselda herself is an unreasonably competent left-handed swordswoman with 22 years of drow-bladework practice. Marrek Greyhand is a former Zhentarim operations sergeant with steel-prosthetic right hand (last two fingers missing) and proven battlefield competence.",
+        "Name": "Thornfield Estate",
+        "Notes": "Three-story manor on granite ridge east of Tesh Valley, northern Dalelands. Owner: Iselda Vorn (39, fourth-generation Vorn, partial drow heritage via great-grandfather Andris Vorn). Surface: modest-appearing noble manor with arrow-loop ground floor, thick granite walls, defensive architecture throughout. Subsurface: cellar complex reaches natural cavern system connecting to the Underdark within a day's travel. Four-generation dual-use design — surface commercial face + subterranean Underdark trade route. Operational HQ of Thornfield Associates (\\~500 personnel trade network, compartmented structure, controls warehousing at 3 of 5 major Tesh Valley road junctions). **Arik's co-option target per Ledge Briefing doctrine** — let Iselda expand before approach; her position deepens the leverage, her compartmentation makes her the only useful access point to the Underdark trade floor. **Concealed canon:** drow heritage unknown to Arik's Veil; Breskan Thale (Galena's Bluff factor) compromised by 'Ilsa' demon predator, unknown to Iselda. Key personnel on-site: Iselda Vorn, Marrek Greyhand (security chief, former Zhent sergeant, steel prosthetic), domestic staff. Rael (drow merchant-caste) visits cellar-transit chamber every six weeks.",
+        "Population": 50,
+        "Region": [
+          "Dalelands"
+        ],
+        "Source File": "[iselda-vorn-zhentarim-pragmatic-leader.md](http://iselda-vorn-zhentarim-pragmatic-leader.md)",
+        "Status": "Contested",
+        "Strategic Value": "Critical",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081bda639ef5dd4981b1a"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81bf-9ce2-d3a58b2310fe",
+      "title": "🏰 Castle Waterdeep",
+      "revision": "2026-08-20T19:14:36.521Z",
+      "body_hash": "ea394a1bd53aa1fd8850d10aded6125a0858238f8dee2cbe0bedeb6b257d94a7",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "Waterdeep Guard (city-scale standing military, Castle barracks). City Watch command staff (operational headquarters separate from ward watchhouses). Griffon Cavalry (rooftop aerie). Open Lord Laeral Silverhand (principal seat, official chambers). Alustriel Silverhand (permanent resident in the Chosen suite, damaged post-Silverymoon-fall, does not leave). Masked Lords (rotating anonymous panel, audience chambers when convened). Magisters of commercial and criminal courts operating from attached judicial annex. Standard-grade magical defenses (Castle Ward core, ward anchor network Laeral has been reinforcing via Silverhair's 40-piece commission delivered Day 545). Strict admission control — appointment by summons or writ, no casual access.",
+        "Name": "Castle Waterdeep",
+        "Notes": "Seat of Waterdeep's government. Foot of Mount Waterdeep, Castle Ward. Massive fortress structure housing: Open Lord's principal chambers (Laeral Silverhand), Masked Lords' audience hall (rotating anonymous membership — Vesper secretly among them), Waterdeep Guard barracks and City Watch command, Griffon Cavalry aerie, attached judicial annex for commercial and criminal magistracy, the Chosen suite (Alustriel Silverhand, permanent resident, post-Silverymoon-fall state). Laeral holds a file on Shi'van that originated from Silverhair's vouching; she personally teleported to Shi'van's workshop at 2 AM during the veterans meeting crisis (Session 8 Part 2), revealed she knew about Arik and the Moonshard and everything, provided a witness crystal, and referenced 'your brother would want me to.' The Commerce Court Day 592 ruling (Shi'van v. Ravenscroft/Ship Kurth/NHH, 4-1) proceeded through institutional architecture that Castle Waterdeep ultimately oversees. Silverhair's 40-piece ward anchor commission (Session 9, Day 545 delivery) was part of Laeral's program to reinforce Waterdeep's municipal wards — those components now sit in the city's protective infrastructure, partly installed within Castle Waterdeep itself. Shi'van has no direct personal audience with Laeral at Day 729; the relationship is routed through institutional channels and the Masked Lords channel rather than personal cultivation.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Population": 800,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "Waterdeep parent page (2fbe8214-84b0-81a8); Session 8 Part 2 Laeral visit; Session 9 Valas return/Silverhair commission; Session 21 Commerce Court ruling.",
+        "Status": "Allied",
+        "Strategic Value": "Critical",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081bf9ce2d3a58b2310fe"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81c3-98aa-ef7a40cdd803",
+      "title": "⚓ Deepwater Harbor",
+      "revision": "2026-08-20T19:51:27.349Z",
+      "body_hash": "413ee3b5212653352e82fcade01821c118c4fc6360bd9cc2e1d892dcb47b95cd",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "Harbor Master (chartered institutional appointee of Masked Lords, political neutrality required, dispatches pilots/approves berthings/adjudicates disputes). \\~30 licensed harbor pilots (each licensed by Harbor Master, paid by vessel at standard rates, expert knowledge of channels/currents/hazards). \\~40 customs inspectors (Lords' Alliance-coordinated tariff collectors, rotating shifts across merchant wharfs). Dockage Office mid-level bureaucratic staff (\\~15, berth assignments, loading scheduling, guild coordination). Fishmongers' Guild self-governing authority for Basin (\\~600 fishermen + processors, \\~200 vessels). Waterdeep Guard Naval Detachment (\\~120 sailors + officers, 3 active warships + support craft, based at Lords' Alliance wharfs). Shipwrights' Guild for Sea Ward yards (\\~400 skilled laborers across 3 principal yards). Captain Stormwind's Dock Ward Watch beat touches merchant wharfs. Standing coordination with Seatower of Balaeros at harbor mouth. Harbor defense response capability: Bloodaxe Rapid Response 15-minute deployment (demonstrated Session Delegation harbor attack, 3 vessels captured), Griffon Cavalry aerial observation, Waterdeep Guard naval warships.",
+        "Name": "Deepwater Harbor",
+        "Notes": "Waterdeep's principal port. Deep-water anchorage sheltered by Mount Waterdeep's southern flank, protected at mouth by Seatower of Balaeros. \\~1 mile N-S by 3/4 mile E-W navigable water. Main channel accommodates largest oceangoing vessels in Sword Coast service. Administrative authority: Harbor Master's Office (chartered by Masked Lords). Sub-offices: Pilot Service (\\~30 licensed pilots, standardized rates), Customs (Lords' Alliance-coordinated, \\~40 inspectors), Dockage (berth assignments), Arbitration (maritime disputes short of Commerce Court). Six sections: Lords' Alliance Military Wharfs (Castle Ward waterfront, restricted), Merchant Wharfs (Dock Ward, 15 major + smaller berths, commercial heart), Sea Ward Shipyards (shipbuilding/repair, \\~400 laborers across 3 yards), Fishermen's Basin (\\~200 vessels, self-governing via Fishmongers' Guild), Outer Anchorage (pilot/quarantine waiting beyond Seatower), Harbor Master's Office (Dock Ward admin building). Harbor attack during Session Delegation visit: 6 black-sailed vessels attacked refugee ships, Bloodaxe 15-minute response, 3 vessels captured with interrogated crews, Silver Patron/Zhentarim intelligence harvest. Campaign relevance for Shi'van: indirect (Institut doesn't ship via sea, NRTC is arterial-overland). Three Margaster frozen warehouses harbor-adjacent (Merileth's passive monitoring via Northwatch Consulting investigation). Bregan D'aerthe maritime logistics intersect Arik-side aluminum trade (Valas handler channel, unsurfaced sibling overlap). Harper delegation arrival pathway (Lords' Alliance wharfs). Captain Stormwind's beat terminates at harbor line. Refugee intake: first Waterdhavian geography many eventual Institut apprentices touched.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Population": 2500,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "WotC canon: Waterdeep: Dragon Heist (5E), City of Splendors: Waterdeep (3.5E), Volo's Guide to Waterdeep (2E), Forgotten Realms Campaign Setting 3E.",
+        "Status": "Allied",
+        "Strategic Value": "Critical",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081c398aaef7a40cdd803"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81ce-8378-ffc93d9bebf2",
+      "title": "Inevitable City",
+      "revision": "2026-08-20T19:54:03.669Z",
+      "body_hash": "51a2388cfa0e389cce68ef8308e94015977028313cd2b00aa07dfcb4ff101544",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "\\~30,000 Warborn and Zariel-professional devils (standing military core; Hell Siege veterans). \\~28,000 construction devils (perpetual-construction workforce under infinity-symbol architectural framework; available for defensive mobilization but not primary combatants). 24,000 Elturel mortal refugees integrated into civic/support functions post-Comfort-Plague (per Hell Siege defensive model: support positions under devil military direction). Command: Shadow-Lirien at command spire, Warborn captain subordinates, Zariel-appointed devil command staff. Dr. Maltheus research staff (non-combatant specialists under tight access control). Permanent dimensional-gate security detail handling Waterdeep Warborn pipeline (unspecified count, tightly vetted). Total resident population: \\~82,000 including combatants, construction workforce, refugees, and research staff.",
+        "Name": "Inevitable City",
+        "Notes": "Fortress-city on purified 1-square-mile footprint at the Blood Rift, Avernus. Arik's forward operating base + Reality Anchor research station + Warborn production node + cross-aligned ritual venue. **LIVE STATE (Hell-Quarter Ledger, 2026-07-10): 54 City-years lived under the 27:1 anchor (Chad's ruling) — mortal population 24,000 → 36,800 (\\~5,000 Elturel-born elders remain; \\~31,800 HELL-BORN across two generations). Total \\~94,600 w/ 30K garrison + 27,800 construction devils. CURRENT QUARTER: contagion year (Shieldhall/Riverward) + MIRACLE EVENT (Sanctity 20 — celestial attention LIT, response clock DD 399e8214-84b0-8178) + strong devil-mortal integration drift + ∞-topology anomaly propagated.** Street-level canon, wards, statblock, seeded cast, and the Ledger: District Gazetteer child page 399e8214-84b0-81e8. 9 gates (5 named: Saturnine, Cripple, Mud, Cavalry, Builder's). Medieval engineering doctrine at gates; sacred geometry on walls (burns chaotic flesh). Hell Siege canon: 30K devils + 24K mortals defeated 200K Abyssal demons. Key personnel: Dr. Maltheus (research lead), Vesper (Command Spire — her own person, shadow-construct, soul-coin sustained: thread DD 399e8214-84b0-818c), Yamilet al-Sevren (embassy attaché). Cover to Zariel: defensive bulwark. True purposes: Reality Anchor conversion, Warborn production, Demiurge framework, cross-aligned ritual space. Nabe status still open.",
+        "Population": 94600,
+        "Region": [
+          "Nine Hells"
+        ],
+        "Source File": "session_log_inevitable_[city.md](http://city.md) + The_Hell_Siege_Epic_-*Complete_Battle_*[*Chronicle.md*](http://Chronicle.md)* + The_New_Path*-*Session_LogThe_Hell_Siege_*[*Epic.md*](http://Epic.md)* + The_New_PathThe_Dis_Gambit*-*Campaign_Session_*[*Summary.md*](http://Summary.md)* + The_New_Path*-*Session_Log*_The_Comfort_[Plague.md](http://Plague.md) + empyrean_transformation_[scene.md](http://scene.md) + [warborn-contract-implementation-plan.md](http://warborn-contract-implementation-plan.md)",
+        "Status": "Allied",
+        "Strategic Value": "Critical",
+        "Sub-Locations": [
+          "https://app.notion.com/p/399e821484b081e8a738f93f1e833aeb"
+        ],
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081ce8378ffc93d9bebf2"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81cf-96a3-e3a18af78c89",
+      "title": "🛡 Toril Shield Assurance / Securus Cafe",
+      "revision": "2026-08-20T03:25:00.106Z",
+      "body_hash": "4cd550a02a7679fe6905c1eb1f37ddd45a5f2878660dcf1cf82d3b876c8bcbf0",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Donald Dacosta (COO, Accounting-17), Julian Mercer (Securus Cafe proprietor), office clerk (TBD), cafe assistant (TBD). Guildmaster Wicksworth quarterly. Helena Brightwater (NCF) fund administration.",
+        "Name": "Toril Shield Assurance / Securus Cafe",
+        "Notes": "ESAMT subsidiary. Guild pension insurance (Lamplighter pilot, 25K pension bridge) + Guardian Pledge hypothecation (luxury goods, 3K minimum, tiered LTV 30-70%). Two product lines, two customer bases: guild-facing (pensions) and noble-facing (hypothecation). Appraisal subcontractors: Institut (enchanted goods) + Carat House (precious materials). Donald Dacosta COO (Amnian, former commodity house chief accountant, Accounting-17). Ground floor: Securus Cafe, Julian Mercer proprietor. Three-story brick, 10,000gp purchase, ESAMT asset. Walking distance from Commerce Court, Merileth (Spindle St), NCF branch, guild halls. Day \\~740-750 launch target. Wicksworth as Guild Advisory Chair (public endorsement). Intelligence value implicit — guild rolls, property assessments, financial indicators as natural byproducts. Seraphina insertion vector through cafe.",
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "[tsa-launch-briefing-reference.md](http://tsa-launch-briefing-reference.md)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081cf96a3e3a18af78c89"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81d1-b5d6-ce4274842211",
+      "title": "🛍 The Market (Court of the White Bull)",
+      "revision": "2026-08-20T19:51:54.189Z",
+      "body_hash": "2ed17741d91b3b2c30a2204689c155c8f118d80d912cd9e4adafdd9dd7ea7990",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "Market Master (senior City Watch appointment, rotating office, responsible for stall assignments, rent collection, dispute escalation, regulation enforcement). Market Watch detachment (standing constables at 4 perimeter posts, specialized training in dispute resolution and pickpocket detection, report through Castle Waterdeep command floor rather than ward watchhouses). Magister's stand near northern entrance (on-site judicial adjudication). Senior Vendor Council (informal body of oldest vendor families, no official authority, substantial practical influence). Hundreds of vendors across 4 category wedges (produce/grains north, meat/fish/dairy east, prepared foods/street vendors south, domestic goods west) plus peripheral luxuries ring. Information vendors at the White Bull statue (rumor-merchants, broadsheet criers including Rosenna Thatch, courier agents, hired scribes). Farmer delegations from the Dessarin corridor and North Ward farms arriving pre-dawn and departing by dusk. No standing martial presence outside Watch detachment — the Market's security is public visibility and Watch cadence.",
+        "Name": "The Market (Court of the White Bull)",
+        "Notes": "Waterdeep's central commercial plaza. Castle Ward, bounded by the Yawning Portal/Street of Silks (north), Castle Waterdeep (south), Castle Ward commercial streets (east/west). Also known by older name Court of the White Bull after the carved stone bull at plaza center marking original dedication as cattle market. Octagonal, \\~400 ft across, flagstone. Vendor organization by category wedge: produce/grains north, meat/fish/dairy east, prepared foods/street vendors south, domestic goods west, luxuries/novelties peripheral ring. The White Bull's base reserved for information vendors (rumor-merchants, broadsheet criers, courier agents, hired scribes) — Rosenna Thatch operates here regularly. Open sunrise to sundown; pre-dawn setup, peak 2nd morning bell through 8th evening bell. Waterdeep's principal public-information exchange alongside Yawning Portal and Font of Knowledge. The Celestial Compass Estate's kitchen supplies route through the Market via Aldren (cook, half-elf) shopping personally for discretion maintenance. Observer Network (Firth) rotates operatives through for ambient intelligence collection — what competitors say about Shi'van, what hardliner coalition broadsheet fronts publish, Dock Ward temperature reading. Session 8C Promethean Lamp Post public framing propagated through this vector. Citizens' Action League broadsheet fronts visible in information ring (hardliner coalition presence). Market is campaign ambient-texture layer — the city eats, argues, sells, gossips; Shi'van's operational problems exist alongside population that does not know about them and cares about bread pricing.",
+        "Population": 400,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "WotC canon: Waterdeep: Dragon Heist (5E), City of Splendors: Waterdeep (3.5E), Volo's Guide to Waterdeep (2E), Waterdeep and the North (2E).",
+        "Status": "Allied",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081d1b5d6ce4274842211"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81d3-ba53-fa0ef760543a",
+      "title": "The Ledge — Dalelands Corridor Overlook",
+      "revision": "2026-09-01T23:37:25.197Z",
+      "body_hash": "65c2993961c175311d8fa2d4b96ec94c86dcb627fd3a27902229c29124613b67",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "No permanent garrison. Bloodaxe observation detail cycles through on standing rotation (typically 2-4 operatives when inner circle not present). During inner-circle briefings, 4-operative escort (forward approach + rear cover). Position abandonable inside ten minutes — deliberate light footprint. Approach path single-file, one-operative-coverable.",
+        "Name": "The Ledge — Dalelands Corridor Overlook",
+        "Notes": "Natural granite shelf on eastern face of Desertsmouth Mountains, 2-4 miles west of planned Tethyamar tunnel eastern portal. Light timber frame work-surface. 180° eastern view spanning \\~40 miles of contested Dalelands corridor toward the upper Ashaba. Tunnel bore audible (construction hum through granite). Environmental signature: granite dust + glacier meltwater in wind, morning sun catches Vara's spectacles during briefings (canonical). Arik Baen's forward briefing venue for the Dalelands arc — where the doctrine of patient resource exhaustion (let Grey Banner dig in at Sorvath's expense, let Thornfield expand so Iselda's co-option costs her more to refuse, let broadsheets publish so Cassien can trace the author) was established. Two canonical briefings staged here in Mirtul 1494 DR: The Ledge Briefing + The Corridor's Eastern Door (same-day continuation). The doctrine set here governed the nine-month slow-accumulation period leading to Arik's Blue Hour arrival at Tethford in Early 1495 DR. Light footprint deliberate — no stronghold, no permanent presence, country visible while decisions are made about it.",
+        "Population": 0,
+        "Region": [
+          "Tethyamar"
+        ],
+        "Source File": "(prose-canon only — Session Prose DB; no project-knowledge .md file)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Sub-Locations": [
+          "https://app.notion.com/p/3cee821484b0815bac54e46e900f6d55"
+        ],
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081d3ba53fa0ef760543a"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81d6-92af-ca37333dc5f3",
+      "title": "Gauntlgrym",
+      "revision": "2026-08-20T03:25:16.176Z",
+      "body_hash": "c921cc93cdad3be838d779bd2e883df2748abbf8fc9dfa743c57362fa7fa7c7b",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b08165ab14c8c669cc58b3"
+        ],
+        "Garrison": "Gauntlgrym standing military host: approximately 3,000-4,000 dwarven warriors + artisan-militia reserves of \\~5,000 more under clan call-up. Bruenor's household guard: \\~200 elite veterans of the Companions-era reclamation campaigns. Workshop 7 security: dedicated detail for Borgin Threadbaum's R&D space, \\~20 operatives combining dwarven clan guards and rotating Bloodaxe-liaison personnel. Deep Forge Watch: permanent detail guarding Maegera's containment infrastructure, approximately 50 veteran warriors on rotating shift. Underdark-entrance watch: secured, patrolled, not publicly discussed. Gauntlgrym is not currently under siege threat and most military capability is in reserve state.",
+        "Name": "Gauntlgrym",
+        "Notes": "Ancient dwarven subterranean city reclaimed by King Bruenor Battlehammer \\~1484 DR. Strategic anchor: the Great Forge + bound primordial Maegera the Inferno (only heat source in the North capable of working Hell-iron at scale; irreplaceable). Allied partner to Baen Enterprises through 7 integration points: aluminum (Silversheen 50/30 split, mutual high dependency), Warborn soul-binding service, Tool Partnership (Workshop 7 — Borgin Threadbaum's R&D space spanning Gauntlgrym and Forgedeep), steel supply, construction contracts, canal engineering contribution (500 engineers, 200K tons steel, stone supply), 19-node crystal communication network. **Asymmetric dependency: Arik needs Gauntlgrym more than Gauntlgrym needs Arik** — only Silversheen is truly binding; everything else severable. Arik's integration doctrine works to convert contractual dependencies to structural ones via Hunding Canal co-investment, Workshop 7 R&D binding, Tethyamar restoration synthesis, and the forward Underdark railway. Key personnel: King Bruenor (independent sovereign, Companions-arc canonical), Borgin Threadbaum (hill dwarf artificer, 203, blood-debt 11 years remaining, Threadbaum repeater inventor), Clerk Rundil Copperweight (procurement interface). Connection to Mithral Hall: Bruenor's adopted son King Connerad Brawnanvil rules separately. Underdark entrance secured and patrolled.",
+        "Population": 8500,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "conversation canon + [session-log-the-tolerances.md](http://session-log-the-tolerances.md) + [threadbaum-repeater-gurps-stats.md](http://threadbaum-repeater-gurps-stats.md) + [threadbaum-model-1494L-whisper.md](http://threadbaum-model-1494L-whisper.md) + Kalnar_[Stonebrow.md](http://Stonebrow.md)",
+        "Status": "Allied",
+        "Strategic Value": "Critical",
+        "Type": "City",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081d692afca37333dc5f3"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81d8-b39b-d2d00f403644",
+      "title": "🏛️ Ravencrest Hall Program — Baen Construction + Treasury Quarries (Day 729–1200)",
+      "revision": "2026-08-20T20:41:17.455Z",
+      "body_hash": "0772cd0651ef60c57b9845c7e5bf02e8737e4269933533f1c277191906335e37",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface",
+          "Multiple"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Day 904: active \\~40-person BC-4471 restoration camp. Torvik Stonewright is Baen Construction’s established on-site lead; Kalnar Stonebrow retains Neverwinter oversight. Barker Civil Works remains compartmented to approach infrastructure.",
+        "Name": "Ravencrest Hall Program — Baen Construction + Treasury Quarries (Day 729–1200)",
+        "Notes": "CURRENT AUTHORITY: Day 904 manor is HALF-BUILT under BC-4471. Approved end-state is SD-05 / Revision E: restore ancestral central/east ranges and build a new signature west great-hall wing. Arik accepted standard commercial terms, kept Barker compartmented, and did not surface the sibling transaction. Idunn was born Day 897. Veldrin’s design-review trigger has fired. Historical cost frames (35–55K early estimate; 80,246 gp funded SBG Phase 1; 270–380K wider-program ceiling) are not a new ledger charge.",
+        "Parent Location": [
+          "https://app.notion.com/p/340e821484b081a38bd6fe7df84566de"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "Created canonically 20 April 2026. Anchored against Ravencrest Estate page 340e8214-84b0-81a3, Baen Construction HQ 321e8214-84b0-8122, Treasury Quarries 321e8214-84b0-8111, Simon Barker 345e8214-84b0-8192, Shi'van Pregnancy Shadow Event 340e8214-84b0-818e, and player instruction locking blind-contract routing + Baen-assigned foreman + Phase 1 + Phase 2 scope.",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-08-20",
+        "url": "https://app.notion.com/p/348e821484b081d8b39bd2d00f403644"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-81d9-a53b-e4d73450d2a7",
+      "title": "Tethford",
+      "revision": "2026-08-20T19:53:38.529Z",
+      "body_hash": "851e6cffd908f793fc3f13240c75233059910c1fe3bbdd8060ae991f8e52ffef",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b08136ab42e9f5e1307258"
+        ],
+        "Garrison": "Tethford Militia: \\~200 active bowmen on rotational watch duty, full-mobilization levy capacity 400-500. Sustained-volley doctrine (Gareth Wynn's father's training, 30 years institutional memory). Four towers each with permanent bowman positions. Wall-watchmen on dawn watch. Historical effectiveness against conventional infantry validated by 1476 DR Zhentarim assault (attackers lost 109 dead in 90 minutes, wall held). Doctrine ineffective against atmospheric-control / Veil-shadow-infiltration capability demonstrated at the Blue Hour.",
+        "Name": "Tethford",
+        "Notes": "Walled town, eastern Dalelands, East Road. Definitional artifact is the eastern wall: 12 ft thick at base, 8 ft at parapet, 4 towers (40 ft each), 15 ft × 20 ft dry ditch, 300-yard cleared killing ground. Local granite from Tethford Hills quarry. Militia trained in sustained rotating-rank bow volley doctrine. Historical pride: 1476 DR Zhent assault defeated (109 Zhent dead). **The Blue Hour (Early 1495 DR):** Arik Baen arrived inside a 300-foot plasma sphere after weather-control demonstration (east wind, hail, snow filling the ditch inside an hour). Eighty Veil operatives materialized from tower shadows. Gareth Wynn (21-year wall veteran) descended to find council. Terms pending. Tethford is pattern-setter for the eleven other Dales the corridor's Section B must traverse. Key canonical NPCs on-site: Gareth Wynn (senior watchman), Relle (senior bowwoman, 40 yrs on the wall), Davan (junior watchman). Active narrative state: town council must decide whether to accept Arik's negotiation terms.",
+        "Population": 4500,
+        "Region": [
+          "Dalelands"
+        ],
+        "Source File": "(prose-canon only — Session Prose DB `343e8214-84b0-8197-be1a-ecd776df27e5` is authoritative source; no project-knowledge .md file for Tethford specifically)",
+        "Status": "Contested",
+        "Strategic Value": "Critical",
+        "Type": "Settlement",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081d9a53be4d73450d2a7"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 159,
+      "UNKNOWN": 1428,
+      "CONFLICT": 9,
+      "SUPERSEDED": 13,
+      "MISSING_DATA": 4,
+      "FUTURE": 4,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 189,
+      "UNMEASURED": 1431
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 159,
+      "UNREVIEWED": 1431,
+      "CONFLICT": 7,
+      "SUPERSEDED": 12,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 4,
+      "ECONOMIC_CONTEXT": 3
+    }
+  }
+}

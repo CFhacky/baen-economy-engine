@@ -1,0 +1,22 @@
+{
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "canonical_execution_ready": false,
+  "coverage_claim_allowed": true,
+  "gates": {
+    "collection_acquisition": {"collections": 10, "not_materialized": 0, "pass": true, "retained_core_records": 1620, "stored_records_including_context": 1627},
+    "driver_dispositions": {
+      "blocked": ["banking_balance_sheet", "credit_origination", "exogenous_shocks", "household_consumption", "inventories", "market_prices", "migration", "opening_liquidity", "tax_rent_tithe_obligations"],
+      "incomplete": ["banking_balance_sheet", "business_financial_flows", "credit_origination", "exogenous_shocks", "food_supply", "household_consumption", "industrial_production", "inventories", "labor_supply", "market_prices", "migration", "opening_liquidity", "population", "tax_rent_tithe_obligations", "trade_routes"],
+      "pass": true,
+      "undisposed": []
+    },
+    "driver_registry": {"expected": 16, "missing": [], "pass": true, "present": 16, "unexpected": []},
+    "empire_close": {"canonical_driver_ready": false, "conflicts": 1, "pass_for_coverage": true, "unresolved_items": 36},
+    "locked_boundaries": {"campaign_time_advanced": false, "canonical_month_executed": false, "notion_writes": 0, "pass": true},
+    "source_body_review": {"pass": true, "retained_core_target": 1620, "reviewed_retained_core": 1620, "tracking_status": "COMPLETE", "unread_retained_core": 0},
+    "source_record_semantic_status": {"non_unknown": 1620, "pass": true, "unknown": 0},
+    "source_review_dispositions": {"dispositioned": 1620, "pass": true, "undispositioned": 0, "unowned_economic_inputs": 0},
+    "source_review_queue_inventory": {"matches_full_execution_census": true, "pass": true, "records": 1620}
+  },
+  "schema": "tnp.economy.completeness-report/2"
+}

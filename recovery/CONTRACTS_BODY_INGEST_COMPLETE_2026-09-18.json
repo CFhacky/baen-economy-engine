@@ -1,0 +1,903 @@
+{
+  "schema": "tnp.economy.source-class-body-ingest/1",
+  "source_class": "contracts_orders_obligations_threads",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "review_mode": "read-only live Notion page fetch",
+  "body_hash_method": "SHA-256 over exact parsed Notion fetch text field; private body prose is not persisted",
+  "target": 89,
+  "reviewed": 89,
+  "failed": 0,
+  "complete": true,
+  "disposition_counts": {
+    "ECONOMIC_INPUT": 12,
+    "ECONOMIC_CONTEXT": 30,
+    "NON_ECONOMIC": 29,
+    "HISTORICAL_ONLY": 3,
+    "FUTURE_ONLY": 15
+  },
+  "records": [
+    {
+      "source_id": "2fbe8214-84b0-8102-a3f6-f3a81524f709",
+      "title": "Cormyr Financial Expansion",
+      "revision": "2026-08-20T19:31:27.766Z",
+      "body_hash": "9f130bb69b1446c15bdaeb2ea1e43e38cf57f1647f5f6ac6bd49f64009b29d06",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "trade_routes"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-8102-ada9-d680065424f7",
+      "title": "Divine Silence Mystery",
+      "revision": "2026-08-20T19:31:56.237Z",
+      "body_hash": "954fd4f388df1ebcd53ce7eba66a1322a60a3cafa99ab33ad99f47a045c7fae5",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-8121-974a-d13e5d6a4d60",
+      "title": "Aluminum Monopoly",
+      "revision": "2026-08-20T19:31:07.997Z",
+      "body_hash": "c9bc3ddb34533b89de9055d76f7567879d6c5d8b6344cc3cfdabf5c25590779e",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "trade_routes",
+        "market_prices"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-8138-844f-e2bcd0db5b1c",
+      "title": "Empyrean Integration",
+      "revision": "2026-09-05T23:48:08.238Z",
+      "body_hash": "5ca3a1af9a93a505219cd49507fb5e6b47844f89986c22c0c9a343ae0af430d3",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-8144-8000-ec51cfe195ea",
+      "title": "Philosophical Revolution",
+      "revision": "2026-08-20T19:31:34.288Z",
+      "body_hash": "1757cddf989d994b7e0027a5e5bd49b0363dcb6c2a277344a97f4ccc0ac29535",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-815a-9d06-e471b453f8b2",
+      "title": "The Pale Name Evolution",
+      "revision": "2026-08-20T19:30:41.537Z",
+      "body_hash": "e0a1809e6ac0697ee931963fe9e52e6bd1534fc8189cafd50f97c183ca08b860",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-815c-a413-c3ec2fbafe1b",
+      "title": "Finding Selarial",
+      "revision": "2026-08-26T23:51:04.125Z",
+      "body_hash": "72baabe42161136f9699447ce055aab2bbf056c0fcfd1e7ab0ffba5f2eeda52c",
+      "disposition": "HISTORICAL_ONLY",
+      "semantic_status": "HISTORICAL",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-8171-9358-ce102a72f5e0",
+      "title": "The Veil's Dark Turn",
+      "revision": "2026-08-20T19:30:54.829Z",
+      "body_hash": "ae115ca4460d8edd9b6c9ec847e971a82e42b45ccc998316abd2b565472c5879",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-8172-8971-f9fe344d5c4d",
+      "title": "Shadow Network Evolution",
+      "revision": "2026-08-20T19:31:39.602Z",
+      "body_hash": "6843e8bfd3260f18c139d5cec5a4666249fea271793f9ea82f469825a33becc1",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-8178-9300-f7c3091afd27",
+      "title": "Warborn Delivery Obligations",
+      "revision": "2026-08-20T19:31:02.156Z",
+      "body_hash": "38c774667fa28a047dec740afcfe681ccba191d878a32a08905cedd572579071",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-8188-9904-d4507bc2549c",
+      "title": "30,000 Infernal Troops",
+      "revision": "2026-08-20T19:30:03.464Z",
+      "body_hash": "851bec516f8ee4e4a7b15b6bef33830f42ed59f02c20f421c08d3441a12dab19",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-818f-93c5-cee9dea26744",
+      "title": "Underdark Void Corruption",
+      "revision": "2026-08-20T19:32:01.146Z",
+      "body_hash": "72e710a9e60d2b92b3029a8be0774fcd9ee39f851267aca12173decca88e444b",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-8192-b423-eb052a8d71be",
+      "title": "Builder's Confederation Collapse",
+      "revision": "2026-08-20T19:31:14.801Z",
+      "body_hash": "cc5f88aae28b2c3f101c8b2ef31cc98ab4f5d5decdd6ee3feab7c96c8a38e536",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-81a0-8c0d-f874803b9fd5",
+      "title": "Vara's Pregnancy",
+      "revision": "2026-08-20T19:30:49.536Z",
+      "body_hash": "cb0c3e5f42bf292c9b191e10d8a6f25dec4204cc286595dd013058d10fc0589e",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-81aa-ba6e-f3ed0a897905",
+      "title": "Infernal Political Attention",
+      "revision": "2026-08-20T19:30:35.388Z",
+      "body_hash": "bcf866dfe144f18001138b610688ab6c1507158bc1b5db68e6db9ffbf11782fd",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-81b9-906c-fe00181a6bf6",
+      "title": "The Demon War",
+      "revision": "2026-08-20T19:32:23.118Z",
+      "body_hash": "f134de0b006084999f5affc599d2ca724ce23f9f2dd8aa22bb0d811921abc684",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-81cd-bdc9-f06220b679cc",
+      "title": "Aldric Cold War Escalation",
+      "revision": "2026-07-11T01:55:02.270Z",
+      "body_hash": "514b4871efd483a3a540414095ca43fda05550b93fc4a77a68f5c7a92490f9ec",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-81d0-a83b-d09330a722e7",
+      "title": "Elara Wedding & Alliance",
+      "revision": "2026-08-20T19:30:17.213Z",
+      "body_hash": "e7004a969568683de00de51cf2f095c495bfc21062bdeab8c6f056746ad8c603",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "labor_supply",
+        "household_consumption"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-81d4-b866-fc4ae00fd2b7",
+      "title": "Arterial Road Network",
+      "revision": "2026-08-21T03:53:02.029Z",
+      "body_hash": "77f1d83f61e1aeb60348e542ddce393fdba2ab88120f54fa31795b47c436c3ce",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-81db-ae64-ca1640ff13c0",
+      "title": "War Profiteering Infrastructure",
+      "revision": "2026-08-20T19:31:46.433Z",
+      "body_hash": "9708eac08095a46f8051921c1bed91012bab08ca162dfc8b6ffa8779e617123e",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-81ee-95bc-e26c9690f2d8",
+      "title": "The Sealed Demon Wildcard",
+      "revision": "2026-08-20T19:31:51.500Z",
+      "body_hash": "8f8a57b6bfd7ade07dcc343dd913b8d9ea9485ba4ec4977008494677e8dbe78e",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-81f6-9ac9-e734285076fe",
+      "title": "Consciousness Automation Technology",
+      "revision": "2026-08-20T19:31:21.170Z",
+      "body_hash": "829a848fc555b8880dbba8c49d096fe26d0068ad8343b118d723cacba4ef0289",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "32ae8214-84b0-8167-9c06-e6e0e0c11b20",
+      "title": "Operation Evening Star",
+      "revision": "2026-06-08T00:18:11.357Z",
+      "body_hash": "69a3be639eeb8761b873392d3bb41ca4270b7288410d3c8980c6b388860c0fd0",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "32be8214-84b0-817e-9741-d1cf9b08ef7e",
+      "title": "Xarann Campaign Arc — Session Hooks & BBEG Guide",
+      "revision": "2026-08-20T19:32:06.331Z",
+      "body_hash": "89cbe3cd1522b55a7a8c57294f8e80014b68bc69db698e77d28282e877917f6b",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-8110-85e0-de4c37b3918a",
+      "title": "Unnatural Sandstorm — Unknown Origin",
+      "revision": "2026-08-20T19:29:52.126Z",
+      "body_hash": "14a53d263c977015dcca2ffec53a00e54374934fd3f7886e3c0ed7e8f3f7f5f4",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-8132-a4e5-cb0298a6420e",
+      "title": "Ulthaxor's Question",
+      "revision": "2026-08-20T19:32:11.351Z",
+      "body_hash": "179ffd081d8e53e04867a6dcd446df8da589b44ce4ff54385eb45e6a8c180e53",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-8135-a042-fafd0dd2429f",
+      "title": "The Simbul Quest — Reframed as Research Partnership",
+      "revision": "2026-05-23T19:06:25.561Z",
+      "body_hash": "6ba9763222d7890f65023ad5d70d204f9a078ff365ff72effc5b36648ebd6950",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-8142-a117-c6b93c510e08",
+      "title": "Tethyamar Dragon Diplomacy — Aurixalnar / Shattershree / Copper Pair",
+      "revision": "2026-08-20T19:29:57.615Z",
+      "body_hash": "f0c339149d82155b41332a636a4bbebe9fb9fada5ff60470cda3d450bb7cbc9a",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-8143-94b5-eb066f47320b",
+      "title": "The Anomaly Backlog",
+      "revision": "2026-08-20T03:19:38.049Z",
+      "body_hash": "b00f4e0bb579af61744c10c711005414e1cc3bf7834b304d5dae653117b663ba",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-815b-b3eb-c615aa6ae620",
+      "title": "Sania Valmorra — Research Block",
+      "revision": "2026-08-20T19:29:40.928Z",
+      "body_hash": "61a9b5b705057b6fbd732dd47419c2c11876422ab4aa17d40e36f23c212fe4b6",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-8180-b155-f6187a76b194",
+      "title": "Crown of Eight Springs — Phase 1 to Phase 2 Advancement",
+      "revision": "2026-08-20T19:29:35.246Z",
+      "body_hash": "00fb7607d20af59f43d1632ada1d43d2e1645c98f927177a681698fd075dfa1f",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-8184-b268-c26452f127b8",
+      "title": "Al-Saif Marriage Alliance",
+      "revision": "2026-04-24T18:27:04.339Z",
+      "body_hash": "4a525398a9da800f746b74ac23443bf4cc48e004a2b5242d5d6239f41721537e",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81ae-accf-c64e60d5a11f",
+      "title": "Azath House Network Discovery",
+      "revision": "2026-04-24T18:27:04.339Z",
+      "body_hash": "9d666dfdeb7730bbc7d5b968e344ad94b9fae85a61fbe409289ee6eb042fa5b5",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81b0-8902-f4a83049710e",
+      "title": "Margaster Asmodean Cell Targeting Shi'van",
+      "revision": "2026-04-24T18:27:04.339Z",
+      "body_hash": "8d51646f745a6eaa8146dd355bd9865b048a078620f4b1b3a73faf1a6e64ffe2",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81b4-b88c-dbf89c96c6c2",
+      "title": "Thayan Parley — Session 16 Opening",
+      "revision": "2026-08-27T13:51:47.065Z",
+      "body_hash": "6d2415f0ea2ade8176c91c0014a731f8925d2e3e5adfee1b4faa9e8bbb593ab4",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81b8-bad1-df25f4e9c3b1",
+      "title": "Dalelands War Accumulation",
+      "revision": "2026-05-29T01:25:37.998Z",
+      "body_hash": "859ef35e160514e8a2875221cb35916812b07ce76ebbffb6e4bf5da565049c69",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81ca-a13a-d0473e2aa487",
+      "title": "Idunn / Lupercal Paternity Reveal",
+      "revision": "2026-04-24T18:27:04.339Z",
+      "body_hash": "92726f49ff7a3a1c590964f0a8a68f40d145a16c2f8419ebb9eed2da82345a8e",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81d8-8444-d118ec8514f0",
+      "title": "Apollenia Hellwinter — Odin's Investment / Heiðr Rebirth",
+      "revision": "2026-08-20T19:29:29.856Z",
+      "body_hash": "1467d1956a575764259fbcea73bc8143b736589ba2bef923318c6c715d8e7cef",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81e9-aa34-cce7653b7b44",
+      "title": "Traxex — Behavioral Change Mystery",
+      "revision": "2026-08-27T00:02:05.959Z",
+      "body_hash": "99c5a2757321a3ac03e9c7d8a36559ab244486f5ecf86d5186fae45c3f897973",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81eb-8d7d-c26a980fa94e",
+      "title": "Wyrmhelm Program — First Hatchings & Inner Circle Bonding",
+      "revision": "2026-04-24T18:27:04.339Z",
+      "body_hash": "019e5100b8d2fe9c608d5463fb16648e5593ece783f449a49a09e31f873746dc",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81ee-afb7-c48bc1ee80ce",
+      "title": "The Network Audit",
+      "revision": "2026-09-01T23:37:34.924Z",
+      "body_hash": "a0e67b52c183e526ea74a816c91580aa66b188c2a6bf8db92bac1ce110b6fbf8",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81fa-99d7-d36af1a74988",
+      "title": "Shade Remnant Occupation — Anatomist's Laboratory",
+      "revision": "2026-08-26T23:51:15.500Z",
+      "body_hash": "e78b1f38a0156b02e4fb1d511db7a432611558ab94e8ced8266a675597d5ea12",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "34ce8214-84b0-81fe-8976-e1ecb57e005f",
+      "title": "Wyrmhelm Program — Breeding, Imprinting, Operational Rollout",
+      "revision": "2026-08-26T21:27:57.072Z",
+      "body_hash": "74f630f14c0d08fc9bca65aeef8e4f4ec1f1acd2f4ad0c7337ca7c7e69d60887",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "35fe8214-84b0-817f-bae1-d36167441d14",
+      "title": "Hellumar Restoration Project",
+      "revision": "2026-05-13T21:41:19.035Z",
+      "body_hash": "72d1c7331186dd087492d17b136d5093a1f2870a16be101cafd90f340853ab82",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "376e8214-84b0-8142-95e9-e47e05135e38",
+      "title": "The Two Hands of Khent-Amenti — the Reunification Gate",
+      "revision": "2026-08-20T19:32:35.539Z",
+      "body_hash": "15f9690197a5fd0ffc62d6ff43d0614ae4fe729fd79fea36476987804c8eb03c",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "376e8214-84b0-8161-9d53-da377a744993",
+      "title": "Phalorm Heritage Agitation",
+      "revision": "2026-06-05T17:28:45.414Z",
+      "body_hash": "038ce47b67103d06d6efce81ad4a6f6f785b0aeeeb221b9cce00ccaaf9c51632",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "376e8214-84b0-817b-b3e9-ed6ad82b3708",
+      "title": "Operation Lantern Cross — Khem-Ruur",
+      "revision": "2026-08-20T19:32:28.349Z",
+      "body_hash": "ed5ba7fc58de64902338293732bd6636a2cc9e6b7c1a3184f56be00f58dd05e0",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "376e8214-84b0-818e-96cd-f37c3938ab61",
+      "title": "Northern Sea Gate Construction",
+      "revision": "2026-06-05T17:43:59.689Z",
+      "body_hash": "a20c5fd0cc644c2446708c12c7ccbae40f9dd13ad9b34754d1b87ee4c311c01e",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "376e8214-84b0-81a3-af47-e0dc614425b0",
+      "title": "Continental Trade Disruption",
+      "revision": "2026-06-05T17:28:45.414Z",
+      "body_hash": "c69e31db72c73328599595b3ebc6d926933d9bbfcdd1e0ce9ddf65ada14afdb6",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "376e8214-84b0-81b0-92dc-d31cdb1f4b95",
+      "title": "Sovereign Water Export Program",
+      "revision": "2026-06-05T17:28:45.414Z",
+      "body_hash": "67f68c0542bb3623fdcd953e257843313b56d8141416cebeb05fec4cdf880e0a",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes"
+      ]
+    },
+    {
+      "source_id": "376e8214-84b0-81e8-9cc4-fc756045771a",
+      "title": "Moonshae Raider Arc",
+      "revision": "2026-06-05T17:28:45.414Z",
+      "body_hash": "010f00bb69577c229ef831fc897791e6c15a9c97e3695e1f945b10bb9ed9f6f7",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-8115-ab39-d629bbe5a79f",
+      "title": "The Veldora Discovery Arc — The Storm Wyrm Awakens",
+      "revision": "2026-09-15T17:27:15.634Z",
+      "body_hash": "597c00abdb58ca643054789274fb54b052141afc2d3d99e20c822c89cd353b2a",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-8128-a592-ef4bb2963d68",
+      "title": "Saltglass Pipeline",
+      "revision": "2026-06-07T14:58:20.676Z",
+      "body_hash": "8bca05464a3ca67176ad22113a41efc38b128a1e62184e96ce08ef1b23b06553",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-813b-b352-e83cde408f4c",
+      "title": "The Ushrak Arc",
+      "revision": "2026-08-20T19:32:41.003Z",
+      "body_hash": "3d5be1d529d72ccaa2629b04d052b267298a75c4a9634b3a7964ff69120d3656",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-8179-a4ff-f77b1031956b",
+      "title": "The Ushrak Arc — Recruitment, Service, and Terrible End",
+      "revision": "2026-08-20T19:32:46.666Z",
+      "body_hash": "deecde32c2afddd417e8315a11065928600687bd2590b5bd810ddcaa6e62c6ff",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "378e8214-84b0-81e6-9ed3-d7ea4377d83c",
+      "title": "The Veldora Discovery Arc",
+      "revision": "2026-09-15T17:27:47.644Z",
+      "body_hash": "8c124b330ec915ee9e98f47decb780a0d1fe32b87c7e7f2b05f57cff8034e853",
+      "disposition": "HISTORICAL_ONLY",
+      "semantic_status": "HISTORICAL",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37ae8214-84b0-812e-9d1b-ecd035400585",
+      "title": "The Crusade Against The Shadow — 1494 DR",
+      "revision": "2026-06-09T11:08:38.339Z",
+      "body_hash": "d525fa5c1cbf37e3ebb37c1760cc39f3bbad74c8838a8eb2db7bf68a0adf9b97",
+      "disposition": "HISTORICAL_ONLY",
+      "semantic_status": "HISTORICAL",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37de8214-84b0-8113-a405-f87dd7faa890",
+      "title": "Operation Ember Ledger — The Dock 47 Raid",
+      "revision": "2026-08-20T04:04:17.572Z",
+      "body_hash": "08f3ad82e151a01d8823552d2d580993f9dcc9d23db4489dd64e7d4657561c49",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37de8214-84b0-813b-8f43-e57b6c526b74",
+      "title": "The Wyrmhelm Schism — Elven Backlash to the Amaranthe Dragon-Gift",
+      "revision": "2026-08-20T19:33:08.630Z",
+      "body_hash": "b43a2ec13a052a8c2bbd7e196e10341680cfb3c9c44a67bfab76e65efc8b8d5d",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37de8214-84b0-81ad-8f35-fd63429e5b37",
+      "title": "The Baen Sovereignty Barrier",
+      "revision": "2026-08-26T22:05:23.657Z",
+      "body_hash": "3a410dd8094fcbbae4399c4c9c8bed674e241a7bfc8665479bf0a3f3889d382d",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37de8214-84b0-81f9-b83e-ecb29e54cc0b",
+      "title": "The Stonefire Debt",
+      "revision": "2026-06-12T21:33:35.765Z",
+      "body_hash": "221f1bf74236353bbf8893478d0fe7acd72bab3e5d489e52b0a75a62998c5ea8",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "37ee8214-84b0-81a6-b6ee-f800e9655827",
+      "title": "Operation Spindle",
+      "revision": "2026-08-20T04:01:38.926Z",
+      "body_hash": "5d5eade5b1c1682fc47cdf111999a15126854a700d8234e4daae2d066a439cb7",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "381e8214-84b0-81dd-b033-eb34d1d20d47",
+      "title": "The Reclamation — House Vel'Khaeryn's Claim on the Baen'und",
+      "revision": "2026-08-20T19:33:14.932Z",
+      "body_hash": "9bbc77b1bddafab12b139588c5976edc13d75e9d2e94ab4ac423e0732279c3e0",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "385e8214-84b0-81d5-b263-dcd2077a03c9",
+      "title": "Operation Tarnished Loom",
+      "revision": "2026-08-20T04:03:00.462Z",
+      "body_hash": "cda0145af1110c70851fe6f483dfc978d7545ebe04b7ad13215b73d7987eb29e",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "387e8214-84b0-813e-a4d3-c782b2dbbcc7",
+      "title": "The Doubled Crossing — Yggdrasil & Arvandor Duology",
+      "revision": "2026-08-20T19:33:20.250Z",
+      "body_hash": "12ed44fed0fa7cd0538dc3ef8263864d9412f5ec94af7789fc5d06bb369d5310",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "38be8214-84b0-81cb-8fb3-dd1001535f4b",
+      "title": "Operation Lacquer Road — Kara-Tur Urushi Acquisition",
+      "revision": "2026-08-20T19:33:36.564Z",
+      "body_hash": "fdfb2cc1b90526e79329a3c0c0b342153ddebe643cbb2aa39ee7c5e00056d8f4",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows"
+      ]
+    },
+    {
+      "source_id": "38ee8214-84b0-818c-a003-d084a3ca4f1e",
+      "title": "The Mhiilamniir Collision",
+      "revision": "2026-08-20T19:32:57.874Z",
+      "body_hash": "ea2c399a412cb48b818aa7cd8d5cef12f3ad40b9975ced5d49e121f24156a275",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "38ee8214-84b0-8195-bf43-ee9462d5c609",
+      "title": "The Broker's-Courtesy Favor Clock",
+      "revision": "2026-08-20T19:33:25.198Z",
+      "body_hash": "cde62864aff2ec6a7c18ca3fcc540d07c30102e1aeb4dc9a63c9288d5599b4fd",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "392e8214-84b0-81af-98b9-d1392d11c99f",
+      "title": "The Red Season — the Font, the Queen, and the Seal",
+      "revision": "2026-07-03T18:02:03.265Z",
+      "body_hash": "1c3d89191b3173ae112fead7dfef1711c9952b13251946db2ccadfaa79cfc13b",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "396e8214-84b0-816c-9dd3-e88e17fc70f1",
+      "title": "Operation Laden Table — Northern Diplomatic & Procurement Mission",
+      "revision": "2026-08-20T19:33:43.341Z",
+      "body_hash": "728547a34f32dbe27074d96f153745db00f36c77bfe607ffe0e878764766db6d",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "industrial_production",
+        "trade_routes",
+        "banking_balance_sheet",
+        "credit_origination"
+      ]
+    },
+    {
+      "source_id": "3a0e8214-84b0-817e-abfb-c4306ca33924",
+      "title": "The Orc Thread — The Styx Pursuit (Quarry Hunt)",
+      "revision": "2026-07-18T03:21:25.385Z",
+      "body_hash": "e6e701d776df0b5e5eb20858c1554b6fd3d218dba44599ee135cfba34f6f772c",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3a0e8214-84b0-81f2-a010-e6826cc4eaea",
+      "title": "The Delve Charter — Deep Galleries Farming Operation",
+      "revision": "2026-08-20T19:33:53.738Z",
+      "body_hash": "d9fc697933f74d2af4e51275c7886d0e028bbc7e3dff6c0ab29f1cac23fa64f6",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows"
+      ]
+    },
+    {
+      "source_id": "3a9e8214-84b0-8135-852c-d7033628f13c",
+      "title": "Selarial's Twin Rings — Re-entry Arc",
+      "revision": "2026-07-26T13:09:50.249Z",
+      "body_hash": "bae9497418de76c05b3c574c40ede5ba60f527bf2257d0eea4fa45a8ff2b9b6e",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3aae8214-84b0-81d8-973a-c00c04f14bd9",
+      "title": "Operation Warm Bed",
+      "revision": "2026-08-20T04:02:18.451Z",
+      "body_hash": "60544626399e052673bc6ef3df6065e1a94f4aa37f0167d6c01f185fc086103f",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3aae8214-84b0-81ed-a16d-de958fac536d",
+      "title": "Operation Winnow",
+      "revision": "2026-07-27T17:20:31.138Z",
+      "body_hash": "863a6a039b6c6c77326784ba2619c6d74aac97ada5e7c40e9a04753a5f118359",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3abe8214-84b0-811d-b877-d55864e6a3de",
+      "title": "Operation Thornwalk — Cormanthor Extraction",
+      "revision": "2026-08-11T22:17:37.616Z",
+      "body_hash": "9bcef56b9ecd5d87e6ed4417e89efc94b967d63e63feeb700a9605238511d598",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3ade8214-84b0-81a6-8832-f3bcda7ab7a9",
+      "title": "Operation Black Noon",
+      "revision": "2026-08-26T22:05:19.509Z",
+      "body_hash": "ff4de4c3ad93de727d5e6be60b92bba333444d55b56253f53f9db4fd8900130c",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3afe8214-84b0-8184-8ef4-ce4655f3a402",
+      "title": "The First-Crowned's Claim",
+      "revision": "2026-08-20T19:33:03.514Z",
+      "body_hash": "cfbb544e17a14ce4beda58e98a94fec6bc19507d4f58d153779e42c72ea50cbe",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3b3e8214-84b0-812c-a094-d625c131ef67",
+      "title": "The Ooze's Errand — The Demonweb Fuse",
+      "revision": "2026-08-05T00:25:05.888Z",
+      "body_hash": "d059c3e5afb54f1845b3027503746b61be5d702d16ffed90e48935e18fdb528d",
+      "disposition": "NON_ECONOMIC",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3b3e8214-84b0-814a-8a96-f9b3197ea4aa",
+      "title": "The Azzagrat Probate",
+      "revision": "2026-08-05T00:25:05.888Z",
+      "body_hash": "93214771bc5aba779b1178734bac108e7cdf28688ccf7f752490e8561d9cbb8b",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3b3e8214-84b0-8169-9f45-f1775523ac1a",
+      "title": "The House of Labors",
+      "revision": "2026-08-05T00:25:05.888Z",
+      "body_hash": "612015b1e184e294ea222455a459d39dcf2c114338ac0cfb7f987e1079c1fecd",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3b3e8214-84b0-8199-b0a7-e353207f6aef",
+      "title": "The Quarrel — A Goddess Against the House",
+      "revision": "2026-08-05T00:25:05.888Z",
+      "body_hash": "273c35138f4442f3d3a7b3f1a696a151026d9ff63be5db7e09ef1682c1fc60e9",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3b3e8214-84b0-81bb-9e14-c7a8044ab83e",
+      "title": "Black Sluice — The Crossing",
+      "revision": "2026-08-05T00:25:05.888Z",
+      "body_hash": "03b2d71e26773b95b544ebb9d7adb3b02c18f71dd2fdf1084c0e5ad86030ee9c",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3bbe8214-84b0-810a-99b8-f413a9e807a1",
+      "title": "Deep Road Network Construction",
+      "revision": "2026-08-26T21:27:32.240Z",
+      "body_hash": "d0303c39e2a04d62aa9ee1db22625eacb8f6ed96517efbd76df033e5a64e828f",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3c4e8214-84b0-81ab-b02e-f1390d4a53be",
+      "title": "Klauth Estate Liquidation — Shimmerdeep Liquidity",
+      "revision": "2026-08-22T15:52:12.896Z",
+      "body_hash": "ce172f8faf74c4068013666fa6f9c974f66c25d6fd4afa6dd02c95ce2148884d",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "industrial_production",
+        "trade_routes",
+        "banking_balance_sheet",
+        "credit_origination"
+      ]
+    },
+    {
+      "source_id": "3cbe8214-84b0-81a0-ac85-ca9aa2abfc48",
+      "title": "Forgedeep Economic Return — Evidence and Decisions",
+      "revision": "2026-08-29T19:26:05.309Z",
+      "body_hash": "51e8f404df44241cb86738501386c4b92ee61644702c930f1e30cef4aef06ac2",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "industrial_production",
+        "trade_routes",
+        "banking_balance_sheet",
+        "credit_origination"
+      ]
+    },
+    {
+      "source_id": "3cee8214-84b0-81f7-a7b4-f6dad502b7e9",
+      "title": "The Tally Room — Capture the Harvest Broker",
+      "revision": "2026-09-01T23:35:57.075Z",
+      "body_hash": "d280d990e2a6473909be3df34f9e92aab68ea9b1022c4675ac0fda1dd6735ae4",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    },
+    {
+      "source_id": "3cfe8214-84b0-81e6-8509-d46951d1ad0f",
+      "title": "The Loud Arm — Bregan D'aerthe as Dalelands Mercenary Screen",
+      "revision": "2026-09-02T00:27:47.964Z",
+      "body_hash": "c2ca3f7c8a8aa59933384ace158de29e6defeb6c7fb677deb78452e4ee2f2762",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "labor_supply",
+        "population"
+      ]
+    },
+    {
+      "source_id": "3d2e8214-84b0-81fd-89bc-e788a05ce495",
+      "title": "The Angel of the Iron Dawn",
+      "revision": "2026-09-06T18:08:04.860Z",
+      "body_hash": "c46e1b8c90c70c4b25a90147410c7f4ae957e3fb3b8012f591321ed6347f0ac7",
+      "disposition": "ECONOMIC_CONTEXT",
+      "semantic_status": "CONTEXT_ONLY",
+      "driver_owners": []
+    }
+  ],
+  "queue_counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 313,
+      "FUTURE": 47,
+      "CONFLICT": 15,
+      "SUPERSEDED": 220,
+      "MISSING_DATA": 4,
+      "UNKNOWN": 956,
+      "CONTEXT_ONLY": 62,
+      "HISTORICAL": 3
+    },
+    "body": {
+      "REVIEWED": 662,
+      "UNMEASURED": 958
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 313,
+      "FUTURE_ONLY": 47,
+      "CONFLICT": 13,
+      "SUPERSEDED": 220,
+      "MISSING_DATA": 4,
+      "UNREVIEWED": 958,
+      "ECONOMIC_CONTEXT": 33,
+      "NON_ECONOMIC": 29,
+      "HISTORICAL_ONLY": 3
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "tnp.economy.ncf-bottom-up-reconciliation/1",
+  "captured_at": "2026-09-19",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "institution": "actor:institution:ncf",
+  "source_backed_aggregates": {"employees": 85, "monthly_revenue_gp": 22000, "active_loan_portfolio_gp": 2300000, "numeric_reserves_gp": null, "total_deposits_gp": null, "total_liabilities_gp": null, "total_equity_gp": null},
+  "named_records": {"employees_named": 1, "employees_named_ids": ["actor:npc:a-pell"], "anonymous_staff_remainder": 84, "loans_named": [{"loan_id": "loan:ncf:halbor-dunn", "principal_gp": 3000, "outstanding": "UNKNOWN", "status": "DELINQUENT"}], "facilities_approved_undrawn": [{"loan_id": "loan:ncf:snowfall-undrawn", "principal_gp": 30000, "outstanding_gp": 0, "excluded_from_active_portfolio": true}]},
+  "derived_remainders": {"active_loan_unresolved_gp": 2297000, "formula": "2300000 - 3000 Halbor = 2297000", "borrower_identities_invented": 0},
+  "historical_not_current": {"eleint_1494_branch_costs_gp": 12170, "eleint_1494_branch_revenue_sum_gp": 23250, "parent_current_revenue_gp": 22000, "do_not_promote_branch_costs_to_hammer_1495": true, "forbidden_blind_sum_revenue_gp": 45250},
+  "trust_boundaries": {"ssamt_liquid_corpus_gp": 12000, "treatment": "CLIENT_TRUST_NOT_NCF_OWNED_ASSET"},
+  "unresolved": ["deposits", "reserves_quantity", "liabilities", "equity", "Thorn & Silver overlap", "Gold Lending House", "Pillar identities", "payroll/settlement policy"],
+  "conflicts": ["Parent 22000 vs Eleint branch sum 23250", "50%+Pillars control claim has no booked equity"],
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical_month_executed": false
+}

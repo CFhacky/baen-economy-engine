@@ -1,0 +1,47 @@
+relationship_id,child,parent_as_written,rel_type,status,conflict_flag,notes
+rel:housing-portfolio,Baen Real Estate & Housing Portfolio,Baen Enterprises,PARENT,Operational,,
+rel:crownsite-bg,Crownsite Canal Property BG,Baen Real Estate — Baldur's Gate Portfolio,PARENT,Operational,,
+rel:crystal-gardens,Crystal Gardens,Baen Real Estate — Housing Portfolio,PARENT,Operational,,
+rel:crown-eight,Crown of Eight Springs,Jormun-arc / Direct Baen,PARENT,Under Construction,,
+rel:dawnwood,Dawnwood Settlement,Direct Baen / Elven worker partnership,PARENT,Under Construction,,
+rel:deep-road,Deep Road Network (Deep Road Authority),Baen Enterprises,PARENT,Planning,,
+rel:desertsmouth,Desertsmouth Tunnel,Baen Enterprises — Continental Waterway,PARENT,Under Construction,,
+rel:diplomatic,Diplomatic Operations,Empire overhead,PARENT,Operational,,
+rel:dock-security,Dock Ward Security Corp,Peri Ops,PARENT,Operational,,
+rel:shoreline,Enhanced Shoreline Systems,Baen Construction,PARENT,Operational,,
+rel:formicorps,Formicorps,Baen Enterprises,PARENT,Operational,,
+rel:gauntlgrym-tools,Gauntlgrym Tools Partnership,50/50 JV,JV,Operational,,percent split written on the card; not copied into ownership.csv yet
+rel:gold-lending,Gold Lending House,Northern Crown Financial — Luskan,PARENT,Unconfirmed,,do not book
+rel:institut,Institut de Tissage Arcanique,ESAMT (Shi'van Baen'und trust NCF Waterdeep),TRUST_DOMICILE,Operational,,Tissage floor remains a distinct operating shop
+rel:lobster,Lobster King Operations (Baen-Allied),Peri Ops (allied not owned),ALLIED_NOT_OWNED,Unconfirmed,,do not book
+rel:clay,Neverwinter Clay Quarries,Feeds Brickworks,SUPPLIES,Operational,,
+rel:nmwc,Neverwinter Municipal Water Corporation,Direct Baen / NCF financing,PARENT,Scaling,,
+rel:munitions,Neverwinter Munitions Facility,Baen Enterprises,PARENT,Operational,,
+rel:nw-wood-canal,Neverwinter Wood Canal,Baen Enterprises — Northern Sea Gate,PARENT,Under Construction,,
+rel:ncf-luskan,Northern Crown Financial - Luskan,Northern Crown Financial,BRANCH,Operational,,do not add branch revenue to parent 22000
+rel:ncf-nw,Northern Crown Financial - Neverwinter,Northern Crown Financial,BRANCH,Operational,,do not add branch revenue to parent 22000
+rel:ncf-suzail,Northern Crown Financial - Suzail,Northern Crown Financial,BRANCH,Operational,,do not add branch revenue to parent 22000
+rel:ncf-wd,Northern Crown Financial - Waterdeep,Northern Crown Financial,BRANCH,Operational,,do not add branch revenue to parent 22000
+rel:timber,Northern Crown Timber Operations,Baen Construction (consumer) / Dawnwood (initial site),SUPPLIES,Planning,,
+rel:orchard,Orchard Chapel,Baen Empire — Patronage / Community Assets,PATRONAGE,Operational,,not a commercial branch
+rel:burning-gate,Project Burning Gate,Institut Baen'und / Direct Baen,PARENT,R&D Phase,,
+rel:ssamt,SSAMT,Northern Crown Financial (domicile) / Scales & Secrets Trading Co. (settlor),TRUST,Operational,,corpus is client property not NCF reserves
+rel:sea-gate-harbor,Sea Gate Harbor Authority,Baen Enterprises — Northern Sea Gate,PARENT,Under Construction,,
+rel:sea-gate-shipyard,Sea Gate Shipyard,Baen Enterprises — Northern Sea Gate,PARENT,Planning,,
+rel:seven-spires,Seven Spires Estate,Baen Enterprises — Northern Sea Gate,PARENT,Under Construction,,
+rel:shimmerdeep,Shimmerdeep Cradle,NCF / Silversheen-adjacent,PARENT,Under Construction,,
+rel:silversheen,Silversheen Trading (Aluminum),NCF 30% / Gauntlgrym 50%,JV,Scaling,CONFLICT,registry Parent Entity text is 30/50; ownership.csv already holds NCF 60 / Gauntlgrym 40 from the deal writeup; both kept visible
+rel:skyreach,Skyreach Castle,Direct Baen,PARENT,Operational,,
+rel:snowfall,Snowfall Hearthworks,Veldrin 75 / NCF 25,JV,Planning,,related-party supplier to Baen Construction
+rel:vault,Specialized Vault Construction,Baen Construction,PARENT,Operational,,
+rel:star-metal,Star Metal Hills Bauxite Mining,Feeds Silversheen,SUPPLIES,Scaling,,
+rel:stonefire,Stonefire Ceramics,Baen Enterprises,PARENT,Under Construction,,
+rel:thorn-silver,Thorn & Silver Exchange,Northern Crown Financial — Luskan,PARENT,Operational,,
+rel:whisper,Threadbaum Model 1494-L Whisper,Gauntlgrym-Baen Tool Partnership,PARENT,Scaling,,
+rel:thundertree,Thundertree Waystation,Baen Enterprises — Northern Sea Gate,PARENT,Under Construction,,
+rel:underground,Underground Renovation Services,Baen Construction,PARENT,Operational,,
+rel:verification,Verification Services,Northern Crown Financial — Luskan,PARENT,Operational,,
+rel:warborn-wd,Warborn Production - Waterdeep,Baen Enterprises,PARENT,Operational,,household ownership is in ownership.csv; this is the commercial wrapper on the card
+rel:wd-brokerage,Waterdeep Information Brokerage,Peri Ops,PARENT,Unconfirmed,,do not book
+rel:wyrmhelm,Wyrmhelm Forgedeep Facility,Institut Baen'und,PARENT,Operational,,
+rel:zariel,Zariel Warborn Contract,Direct Baen,PARENT,Operational,,Arik household on ownership.csv
