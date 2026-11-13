@@ -1,11 +1,13 @@
 {
   "schema_version": 1,
   "fixture_class": "CAN-IMPORT",
-  "authority": "proposal_not_accepted",
+  "authority": "owner_ruled_decisions_2026-11-13_amounts_provisional",
+  "unit_of_account": "Crown",
+  "legacy_conversion": "10 Crowns per gp (ruled 2026-11-13); surface gold window floats 8-12 Crowns per oz",
   "captured_on": "2026-11-13",
   "timeline_id": "arik-surface-u2",
   "as_of_campaign_date": "Day 7 Hammer 1495 DR",
-  "economy_timeline_mapping": "unresolved_CAN-001",
+  "economy_timeline_mapping": "ruled_CAN-001_arik-surface-u2_Day7_Hammer_1495",
   "scenario_id": "opening-hammer-1495-proposed",
   "source_refs": [
     "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
@@ -300,36 +302,36 @@
     ],
     "current_authority": "about 400,000 shortfall vs 450,000 protected target (22 Aug 2026 audit)"
   },
-  "docket_proposals": {
+  "docket_rulings": {
     "CAN-001": {
       "question": "Opening date and timeline",
-      "proposed": "Open the Arik-side empire book at Day 7 Hammer 1495 DR (the engine's own boundary and ruling D1). Shi'van's trust, Institut and personal finances are a separate book at her lane (Day 911 / 6 Mirtul 1494). Jörmun's Crown of Eight Springs stays tracked, not consolidated (D9). Forward commissions (1502-1506) stay out of both.",
-      "owner_decides": "Confirm, or name a different opening day."
+      "ruling": "Open the Arik-side empire book at Day 7 Hammer 1495 DR (the engine's own boundary and ruling D1). Shi'van's trust, Institut and personal finances are a separate book at her lane (Day 911 / 6 Mirtul 1494). Jörmun's Crown of Eight Springs stays tracked, not consolidated (D9). Forward commissions (1502-1506) stay out of both.",
+      "status": "RULED 2026-11-13: owner adopted the proposed answer (Chad, in conversation)."
     },
     "CAN-002": {
       "question": "Currency",
-      "proposed": "Keep the books in gp only. No exact gp/Crown conversion rule was found in the pages read; none is applied.",
-      "owner_decides": "Confirm, or supply the conversion."
+      "ruling": "Keep the books in gp only. No exact gp/Crown conversion rule was found in the pages read; none is applied.",
+      "status": "RULED 2026-11-13: owner adopted the proposed answer (Chad, in conversation)."
     },
     "CAN-003": {
       "question": "Monetary authority",
-      "proposed": "The two monetary-authority pages point at each other (pointer loop recorded by the engine and by the Eastern finance screen). No reserve ratio or backing rule is applied until one page is named controlling.",
-      "owner_decides": "Name the controlling page."
+      "ruling": "The two monetary-authority pages point at each other (pointer loop recorded by the engine and by the Eastern finance screen). No reserve ratio or backing rule is applied until one page is named controlling.",
+      "status": "RULED 2026-11-13: owner adopted the proposed answer (Chad, in conversation)."
     },
     "CAN-004": {
       "question": "Crown Advantage 25:1",
-      "proposed": "Not applied. Creating spendable value without matching assets is refused by the engine; the books follow that.",
-      "owner_decides": "Confirm refusal, or rule the mechanism."
+      "ruling": "Not applied. Creating spendable value without matching assets is refused by the engine; the books follow that.",
+      "status": "RULED 2026-11-13: owner adopted the proposed answer (Chad, in conversation)."
     },
     "CAN-005": {
       "question": "NCF opening balance sheet",
-      "proposed": "Post 2,300,000 loans receivable as provisional. Deposits, reserves, notes outstanding and equity stay UNKNOWN. Use the parent's 22,000/mo as consolidated banking revenue (branches sum to 23,250; never 45,250).",
-      "owner_decides": "Choose parent (22,000) or branch sum (23,250); supply deposit and reserve figures if any exist."
+      "ruling": "Post 2,300,000 loans receivable as provisional. Deposits, reserves, notes outstanding and equity stay UNKNOWN. Use the parent's 22,000/mo as consolidated banking revenue (branches sum to 23,250; never 45,250).",
+      "status": "RULED 2026-11-13: owner adopted the proposed answer (Chad, in conversation)."
     },
     "CAN-006": {
       "question": "Treasury cash",
-      "proposed": "Do not post a cash figure. Record the evidence band: 320,000-490,000 before old commitments (bridge test), and the current authority of a roughly 400,000 shortfall against a 450,000 protected target (22 Aug 2026). The Klauth hoard is carried at stated value as assets, not cash.",
-      "owner_decides": "Rule an exact cash figure for Day 7 Hammer 1495, or accept UNKNOWN with the band."
+      "ruling": "Do not post a cash figure. Record the evidence band: 320,000-490,000 before old commitments (bridge test), and the current authority of a roughly 400,000 shortfall against a 450,000 protected target (22 Aug 2026). The Klauth hoard is carried at stated value as assets, not cash.",
+      "status": "RULED 2026-11-13: owner adopted the proposed answer (Chad, in conversation)."
     }
   },
   "registry_classification": "campaign-development-vault: projects/in-progress/campaign-finance-ledger/migration/ROW_CLASSIFICATION_HAMMER_1495.csv",
