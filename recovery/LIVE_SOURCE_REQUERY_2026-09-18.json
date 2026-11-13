@@ -1,0 +1,67 @@
+{
+  "schema": "tnp.economy.live-source-requery/1",
+  "as_of": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "purpose": "Continue from VERIFIABLE_HANDOFF_2026-09-17.md. Re-query live Notion for remaining driver blockers. Do not invent values. Do not write Notion. Do not advance campaign time.",
+  "continuation_of": "recovery/VERIFIABLE_HANDOFF_2026-09-17.md",
+  "branch": "codex/reconcile-standalone-authority-20260917",
+  "inspected_head_before_this_work": "cb5449b37ce69eb90e308e2979820a557880d64f",
+  "notion_writes": 0,
+  "canonical_ledger_postings": 0,
+  "campaign_time_advanced": false,
+  "pages_fetched": [
+    {
+      "title": "Empire Financial State — Current Reference",
+      "notion_page": "34ce8214-84b0-81d7-abb5-f5d9cf153d72",
+      "last_edited_at": "2026-08-26T21:27:06.826Z",
+      "result": "exact liquid cash still indeterminate; recurring revenue band 280000-320000 gp/mo and profit band 75000-90000 gp/mo unchanged; ~400000 gp Shimmerdeep/Crown gap and 450000 gp protected target remain the current liquidity authority"
+    },
+    {
+      "title": "Cash Position Reconciliation — Hammer-Alturiak 1495 DR",
+      "notion_page": "34ce8214-84b0-81c0-8dd4-c3122711cc8e",
+      "last_edited_at": "2026-08-22T15:55:36.711Z",
+      "result": "current-liquidity override still forbids using the older -277000 gp arithmetic as exact cash"
+    },
+    {
+      "title": "Forgedeep Economic Return — CONTROLLING RUNTIME",
+      "notion_page": "3cbe8214-84b0-81a5-a0b4-c363b94c0aa8",
+      "last_edited_at": "2026-09-06T18:06:55.338Z",
+      "result": "current Forgedeep civilian population remains an unanswered required evidence return; operation is WAITING and silent"
+    },
+    {
+      "title": "Northern Crown Financial",
+      "notion_page": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+      "last_edited_at": "2026-08-22T15:54:58.332Z",
+      "result": "parent operating envelope still 22000 gp/mo revenue and 85 employees; no trial balance, reserve ratio, or current consolidated monthly cost"
+    },
+    {
+      "title": "Silversheen Trading (Aluminum)",
+      "notion_page": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+      "last_edited_at": "2026-07-28T14:28:20.993Z",
+      "result": "Hammer-1495 output/revenue 180 t/mo at 320 gp/t confirmed; cost table remains the Eleint 1494 150 t/mo envelope of 29040 gp/mo and must not be scaled"
+    },
+    {
+      "title": "Warborn Production - Neverwinter",
+      "notion_page": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+      "last_edited_at": "2026-08-21T03:20:13.902Z",
+      "result": "12 actual / 15 maximum Legionnaire units remain source-backed; aluminum allocation is both 30 t/mo and 20% of current output"
+    }
+  ],
+  "newly_recorded_conflicts": [
+    "silversheen.warborn_aluminum_allocation: 30 t/mo quantity vs 20% of current output after the 180 t/mo ruling"
+  ],
+  "still_missing": [
+    "finance.opening_liquid_cash",
+    "ncf.current_consolidated_monthly_cost",
+    "ncf.trial_balance",
+    "silversheen.current_monthly_cost_gp",
+    "forgedeep.current_population",
+    "opening_inventories",
+    "arterial.route_capacity",
+    "market.opening_prices",
+    "labor.empire_wide_occupation_pools",
+    "agricultural_shelters.physical_output_volume",
+    "blacklake_aquaculture.physical_output_volume"
+  ],
+  "not_done": "The original acceptance condition is not satisfied. This continuation executed the known industrial lines and mapped Mesa/FreeCol only where source inputs exist. Full physical-month execution remains blocked on the still_missing list."
+}

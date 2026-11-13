@@ -1,0 +1,56 @@
+{
+  "schema": "tnp.economy.live-source-requery/1",
+  "as_of": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "continuation_of": "recovery/LIVE_SOURCE_REQUERY_2026-09-18.json",
+  "rule": "Live Notion re-query only. No writes. Unknown stays unknown. Synthetic sandbox values were not imported.",
+  "queries": [
+    {
+      "target": "forgedeep.current_population",
+      "page": "3cbe8214-84b0-8178-a34a-d28e7ba76000",
+      "title": "Forgedeep Economic Return — LIVE STATE",
+      "last_edited_at": "2026-08-29T19:27:05.899Z",
+      "result": "civilian population remains UNRESOLVED; operation WAITING / silent; physical landing not played. Year-1 2,000 and decade 50,000 on City Development are targets, not current occupancy."
+    },
+    {
+      "target": "neverwinter.current_population",
+      "page": "2fbe8214-84b0-8189-8b97-c6329f9f29a5",
+      "title": "Neverwinter",
+      "last_edited_at": "2026-04-20T20:33:05.466Z",
+      "result": "Locations Population property is 75000. Quick Facts ~75,000. Overview heading ~80,000 is recorded as a conflict and is not selected."
+    },
+    {
+      "target": "waterdeep.current_population",
+      "page": "2fbe8214-84b0-81a8-8f59-cf002a2906a1",
+      "title": "Waterdeep",
+      "last_edited_at": "2026-04-20T20:36:53.089Z",
+      "result": "Locations Population property is 130000; overview agrees at ~130,000."
+    },
+    {
+      "target": "silversheen.current_monthly_cost_gp",
+      "page": "321e8214-84b0-8155-bf9b-cea55e2c7669",
+      "title": "Silversheen Trading (Aluminum)",
+      "last_edited_at": "2026-07-28T14:28:20.993Z",
+      "result": "Hammer 1495 output/revenue 180 t/mo × 320 gp/t confirmed. Cost table and Registry Monthly Cost remain the Eleint 1494 150 t/mo envelope 29040. Not scaled."
+    },
+    {
+      "target": "arterial.complete_route_distances",
+      "page": "321e8214-84b0-81ce-b8ce-fafb60bf5d8c",
+      "title": "Arterial Road Network",
+      "last_edited_at": "2026-03-12T20:55:22.334Z",
+      "result": "Five complete approximate distances confirmed. Suzail 40% and Baldur's Gate 60% remain under construction and are not treated as current operating routes. Freight capacity still missing."
+    }
+  ],
+  "still_missing": [
+    "finance.opening_liquid_cash",
+    "ncf.current_trial_balance",
+    "silversheen.current_monthly_cost_gp",
+    "silversheen.warborn_aluminum_allocation",
+    "forgedeep.current_population",
+    "agricultural_shelters.physical_output_volume",
+    "blacklake_aquaculture.physical_output_volume",
+    "arterial.route_capacity",
+    "opening_inventories",
+    "market.opening_prices"
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "schema": "tnp.economy.simulation-parameter-catalog/1",
+  "as_of": "2026-09-17",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "policy": {
+    "purpose": "Supply non-canonical economic parameters required by the simulator when campaign canon has not enumerated them yet.",
+    "precedence": [
+      "USER-RULED",
+      "SOURCE-DERIVED",
+      "UPSTREAM-ADOPTED",
+      "MODEL-PROPOSED"
+    ],
+    "rule": "A MODEL-PROPOSED value may drive simulation and sensitivity analysis. It must never be written back as canon merely because it was used or produced a plausible result.",
+    "output_requirement": "Every run records resolved parameter values, provenance, confidence, and the needs-enumeration queue."
+  },
+  "sources": {
+    "legacy_template": "fixtures/regional-scenarios/baen-north-whole-economy-v1.json",
+    "dnd35_goods_services": "https://www.d20srd.org/srd/equipment/goodsAndServices.htm",
+    "dnd35_movement": "https://www.d20srd.org/srd/movement.htm",
+    "dnd35_carrying": "https://www.d20srd.org/srd/carryingCapacity.htm",
+    "note": "D&D 3.5 SRD values are priors for the Forgotten Realms physical economy, not campaign facts. Baen-specific source facts override them."
+  },
+  "parameters": [
+    {
+      "id": "bank.loan_to_deposit_ratio",
+      "domain": "banking_balance_sheet",
+      "unit": "fraction",
+      "distribution": "triangular",
+      "low": 0.65,
+      "mode": 0.8,
+      "high": 0.9,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "banking-model prior; combined with SOURCE-DERIVED 2.3M gp active loans to infer a simulation-only deposit range"
+      ]
+    },
+    {
+      "id": "bank.reserve_ratio",
+      "domain": "banking_balance_sheet",
+      "unit": "fraction of deposits",
+      "distribution": "triangular",
+      "low": 0.1,
+      "mode": 0.2,
+      "high": 0.3,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy scenario used 20%",
+        "current Northern Crown reserve-ratio authority is conflicted, so simulation must sweep a range rather than select canon"
+      ]
+    },
+    {
+      "id": "food.grain_kg_per_person_day",
+      "domain": "household_consumption",
+      "unit": "kg/person/day",
+      "distribution": "triangular",
+      "low": 0.3,
+      "mode": 0.4,
+      "high": 0.55,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy baskets implied roughly 0.27–0.40 kg grain-equivalent/person/day",
+        "D&D 3.5 SRD bread/common-meal prices used only as a plausibility check"
+      ]
+    },
+    {
+      "id": "food.household_budget_gp_per_person_month",
+      "domain": "household_consumption",
+      "unit": "gp/person/month",
+      "distribution": "triangular",
+      "low": 3,
+      "mode": 6,
+      "high": 9,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "D&D 3.5 SRD poor/common meals are 0.1/0.3 gp per day; 30-day monthly envelope gives 3–9 gp before Baen-specific subsidies or magical productivity"
+      ]
+    },
+    {
+      "id": "food.preserved_fish_kg_per_person_month",
+      "domain": "household_consumption",
+      "unit": "kg/person/month",
+      "distribution": "triangular",
+      "low": 0.5,
+      "mode": 1.5,
+      "high": 3,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy baskets implied 1–3 kg/person/month depending on class"
+      ]
+    },
+    {
+      "id": "inventory.food_coverage_months",
+      "domain": "inventories",
+      "unit": "months of expected consumption",
+      "distribution": "triangular",
+      "low": 0.25,
+      "mode": 0.5,
+      "high": 1,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy opening inventories; perishable-stock working assumption"
+      ]
+    },
+    {
+      "id": "inventory.industrial_coverage_months",
+      "domain": "inventories",
+      "unit": "months of expected throughput",
+      "distribution": "triangular",
+      "low": 0.5,
+      "mode": 1,
+      "high": 2,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy opening inventories; Warborn separately has SOURCE-DERIVED 3-month buffer"
+      ]
+    },
+    {
+      "id": "labor.participation_rate",
+      "domain": "labor_supply",
+      "unit": "fraction of population",
+      "distribution": "triangular",
+      "low": 0.4,
+      "mode": 0.52,
+      "high": 0.62,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "settlement labour-force prior; source-backed business headcounts override entity staffing"
+      ]
+    },
+    {
+      "id": "labor.trained_daily_wage_gp",
+      "domain": "labor_supply",
+      "unit": "gp/day",
+      "distribution": "triangular",
+      "low": 0.25,
+      "mode": 0.3,
+      "high": 0.6,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "D&D 3.5 SRD typical trained hireling wage: 3 sp/day; upper range permits Baen skilled-worker premium"
+      ]
+    },
+    {
+      "id": "labor.unemployment_rate",
+      "domain": "labor_supply",
+      "unit": "fraction of labor force",
+      "distribution": "triangular",
+      "low": 0.02,
+      "mode": 0.06,
+      "high": 0.12,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "simulation prior; intentionally not inferred from 1,084 admitted commercial employees"
+      ]
+    },
+    {
+      "id": "labor.untrained_daily_wage_gp",
+      "domain": "labor_supply",
+      "unit": "gp/day",
+      "distribution": "triangular",
+      "low": 0.08,
+      "mode": 0.1,
+      "high": 0.15,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "D&D 3.5 SRD typical untrained hireling wage: 1 sp/day; range permits regional/Baen premium"
+      ]
+    },
+    {
+      "id": "market.price_elasticity",
+      "domain": "market_prices",
+      "unit": "dimensionless",
+      "distribution": "triangular",
+      "low": 0.2,
+      "mode": 0.4,
+      "high": 0.65,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy scenario price-elasticity range; suitable for sensitivity, not canon"
+      ]
+    },
+    {
+      "id": "market.target_stock_months",
+      "domain": "market_prices",
+      "unit": "months of demand",
+      "distribution": "triangular",
+      "low": 0.5,
+      "mode": 1,
+      "high": 2,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "working-capital/inventory-control prior"
+      ]
+    },
+    {
+      "id": "migration.max_monthly_rate",
+      "domain": "migration",
+      "unit": "fraction of class population/month",
+      "distribution": "triangular",
+      "low": 0.005,
+      "mode": 0.015,
+      "high": 0.03,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy scenario migration caps 1.5–3%; broadened downward for sensitivity"
+      ]
+    },
+    {
+      "id": "migration.shortage_weight",
+      "domain": "migration",
+      "unit": "dimensionless",
+      "distribution": "triangular",
+      "low": 0.01,
+      "mode": 0.03,
+      "high": 0.05,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy scenario migration response weights"
+      ]
+    },
+    {
+      "id": "population.artisan_share",
+      "domain": "population",
+      "unit": "fraction",
+      "distribution": "triangular",
+      "low": 0.18,
+      "mode": 0.22,
+      "high": 0.26,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy scenario class structure"
+      ]
+    },
+    {
+      "id": "population.burgher_share",
+      "domain": "population",
+      "unit": "fraction",
+      "distribution": "triangular",
+      "low": 0.05,
+      "mode": 0.07,
+      "high": 0.1,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "low",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy scenario class structure"
+      ]
+    },
+    {
+      "id": "population.commoner_share",
+      "domain": "population",
+      "unit": "fraction",
+      "distribution": "triangular",
+      "low": 0.65,
+      "mode": 0.7,
+      "high": 0.75,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy scenario class structure; normalized into a range rather than fixed shares"
+      ]
+    },
+    {
+      "id": "population.elite_share",
+      "domain": "population",
+      "unit": "fraction",
+      "distribution": "triangular",
+      "low": 0.005,
+      "mode": 0.01,
+      "high": 0.02,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "low",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy scenario class structure"
+      ]
+    },
+    {
+      "id": "production.agriculture_tons_per_worker_month",
+      "domain": "food_supply",
+      "unit": "tons/worker/month",
+      "distribution": "triangular",
+      "low": 4,
+      "mode": 10,
+      "high": 20,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "Agricultural Shelter Zones has 8 SOURCE-DERIVED staff but no physical tonnage",
+        "range is a simulation prior for magically assisted protected agriculture and is intentionally broad"
+      ],
+      "note": "This is not a claim about canonical crop yield or acreage."
+    },
+    {
+      "id": "production.aquaculture_tons_per_worker_month",
+      "domain": "food_supply",
+      "unit": "tons/worker/month",
+      "distribution": "triangular",
+      "low": 0.5,
+      "mode": 1.5,
+      "high": 4,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "Blacklake has 15 SOURCE-DERIVED staff but no physical species/volume",
+        "range is a simulation prior only"
+      ],
+      "note": "This is not a canonical fish-production figure."
+    },
+    {
+      "id": "production.silversheen_current_monthly_cost_gp",
+      "domain": "industrial_production",
+      "unit": "gp/month",
+      "distribution": "triangular",
+      "low": 33100,
+      "mode": 33800,
+      "high": 34500,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "SOURCE-DERIVED Eleint-1494 150 t/mo cost table totals 29,040 gp",
+        "Hammer-1495 output is 180 t/mo at same 320 gp/t",
+        "range scales ore/smelting/transport with throughput while treating labor/overhead/security as fixed-to-partly-variable"
+      ],
+      "note": "This replaces the former hard block for simulation only; it is not a canonical cost restatement."
+    },
+    {
+      "id": "production.warborn_aluminum_allocation_tons_per_month",
+      "domain": "industrial_production",
+      "unit": "tons/month",
+      "distribution": "choice",
+      "choices": [
+        30,
+        36
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "SOURCE-DERIVED exact quantity claim: 30 t/mo",
+        "SOURCE-DERIVED ratio claim: 20% of current output; at 180 t/mo this implies 36 t/mo"
+      ],
+      "note": "Both values are simulated; neither is selected as canon."
+    },
+    {
+      "id": "settlement.forgedeep.population",
+      "domain": "population",
+      "unit": "persons",
+      "distribution": "triangular",
+      "low": 700,
+      "mode": 1400,
+      "high": 1600,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "SOURCE-DERIVED historical figure: 450 in Eleint 1494",
+        "SOURCE-DERIVED staged next-visit band: 1,400–1,600",
+        "current LIVE STATE explicitly leaves civilian population unresolved"
+      ],
+      "note": "Replaces the old synthetic 8,000 figure, which is rejected."
+    },
+    {
+      "id": "shocks.monthly_incidence",
+      "domain": "exogenous_shocks",
+      "unit": "events/month",
+      "distribution": "triangular",
+      "low": 0,
+      "mode": 0.15,
+      "high": 0.4,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "baseline stochastic stress-testing prior; zero remains a valid draw and no particular shock is treated as canon"
+      ]
+    },
+    {
+      "id": "transport.baen_heavy_wagon_payload_tons",
+      "domain": "trade_routes",
+      "unit": "tons/load",
+      "distribution": "triangular",
+      "low": 20,
+      "mode": 30,
+      "high": 40,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "SOURCE-DERIVED older quarry-network operating note: standard heavy loads 20–40 tons; treated as a Baen-specialized industrial wagon prior"
+      ]
+    },
+    {
+      "id": "transport.freight_share_of_crossings",
+      "domain": "trade_routes",
+      "unit": "fraction",
+      "distribution": "triangular",
+      "low": 0.15,
+      "mode": 0.3,
+      "high": 0.5,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "traffic-count prior; separates total road crossings from freight vehicles"
+      ]
+    },
+    {
+      "id": "transport.generic_wagon_payload_tons",
+      "domain": "trade_routes",
+      "unit": "tons/load",
+      "distribution": "triangular",
+      "low": 1,
+      "mode": 1.5,
+      "high": 3,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "D&D 3.5 heavy-horse dragging/carrying rules imply low-single-ton conventional loads",
+        "this parameter is for ordinary commercial wagons, not Baen industrial heavy wagons"
+      ]
+    },
+    {
+      "id": "transport.heavy_corridor_crossings_per_day",
+      "domain": "trade_routes",
+      "unit": "crossings/day",
+      "distribution": "triangular",
+      "low": 500,
+      "mode": 750,
+      "high": 1200,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "SOURCE-DERIVED crystal-network tier definition: Heavy Corridor = 500+ daily crossings; upper bound/mode are simulation priors"
+      ]
+    },
+    {
+      "id": "transport.light_spur_crossings_per_day",
+      "domain": "trade_routes",
+      "unit": "crossings/day",
+      "distribution": "triangular",
+      "low": 10,
+      "mode": 50,
+      "high": 99,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "SOURCE-DERIVED crystal-network tier definition: Light Spur = under 100 daily crossings"
+      ]
+    },
+    {
+      "id": "transport.medium_corridor_crossings_per_day",
+      "domain": "trade_routes",
+      "unit": "crossings/day",
+      "distribution": "triangular",
+      "low": 100,
+      "mode": 250,
+      "high": 499,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "SOURCE-DERIVED crystal-network tier definition: Medium Corridor = 100–499 daily crossings"
+      ]
+    },
+    {
+      "id": "transport.priority_freight_miles_per_day",
+      "domain": "trade_routes",
+      "unit": "miles/day",
+      "distribution": "triangular",
+      "low": 30,
+      "mode": 40,
+      "high": 45,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "SOURCE-DERIVED Warborn inbound Gauntlgrym–Neverwinter corridor: ~85 miles in 2 days; used as a priority-freight benchmark"
+      ]
+    },
+    {
+      "id": "transport.route_loss_rate",
+      "domain": "trade_routes",
+      "unit": "fraction/month",
+      "distribution": "triangular",
+      "low": 0.005,
+      "mode": 0.02,
+      "high": 0.05,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "low",
+      "sensitivity": "medium",
+      "needs_enumeration": true,
+      "basis": [
+        "legacy scenario spoilage/loss values recast as a range"
+      ]
+    },
+    {
+      "id": "transport.standard_wagon_miles_per_day",
+      "domain": "trade_routes",
+      "unit": "miles/day",
+      "distribution": "triangular",
+      "low": 16,
+      "mode": 24,
+      "high": 32,
+      "authority": "MODEL-PROPOSED",
+      "confidence": "medium",
+      "sensitivity": "high",
+      "needs_enumeration": true,
+      "basis": [
+        "D&D 3.5 SRD cart/wagon overland speed: 16 miles/day",
+        "Baen arterial roads, waystations, and improved surfaces justify an uplift range rather than replacing the SRD baseline"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "tnp.economy.source-body-review/1",
+  "captured_at": "2026-09-19",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "authority": "MODEL-PROPOSED",
+  "purpose": "Track exhaustive source-page body review separately from collection row/property census coverage without publishing private GM prose.",
+  "privacy_rule": "Persist page IDs, edit timestamps, content hashes and review dispositions only. Do not publish private Notion page bodies in this standalone repository.",
+  "retained_core_target": 1620,
+  "current_live_target": 1381,
+  "contextual_authority_records": 7,
+  "tracking_status": "COMPLETE",
+  "reviewed_retained_core": 1620,
+  "unread_retained_core": 0,
+  "hashed_body_receipts": 1311,
+  "selective_reads_are_not_exhaustive_coverage": false,
+  "known_limitation": "Private GM prose unpublished. 60 NPC REVIEWED receipts use SHA-256 of 2026-09-17 acquisition property rows because live body hashes were not stored in packs B/C. Two NPC quantity conflicts remain open (Harrison livestock; Dolgrin haul status). Canonical month remains closed.",
+  "completion_rule": "COMPLETE only when every retained core record has a body-read receipt or an explicit no-body/not-applicable disposition, with stable source ID, source revision/edit timestamp, content hash where a body exists, and economic review disposition.",
+  "allowed_dispositions": [
+    "ECONOMIC_INPUT",
+    "ECONOMIC_CONTEXT",
+    "NON_ECONOMIC",
+    "HISTORICAL_ONLY",
+    "FUTURE_ONLY",
+    "SUPERSEDED",
+    "CONFLICT",
+    "MISSING_DATA",
+    "MISSING_MECHANICS",
+    "NO_BODY_NOT_APPLICABLE"
+  ],
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false,
+  "review_queue": "recovery/SOURCE_REVIEW_QUEUE_2026-09-18.json",
+  "historical_checkpoint": {
+    "artifact": "recovery/LIVE_CENSUS_ACQUISITION_MANIFEST_2026-09-17.json",
+    "records": 372,
+    "page_body_acquired_false": 372,
+    "note": "Historical acquisition checkpoint only. Later selective reads are not promoted to exhaustive body-review receipts."
+  },
+  "queue_counts": {
+    "retained_core_records": 1620,
+    "UNMEASURED": 0,
+    "UNKNOWN": 0,
+    "UNREVIEWED": 0,
+    "REVIEWED": 1311,
+    "NO_BODY_NOT_APPLICABLE": 309
+  },
+  "overlay": "src/baen_economy/completeness.py::_apply_committed_npc_ingest applies G1-G3 + remaining A/B/C onto the checked-in queue at read time."
+}

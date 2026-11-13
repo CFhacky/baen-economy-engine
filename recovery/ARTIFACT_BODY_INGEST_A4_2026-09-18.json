@@ -1,0 +1,443 @@
+{
+  "schema": "tnp.economy.artifact-body-ingest/1",
+  "batch": "A4",
+  "records": [
+    {
+      "source_id": "2fce8214-84b0-81e2-a59e-e1d68fd81828",
+      "title": "Quiver of Prismatic Strikes",
+      "revision": "2026-02-03T00:57:39.966Z",
+      "body_hash": "9dc2683a2fb38c3012cff0e58006669229a172cfe08c57007eaf2125f48ab8b7",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Rare",
+        "Location": "Baen Vault",
+        "Name": "Quiver of Prismatic Strikes",
+        "Notes": "TYPE: Elemental ammunition supply<br><br>PHYSICAL: Leather quiver with crystalline inlays. Interior shimmers with contained elemental energy. Arrows within have crystallized elemental tips.<br><br>PROPERTIES:<br>• Holds 20 arrows that regenerate at dawn<br>• User chooses damage type when drawing each arrow: Fire, Cold, Lightning, or Acid<br>• +1d6 elemental damage of chosen type<br>• Arrows count as magical<br>• Tips reform if arrow is recovered<br><br>ORIGIN: Acquired from Raazalkul's hoard.<br><br>STATUS: Stored in vault. Solid ranged support item.<br><br>POTENTIAL USES: Give to archer ally, equip Bloodaxe Legion scout commander, or use as trade goods/diplomatic gift.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b081e2a59ee1d68fd81828"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-81e4-9eb3-d8fcf984bf3b",
+      "title": "Brooch of Undisturbed Transactions",
+      "revision": "2026-02-03T00:44:25.886Z",
+      "body_hash": "cb19d3078e07a11def3d0f8702b27b67a6b389a82c45bbcfcc94ee6a8e24c2d3",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Menzoberranzan"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/356e821484b081acb5d9e5e50fd0f0fa"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Rare",
+        "Location": "Worn by Helvraen",
+        "Name": "Brooch of Undisturbed Transactions",
+        "Notes": "PHYSICAL: Small gem-inlaid silver brooch with invisible sigils on metal backing (visible only to enhanced perception). Understated quality craftsmanship.<br><br>OVERT FUNCTION:<br>• Protection against theft (minor abjuration)<br>• Alerts wearer to unauthorized proximity to merchandise<br><br>COVERT FUNCTION:<br>• Merchant soul fragments absorb impressions of significant magical sales<br>• Stores info about rare components, unusual buyers, exceptional items<br>• Periodic impressions delivered to Arik during meditation<br>• Subliminal influence encouraging interest in planar components and soul-affecting items<br><br>CREATED: Session 7 as gift to Helvraen. Incorporates merchant soul fragments from Ghohlbrorn Consortium operation and minuscule illithid consciousness for subliminal suggestions.<br><br>PURPOSE: Extends Arik's intelligence network into commercial sector. Reshapes Helvraen's inventory toward useful merchandise. No direct magical link that might trigger detection.",
+        "Origin": "Dodecahedron crafted — merchant soul fragments",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b081e49eb3d8fcf984bf3b"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-81e8-9727-c9041a055984",
+      "title": "Acid Fang",
+      "revision": "2026-08-09T21:11:39.962Z",
+      "body_hash": "2ff558822cd0eab90e842408ed018facd3eb285e51701846194ce7e62b653e6d",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__YES__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081edbf3fcf8f2b5d6111"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "With Selarial",
+        "Name": "Acid Fang",
+        "Notes": "FORMERLY: Nightwind (renamed after enhancement)<br><br>PHYSICAL: Slightly curved bastard sword with acid-etched runes that shift like liquid. Crossguard incorporates black dragon scales. Pommel contains reservoir of refined dragon acid (green-black liquid pulsing with wielder's heartbeat).<br><br>BASE PROPERTIES:<br>• +3 magical weapon with finesse property<br>• 3d6 acid damage on hit (bonus action toggle)<br>• Critical hits cause ongoing acid damage (2d6) for 1d4 rounds<br><br>SOUL-ENHANCED ABILITIES:<br>• Improved Spiritual Pressure: 15ft radius oppressive force, DC 17 WIS or disadvantage<br>• Shadow Manipulation: Shape darkness into semi-solid constructs (tentacles, barriers, platforms, tunnels), up to 30ft cube, 3 constructs, allies see through<br>• Acid Mist: 20ft radius acid cloud (1/short rest), 2d6 acid damage, disadvantage on perception<br>• Corrosive Strike: 3/day, bypasses acid resistance, reduces target AC by 2<br>• Dimensional Acid: Strikes ethereal/incorporeal/phase-shifted enemies<br><br>ORIGINAL NIGHTWIND PROPERTIES (Preserved):<br>• Bloodthirsty aura<br>• Underworld darkness manipulation (now enhanced)<br>• 10% lightning strike chance<br><br>ORIGIN: Created Session 5 through ritual with Selarial as 'Nightwind.' Enhanced by Helvraen using black dragon (Maladrax) materials and draconic essence.<br><br>EVOLUTION POTENTIAL: Enhanced shadow constructs, acid pool creation dissolving planar boundaries, shadow step teleportation.<br><br>NOTE: Attunement requires connection to Dodecahedron. Responds to Selarial's intent, anticipating needs.",
+        "Origin": "Maladrax dragon materials + Session 5 ritual evolution",
+        "Sentient": "__YES__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Legacy Attuned [SUPERSEDED]",
+        "Type": "Weapon",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b081e89727c9041a055984"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-8100-87df-c8331a951859",
+      "title": "Charm Generation System (UDRP Extension)",
+      "revision": "2026-03-23T02:07:45.805Z",
+      "body_hash": "47c8f632779c5bd79d4a63d963b6950785bc0c81c51e1a0e7a57207973b4bf04",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "Charm Generation System (UDRP Extension)",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "Charm_Generation_[System.md](http://System.md)",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-22",
+        "url": "https://app.notion.com/p/32be821484b0810087dfc8331a951859"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-8100-91ad-c27bb7b9f46b",
+      "title": "Elara Marriage — Continental Empire Strategic Analysis",
+      "revision": "2026-03-23T18:25:20.652Z",
+      "body_hash": "9b52d4d6b051702ee90f65f087a71a70626dadf2b2dbbb80014b70edd6d3f706",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "Elara Marriage — Continental Empire Strategic Analysis",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "[elara-continental-empire-analysis.md](http://elara-continental-empire-analysis.md)",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/32be821484b0810091adc27bb7b9f46b"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-8109-a0b0-c529601411f0",
+      "title": "Elara's Kingdom — Random Complication Tables",
+      "revision": "2026-03-23T22:10:56.636Z",
+      "body_hash": "5aeda2d9e978cce16e85c392cf3d0c70a3b175e8b01e0dad832aeb9351a48e0e",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "Elara's Kingdom — Random Complication Tables",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "[elara-refugee-complications-random-events.md](http://elara-refugee-complications-random-events.md)",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-22",
+        "url": "https://app.notion.com/p/32be821484b08109a0b0c529601411f0"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-810f-8830-e08af7982ae8",
+      "title": "Aquaculture Technical Specifications — Neverwinter's Warmth",
+      "revision": "2026-03-23T12:40:52.294Z",
+      "body_hash": "49558f183676dfe35cd20b20c121fa7d2dedf7e2a78284c5a7a74b82e97ad30b",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "Aquaculture Technical Specifications — Neverwinter's Warmth",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "[aquaculture-technical-specifications.md](http://aquaculture-technical-specifications.md)",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/32be821484b0810f8830e08af7982ae8"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-811e-8b7b-c637669864b0",
+      "title": "UDRP: Regional Complication Generator",
+      "revision": "2026-03-23T14:27:25.963Z",
+      "body_hash": "92c2f1d54a710a846887e11d1aa2bf7201b34cf27e87efff569df61707ba5919",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "UDRP: Regional Complication Generator",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/32be821484b0811e8b7bc637669864b0"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-8121-9c41-e99088ee79b3",
+      "title": "UDRP: Rival Organization Generator",
+      "revision": "2026-03-23T14:28:39.998Z",
+      "body_hash": "83f28994970418faac17df983387c41c8cdc01038cbfc7a0215bc6d98edc38e2",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "UDRP: Rival Organization Generator",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/32be821484b081219c41e99088ee79b3"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-8155-a0c8-db33556d2f58",
+      "title": "Personal Power Armor Program",
+      "revision": "2026-03-23T02:09:48.940Z",
+      "body_hash": "389ae82054e02f42fa3e873fc7153f796b485fd3b82ab55cfc432f1a7517cbd1",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "Personal Power Armor Program",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "[personal-power-armor-specifications.md](http://personal-power-armor-specifications.md)",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-21",
+        "url": "https://app.notion.com/p/32be821484b08155a0c8db33556d2f58"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-8155-bf7f-c77dc8539b40",
+      "title": "Forward-Thread Asset Registry — Timeline Continuity",
+      "revision": "2026-07-24T20:25:45.260Z",
+      "body_hash": "3ab0065b596e5be50fd8b315a84e40b1dd755d8f3bd3d145c71338cc70cc2ba5",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "Forward-Thread Asset Registry — Timeline Continuity",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "[forward-thread-asset-registry.md](http://forward-thread-asset-registry.md)",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/32be821484b08155bf7fc77dc8539b40"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-8157-a596-c2f305651b84",
+      "title": "Emperor's Talons Codex v2",
+      "revision": "2026-06-16T19:31:48.201Z",
+      "body_hash": "5950f8c1a81f8ba0f2fd763a7c7bca75594534efac4e1b3d667d24d25036c4a4",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "Emperor's Talons Codex v2",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "[emperors-talons-codex-v2.md](http://emperors-talons-codex-v2.md)",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-21",
+        "url": "https://app.notion.com/p/32be821484b08157a596c2f305651b84"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-8160-9f84-cd3b62394107",
+      "title": "UDRP: Demon Sovereign Generation",
+      "revision": "2026-03-23T14:32:56.598Z",
+      "body_hash": "020a3d59370966a74e8b62956abecb6e7588ea2eb2b62737bf4038ce52f451b8",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "UDRP: Demon Sovereign Generation",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/32be821484b081609f84cd3b62394107"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-8169-9c1e-dfe5b4ed6c6f",
+      "title": "Baen Continental Waterway System — Route Engineering",
+      "revision": "2026-03-23T14:05:16.665Z",
+      "body_hash": "1b6f5483232cec337cac91263a8af0a33470fcc3686c7050dca579b6c26edad8",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "Baen Continental Waterway System — Route Engineering",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-22",
+        "url": "https://app.notion.com/p/32be821484b081699c1edfe5b4ed6c6f"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-816d-8369-d5a656c3c402",
+      "title": "UDRP: Companion Generation Module",
+      "revision": "2026-03-23T14:35:45.048Z",
+      "body_hash": "3cd1d5949b00dcc3c3b1ab38218f0f3fe685b3dee2433287ba188b9f5debf90a",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "UDRP: Companion Generation Module",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/32be821484b0816d8369d5a656c3c402"
+      }
+    },
+    {
+      "source_id": "32be8214-84b0-8181-a9e4-eed6896f66be",
+      "title": "Eastern Deployment Regional Threats — Updated",
+      "revision": "2026-03-22T04:35:51.025Z",
+      "body_hash": "7d46c470315ff2c124851811d3ac811f71e7ce291ec2033adad6e1cc11e2bbc6",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Location": "",
+        "Name": "Eastern Deployment Regional Threats — Updated",
+        "Notes": "",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/32be821484b08181a9e4eed6896f66be"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 235,
+      "UNKNOWN": 1278,
+      "CONFLICT": 12,
+      "SUPERSEDED": 78,
+      "MISSING_DATA": 4,
+      "FUTURE": 10,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 339,
+      "UNMEASURED": 1281
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 235,
+      "UNREVIEWED": 1281,
+      "CONFLICT": 10,
+      "SUPERSEDED": 77,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 10,
+      "ECONOMIC_CONTEXT": 3
+    }
+  }
+}

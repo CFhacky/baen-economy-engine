@@ -1,0 +1,235 @@
+{
+  "schema": "tnp.economy.locations-body-ingest/1",
+  "batch": "L12",
+  "records": [
+    {
+      "source_id": "3c2e8214-84b0-81ec-8167-fd325ff1717b",
+      "title": "Eastern Bulwark (Iron Sovereignty)",
+      "revision": "2026-08-20T03:29:49.167Z",
+      "body_hash": "3857968f8e8ae638df96d0dcf91c2f024b3264920f821d1934af0d640145d96a",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b0812e884ccc3815fe582f"
+        ],
+        "Garrison": "\\~800 troops visible on the Baen border across three forward bases. Backed by the Iron Sovereignty's wider \\~15,000 active military, of which 8,000+ are enhanced soldiers. Enhancement capacity of \\~23,000 philosopher's stones rendered from \\~2.3M horde casualties over 30 years.",
+        "Name": "Eastern Bulwark (Iron Sovereignty)",
+        "Notes": "Aldric Steelgaze's fortified frontier position facing Baen territory. Cold war footing, not open war.",
+        "Region": [
+          "Silver Marches"
+        ],
+        "Source File": "Canon/Factions/Iron [Sovereignty.md](http://Sovereignty.md)",
+        "Status": "Hostile",
+        "Strategic Value": "Critical",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/3c2e821484b081ec8167fd325ff1717b"
+      }
+    },
+    {
+      "source_id": "3c3e8214-84b0-815e-bb1a-c5e598d3d634",
+      "title": "🏛️ Warborn Engineering Campus — North River Site",
+      "revision": "2026-08-21T04:45:11.673Z",
+      "body_hash": "fb138da7b57f225d1a8fd1bb0f88194e48e8da92718dda0f2db5d0b8a169974a",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "None assigned; planned school security and separately commanded artifact precinct",
+        "Name": "Warborn Engineering Campus — North River Site",
+        "Notes": "Forward-horizon controlled 100-acre site: north bank of the Neverwinter River opposite Thundertree; arterial spur adjacent; industrial neo-Gothic Engineering Hall with clock tower on its northwest corner; no construction begun.",
+        "Population": 0,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-08-20",
+        "url": "https://app.notion.com/p/3c3e821484b0815ebb1ac5e598d3d634"
+      }
+    },
+    {
+      "source_id": "3cee8214-84b0-815b-ac54-e46e900f6d55",
+      "title": "The Tally Room — Dalelands War-Accounting Facility",
+      "revision": "2026-09-02T00:59:56.450Z",
+      "body_hash": "b5fcfcc3621a3b5298d66781721a2c1ab76540fa76f4ff1384d8957228f9a708",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Permanent: a Sigrún-designed binding cell (the cage) + a crystal-network node keyed to the captured broker. Standing security detail on the binding — not against intruders but against the prisoner's escape and the prisoner's patrons. Access restricted to inner circle + the four integration principals. No general staff; the room's product is too sensitive for scribes.",
+        "Name": "The Tally Room — Dalelands War-Accounting Facility",
+        "Notes": "The war room. A chamber cut into the granite BELOW The Ledge, where the captured arcanaloth Vhaeric the Tallykeeper is bound and wired into the arterial crystal network as its soul-ledger RECORDER (not predictor). Produces: (1) running soul-count of Dalelands casualties, both sides, broken by destination — how many to Hell, how many the Shepherd kept, how many the Whisper returned; (2) champion-fragment intelligence at a faster clock than Veil field work. Does NOT predict where the next battle pays best (ruled out at design). Standing up the room forces the Network Audit decision — you do not wire a fiend into a Cascading-load network and hope. Built 2026-09-01.",
+        "Parent Location": [
+          "https://app.notion.com/p/348e821484b081d3ba53fa0ef760543a"
+        ],
+        "Region": [
+          "Tethyamar",
+          "Dalelands"
+        ],
+        "Source File": "Design build 2026-09-01 (this chat). Governs: War-Room Accounting SysRef (pending); The Network Audit thread; Vhaeric NPC.",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-09-01",
+        "url": "https://app.notion.com/p/3cee821484b0815bac54e46e900f6d55"
+      }
+    },
+    {
+      "source_id": "3d1e8214-84b0-814e-aee1-db8532d9b16f",
+      "title": "The Sallow Pit (Field Ward, Waterdeep)",
+      "revision": "2026-09-04T16:16:24.213Z",
+      "body_hash": "c13b31f72a990e53916e82f29d22e5182aee4f446f1fabf85210322369145d9d",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "",
+        "Name": "The Sallow Pit (Field Ward, Waterdeep)",
+        "Notes": "Flooded clay quarry, north edge of the Field Ward at the Trollwall. 160 ft across, 30 ft deep, flooded to half. North wall is wet undercut clay that sloughs. The Field Ward's execution ground (drowning; rope costs money). Rudeus Greyrat's landing point Day 743; site of the Day 752 wrongful drowning of Corrado Vesce and the rim collapse (24 in the crowd, 7 in the water). Since Day 752 a raw stone wall stands across the north face that nobody chanted for.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[rudeus-greyrat-companion-layer.md](http://rudeus-greyrat-companion-layer.md)",
+        "Status": "Contested",
+        "Strategic Value": "Low",
+        "Type": "Dungeon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-09-04",
+        "url": "https://app.notion.com/p/3d1e821484b0814eaee1db8532d9b16f"
+      }
+    },
+    {
+      "source_id": "3d1e8214-84b0-8150-a65c-c6032705f27d",
+      "title": "Dock Ward Boathouse Altar (Umberlant)",
+      "revision": "2026-09-04T16:16:24.213Z",
+      "body_hash": "9f96c0efc5abda106824a83ac7b0cb2148aee53c0b0c8c113a5cdb749fb023eb",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "",
+        "Name": "Dock Ward Boathouse Altar (Umberlant)",
+        "Notes": "Lay Umberlant altar beneath a Dock Ward boathouse; Håkon Sverling's oath-site. The Sallow Pit drownings are its offerings; the reeve's boats have lost no man in three years. Quest site for Rudeus Greyrat's personal quest (skirmish-scale cult site). NOT a Kenafin thread — keep separate (canon lock). Exact boathouse and pier to be fixed in play; do not pre-decide.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[rudeus-greyrat-companion-layer.md](http://rudeus-greyrat-companion-layer.md)",
+        "Status": "Hostile",
+        "Strategic Value": "Low",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-09-04",
+        "url": "https://app.notion.com/p/3d1e821484b08150a65cc6032705f27d"
+      }
+    },
+    {
+      "source_id": "3d1e8214-84b0-81d1-8583-d99753254127",
+      "title": "The Brine Kettle (Cod Lane, Dock Ward)",
+      "revision": "2026-09-04T18:20:49.137Z",
+      "body_hash": "9dda52eeac141d9039e0745b82eb1ae754a776709b0103895642cce29bebd705",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "food_supply",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "",
+        "Name": "The Brine Kettle (Cod Lane, Dock Ward)",
+        "Notes": "Dock Ward taproom, corner lot where Cod Lane meets Dock Street on the harbour side (rolled 2026-09-04 from the sourced street list; Odd Street the nearest named crossing — adjacency unverified). One room 40×20 ft, low beam, eight tables, brown-glass lamps, seawater-mopped floor. Back room over the harbour side leaks at the corner over the door; a month wet — rats. Barman Hadrach; server Sabirah (Calishite, the skirt). Names PROVISIONAL. Rudeus's drinking spot from \\~Day 745; roof commission Day 749–750; the road to Itzel and the pit. Sourced neighbour: Red Sails Warehouse lockboxes near Cod Lane.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[rudeus-brine-kettle-day-749.md](http://rudeus-brine-kettle-day-749.md); [rudeus-greyrat-companion-layer.md](http://rudeus-greyrat-companion-layer.md)",
+        "Status": "Unexplored",
+        "Strategic Value": "Low",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-09-04",
+        "url": "https://app.notion.com/p/3d1e821484b081d18583d99753254127"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 235,
+      "UNKNOWN": 1342,
+      "CONFLICT": 12,
+      "SUPERSEDED": 14,
+      "MISSING_DATA": 4,
+      "FUTURE": 10,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 275,
+      "UNMEASURED": 1345
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 235,
+      "UNREVIEWED": 1345,
+      "CONFLICT": 10,
+      "SUPERSEDED": 13,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 10,
+      "ECONOMIC_CONTEXT": 3
+    }
+  }
+}

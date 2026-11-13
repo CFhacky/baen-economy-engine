@@ -1,0 +1,280 @@
+{
+  "schema": "tnp.economy.driver-coverage/1",
+  "as_of": "2026-09-17",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "rule": "Actual-run coverage is measured by economic driver classes, not nested scenario object count. A driver is executable only when required state is source-backed/user-ruled or computable through an adopted upstream mechanic from such state.",
+  "drivers": [
+    {
+      "driver": "business_financial_flows",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": true,
+      "authority": [
+        "SOURCE-DERIVED"
+      ],
+      "known": [
+        "90 Registry records acquired",
+        "Hammer-1495 admission ledger: 37 admitted / 53 excluded",
+        "entity revenue/cost/employees/capital where temporally valid",
+        "current aggregate revenue/profit bands"
+      ],
+      "blocks": [
+        "NCF current consolidated monthly cost / trial balance still missing",
+        "Silversheen Hammer-1495 cost table not restated after 180 t/mo ruling",
+        "parent/child overlaps such as NCF must not double-count"
+      ]
+    },
+    {
+      "driver": "industrial_production",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": true,
+      "authority": [
+        "SOURCE-DERIVED",
+        "UPSTREAM-ADOPTED"
+      ],
+      "known": [
+        "Baen Brickworks 75,000 bricks/mo",
+        "Neverwinter Clay Quarries 2,000 t/mo",
+        "Treasury Stone Quarries 8,000 t/mo",
+        "Azurite Decorative Quarries 200 t/mo",
+        "Western Limestone Quarries 12,000 t/mo",
+        "Western Sandstone Quarries 6,000 t/mo",
+        "Star Metal Hills bauxite 800 t/mo",
+        "Silversheen 180 t/mo Hammer 1495",
+        "Warborn Neverwinter 12 Legionnaires/mo; max 15",
+        "complete six-quarry network cross-check: 29,000 t/mo / 165 employees"
+      ],
+      "blocks": [
+        "physical input coefficients are absent for several transformation lines",
+        "opening inventories are absent for the extraction/manufacturing lines",
+        "Silversheen Warborn allocation remains 30 t/mo quantity vs 20% after the 180 t/mo ruling"
+      ],
+      "product_execution": {
+        "mesa": "business-phase event schedule — prepared automatically on Python 3.12",
+        "unknown_horizons": "9 source-backed production-only lines — prepared automatically; no consume coefficients invented",
+        "freecol": "Warborn 12 actual vs 15 maximum — prepared automatically",
+        "openttd": "NOT_INVOKED: observed freight lacks a complete source-backed capacity/transit-time tuple",
+        "veloren": "NOT_INVOKED: opening stocks/general prices missing",
+        "brunnfeld": "NOT_INVOKED: source-backed market demand/prices missing"
+      }
+    },
+    {
+      "driver": "population",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": true,
+      "authority": [
+        "SOURCE-DERIVED"
+      ],
+      "known": [
+        "Neverwinter 75,000 from Locations Population property",
+        "Waterdeep 130,000 from Locations Population property"
+      ],
+      "blocks": [
+        "Forgedeep civilian population explicitly unresolved",
+        "Neverwinter Overview ~80,000 is not selected against the 75,000 property",
+        "settlement-wide consumption cannot run without Forgedeep occupancy"
+      ]
+    },
+    {
+      "driver": "opening_liquidity",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [
+        "450K protected Shimmerdeep liquidity target",
+        "~400K gap"
+      ],
+      "blocks": [
+        "current liquid cash explicitly indeterminate"
+      ]
+    },
+    {
+      "driver": "banking_balance_sheet",
+      "status": "PARTIAL_CONFLICT",
+      "can_execute": false,
+      "authority": [
+        "SOURCE-DERIVED"
+      ],
+      "known": [
+        "NCF active loans 2.3M gp",
+        "NCF employees/revenue"
+      ],
+      "blocks": [
+        "Day-7-Hammer-1495 consolidated deposits/reserves/liabilities trial balance not found",
+        "NCF current consolidated monthly cost not stated",
+        "monetary reserve-ratio authority conflict"
+      ]
+    },
+    {
+      "driver": "inventories",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [],
+      "blocks": [
+        "warehouse counts/opening inventories not source-backed"
+      ]
+    },
+    {
+      "driver": "labor_supply",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": true,
+      "authority": [
+        "SOURCE-DERIVED"
+      ],
+      "known": [
+        "1084 admitted commercial employees from Registry admission",
+        "business-specific headcounts",
+        "Warborn wage schedule",
+        "Brickworks annual wages"
+      ],
+      "blocks": [
+        "settlement-wide occupation pools and unemployment not established",
+        "named production/food/arterial headcounts must not be added on top of admitted commercial employees"
+      ]
+    },
+    {
+      "driver": "trade_routes",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": true,
+      "authority": [
+        "SOURCE-DERIVED"
+      ],
+      "known": [
+        "five complete arterial route distances (approximate)",
+        "road workforce/revenue/cost"
+      ],
+      "blocks": [
+        "route freight capacities/loss rates not source-backed for actual month",
+        "OpenTTD stays NOT_INVOKED until capacities exist",
+        "Suzail and Baldur's Gate extensions are incomplete and are not current operating routes"
+      ]
+    },
+    {
+      "driver": "market_prices",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [
+        "some contracted/entity unit prices such as aluminum 320 gp/t"
+      ],
+      "blocks": [
+        "general opening commodity prices not source-backed"
+      ]
+    },
+    {
+      "driver": "food_supply",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": true,
+      "authority": [
+        "SOURCE-DERIVED"
+      ],
+      "known": [
+        "Agricultural Shelter Zones 8 staff / 1500 gp revenue / 1050 gp cost",
+        "Blacklake entity 15 staff / 7500 gp revenue / 5850 gp cost",
+        "aquaculture network 55 staff / 25000 gp revenue",
+        "combined food financials 63 staff / 26500 gp revenue"
+      ],
+      "blocks": [
+        "Agricultural Shelter physical output missing",
+        "Blacklake physical species/volume explicitly unconfirmed",
+        "do not derive tonnage from gp figures"
+      ]
+    },
+    {
+      "driver": "household_consumption",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [],
+      "blocks": [
+        "social-class shares, baskets, substitution ratios not source-backed"
+      ]
+    },
+    {
+      "driver": "credit_origination",
+      "status": "PARTIAL_SOURCE_BACKED",
+      "can_execute": false,
+      "authority": [
+        "SOURCE-DERIVED",
+        "UPSTREAM-ADOPTED"
+      ],
+      "known": [
+        "specific approved facilities where documented",
+        "NCF portfolio size"
+      ],
+      "blocks": [
+        "general underwriting/reserve state and opening borrower balances incomplete"
+      ]
+    },
+    {
+      "driver": "tax_rent_tithe_obligations",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [],
+      "blocks": [
+        "sandbox tenure rates/assessment bases not established as current authority"
+      ]
+    },
+    {
+      "driver": "migration",
+      "status": "MISSING_DATA",
+      "can_execute": false,
+      "authority": [],
+      "known": [],
+      "blocks": [
+        "migration links/rates model-authored"
+      ]
+    },
+    {
+      "driver": "exogenous_shocks",
+      "status": "MECHANICS_ONLY",
+      "can_execute": false,
+      "authority": [
+        "UPSTREAM-ADOPTED"
+      ],
+      "known": [
+        "engine can resolve deterministic/random events"
+      ],
+      "blocks": [
+        "current shock probabilities/events must come from campaign authority or explicit GM rule"
+      ]
+    },
+    {
+      "driver": "event_scheduling",
+      "status": "UPSTREAM_ADOPTED",
+      "can_execute": true,
+      "authority": [
+        "UPSTREAM-ADOPTED"
+      ],
+      "known": [
+        "Mesa event runtime",
+        "actual-run maps SOURCE-DERIVED empire-operations-engine business-phase events when Mesa is installed"
+      ],
+      "blocks": []
+    }
+  ],
+  "actual_run_status": "SOURCE_GROUNDED_BUSINESS_PHASE_PLUS_9_KNOWN_PRODUCTION_LINES_AND_MAPPED_PRODUCTS",
+  "executable_now": [
+    "source-grounded monthly business phase over 37 admitted Registry entities",
+    "9 source-backed industrial/extraction production lines",
+    "Mesa scheduling of SOURCE-DERIVED business-phase events",
+    "Unknown Horizons production-only validation on sourced outputs",
+    "FreeCol Warborn 12 actual / 15 maximum validation",
+    "Neverwinter/Waterdeep census populations with Forgedeep fail-closed",
+    "food-sector financials without physical volumes",
+    "complete arterial distances without freight capacity",
+    "admitted entity-level commercial headcount without settlement unemployment"
+  ],
+  "next_source_targets": [
+    "opening inventories or observed warehouse counts",
+    "NCF Day-7-Hammer-1495 trial balance/current reserves and consolidated monthly cost",
+    "Silversheen Hammer-1495 monthly cost restatement",
+    "Silversheen/Warborn aluminum allocation quantity-versus-ratio ruling",
+    "source-backed route transit/capacity observations suitable for OpenTTD",
+    "Forgedeep civilian population",
+    "food physical outputs",
+    "current commodity prices",
+    "settlement labor pools/unemployment"
+  ]
+}

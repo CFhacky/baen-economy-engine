@@ -1,0 +1,812 @@
+[
+ {
+  "facility_id": "fac:warborn-wd",
+  "name": "Warborn Production - Waterdeep",
+  "url": "https://app.notion.com/321e821484b0816a8684d3df85527df8",
+  "status": "Operational",
+  "sector": "Manufacturing",
+  "weight": 56057800.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:deep-road",
+  "name": "Deep Road Network (Deep Road Authority)",
+  "url": "https://app.notion.com/3bbe821484b0815fac80dd1c4430327d",
+  "status": "Planning",
+  "sector": "Infrastructure",
+  "weight": 18700000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:warborn-nw",
+  "name": "Warborn Production - Neverwinter",
+  "url": "https://app.notion.com/321e821484b081b38d51dcbc19edd667",
+  "status": "Scaling",
+  "sector": "Manufacturing",
+  "weight": 4848000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:desertsmouth",
+  "name": "Desertsmouth Tunnel",
+  "url": "https://app.notion.com/34ce821484b08172b32ef083715f9465",
+  "status": "Under Construction",
+  "sector": "Infrastructure",
+  "weight": 4640000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:zariel-contract",
+  "name": "Zariel Warborn Contract",
+  "url": "https://app.notion.com/34ce821484b081febf14f062ef3cb91b",
+  "status": "Operational",
+  "sector": "Military",
+  "weight": 4594800.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:formicorps",
+  "name": "Formicorps",
+  "url": "https://app.notion.com/34ce821484b081b995b9f3426792b6bc",
+  "status": "Operational",
+  "sector": "Construction",
+  "weight": 2680000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:bloodaxe",
+  "name": "Bloodaxe Legion",
+  "url": "https://app.notion.com/321e821484b0812dbba0e10b75086a02",
+  "status": "Operational",
+  "sector": "Military",
+  "weight": 2160000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:shimmerdeep",
+  "name": "Shimmerdeep Cradle",
+  "url": "https://app.notion.com/34ce821484b081119fd4c41feef5634e",
+  "status": "Under Construction",
+  "sector": "Mining/Quarrying",
+  "weight": 1640000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:nmwc",
+  "name": "Neverwinter Municipal Water Corporation",
+  "url": "https://app.notion.com/34ce821484b0815b8025e995ced7c996",
+  "status": "Scaling",
+  "sector": "Infrastructure",
+  "weight": 1040000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:silversheen",
+  "name": "Silversheen Trading (Aluminum)",
+  "url": "https://app.notion.com/321e821484b08155bf9bcea55e2c7669",
+  "status": "Scaling",
+  "sector": "Manufacturing",
+  "weight": 1009280.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:burning-gate",
+  "name": "Project Burning Gate",
+  "url": "https://app.notion.com/34ce821484b08125b0ccfa8966ff42f0",
+  "status": "R&D Phase",
+  "sector": "R&D",
+  "weight": 800000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:forgedeep-city",
+  "name": "Forgedeep City Development",
+  "url": "https://app.notion.com/321e821484b081b09469f6c9d92a22d5",
+  "status": "Under Construction",
+  "sector": "Infrastructure",
+  "weight": 680000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:tissage",
+  "name": "Institut de Tissage Arcanique",
+  "url": "https://app.notion.com/372e821484b081d98c19e650c16b687f",
+  "status": "Operational",
+  "sector": "Manufacturing",
+  "weight": 678000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:arterial-road",
+  "name": "Arterial Road Network",
+  "url": "https://app.notion.com/321e821484b081ceb8cefafb60bf5d8c",
+  "status": "Scaling",
+  "sector": "Infrastructure",
+  "weight": 561320.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:housing-portfolio",
+  "name": "Baen Real Estate & Housing Portfolio",
+  "url": "https://app.notion.com/37de821484b081549c6bd10986768d97",
+  "status": "Operational",
+  "sector": "Real Estate",
+  "weight": 454080.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:whisper",
+  "name": "Threadbaum Model 1494-L Whisper",
+  "url": "https://app.notion.com/34ce821484b08164aa0fd2d0083834c8",
+  "status": "Scaling",
+  "sector": "Manufacturing",
+  "weight": 403000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:cerulean",
+  "name": "The Cerulean",
+  "url": "https://app.notion.com/321e821484b081cfb8efc87bd6feaaf7",
+  "status": "Under Construction",
+  "sector": "Infrastructure",
+  "weight": 356000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:quarry-aqua",
+  "name": "Converted Quarry Aquaculture (5 sites)",
+  "url": "https://app.notion.com/321e821484b0811098cfebc200f16c7a",
+  "status": "Operational",
+  "sector": "Aquaculture",
+  "weight": 302000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:ncf-parent",
+  "name": "Northern Crown Financial",
+  "url": "https://app.notion.com/2fbe821484b0816ab0b8e7e7ed41fe29",
+  "status": "Operational",
+  "sector": "Banking",
+  "weight": 264000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:dock-housing",
+  "name": "Dock District Housing (Ph 1 & 2)",
+  "url": "https://app.notion.com/321e821484b081faba57e5f9a87ab3a9",
+  "status": "Operational",
+  "sector": "Real Estate",
+  "weight": 232000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:ncf-nw",
+  "name": "Northern Crown Financial - Neverwinter",
+  "url": "https://app.notion.com/321e821484b08175997cc81e61c35015",
+  "status": "Operational",
+  "sector": "Banking",
+  "weight": 207400.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:blacklake",
+  "name": "Blacklake Aquaculture (7 pools)",
+  "url": "https://app.notion.com/321e821484b08112ab9ecd6f5eba18e8",
+  "status": "Operational",
+  "sector": "Aquaculture",
+  "weight": 200200.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:athenaeum",
+  "name": "Neverwinter Athenaeum",
+  "url": "https://app.notion.com/324e821484b0813fb1c6ecc41384257b",
+  "status": "Planning",
+  "sector": "Education",
+  "weight": 200000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:ncf-luskan",
+  "name": "Northern Crown Financial - Luskan",
+  "url": "https://app.notion.com/321e821484b0812d82f9cc0add910698",
+  "status": "Operational",
+  "sector": "Banking",
+  "weight": 192876.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:wyrmhelm",
+  "name": "Wyrmhelm Forgedeep Facility",
+  "url": "https://app.notion.com/34ce821484b0812f8577d4d37289da9f",
+  "status": "Operational",
+  "sector": "R&D",
+  "weight": 174000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:treasury-stone",
+  "name": "Treasury Stone Quarries",
+  "url": "https://app.notion.com/321e821484b081118df6fb5d6377ba0a",
+  "status": "Operational",
+  "sector": "Mining/Quarrying",
+  "weight": 172004.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:dawnwood",
+  "name": "Dawnwood Settlement",
+  "url": "https://app.notion.com/34ce821484b081c2beeae2858f85995d",
+  "status": "Under Construction",
+  "sector": "Real Estate",
+  "weight": 164000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:construction-hq",
+  "name": "Baen Construction HQ",
+  "url": "https://app.notion.com/321e821484b081229dceefa0c3c48170",
+  "status": "Operational",
+  "sector": "Construction",
+  "weight": 151500.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:hunding",
+  "name": "Hunding Canal Lock System",
+  "url": "https://app.notion.com/321e821484b081b9a4cbf9fd26c7eccf",
+  "status": "Under Construction",
+  "sector": "Infrastructure",
+  "weight": 146000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:w-limestone",
+  "name": "Western Limestone Quarries",
+  "url": "https://app.notion.com/321e821484b081019287cb7fdf65e5a9",
+  "status": "Operational",
+  "sector": "Mining/Quarrying",
+  "weight": 144600.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:munitions",
+  "name": "Neverwinter Munitions Facility",
+  "url": "https://app.notion.com/362e821484b081e98ce5d318425ffcde",
+  "status": "Operational",
+  "sector": "Manufacturing",
+  "weight": 144000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:skyreach",
+  "name": "Skyreach Castle",
+  "url": "https://app.notion.com/34ce821484b081d7aaf3fb4e6a607477",
+  "status": "Operational",
+  "sector": "Military",
+  "weight": 137400.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:verdant-cascades",
+  "name": "Verdant Cascades Bathhouse",
+  "url": "https://app.notion.com/321e821484b081d4921fffe136c22209",
+  "status": "Operational",
+  "sector": "Infrastructure",
+  "weight": 137000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:celestial-springs",
+  "name": "Celestial Springs Bathhouse",
+  "url": "https://app.notion.com/321e821484b0815e97ffe0bcec9a3ebc",
+  "status": "Operational",
+  "sector": "Infrastructure",
+  "weight": 126000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:shoreline",
+  "name": "Enhanced Shoreline Systems",
+  "url": "https://app.notion.com/321e821484b08151be78c309a7ce8475",
+  "status": "Operational",
+  "sector": "Infrastructure",
+  "weight": 122004.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:faske",
+  "name": "Faske & Halloran",
+  "url": "https://app.notion.com/362e821484b0813b9b7ef67d1559fd89",
+  "status": "Operational",
+  "sector": "Banking",
+  "weight": 118400.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:azurite",
+  "name": "Azurite Decorative Quarries",
+  "url": "https://app.notion.com/321e821484b081b28e6dc97122a34793",
+  "status": "Operational",
+  "sector": "Mining/Quarrying",
+  "weight": 108000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:venetian-bay",
+  "name": "Venetian Bay Housing",
+  "url": "https://app.notion.com/321e821484b0814a9a3cea9157b13d6b",
+  "status": "Operational",
+  "sector": "Real Estate",
+  "weight": 102000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:w-sandstone",
+  "name": "Western Sandstone Quarries",
+  "url": "https://app.notion.com/321e821484b08192b481f813840aadd3",
+  "status": "Operational",
+  "sector": "Mining/Quarrying",
+  "weight": 96400.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:canal-housing",
+  "name": "Canal Housing Redevelopment",
+  "url": "https://app.notion.com/321e821484b0814c9919d340642e3319",
+  "status": "Operational",
+  "sector": "Real Estate",
+  "weight": 93996.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:bg-aqua",
+  "name": "BG Aquaculture Pools (3 sites)",
+  "url": "https://app.notion.com/321e821484b08116a104c6217060c1c5",
+  "status": "Operational",
+  "sector": "Aquaculture",
+  "weight": 93196.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:dock-security",
+  "name": "Dock Ward Security Corp",
+  "url": "https://app.notion.com/321e821484b081b9b209d6dd21f950f8",
+  "status": "Operational",
+  "sector": "Military",
+  "weight": 92128.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:gauntlgrym-tools",
+  "name": "Gauntlgrym Tools Partnership",
+  "url": "https://app.notion.com/321e821484b08116ac1bcc07c68ff15f",
+  "status": "Operational",
+  "sector": "Manufacturing",
+  "weight": 90000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:lustrous-blade",
+  "name": "The Lustrous Blade",
+  "url": "https://app.notion.com/321e821484b081f88632c9a3a854424c",
+  "status": "Operational",
+  "sector": "Trade",
+  "weight": 87500.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:stonefire",
+  "name": "Stonefire Ceramics",
+  "url": "https://app.notion.com/37de821484b081d1bf05cd5b4111d5bc",
+  "status": "Under Construction",
+  "sector": "Manufacturing",
+  "weight": 83356.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:vault-construction",
+  "name": "Specialized Vault Construction",
+  "url": "https://app.notion.com/321e821484b0814a9cd7daca52d0c750",
+  "status": "Operational",
+  "sector": "Construction",
+  "weight": 82000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:green-vein",
+  "name": "Green Vein Corridor",
+  "url": "https://app.notion.com/321e821484b081449c69fcb641741a06",
+  "status": "Operational",
+  "sector": "Infrastructure",
+  "weight": 79600.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:commercial-props",
+  "name": "Commercial Properties (Various)",
+  "url": "https://app.notion.com/321e821484b081208756cd5f9b876869",
+  "status": "Operational",
+  "sector": "Real Estate",
+  "weight": 79000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:brickworks",
+  "name": "Baen Brickworks",
+  "url": "https://app.notion.com/321e821484b0816c87fbf0fee22835ad",
+  "status": "Operational",
+  "sector": "Manufacturing",
+  "weight": 78792.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:wd-trading",
+  "name": "Waterdeep Trading Office",
+  "url": "https://app.notion.com/321e821484b081289cb9fbb308ea2536",
+  "status": "Operational",
+  "sector": "Trade",
+  "weight": 78792.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:underground-reno",
+  "name": "Underground Renovation Services",
+  "url": "https://app.notion.com/321e821484b0810c945ff2ee5b1d4841",
+  "status": "Operational",
+  "sector": "Construction",
+  "weight": 75200.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:diplomatic",
+  "name": "Diplomatic Operations",
+  "url": "https://app.notion.com/321e821484b081408f8ce78bbfd11b30",
+  "status": "Operational",
+  "sector": "Intelligence",
+  "weight": 75000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:dock-mixed",
+  "name": "Dock District Mixed-Use",
+  "url": "https://app.notion.com/321e821484b081dcae68d45f3e3801db",
+  "status": "Scaling",
+  "sector": "Real Estate",
+  "weight": 73400.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:star-metal",
+  "name": "Star Metal Hills Bauxite Mining",
+  "url": "https://app.notion.com/321e821484b081cbb112e8cab733e992",
+  "status": "Scaling",
+  "sector": "Mining/Quarrying",
+  "weight": 67000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:hammer-smithy",
+  "name": "Northern Hammer Smithy",
+  "url": "https://app.notion.com/321e821484b0819e840aea69126c3105",
+  "status": "Operational",
+  "sector": "Manufacturing",
+  "weight": 66004.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:gg-settlement-superseded",
+  "name": "[SUPERSEDED] Guardian's Gate Settlement (older variant)",
+  "url": "https://app.notion.com/321e821484b08119b068e3d4d503eaa3",
+  "status": "Scaling",
+  "sector": "Infrastructure",
+  "weight": 66000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:crownsite-trade",
+  "name": "Crownsite Canal Property",
+  "url": "https://app.notion.com/321e821484b0816bab1ac84039fbe89f",
+  "status": "Operational",
+  "sector": "Trade",
+  "weight": 66000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:ncf-wd",
+  "name": "Northern Crown Financial - Waterdeep",
+  "url": "https://app.notion.com/321e821484b08169bde3cc7112ca328d",
+  "status": "Operational",
+  "sector": "Banking",
+  "weight": 65160.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:castle-ops",
+  "name": "Castle Operations",
+  "url": "https://app.notion.com/321e821484b081a8b47dc47579a6e346",
+  "status": "Operational",
+  "sector": "Military",
+  "weight": 62400.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:verification",
+  "name": "Verification Services",
+  "url": "https://app.notion.com/321e821484b081f7be17ff26a67e57fb",
+  "status": "Operational",
+  "sector": "Banking",
+  "weight": 52244.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:thorn-silver",
+  "name": "Thorn & Silver Exchange",
+  "url": "https://app.notion.com/321e821484b08104815afe1101e6f8f1",
+  "status": "Operational",
+  "sector": "Banking",
+  "weight": 48000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:dock-warehouse",
+  "name": "Dock Ward Warehouse",
+  "url": "https://app.notion.com/321e821484b08132bcc9ef2290e366bc",
+  "status": "Operational",
+  "sector": "Trade",
+  "weight": 47196.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:split-fountain",
+  "name": "Split Fountain Renovation",
+  "url": "https://app.notion.com/321e821484b0817da905f79b60a61485",
+  "status": "Operational",
+  "sector": "Infrastructure",
+  "weight": 47196.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:arterial-township",
+  "name": "Arterial Township Development",
+  "url": "https://app.notion.com/321e821484b0810187d5cfa2a74f31f0",
+  "status": "Scaling",
+  "sector": "Real Estate",
+  "weight": 45596.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:reservoir",
+  "name": "Reservoir Fisheries",
+  "url": "https://app.notion.com/321e821484b081f6a74cd6ee2b88a08e",
+  "status": "Operational",
+  "sector": "Aquaculture",
+  "weight": 43604.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:safe-harbor",
+  "name": "Safe Harbor Inn",
+  "url": "https://app.notion.com/321e821484b081b88ac4d7cb4a1b4b0c",
+  "status": "Operational",
+  "sector": "Hospitality",
+  "weight": 37800.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:ag-shelter",
+  "name": "Agricultural Shelter Zones",
+  "url": "https://app.notion.com/321e821484b081e09660eacd14973b2f",
+  "status": "Operational",
+  "sector": "Agriculture",
+  "weight": 36600.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:snowfall",
+  "name": "Snowfall Hearthworks",
+  "url": "https://app.notion.com/3c2e821484b081f888a6e1169f9a4df4",
+  "status": "Planning",
+  "sector": "Manufacturing",
+  "weight": 30000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:ncf-suzail",
+  "name": "Northern Crown Financial - Suzail",
+  "url": "https://app.notion.com/321e821484b08109a55af30bd40fa6cb",
+  "status": "Operational",
+  "sector": "Banking",
+  "weight": 27604.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:devil-academy",
+  "name": "Devil Academy (Philosophical Faculty)",
+  "url": "https://app.notion.com/324e821484b081699a22c992b7e05649",
+  "status": "Operational",
+  "sector": "Education",
+  "weight": 24000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:clay-quarries",
+  "name": "Neverwinter Clay Quarries",
+  "url": "https://app.notion.com/321e821484b081c69bdec30dd49bc5b6",
+  "status": "Operational",
+  "sector": "Mining/Quarrying",
+  "weight": 23000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:timber",
+  "name": "Northern Crown Timber Operations",
+  "url": "https://app.notion.com/321e821484b081d99801d601f9503056",
+  "status": "Planning",
+  "sector": "Manufacturing",
+  "weight": 17400.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:crown-eight",
+  "name": "Crown of Eight Springs",
+  "url": "https://app.notion.com/34ce821484b0812f97cce7bf7af67928",
+  "status": "Under Construction",
+  "sector": "Infrastructure",
+  "weight": 14640.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:ssamt",
+  "name": "Scales & Secrets Asset Management Trust (SSAMT)",
+  "url": "https://app.notion.com/392e821484b081efb0a9d73f9b9757d7",
+  "status": "Operational",
+  "sector": "Banking",
+  "weight": 12000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:schola",
+  "name": "Schola Ducum Integrata",
+  "url": "https://app.notion.com/324e821484b081f3b801f03fc8ec343d",
+  "status": "Operational",
+  "sector": "Education",
+  "weight": 12000.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:arterial-crystal",
+  "name": "Arterial Road Crystal Network",
+  "url": "https://app.notion.com/34ce821484b081efb974fa3f64c20be8",
+  "status": "Operational",
+  "sector": "Infrastructure",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:collegium",
+  "name": "Collegium Montis Gladii",
+  "url": "https://app.notion.com/324e821484b08175ae3cc451aea28565",
+  "status": "Operational",
+  "sector": "Education",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:crownsite-re",
+  "name": "Crownsite Canal Property BG",
+  "url": "https://app.notion.com/34ce821484b081a98fa4c44ac30bf8ac",
+  "status": "Operational",
+  "sector": "Real Estate",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:crystal-gardens",
+  "name": "Crystal Gardens",
+  "url": "https://app.notion.com/34ce821484b08158a449c58b59fbc2fd",
+  "status": "Operational",
+  "sector": "Real Estate",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:gold-lending",
+  "name": "Gold Lending House",
+  "url": "https://app.notion.com/321e821484b081e7a5ecfd25ff8299dc",
+  "status": "Unconfirmed",
+  "sector": "Banking",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:lobster-king",
+  "name": "Lobster King Operations (Baen-Allied)",
+  "url": "https://app.notion.com/321e821484b081899107d6fd75176754",
+  "status": "Unconfirmed",
+  "sector": "Aquaculture",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:maritime-planned",
+  "name": "Maritime Operations (Planned)",
+  "url": "https://app.notion.com/321e821484b0816d8ca6d53a98b8ba6d",
+  "status": "Planning",
+  "sector": "Trade",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:nw-wood-canal",
+  "name": "Neverwinter Wood Canal",
+  "url": "https://app.notion.com/376e821484b081c195a1d5c3e2ceb4cb",
+  "status": "Under Construction",
+  "sector": "Infrastructure",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:orchard-chapel",
+  "name": "Orchard Chapel",
+  "url": "https://app.notion.com/34ce821484b08130aedbf6d099d79bfb",
+  "status": "Operational",
+  "sector": "Agriculture",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:sea-gate-harbor",
+  "name": "Sea Gate Harbor Authority",
+  "url": "https://app.notion.com/376e821484b0819e8c07d304487c01bb",
+  "status": "Under Construction",
+  "sector": "Infrastructure",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:sea-gate-shipyard",
+  "name": "Sea Gate Shipyard",
+  "url": "https://app.notion.com/376e821484b081db9a8ae682a583b6ee",
+  "status": "Planning",
+  "sector": "Manufacturing",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:seven-spires",
+  "name": "Seven Spires Estate",
+  "url": "https://app.notion.com/376e821484b0812188b4ced3087746f7",
+  "status": "Under Construction",
+  "sector": "Hospitality",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:veil",
+  "name": "The Veil",
+  "url": "https://app.notion.com/321e821484b081729b7cdb66323883e8",
+  "status": "Operational",
+  "sector": "Intelligence",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:thundertree",
+  "name": "Thundertree Waystation",
+  "url": "https://app.notion.com/376e821484b081088810e1d99b58f959",
+  "status": "Under Construction",
+  "sector": "Infrastructure",
+  "weight": 0.0,
+  "read": true
+ },
+ {
+  "facility_id": "fac:wd-brokerage",
+  "name": "Waterdeep Information Brokerage",
+  "url": "https://app.notion.com/321e821484b081a09fdef55820cab72b",
+  "status": "Unconfirmed",
+  "sector": "Intelligence",
+  "weight": 0.0,
+  "read": true
+ }
+]

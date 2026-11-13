@@ -1,0 +1,39 @@
+; Assets
+2026-01-01 open Assets:Treasury:Cash GP
+2026-01-01 open Assets:Treasury:Bullion GP
+2026-01-01 open Assets:NCF:Reserves GP
+2026-01-01 open Assets:NCF:Loans-Receivable GP
+2026-01-01 open Assets:Quarries:Inventory-Stone GP
+2026-01-01 open Assets:Construction:Receivables GP
+2026-01-01 open Assets:Projects:Guardians-Gate:WIP GP
+2026-01-01 open Assets:Warborn-Neverwinter:Plant GP
+2026-01-01 open Assets:NMWC:Plant GP
+
+; Liabilities
+2026-01-01 open Liabilities:NCF:Deposits GP
+2026-01-01 open Liabilities:NCF:Notes-Outstanding GP
+2026-01-01 open Liabilities:Projects:Guardians-Gate:Payables GP
+2026-01-01 open Liabilities:Construction:Payables GP
+2026-01-01 open Liabilities:Payroll:Accrued GP
+2026-01-01 open Liabilities:Debt:External GP
+
+; Equity / migration
+2026-01-01 open Equity:Migration-Suspense GP
+2026-01-01 open Equity:Retained-Earnings GP
+
+; Income
+2026-01-01 open Income:NCF:Interest GP
+2026-01-01 open Income:Quarries:Stone-Sales GP
+2026-01-01 open Income:Construction:Contract-Revenue GP
+2026-01-01 open Income:Warborn-Neverwinter:Contracts GP
+2026-01-01 open Income:NMWC:Water-Revenue GP
+
+; Expenses
+2026-01-01 open Expenses:Payroll:NCF GP
+2026-01-01 open Expenses:Payroll:Quarries GP
+2026-01-01 open Expenses:Payroll:Construction GP
+2026-01-01 open Expenses:Payroll:Warborn-Neverwinter GP
+2026-01-01 open Expenses:Payroll:NMWC GP
+2026-01-01 open Expenses:Projects:Guardians-Gate:Materials GP
+2026-01-01 open Expenses:Operations:Transport GP
+2026-01-01 open Expenses:Operations:Maintenance GP

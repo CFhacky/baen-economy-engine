@@ -1,0 +1,108 @@
+{
+  "schema": "tnp.economy.transport-research-constants/1",
+  "captured_at": "2026-09-18",
+  "purpose": "External/historical physical benchmarks. These do not override Baen-specific campaign facts.",
+  "comparators": [
+    {
+      "key": "historical.conestoga.max_cargo_tons",
+      "value": 5,
+      "unit": "short tons",
+      "authority": "UPSTREAM-ADOPTED",
+      "applicability": "ordinary historical heavy road freight comparator only",
+      "source": {
+        "title": "Covered wagons and the American frontier",
+        "publisher": "Smithsonian National Museum of American History",
+        "url": "https://americanhistory.si.edu/explore/stories/covered-wagons-and-american-frontier"
+      }
+    },
+    {
+      "key": "historical.conestoga.team_horses",
+      "value": 6,
+      "unit": "draft horses",
+      "authority": "UPSTREAM-ADOPTED",
+      "applicability": "historical Conestoga comparator only",
+      "source": {
+        "title": "Traveling on the National Road",
+        "publisher": "U.S. National Park Service",
+        "url": "https://www.nps.gov/articles/national-road-travel.htm"
+      }
+    },
+    {
+      "key": "historical.conestoga.miles_per_day",
+      "value": 15,
+      "unit": "miles/day",
+      "authority": "UPSTREAM-ADOPTED",
+      "applicability": "historical heavy freight on improved roads",
+      "source": {
+        "title": "Traveling on the National Road",
+        "publisher": "U.S. National Park Service",
+        "url": "https://www.nps.gov/articles/national-road-travel.htm"
+      }
+    },
+    {
+      "key": "medieval.large_household.normal_miles_per_day",
+      "value": 15,
+      "unit": "miles/day",
+      "authority": "UPSTREAM-ADOPTED",
+      "applicability": "medieval large travelling-household movement comparator, not freight capacity",
+      "source": {
+        "title": "The royal itinerary and roads in England under Edward I",
+        "publisher": "Cambridge University Press / Manchester University Press",
+        "url": "https://www.cambridge.org/core/books/abs/roadworks/royal-itinerary-and-roads-in-england-under-edward-i/00993425323A404FB988AD2B8F65071A"
+      }
+    },
+    {
+      "key": "animal_traction.equine_sustainable_draught_percent_body_weight_min",
+      "value": 12,
+      "unit": "percent body weight",
+      "authority": "UPSTREAM-ADOPTED",
+      "applicability": "engineering bound for sustained equine traction",
+      "source": {
+        "title": "Matching tillage implements to draught animal potential",
+        "publisher": "FAO",
+        "url": "https://www.fao.org/4/W0613T/w0613T0g.htm"
+      }
+    },
+    {
+      "key": "animal_traction.equine_sustainable_draught_percent_body_weight_max",
+      "value": 14,
+      "unit": "percent body weight",
+      "authority": "UPSTREAM-ADOPTED",
+      "applicability": "engineering bound for sustained equine traction",
+      "source": {
+        "title": "Matching tillage implements to draught animal potential",
+        "publisher": "FAO",
+        "url": "https://www.fao.org/4/W0613T/w0613T0g.htm"
+      }
+    },
+    {
+      "key": "animal_traction.single_horse_simple_cart_payload_kg_min",
+      "value": 700,
+      "unit": "kg",
+      "authority": "UPSTREAM-ADOPTED",
+      "applicability": "simple rural cart comparator, not Baen arterial heavy wagon",
+      "source": {
+        "title": "Rural transport and traction guidelines",
+        "publisher": "FAO",
+        "url": "https://www.fao.org/4/i0525e/i0525e.pdf"
+      }
+    },
+    {
+      "key": "animal_traction.single_horse_simple_cart_payload_kg_max",
+      "value": 1000,
+      "unit": "kg",
+      "authority": "UPSTREAM-ADOPTED",
+      "applicability": "simple rural cart comparator, not Baen arterial heavy wagon",
+      "source": {
+        "title": "Rural transport and traction guidelines",
+        "publisher": "FAO",
+        "url": "https://www.fao.org/4/i0525e/i0525e.pdf"
+      }
+    }
+  ],
+  "guardrails": [
+    "Baen quarry sources explicitly state 20–40 ton standard heavy-stone wagon loads. Do not overwrite that campaign fact with historical Conestoga payload.",
+    "Because 20–40 tons materially exceeds ordinary historical horse-wagon benchmarks, Baen quarry-wagon team size, running gear, grade limits and sustained speed must be recovered or engineered explicitly before capacity calculation.",
+    "External comparators may validate or constrain a model; they do not create a current fleet count."
+  ]
+}

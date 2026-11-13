@@ -1,0 +1,88 @@
+{
+  "schema": "tnp.economy.resource-extraction-body-findings/1",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "source_batch": "recovery/SOURCE_REVIEW_BATCH_003_2026-09-18.json",
+  "live_operating_flows": {
+    "western_limestone": {
+      "tons_per_month": 12000,
+      "employees": 25,
+      "revenue_gp_month": 6000,
+      "cost_gp_month": 4800
+    },
+    "treasury_stone": {
+      "tons_per_month": 8000,
+      "employees": 55,
+      "revenue_gp_month": 7917,
+      "cost_gp_month": 4750
+    },
+    "western_sandstone": {
+      "tons_per_month": 6000,
+      "employees": 18,
+      "revenue_gp_month": 4000,
+      "cost_gp_month": 3200
+    },
+    "star_metal_bauxite": {
+      "ore_tons_per_month": 800,
+      "approx_finished_aluminum_tons_per_month": 150,
+      "employees": 35,
+      "revenue_gp_month": 0,
+      "cost_gp_month": 3500
+    },
+    "neverwinter_clay": {
+      "tons_per_month": 2000,
+      "employees": 12,
+      "revenue_gp_month": 0,
+      "cost_gp_month": 1500
+    },
+    "azurite": {
+      "tons_per_month": 200,
+      "employees": 20,
+      "revenue_gp_month": 5000,
+      "cost_gp_month": 3000
+    },
+    "brickworks": {
+      "bricks_per_month": 75000,
+      "pressmark_blocks_per_month_approx": 72000,
+      "employees": 30,
+      "revenue_gp_month": 3333,
+      "cost_gp_month": 2233
+    }
+  },
+  "inventory_result": {
+    "quantified_on_hand_stock_found": false,
+    "qualitative_stockpile_claim": "One conflicting consolidation states aluminum ingots, vaultstone, azurite and a three-month construction-stone supply.",
+    "treatment": "DO_NOT_CONVERT_TO_QUANTITIES",
+    "remaining_blocker": "Opening physical inventories by material/location remain missing."
+  },
+  "transport_asset_result": {
+    "conflicting_consolidation_claims": [
+      "2 dedicated stone barges",
+      "50+ heavy stone wagons"
+    ],
+    "treatment": "QUARANTINED_NOT_OWNED_FLEET_AUTHORITY",
+    "reason": "Same consolidation materially conflicts with live quarry workforce/production authority; no independent owned-fleet confirmation in this batch.",
+    "timber_body": "Barge capacity is explicitly a future acquire/build project for timber operations."
+  },
+  "machinery_corroboration": {
+    "Stonebearer_total_programme": 10,
+    "brickworks_allocated": 4,
+    "units": [
+      "BW-1",
+      "BW-2",
+      "BW-3",
+      "BW-4"
+    ],
+    "treatment": "CORROBORATES_EXISTING_USER_RATIFIED_ALLOCATION"
+  },
+  "timber_gap": {
+    "owned_scaled_timber_supply": false,
+    "dawnwood_seed_workers": 8,
+    "commercial_entity_status": "planning",
+    "barge_project": "future",
+    "treatment": "CURRENT_SUPPLY_GAP"
+  },
+  "conclusion": "Production-flow evidence is substantially better after body review, but the inventory driver remains blocked because flow/capacity is not stock-on-hand.",
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

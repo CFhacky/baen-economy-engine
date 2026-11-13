@@ -1,0 +1,1706 @@
+{
+  "schema": "tnp.economy.empire-close-recovery/1",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "canonical": false,
+  "campaign_time_advanced": false,
+  "notion_writes": 0,
+  "rules": {
+    "actual_authorities": [
+      "USER-RULED",
+      "SOURCE-DERIVED",
+      "UPSTREAM-ADOPTED"
+    ],
+    "rejected_from_actual": [
+      "MODEL-PROPOSED",
+      "UNRESOLVED"
+    ],
+    "note": "Plausible is not an authority class. Missing values remain missing until an authorized resolution method succeeds."
+  },
+  "phases": [
+    {
+      "id": 1,
+      "name": "Source Recovery Close",
+      "status": "COMPLETE",
+      "exit": "Every required field classified as accepted authority or exact unresolved."
+    },
+    {
+      "id": 2,
+      "name": "External Constants & Engineering Research",
+      "status": "IN_PROGRESS",
+      "exit": "Research relationships sourced/versioned after New Path Engine → Library corpus → external-source routing; no campaign quantities invented."
+    },
+    {
+      "id": 3,
+      "name": "Residual State Resolution",
+      "status": "PENDING",
+      "exit": "Only truly latent state is rolled-and-bound or user-ruled."
+    },
+    {
+      "id": 4,
+      "name": "Engine Implementation",
+      "status": "IN_PROGRESS",
+      "exit": "Actual lane rejects unsupported values and exposes receipts."
+    },
+    {
+      "id": 5,
+      "name": "Mobile Operator",
+      "status": "IN_PROGRESS",
+      "exit": "Action queue says what resolves each blocker and whether user action is needed."
+    },
+    {
+      "id": 6,
+      "name": "Day-7 Close",
+      "status": "PENDING",
+      "exit": "Accepted state/conflicts/unknowns/audit exceptions emitted without advancing time."
+    },
+    {
+      "id": 7,
+      "name": "Readiness Gate",
+      "status": "PENDING",
+      "exit": "First physically defensible canonical month is executable."
+    }
+  ],
+  "lanes": {
+    "heavy_machinery": {
+      "status": "RATIFIED_HISTORY_TECHNICAL_GAPS",
+      "facts": [
+        {
+          "key": "brickworks.stonebearer_allocated_units",
+          "value": 4,
+          "unit": "vehicles",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Brickworks / current Notion",
+          "note": "Specific BW-1 through BW-4 allocation; not empire-wide fleet."
+        },
+        {
+          "key": "stonebearer.payload",
+          "value": 15,
+          "unit": "short tons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Brickworks"
+        },
+        {
+          "key": "stonebearer.loaded_speed",
+          "value": 4,
+          "unit": "mph",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Brickworks"
+        },
+        {
+          "key": "stonebearer.empty_speed",
+          "value": 6,
+          "unit": "mph",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Brickworks"
+        },
+        {
+          "key": "earthmover.road_jeep_configuration",
+          "value": true,
+          "authority": "USER-RULED",
+          "source": "User ruling 2026-09-18"
+        },
+        {
+          "key": "earthmover.external_sales",
+          "value": false,
+          "authority": "USER-RULED",
+          "source": "User ruling 2026-09-18"
+        },
+        {
+          "key": "neverwinter.stonebearer_shared_fleet_units",
+          "value": 4,
+          "unit": "Stonebearers",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Northern Industrial Yards + Baen Brickworks",
+          "note": "Northern Industrial Yards' Stonebearer Maintenance Depot explicitly lists 4 heavy haulers and says the fleet is shared with Brickworks. This reconciles to the four BW-1–BW-4 Brickworks Stonebearers; do not double-count as eight."
+        },
+        {
+          "key": "heavy_machinery.production_parent",
+          "value": "Gauntlgrym Tools Partnership",
+          "authority": "SOURCE-DERIVED",
+          "source": "Gauntlgrym Tools Partnership; Baen Light Vehicle Program",
+          "note": "The light-vehicle program explicitly places new vehicle assembly beside the existing Stonebearer line under Gauntlgrym Tools Partnership. This establishes a real heavy-machine production line rather than a hypothetical future factory."
+        },
+        {
+          "key": "gauntlgrym_tools.operational_since",
+          "value": "Kythorn 1494 DR",
+          "authority": "SOURCE-DERIVED",
+          "source": "Gauntlgrym Tools Partnership",
+          "note": "The 50/50 JV is operational by Kythorn 1494 and supplies forge infrastructure, senior smiths, manufacturing refinement, testing and quality discipline."
+        },
+        {
+          "key": "heavy_machinery.stonebearer_line_exists",
+          "value": true,
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Light Vehicle Program",
+          "note": "The source explicitly says Roadrider assembly is a new line beside the Stonebearer line, sharing fixtures where geometry allows."
+        },
+        {
+          "key": "forgedeep.heavy_machinery_workshops_exist",
+          "value": true,
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep",
+          "note": "Forgedeep's Industrial Level explicitly contains heavy machinery workshops."
+        },
+        {
+          "key": "workshop7.gauntlgrym_forgedeep_span",
+          "value": true,
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep",
+          "note": "The pre-campaign Gauntlgrym Tool Partnership event states Workshop 7 spans Gauntlgrym and extends beneath Forgedeep; this supports R&D/precision integration but does not by itself define mass-production throughput."
+        },
+        {
+          "key": "heavy_machinery.1495_construction_engine",
+          "value": true,
+          "authority": "SOURCE-DERIVED",
+          "source": "Arik Bridge Plan — Early 1495 → Uktar 1498 DR",
+          "note": "The 1495 bridge explicitly names the Ironmaw/Stonebearer/Groundshaper fleet as the year's mechanical construction engine for early canal work, Longsaddle terraforming and Athenaeum groundwork."
+        },
+        {
+          "key": "heavy_machinery.production_active_by_day7_hammer_1495",
+          "value": true,
+          "authority": "USER-RULED",
+          "source": "User ruling 2026-09-18",
+          "note": "The Ironmaw/Stonebearer/Groundshaper production system is already in production by 1495. Exact initial commissioning date and monthly production rate remain unresolved."
+        },
+        {
+          "key": "brickworks.stonebearer_chassis_batch_cost_gp",
+          "value": 18000,
+          "unit": "gp for four chassis",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad"
+        },
+        {
+          "key": "brickworks.stonebearer_core_batch_cost_gp",
+          "value": 8000,
+          "unit": "gp for four cores",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad"
+        },
+        {
+          "key": "brickworks.stonebearer_erata_batch_cost_gp",
+          "value": 6000,
+          "unit": "gp for four integrations",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad"
+        },
+        {
+          "key": "brickworks.stonebearer_equipped_batch_cost_gp",
+          "value": 32000,
+          "unit": "gp for four equipped vehicles",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "note": "Acquisition/installation cost anchor; not a factory cost ledger or current cash expenditure."
+        },
+        {
+          "key": "brickworks.stonebearer_drivers",
+          "value": 12,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "note": "Three eight-hour shifts. Do not infer three times the documented daily trip count."
+        },
+        {
+          "key": "brickworks.stonebearer_mechanics",
+          "value": 2,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad"
+        },
+        {
+          "key": "brickworks.charging_bays",
+          "value": 5,
+          "unit": "bays",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "note": "Four assigned vehicles plus one visiting bay; not five vehicles."
+        },
+        {
+          "key": "brickworks.stonebearer_recharge_minutes",
+          "value": 90,
+          "unit": "minutes empty to full",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad"
+        },
+        {
+          "key": "stonebearer.dump_bed_volume",
+          "value": 15,
+          "unit": "cubic yards",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "note": "Volume ceiling and 30000 lb mass ceiling both apply; neither replaces the other."
+        },
+        {
+          "key": "stonebearer.design_lineage",
+          "value": "Longsaddle Valley terraforming fleet",
+          "unit": "source statement",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "note": "The adaptation has no explicit dated acceptance record in this section."
+        },
+        {
+          "key": "empire.heavy_machinery.stonebearer.current_units",
+          "value": 10,
+          "unit": "vehicles",
+          "authority": "USER-RULED",
+          "source": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+          "origin_authority": "MODEL-PROPOSED"
+        },
+        {
+          "key": "empire.heavy_machinery.groundshaper.current_units",
+          "value": 5,
+          "unit": "vehicles",
+          "authority": "USER-RULED",
+          "source": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+          "origin_authority": "MODEL-PROPOSED"
+        },
+        {
+          "key": "empire.heavy_machinery.ironmaw.current_units",
+          "value": 5,
+          "unit": "vehicles",
+          "authority": "USER-RULED",
+          "source": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+          "origin_authority": "MODEL-PROPOSED"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "heavy_machinery.ironmaw_groundshaper_performance",
+          "method": "RECOVER_MACHINE_DOCUMENT_OR_TECHNICAL_DESIGN",
+          "reason": "Stonebearer haul performance is sourced; equivalent Ironmaw/Groundshaper work-rate specifications have not yet been recovered. If absent from the actual machine document, they must be designed once under the evidence-first protocol."
+        },
+        {
+          "key": "heavy_machinery.factory_bom_workforce_and_cost",
+          "method": "ORIGINAL_MACHINE_DOCUMENT_THEN_ONE_RATIFIED_PROGRAMME",
+          "reason": "32000 gp for four equipped Stonebearers is sourced. Factory labor hours, material masses, yield, Ironmaw/Groundshaper costs, and accepted monthly output are not yet recovered."
+        },
+        {
+          "key": "heavy_machinery.road_configuration_performance",
+          "method": "SPECIFY_UNDER_EXISTING_USER_RULING",
+          "reason": "Road/Jeep configuration is USER-RULED. Separate future Roadrider speed, payload and production rates cannot supply its unrecorded performance."
+        },
+        {
+          "key": "heavy_machinery.staff_and_historical_settlement",
+          "method": "RECONCILE_APPROVED_ESTABLISHMENT",
+          "reason": "Approved positions are not additive employees; historical funding, cash settlement and spares opening stock remain unknown."
+        }
+      ],
+      "calculated": [
+        {
+          "key": "stonebearer.equipped_unit_cost_gp",
+          "value": 8000,
+          "unit": "gp per equipped vehicle",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "formula": "(18000 + 8000 + 6000) / 4",
+          "derivation_method": "ARITHMETIC"
+        }
+      ],
+      "source_recovery": {
+        "checked_on": "2026-09-18",
+        "original_machine_document_recovered": false,
+        "manufacturing_existence": "Existing Stonebearer line explicitly named by the Light Vehicle Program; Gauntlgrym JV provides facility/smiths/testing. Forgedeep workshops also explicitly exist.",
+        "negative_search_scope": "Live Notion Ironmaw/Groundshaper/Heavy Machinery searches; private campaign-development-vault main tree and indexed code search; Library exact-title and content searches. No claim of corpus-wide absence.",
+        "standalone_new_factory_required": false,
+        "dates": [
+          {
+            "event": "Gauntlgrym Tools Partnership operational",
+            "date": "Kythorn 1494",
+            "machine_commissioning_date": false
+          },
+          {
+            "event": "Brickworks business operational",
+            "date": "Ches 1494",
+            "machine_commissioning_date": false
+          },
+          {
+            "event": "Roadrider tooling starts",
+            "date": "mid-1495",
+            "available_day7_hammer_1495": false
+          },
+          {
+            "event": "Roadrider chassis proof after bound seven-month research",
+            "date": "Hammer–Alturiak 1496",
+            "available_day7_hammer_1495": false
+          }
+        ],
+        "source_urls": [
+          "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "https://app.notion.com/p/397e821484b0813cb746ecbef4e0c773",
+          "https://app.notion.com/p/321e821484b08116ac1bcc07c68ff15f",
+          "https://app.notion.com/p/2fbe821484b081a1997ed3b747e8c556"
+        ]
+      },
+      "ratified_programme": {
+        "schema": "tnp.economy.machinery-programme/1",
+        "authority": "USER-RULED",
+        "origin_authority": "MODEL-PROPOSED",
+        "approval": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+        "campaign_boundary": "Day 7 Hammer 1495 DR",
+        "primary_factory": "Gauntlgrym Tools Partnership",
+        "support_sites": {
+          "Forgedeep / Workshop 7": "precision, development, repairs, specialist support",
+          "Neverwinter": "existing four-machine depot, charging and dispatch"
+        },
+        "commissioning": "Kythorn 1494; retrospective approved history, not recovered first acceptance date",
+        "production_history": [
+          {
+            "month": "Flamerule 1494",
+            "Stonebearer": 1,
+            "Groundshaper": 1,
+            "Ironmaw": 0
+          },
+          {
+            "month": "Eleasis 1494",
+            "Stonebearer": 1,
+            "Groundshaper": 0,
+            "Ironmaw": 1
+          },
+          {
+            "month": "Eleint 1494",
+            "Stonebearer": 2,
+            "Groundshaper": 1,
+            "Ironmaw": 1
+          },
+          {
+            "month": "Marpenoth 1494",
+            "Stonebearer": 2,
+            "Groundshaper": 1,
+            "Ironmaw": 1
+          },
+          {
+            "month": "Uktar 1494",
+            "Stonebearer": 2,
+            "Groundshaper": 1,
+            "Ironmaw": 1
+          },
+          {
+            "month": "Nightal 1494",
+            "Stonebearer": 2,
+            "Groundshaper": 1,
+            "Ironmaw": 1
+          }
+        ],
+        "earlier_unlisted_production": 0,
+        "retirements_and_disposals": 0,
+        "day7_fleet": {
+          "Stonebearer": 10,
+          "Groundshaper": 5,
+          "Ironmaw": 5
+        },
+        "regular_monthly_capacity": {
+          "Stonebearer": 2,
+          "Groundshaper": 1,
+          "Ironmaw": 1
+        },
+        "automatic_delivery": false,
+        "productive_hours_per_worker_month": 160,
+        "factory_positions": {
+          "assembly_fitters": 12,
+          "kit_fabricators": 8,
+          "integration": 2,
+          "acceptance": 2,
+          "support": 4
+        },
+        "hours_per_unit": {
+          "Stonebearer": {
+            "assembly": 320,
+            "kit": 240,
+            "integration": 80,
+            "acceptance": 64
+          },
+          "Groundshaper": {
+            "assembly": 640,
+            "kit": 400,
+            "integration": 80,
+            "acceptance": 64
+          },
+          "Ironmaw": {
+            "assembly": 640,
+            "kit": 400,
+            "integration": 80,
+            "acceptance": 64
+          }
+        },
+        "monthly_wages_gp": {
+          "assembly_fitter": 30,
+          "kit_fabricator": 45,
+          "integration": 100,
+          "acceptance": 60,
+          "support": 15
+        },
+        "factory_wages_total_gp": 1100,
+        "labor_included_in_equipment_allowance": true,
+        "component_bom": {
+          "per_machine": {
+            "chassis_drive_kit": 1,
+            "echo_core": 1,
+            "erata_integration": 1,
+            "service_kit": 1,
+            "acceptance_record": 1
+          },
+          "attachments": {
+            "Stonebearer": "dump bed and hydraulic package",
+            "Groundshaper": "grading/shaping package",
+            "Ironmaw": "excavation/cutting package"
+          },
+          "raw_material_masses": null,
+          "material_losses": null,
+          "energy_consumption": null,
+          "note": "Stonebearer architecture sourced; Groundshaper/Ironmaw common architecture adopted by approval, not recovered specifications."
+        },
+        "costs": {
+          "equipped_unit_gp": {
+            "Stonebearer": 8000,
+            "Groundshaper": 10000,
+            "Ironmaw": 12500
+          },
+          "Stonebearer_cost_source": "https://app.notion.com/p/321e821484b0816c87fbf0fee22835ad",
+          "accepted_equipment_allowance_gp": 192500,
+          "tooling_qualification_allowance_gp": 30000,
+          "spares_budget_gp": 15000,
+          "historical_programme_envelope_gp": 237500,
+          "regular_monthly_equipment_value_gp": 38500,
+          "historical_cash_settlement": null,
+          "day7_cash_debit_gp": 0,
+          "spares_opening_inventory": null
+        },
+        "allocation": {
+          "Neverwinter_Brickworks": {
+            "Stonebearer": 4,
+            "Groundshaper": 0,
+            "Ironmaw": 0
+          },
+          "construction_pool": {
+            "Stonebearer": 6,
+            "Groundshaper": 4,
+            "Ironmaw": 4
+          },
+          "maintenance_proving_reserve": {
+            "Stonebearer": 0,
+            "Groundshaper": 1,
+            "Ironmaw": 1
+          }
+        },
+        "staffing": {
+          "existing_brickworks_drivers": 12,
+          "existing_brickworks_mechanics": 2,
+          "other_fleet_mechanic_positions": 8,
+          "field_pool_primary_operator_positions": 14,
+          "headcount_addition": null,
+          "note": "Establishments require reconciliation to named existing staff; not additive employment."
+        },
+        "acceptance": [
+          "serial and chassis identity",
+          "core/integration and workshop record",
+          "drive, steering, braking and control isolation",
+          "attachment operation",
+          "Stonebearer trials within 30000 lb and 15 cubic yards",
+          "road-mode conversion and documented transport trial",
+          "defect correction and retest before admission"
+        ],
+        "ownership": "Baen title on accepted internal delivery; partnership 50/50 ownership is not title to delivered machines",
+        "dispatch_rule": "One assignment per machine per time interval; transport removes construction hours",
+        "external_sales": false,
+        "unresolved": [
+          "Ironmaw/Groundshaper rated performance",
+          "road-mode performance",
+          "raw-material BOM, yield and consumables",
+          "historical funding and settlement",
+          "named workforce reconciliation",
+          "spares opening stock"
+        ],
+        "crownworks_authorized": false,
+        "future_roadrider_backdated": false,
+        "canonical_month_authorized": false,
+        "campaign_time_advanced": false,
+        "notion_writes": 0
+      },
+      "resolved_items": [
+        {
+          "key": "empire.heavy_machinery.current_roster_outside_neverwinter",
+          "method": "BOUNDED_LATENT_STATE_AFTER_PRODUCTION_HISTORY_RECOVERY",
+          "reason": "The shared Neverwinter Stonebearer fleet is now fixed at four, but no source gives empire-wide Ironmaw/Stonebearer/Groundshaper totals. A physical count alone cannot produce an unspecified hidden fact; recover production history first, then precommit a bounded generation method for only the residual fleet.",
+          "resolution": "USER-RULED programme approved 2026-09-18"
+        },
+        {
+          "key": "empire.heavy_machinery.current_roster",
+          "method": "WORKLOAD_BACKSOLVE_THEN_BOUND_RESIDUAL",
+          "reason": "The sources prove an operating 1495 fleet and four named/shared Stonebearers, but never state the empire-wide Ironmaw/Stonebearer/Groundshaper count. Recover project workload and machine performance first; only residual unrecorded fleet state may be generated.",
+          "resolution": "USER-RULED programme approved 2026-09-18"
+        },
+        {
+          "key": "empire.heavy_machinery.current_build_rate",
+          "method": "DERIVE_FROM_RATIFIED_FLEET_AND_PRODUCTION_WINDOW",
+          "reason": "An existing Stonebearer production line is source-established, but no monthly Ironmaw/Stonebearer/Groundshaper output rate has been recovered. After current fleet requirement and earliest production window are bounded, derive the minimum/credible ramp rather than inventing a rate.",
+          "resolution": "USER-RULED programme approved 2026-09-18"
+        },
+        {
+          "key": "heavy_machinery.first_acceptance_date",
+          "method": "ORIGINAL_MACHINE_DOCUMENT_OR_RATIFIED_RETROSPECTIVE_HISTORY",
+          "reason": "Neither the partnership opening nor Brickworks opening date dates its machinery. Longsaddle mixes early-1495 and Nightal-1495 state; later excavation cannot set a Day-7 fleet.",
+          "resolution": "USER-RULED programme approved 2026-09-18"
+        }
+      ]
+    },
+    "conventional_freight": {
+      "status": "PARTIAL_RECOVERED",
+      "facts": [
+        {
+          "key": "quarry_network.heavy_stone_wagons_min",
+          "value": 50,
+          "unit": "wagons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network",
+          "note": "Source says 50+ heavy stone wagons."
+        },
+        {
+          "key": "quarry_network.standard_wagon_load_min",
+          "value": 20,
+          "unit": "tons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network"
+        },
+        {
+          "key": "quarry_network.standard_wagon_load_max",
+          "value": 40,
+          "unit": "tons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network"
+        },
+        {
+          "key": "resource_extraction.specialized_ore_wagons_min",
+          "value": 50,
+          "unit": "wagons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Resource Extraction Operations",
+          "note": "Potential overlap with quarry-network 50+ wagon statement is unresolved."
+        },
+        {
+          "key": "western_limestone.dedicated_stone_barges",
+          "value": 2,
+          "unit": "barges",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network",
+          "note": "Two barges are operationally dedicated to Western Limestone. USER-RULED boundary: dedicated service is not evidence of Baen legal ownership."
+        },
+        {
+          "key": "western_limestone.luskan_frequency",
+          "value": "weekly",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network"
+        },
+        {
+          "key": "western_limestone.neverwinter_frequency",
+          "value": "monthly",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network"
+        },
+        {
+          "key": "western_limestone.barge_capacity_status",
+          "value": "TWO_BARGES_CONFIRMED_CAPACITY_NOT_IDENTIFIED",
+          "authority": "SOURCE-DERIVED",
+          "source": "Baen Empire Complete Quarry Network",
+          "note": "Do not assume these two western-quarry barges are 100-ton Hunding standard barges; source does not identify their class."
+        },
+        {
+          "key": "nrtc.current_wagon_count",
+          "value": 4,
+          "unit": "wagons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Road Trading Company — Business Record",
+          "note": "Affiliated commercial capacity: Shi'van holds 25%; do not classify as wholly Empire-owned."
+        },
+        {
+          "key": "nrtc.neverwinter_runs_per_month_min",
+          "value": 2,
+          "unit": "runs/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Road Trading Company — Business Record"
+        },
+        {
+          "key": "nrtc.neverwinter_runs_per_month_max",
+          "value": 3,
+          "unit": "runs/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Road Trading Company — Business Record"
+        },
+        {
+          "key": "nrtc.drivers_per_typical_run",
+          "value": 2,
+          "unit": "drivers",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Road Trading Company — Business Record"
+        },
+        {
+          "key": "nrtc.contract_guards_per_wagon_neverwinter_corridor",
+          "value": 2,
+          "unit": "guards/wagon",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Road Trading Company — Business Record"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "freight.wagon_sets_overlap",
+          "method": "RECONCILE",
+          "reason": "Cannot add 50+ heavy stone wagons and 50+ specialized ore wagons until source overlap is established."
+        },
+        {
+          "key": "freight.empire_total_wagons",
+          "method": "RECOVER_PHYSICAL_COUNT",
+          "reason": "Other construction/caravan fleets remain unenumerated."
+        },
+        {
+          "key": "freight.draft_animals_and_teamsters",
+          "method": "RECOVER",
+          "reason": "No consolidated current register yet."
+        }
+      ],
+      "research_constants_ref": "recovery/TRANSPORT_RESEARCH_CONSTANTS_2026-09-18.json"
+    },
+    "rail": {
+      "status": "CURRENT_TRUNK_ZERO_FUTURE_DESIGN_KNOWN",
+      "facts": [
+        {
+          "key": "deep_road.day7_hammer_operational",
+          "value": false,
+          "authority": "SOURCE-DERIVED",
+          "source": "Deep Road Network Construction / current Notion",
+          "note": "Survey/design begin Alturiak 1495; Phase 1 ground-break Tarsakh 1495, after Day 7 Hammer."
+        }
+      ],
+      "unresolved": []
+    },
+    "canal_waterway": {
+      "status": "PARTIAL_RECOVERED",
+      "facts": [
+        {
+          "key": "hunding.phase1.western_network",
+          "value": "operational",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System",
+          "note": "Current canonical update ~Hammer–Alturiak 1495."
+        },
+        {
+          "key": "hunding.phase2.progress",
+          "value": 30,
+          "unit": "percent",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.phase2.stations_1_3",
+          "value": "operational",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.cargo_tons",
+          "value": 100,
+          "unit": "tons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.length_ft",
+          "value": 80,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.beam_ft",
+          "value": 15,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.loaded_draft_ft",
+          "value": 6,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.crew",
+          "value": 4,
+          "unit": "crew",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.standard_canal_barge.towed_speed_mph",
+          "value": 3,
+          "unit": "mph",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.heavy_ore_carrier.cargo_tons",
+          "value": 150,
+          "unit": "tons",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.heavy_ore_carrier.crew",
+          "value": 6,
+          "unit": "crew",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.lock.standard_transit_minutes_min",
+          "value": 25,
+          "unit": "minutes",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "hunding.lock.standard_transit_minutes_max",
+          "value": 30,
+          "unit": "minutes",
+          "authority": "SOURCE-DERIVED",
+          "source": "Hunding Canal — Baen Continental Waterway System"
+        },
+        {
+          "key": "empire.owned_barge_fleet_explicitly_established",
+          "value": false,
+          "authority": "USER-RULED",
+          "source": "User ruling 2026-09-18",
+          "note": "No Baen-owned barge fleet has been established in campaign canon. Existing dedicated or planned barges must not be converted into owned fleet assets without a separate title/acquisition fact."
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "hunding.current_barge_fleet",
+          "method": "SEPARATE_OWNERSHIP_FROM_CONTRACTED_DEDICATED_CAPACITY",
+          "reason": "No Baen-owned fleet is currently established. Source mentions dedicated Western Limestone barges and standard Hunding vessel classes, but legal ownership and consolidated available fleet remain unresolved."
+        },
+        {
+          "key": "hunding.current_bulk_capacity",
+          "method": "CALCULATE_AFTER_RECOVERY",
+          "reason": "Requires actual fleet, lock/lift cycles, berths, and duty cycle."
+        }
+      ]
+    },
+    "food": {
+      "status": "EXISTING_AGRICULTURE_CANON_BOUND_ACTUAL_OUTPUT_STILL_UNKNOWN",
+      "facts": [
+        {
+          "key": "blacklake.pool_count",
+          "value": 7,
+          "unit": "pools",
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "blacklake.employees",
+          "value": 15,
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "blacklake.monthly_revenue_gp",
+          "value": 7500,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "blacklake.monthly_cost_gp",
+          "value": 5850,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "blacklake.output_classes",
+          "value": [
+            "fish",
+            "freshwater shellfish",
+            "aquatic plants"
+          ],
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "aquaculture_network.employees",
+          "value": 55,
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "aquaculture_network.monthly_revenue_gp",
+          "value": 25000,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Blacklake Aquaculture"
+        },
+        {
+          "key": "agricultural_shelters.employees",
+          "value": 8,
+          "authority": "SOURCE-DERIVED",
+          "source": "Agricultural Shelter Zones"
+        },
+        {
+          "key": "agricultural_shelters.monthly_revenue_gp",
+          "value": 1500,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Agricultural Shelter Zones"
+        },
+        {
+          "key": "agricultural_shelters.confirmed_outputs",
+          "value": [
+            "greenhouse produce",
+            "tomatoes",
+            "year-round tomatoes"
+          ],
+          "authority": "SOURCE-DERIVED",
+          "source": "agriculture-canon-v1 / Agricultural Shelter Zones"
+        },
+        {
+          "key": "agricultural_shelters.tomatoes_confirmed_planted",
+          "value": true,
+          "authority": "SOURCE-DERIVED",
+          "source": "agriculture-canon-v1"
+        },
+        {
+          "key": "converted_quarry.confirmed_species",
+          "value": [
+            "Tilapia"
+          ],
+          "authority": "SOURCE-DERIVED",
+          "source": "agriculture-canon-v1 / Converted Quarry"
+        },
+        {
+          "key": "reservoir_fisheries.confirmed_outputs",
+          "value": [
+            "fish",
+            "trout",
+            "salmon"
+          ],
+          "authority": "SOURCE-DERIVED",
+          "source": "agriculture-canon-v1 / Reservoir Fisheries"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "food.opening_inventories_by_site_commodity",
+          "method": "PHYSICAL_COUNT_OR_PERPETUAL_INVENTORY_RECONSTRUCTION",
+          "reason": "Existing agriculture canon deliberately leaves opening inventories unresolved."
+        },
+        {
+          "key": "blacklake.species_allocation_within_7_pools",
+          "method": "TARGETED_SURVEY_OR_SESSION_CONFIRMATION",
+          "reason": "Blacklake confirms 7 pools and output classes; species/volumes are explicitly unresolved. Generic technical species list is design reference only."
+        },
+        {
+          "key": "blacklake.pool_geometry_and_biomass",
+          "method": "TARGETED_PHYSICAL_SURVEY",
+          "reason": "Operating page does not establish numeric dimensions, cohorts or biomass."
+        },
+        {
+          "key": "agricultural_shelters.baseline_physical_yield_and_acreage",
+          "method": "TARGETED_PHYSICAL_SURVEY",
+          "reason": "Tomatoes/greenhouse produce are confirmed, but baseline yield and acreage remain null in current agriculture canon."
+        },
+        {
+          "key": "food.storage_spoilage_and_opening_stock",
+          "method": "PHYSICAL_COUNT_AND_STORAGE_SURVEY",
+          "reason": "Current agriculture canon explicitly preserves storage/spoilage/opening stock as unresolved."
+        },
+        {
+          "key": "food.population_ration_requirements",
+          "method": "DEMOGRAPHIC_MODEL_AFTER_POPULATION",
+          "reason": "Requires settlement populations and a ratified food-basket model."
+        }
+      ],
+      "cautions": [
+        {
+          "key": "technical_species_design",
+          "status": "TECHNICAL_DESIGN_ONLY",
+          "note": "15 named species and their technical stocking/yield ranges remain available for planning but cannot be promoted to Day-7 actual species allocation."
+        },
+        {
+          "key": "pond_topology",
+          "status": "CONFLICT",
+          "note": "Blacklake Registry has 7 pools; later/technical NMWC material has 10 ponds. Existing agriculture canon blocks double counting."
+        },
+        {
+          "key": "shelter_output",
+          "status": "CURRENT_SOURCE_BOUNDARY",
+          "note": "Shelters are greenhouse produce/tomatoes at Day 7; do not backfill later grain/feed scenarios into current actual."
+        }
+      ],
+      "existing_runtime": {
+        "fixture": "fixtures/agriculture/agriculture-canon-v1.json",
+        "loader": "src/baen_economy/agriculture_source.py",
+        "safety": "Strict fail-closed source loader; current actual frozen at Day 7 Hammer 1495 DR; technical designs cannot execute as current actual.",
+        "current_actual_date": "Day 7 Hammer 1495 DR, midday Hell-cycle",
+        "current_month_advance_authorized": false
+      },
+      "targeted_survey_requirements": [
+        {
+          "owner": "Mila Dunwright",
+          "site": "Blacklake",
+          "source": "https://app.notion.com/p/321e821484b08112ab9ecd6f5eba18e8",
+          "fields": [
+            "pool ID and measured area/depth",
+            "species by pool",
+            "cohort count and mean weight",
+            "opening harvested stock",
+            "feed stock and ration",
+            "harvest dates and losses",
+            "storage capacity and preservation"
+          ],
+          "status": "REQUIRED_NOT_PERFORMED"
+        },
+        {
+          "owner": "Primrose Greenthistle",
+          "site": "Agricultural Shelter Zones",
+          "source": "https://app.notion.com/p/321e821484b081e09660eacd14973b2f",
+          "fields": [
+            "site IDs and growing area",
+            "planted crop and stage",
+            "measured baseline yield",
+            "opening produce by batch",
+            "seed and input stocks",
+            "preservation/storage capacity",
+            "spoilage history"
+          ],
+          "status": "REQUIRED_NOT_PERFORMED"
+        }
+      ],
+      "survey_guard": "A required in-world measurement is not completed by asking an NPC in prose. Unauthored state requires a bounded sourced generation procedure or user ruling; no fictional survey result is inserted."
+    },
+    "forgedeep": {
+      "status": "CURRENT_POPULATION_USER_RULED",
+      "facts": [
+        {
+          "key": "forgedeep.population_eleint_1494",
+          "value": 450,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep City Development",
+          "note": "Explicitly Eleint 1494 historical baseline."
+        },
+        {
+          "key": "forgedeep.staged_next_visit_band_min",
+          "value": 1400,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep City Development",
+          "note": "Source band adopted as Day-7 envelope by user approval 2026-09-18."
+        },
+        {
+          "key": "forgedeep.staged_next_visit_band_max",
+          "value": 1600,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep City Development"
+        },
+        {
+          "key": "forgedeep.year1_target",
+          "value": 2000,
+          "unit": "people",
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep City Development"
+        },
+        {
+          "key": "forgedeep.city_development_employees",
+          "value": 30,
+          "authority": "SOURCE-DERIVED",
+          "source": "Forgedeep City Development"
+        },
+        {
+          "key": "forgedeep.current_population_day7_hammer",
+          "value": 1599,
+          "unit": "residents",
+          "authority": "USER-RULED",
+          "source": "Chad, 2026-09-18: Approved overall. Prior chat machinery programme and bounded population procedure ratified.",
+          "provenance_method": "APPROVED_BOUNDED_DRAW",
+          "receipt": "recovery/FORGEDEEP_POPULATION_RESOLUTION_2026-09-18.json",
+          "note": "Total settlement population; no civilian/military/age/occupation partition inferred"
+        }
+      ],
+      "resolved_items": [
+        {
+          "key": "forgedeep.current_population_day7_hammer",
+          "method": "ROLL_AFTER_INTERPRETATION_LOCK",
+          "reason": "Live authority and July audit explicitly preserve 450 as historical and current population as pending; staged 1,400–1,600 band is available for bounded resolution."
+        }
+      ],
+      "unresolved": [],
+      "resolution_receipt": {
+        "schema": "tnp.economy.bounded-state-resolution/1",
+        "authority": "USER-RULED",
+        "approval": "Chad: Approved overall. 2026-09-18; approves prior packet uniform integer 1400–1600, one draw without reroll",
+        "campaign_boundary": "Day 7 Hammer 1495 DR",
+        "method": "uniform integer via secrets.randbelow(201) + 1400",
+        "minimum": 1400,
+        "maximum": 1600,
+        "offset": 199,
+        "value": 1599,
+        "draw_count": 1,
+        "recorded_at_utc": "2026-09-18T21:58:23.013072+00:00",
+        "campaign_time_advanced": false,
+        "notion_writes": 0,
+        "scope": "Total settlement population; no civilian/military/age/occupation partition inferred"
+      }
+    },
+    "ncf_finance": {
+      "status": "PARTIAL_RECONCILIATION_BUILT",
+      "facts": [
+        {
+          "key": "ncf.active_loan_portfolio_gp",
+          "value": 2300000,
+          "unit": "gp principal outstanding",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Crown Financial"
+        },
+        {
+          "key": "ncf.parent_monthly_revenue_gp",
+          "value": 22000,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Crown Financial"
+        },
+        {
+          "key": "ncf.branch_sum_monthly_revenue_gp",
+          "value": 23250,
+          "unit": "gp/month",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Crown Financial — Neverwinter",
+          "note": "Conflicts with parent 22,000 gp/month total."
+        },
+        {
+          "key": "loan.dockworkers_guild.principal_gp",
+          "value": 15000,
+          "unit": "gp",
+          "authority": "SOURCE-DERIVED",
+          "source": "NCF Neverwinter"
+        },
+        {
+          "key": "loan.dockworkers_guild.rate_pct",
+          "value": 6,
+          "unit": "annual percent",
+          "authority": "SOURCE-DERIVED",
+          "source": "NCF Neverwinter"
+        },
+        {
+          "key": "loan.selah_thorn.principal_gp",
+          "value": 10000,
+          "unit": "gp",
+          "authority": "SOURCE-DERIVED",
+          "source": "NCF Neverwinter / Thorn & Silver"
+        },
+        {
+          "key": "loan.selah_thorn.rate_pct",
+          "value": 8,
+          "unit": "annual percent",
+          "authority": "SOURCE-DERIVED",
+          "source": "NCF Neverwinter / Thorn & Silver"
+        },
+        {
+          "key": "loan.swiftfingers.principal_gp",
+          "value": 5000,
+          "unit": "gp",
+          "authority": "SOURCE-DERIVED",
+          "source": "Captain Philo Swiftfingers"
+        },
+        {
+          "key": "loan.swiftfingers.rate_pct",
+          "value": 12,
+          "unit": "annual percent",
+          "authority": "SOURCE-DERIVED",
+          "source": "Captain Philo Swiftfingers"
+        },
+        {
+          "key": "snowfall.approved_facility_gp",
+          "value": 30000,
+          "unit": "gp",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Crown Financial",
+          "note": "Approved but not yet drawn at Day 7 Hammer; excluded from active loan principal."
+        },
+        {
+          "key": "snowfall.approved_rate_pct",
+          "value": 8,
+          "unit": "annual percent",
+          "authority": "SOURCE-DERIVED",
+          "source": "Northern Crown Financial"
+        },
+        {
+          "key": "auction_one.opening_net_settled_gp",
+          "value": 0,
+          "unit": "gp in Auction One only",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/3c4e821484b08184af9bc4cba0339d5a",
+          "note": "Live run state is unplayed/date unseated; zero is not empire opening cash. 450000 gp protected target remains unreduced; earlier 410K realization excluded."
+        }
+      ],
+      "calculated": [
+        {
+          "key": "ncf.named_active_loans_recovered_gp",
+          "value": 30000,
+          "unit": "gp",
+          "authority": "SOURCE-DERIVED",
+          "formula": "15000 + 10000 + 5000",
+          "derivation_method": "ARITHMETIC"
+        },
+        {
+          "key": "ncf.named_active_loan_coverage_pct",
+          "value": "1.3043478261",
+          "unit": "percent of 2.3M portfolio",
+          "authority": "SOURCE-DERIVED",
+          "formula": "30000 / 2300000 * 100",
+          "derivation_method": "ARITHMETIC",
+          "rounding": "10 decimal places; informational percentage only"
+        }
+      ],
+      "conflicts": [],
+      "unresolved": [
+        {
+          "key": "ncf.current_trial_balance",
+          "method": "RECOVER_RECONCILE",
+          "reason": "Deposits, reserves, liabilities, equity and interbranch exposures remain incomplete."
+        },
+        {
+          "key": "ncf.current_monthly_cost_gp",
+          "method": "RECOVER_RECONCILE",
+          "reason": "Parent cost not safely derivable from child branch costs."
+        },
+        {
+          "key": "finance.opening_liquid_cash",
+          "method": "REMAIN_UNKNOWN_UNLESS_LEDGER_ANCHOR_FOUND",
+          "reason": "Current financial authority explicitly says exact cash is indeterminate."
+        },
+        {
+          "key": "ncf.remaining_loan_book_2270000_gp",
+          "method": "RECOVER_LOAN_FILES",
+          "reason": "Named recovered active loans cover only ~1.30% of reported principal; do not generate charming borrowers to fill the rest."
+        },
+        {
+          "key": "ncf.historical_client_loans_day7_reconciliation",
+          "method": "RECONCILE_CLIENT_SUBLEDGER_WITH_CURRENT_PARENT",
+          "reason": "Recover rollforward of 127000 gp estate loan at 4% and separate 132000 gp Institut mortgage at 6%; do not add estate loan to ESAMT aggregate twice or promote 1493 balances to Day 7."
+        }
+      ],
+      "cautions": [
+        {
+          "key": "dorothea_pre_ncf_default",
+          "status": "HISTORICAL_NOT_ACTIVE_LOAN",
+          "note": "Dorothea Varnilly's old 40,000 gp Gundwynd default predates NCF's purchase of her portfolio. Do not count the original 40,000 gp as current NCF principal without a surviving-balance record."
+        }
+      ],
+      "resolved_discrepancies": [
+        {
+          "key": "ncf.monthly_revenue_total",
+          "selected_value_gp_per_month": 22000,
+          "authority": "SOURCE-DERIVED",
+          "resolution_method": "SOURCE_PRECEDENCE",
+          "reason": "The newer parent Northern Crown Financial page is the controlling current source. The 23,250 gp branch roll-up is retained as a stale subordinate aggregation for audit traceability.",
+          "rejected_for_current_use": [
+            23250
+          ]
+        }
+      ],
+      "historical_loan_evidence": [
+        {
+          "key": "celestial_compass.estate_loan",
+          "authority": "SOURCE-DERIVED",
+          "principal_gp": 127000,
+          "annual_rate_pct": 4,
+          "source": "https://app.notion.com/p/347e821484b08142a46bc164ca8aeaf0",
+          "temporal_scope": "1493 origination; page also calls it outstanding in early-1495 summary",
+          "day7_principal_gp": null,
+          "included_in_day7_named_loan_total": false,
+          "reason": "Reconcile against ESAMT aggregate and repayment history before additive portfolio recognition."
+        },
+        {
+          "key": "institut.separate_commercial_mortgage",
+          "authority": "SOURCE-DERIVED",
+          "principal_gp": 132000,
+          "annual_rate_pct": 6,
+          "source": "https://app.notion.com/p/341e821484b081a9b91be3e4102c6848",
+          "temporal_scope": "Session 31 ruling in 1493 ledger",
+          "day7_principal_gp": null,
+          "included_in_day7_named_loan_total": false,
+          "reason": "Top-of-page ruling excludes this from ESAMT draws. Later ledger entries and repayments must be reconciled before Day-7 recognition."
+        }
+      ],
+      "reconciliation_runtime": "src/baen_economy/financial_close.py",
+      "settlement_evidence": "recovery/FINANCIAL_CLOSE_2026-09-18.json"
+    },
+    "land_bank": {
+      "status": "USER_RULED_GEOMETRY_PARTIAL",
+      "facts": [
+        {
+          "key": "arterial.land_bank.half_width_each_side_miles",
+          "value": 8,
+          "unit": "miles",
+          "authority": "USER-RULED",
+          "source": "User ruling 2026-09-18"
+        },
+        {
+          "key": "arterial.operational_network_miles_floor",
+          "value": 500,
+          "unit": "miles",
+          "authority": "SOURCE-DERIVED",
+          "source": "Arterial Road Network"
+        },
+        {
+          "key": "arterial.legacy_direct_owned_acres_min",
+          "value": 1200,
+          "unit": "acres",
+          "authority": "SOURCE-DERIVED",
+          "source": "Arterial Road Network"
+        },
+        {
+          "key": "esamt.progressive_arterial_hunding_buy_in",
+          "value": true,
+          "authority": "USER-RULED",
+          "source": "Chad 2026-09-18: ESAMT has an aspect where Shivan is buying into the Arterial and the Hunding family over time; already documented.",
+          "note": "Confirms progressive interests, not a percentage, installment, title transfer or settlement date."
+        },
+        {
+          "key": "hunding.family_share_full_acquisition_year_dr",
+          "value": 1582,
+          "unit": "DR year",
+          "authority": "USER-RULED",
+          "source": "Chad 2026-09-18: The later date is for the full acquisition of their share.",
+          "temporal_scope": "FORWARD_COMPLETION_NOT_DAY7_FULL_OWNERSHIP"
+        }
+      ],
+      "calculated": [
+        {
+          "key": "arterial.gross_strip_area_at_500_mile_floor",
+          "value": 5120000,
+          "unit": "gross strip-acres before overlap removal",
+          "authority": "SOURCE-DERIVED",
+          "formula": "500 miles * 16 mile width * 640 acres/sq mi",
+          "derivation_method": "ARITHMETIC",
+          "input_authorities": [
+            "USER-RULED",
+            "SOURCE-DERIVED"
+          ]
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "arterial.unique_beneficially_controlled_acres",
+          "method": "GEOMETRY_AND_TITLE_RECONCILIATION",
+          "reason": "Requires segment overlap removal, urban/public/sovereign exclusions and shell-title reconciliation."
+        },
+        {
+          "key": "arterial.land_cost_basis_and_value",
+          "method": "RECOVER_THEN_APPRAISE",
+          "reason": "No uniform gp/acre value may be invented."
+        },
+        {
+          "key": "esamt.day7_arterial_hunding_interests",
+          "method": "RECOVER_EXISTING_ACQUISITION_TERMS",
+          "reason": "Progressive buy-in confirmed; full Hunding-family share acquisition completes in 1582. User tentatively recalls current Hunding stake around 12–15 percent; exact percentage, denominator, installments, rights and settlements remain to be recovered. This recollection is not an exact holding or an Arterial percentage. NCF trust management is not beneficial ownership."
+        }
+      ],
+      "temporal_exclusions": [
+        {
+          "source": "https://app.notion.com/p/37de821484b081549c6bd10986768d97",
+          "effective_date": "Hammer 1496 DR",
+          "reason": "Post-bridge portfolio totals, rents, 99-year Longsaddle conveyance and later authorizations are not Day-7-Hammer-1495 state."
+        }
+      ],
+      "conflicts": [],
+      "resolved_discrepancies": [
+        {
+          "key": "hunding.acquisition_chronology",
+          "authority": "USER-RULED",
+          "resolution": "The 1582 date is completion of acquisition of the Hunding family share after progressive buy-in, not the initial acquisition date.",
+          "source": "Chad 2026-09-18 clarification",
+          "prior_conflict": {
+            "key": "hunding.acquisition_chronology",
+            "reason": "Hunding Acquisition history explicitly dates Shi'van/Institut 285000 gp acquisition to 1582; live canal page assigns 285000 gp acquisition and patent transfer to Arik in 1494. Preserve both pending reconciliation with user-confirmed progressive buy-in; no Day-7 automatic full IP ownership.",
+            "sources": [
+              "https://app.notion.com/p/32ce821484b0817bac7de6e95c90fd00",
+              "https://app.notion.com/p/348e821484b081628111fba51071e587"
+            ]
+          },
+          "remaining_unknowns": [
+            "allocation of source amounts between acquisition stages",
+            "exact Day-7 equity percentage and denominator",
+            "installment/payment history",
+            "precise IP, licensing and title interests"
+          ]
+        }
+      ],
+      "tentative_recollections": [
+        {
+          "authority": "UNRESOLVED",
+          "reported_by": "Chad",
+          "reported_on": "2026-09-18",
+          "minimum_percent": 12,
+          "maximum_percent": 15,
+          "certainty": "TENTATIVE_USER_RECOLLECTION",
+          "scope": "Current Hunding stake, from immediate conversation context; exact denominator (whole enterprise or family share) remains unresolved.",
+          "source_quote": "Yeah, I don't remember exactly, but I think it was somewhere around 12 to 15 percent, uh, at current date. I don't remember.",
+          "admitted_as_exact_opening_equity": false,
+          "applies_to_arterial": false,
+          "roll_authorized": false
+        }
+      ]
+    },
+    "system_gaps": {
+      "status": "CLASSIFIED_NOT_RESOLVED",
+      "facts": [],
+      "unresolved": [
+        {
+          "key": "brickworks.clay_to_brick_conversion",
+          "method": "PROCESS_LEDGER_RECOVERY",
+          "reason": "Sourced clay output and brick output do not establish consumed-clay coefficient or stock change."
+        },
+        {
+          "key": "silversheen.current_monthly_cost_gp",
+          "method": "CURRENT_COST_LEDGER_RECOVERY",
+          "reason": "Eleint-1494 cost table belongs to 150 t/mo baseline and cannot be scaled mechanically to 180 t/mo."
+        },
+        {
+          "key": "opening_inventories",
+          "method": "PHYSICAL_COUNT_OR_PERPETUAL_INVENTORY_RECONSTRUCTION",
+          "reason": "Most opening stocks lack current warehouse counts."
+        },
+        {
+          "key": "opening_entity_cash_and_deposits",
+          "method": "LEDGER_RECOVERY",
+          "reason": "Most entity opening balances are not tied to a current treasury/bank ledger."
+        },
+        {
+          "key": "labor.empire_wide_occupation_pools",
+          "method": "SOURCEBOOK_URBAN_LABOR_ANCHORS_PLUS_CAMPAIGN_EMPLOYMENT_RECONCILIATION",
+          "reason": "DMG II now provides a sourcebook urban-guild anchor (~10% active guild members and occupation mix), but Baen settlement labor still requires current population and known employer rosters; the sourcebook anchor cannot replace campaign employment."
+        },
+        {
+          "key": "market.opening_prices",
+          "method": "SOURCEBOOK_ANCHORS_PLUS_LOCAL_MARKET_RECOVERY",
+          "reason": "Sourcebook anchors now exist (including a Silver Marches regional cross-check), but local Day-7 prices still require campaign observations or an explicitly adopted market-basis rule."
+        },
+        {
+          "key": "market_demand_quantities",
+          "method": "ORDERS_CONTRACTS_AND_HOUSEHOLD_DEMAND_MODEL",
+          "reason": "Current sandbox demand quantities are model-authored."
+        },
+        {
+          "key": "settlement.social_class_shares_and_consumption_baskets",
+          "method": "SOURCEBOOK_UPKEEP_FOOD_AND_DISTRICT_ANCHORS_PLUS_RATIFIED_DEMOGRAPHIC_MODEL",
+          "reason": "Sourcebook upkeep, food-tier, guild, and district-structure anchors now exist. District shares are not population shares, so household class shares and physical food baskets still require a ratified demographic model."
+        },
+        {
+          "key": "migration_rates",
+          "method": "DEMOGRAPHIC_RESEARCH_AND_RATIFIED_MODEL",
+          "reason": "Current sandbox migration rates are model-authored."
+        },
+        {
+          "key": "shock_probabilities",
+          "method": "SEPARATE_EVENT_MODEL",
+          "reason": "Current weather/harvest/war/monster/political shock probabilities are model-authored."
+        },
+        {
+          "key": "esamt_capital_deployment_mechanics",
+          "method": "INGEST_CURRENT_MECHANICS_ONLY",
+          "reason": "Current ESAMT system defines capital-deployment mechanics, but stale historical balances must not be imported into Day-7 opening state."
+        }
+      ]
+    },
+    "warehouse_inventory": {
+      "status": "PARTIAL_RECOVERED",
+      "facts": [
+        {
+          "key": "waterdeep.warehouse.main_floor_length_ft",
+          "value": 90,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375"
+        },
+        {
+          "key": "waterdeep.warehouse.main_floor_width_ft",
+          "value": 60,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375"
+        },
+        {
+          "key": "waterdeep.warehouse.claimed_storage_cells",
+          "value": 54,
+          "unit": "10 by 10 ft cells",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375",
+          "note": "Source claim conflicts with the stated circulation; not usable net storage capacity."
+        },
+        {
+          "key": "waterdeep.warehouse.central_aisle_width_ft",
+          "value": 8,
+          "unit": "ft",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375"
+        },
+        {
+          "key": "waterdeep.warehouse.enchanted_chests",
+          "value": 65,
+          "unit": "storage containers",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375",
+          "note": "Capacity, not item count, ownership, occupancy or value."
+        },
+        {
+          "key": "waterdeep.warehouse.large_item_bays",
+          "value": 6,
+          "unit": "bays",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375"
+        },
+        {
+          "key": "waterdeep.warehouse.custody_classes",
+          "value": [
+            "Baen goods in transit",
+            "Silversheen goods",
+            "client consignments",
+            "NCF reserves in transit"
+          ],
+          "unit": "source-described classes",
+          "authority": "SOURCE-DERIVED",
+          "source": "https://app.notion.com/p/34ce821484b08119a8f4e7cbe9ab9375",
+          "note": "Physical custody does not establish Baen beneficial ownership."
+        }
+      ],
+      "conflicts": [
+        {
+          "key": "waterdeep.warehouse.net_storage_geometry",
+          "reason": "90*60 = 54*10*10 = 5400 sq ft, leaving zero for the stated eight-foot lengthwise aisle and cross-aisle. Net storage cannot be booked from all 54 nominal cells."
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "warehouse.day7_inventory",
+          "method": "DATED_STOCK_LEDGER_OR_RATIFIED_RECONSTRUCTION",
+          "reason": "Need per lot: quantity/unit, owner, custodian, location, dated receipt/dispatch, cost, liens, condition, spoilage and commitments. Facility capacity is not opening inventory."
+        },
+        {
+          "key": "waterdeep.warehouse.net_usable_capacity",
+          "method": "RECONCILE_SOURCE_GEOMETRY",
+          "reason": "Requires corrected cell/aisle plan, allowable stack height and floor loading. Do not multiply gross floor area by invented density."
+        }
+      ]
+    }
+  },
+  "action_queue": [
+    {
+      "id": "fleet-roster",
+      "label": "Complete technical specifications and reconcile machinery staffing",
+      "method": "RECONCILE_RATIFIED_PROGRAMME",
+      "user_action_required": false,
+      "note": "10 Stonebearers, 5 Groundshapers, 5 Ironmaws and production ramp approved. Remaining work is technical performance, raw-material BOM, personnel and historical settlement.",
+      "unlocks": [
+        "road transport capacity",
+        "construction capacity",
+        "machine allocation",
+        "heavy-machinery production rate"
+      ]
+    },
+    {
+      "id": "wagon-register",
+      "label": "Reconcile wagons, barges, draft teams and contracts",
+      "method": "RECOVER_PHYSICAL_COUNT",
+      "user_action_required": false,
+      "unlocks": [
+        "arterial freight capacity"
+      ]
+    },
+    {
+      "id": "ncf-close",
+      "label": "Reconstruct NCF trial balance and loan files",
+      "method": "RECOVER_RECONCILE",
+      "user_action_required": false,
+      "unlocks": [
+        "credit",
+        "reserves",
+        "interest income",
+        "Crownworks financing"
+      ],
+      "note": "Partial trial-balance and loan-register view implemented. 2.3M parent asset includes 30K named anchors and 2.27M unitemized. Unknown reserves/deposits/equity remain unknown, with no balancing plug. Auction One has 0 settled; 450K protected target remains."
+    },
+    {
+      "id": "forgedeep-pop",
+      "label": "Forgedeep population resolved: 1599",
+      "method": "APPROVED_BOUNDED_DRAW",
+      "user_action_required": false,
+      "decision": "Approved and executed once; no further approval needed.",
+      "unlocks": [
+        "Forgedeep labour",
+        "food demand",
+        "housing demand"
+      ],
+      "status": "RESOLVED"
+    },
+    {
+      "id": "food-survey",
+      "label": "Complete targeted food physical survey using existing agriculture canon",
+      "method": "TARGETED_SURVEY_ON_EXISTING_RUNTIME",
+      "user_action_required": false,
+      "note": "Do not rebuild agriculture. Recover only missing Day-7 physical geometry, biomass, opening stock, storage and baseline yield.",
+      "unlocks": [
+        "physical food output",
+        "consumption lane",
+        "food inventories"
+      ]
+    },
+    {
+      "id": "land-ledger",
+      "label": "Reconcile NCF corridor title geometry",
+      "method": "GEOMETRY_AND_TITLE_RECONCILIATION",
+      "user_action_required": false,
+      "unlocks": [
+        "land asset value",
+        "development/rent model"
+      ],
+      "note": "Ownership register separates legal title, beneficial ownership, operating equity and client trust interests. Geometry and parcel schedules remain unresolved; no appraisal is counted as cash."
+    },
+    {
+      "id": "crownworks",
+      "label": "Authorize and fund Crownworks",
+      "method": "RULE_AFTER_FINANCIAL_CLOSE",
+      "user_action_required": true,
+      "decision": "Only after current funding capacity is reconciled; do not spend the proposed 3M gp by assumption.",
+      "unlocks": [
+        "future depot network",
+        "material receipts",
+        "large-scale intermodal handling"
+      ]
+    },
+    {
+      "id": "production-process-ledgers",
+      "label": "Recover current production recipes/cost ledgers",
+      "method": "RECOVER_RECONCILE",
+      "user_action_required": false,
+      "unlocks": [
+        "brick conversion",
+        "Silversheen cost",
+        "material balances"
+      ]
+    },
+    {
+      "id": "opening-inventory-close",
+      "label": "Build opening warehouse/inventory state",
+      "method": "PHYSICAL_COUNT_OR_RECONSTRUCTION",
+      "user_action_required": false,
+      "unlocks": [
+        "production supply",
+        "shortages",
+        "bankable warehouse receipts"
+      ],
+      "note": "Waterdeep warehouse geometry conflict identified; capacity and client consignments must not become Baen-owned stock."
+    },
+    {
+      "id": "market-price-basket",
+      "label": "Research and ground prices/household demand",
+      "method": "RESEARCH_THEN_RATIFY_MODEL",
+      "user_action_required": false,
+      "unlocks": [
+        "consumption/prices",
+        "household demand",
+        "real wages"
+      ]
+    }
+  ],
+  "recovery_notes": [
+    {
+      "id": "2026-09-18-batch-2",
+      "authority": "SOURCE-DERIVED",
+      "note": "Phase-1 batch added current Hunding vessel/lock engineering constants while retaining current fleet count as unresolved; added explicit guards against treating proposed/generic vessel and aquaculture designs as current physical stock."
+    },
+    {
+      "id": "2026-09-18-batch-3",
+      "authority": "SOURCE-DERIVED",
+      "note": "Recovered NRTC's four-wagon affiliated commercial fleet; resolved the NCF 22,000 vs 23,250 revenue discrepancy by current-parent source precedence; added historical/FAO transport comparators without overwriting Baen's explicit 20–40 ton specialized heavy-wagon source fact.",
+      "input_authorities": [
+        "SOURCE-DERIVED",
+        "UPSTREAM-ADOPTED"
+      ],
+      "provenance_kind": "RECOVERY_AUDIT_NOTE"
+    },
+    {
+      "id": "2026-09-18-batch-4",
+      "authority": "SOURCE-DERIVED",
+      "note": "Phase 1 source-recovery classification is complete: all remaining whole-economy gaps are now explicit unresolved items with named resolution methods. Phase 2 external/engineering research is active.",
+      "provenance_kind": "RECOVERY_AUDIT_NOTE"
+    },
+    {
+      "id": "2026-09-18-batch-5",
+      "authority": "SOURCE-DERIVED",
+      "note": "Empire Close now binds to the repository's existing strict agriculture canon/runtime instead of creating a duplicate food model. Current tomatoes/produce, seven-pool Blacklake, converted-quarry Tilapia, and reservoir trout/salmon are preserved; only genuinely missing physical state remains unresolved.",
+      "provenance_kind": "RECOVERY_AUDIT_NOTE"
+    },
+    {
+      "id": "2026-09-18-sourcebook-routing",
+      "authority": "USER-RULED",
+      "note": "User reminded the Economy Engine that The New Path Engine contains harvested sourcebook data. Phase-2 research now checks that book-RAW layer before Library corpus and external research.",
+      "provenance_kind": "RECOVERY_AUDIT_NOTE"
+    },
+    {
+      "id": "2026-09-18-sourcebook-economic-constants",
+      "authority": "UPSTREAM-ADOPTED",
+      "note": "Added book-RAW economic/transport anchors from New Path Engine and the user Library, including Forgotten Realms Silver Marches flour/salt values, D&D 3.5 upkeep, GURPS Teamster/draft-horse references, and WFRP road-speed/income comparators. None are promoted to campaign current state automatically."
+    },
+    {
+      "id": "2026-09-18-sourcebook-demography",
+      "authority": "UPSTREAM-ADOPTED",
+      "note": "Added DMG II medieval-urban guild participation/occupation mix, DMG city social-class district structure, and WFRP food-tier comparators. All are constraints/reference anchors, not automatic Baen demographic state."
+    },
+    {
+      "id": "2026-09-18-neverwinter-stonebearers",
+      "authority": "SOURCE-DERIVED",
+      "note": "Reconciled the Northern Industrial Yards maintenance depot with Brickworks: both refer to the same four Stonebearers. The engine now treats Neverwinter's shared fleet as four, not eight, while leaving the empire-wide residual fleet unresolved."
+    },
+    {
+      "id": "2026-09-18-heavy-machinery-source-recovery",
+      "authority": "SOURCE-DERIVED",
+      "note": "Recovered an existing Stonebearer production line under Gauntlgrym Tools Partnership, Forgedeep heavy-machinery workshops, and Workshop 7's Gauntlgrym/Forgedeep span. Current total fleet and heavy-machine monthly output have not been recovered; no claim of corpus-wide absence is made. User confirmed no Baen-owned barge fleet has been explicitly established.",
+      "input_authorities": [
+        "SOURCE-DERIVED",
+        "USER-RULED"
+      ],
+      "provenance_kind": "RECOVERY_AUDIT_NOTE"
+    },
+    {
+      "id": "2026-09-18-heavy-machinery-active-1495",
+      "authority": "USER-RULED",
+      "note": "Heavy machinery production is active by Day 7 Hammer 1495. This does not establish the original commissioning month or monthly output."
+    },
+    {
+      "id": "2026-09-18-continuation-source-check",
+      "authority": "SOURCE-DERIVED",
+      "note": "Live pages establish 32000 gp equipped four-Stonebearer batch; recover factory existence without inventing throughput. Quarantine Roadrider forward dates, Longsaddle mixed chronology, Hammer-1496 portfolio and historical client loans. Warehouse storage-grid/aisle conflict remains explicit. Arithmetic is a provenance method, never a sixth authority class."
+    }
+  ],
+  "sourcebook_routing": {
+    "procedure": "recovery/SOURCEBOOK_ROUTING_2026-09-18.md",
+    "new_path_engine_repo": "CFhacky/the-new-path-engine",
+    "authority": "UPSTREAM-ADOPTED",
+    "order": [
+      "USER-RULED",
+      "LIVE_NOTION",
+      "RATIFIED_PROTOCOL",
+      "NEW_PATH_ENGINE_BOOK_RAW",
+      "USER_LIBRARY_BOOK_CORPUS",
+      "EXTERNAL_RESEARCH",
+      "MODEL-PROPOSED"
+    ],
+    "note": "Absence from a harvested New Path Engine family is not evidence of absence from the sourcebook corpus.",
+    "book_raw_authority": "UPSTREAM-ADOPTED",
+    "book_raw_provenance_kind": "SOURCEBOOK_RAW",
+    "precedence": "BELOW_CAMPAIGN_CANON"
+  },
+  "sourcebook_economic_constants": "recovery/SOURCEBOOK_ECONOMIC_CONSTANTS_2026-09-18.json"
+}

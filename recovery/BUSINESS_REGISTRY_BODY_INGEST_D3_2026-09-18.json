@@ -1,0 +1,327 @@
+{
+  "schema": "tnp.economy.business-registry-body-ingest/1",
+  "batch": "D3",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "target": 12,
+  "reviewed": 12,
+  "failed": 0,
+  "records": [
+    {
+      "source_id": "321e8214-84b0-8189-9107-d6fd75176754",
+      "title": "Lobster King Operations (Baen-Allied)",
+      "revision": "2026-03-12T21:45:38.877Z",
+      "body_hash": "961593f8a4c7fa873c141f7ee1881d60ef01279f7e8a63141f7c74a7f9d6f38e",
+      "disposition": "MISSING_DATA",
+      "semantic_status": "MISSING_DATA",
+      "driver_owners": [],
+      "property_snapshot": {
+        "capital": 0,
+        "employees": 0,
+        "cost": 0,
+        "revenue": 0,
+        "parent": "Peri Ops (allied, not owned)",
+        "status": "Unconfirmed",
+        "date_operational": "TBD",
+        "city": "Waterdeep",
+        "sector": "Aquaculture"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-819e-840a-ea69126c3105",
+      "title": "Northern Hammer Smithy",
+      "revision": "2026-03-22T22:40:38.098Z",
+      "body_hash": "205a30e2cfdda0e418c82e95f60722b3c4b3bd5bbcb19159518d04373f07a5a6",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": 10000,
+        "employees": 15,
+        "cost": 1750,
+        "revenue": 2917,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Tarsakh 1494",
+        "city": "Neverwinter",
+        "sector": "Manufacturing"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81a0-9fde-f55820cab72b",
+      "title": "Waterdeep Information Brokerage",
+      "revision": "2026-03-12T21:11:22.178Z",
+      "body_hash": "a29f69ae1cf733a0800e2e81628a4ca30d11655dfda8c3f749c1cc04caea15db",
+      "disposition": "MISSING_DATA",
+      "semantic_status": "MISSING_DATA",
+      "driver_owners": [],
+      "property_snapshot": {
+        "capital": 0,
+        "employees": 0,
+        "cost": 0,
+        "revenue": 0,
+        "parent": "Peri Ops",
+        "status": "Unconfirmed",
+        "date_operational": "TBD",
+        "city": "Waterdeep",
+        "sector": "Intelligence"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81a8-b47d-c47579a6e346",
+      "title": "Castle Operations",
+      "revision": "2026-03-12T21:57:02.035Z",
+      "body_hash": "65b7d0041d47cb71d6fbb11d129370b3fe39be3310f199f227ef3a1bddd0bc67",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "food_supply",
+        "business_financial_flows",
+        "labor_supply",
+        "inventories",
+        "industrial_production"
+      ],
+      "property_snapshot": {
+        "capital": 0,
+        "employees": 80,
+        "cost": 5200,
+        "revenue": 0,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Eleint 1494",
+        "city": "Multi-Region",
+        "sector": "Military"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81b0-9469-f6c9d92a22d5",
+      "title": "Forgedeep City Development",
+      "revision": "2026-07-28T14:28:42.149Z",
+      "body_hash": "77167f8dea83d0d0a3be630d0aa7fd92c6b27958dd582fa2eddefdbe144d57d1",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "trade_routes"
+      ],
+      "property_snapshot": {
+        "capital": 500000,
+        "employees": 30,
+        "cost": 15000,
+        "revenue": 0,
+        "parent": "—",
+        "status": "Under Construction",
+        "date_operational": "N/A (in dev)",
+        "city": "Forgedeep",
+        "sector": "Infrastructure"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81b3-8d51-dcbc19edd667",
+      "title": "Warborn Production - Neverwinter",
+      "revision": "2026-08-21T03:20:13.904Z",
+      "body_hash": "c2cfc9b01a0fc0e07c12a1c37810570d1b731d4027e6f36da945230549cf1273",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "industrial_production"
+      ],
+      "property_snapshot": {
+        "capital": 288000,
+        "employees": 77,
+        "cost": 20000,
+        "revenue": 48000,
+        "parent": "—",
+        "status": "Scaling",
+        "date_operational": "Eleint 1494",
+        "city": "Neverwinter",
+        "sector": "Manufacturing"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81b8-8ac4-d7cb4a1b4b0c",
+      "title": "Safe Harbor Inn",
+      "revision": "2026-03-12T23:44:26.643Z",
+      "body_hash": "b02597db1a5b035e9c4f0d5d7c0d78160f30a96035c67ac03b1d30d3e443ac90",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": 9000,
+        "employees": 8,
+        "cost": 900,
+        "revenue": 1500,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "1493",
+        "city": "Luskan",
+        "sector": "Hospitality"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81b9-a4cb-f9fd26c7eccf",
+      "title": "Hunding Canal Lock System",
+      "revision": "2026-03-23T08:31:19.071Z",
+      "body_hash": "e4340920be02f4ec898de04e7fdcdd594ff83e367c7a20e3a6defc98af2fb409",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": 50000,
+        "employees": 40,
+        "cost": 8000,
+        "revenue": 0,
+        "parent": "—",
+        "status": "Under Construction",
+        "date_operational": "N/A (30% done)",
+        "city": "Forgedeep",
+        "sector": "Infrastructure"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81b9-b209-d6dd21f950f8",
+      "title": "Dock Ward Security Corp",
+      "revision": "2026-03-22T18:37:04.320Z",
+      "body_hash": "cd2feb702f753b8fe32738a167ae9319fdaea632dfd7b9388e6427f9a08ff6fd",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": [],
+      "property_snapshot": {
+        "capital": 10000,
+        "employees": 200,
+        "cost": 2281,
+        "revenue": 4563,
+        "parent": "Peri Ops",
+        "status": "Operational",
+        "date_operational": "TBD",
+        "city": "Waterdeep",
+        "sector": "Military"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81cf-b8ef-c87bd6feaaf7",
+      "title": "The Cerulean",
+      "revision": "2026-03-23T12:57:23.429Z",
+      "body_hash": "b92ab28f3faf7d21501cd76cabb80efd88ce6a338ed0e78e0acbd73950276c9c",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "trade_routes"
+      ],
+      "property_snapshot": {
+        "capital": 296000,
+        "employees": 43,
+        "cost": 5000,
+        "revenue": 0,
+        "parent": "—",
+        "status": "Under Construction",
+        "date_operational": "N/A (construction)",
+        "city": "Waterdeep",
+        "sector": "Infrastructure"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81d4-921f-ffe136c22209",
+      "title": "Verdant Cascades Bathhouse",
+      "revision": "2026-03-12T21:02:16.052Z",
+      "body_hash": "d3e2a4ca46946b47701720ab8c16ded060cc5915cb8bda84f091513af43bb6eb",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "food_supply",
+        "inventories",
+        "trade_routes"
+      ],
+      "property_snapshot": {
+        "capital": 32000,
+        "employees": 30,
+        "cost": 3750,
+        "revenue": 5000,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Alturiak 1494",
+        "city": "Neverwinter",
+        "sector": "Infrastructure"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81dc-ae68-d45f3e3801db",
+      "title": "Dock District Mixed-Use",
+      "revision": "2026-03-12T21:09:56.123Z",
+      "body_hash": "726f2aa26e2340e33f6e0cf64f19fb03d6b8f67c434dd7b7c04712b83cf4c4f9",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "population",
+        "labor_supply",
+        "household_consumption"
+      ],
+      "property_snapshot": {
+        "capital": 35000,
+        "employees": 8,
+        "cost": 1200,
+        "revenue": 2000,
+        "parent": "—",
+        "status": "Scaling",
+        "date_operational": "Mirtul 1494",
+        "city": "Neverwinter",
+        "sector": "Real Estate"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "UNKNOWN": 1554,
+      "SOURCE_MAPPED": 51,
+      "SUPERSEDED": 2,
+      "MISSING_DATA": 4,
+      "FUTURE": 2,
+      "CONFLICT": 5,
+      "CONTEXT_ONLY": 2
+    },
+    "body": {
+      "UNMEASURED": 1561,
+      "REVIEWED": 59
+    },
+    "dispositions": {
+      "UNREVIEWED": 1561,
+      "ECONOMIC_INPUT": 47,
+      "SUPERSEDED": 1,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 2,
+      "ECONOMIC_CONTEXT": 2,
+      "CONFLICT": 3
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

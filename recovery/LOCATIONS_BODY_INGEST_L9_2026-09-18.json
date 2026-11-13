@@ -1,0 +1,603 @@
+{
+  "schema": "tnp.economy.locations-body-ingest/1",
+  "batch": "L9",
+  "records": [
+    {
+      "source_id": "34ce8214-84b0-81d0-98d8-e1b1967a5188",
+      "title": "Safe Harbor Inn — Luskan",
+      "revision": "2026-08-20T03:21:05.260Z",
+      "body_hash": "0441b94511aa6cfcc8ad3730800f8e5fec16c9c0d007e2a4ebec74ee2af9a666",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Safe Harbor Inn — Luskan",
+        "Notes": "Three-story timber-and-stone inn in Luskan's dock quarter, around the corner from NCF's Luskan branch. Owned and operated by Taerl Windhaven (half-elf, mid-40s) for 16 years. Genuinely functions as an inn — common room seats 40, fourteen rooms across two upper floors, kitchen, stables, lute player Tuesdays and Saturdays. Also functions as Luskan's Veil message hub: windowless acoustic-dampened back parlor for handler meetings (Baen-standard dampening same as NCF private interview rooms), five dead-drop locations on premises (rotating 4-month schedule), Room 303 (corner, third floor, alley-facing, window opens onto cooper's yard roof, hidden second lock on door, under-bed storage) for operatives needing to leave without using front door, message-board coded notices, civilian intelligence from dockworkers/sailors/Ship Kurth functionaries who drink there. Taerl is Veil, has been since before the Veil formally existed — one of Lirien's first Sword Coast assets. Cover is absolute because it is not a cover: the inn really is an inn, books reconcile, patrons are patrons. Never compromised in 16 years. Staff: Darya (cook, unaware of intelligence operation), Pell/Jannik (servers, trained in house rules about what not to notice), Mariss (halfling chambermaid, Taerl's second set of eyes upstairs), rotating stable boy (recruited from Luskan dock-quarter orphan population). Room rates: 3sp single, 6sp double, 1gp largest second-floor rooms. Room 303 rents at standard double to civilians, no rate to Veil.",
+        "Parent Location": [
+          "https://app.notion.com/p/34ce821484b0815daa7ded8836079200"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "Forward Canon Locks Audit 24 April 2026 — Locations-DB gap pass. Physical canon derived from Business Registry `321e8214-84b0-81b8-8ac4-d7cb4a1b4b0c` + Veil Safe House Luskan cross-references + operational role in Veil network.",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-24",
+        "url": "https://app.notion.com/p/34ce821484b081d098d8e1b1967a5188"
+      }
+    },
+    {
+      "source_id": "34ce8214-84b0-81d0-b826-e05d9ac43342",
+      "title": "Mithral Gate (Proving Ground)",
+      "revision": "2026-08-20T03:23:55.553Z",
+      "body_hash": "763dfc96167f4888c5e1680a88cca65c56d3466a738b645db4e6f7ee036d051b",
+      "disposition": "CONFLICT",
+      "semantic_status": "CONFLICT",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Post-Session 11: 20 Bloodaxe guards + 15 Gauntlgrym warriors + \\~30 armed workers. Target when operational: full border-checkpoint complement under dual Bloodaxe/Gauntlgrym command.",
+        "Name": "Mithral Gate (Proving Ground)",
+        "Notes": "Border checkpoint fortress on the Gauntlgrym Road corridor, Mile 85–90, mountain pass at \\~5,500 ft elevation. Not Mithral Hall. Dual Baen/Gauntlgrym administration under Victor Silverchain and Tormund Oathbinder. Site of the Session 11 frost-giant assault (Eleint 14–15, 1498 DR) — proving ground for Tier-1 power armor, Tier-3 hematomancy, and combined-arms doctrine. Zero casualties. Jarl Hrothgar Icebreaker withdrew. Singing Stone formation integrated into Gate design as magical-disturbance sensor. Archway \\~40% complete post-Session 11. Arcane Brotherhood identified as observing.",
+        "Population": 120,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[session-11-mithral-gate-proving-ground.md](http://session-11-mithral-gate-proving-ground.md) + [baen-settlements-gauntlgrym-road-dawnwood.md](http://baen-settlements-gauntlgrym-road-dawnwood.md)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-24",
+        "url": "https://app.notion.com/p/34ce821484b081d0b826e05d9ac43342"
+      }
+    },
+    {
+      "source_id": "34ce8214-84b0-81d4-9ba6-f0ded0305137",
+      "title": "Baen Continental Waterway System",
+      "revision": "2026-08-20T03:23:02.048Z",
+      "body_hash": "91e90db4a173c5c110bab5cefe830a56c681dbb6440784ac8896d998bd7eeaeb",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface",
+          "Jörmun"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Distributed. Warden's Vigil at eastern segment. Legion outposts at lock stations. Formicorps soldiers at active bore operations. Bloodaxe reserve elements within 50 miles of key segments. Shadow-transit response capacity for emergency reinforcement.",
+        "Name": "Baen Continental Waterway System",
+        "Notes": "600-mile Faerûn-spanning canal system, largest infrastructure project since Netheril. Three components: Western Network (Loudwater Junction, Waterdeep aqueducts, Delimbiyr integration), Central Passage (Hunding Mountain Lock System, Forgedeep Inland Port branch), Eastern Extension (Desertsmouth Tunnel, Tethyamar, Anauroch terminus). 1494-1500 DR phased. 12-15M gp. Current state (Uktar 1498 DR): Western Network + Hunding Lock System complete and operational; Tethyamar Clearance active; Desertsmouth Tunnel bore underway; Eastern Terminus pending tunnel. Logistics spine of the empire — integrates Arik's Sword Coast with Jörmun's Anauroch at operational tempo. Desertsmouth Tunnel is the single irreplaceable chokepoint. Founding capital came from Klauth hoard (9M+ gp, Kythorn 1494); timeline collapse enabled by Formicorps (1496 acquisition). Payback horizon 10-15 years; strategic value incalculable.",
+        "Population": 0,
+        "Region": [
+          "Sword Coast North",
+          "Tethyamar",
+          "Dalelands",
+          "Anauroch"
+        ],
+        "Source File": "baen-continental-waterway-system__1_.md",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Sub-Locations": [
+          "https://app.notion.com/p/348e821484b081628111fba51071e587",
+          "https://app.notion.com/p/32be821484b08145b768cc0f492782d1"
+        ],
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-24",
+        "url": "https://app.notion.com/p/34ce821484b081d49ba6f0ded0305137"
+      }
+    },
+    {
+      "source_id": "34ce8214-84b0-81de-bbfc-c4e4aff3134d",
+      "title": "Mennarn's Folly",
+      "revision": "2026-08-20T03:23:53.001Z",
+      "body_hash": "80dc191839e468faf6f92e4da46604063932b6cd99269b085e03750ca1d35474",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Mennarn's Folly",
+        "Notes": "Neverwinter-area mine. Source of the distinctive azurite-flecked stone (blue matrix, silver flecks) that became one of Baen Construction's early signature materials and appeared in the first wave of showcase residences, recruitment packets, and the earliest arterial segments. Named for the original owner whose attempt to work the deposit failed before Arik acquired the claim. Canonically still real and still producing — do NOT conflate with the retired 'Treasury' magical-zone concept. Mennarn's Folly is a mundane mine with distinctive stone, nothing more. It was formalized as part of what later became the Treasury Quarries business line.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "Early-campaign chats (\\~March 2025), Baen Empire Complete Quarry Network, Chad canon ruling 24 April 2026.",
+        "Status": "Controlled",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-24",
+        "url": "https://app.notion.com/p/34ce821484b081debbfcc4e4aff3134d"
+      }
+    },
+    {
+      "source_id": "34ce8214-84b0-81e8-afe4-c305db68a0ab",
+      "title": "Baen Settlements — Gauntlgrym Road & Dawnwood",
+      "revision": "2026-08-20T03:23:04.809Z",
+      "body_hash": "c70247ec881b677b5264f54bd1d18de14238ba1f5295ac4722b08b6b98cff6b2",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Ironhold 8 Bloodaxe + armed workers. Goldbeard's Rest 12 Bloodaxe + armed miners. Mithral Gate 20 Bloodaxe + 15 Gauntlgrym warriors + \\~30 armed workers. Dawnwood 40 Bloodaxe + perimeter alarms.",
+        "Name": "Baen Settlements — Gauntlgrym Road & Dawnwood",
+        "Notes": "Umbrella entry for four planned settlements: Ironhold (Mile 55–60), Goldbeard's Rest (Mile 70–75), Mithral Gate (Mile 85–90, dedicated page), Dawnwood (Neverwinter Wood eastern margin). Together they form the Neverwinter → Gauntlgrym corridor + eastern forest development zone. Canon source document is Kythorn 1494 DR internal Baen Holdings classification — population, completion %, and Yggdrasil seed figures are 1494 DR snapshots and need sync to the 1498 DR active timeline. Mithral Gate has already advanced from the 1494 'breaking ground' status to 40% archway complete with Session 11 (Eleint 1498 DR) proving-ground canon. Other three settlements likely advanced as well; stale-page flag.",
+        "Population": 950,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[baen-settlements-gauntlgrym-road-dawnwood.md](http://baen-settlements-gauntlgrym-road-dawnwood.md) + [session-11-mithral-gate-proving-ground.md](http://session-11-mithral-gate-proving-ground.md)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-24",
+        "url": "https://app.notion.com/p/34ce821484b081e8afe4c305db68a0ab"
+      }
+    },
+    {
+      "source_id": "34ce8214-84b0-81f4-9f96-e13329a117c6",
+      "title": "Anauroch — Eastern Region",
+      "revision": "2026-08-12T12:55:27.218Z",
+      "body_hash": "de9a5f2f2bde96f97151bfe0f9d5e97eb22b806a9667af5785d59388ed562bfb",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Garrison": "Bloodaxe Legion cohorts deployed forward, with 3rd Cohort 'Breaker's March' forward-garrisoned. Mage Cadre elements attached to Jörmun. Veil cell deployed for tribal intelligence (Session 12).",
+        "Name": "Anauroch — Eastern Region",
+        "Notes": "The Great Desert. Tomb of Netheril. Strategic theater of Jörmun's eastern deployment. Three stacked domains: desert surface, buried Netherese ruins, Sharn-maintained barrier containing phaerimm. Baen operations anchor at Crown of Eight Springs + Warden's Vigil + Thirst Glacier. Al-Rashid + Al-Saif alliances active. Competing factions: Arcane Brotherhood (hostile), Thayan delegation (parley opening), Cult of the Dragon (scattered cells), Shade Remnant (occupying Anatomist lab), giant clans (deterred). Phaerimm + Sharn barrier are strategic deep-risk. Netherese resonance nodes humming with unclear cause.",
+        "Region": [
+          "Anauroch"
+        ],
+        "Source File": "[anauroch-eastern-ecology.md](http://anauroch-eastern-ecology.md); [eastern-deployment-regional-threats.md](http://eastern-deployment-regional-threats.md); [jormun-campaign-reference-updated.md](http://jormun-campaign-reference-updated.md)",
+        "Status": "Contested",
+        "Strategic Value": "Critical",
+        "Sub-Locations": [
+          "https://app.notion.com/p/3c2e821484b081259c06df879a350b7e"
+        ],
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-24",
+        "url": "https://app.notion.com/p/34ce821484b081f49f96e13329a117c6"
+      }
+    },
+    {
+      "source_id": "34ee8214-84b0-81cd-adac-d7764adfcc6a",
+      "title": "☀️ The Hollow Sun — Aurixalnar's Lair",
+      "revision": "2026-04-27T00:06:10.670Z",
+      "body_hash": "2d5512b461bfcf86099d22537784eb4f40cecae335670df86be1fb3ed471620c",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Garrison": "Currently unoccupied (Thayan binding-handlers withdrew with delegation Marpenoth 4 1498 DR; lair-resident kobold staff dispersed during Thayan occupation 1465 DR; some surviving family lines may have returned to the broken terraces above the basin since). Cohort clearance of the lair proper has not yet occurred.",
+        "Name": "The Hollow Sun — Aurixalnar's Lair",
+        "Notes": "Aurixalnar the Gold's lair, killed Marpenoth 3-4 1498 DR by Jörmun Frostborn during Thayan parley failure. Located in the Old Sun's Crater, mid-southern Anauroch on the desert's northwest edge transitioning to broken hill country. \\~320 air miles southwest of Crown of Eight Springs, \\~450 miles by land routes, 8-12 hours by warren transit. Crater is \\~4 miles across, 200 ft walls, fertile basin with spring system and pre-Netheril broken terraces. Lair proper is dug into southern crater wall, glamour-concealed before Thayan binding broke the protection in \\~1465 DR. Hoard \\~1.63M gp documented + \\~150K informational; combined with body harvest \\~2.46M gp total. Three accumulation streams overlap: 280 years of pre-binding gold-dragon collecting + 33 years Thayan tribute + 13 years Cult of the Dragon preparation deposits. Cult of the Dragon (Thorym Sael'karth) was scheduled to dracolich-transform Aurixalnar in 1505 DR — that schedule is now permanently broken. Empty Dracolich Phylactery in Jörmun's possession is the phylactery Thorym was preparing for the transformation. Lair clearance pending; surviving mate Aerantyx the Sunrose currently unaware of death (will learn within 1-2 tendays, three trajectory paths open: reluctant ally / cold investigator / adversary).",
+        "Population": 0,
+        "Region": [
+          "Anauroch"
+        ],
+        "Source File": "Session 15 log; userMemory; Aurixalnar artifact suite (Bound Aurixalnar pendant, Empty Dracolich Phylactery)",
+        "Status": "Unexplored",
+        "Strategic Value": "High",
+        "Type": "Dungeon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-25",
+        "url": "https://app.notion.com/p/34ee821484b081cdadacd7764adfcc6a"
+      }
+    },
+    {
+      "source_id": "361e8214-84b0-8108-98c6-c6ab45d6ae2b",
+      "title": "Northern Crown Financial — Luskan Branch House (Shipmaker's Row)",
+      "revision": "2026-08-20T20:00:21.094Z",
+      "body_hash": "cd1112199def754a2e980dcd14c4b26aaf4cf7c46bc41971bc46afcb36247eb3",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b081f28447e5247b0265b1"
+        ],
+        "Garrison": "",
+        "Name": "Northern Crown Financial — Luskan Branch House (Shipmaker's Row)",
+        "Notes": "First NCF building, predates Neverwinter branch. Shipmaker's Row corner building (two street frontages), Northern District, Luskan. Formerly Sea-Claw Financial (Kurth associates relocated after Baram persuasion). Acquired Ches 1493. Varrick's split: front half = legitimate banking + Thorn & Silver Exchange shared counter; back half = grey-market entrance off secondary street, dwarven-stone wall between, no sound penetration. Varrick's upstairs office is a maritime-instrument museum. Arik's personal basement safe is canonical and unopened. Unauthorized maritime insurance side business runs from here. Night character INVERTS Neverwinter's: iron-shutter sunset ritual closes the front, back door glows for smuggler/captain traffic, Selah Thorn (22) runs night ops with standing loan authority and an undocumented crossbow under her desk, Varrick takes nightly intel-exchange drinks at Safe Harbor Inn (30 seconds around the corner with Taerl Windhaven). Rats in the walls. Contested-territory neighborhood; both factions (Baram's enforcers and neutral merchants) need the building and leave it alone.",
+        "Parent Location": [
+          "https://app.notion.com/p/34ce821484b0815daa7ded8836079200"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "Extracted from Business Registry entry 321e821484b0812d82f9cc0add910698 on 2026-05-15.",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-15",
+        "url": "https://app.notion.com/p/361e821484b0810898c6c6ab45d6ae2b"
+      }
+    },
+    {
+      "source_id": "361e8214-84b0-8114-927c-c6436632eda6",
+      "title": "Northern Crown Financial — Suzail Branch House (Bardenthal Counting House)",
+      "revision": "2026-08-20T20:00:24.523Z",
+      "body_hash": "1409b7af91d2212e75eae323d2879502553fd18e6126c41d3c5af70fc0388c39",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b081f28447e5247b0265b1"
+        ],
+        "Garrison": "",
+        "Name": "Northern Crown Financial — Suzail Branch House (Bardenthal Counting House)",
+        "Notes": "NCF Suzail, established Kythorn 1494. Eastern beachhead for empire's Cormyr expansion. Former Bardenthal Counting House (Cormyrean merchant family, vacated when their operations moved). 8 employees, 917 gp/month — smallest branch, designed as positioning rather than profit. Dagny Ironfold (shield dwarf, 58) is Branch Manager AND Bregan D'aerthe asset (turned by Kimmuriel before Jarlaxle's legitimate NCF board seat made her original mission obsolete; redirected to Cormyrean state intelligence). War Wizards conducting ACTIVE magical surveillance on building exterior — canonical and constant. Dagny's BD dead drop is OFF-PREMISES (behind cobbler's shop on Eastway). Architectural texture canon INCOMPLETE — building named but not described; flagged for pre-session pass. Three overlapping intelligence operations (War Wizards watching exterior; Dagny watching Cormyr for BD; Veil watching Cormyr for empire) at least two of which don't know the others exist.",
+        "Parent Location": [
+          "https://app.notion.com/p/34ce821484b0815d97acc2ffe6144340"
+        ],
+        "Region": [
+          "Cormyr"
+        ],
+        "Source File": "Extracted from Business Registry entry 321e821484b08109a55af30bd40fa6cb on 2026-05-15.",
+        "Status": "Controlled",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-15",
+        "url": "https://app.notion.com/p/361e821484b08114927cc6436632eda6"
+      }
+    },
+    {
+      "source_id": "361e8214-84b0-8146-a17b-cbbc1d829c97",
+      "title": "Hollow Reach (Independent Polity / Anticipated Vassal Kingdom)",
+      "revision": "2026-08-20T19:53:48.397Z",
+      "body_hash": "0a11aca3716a4f47d7682f80f244d79a37b691f723ddb0ff7c7ad690efae7e94",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0817a91ded9b892517270"
+        ],
+        "Garrison": "",
+        "Name": "Hollow Reach (Independent Polity / Anticipated Vassal Kingdom)",
+        "Notes": "Kingdom of self-aware undead and their living allies in the corridor between Thay's northern frontier and the Anauroch desert margin. Founded by Mehura Anhepset (Sunless Queen, last priestess of the Dawn Mother) \\~140 years ago after the Time of Troubles. \\~80,000 total souls: 35,000 sapient Awakened + 30,000 living citizens (Mulhorandi exiles, Bedine, Tuigan splinter clans, Rashemi dissidents, freed Thayvian slaves) + 20,000 military (12K standing Awakened Host under Selvarra Sylphaire as Lord-Captain, 8K reserve, plus 400 elite Sylphaire Rangers under Allera Sylphaire). Government: theocratic monarchy + Council of First Awakened (23 founders, territorial responsibility) + Living Council (31 elected, advisory). Compact slowly weakening (40% decline in awakening rate over 140 years). Religion: Dawn Mother compact + broad tolerance for living-citizen faiths + ban on Thayvian deity worship. Economy: saltpeter, sun-bronze, Imaskari artifact licensing, refined grains. Family triangle: Allera (alive ranger-general, eldest) + Selvarra (banshee Lord-Captain, middle, Traxex mirror, Mehura's quiet successor candidate) + Verissa (alive, departed to Eltabbar 60 years ago, requesting safe-passage in 1499 DR). TEMPORAL STATE: independent polity at page creation; Arik has not yet chosen alliance approach (Approach One alliance-first / Two coerced vassalage / Three conquest). Post-treaty configuration documented as conditional. Strategic objective: Sun-Crowned Heights (Akhet-Senet) plateau from Thay.",
+        "Region": [
+          "Anauroch"
+        ],
+        "Source File": "Composed 2026-05-15 from consolidated canon across Kara-Turan exile kingdom worldbuilding, Hollow Reach development sessions, Sylphaire family triangle materials, and alliance-arc preparation.",
+        "Status": "Contested",
+        "Strategic Value": "High",
+        "Sub-Locations": [
+          "https://app.notion.com/p/361e821484b081c18106fac55527195c"
+        ],
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-15",
+        "url": "https://app.notion.com/p/361e821484b08146a17bcbbc1d829c97"
+      }
+    },
+    {
+      "source_id": "361e8214-84b0-8147-bd70-cf207ddfefd2",
+      "title": "Northern Crown Financial — Neverwinter Branch House",
+      "revision": "2026-08-20T20:00:27.643Z",
+      "body_hash": "edfa61ed288c5e05894b00c8f6f91d3f5e1e73b84bd83ecd93425c413c05d660",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b081f28447e5247b0265b1"
+        ],
+        "Garrison": "",
+        "Name": "Northern Crown Financial — Neverwinter Branch House",
+        "Notes": "NCF Neverwinter banking house on the Dock District / Protector's Enclave border. Four stories, narrow-deep lot, local stone ground floor with pale marble above, azurite-inlaid double-door entrance, dragon-head rain gutters (Dorn's joke marking vault below). Acquired Session 6-7 for 6,800 gp (development incentive); current value 500,000 gp. Nestra Darkwind's fourth-floor office faces Baen Construction HQ across the way. Vault Level (canonized): triple-key access (physical key + arcane passphrase + personal recognition for 5 authorized), intrusion response with magical exit-sealing and purple-smoke marking, anti-scrying wards, observation passages threading every floor, concealed escape route to exit-building 50 yards away. Night character inverts day: skeleton crew of 2 + vault rotation, no external illumination, midnight emergency-loan tradition (every merchant saved becomes a client for life), harbor-water silence.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "Extracted from Business Registry entry 321e821484b08175997cc81e61c35015 on 2026-05-15.",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-15",
+        "url": "https://app.notion.com/p/361e821484b08147bd70cf207ddfefd2"
+      }
+    },
+    {
+      "source_id": "361e8214-84b0-8154-9abb-ff2fba3cddea",
+      "title": "Glacier Terminus Complex (Anauroch Glacier / Fortress Lloryk / Eastern Canal Terminus)",
+      "revision": "2026-08-20T03:23:27.815Z",
+      "body_hash": "ad089c95d94747df0d9f619925c113ad1119e68f5b4963cc918b74eb9c964785",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Glacier Terminus Complex (Anauroch Glacier / Fortress Lloryk / Eastern Canal Terminus)",
+        "Notes": "Eastern endpoint of the empire's continental water network. Solves the Anauroch desert water problem through Seliara Frostwind's Tier 3 artificial glacier (1-mile radius, 500 ft thick, \\~3.5 cubic miles ice, 50M gallons/day melt, weekly cold-mage reinforcement). Components: the Anauroch Glacier (ice mass) + catchment basin (1M gallon reservoir) + primary channel (gravity-fed) + Fortress Lloryk (eastern anchor settlement, Bloodaxe garrison) + eastern canal terminus (Hunding Canal endpoint locks) + agricultural distribution network. Single-glacier operates at ZERO operational margin (50M demand exactly matches 50M supply). Full four-glacier complex (planning target) would yield 150M gallons/day surplus. STRATEGIC VULNERABILITY: complex collapses within 12 months if Seliara is removed (dead, captured, exhausted, redirected). Thayvian intelligence aware of the dependency; targeting attempted and intercepted. ANTI-THAY WEAPON DIMENSION: cold magic at scale converts Thay's 300,000-undead tide from unstoppable strategic asset to logistical nightmare via deliberately-placed weekly glaciers blocking historical invasion corridors. Construction phases: phase 1 (first glacier) complete; phase 2 (Lloryk expansion, agricultural buildout) in progress; phase 3 (three additional glaciers) planned; phase 4 (cross-network integration with Hollow Reach, Tethyamar, Sembian terminus) anticipated 3-5 years out.",
+        "Region": [
+          "Anauroch"
+        ],
+        "Source File": "Composed 2026-05-15 from consolidated canon across Anauroch Glacier project chats, Hunding Canal planning, Crown of Eight Springs expedition, and eastern theater infrastructure dossiers.",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-15",
+        "url": "https://app.notion.com/p/361e821484b081549abbff2fba3cddea"
+      }
+    },
+    {
+      "source_id": "361e8214-84b0-8167-8d69-d9adf9e2b5db",
+      "title": "🏔️ Eastern Anauroch — Frostborn Legate Region",
+      "revision": "2026-08-30T19:30:48.215Z",
+      "body_hash": "e9701183735188e2bb6706d97820d32ae1f09dc6dbe095ca642766f8dddc7e42",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Crown of Eight Springs garrison — half-cohort (\\~30 fighters) of Bloodaxe Legion provenance, contracted to the Legate region and not on Bloodaxe standing rotation. Khorzad (manticore) co-opted as security asset. Security 6 / Diplomacy 7 / Investment 1 at Phase 1.",
+        "Name": "Eastern Anauroch — Frostborn Legate Region",
+        "Notes": "",
+        "Region": [
+          "Anauroch"
+        ],
+        "Source File": "",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/361e821484b081678d69d9adf9e2b5db"
+      }
+    },
+    {
+      "source_id": "361e8214-84b0-8178-811c-ea3b87b98886",
+      "title": "Akhet-Senet (Sun-Crowned Heights Plateau, Thay-held)",
+      "revision": "2026-08-20T03:25:23.826Z",
+      "body_hash": "584beaf03c9938390deaa46f0cf956797fe121690816dd5785c382a400181cb9",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/34ce821484b0819d920afb6683f4e988"
+        ],
+        "Garrison": "",
+        "Name": "Akhet-Senet (Sun-Crowned Heights Plateau, Thay-held)",
+        "Notes": "Strategic plateau on southern Hollow Reach frontier (\\~30 miles E-W, 18 miles N-S, summit \\~2000 feet above surrounding terrain, steep escarpments E/W/N, gradual southern descent toward Thay). Currently held by Thay under Tharchion Vraxis Mor-Sallar (\\~15,000 garrison: 8K infantry, 3K undead auxiliaries, 2K specialized, \\~200 Red Wizards, \\~800 spellswords + specialty assets). Reinforced from Tharchion's seat at southern foot (additional \\~5K). Two passes through escarpment: SLEEPING THROAT (eastern, primary invasion corridor, 3K defenders, three layered fortifications) + THARCHION'S THROAT (western, secondary, 1.5K defenders). Strategic significance: whoever holds the plateau controls eastern theater depth, dominates historical Thayvian invasion corridors, would close them permanently if taken by Hollow Reach. Northern slopes sit on southern margin of SHARN BARRIER (phaerimm question — phaerimm haven't responded in 400 years of Thay occupation but campaign projections call for 30 days Awakened-Sylphaire mixed occupation post-assault, response uncertain). Vraxis's LIBRARY (27 years of research on Awakened combat doctrine + anti-undead magical theory + Mulhan ritual practices) = highest-priority intelligence target in eastern theater. Campaign casualty projections: 4-6K Awakened destroyed, 40-80 Sylphaire rangers killed, 2-4K Bloodaxe depending on approach.",
+        "Region": [
+          "Anauroch"
+        ],
+        "Source File": "Composed 2026-05-15 from consolidated canon across alliance-arc campaign preparation and Thayvian frontier intelligence.",
+        "Status": "Hostile",
+        "Strategic Value": "Critical",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-15",
+        "url": "https://app.notion.com/p/361e821484b08178811cea3b87b98886"
+      }
+    },
+    {
+      "source_id": "361e8214-84b0-8178-a028-eef9ba893773",
+      "title": "Northern Crown Financial — Waterdeep Branch House (Trade Ward)",
+      "revision": "2026-08-20T20:00:32.755Z",
+      "body_hash": "d2aa7df30b59c1cfa264e4b70757a10de8ec214a553e25111789a46fcc2f6bb6",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b081f28447e5247b0265b1"
+        ],
+        "Garrison": "",
+        "Name": "Northern Crown Financial — Waterdeep Branch House (Trade Ward)",
+        "Notes": "NCF Waterdeep Trade Ward Primary, established Mirtul 1494. Newest of the four primary branches. 12 employees, beachhead-sized deliberately. Conservative banking operation under guild license (Jeweler's Guild, Merchant Syndicate). Run by Dorothea Varnilly with Helena Brightwater (Senior Loan Officer), Jonas Creel (Security Head, ex-city-watch captain), Mireth Starweaver (Entertainment Coordinator — unusual role suggests client-entertaining model). Architectural-canon GAP: building lacks the texture treatment Neverwinter and Luskan have. Recommend texture pass before significant in-session action. Sister site: Coins Ward Financial Center (separate property, separate management, clandestine intelligence function, Dorothea unaware) — documented separately.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "Extracted from Business Registry entry 321e821484b08169bde3cc7112ca328d on 2026-05-15.",
+        "Status": "Controlled",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-15",
+        "url": "https://app.notion.com/p/361e821484b08178a028eef9ba893773"
+      }
+    },
+    {
+      "source_id": "361e8214-84b0-81a6-af8f-ffc95216b2e8",
+      "title": "Akhet-Sereth (Ruins of the Pre-Trouble Mulhan Capital)",
+      "revision": "2026-05-15T15:49:11.282Z",
+      "body_hash": "795a54197f7481641754ec8dfa317a8bf5b5b0edf95f16035fdfe4c5a3784ff0",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "",
+        "Name": "Akhet-Sereth (Ruins of the Pre-Trouble Mulhan Capital)",
+        "Notes": "Pre-Time-of-Troubles Mulhan kingdom capital, abandoned \\~140 years. Site of the Dawn Mother's death and the compact's founding moment. Located in the western reaches of the Hollow Reach corridor, on a slight elevation. \\~4 square miles, mostly collapsed/ruined. \\~20% standing structures (walls without roofs, partial temple complex outer walls, partially-intact noble compounds). Mostly tumbled rubble. Dry desert vegetation. Wildlife: scorpions, snakes, jackals, larger desert predators denning in collapsed structures, occasional Bedine passage. MAGICAL RESIDUE: low-level divine resonance from the goddess's death, detectable to trained mages, has not diminished over 140 years. Population: zero. Hollow Reach official policy: religious site, off-limits to scavenging or settlement. Mehura has not visited in \\~70 years. Periodic survey expeditions only (most recent \\~12 years ago, reporting to Library of First Awakened). HIDDEN ARCHIVES: Mulhan priestly orders hid the kingdom's accumulated theological + ritual + political + Dawn Mother cult records before Thayvian forces reached the city. Still concealed within temple complex's collapsed sections. Multiple expeditions have failed to find them in over a century. Sania Valmorra has strong interest; Vraxis's library may contain Thayvian intelligence about archive location. Site preserved as narrative potential — possible Mehura return scene, archive discovery, Verissa pilgrimage, Thayvian operation, phaerimm proximity, or Dawn Mother revelation. None yet committed to canon.",
+        "Region": [
+          "Anauroch"
+        ],
+        "Source File": "Composed 2026-05-15 from consolidated canon across Hollow Reach origin material, Dawn Mother compact theology, and Mulhan-kingdom historical fragments.",
+        "Status": "Unexplored",
+        "Strategic Value": "Moderate",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-15",
+        "url": "https://app.notion.com/p/361e821484b081a6af8fffc95216b2e8"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 203,
+      "UNKNOWN": 1380,
+      "CONFLICT": 10,
+      "SUPERSEDED": 14,
+      "MISSING_DATA": 4,
+      "FUTURE": 6,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 237,
+      "UNMEASURED": 1383
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 203,
+      "UNREVIEWED": 1383,
+      "CONFLICT": 8,
+      "SUPERSEDED": 13,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 6,
+      "ECONOMIC_CONTEXT": 3
+    }
+  }
+}

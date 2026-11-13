@@ -1,0 +1,619 @@
+{
+  "schema": "tnp.economy.locations-body-ingest/1",
+  "batch": "L5",
+  "records": [
+    {
+      "source_id": "348e8214-84b0-8141-8aa0-cd6be66f5986",
+      "title": "🍺 The Yawning Portal",
+      "revision": "2026-08-20T19:51:59.780Z",
+      "body_hash": "473970ffc2840e4e6b2410fa1bee54c03bdffd823c6d4a10b8243d3ed7f4ca7d",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "Durnan (owner, proprietor, long-lived former Undermountain adventurer, famously laconic, known to every Open Lord across his Portal tenure). The Missus (Durnan's wife, runs the kitchen, accepts tabs). Winch operator on duty (unnamed rotating staff, maintains the Well ascent/descent assembly). Mirt the Moneylender (frequent patron at central common-room table when in Waterdeep, former Harper, extensive Waterdhavian connections). Bonnie (common-floor bartender rotating staff). Regular clientele: adventurers bound for or returning from Undermountain, merchants brokering equipment and information, Font of Knowledge scholars researching dungeon lore, Harpers using the Portal as rendezvous cover. No standing martial garrison — Durnan's quarterstaff behind the bar is the deterrent, plus the collective understanding that the Portal's peace is worth keeping.",
+        "Name": "The Yawning Portal",
+        "Notes": "Most famous tavern in Waterdeep. Castle Ward, corner lot, short walk from the Market and Castle Waterdeep. Named for the 40-foot well in the rear courtyard that opens onto the first level of Undermountain — the canonical city-facing entrance to the megadungeon beneath Mount Waterdeep. Owner: Durnan, who has run the Portal since before most living Waterdhavians were born. Long-lived by adventurer's standards (rumored dwarf-blood or Undermountain-acquired longevity magic). Laconic, fair, intolerant of disturbances. Quarterstaff behind the bar is famously more than it appears. Knows Laeral personally; has known every Open Lord. Mirt the Moneylender is a frequent patron at the central common-room table, former Harper, extensive city connections. The Well is stone-ringed, 40 feet diameter, ringed by waist-high wall, heavy iron grating lowered at night, winch-and-rope assembly for paid descent (1 gp standard fee). Adventurers, merchants, scholars from Font of Knowledge, Harpers, and occasional nobility form the regular clientele. Shi'van has not been a direct patron — her Waterdeep social geography runs Sea Ward / North Ward rather than the Castle Ward adventurer belt — but the Portal is strategically relevant as rumor nexus, Undermountain/Skullport interface, potential Mirt encounter site, and default adventurer-recruitment venue. Firth's Observer Network includes passive monitoring of common-room conversation.",
+        "Population": 40,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "WotC canon: Waterdeep: Dragon Heist (5E), Dungeon of the Mad Mage (5E), City of Splendors: Waterdeep (3.5E), Volo's Guide to Waterdeep (2E).",
+        "Status": "Allied",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081418aa0cd6be66f5986"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8144-bba1-f2885704de1b",
+      "title": "🛏 Crosscurrent Inn (Neverwinter)",
+      "revision": "2026-08-20T20:21:24.425Z",
+      "body_hash": "78048a8590d80c0f6e08b280b94517671262e854dd77054c3f3b83266475bf96",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Inn staff; no Baen or Observer Network presence. Discreet but standard-commercial security.",
+        "Name": "Crosscurrent Inn (Neverwinter)",
+        "Notes": "Merchant District inn, Neverwinter. Shi'van's registered lodging during the Session 34 stay (Days 701-717). Check-in 25th Eleint 1493 DR, seventh bell. First B. Taranis operations contact within one hour of check-in — dinner invitation delivered. Seren independently identified a separate watcher at the gate registry during the same window — Aldric economic analyst, not B. Taranis. The Crosscurrent was Shi'van's sleep base for the stay; day-hours transferred to Aldwich Lane workshop.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[session-34-the-brothers-city-log.md](http://session-34-the-brothers-city-log.md)",
+        "Status": "Allied",
+        "Strategic Value": "Low",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b08144bba1f2885704de1b"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8147-a51b-da9c6feb22f5",
+      "title": "📚 Font of Knowledge",
+      "revision": "2026-08-20T19:51:35.824Z",
+      "body_hash": "585c94df8dabc1cf4383985ce2a4937968c45d569eb512c04f15efa6f41172cb",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "Sandrew the Wise (High Loremaster of Oghma, Chief cleric, administrative head of the Font, long-serving, institutionally careful, trusted scholarly referee across the Sword Coast). \\~30 ordained Loremasters residing on premises, subdivided by specialty (theological lore, historical record, natural philosophy, magical theory, commercial and genealogical archives). \\~20 Acolytes (junior clergy in training, staff front desk, guide casual researchers, maintain catalogue). \\~40 Lay Scholars at any time (rotating cohort with temple-granted research access — visiting Candlekeep academics, noble-sponsored genealogists, Watchful Order research affiliates, scholars from other institutions). Permanent magical climate control (temperature, humidity, pest suppression) maintained by clergy. Ward-sealed Closed Collection subsection (restricted to senior clergy and writ-bearing researchers). No standing martial garrison — Oghmite institutional neutrality and magical archive protections are the security.",
+        "Name": "Font of Knowledge",
+        "Notes": "Temple of Oghma and largest public library in Waterdeep. Castle Ward, Street of Bells. Three-story domed stone building, 80-ft rotunda under copper-sheathed dome, classical architecture (columns, pediment carved with Oghma's scroll-and-branch symbol). Second-most-significant bibliographic institution in Faerûn after Candlekeep — considerably more accessible (Candlekeep requires book-donation tribute; Font admits legitimate researchers). Holdings span theology, history, geography, natural philosophy, non-practical magical theory, genealogy, commercial records, administrative archives predating many Waterdhavian institutions' own records. Cataloguing system is Oghmite (four centuries of curatorial refinement). Permanent climate control — temperature stable, humidity managed, pest-sealed. Closed Collection subsection ward-sealed, restricted access, holds dangerous/fragile/politically sensitive material. High Loremaster: Sandrew the Wise (elderly human, long-serving, institutionally neutral, trusted scholarly referee). \\~30 ordained Loremasters, \\~20 Acolytes, \\~40 rotating Lay Scholars. Campaign relevance: Drathen Baen'und craft-lineage research pathway (four centuries of commercial/genealogical Waterdhavian records); Gallows-Marked prophecy complementary to Sage Kellam's Candlekeep material; Institut non-practical magical theory research; Karak Durath archival context (Dessarin corridor, displaced dwarven clans, Besilmer-era fortresses); Rosenna Thatch's research base as lay scholar. Institution's principal strategic asset is neutrality — hardliner coalition, Masked Lords, Ship Kurth, Aldenmere all find same courteous welcome as Shi'van.",
+        "Population": 90,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "WotC canon: Waterdeep: Dragon Heist (5E), City of Splendors: Waterdeep (3.5E), Volo's Guide to Waterdeep (2E), Faiths and Pantheons (3E Oghma domain).",
+        "Status": "Allied",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b08147a51bda9c6feb22f5"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8149-a7e3-df762f727510",
+      "title": "🏮 Lamplighter Guild Hall",
+      "revision": "2026-08-20T19:51:41.282Z",
+      "body_hash": "e0080289b78dfa5b0ab81c3adc6e5dd716436decd797d0727b69483caa9e6125",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "Guildmaster Torben Wicksworth (principal authority, ground-floor rear office, co-chair of the 216-143 Wicksworth partnership alliance vote). Senior Lamplighters' Council (5-member adjudicative body including Wicksworth, meets in second-floor chamber). Dispatch clerk at ground-floor desk (daily route assignments, knows every active lamplighter by sight). Registry clerk on second floor (pension-records archive, apprenticeship-completion documentation). 804 active members distributed across all city wards (down from 912 a decade ago, 40% recruitment reduction documented). Notable members: Aldous Brent (63, 41 years, Castle Ward route, retiring in 2 years, Session 8C hearing witness); Gareth Dunwell (Ward 3 lamplighter, Session 21 Commerce Court hearing witness). No standing martial garrison — guild security is lamplighter discipline plus commercial-grade locks on the second-floor pension-records archive. Pension records duplicated at Castle Waterdeep judicial annex as institutional insurance.",
+        "Name": "Lamplighter Guild Hall",
+        "Notes": "Home of the Lamplighters' Guild of Waterdeep. Trades Ward, a block north of the working-class commercial corridor. Two-story brick building. Ground floor: dispatch office (large slate board mapping city's lamp-post network by ward, chalk maintenance marks), equipment storage, cart yard access, common room with coal stove for pre-dawn/post-dusk gatherings, Guildmaster Wicksworth's office (at back, small, desk facing the yard, his apprentice-completion certificate framed behind him). Second floor: registry clerk's office, pension-records archive (40 years of certified employment records — duplicated at Castle Waterdeep annex as institutional insurance), apprenticeship-completion documentation (114 entries over past decade), meeting chamber with oak benches and raised platform for Wicksworth's speaking position. Wicksworth filed the Session 8C Section 22 petition against the Promethean Device (Day 505); lost 3-2 at the Day 510 hearing; read Shi'van's Promethean Lamp Post transition proposal post-hearing and did not look away. Post-Commerce Court Day 592: Gareth Dunwell's testimony established the guild's working-class legitimacy as part of Shi'van's 4-1 vindication. Oakheart's Commerce Court speech publicly staked the guild's position to Shi'van's follow-through on maintenance and pensions. The Promethean Lamp Post Infrastructure Program (2,000 posts, 300-340 sustained positions) depends on the guild's cooperation for maintenance contract; the guild's pension future depends on the program's economic stability. Northern Shield Assurance's Pension Bridge Endowment (25,000gp) backs the transition period; Wicksworth is Toril Shield Assurance's Guild Advisory Chair. Relationship is neither alliance nor enmity — grudging ongoing institutional engagement forced into partnership by infrastructure mathematics. 'Best antagonist the campaign has produced — right about everything except the conclusion.' Rosenna Thatch (Waterdeep Sentinel freelance) interviewed Wicksworth in the meeting chamber before the Session 8C hearing, two-hour session.",
+        "Population": 20,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "Session 8C hearing week log (Days 505-510, Ches 1493); Session 21 Commerce Court log (Day 592); Session 29 Pension Bridge Endowment structure; Oakheart Dock Ward testimony transcript.",
+        "Status": "Allied",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b08149a7e3df762f727510"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-814c-b161-f14dcbee9632",
+      "title": "🌊 Mistshore",
+      "revision": "2026-04-20T19:40:19.730Z",
+      "body_hash": "0132768811b94894fe4a668547774924abdbe89ebc18ffc22f1aaf6430ac25c1",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "No formal authority. Rotating informal hierarchies, shifting season by season — whoever currently has the most muscle, the most reliable knife, or the most convincing protection claim. Current strongest figure typically unknown to Watch records by the time those records are filed. \\~12 boat-rowers (semi-permanent figures working skiffs through the Gut, closest thing to infrastructure, paid ears for outsiders). A handful of wise-women (older, long-surviving medicine-women, midwives, who wash the dead for burial at sea — do not take sides, do not name names, accept payment in food or fabric). Xanathar Guild contractors (unnamed, recognizable, Mistshore as deniable labor pool for Guild operations; recruited, used, often disposed). Watch does not patrol Mistshore — enters only on specific body-retrieval writs. No institutional governance. No guild society. The law is whatever is currently locally enforceable.",
+        "Name": "Mistshore",
+        "Notes": "Floating shantytown on southern Dock Ward waterfront. \\~1000-1500 destitute residents on any given day — shipwreck survivors, refugees outside guild society, broken dock-workers, addicts, deserters, fugitives, their children. Built on abandoned ships lashed together, stilt-houses in harbor mud, plank-walks rising and falling with tide. Three quarters: Shore Quarter (lean-tos and shacks on dry ground), Stilt Quarter (pole-platforms above high tide), Floating Quarter (hulk-cluster and houseboats). The Gut (narrow channels navigable by skiff, boat-rowers hire for 1-2 cp). Outer Wreck Field (partially submerged abandoned hulks, unsafe boundary with open harbor). No Watch presence except body-retrieval writs. No Guild-Under-the-Well interest. Xanathar Guild uses as deniable labor pool. Boat-rowers are accessible intelligence interface (paid per inquiry). Wise-women provide midwifery, medicine, burial services. For Shi'van's operations: hard geographic boundary. No drow presence survives the threshold. Firth's Observer Network maps Mistshore's margins; Peri's underworld apparatus handles extractions inside; refugee intake does not reach Mistshore-proper because the institutional identity has been lost. Campaign relevance: missing-persons trail termination, Xanathar Guild recruiter tracking, refugee program structural limitation, rare high-stakes scene venue.",
+        "Population": 1200,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "WotC canon: Waterdeep: Dragon Heist (5E), City of Splendors: Waterdeep (3.5E), Mistshore FR references across multiple editions.",
+        "Status": "Contested",
+        "Strategic Value": "Low",
+        "Type": "Settlement",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b0814cb161f14dcbee9632"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-814d-b068-e0de417a0020",
+      "title": "🥂 Husteem Distribution Channel (Noble Circuit) — Waterdeep",
+      "revision": "2026-08-22T15:55:24.771Z",
+      "body_hash": "ced8872c07039366c2101c8632dca6ca6efde9250ce4960aed50a404a4091484",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "Husteem household staff. Lady Melinda Husteem direct. Tessavere salon staff at relay point. No dedicated Baen'und personnel on-site.",
+        "Name": "Husteem Distribution Channel (Noble Circuit) — Waterdeep",
+        "Notes": "Noble-class distribution channel for Baen'und commercial products (Promethean Device luxury variants, Summer Crown, Institut garments, Lanternlight Purse, future commercial products). 60/40 Shi'van/Husteem partnership split on noble sales only. Operational base: Husteem family residence, Castle Ward. Origin: 'The Fountain Handshake' in Coins Ward, Session 8A. Partnership gross approximately 1,900 gp/month (Shi'van 1,140, Husteem 760). Brand pre-positioned through Lady Tessavere's salon via Melinda Husteem intermediaries before Blackwatch Lane showroom opening. Marcel complication (early sessions, family social exile) resolved through Tessavere placement and Marcel's standing as Institut Creative Director. Channel stable at Day 717.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "Promethean Device Creation Registry (334e8214-84b0-81c8); Promethean Device — Husteem Channel Monthly (342e8214-84b0-81cb); 14 Blackwatch Lane Showroom (347e8214-84b0-8130)",
+        "Status": "Allied",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b0814db068e0de417a0020"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8151-9443-cdeb31108009",
+      "title": "📮 The Plinth (Candle Street Dead Drop)",
+      "revision": "2026-04-20T00:30:30.169Z",
+      "body_hash": "f18b98dc10dcb7b0e7a401ee40c73d20459058669cffceafea04ece38d34e66c",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "No standing presence. Kenafin embedded asset (provisionally Thessaly Wren) dormant since Day 620. Bregan D'aerthe active two-way collection (Kimmuriel Oblodra reading product). Unidentified fourth party maintaining \"third box\" as response address (Gallows-Marked-aware, anonymous approach Day 725). Multi-box architecture inferred from Session 36 letter.",
+        "Name": "The Plinth (Candle Street Dead Drop)",
+        "Notes": "Kenafin dead drop + BD two-way channel + anonymous fourth-party correspondence site. Candle Street, Waterdeep. Third lamp post north of the Plinth landmark, east side, hollow post cap for Kenafin. Multiple boxes inferred (Session 36 references 'third box'). Shi'van deposited Day 684; BD collected by Day 688. Embedded asset's final known deposit Day 620. Anonymous letter invoking Gallows-Marked arrived Day 725 requesting response via third box (yes/no/a-for-delay). Most intelligence-active single site in Shi'van's operational picture — do not surveil directly.",
+        "Population": 0,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "[session-21-the-hearing-log.md](http://session-21-the-hearing-log.md) / [heretics-thread-addendum-day717.md](http://heretics-thread-addendum-day717.md) / [session-36-prose.md](http://session-36-prose.md)",
+        "Status": "Contested",
+        "Strategic Value": "Critical",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-19",
+        "url": "https://app.notion.com/p/348e821484b081519443cdeb31108009"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8161-8afd-e2e826b898e1",
+      "title": "⚰ City of the Dead",
+      "revision": "2026-08-20T19:51:24.645Z",
+      "body_hash": "2a73d0f93947104e26c01fdce0415c338243fc85139f18a2a1354ecf45803ce0",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "\\~30 Groundskeepers (permanent staff, joint City/noble-endowment employment, grass/trees/paths/tomb facade maintenance, Veilstone and Ashbrook families hold hereditary positions). \\~8 Sealkeepers (rotating clerical detail from Spires of the Morning, Halls of Justice, House of the Moon — quarterly seal inspection and ritual maintenance). 12 Nightkeeper Watch constables (specialized City Watch detachment, post-sunset patrol, undead containment training, silvered weapons and torches, signal horn for clerical response). 4 Gatekeepers (civilian Coffinmarch Gate and North Gate staff, public hours only, log arrivals, direct mourners, not armed). Clerical responders on-call from contributing temples. No human living population after dusk — the gates close, the Watch patrols, and nothing else should be here.",
+        "Name": "City of the Dead",
+        "Notes": "Waterdeep's principal cemetery. Walled and gated necropolis in the city's north between North Ward and the Trollwalls. \\~2 miles of stone wall perimeter (12-15 ft tall, wrought-iron spikes), four gated entrances (Coffinmarch Gate south principal, North Gate residential-adjacent, 2 service gates). Interior grounds \\~quarter-mile by third-mile. Landscaped as formal park: stone avenues, gravel secondary paths, grass, mature oak/ash/yew/cypress (oldest predate city founding). Waterdhavian burial tradition emphasizes above-ground stone interment — family mausoleums, guild memorial halls, individual tombs. Key sections: Lords' Walk (principal central avenue, former Open Lords and posthumously-identified Masked Lords), Heroes' Garden (adventurers who died in Undermountain service, Durnan's patronage), paupers' section (simpler markers for those unable to afford above-ground interment). Every tomb ward-sealed with inscription; quarterly inspection and renewal. Public by day (family mourning, noble picnics, children playing); sealed by dusk; nothing living inside walls after dark, nothing dead should leave. Nightkeeper Watch specialized detachment containment-patrols post-sunset. Clerical responders on-call from Spires of the Morning, Halls of Justice, House of the Moon. Campaign relevance: Shi'van's Gallows-Marked Shepherd status intersects thematically but not operationally yet; potential memento mori commercial opportunity for Institut; undead incident venue if campaign requires; Heroes' Garden Durnan patronage channel for Undermountain-adjacent casualties; Kenafin theological-assessor possible interest in Waterdhavian burial practice.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Population": 50,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "WotC canon: Waterdeep: Dragon Heist (5E), City of Splendors: Waterdeep (3.5E), Volo's Guide to Waterdeep (2E), The City of Splendors FR module.",
+        "Status": "Allied",
+        "Strategic Value": "Moderate",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081618afde2e826b898e1"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8162-8111-fba51071e587",
+      "title": "Hunding Canal — Baen Continental Waterway System",
+      "revision": "2026-08-20T03:21:10.923Z",
+      "body_hash": "cb546239d0b869d4220abb8cad4ace484415063b9464b0276b99cce2eddb772e",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "1,400 permanent staff total at full operation. Bloodaxe Legion security coverage system-wide (\\~600 personnel), augmented by crystal network monitoring. Each operational lock station: minimum 6 Bloodaxe guards + Hunding technicians + lock keepers (\\~20 permanent per station). Formicorps tunnel colonies under Baen control for maintenance and emergency repair.",
+        "Name": "Hunding Canal — Baen Continental Waterway System",
+        "Notes": "Colloquial name for the full Baen Continental Waterway System. 600-mile infrastructure project 1494-1500 DR. Continental span Sword Coast North to Anauroch. Three-phase structure: Western Network (operational), Hunding Mountain Lock System (\\~30% complete at Early 1495 DR, 12 lock stations across 80 miles and 2,400 ft elevation change), Eastern Extension via Desertsmouth Tunnel + Anauroch glacier terminus (planning). Partnership with Hunding family clockwork engineers (name-source). Estimated total cost 12-15M gp. Net annual profit at full operation \\~750K gp. Payback 8-9 years excluding strategic value. **Canal completion is the active Dalelands casus belli driver at current campaign position** — every Grey Banner convoy blockade, every Sembian commissary rejection, every Zhentarim broadsheet mockery is documented toward the 1497-1498 DR continental war. Sembian Terminus Proposal exists as canonical strategic option (Sembia builds Section C, gets 5% gross revenue in perpetuity).",
+        "Parent Location": [
+          "https://app.notion.com/p/34ce821484b081d49ba6f0ded0305137"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "baen-continental-waterway-system__1_.md",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b081628111fba51071e587"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8165-8ce7-e0639959dd20",
+      "title": "🐟 Fish Street Receiving Office — Luskan",
+      "revision": "2026-08-20T19:53:02.363Z",
+      "body_hash": "3a1d731976f62e05bb19415345e86ce49e66b358f6911524aa0c04be22ff6988",
+      "disposition": "CONFLICT",
+      "semantic_status": "CONFLICT",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b081e398def742872121bf"
+        ],
+        "Garrison": "Unidentified Ship Kurth / Bregan D'aerthe receiving personnel. Specific proprietor and internal operation unmapped. NRTC commercial inquiry active via Marcus Ironhand's driver (Session 31-32, cover establishing, \\~tenday from Day 663 to operational readiness). Ship Kurth evaluators at Sleeping Serpent Waterdeep (Session 32) constrain active exploitation tempo.",
+        "Name": "Fish Street Receiving Office — Luskan",
+        "Notes": "Luskan-end terminus of Petra Voss communication channel. Fish Street, Luskan. Weekly courier pouch (textile samples + invoices + hidden surveillance reports) delivered here from Northgate stables Waterdeep via Thornhold/Red Larch/Triboar route. Identified Session 31 but UNMAPPED. NRTC commercial inquiry active mapping vector (Marcus's driver, commercial cover, Session 32 cover establishing). Ship Kurth = Beniago Kurth = Bregan D'aerthe (Session 33 reframe) — so endpoint may be a BD intelligence endpoint, which reframes the channel's strategic meaning. Voss family (Petra + brother Renald) link this to Northwatch Consulting / Ravencrest territorial operation. DO NOT RAID — mapping only, preserve knowledge advantage.",
+        "Parent Location": [
+          "https://app.notion.com/p/34ce821484b0815daa7ded8836079200"
+        ],
+        "Population": 0,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[session-31-the-homecoming-prose.md](http://session-31-the-homecoming-prose.md) / [session-32-the-eye-opens-prose.md](http://session-32-the-eye-opens-prose.md) / [heretics-thread-addendum-day717.md](http://heretics-thread-addendum-day717.md)",
+        "Status": "Hostile",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-19",
+        "url": "https://app.notion.com/p/348e821484b081658ce7e0639959dd20"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8170-a5eb-d6a99b8bf748",
+      "title": "🗿 The Walking Statues of Waterdeep",
+      "revision": "2026-08-20T19:14:44.455Z",
+      "body_hash": "6c8fd6761e5778045d37bf1f318285985fbc69fe8c935d2f0434504f34471e9b",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "No living personnel. Four animate stone constructs carved into Mount Waterdeep's flanks. Each \\~90 ft tall humanoid granite form. Dormant under normal conditions; activation by Open Lord authority (primary) or emergency Masked Lords quorum (never used in living memory). Archmage (Vajra Safahr) holds standing oversight writ: weekly Griffon Cavalry aerial inspection, quarterly Watchful Order magical condition assessment, immediate anomaly notification to Castle Waterdeep. Masked Lords provide consultative authority; Open Lord decides. Never walked in living memory; historical activations documented at Font of Knowledge archive level. Weapons capability: individual statue combat capacity historically demonstrated but not quantified; engagement with 90-ft humanoid stone construct produces city-scale effects regardless of specific combat stats. Standing defensive orders: invasion, existential magical assault, catastrophic harbor breach. Thresholds for activation are not public knowledge (adversary opacity as deterrent).",
+        "Name": "The Walking Statues of Waterdeep",
+        "Notes": "Four massive animate stone constructs carved into Mount Waterdeep's flanks at strategic elevations — Waterdeep's emergency defensive reserve and iconic Sword Coast standing wonders. Each \\~90 ft tall, humanoid body-plan, carved directly from living granite of the mountain face (feet merge with rock beneath, separate on activation). Four positions: Eastern Sentinel (highest prominence, most commonly visible from inhabited Waterdeep), Southern Harbor-Watcher (upper southern flank, visible from harbor/Seatower/Castle Ward), Western Sea-Watcher (upper western face above sea cliff, visible to approaching vessels, widest observation field in city), Northern Trollwall Guardian (upper northern ridge, land-approach defensive posture). Activation requires Open Lord authority (Laeral Silverhand) as primary trigger + Archmage (Vajra Safahr) magical preparation + Masked Lords consultative input. Historical activations documented at Font of Knowledge (multiple pre-Time-of-Troubles defenses). Not walked in living memory. Activation is political nuclear option — city-wide evacuation triggers, harbor defenses maximum readiness, Griffon Cavalry aerial overwatch, Seatower alert bell, Masked Lords emergency session, Lords' Alliance notification, commercial suspension, months-to-years recovery. Campaign relevance: environmental backdrop (skyline), existential threat ceiling (campaign stakes cap), institutional intersection via Laeral/Vajra/Watchful Order/Institut partnership. Not current operational geography. WotC canonical designations vary across editions; campaign-consistent designations used here with Font of Knowledge as research pathway for specific canonical names if needed.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Population": 0,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "WotC canon: Waterdeep: Dragon Heist (5E), Dungeon of the Mad Mage (5E), City of Splendors: Waterdeep (3.5E), Volo's Guide to Waterdeep (2E), Forgotten Realms Campaign Setting 3E.",
+        "Status": "Allied",
+        "Strategic Value": "Critical",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b08170a5ebd6a99b8bf748"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8175-9eec-db1f9a0dc720",
+      "title": "🍺 The Blushing Mermaid (Firth Briefing Tavern)",
+      "revision": "2026-08-20T19:51:51.130Z",
+      "body_hash": "0464b42a9ba33b1e69f58ae93b25394ec4a04d01fabeb26042edcbb2d9dfadc9",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0810488aad07f4bded21e"
+        ],
+        "Garrison": "Active commercial tavern — innkeeper and standard staff. Observer Network has no operational presence beyond Firth's personal rear-table use. Firth meets Shi'van here as default neutral-ground venue when the Estate and harder sites are inappropriate. No known hostile surveillance at Day 717.",
+        "Name": "The Blushing Mermaid (Firth Briefing Tavern)",
+        "Notes": "Working Dock Ward tavern, northern edge. 22 feet wide, low-ceilinged, dark. Lamp oil, old beer, fish guts. Firth's primary neutral-ground briefing venue. Rear table, back-to-wall, both hands flat on table is his canonical operational posture. Session 21 Day 584 — Margaster specialist coordination meeting established operating model. Acoustic cover from working tavern clientele. Transient sailor clientele reduces watcher-pattern risk. Not a safehouse — the Nethpranter cellar (holding) and Saltcellar (secondary meetings) are separate infrastructure.",
+        "Population": 0,
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "[session-21-the-hearing-log.md](http://session-21-the-hearing-log.md)",
+        "Status": "Allied",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-19",
+        "url": "https://app.notion.com/p/348e821484b081759eecdb1f9a0dc720"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8175-a565-d27c16e5e1b5",
+      "title": "💎 Cerulean Circle Convocation Hall — Neverwinter",
+      "revision": "2026-08-20T19:52:40.153Z",
+      "body_hash": "2843c07eeb6f28f9274a809a19ed3850a91b0127b8a94e6b33b7d26416f36699",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Cerulean Circle staff. Master-artisan review venue — institutional security, not operational garrison.",
+        "Name": "Cerulean Circle Convocation Hall — Neverwinter",
+        "Notes": "Neverwinter venue of the Cerulean Circle master-artisan convocations. 15th Marpenoth 1493 DR convocation (Session 34): 43 master artisans attending. Shi'van debuted the Eye of Verðandi as publicly worn enchanted piece. Celindra Ashmore (moon elf, 60, Silverymoon enchantment school foundational theorist) attended, examined the Eye with probe tool without asking permission, identified grain-integrated Futhark. Acquired Shi'van's teaching piece (Sectioned Anatomical Collar) for 800 gp. Silverymoon Academy spring 1494 symposium invitation issued and accepted on site (\\~Day 870). Three additional commission inquiries deferred to Waterdeep return. Brettane Fold attended in standard Circle capacity having said nothing about seeing the Verðandi Collar at Aldwich Lane ten days prior.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081898b97c6329f9f29a5"
+        ],
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[session-34-the-brothers-city-log.md](http://session-34-the-brothers-city-log.md)",
+        "Status": "Allied",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b08175a565d27c16e5e1b5"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8178-84b9-f537ea3bf11b",
+      "title": "⚒ Rosznar Manufacturing Facility — Waterdeep",
+      "revision": "2026-08-20T19:52:25.458Z",
+      "body_hash": "18f8ad37ba625748d46551264653110c05f935ee2e37ac389b925d4da3b00cd2",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Rosznar smithy crew (16 workers pre-crisis, rebuilt post-Session 22). Cassian Rosznar (facility manager), Gregor Thane (production engineer, hired Session 22), Gerda Voss (floor foreman). Marcus Rosznar (patriarch) at residence adjacent to compound.",
+        "Name": "Rosznar Manufacturing Facility — Waterdeep",
+        "Notes": "Rosznar family smithy compound, Waterdeep. Manufacturing arm for Promethean Device and Promethean Lamp Post housing components. 60/40 Shi'van/Rosznar partnership split (Shi'van's favor). Deal negotiated over Pusoy at the Golden Griffin, Session 8A. Cassian Rosznar is liaison and facility manager; Marcus Rosznar is patriarch. Floating Anvil production upgrade (Session 13, Day 548) delivered zero-reject rate, 32 Devices + 10 lamp components per full day — THRESHOLD LOCK. Session 17 production crisis (day-drinking, press failures, worker burn, floor collapsed 5/16) stabilized by Shi'van + Gerda Voss + Gregor Thane hire; Rallied Session 22 (d20=17). Gregor Thane placed by Aldric Rosznar (elder branch) as eyes on facility — surveillance concern retained, production competence real. Marguerite Vesper early-adopter facility visit. 27-patent portfolio (Merileth Dawntracker) 20-year protection. Lamplighter Guild hearing 22nd Ches 1493 won 3-2.",
+        "Parent Location": [
+          "https://app.notion.com/p/2fbe821484b081a88f59cf002a2906a1"
+        ],
+        "Region": [
+          "Sword Coast South"
+        ],
+        "Source File": "Promethean Device Creation Registry (334e8214-84b0-81c8); Rosznar Floating Anvil Upgrade (335e8214-84b0-815b); Cassian Rosznar NPC (334e8214-84b0-81b9)",
+        "Status": "Allied",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b0817884b9f537ea3bf11b"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-817b-b87b-c053573a5596",
+      "title": "Screaming Cliffs",
+      "revision": "2026-04-20T20:05:27.972Z",
+      "body_hash": "1afa3c49b693f680a9818552e247d1e6ba041ae54f9a66cce312fa14782a5501",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Substantial pit fiend and high-gelugon guard cadre on 2-week rotation (extended exposure causes 'perspective shifts' — guards begin agreeing with Demiurge's efficiency arguments). All guards require mind blank magic or equivalent protection. Ritual caster team for 9,999 Names recitation (rotated similarly). Warden-equivalent senior pit fiend reporting directly to Nessus. 13 pit fiends rotating monthly for ritual blood donation (honor + career accelerator). Guard count unspecified but implied substantial. Zariel's surface Avernus administration provides solar feather monthly (provenance canonically unspecified). No mortal garrison, no mortal permanent residents, no civilian population — this is a pure containment facility.",
+        "Name": "Screaming Cliffs",
+        "Notes": "Maximum-security cosmological prison 3 miles below Avernus's surface. Sole prisoner: **the Demiurge** (YGGDRASIL-origin outsider, CR 25 bound / CR 32 unbound, 8,000 years imprisoned). Composition: solidified celestial screams + infernal iron. Chains: melted soul coins, each link containing 100 souls. Non-euclidean architecture (perception-damaging; guards require mind blank). **Monthly binding ritual requirements:** 1,000 soul coins + 13 pit fiend blood units + 9,999 Names recitation + 1 solar feather (Zariel provides; sourcing canonically unspecified). **Guard rotation every 2 weeks** (longer exposure causes 'perspective shifts' — guards start agreeing with Demiurge's efficiency arguments). **Binding degradation on \\~5-year horizon** per Asmodeus canonical warning: 'Perhaps five years before the transfer is no longer optional.' **Canonical Arik proposal at Nessus Library audience:** transfer to directed Azath House grown specifically for containment — Asmodeus contingently approved ('we'll return to this'). **Fraz-Urb'luu has active ongoing interest** in Demiurge escape (wants reality-construction secrets; canonically doesn't realize Demiurge would consider him 'redundant personnel' and optimize him immediately). Prison has lair-action capability integrated with Demiurge's bound will — substrate operationally connected to prisoner (unlike Azath architecture which is separable). Proximity effects: within 1 mile, creatures hear Demiurge's whispers offering 'true efficiency'. Under Asmodeus's direct control (not Zariel's). Minor location per page-schema (Model B).",
+        "Population": 1,
+        "Region": [
+          "Nine Hells"
+        ],
+        "Source File": "The_Demiurge_-_Prisoner_of_the_Screaming_[Cliffs.md](http://Cliffs.md) + Asmodeus Audience Framework Notion page `343e8214-84b0-8107-833a-c135dedd57d7`",
+        "Status": "Hostile",
+        "Strategic Value": "Critical",
+        "Type": "Dungeon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b0817bb87bc053573a5596"
+      }
+    },
+    {
+      "source_id": "348e8214-84b0-8191-bda7-d7037f891811",
+      "title": "⚠ Amphail Waystation (Dessarin Corridor) — Acquisition Pending",
+      "revision": "2026-08-20T19:52:56.530Z",
+      "body_hash": "3ebe8b8b5aafd184dd89edaddf898132d0b97b4eee878bf2621aca4206968ae4",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Current holder: Quentin Hargrove (Shaw) — Yartar trade factor cover, principal unresolved. No on-ground garrison; depot-scale operation. Simon Barker (civil engineering firm, Amphail, mid-tier provincial) is a village-resident NPC independent of the waystation position.",
+        "Name": "Amphail Waystation (Dessarin Corridor) — Acquisition Pending",
+        "Notes": "STANDING TRIGGER ACTIVE — See page body callout. Next Amphail reference fires Shi'van's pre-committed acquisition action. Execution channels: Marcus Ironhand buyout, Merileth title-trace or Commerce Court procedural challenge (using Stoneshaft forgery-seal evidence), Tesserly investigation resolution, ESAMT capital deployment. Village on High Road between Rassalantar and Waterdeep. Fifth of six Dessarin corridor waystations in Shaw/NRTC contest. Owner-absent six-day window per Session 31; NRTC attempt FAILED Session 32 — Quentin Hargrove (Shaw cover) completed acquisition ahead of Marcus Ironhand. Principal employer unresolved (Yartar genuine / B. Taranis blind-spot cover / Aldric-Northwatch probe). Shaw cover architecturally compromised Day 728 via Stoneshaft mould-fault rubbing identifying forged Yartar Merchants' Guild seal. Simon Barker (345e8214-84b0-8192) is Amphail civil-engineering NPC. Corridor completion critical for NRTC flow, Ravencrest logistics, and Shaw principal resolution.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "Quentin Hargrove NPC (341e8214-84b0-814d); Shaw GM Consequence Ledger entry (341e8214-84b0-8193); Simon Barker NPC (345e8214-84b0-8192); PROP Stoneshaft (345e8214-84b0-819d)",
+        "Status": "Contested",
+        "Strategic Value": "High",
+        "Type": "Settlement",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-04-20",
+        "url": "https://app.notion.com/p/348e821484b08191bda7d7037f891811"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 145,
+      "UNKNOWN": 1444,
+      "CONFLICT": 9,
+      "SUPERSEDED": 12,
+      "MISSING_DATA": 4,
+      "FUTURE": 3,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 173,
+      "UNMEASURED": 1447
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 145,
+      "UNREVIEWED": 1447,
+      "CONFLICT": 7,
+      "SUPERSEDED": 11,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 3,
+      "ECONOMIC_CONTEXT": 3
+    }
+  }
+}

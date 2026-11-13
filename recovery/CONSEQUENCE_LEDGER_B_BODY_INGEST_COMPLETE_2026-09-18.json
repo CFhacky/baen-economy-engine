@@ -1,0 +1,141 @@
+{
+  "schema": "tnp.economy.source-class-body-ingest/1",
+  "source_class": "consequence_ledger_b",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "review_mode": "read-only live Notion page fetch",
+  "body_hash_method": "SHA-256 over exact parsed Notion fetch text field; private body prose is not persisted",
+  "target": 10,
+  "reviewed": 10,
+  "failed": 0,
+  "complete": true,
+  "disposition_counts": {
+    "ECONOMIC_INPUT": 7,
+    "FUTURE_ONLY": 1,
+    "SUPERSEDED": 1,
+    "CONFLICT": 1
+  },
+  "records": [
+    {
+      "source_id": "323e8214-84b0-8118-a899-ee4de3c6e713",
+      "title": "Neverember civic cooperation: attend public ceremonies as notable citizen",
+      "revision": "2026-03-14T02:10:03.406Z",
+      "body_hash": "ac7b546bc20682538848b8b56b56a72ba4ac91e7b58623203fe321ed7a13e2a0",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "labor_supply"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-8122-ae2b-e1bebef4c027",
+      "title": "Zariel contract: 200,000 Warborn units on production schedule",
+      "revision": "2026-03-14T02:10:03.406Z",
+      "body_hash": "9d9901f07246b77eb8a57434b300dd5fc9083ceeedd1edba545e464e569befd9",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-814a-b3cc-dcd7434d99ae",
+      "title": "Check on Mila Dunwright — something off in aquaculture numbers",
+      "revision": "2026-03-14T02:10:03.406Z",
+      "body_hash": "b79acb2109f577845fbf632379087090f7fb8627219e8cd18b50f61459abe481",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "food_supply",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-8157-8f0f-d10c1910e8df",
+      "title": "Investigate timber market before House Dassyr consolidates",
+      "revision": "2026-03-14T02:10:03.406Z",
+      "body_hash": "aac1920dcbe5a6b186d98c426724958ae3322420a3a2fbc3ff0f2f3295829691",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-8187-ad22-da8ba4c1e10f",
+      "title": "Formalize political succession plan (regency council)",
+      "revision": "2026-03-14T20:43:08.922Z",
+      "body_hash": "2ff3d3a1ed489e6f2a890f9e10cd4af6fb83e7ae66192d00a666d6a8f4933af3",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "exogenous_shocks"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-81a2-a79c-e468eb4c636b",
+      "title": "Find Alassra Dawnstrider (Simbul) for Elminster",
+      "revision": "2026-03-14T02:10:03.406Z",
+      "body_hash": "5492b9926623bd091d41ac0aacf90eb46bf1031f227d2d10f0b2c0a29d844300",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "323e8214-84b0-81af-9a0c-cc0f8a23586d",
+      "title": "Elara's court: attend Coronal Remembrance ceremony",
+      "revision": "2026-03-14T02:10:03.406Z",
+      "body_hash": "856d19dd2657b1122aed37201592d80eba1dd8a4fd775cfd12de0909e141e6cf",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "population"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-81bd-8195-cc09b1652d1d",
+      "title": "Formalize Forgedeep charter review preparation",
+      "revision": "2026-03-14T02:10:03.406Z",
+      "body_hash": "cdb3f22882a807bc6569d78904bdc84935c00caba27a3332655f4cdca22610c6",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "323e8214-84b0-81e7-8275-d1f27d8a270d",
+      "title": "Establish formal apprenticeship / training program",
+      "revision": "2026-03-14T20:43:08.922Z",
+      "body_hash": "37819eedd980a50a493f968e627f609e798cdcf9a103241a42427b6016f1c342",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "labor_supply",
+        "industrial_production",
+        "event_scheduling"
+      ]
+    },
+    {
+      "source_id": "323e8214-84b0-81ed-8ab7-ed48df5c2d07",
+      "title": "Gauntlgrym partnership: engineering support for lower mine expansion",
+      "revision": "2026-03-14T02:10:03.406Z",
+      "body_hash": "8540501d68468af39c6c68e30f8b514e3462c81af458dd1618056291951f69b0",
+      "disposition": "CONFLICT",
+      "semantic_status": "CONFLICT",
+      "driver_owners": []
+    }
+  ],
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

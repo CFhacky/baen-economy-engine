@@ -52,3 +52,23 @@ hashes, but does not change its authority. The current source-schema receipt als
 marks itself `write_targetable: false` because durable Notion property IDs were
 not available. The complete, still-unapproved future gate is specified in
 `docs/NOTION_WRITE_SAFEGUARDS.md`.
+
+
+## Economic actor state origin
+
+Economic-identity records use the existing provenance vocabulary and also carry a separate state-origin classification:
+
+- `SOURCE` — directly established by campaign/source authority;
+- `DERIVED` — deterministically calculated from authoritative facts plus an approved rule;
+- `INITIALIZED` — simulation-required opening state created under an explicitly approved initialization policy;
+- `UNKNOWN` — no lawful value currently exists.
+
+State origin does not replace provenance. A record can be `SOURCE-DERIVED` provenance and still contain UNKNOWN fields.
+
+Economic structure may exist before every quantity is known. For example, a source-backed employment or banking relationship may justify an account shell without justifying an opening account balance. Missing values remain UNKNOWN rather than being inferred for convenience.
+
+Named actors must reconcile beneath source-backed aggregates. Identifying a named employee within an existing workforce does not increase the aggregate headcount. Identifying named loans within a source-backed portfolio reduces the unresolved aggregate remainder; it does not create new total lending.
+
+Institutional, business, trust, estate, programme, and personal finances remain distinct unless authority explicitly establishes otherwise. Management, custody, signatory power, trusteeship, and ownership are separate concepts.
+
+The first economic-identity implementations are Northern Crown Financial and Institut Baen'und. Institut customers/clients require actual economic or contractual evidence; social association, research participation, or faction membership alone is insufficient.

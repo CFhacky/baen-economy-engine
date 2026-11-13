@@ -1,0 +1,223 @@
+{
+  "schema": "tnp.economy.source-review-batch/1",
+  "batch_id": "2026-09-18-002-ncf-finance",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "review_mode": "read-only live Notion page fetch",
+  "body_hash_method": "SHA-256 over exact parsed Notion fetch text field; private body prose is not persisted",
+  "source_queue": "recovery/SOURCE_REVIEW_QUEUE_2026-09-18.json",
+  "records": [
+    {
+      "source_id": "2fbe8214-84b0-816a-b0b8-e7e7ed41fe29",
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-22T15:54:58.332Z",
+      "body_hash": "28650ab1055c653ef5d0bf226207f9129609eafaac5e77a8c04c3ed20a64c5f3",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "banking_finance",
+        "ownership_control",
+        "credit",
+        "trust_management"
+      ],
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Parent current source states 85 employees, 22000 gp/month revenue and 2.3M gp active loans; Snowfall 30000 gp facility is approved but explicitly undrawn at Day 7 Hammer.",
+        "Source states NCF 50% ownership plus final decision authority and five Pillars at 10% each; preserve as a source control claim without inferring unlisted balance-sheet equity.",
+        "Body describes physical silver/gold/platinum reserves and NCF control of silver backing, but gives no reserve quantity, total deposits, total liabilities, or equity balance. Trial-balance blocker remains genuine.",
+        "ESAMT figures on this later-edited umbrella page require trust-page temporal reconciliation before admission as Day-7 NCF-owned state."
+      ]
+    },
+    {
+      "source_id": "321e8214-84b0-8175-997c-c81e61c35015",
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-08-20T20:00:06.128Z",
+      "body_hash": "f96cbf9d63dfeb64a37c679f127d0408d3967c3f4ab3fa3b0f0884b79c90c358",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "banking_finance",
+        "credit",
+        "labor"
+      ],
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Branch properties record 35 staff, 10000 gp/month revenue and 5200 gp/month cost; financial body repeats 2.3M gp network loan portfolio and named loans.",
+        "Its 23250 gp/month four-branch roll-up is subordinate to the newer 22000 gp/month parent total already selected by source precedence; do not revive the stale aggregate.",
+        "Branch financial fields are last-updated Eleint 1494 baselines, not proof of exact Day-7 Hammer-1495 cost.",
+        "Snowfall facility is explicitly approved but undrawn until on/after 1 Alturiak 1495."
+      ]
+    },
+    {
+      "source_id": "321e8214-84b0-812d-82f9-cc0add910698",
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-05-15T14:54:18.668Z",
+      "body_hash": "6c5b25073120473c32c25b6dbd400eca77136fe637e2f1dc73b269147d71da30",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "banking_finance",
+        "credit",
+        "labor"
+      ],
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Branch properties record 30 staff, 9583 gp/month revenue and 4990 gp/month cost; body records 12% voyage finance and 14% inventory lending.",
+        "Branch and subsidiary revenue figures may overlap; do not sum NCF parent, branch and subsidiary revenue without an ownership/consolidation map.",
+        "Financial fields are last-updated Eleint 1494 baselines and do not establish exact Day-7 reserves, deposits or current cost."
+      ]
+    },
+    {
+      "source_id": "321e8214-84b0-8169-bde3-cc7112ca328d",
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-05-15T14:54:39.994Z",
+      "body_hash": "6857a54472dc53c97e789c08663ec075cb0accaba7bac5f012690ba8f931e1bc",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "banking_finance",
+        "credit",
+        "labor"
+      ],
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Branch properties record 12 staff, 2750 gp/month revenue and 1430 gp/month cost.",
+        "Body documents operational beachhead/guild context and client lending practice but no reserve, deposit-liability, or equity totals.",
+        "Financial fields are last-updated Eleint 1494 baselines; future growth projections are excluded from Day-7 current state."
+      ]
+    },
+    {
+      "source_id": "321e8214-84b0-8109-a55a-f30bd40fa6cb",
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-05-15T14:54:52.207Z",
+      "body_hash": "2758e923057a2ca4d2d69572634454a657460d4ecade78ced55c375bdac54512",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "banking_finance",
+        "credit",
+        "labor"
+      ],
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Branch properties record 8 staff, 917 gp/month revenue and 550 gp/month cost; branch is a small eastern beachhead.",
+        "Financial fields are last-updated Eleint 1494 baselines; 50000+ gp/month Cormyr statement is a five-year vision, not current revenue.",
+        "No reserve, deposit-liability, or equity totals are supplied."
+      ]
+    },
+    {
+      "source_id": "321e8214-84b0-8104-815a-fe1101e6f8f1",
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-03-12T21:07:27.594Z",
+      "body_hash": "56ab6f40beb04ff64407858c0393c54470ca381a697f71bdab87b338704ea7f9",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "banking_finance",
+        "credit",
+        "currency_exchange",
+        "labor"
+      ],
+      "driver_owners": [
+        "business_financial_flows",
+        "credit_origination",
+        "labor_supply"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Source records 10 staff, 2000 gp/month revenue, 1000 gp/month cost, 14% inventory loans and Selah Thorn 10000 gp buyout loan at 8%.",
+        "Subsidiary revenue may already be represented in Luskan/parent banking aggregates; no double-counting is authorized.",
+        "Financial fields are Eleint-1494-era source values with temporal provenance."
+      ]
+    },
+    {
+      "source_id": "392e8214-84b0-81ef-b0a9-d73f9b9757d7",
+      "semantic_status": "SOURCE_MAPPED",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-07-03T18:55:27.164Z",
+      "body_hash": "c9f6b84f60250aeb7a74128be75b7fca129dd30887bcf78106fe9c8fa6667d73",
+      "review_disposition": "ECONOMIC_INPUT",
+      "economic_domains": [
+        "banking_finance",
+        "trust_management",
+        "client_assets"
+      ],
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet"
+      ],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Operational trust created 29 Tarsakh 1494 with 12000 gp liquid corpus plus assigned corridor receivables swept quarterly.",
+        "This is client/trust corpus domiciled at NCF, not evidence of NCF-owned reserves or equity; preserve the ownership boundary.",
+        "Trust may buy non-voting Baen'und paper capped at 10% of any issue under Helena Brightwater discretion."
+      ]
+    },
+    {
+      "source_id": "321e8214-84b0-81e7-a5ec-fd25ff8299dc",
+      "semantic_status": "MISSING_DATA",
+      "body_review_status": "REVIEWED",
+      "body_revision": "2026-06-26T12:17:48.221Z",
+      "body_hash": "1700bf16e673348428cf5fcf8a33e9967ce01d1cd5268549aa38f6cac8997cb6",
+      "review_disposition": "MISSING_DATA",
+      "economic_domains": [
+        "banking_finance",
+        "credit"
+      ],
+      "driver_owners": [],
+      "review_notes": [
+        "Full read-only body fetch; truncated=false; unknown_block_count=0.",
+        "Page is explicitly UNCONFIRMED: full design exists but no revenue tracker or session log confirms operational establishment.",
+        "Zero capital/revenue/cost fields are placeholders for unconfirmed status and must not be interpreted as confirmed operating zero.",
+        "Founding design seed contains retired terminology; master NCF/branch pages control current canon. Session confirmation remains required before economic admission."
+      ]
+    }
+  ],
+  "before": {
+    "reviewed": 4,
+    "unread": 1616,
+    "unknown": 1604
+  },
+  "after": {
+    "reviewed": 12,
+    "unread": 1608,
+    "unknown": 1597,
+    "source_mapped": 16,
+    "context_only": 2,
+    "missing_data": 1,
+    "conflict": 2,
+    "superseded": 2
+  },
+  "material_findings": "recovery/NCF_SOURCE_BODY_FINDINGS_2026-09-18.json",
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

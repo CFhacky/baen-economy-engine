@@ -1,0 +1,17 @@
+{
+  "schema": "tnp.economy.post-review-blockers/1",
+  "captured_at": "2026-09-19",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "source_review": {"A_source_ingest_review": "COMPLETE", "retained_core": 1620, "UNMEASURED": 0, "UNKNOWN": 0, "NPC": "920/920"},
+  "B_driver_source_mapping": "INCOMPLETE — 15/16 drivers not complete/executable",
+  "D_canonical_execution_readiness": "CLOSED",
+  "npc_quantity_conflicts": [
+    "Geoffrey Harrison livestock: 341e ~200 head / two riders vs 343e 60 head / 1 hired hand",
+    "Dolgrin Coalmantle: 341e proposal-within-60-days vs 343e now-hauling"
+  ],
+  "empire_close": {"unresolved_items": 36, "conflicts": 1},
+  "blocked_drivers": ["opening_liquidity", "banking_balance_sheet", "inventories", "market_prices", "household_consumption", "credit_origination", "tax_rent_tithe_obligations", "migration", "exogenous_shocks"],
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

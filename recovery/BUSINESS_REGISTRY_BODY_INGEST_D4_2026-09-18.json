@@ -1,0 +1,327 @@
+{
+  "schema": "tnp.economy.business-registry-body-ingest/1",
+  "batch": "D4",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "target": 12,
+  "reviewed": 12,
+  "failed": 0,
+  "records": [
+    {
+      "source_id": "321e8214-84b0-81e0-9660-eacd14973b2f",
+      "title": "Agricultural Shelter Zones",
+      "revision": "2026-03-13T00:05:33.369Z",
+      "body_hash": "6199a3b1feca2103bab73576df6e06d32c2262a6c5c0bf8a35d59e22192e4d6a",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "food_supply",
+        "business_financial_flows",
+        "labor_supply",
+        "inventories"
+      ],
+      "property_snapshot": {
+        "capital": 6000,
+        "employees": 8,
+        "cost": 1050,
+        "revenue": 1500,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Kythorn 1494",
+        "city": "Multi-Region",
+        "sector": "Agriculture"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81f6-a74c-d6ee2b88a08e",
+      "title": "Reservoir Fisheries",
+      "revision": "2026-03-13T00:05:12.269Z",
+      "body_hash": "e87782e2ce1ecf4248b4895f028290f51a0399d5693b3329f4e5ef8896456b86",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "food_supply",
+        "inventories"
+      ],
+      "property_snapshot": {
+        "capital": 8000,
+        "employees": 8,
+        "cost": 1300,
+        "revenue": 1667,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Mirtul 1494",
+        "city": "Multi-Region",
+        "sector": "Aquaculture"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81f7-be17-ff26a67e57fb",
+      "title": "Verification Services",
+      "revision": "2026-03-12T21:06:28.138Z",
+      "body_hash": "1499d2af003a841aaf245c15ad3e2621c08c527e0f05a438b7fced8eed1e595e",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": 5000,
+        "employees": 5,
+        "cost": 1020,
+        "revenue": 2917,
+        "parent": "Northern Crown Financial — Luskan",
+        "status": "Operational",
+        "date_operational": "Ches 1493",
+        "city": "Luskan",
+        "sector": "Banking"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81f8-8632-c9a3a854424c",
+      "title": "The Lustrous Blade",
+      "revision": "2026-03-12T23:45:18.518Z",
+      "body_hash": "9feb4206e201fe285b13e0cceaa16894c7480905c22414bdbca90424a657de41",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": 20000,
+        "employees": 8,
+        "cost": 1875,
+        "revenue": 3750,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "1493",
+        "city": "Waterdeep",
+        "sector": "Trade"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-81fa-ba57-e5f9a87ab3a9",
+      "title": "Dock District Housing (Ph 1 & 2)",
+      "revision": "2026-08-20T20:27:52.880Z",
+      "body_hash": "2e3b5dc659ca527b0545260d4a0e6b18a1b3fd307a78ef491f21d448d19bb572",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "population",
+        "household_consumption"
+      ],
+      "property_snapshot": {
+        "capital": 40000,
+        "employees": 20,
+        "cost": 6000,
+        "revenue": 10000,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Hammer 1494",
+        "city": "Neverwinter",
+        "sector": "Real Estate"
+      }
+    },
+    {
+      "source_id": "324e8214-84b0-813f-b1c6-ecc41384257b",
+      "title": "Neverwinter Athenaeum",
+      "revision": "2026-06-06T23:46:10.754Z",
+      "body_hash": "dd1433ed145631a73479bc3f8d547e4c231c8d11bd6b031dd7f00c88a2edfd14",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": 200000,
+        "employees": 0,
+        "cost": 0,
+        "revenue": 0,
+        "parent": "",
+        "status": "Planning",
+        "date_operational": "",
+        "city": "Multi-Region",
+        "sector": "Education"
+      }
+    },
+    {
+      "source_id": "324e8214-84b0-8169-9a22-c992b7e05649",
+      "title": "Devil Academy (Philosophical Faculty)",
+      "revision": "2026-03-24T00:40:28.594Z",
+      "body_hash": "aa27117ed8293fccc5f0e8d8fac0deae48afaaefdd5513782be69edf91f2ed18",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": null,
+        "employees": 2000,
+        "cost": 2000,
+        "revenue": 0,
+        "parent": "",
+        "status": "Operational",
+        "date_operational": "",
+        "city": "Neverwinter",
+        "sector": "Education"
+      }
+    },
+    {
+      "source_id": "324e8214-84b0-8175-ae3c-c451aea28565",
+      "title": "Collegium Montis Gladii",
+      "revision": "2026-05-29T02:00:08.633Z",
+      "body_hash": "5dd91939f96acc96ddd97c6d9f326c180f915d0fac6da2acf13aa9628e73f468",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": [],
+      "property_snapshot": {
+        "capital": null,
+        "employees": 0,
+        "cost": 0,
+        "revenue": 0,
+        "parent": "",
+        "status": "Operational",
+        "date_operational": "Waterdeep campus operational (in-world date TBD); Neverwinter satellite under development",
+        "city": "Waterdeep",
+        "sector": "Education"
+      }
+    },
+    {
+      "source_id": "324e8214-84b0-81f3-b801-f03fc8ec343d",
+      "title": "Schola Ducum Integrata",
+      "revision": "2026-03-24T00:42:11.517Z",
+      "body_hash": "ac92f6cfddb76fece6aca12ab0844cd9f079e4efcdc14b384d9c806692b586bb",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "food_supply",
+        "inventories"
+      ],
+      "property_snapshot": {
+        "capital": null,
+        "employees": 30,
+        "cost": 1000,
+        "revenue": 0,
+        "parent": "",
+        "status": "Operational",
+        "date_operational": "",
+        "city": "Multi-Region",
+        "sector": "Education"
+      }
+    },
+    {
+      "source_id": "34ce8214-84b0-8111-9fd4-c41feef5634e",
+      "title": "Shimmerdeep Cradle",
+      "revision": "2026-08-22T15:54:47.072Z",
+      "body_hash": "d1491da54fce9c82d2dea3f748d3b5e610974a892aad0edd53c326a8c5227bba",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "industrial_production"
+      ],
+      "property_snapshot": {
+        "capital": 1400000,
+        "employees": 300,
+        "cost": 20000,
+        "revenue": 0,
+        "parent": "NCF / Silversheen-adjacent",
+        "status": "Under Construction",
+        "date_operational": "\\~1495+ (under construction)",
+        "city": "Forgedeep",
+        "sector": "Mining/Quarrying"
+      }
+    },
+    {
+      "source_id": "34ce8214-84b0-8125-b0cc-fa8966ff42f0",
+      "title": "Project Burning Gate",
+      "revision": "2026-04-24T18:28:44.160Z",
+      "body_hash": "2b9546060213e22777f1bbd1d7e493b4d42eedaf2f17c171cd804c9f28721e3e",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": 800000,
+        "employees": 30,
+        "cost": 0,
+        "revenue": 0,
+        "parent": "Institut Baen'und / Direct Baen",
+        "status": "R&D Phase",
+        "date_operational": "\\~late 1494 DR initiated (Shi'van timeline)",
+        "city": "Forgedeep",
+        "sector": "R&D"
+      }
+    },
+    {
+      "source_id": "34ce8214-84b0-812f-8577-d4d37289da9f",
+      "title": "Wyrmhelm Forgedeep Facility",
+      "revision": "2026-07-24T20:51:46.734Z",
+      "body_hash": "2a1e8545bdcc1180e66f0ed609f95b864c917b8df26c18ab73de700b962b8c0d",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "capital": 150000,
+        "employees": 15,
+        "cost": 2000,
+        "revenue": 0,
+        "parent": "Institut Baen'und",
+        "status": "Operational",
+        "date_operational": "Alturiak 1495 DR (launch)",
+        "city": "Forgedeep",
+        "sector": "R&D"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "UNKNOWN": 1543,
+      "SOURCE_MAPPED": 60,
+      "SUPERSEDED": 3,
+      "MISSING_DATA": 4,
+      "FUTURE": 3,
+      "CONFLICT": 5,
+      "CONTEXT_ONLY": 2
+    },
+    "body": {
+      "UNMEASURED": 1549,
+      "REVIEWED": 71
+    },
+    "dispositions": {
+      "UNREVIEWED": 1549,
+      "ECONOMIC_INPUT": 57,
+      "SUPERSEDED": 2,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 3,
+      "ECONOMIC_CONTEXT": 2,
+      "CONFLICT": 3
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

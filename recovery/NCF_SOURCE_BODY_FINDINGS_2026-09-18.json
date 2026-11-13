@@ -1,0 +1,74 @@
+{
+  "schema": "tnp.economy.ncf-source-body-findings/1",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "source_batch": "recovery/SOURCE_REVIEW_BATCH_002_2026-09-18.json",
+  "parent_current": {
+    "employees": 85,
+    "monthly_revenue_gp": 22000,
+    "active_loan_portfolio_gp": 2300000,
+    "numeric_reserves_gp": null,
+    "total_deposits_gp": null,
+    "total_liabilities_gp": null,
+    "total_equity_gp": null,
+    "reserve_evidence": "Parent body states NCF controls silver backing and physical silver/gold/platinum reserves but gives no quantities."
+  },
+  "historical_branch_baseline": {
+    "temporal_label": "Registry branch financial properties last updated Eleint 1494",
+    "branches": [
+      {
+        "branch": "Neverwinter",
+        "employees": 35,
+        "monthly_revenue_gp": 10000,
+        "monthly_cost_gp": 5200
+      },
+      {
+        "branch": "Luskan",
+        "employees": 30,
+        "monthly_revenue_gp": 9583,
+        "monthly_cost_gp": 4990
+      },
+      {
+        "branch": "Waterdeep",
+        "employees": 12,
+        "monthly_revenue_gp": 2750,
+        "monthly_cost_gp": 1430
+      },
+      {
+        "branch": "Suzail",
+        "employees": 8,
+        "monthly_revenue_gp": 917,
+        "monthly_cost_gp": 550
+      }
+    ],
+    "sum_employees": 85,
+    "sum_monthly_revenue_gp": 23250,
+    "sum_monthly_cost_gp": 12170,
+    "current_use": "HISTORICAL_BASELINE_ONLY",
+    "reason": "Newer parent authority selects 22000 gp/month revenue; branch sum is stale. No newer source revalidates the 12170 gp/month cost total for Day 7."
+  },
+  "accounting_boundaries": [
+    {
+      "item": "SSAMT",
+      "treatment": "CLIENT_TRUST_NOT_NCF_OWNED_ASSET",
+      "evidence": "12000 gp liquid corpus + corridor receivables, NCF Waterdeep domicile/coordinator."
+    },
+    {
+      "item": "Gold Lending House",
+      "treatment": "UNCONFIRMED_DO_NOT_BOOK",
+      "evidence": "Page explicitly says design document only; needs session confirmation."
+    },
+    {
+      "item": "Thorn & Silver Exchange",
+      "treatment": "ACTIVE_SUBSIDIARY_OVERLAP_UNRESOLVED",
+      "evidence": "2000 gp/month revenue; consolidation overlap with Luskan/parent aggregates not established."
+    }
+  ],
+  "control_claim": {
+    "source_wording_summary": "NCF page states 50% ownership + final decision authority; five Pillars 10% each and operational control.",
+    "ledger_treatment": "SOURCE_CLAIM_ONLY_NO_EQUITY_BALANCE_INFERRED"
+  },
+  "conclusion": "Body review confirms the current NCF trial-balance gap is real. It recovers useful operating and control evidence but does not supply exact Day-7 reserves, deposits, liabilities, equity, or current branch-cost total.",
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

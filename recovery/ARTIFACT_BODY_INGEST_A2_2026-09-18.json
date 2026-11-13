@@ -1,0 +1,541 @@
+{
+  "schema": "tnp.economy.artifact-body-ingest/1",
+  "batch": "A2",
+  "records": [
+    {
+      "source_id": "2fbe8214-84b0-81e6-8d85-eb871b18ef52",
+      "title": "Dodecahedron of Devouring Whispers",
+      "revision": "2026-06-15T12:00:05.666Z",
+      "body_hash": "6750b6ec963c02340b57d811c0d2999ddcb8eaf900dd6772241a27a6d692043b",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__YES__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081a79c20db298627cd04"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "Integrated with Pale Death Armor",
+        "Name": "Dodecahedron of Devouring Whispers",
+        "Notes": "Soul manipulation, identity anchor, cosmic power",
+        "Origin": "Dodecahedron of Devouring Whispers — Arik's primary soul-working tool",
+        "Sentient": "__YES__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-15",
+        "url": "https://app.notion.com/p/2fbe821484b081e68d85eb871b18ef52"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-81f4-80fa-c2cab835419b",
+      "title": "Ward of Dimensional Stability",
+      "revision": "2026-02-02T23:49:52.810Z",
+      "body_hash": "c2109aac3c21127fa9ffa1b12217001e1d99ec1b4db2e6f69da291814fd56f5b",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fce821484b0811eb260c801033cada4"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Baldur's Gate Operations",
+        "Name": "Ward of Dimensional Stability",
+        "Notes": "PHYSICAL: Elegant brooch of interwoven silver and obsidian, shaped like closed eye surrounded by geometric patterns that hurt to follow. Microscopic Futhark runes in silver. Obsidian absorbs light suggesting extra-dimensional depth. Subtle metaphysical 'weight' when worn. Back inscribed in thieves' cant: 'What cannot be moved cannot be stolen.'<br><br>PROPERTIES:<br>• Dimensional Anchoring: Cannot be moved to another plane against will<br>• Anti-Teleportation: Cannot be teleported against will<br>• Death Magic Protection: Resistance to necrotic damage, advantage on saves vs death effects<br><br>HISTORY: Originally commissioned by 'Paranoid Pellax,' wizard with twelve escape plans for his bedroom. Ironically killed by simple knife in alley. Acquired by Baldur's Gate Guild, modified by Guild mages to Shi'van's specifications adding death magic protection.<br><br>TACTICAL VALUE: Perfect for operative who needs to stay put when enemies try to remove her. Counters standard assassination-by-banishment tactics.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fbe821484b081f480fac2cab835419b"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-81f4-bea1-ffc01662fdd0",
+      "title": "Pale Death Armor",
+      "revision": "2026-03-23T21:53:58.190Z",
+      "body_hash": "24e72afd55c84d5ab483ab07a5fe1f1e9667d172bea2b072d79c07f8aa8e5acf",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface",
+          "Multiple"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081a79c20db298627cd04"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "With Arik (between dimensions)",
+        "Name": "Pale Death Armor",
+        "Notes": "Power armor crafted by Korgan, caused Guardian's Gate transformation",
+        "Origin": "Infernal — replaced Void-Enhanced Armor",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "pale_death_[armor.md](http://armor.md)",
+        "Status": "Active",
+        "Type": "Armor",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-21",
+        "url": "https://app.notion.com/p/2fbe821484b081f4bea1ffc01662fdd0"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-81fc-9ffb-eb715fc6d109",
+      "title": "Yggdrasil Seed Orb",
+      "revision": "2026-03-23T08:27:27.281Z",
+      "body_hash": "1f319f81f4a3c9da271c79520b5ba7ed8f6e6d7055b3465c020deef3250a24ff",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Jörmun",
+          "Multiple"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/32ae821484b0814bae70f01f40c60ed5"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "Variable (deployable fortress)",
+        "Name": "Yggdrasil Seed Orb",
+        "Notes": "Collaborative creation, drow/Norse magical fusion, portable fortress",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "yggdrasil_seed_[orb.md](http://orb.md)",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-21",
+        "url": "https://app.notion.com/p/2fbe821484b081fc9ffbeb715fc6d109"
+      }
+    },
+    {
+      "source_id": "2fbe8214-84b0-81ff-a0a4-e94bdd8878f0",
+      "title": "Blood-Drinker",
+      "revision": "2026-02-02T23:33:05.110Z",
+      "body_hash": "d0555089358820199ac8339adfde26e2c781c629a3c652cb19a2cf7c840d87d1",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface",
+          "Multiple"
+        ],
+        "Evolution Potential": "__YES__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b0811aa4dbdb8265a05d18"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "With Korgan (between dimensions)",
+        "Name": "Blood-Drinker",
+        "Notes": "Bhaalspawn Saga veteran, demon-slaying specialization",
+        "Origin": "Dwarven ancestral weapon",
+        "Sentient": "__YES__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Weapon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-03-21",
+        "url": "https://app.notion.com/p/2fbe821484b081ffa0a4e94bdd8878f0"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8101-a688-fcba93480897",
+      "title": "Codex of Tactical Supremacy",
+      "revision": "2026-06-15T13:21:02.862Z",
+      "body_hash": "6cde755cc70d94b827ae5a08de19aa823d3a79aa924d36c1a28859d76b706c4a",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "Hell - Allied Forces",
+        "Name": "Codex of Tactical Supremacy",
+        "Notes": "Provenance CORRECTED (this batch): Malachar the Ironruin's spoil from the Screaming Chasm engagement, given to Captain Zareth Flameborn (devil ally, CR 9) — NOT the Dis Gambit treasure division. Tome of 247 documented demon weaknesses (Malachar's centuries of compiled Blood War analysis). Name-collision flag: Captain Zareth Flameborn is a different being from Marshal Zar'geth, the Dis Gambit pit fiend Arik killed.",
+        "Origin": "Malachar the Ironruin (Screaming Chasm engagement)",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Allied Asset",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b08101a688fcba93480897"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-810a-ad2c-c7df1fabe7c0",
+      "title": "Soul-Enhanced Boots",
+      "revision": "2026-02-03T00:43:04.244Z",
+      "body_hash": "5cccf21f6c77f6f8d78a9da8557184071886f8b4b39af71f3f0573e5db817033",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Menzoberranzan"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Rare",
+        "Location": "Baen Vault - Heir Legacy",
+        "Name": "Soul-Enhanced Boots",
+        "Notes": "CREATED: Session 3<br><br>SOUL SOURCE: Cave bat + subterranean lizard qualities<br><br>PROPERTIES:<br>• Enhanced vertical traction (climb any surface)<br>• Temperature sensitivity<br>• Echo-location capabilities<br>• Sound dampening<br><br>DESIGN: Soles grip any surface with unusual tenacity. Demonstrates soul infusion versatility beyond weapons.<br><br>STATUS: VAULTED for heir - superseded by current gear.",
+        "Origin": "Dodecahedron crafted — cave bat/lizard souls",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Vaulted",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b0810aad2cc7df1fabe7c0"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-811f-a2a6-c40247193b60",
+      "title": "Scrolls of Planar Binding (3)",
+      "revision": "2026-02-03T00:44:25.886Z",
+      "body_hash": "ec9752868e7e83427e2262d9ff2346529bcaca5006bd51c3378d0f2fc71f12df",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Arik's Private Chambers",
+        "Name": "Scrolls of Planar Binding (3)",
+        "Notes": "PHYSICAL: Three ancient parchments inscribed with spells for summoning and binding extraplanar entities.<br><br>PROPERTIES:<br>• Summon extraplanar entities<br>• Bind entities using soul energy as primary component<br>• Compatible with existing soul manipulation techniques<br><br>ORIGIN: Acquired from Raazalkul's treasure hoard.<br><br>STATUS: Reserved for future planar operations. Formulae use soul energy, compatible with Dodecahedron.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Consumable",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b0811fa2a6c40247193b60"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8129-86b2-ef40aa489039",
+      "title": "Soul-Enhanced Throwing Daggers",
+      "revision": "2026-03-21T22:45:02.744Z",
+      "body_hash": "c0e3c8947c95a9db3c995525806fdc7229d9f030dcc7cc4daaf0da1250220582",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Menzoberranzan"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Baen Vault - Heir Legacy",
+        "Name": "Soul-Enhanced Throwing Daggers",
+        "Notes": "CREATED: Session 2<br><br>SOUL SOURCE: Combined warrior soul qualities<br><br>PROPERTIES:<br>• Return to wielder after thrown<br>• Psychic connection (sense location always)<br>• Silent flight<br>• Trajectory adjustment mid-flight<br>• Move in perfect synchronization when thrown together<br><br>QUANTITY: Set of 6<br><br>DESIGN: Infinitely reusable without recovery time.<br><br>STATUS: VAULTED for heir.",
+        "Origin": "Dodecahedron crafted — psychic link souls",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Vaulted",
+        "Type": "Weapon",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b0812986b2ef40aa489039"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8134-a71f-d0198de6f7c9",
+      "title": "Bracers of Demon's Grip",
+      "revision": "2026-02-03T00:57:39.966Z",
+      "body_hash": "1152f3f6eab7340df20f670ac84b610fc404487581a06c53563f8799075a3b1d",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Rare",
+        "Location": "Baen Vault",
+        "Name": "Bracers of Demon's Grip",
+        "Notes": "TYPE: Demonic gladiator gear<br><br>PHYSICAL: Heavy bracers of blackite metal with infernal script. Sized for combat, not ceremony.<br><br>PROPERTIES:<br>• +2 AC<br>• Grapple attacks against fiends have advantage<br>• Resistance to being grappled by fiends<br>• Unarmed strikes count as magical vs fiends<br><br>ORIGIN: Acquired from Raazalkul's hoard. Originally arena equipment for demon gladiators.<br><br>STATUS: Stored in vault. Available for assignment to lieutenant or ally who needs defensive boost, particularly for Hell operations.<br><br>POTENTIAL RECIPIENTS: Bloodaxe Legion officer, Veil operative, or vaulted for heir.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Armor",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b08134a71fd0198de6f7c9"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8137-a057-f00b9c8b78a6",
+      "title": "Bowstring of the Wonderbringer",
+      "revision": "2026-02-03T00:57:39.966Z",
+      "body_hash": "5e4207e48bbb49b6f927588a333515dc59ce20806a086f3886883a4ca804dc92",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Baen Vault",
+        "Name": "Bowstring of the Wonderbringer",
+        "Notes": "TYPE: Divine engineering component (Gond)<br><br>PHYSICAL: Bowstring that emits faint sparks of divine energy. Craftsmanship beyond mortal capability - each fiber perfectly aligned, tension self-adjusting.<br><br>PROPERTIES (when installed on any bow):<br>• +1 to attack rolls<br>• Auto-loading: no action required to nock arrows<br>• 1/day Splitting Shot: next arrow fired splits into 3 arrows targeting up to 3 creatures within 30ft of each other (separate attack rolls, full damage each)<br><br>ORIGIN: Acquired from Raazalkul's hoard. Divine craftsmanship suggests Gond clergy creation - how demon lord acquired it unknown (likely killed the archer who used it).<br><br>STATUS: Stored in vault.<br><br>POTENTIAL USES:<br>• Give to archer ally<br>• Sell to Gond temple (significant religious value)<br>• Trade to craftsman for favors<br>• Equip scout/ranger commander",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b08137a057f00b9c8b78a6"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-813b-a68a-c3720ee55106",
+      "title": "Deceiver's Mirror",
+      "revision": "2026-02-03T00:44:44.166Z",
+      "body_hash": "1d9b8e402ce813bf038246d1370232b108073c7bba1273e00603b448b3e29d25",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Legendary",
+        "Location": "Hell - Allied Forces",
+        "Name": "Deceiver's Mirror",
+        "Notes": "DISTRIBUTED: Given to infiltrator devil during Dis Gambit treasure division.<br><br>FUNCTION: Psychological warfare enhancement. Synergizes with intelligent approach to infiltration.<br><br>STATUS: In allied hands. Full stats TBD if devil returns with item.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Allied Asset",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b0813ba68ac3720ee55106"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8149-a101-c9f0e79329f4",
+      "title": "Xorlarrin Dimensional Countermeasures",
+      "revision": "2026-02-03T00:44:44.166Z",
+      "body_hash": "b6a9cd12d44229217b4f0a6654f911aaf31850081555eef831d7919c12443926",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Menzoberranzan",
+          "Surface"
+        ],
+        "Evolution Potential": "__NO__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Rare",
+        "Location": "Arik's Private Chambers",
+        "Name": "Xorlarrin Dimensional Countermeasures",
+        "Notes": "TYPE: Captured enemy technology collection<br><br>COMPONENTS:<br>• Crystalline focus devices (anti-phase)<br>• Specialized detection goggles (phase-sight)<br>• Dimensional disruption nets<br><br>CAPABILITIES:<br>• Countermeasures against dimensional phasing<br>• Detection of phase-shifted entities<br>• Dimensional disruption<br><br>ORIGIN: Captured following House Xorlarrin ambush targeting Arik and assets.<br><br>INTELLIGENCE VALUE: Demonstrates Xorlarrin's advanced dimensional research and active opposition. May be reverse-engineered for defensive purposes.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b08149a101c9f0e79329f4"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-814b-ad79-e071f6e8478a",
+      "title": "Pharizia Hunzrin's Pendant",
+      "revision": "2026-02-03T00:57:39.966Z",
+      "body_hash": "6e72812bd5ae0b9e20416850f78d8b8746e1b2003934c48bb68466258a0c7327",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Menzoberranzan"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/356e821484b081ac91a2e563e717db20"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__NO__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Worn by Pharizia",
+        "Name": "Pharizia Hunzrin's Pendant",
+        "Notes": "TYPE: Emergency failsafe / soul anchor<br><br>PHYSICAL: Elegant pendant with unusual dimensional resonance detectable by Dodecahedron.<br><br>FUNCTION: Hunzrin insurance policy. If Pharizia dies or is captured, pendant returns her body/soul to predetermined secure location (likely Hunzrin vault or allied temple).<br><br>PROPERTIES:<br>• Death-triggered teleport (body + soul)<br>• Capture-triggered beacon (alerts Hunzrin security)<br>• Dimensional anchor preventing unwanted planar travel<br>• Possibly stores backup of recent memories<br><br>TACTICAL IMPLICATIONS: To permanently remove Pharizia, must deal with pendant first. Options: remove before killing, destroy pendant, block teleport destination, or ensure death is so complete soul cannot be recovered.<br><br>INTELLIGENCE VALUE: Arik's awareness of this failsafe is strategic advantage. Hunzrin doesn't know he knows.",
+        "Origin": "Death-triggered soul teleport failsafe — threat intel",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__YES__",
+        "Source File": "",
+        "Status": "Dormant",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b0814bad79e071f6e8478a"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8150-a46a-d73cce3e88d4",
+      "title": "Medallion from Between Planes",
+      "revision": "2026-02-03T00:57:39.966Z",
+      "body_hash": "efe871718e74080f83e1165e9bf891b106bb03221ab7e4b19580acd969bf8351",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Surface",
+          "Multiple"
+        ],
+        "Evolution Potential": "__NO__",
+        "Holder": [
+          "https://app.notion.com/p/2fbe821484b081a79c20db298627cd04"
+        ],
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Artifact",
+        "Location": "With Arik (Carried)",
+        "Name": "Medallion from Between Planes",
+        "Notes": "PHYSICAL: Ancient medallion of unknown metal, acquired through Bregan D'aerthe. Surface displays impossible geometries that shift when not directly observed.<br><br>CONNECTION: Linked to twelve-fingered entities - the beings from 'between planes' connected to Dodecahedron's origin.<br><br>FUNCTION: Two-way observation device. The entities watch their investment (Arik/Dodecahedron). Arik occasionally perceives glimpses of their realm.<br><br>PROPERTIES:<br>• Passive awareness of Convergence proximity<br>• Occasional cryptic visions from entity realm<br>• Advantage on saves vs planar displacement<br>• Grows warm when Convergence events approach<br>• May allow limited communication at critical moments<br><br>ORIGIN: Session 4 acquisition through Bregan D'aerthe contacts. Connected to ancient texts about Dodecahedron's significance.<br><br>WARNING: Not a tool - a window. The entities are watching.",
+        "Origin": "Twelve-fingered entities — two-way window, Convergence warning",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/2fce821484b08150a46ad73cce3e88d4"
+      }
+    },
+    {
+      "source_id": "2fce8214-84b0-8159-911d-ff1ad6572e9b",
+      "title": "Selarial's Twin Rings — Matched Set",
+      "revision": "2026-07-26T12:47:40.985Z",
+      "body_hash": "d3cbd264eb530caa73a0f8d09abcf75e7c66724f8c2948f63fb4ec7f4bffc721",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Binding": "",
+        "Binding Cost": "",
+        "Campaign Arc": [
+          "Multiple"
+        ],
+        "Evolution Potential": "__YES__",
+        "Legacy 5e Attunement [SUPERSEDED]": "__YES__",
+        "Legacy Rarity [SUPERSEDED]": "Very Rare",
+        "Location": "Separated — see individual ring pages",
+        "Name": "Selarial's Twin Rings — Matched Set",
+        "Notes": "🔒 CANON CORRECTION 2026-07-26: The rings were not on Selarial when she was recovered. They were lost between planes beforehand. Matched-set hub only; individual custody now lives on Ring One and Ring Two pages. Evolved powers and curses are binding.",
+        "Origin": "",
+        "Sentient": "__NO__",
+        "Soul-Enhanced": "__NO__",
+        "Source File": "Selarial's Twin Rings — Re-entry Arc hub; attached canon audit digest",
+        "Status": "Active",
+        "Type": "Wondrous Item",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-07-26",
+        "url": "https://app.notion.com/p/2fce821484b08159911dff1ad6572e9b"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 235,
+      "UNKNOWN": 1310,
+      "CONFLICT": 12,
+      "SUPERSEDED": 46,
+      "MISSING_DATA": 4,
+      "FUTURE": 10,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 307,
+      "UNMEASURED": 1313
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 235,
+      "UNREVIEWED": 1313,
+      "CONFLICT": 10,
+      "SUPERSEDED": 45,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 10,
+      "ECONOMIC_CONTEXT": 3
+    }
+  }
+}

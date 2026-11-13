@@ -10,6 +10,11 @@ requires-python = ">=3.11"
 dependencies = []
 license-files = ["THIRD_PARTY_NOTICES.md"]
 
+[project.optional-dependencies]
+mesa = [
+  "Mesa @ git+https://github.com/mesa/mesa.git@20841b12559ef920dd4c8263a09fe75ceac7250c ; python_version >= '3.12'",
+]
+
 [project.scripts]
 baen-registry-audit = "baen_economy.audit_cli:main"
 baen-economy = "baen_economy.operator_cli:main"
@@ -20,6 +25,8 @@ baen-agriculture = "baen_economy.agriculture_cli:main"
 baen-food-ops = "baen_economy.food_ops_server:main"
 baen-whole-economy = "baen_economy.whole_economy_cli:main"
 baen-tick = "baen_economy.http_api:main"
+baen-empire = "baen_economy.empire_cli:main"
+baen-empire-ops = "baen_economy.empire_ops_server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

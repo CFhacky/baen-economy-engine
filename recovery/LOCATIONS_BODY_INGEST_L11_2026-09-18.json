@@ -1,0 +1,588 @@
+{
+  "schema": "tnp.economy.locations-body-ingest/1",
+  "batch": "L11",
+  "records": [
+    {
+      "source_id": "383e8214-84b0-81bd-b71c-de6bec0780d0",
+      "title": "Akhet-Senef (Ruins of the Sky-Veiled Capital)",
+      "revision": "2026-06-18T19:06:52.421Z",
+      "body_hash": "26fbce4c868f489438f524e94e17eb31f217ac0de030b92a7308755b1757b92c",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Garrison": "",
+        "Name": "Akhet-Senef (Ruins of the Sky-Veiled Capital)",
+        "Notes": "Ruined capital of the fallen Sky-Veiled kingdom — DISTINCT from Akhet-Sereth (the Dawn Mother's older Mulhan capital, \\~140yr dead, Hollow Reach religious-origin ruin) and from Akhet-Senet (the Thay-held Sun-Crowned Heights plateau, the campaign objective). Sky-Veiled = independent Mulan splinter kingdom, founded 922 DR by Mulan refugees fleeing Thay's secession from Mulhorand; stood \\~506 years on its own strength in the High Country north of Thay; answered to no overlord (Mulhorand a distant cultural cousin, not a protector). Fell 1428 DR to Thay's second campaign when Mulhorand declined the aid Sky-Veiled appealed for. Akhet-Senef burned on the eighth-to-tenth days of the fall: Selvarra Sylphaire (Captain of the Lower City Defence) died at the Eastern Gate on the eighth day; the Ranger-General Sereth Sylphaire died defending the western tower on the tenth; eight-year-old Verissa hidden in the family compound's wine cellar, taken captive on the tenth. The Sylphaire lineage's seat for fourteen generations. Now Thay-overrun ruins in the High Country north of the Akhet-Senet plateau. Narrative potential: a Verissa or Allera pilgrimage, a Sylphaire-heritage recovery, the lineage's pre-exile records. None yet committed to canon.",
+        "Region": [
+          "Anauroch"
+        ],
+        "Source File": "Sylphaire family-triangle materials (Kara-Turan worldbuilding, 7 Jun 2026); created 18 Jun 2026 to resolve the Akhet-Sereth/Akhet-Senef capital conflation (Reading 1: two distinct kingdoms).",
+        "Status": "Destroyed",
+        "Strategic Value": "Moderate",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/383e821484b081bdb71cde6bec0780d0"
+      }
+    },
+    {
+      "source_id": "388e8214-84b0-816d-ab3a-e40ee4aaeb07",
+      "title": "Sildëyuir",
+      "revision": "2026-06-23T02:23:49.736Z",
+      "body_hash": "b3458e519e5a9a6562a658bfb5398bbe21d49c236a8bd305eb29bc858476d6ff",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "",
+        "Name": "Sildëyuir",
+        "Notes": "The living twilight demiplane of the star elves (Ruar-tel-quessir), raised by High Magic through the Yuirwood menhir circles. Distinct from Tir'in'tiral, the severed tomb-pocket. The empire has never contacted the living remnant — Naevaeris of House Velaris is the Door. Strategic value: planar-engineering knowledge (Mythallar Fragment Solution relevance), a star-born exodus, diplomatic legitimacy through House Velaris recognition.",
+        "Region": [
+          "Other Planes"
+        ],
+        "Source File": "",
+        "Status": "Unexplored",
+        "Strategic Value": "High",
+        "Type": "Planar",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-22",
+        "url": "https://app.notion.com/p/388e821484b0816dab3ae40ee4aaeb07"
+      }
+    },
+    {
+      "source_id": "388e8214-84b0-81d8-af7f-ce75f6e3b5bb",
+      "title": "Tir'in'tiral",
+      "revision": "2026-07-26T12:50:04.137Z",
+      "body_hash": "adfb9fe84b99b94106372e151d83e6b2624bdd21bd8940fece7085da0520ddb0",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "Post-raid (Hammer 1495 DR): most of the \\~30-strong Lolthite garrison (20 rank-and-file drow, 4 elite priestesses/officers, 6 giants) killed in the uprising. Vrishah'kahn the Patient (CR 11 yochlol) escaped gaseous and is recovering. 2 confirmed captives + \\~12 unaccounted remain; the rector lost in the deep vault.",
+        "Name": "Tir'in'tiral",
+        "Notes": "Severed tomb-pocket and hostile second-extraction target. 🔒 Ring Two escalation added 2026-07-26: Vrishah'kahn's reconstruction rituals summoned Selarial's Severing Ring; new shouted reporting protocol and Dispelling Procession are active. Courier report dispatched toward Menzoberranzan; interception prepared but unplayed.",
+        "Population": 0,
+        "Region": [
+          "Other Planes"
+        ],
+        "Source File": "",
+        "Status": "Hostile",
+        "Strategic Value": "High",
+        "Type": "Dungeon",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-07-26",
+        "url": "https://app.notion.com/p/388e821484b081d8af7fce75f6e3b5bb"
+      }
+    },
+    {
+      "source_id": "38ce8214-84b0-8191-b531-d89b2ade8198",
+      "title": "Trollflow Redoubt — Forward Observation Post",
+      "revision": "2026-06-28T10:56:14.666Z",
+      "body_hash": "f2d95bc8a23c3c6a2327ae01bc1d2105a6784a4051c8b50cf2a4802a0aa05f85",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Detachment of the Bloodaxe Halfling Scout-Sniper Section ('The Quiet Company') — halfling shooter-spotter pairs on Threadbaum 1494-L 'Whisper' suppressed precision rifles running long-duration concealed observation posts over the Evermoors approaches — plus a standing rotation of 15 Bloodaxe legionaries providing perimeter watch and basic fortification security. Total garrison \\~30.",
+        "Name": "Trollflow Redoubt — Forward Observation Post",
+        "Notes": "Small Bloodaxe forward observation post on the Laughingflow (Trollflow) at the SW fringe of the Evermoors, north of Yartar. Quiet Company snipers + 15-man legionary rotation. Old Gnawbone waters at the Laughingflow's source lake — the redoubt sits in the nearest ancient wyrm's drinking range. Watched by Aldric Steelgaze (Ultimate Eye; 'whisper out of Yartar' per Operation Spindle) — live counter-intel clock. Forward observation point for the Arik/Selene/Ulthaxor dragon-capture campaign; column stages through en route north, transfers captures south to Isle de Troll for processing and underground hold.",
+        "Population": 30,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[trollflow-redoubt-dragon-capture-station.md](http://trollflow-redoubt-dragon-capture-station.md)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-27",
+        "url": "https://app.notion.com/p/38ce821484b08191b531d89b2ade8198"
+      }
+    },
+    {
+      "source_id": "38de8214-84b0-811e-84bd-d2a4ae725a54",
+      "title": "The Junction Waystation",
+      "revision": "2026-06-28T10:34:10.758Z",
+      "body_hash": "a0f2df68b07924d443083fe1204e76ecfa421e6ac2394cf8c24dc79f6e3a0329",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "The Junction Waystation",
+        "Notes": "Baen waystation at the Long Road junction 12 miles south of Yartar, first checkpoint on the Surbrin Eastern Road bypass. Duty clerk on Vara's payroll counts all traffic in two columns (commercial/maintenance); tenday report to Vara via crystal array. Not armed, not Veil. Three-day report delay in Mirtul 1495 is an open thread. Fourth Quiet Company counter-surveillance sweep scheduled.",
+        "Population": 3,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[surbrin-eastern-road-bypass.md](http://surbrin-eastern-road-bypass.md)",
+        "Status": "Controlled",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/38de821484b0811e84bdd2a4ae725a54"
+      }
+    },
+    {
+      "source_id": "38de8214-84b0-81e1-b9ac-ea69b2346a24",
+      "title": "Surbrin Eastern Road (Baen Bypass)",
+      "revision": "2026-06-28T10:34:24.494Z",
+      "body_hash": "54c43f9a6490fd674274348d78dba3d1ddd322eae4a3f685f64690016f1b2360",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Surbrin Eastern Road (Baen Bypass)",
+        "Notes": "72-foot 3x arterial bypassing Yartar. Branches off the Long Road 12 miles south of Yartar, runs 22 miles northeast to Isle de Troll, continues as 38-mile 36-foot Laughingflow extension to Trollflow Redoubt. Commercial cover: Surbrin Eastern Road filed by Vara Torsten. Crystal mortar array runs full length connecting to main Baen arterial network. Aldric Steelgaze has the road catalogued (width anomalous for stated purpose — provisionally deniable). Azurite accent slot built into all structures, stone deferred until road is operational.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[surbrin-eastern-road-bypass.md](http://surbrin-eastern-road-bypass.md)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/38de821484b081e1b9acea69b2346a24"
+      }
+    },
+    {
+      "source_id": "38de8214-84b0-81f1-8e13-f05afbaba879",
+      "title": "Isle de Troll",
+      "revision": "2026-09-04T15:07:42.291Z",
+      "body_hash": "618310d4c571c81cc2275a882e933df1d6ac752f1a98d941a9448c66a1c28a0e",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "\\~80 Bloodaxe legionaries on 90-day rotation posting (from existing cohorts, detached duty, classified station) + Quiet Company detachment (permanent tasking, does not rotate) + Sania Valmorra (permanent) + Yamilet al-Sevren (when column staged or capture in hold) + Volkmar Grimhand (commands when present). Gary permanently resident. Total at operational tempo \\~130; surge capacity 300.",
+        "Name": "Isle de Troll",
+        "Notes": "The Surbrin bypass crossing and underground dragon complex north of Yartar. Roman-style canal diversion creates a 320 x 1,200-foot island on the Surbrin. Two bridge spans (Home Bridge west over fire-oil pool; Hunt Bridge east over main canal). Three surface zones (west military, central citadel, east dragon). Two underground levels: Transfer Deck (lowering/assessment, Yamilet's working space, Sania's lab, dead-material vault, Gary's suite) and The Pit (THE CAGE, 220 x 140 ft floor, 55-ft ceiling, bedrock deck-spine anchors). Forbiddance ward covers entire dragon zone. Four personnel Shadow Gate nodes (near bank, island west, island central, far-bank tete-de-pont) plus the Well — a dragon-rated Sinker receiving hall in the western military zone (added 2026-09-04). 6-month larder at 300 persons. Aldric Steelgaze has the installation flagged (live counter-intel clock). Column home base; Trollflow Redoubt is the forward observation post.",
+        "Population": 130,
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[isle-de-troll-fortress.md](http://isle-de-troll-fortress.md)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-09-04",
+        "url": "https://app.notion.com/p/38de821484b081f18e13f05afbaba879"
+      }
+    },
+    {
+      "source_id": "38ee8214-84b0-81fe-9a92-e8020a7be7a8",
+      "title": "The High Forest (Caledor Domain)",
+      "revision": "2026-06-29T00:11:29.841Z",
+      "body_hash": "b6c50efdd7ddac7d775260c9bef3cb77cf78ba112aa9c85a70e9af3049b9b432",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/38de821484b081db9ba6ef67998f270a"
+        ],
+        "Garrison": "Minaithnir (Star Dragon, strategic deterrent, currently dormant); Imrik (Tier 1 Dragon Prince, peerless duelist); Caerilcarn wood-elf levies and opt-in fey courts; Reitheillaethor's eastern patrols. No standing army yet — the realm is days old; the deterrent IS the dragon.",
+        "Name": "The High Forest (Caledor Domain)",
+        "Notes": "",
+        "Region": [
+          "Silver Marches"
+        ],
+        "Source File": "FR canon (Silver Marches pp.27-31; Lost Empires of Faerun 'Realms of the High Forest' pp.82-94; Volo's Guide to the North) + Caledor design lane. 28 Jun 2026.",
+        "Status": "Contested",
+        "Strategic Value": "Critical",
+        "Sub-Locations": [
+          "https://app.notion.com/p/3c2e821484b0816a8570e8c7f1243e3b"
+        ],
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-28",
+        "url": "https://app.notion.com/p/38ee821484b081fe9a92e8020a7be7a8"
+      }
+    },
+    {
+      "source_id": "392e8214-84b0-819b-9878-d48ea5b1dc44",
+      "title": "⛰️ Mirabar",
+      "revision": "2026-08-20T19:14:04.706Z",
+      "body_hash": "ef8c185958553704a8da8ffc3330a1ec42e366853416914c7f52438ef240202c",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b081c08b0bd1abb3bd6266"
+        ],
+        "Garrison": "Council of Sparkling Stones (elected dwarf/human policy body, sets mine quotas) nominally under hereditary Marchion Selin Raurym — FR/5e baseline, not yet campaign-fixed. Real ground-level power: the Ironvow Clan, a mining-clan bloc run by Elder Grandmother Kethra Ironvow (300 years old, hasn't left the city in a century) with council enforcer Brokki Stonefist. No standing military garrison surfaced in campaign play — city security reads as clan-enforcer-level, not army-level.",
+        "Name": "Mirabar",
+        "Notes": "",
+        "Population": 17000,
+        "Region": [
+          "Silver Marches"
+        ],
+        "Source File": "The Stonefire Debt (37de8214-84b0-81f9-b83e-ecb29e54cc0b); The Stonefire Debt — Solo Session Setup (38be8214-84b0-81ff-9329-cd8766e8ae95); Hilda Stonefire NPC (37de8214-84b0-8122-af2e-c813460771b6); Stonefire Ceramics (38be8214-84b0-817c-a178-cff85b9e46aa); The Seam — Lirien and the Mirabar Trail (37ee8214-84b0-8108-9739-dd5f83443e2e); Halver Sarn NPC (37ee8214-84b0-8194-a4ab-f5d922759b34); Mirabar Play resolved S001 (37ee8214-84b0-81a6-a598-e004637d0207); Thorfinn archival search — Hall of Grafts (338e8214-84b0-815e-994a-e79704c457c6); Durin Copperhand NPC (33be8214-84b0-81e1-8843-e43ef5759007); The Iron Sovereignty consolidated reference (335e8214-84b0-815f-b7c1-f201b06ece53); Aldric Cold War (2fbe8214-84b0-8198-96b8-e26bbf37385b)",
+        "Status": "Contested",
+        "Strategic Value": "High",
+        "Type": "City",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-07-03",
+        "url": "https://app.notion.com/p/392e821484b0819b9878d48ea5b1dc44"
+      }
+    },
+    {
+      "source_id": "399e8214-84b0-81e8-a738-f93f1e833aeb",
+      "title": "Inevitable City — District Gazetteer & Hell-Quarter Ledger",
+      "revision": "2026-08-20T19:54:07.384Z",
+      "body_hash": "00dc0205c16cfbb019f58012f21c79b38ba8e351776114256e6586f96c7960ec",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Inevitable City — District Gazetteer & Hell-Quarter Ledger",
+        "Notes": "",
+        "Parent Location": [
+          "https://app.notion.com/p/348e821484b081ce8378ffc93d9bebf2"
+        ],
+        "Region": [
+          "Nine Hells"
+        ],
+        "Source File": "",
+        "Status": "Allied",
+        "Strategic Value": "Critical",
+        "Type": "City",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/399e821484b081e8a738f93f1e833aeb"
+      }
+    },
+    {
+      "source_id": "3a0e8214-84b0-816b-879a-ce1e87613511",
+      "title": "The Deep Galleries (Delve Gate)",
+      "revision": "2026-08-20T03:24:29.904Z",
+      "body_hash": "da8cd1d42f35a2d972eb3bd0ff936b1f576cba9af5989c31c0b8c4cbb0542161",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "food_supply",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Guild delvers + devil wardens (shells) + Eternal Dancer ringers; Legion escort for core shipments",
+        "Name": "The Deep Galleries (Delve Gate)",
+        "Notes": "Public-facing chartered upper strata (Strata One-Three) of the Neverwinter Deep Labyrinth. Guild monster-farming economy behind the Delve Gate. Phased rollout from Eleint 1494. Design-draft pending Chad's locks.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/3a0e821484b0816b879ace1e87613511"
+      }
+    },
+    {
+      "source_id": "3afe8214-84b0-81a0-9da0-cf60399bbc44",
+      "title": "The Drowned Throne",
+      "revision": "2026-08-01T20:07:26.912Z",
+      "body_hash": "fbc04aaa57f71717dad90311afe453741f031cc80655ff5f5f39e4b884eaeca3",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "",
+        "Name": "The Drowned Throne",
+        "Notes": "The buried pre-Netherese throne hall of Dravakhsha the First-Crowned, beneath the flooded deep galleries of Fortress Llorkh (the Water Throne). Climax site for 'The First-Crowned's Claim' (Movements 6-7). A three-level descent: Level 1 the Lower Works (Baen concrete, the dam's flooded pump galleries, Pehlavan's ground); Level 2 the Breach (the seam where Baen concrete meets 8,000-year-old cut stone, the survey team's abandoned journal ending on 'the water is the only thing he is afraid of'); Level 3 the Drowned Hall (the throne, the clay tablet that anchors Dravakhsha, Marzban's stand, the first meeting and the convergence). The clock is physical: a rising waterline tracked through every room, footing becoming deep water, air-pockets shrinking. Win-condition and clock-failure are the same event — the tablet meets the water. Three endings leave the hall as tomb, empty throne, or the Neighbor's Hall (Dravakhsha alive). The Water Throne above was named for the wrong king. Designed, floating until earned; GM-only until discovered.",
+        "Region": [
+          "Silver Marches"
+        ],
+        "Source File": "[dravakhsha-drowned-throne-location.md](http://dravakhsha-drowned-throne-location.md)",
+        "Status": "Unexplored",
+        "Strategic Value": "Critical",
+        "Type": "Dungeon",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/3afe821484b081a09da0cf60399bbc44"
+      }
+    },
+    {
+      "source_id": "3b3e8214-84b0-817e-b670-fb3f9b2c3511",
+      "title": "The Black Sluice",
+      "revision": "2026-08-05T02:03:31.525Z",
+      "body_hash": "5220a3820a900ac812b75049056d41c11bb0c92c1263e92a3e54e2f000c56e78",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "None — the household IS the opposition; 8 trapped fiends at the Weir",
+        "Name": "The Black Sluice",
+        "Notes": "Sovereign-personal route, fiend-excluded by the Weir's concealment. Module active (thread 3b3e8214-84b0-81bb). Ulthaxor knows the sword is on the floor; Arik learns during or after.",
+        "Region": [
+          "Other Planes",
+          "Sword Coast North"
+        ],
+        "Source File": "black-sluice-build/03_[GEOGRAPHY.md](http://GEOGRAPHY.md) + 03A-F",
+        "Status": "Unexplored",
+        "Strategic Value": "Critical",
+        "Type": "Planar",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-08-04",
+        "url": "https://app.notion.com/p/3b3e821484b0817eb670fb3f9b2c3511"
+      }
+    },
+    {
+      "source_id": "3c2e8214-84b0-8125-9c06-df879a350b7e",
+      "title": "Shade Remnant Anauroch Bases",
+      "revision": "2026-08-20T03:29:49.167Z",
+      "body_hash": "70b9cc11d04d3981be6ef79ce7c29feb5da6f2bcd8ccaf198c424d38bd956b2b",
+      "disposition": "CONFLICT",
+      "semantic_status": "CONFLICT",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Jörmun"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/34ce821484b0815bbeb3e3673d49d14b"
+        ],
+        "Garrison": "Unknown strength; modest numbers, insufficient for open warfare. Primary confirmed position is the Anatomist's former laboratory, 55 miles from the Crown of Eight Springs, occupied since the Sessions 11–15 window. Command structure unknown (autonomous cell / Thayan-aligned / unknown third party).",
+        "Name": "Shade Remnant Anauroch Bases",
+        "Notes": "Scattered Netherese survivor cells across Anauroch. Occupy-and-extract posture; incapable of open warfare.",
+        "Parent Location": [
+          "https://app.notion.com/p/34ce821484b081f49f96e13329a117c6"
+        ],
+        "Region": [
+          "Anauroch"
+        ],
+        "Source File": "Canon/Factions/Shade [Remnant.md](http://Remnant.md)",
+        "Status": "Hostile",
+        "Strategic Value": "High",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/3c2e821484b081259c06df879a350b7e"
+      }
+    },
+    {
+      "source_id": "3c2e8214-84b0-816a-8570-e8c7f1243e3b",
+      "title": "Caledor Sub-Territories",
+      "revision": "2026-08-20T03:29:49.167Z",
+      "body_hash": "35bae82517186253af754e4b6d1e4877e9caf6b95a5f51251dcc3ca50b667cfe",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/38de821484b081db9ba6ef67998f270a"
+        ],
+        "Garrison": "The Caerilcarn's refound faction — wood elf tribes and moon elf clans of the High Forest. Minaithnir, the Last Star Dragon (strategic deterrent, currently dormant). Imrik, Tier 1 Dragon Prince and peerless duelist. Opt-in suzerainty levies from surrounding wood-elf and fey courts.",
+        "Name": "Caledor Sub-Territories",
+        "Notes": "The protectorate ring around the Caledor heartland — resettled Eaerlann ruins, the Star Mounts seat, and opt-in vassal courts.",
+        "Parent Location": [
+          "https://app.notion.com/p/38ee821484b081fe9a92e8020a7be7a8"
+        ],
+        "Region": [
+          "Silver Marches",
+          "Sword Coast North"
+        ],
+        "Source File": "Canon/Factions/[Caledor.md](http://Caledor.md)",
+        "Status": "Contested",
+        "Strategic Value": "High",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/3c2e821484b0816a8570e8c7f1243e3b"
+      }
+    },
+    {
+      "source_id": "3c2e8214-84b0-81b7-aabc-c22f10569330",
+      "title": "Zhentarim Holdings (Moonsea & Dalelands)",
+      "revision": "2026-08-20T16:39:36.021Z",
+      "body_hash": "9e6a8fb19c18a47fcc9f888d8dc6412dca1de73a440b473f0cf871572304df6a",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/34ce821484b081d897eedbe2fb005457"
+        ],
+        "Garrison": "Vorn Pragmatic: \\~400–600 personnel across trade and logistics covers, with \\~80–100 trained former Zhentarim operatives as the security and operations core; fortified Thornfield estate above a documented Underdark entrance. Vask Military: 51–200 operatives, ideological/zealot operational style, single-source printing infrastructure.",
+        "Name": "Zhentarim Holdings (Moonsea & Dalelands)",
+        "Notes": "Post-purge Zhentarim territory, split between two incompatible factions. NOTE: campaign canon places these holdings in the northern Dalelands / Tesh Valley, not the Western Heartlands — see body.",
+        "Region": [
+          "Dalelands",
+          "Heartlands East"
+        ],
+        "Source File": "Canon/Factions/The [Zhentarim.md](http://Zhentarim.md)",
+        "Status": "Contested",
+        "Strategic Value": "High",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/3c2e821484b081b7aabcc22f10569330"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 230,
+      "UNKNOWN": 1348,
+      "CONFLICT": 12,
+      "SUPERSEDED": 14,
+      "MISSING_DATA": 4,
+      "FUTURE": 9,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 269,
+      "UNMEASURED": 1351
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 230,
+      "UNREVIEWED": 1351,
+      "CONFLICT": 10,
+      "SUPERSEDED": 13,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 9,
+      "ECONOMIC_CONTEXT": 3
+    }
+  }
+}

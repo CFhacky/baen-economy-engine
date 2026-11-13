@@ -107,3 +107,22 @@ generic luxury/magical-input band where source detail is insufficient.
 
 Households, individual merchants, autonomous agent cognition, every craft subtype,
 continental equilibrium, and planar markets are outside the MVP.
+
+
+## Economic actor and identity layer
+
+Campaign source records are not fed directly into account-level simulation. The engine now has an intermediate **economic actor layer**, specified in `docs/ECONOMIC_ACTOR_MODEL.md`.
+
+The pipeline is:
+
+```text
+campaign/source authority
+    -> reviewed economic actors and relationships
+    -> canonical tabular state under data/canonical/
+    -> validated SQLite runtime
+    -> sector/runtime products and reports
+```
+
+Actors, accounts, employment, ownership, loans, contracts, property interests, and inventory custody are separate records linked by stable IDs. An account may exist while its opening balance remains UNKNOWN. Named workers resolve identities inside existing aggregate headcounts rather than increasing them automatically.
+
+The first vertical slices are Northern Crown Financial and Institut Baen'und. NCF exercises banking and balance-sheet relationships; the Institut exercises institutional employment, customers/clients, programmes, restricted funds, procurement, and facilities. The human review surface is defined in `docs/ECONOMIC_ACTOR_WORKBENCH.md`; Excel is a review artifact, while canonical structured state remains in Git-tracked tables.

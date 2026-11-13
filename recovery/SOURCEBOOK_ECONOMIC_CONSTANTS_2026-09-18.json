@@ -1,0 +1,359 @@
+{
+  "schema": "tnp.economy.sourcebook-economic-constants/1",
+  "captured_at": "2026-09-18",
+  "authority": "UPSTREAM-ADOPTED",
+  "provenance_kind": "SOURCEBOOK_RAW",
+  "execution_policy": "These are mechanical/reference anchors. They do not override USER-RULED or SOURCE-DERIVED campaign facts and do not create current fleet counts, prices, wages, or household baskets by themselves.",
+  "sources": [
+    {
+      "id": "new-path-gurps-teamster",
+      "system": "GURPS 4e",
+      "book": "GURPS Basic Set: Characters",
+      "citation": "B225 / New Path Engine harvested skill row",
+      "repo": "CFhacky/the-new-path-engine",
+      "path": "reference/gurps_skill_index.json",
+      "facts": [
+        {
+          "key": "gurps.teamster.attribute",
+          "value": "IQ"
+        },
+        {
+          "key": "gurps.teamster.difficulty",
+          "value": "Average"
+        },
+        {
+          "key": "gurps.teamster.default",
+          "value": "IQ-5, Animal Handling (same)-4, Riding (same)-2"
+        }
+      ]
+    },
+    {
+      "id": "new-path-gurps3e-draft-horse",
+      "system": "GURPS 3e",
+      "book": "GURPS Bestiary (3e)",
+      "citation": "p. 47 / New Path Engine harvested creature row",
+      "repo": "CFhacky/the-new-path-engine",
+      "path": "reference/gurps3e_creature_index.json",
+      "facts": [
+        {
+          "key": "gurps3e.draft_horse.ST_min",
+          "value": 50
+        },
+        {
+          "key": "gurps3e.draft_horse.ST_max",
+          "value": 60
+        },
+        {
+          "key": "gurps3e.draft_horse.DX",
+          "value": 9
+        },
+        {
+          "key": "gurps3e.draft_horse.IQ",
+          "value": 4
+        },
+        {
+          "key": "gurps3e.draft_horse.HT_min",
+          "value": 13
+        },
+        {
+          "key": "gurps3e.draft_horse.HT_max",
+          "value": 16
+        },
+        {
+          "key": "gurps3e.draft_horse.Move",
+          "value": 12
+        }
+      ],
+      "note": "Legacy-system animal benchmark only; do not silently convert 3e ST into 4e pulling force."
+    },
+    {
+      "id": "dmg35-upkeep",
+      "system": "D&D 3.5e",
+      "book": "Dungeon Master's Guide",
+      "citation": "Campaigns — Variant: Upkeep",
+      "library_ref": "turn463file6",
+      "facts": [
+        {
+          "key": "dnd35.upkeep.self_sufficient_gp_per_month",
+          "value": 2
+        },
+        {
+          "key": "dnd35.upkeep.meager_gp_per_month",
+          "value": 5
+        },
+        {
+          "key": "dnd35.upkeep.poor_gp_per_month",
+          "value": 12
+        },
+        {
+          "key": "dnd35.upkeep.common_gp_per_month",
+          "value": 45
+        },
+        {
+          "key": "dnd35.upkeep.good_gp_per_month",
+          "value": 100
+        },
+        {
+          "key": "dnd35.upkeep.extravagant_gp_per_month",
+          "value": 200
+        },
+        {
+          "key": "dnd35.common_laborer_gp_per_month_approx",
+          "value": 3
+        }
+      ],
+      "note": "Useful household/lifestyle and low-wage anchors; not yet a Baen settlement class basket."
+    },
+    {
+      "id": "silver-marches-trade-crosscheck",
+      "system": "Forgotten Realms 3e",
+      "book": "Silver Marches",
+      "citation": "Adventures in the North, p. 133 excerpt",
+      "library_ref": "turn464file3",
+      "facts": [
+        {
+          "key": "fr.silver_marches.flour_lb",
+          "value": 600,
+          "unit": "lb"
+        },
+        {
+          "key": "fr.silver_marches.flour_total_gp",
+          "value": 12,
+          "unit": "gp"
+        },
+        {
+          "key": "fr.silver_marches.flour_gp_per_lb",
+          "value": 0.02,
+          "unit": "gp/lb"
+        },
+        {
+          "key": "fr.silver_marches.salt_lb",
+          "value": 20,
+          "unit": "lb"
+        },
+        {
+          "key": "fr.silver_marches.salt_total_gp",
+          "value": 100,
+          "unit": "gp"
+        },
+        {
+          "key": "fr.silver_marches.salt_gp_per_lb",
+          "value": 5,
+          "unit": "gp/lb"
+        }
+      ],
+      "note": "Direct Forgotten Realms regional example matching the 3.5 trade-goods price basis."
+    },
+    {
+      "id": "draconomicon-trade-goods",
+      "system": "D&D 3.5e",
+      "book": "Draconomicon",
+      "citation": "Appendix trade goods table, PDF p. 280",
+      "library_ref": "turn464file0",
+      "facts": [
+        {
+          "key": "dnd35.trade.flour_gp_per_lb",
+          "value": 0.02,
+          "unit": "gp/lb"
+        },
+        {
+          "key": "dnd35.trade.wheat_gp_per_lb",
+          "value": 0.01,
+          "unit": "gp/lb"
+        },
+        {
+          "key": "dnd35.trade.salt_gp_per_lb",
+          "value": 5,
+          "unit": "gp/lb"
+        }
+      ]
+    },
+    {
+      "id": "old-world-road-transport",
+      "system": "WFRP 2e",
+      "book": "Old World Armoury",
+      "citation": "Chapter VII: Animals & Transport / Travel Services",
+      "library_ref": "turn448file6",
+      "facts": [
+        {
+          "key": "wfrp.cart_or_wagon.average_speed_mph",
+          "value": 2.5,
+          "unit": "mph"
+        },
+        {
+          "key": "wfrp.cart_two_horses.average_speed_mph",
+          "value": 3.5,
+          "unit": "mph"
+        },
+        {
+          "key": "wfrp.wagon_three_horses.average_speed_mph",
+          "value": 3.5,
+          "unit": "mph"
+        }
+      ],
+      "note": "Physical-speed comparator only; WFRP currency and encumbrance units are not converted into Baen gp/tons."
+    },
+    {
+      "id": "old-world-income",
+      "system": "WFRP 2e",
+      "book": "Old World Armoury",
+      "citation": "Appendix income table",
+      "library_ref": "turn463file7",
+      "facts": [
+        {
+          "key": "wfrp.peasant.yearly_income_gc_min",
+          "value": 9,
+          "unit": "gc/year"
+        },
+        {
+          "key": "wfrp.peasant.yearly_income_gc_max",
+          "value": 15,
+          "unit": "gc/year"
+        },
+        {
+          "key": "wfrp.skilled_craftsman.yearly_income_gc_min",
+          "value": 25,
+          "unit": "gc/year"
+        },
+        {
+          "key": "wfrp.skilled_craftsman.yearly_income_gc_max",
+          "value": 80,
+          "unit": "gc/year"
+        }
+      ],
+      "note": "Relative occupational-income comparator only. No WFRP-gc to Faerun-gp conversion is adopted."
+    },
+    {
+      "id": "dmg2-urban-labor",
+      "system": "D&D 3.5e",
+      "book": "Dungeon Master's Guide II",
+      "citation": "Mercantile Guilds and Occupations, PDF pp. 91–94",
+      "library_ref": "turn476file0 / turn476file2 / turn476file4",
+      "facts": [
+        {
+          "key": "dnd35.city.active_guild_members_fraction_approx",
+          "value": 0.1,
+          "unit": "fraction of city population"
+        },
+        {
+          "key": "dnd35.guild_occupation.artisan_fraction",
+          "value": 0.04,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.construction_fraction",
+          "value": 0.06,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.craftsman_fraction",
+          "value": 0.2,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.food_trade_fraction",
+          "value": 0.12,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.garment_trade_fraction",
+          "value": 0.25,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.labor_fraction",
+          "value": 0.13,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.merchant_fraction",
+          "value": 0.05,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.profession_fraction",
+          "value": 0.05,
+          "unit": "fraction of active guild members"
+        },
+        {
+          "key": "dnd35.guild_occupation.service_fraction",
+          "value": 0.1,
+          "unit": "fraction of active guild members"
+        }
+      ],
+      "note": "This is a medieval-style D&D urban guild structure, not a total working-age population model. Proprietor counts may exclude apprentices, employees, and family labor."
+    },
+    {
+      "id": "dmg35-city-social-class-districts",
+      "system": "D&D 3.5e",
+      "book": "Dungeon Master's Guide",
+      "citation": "City districts / social class and neighborhoods",
+      "library_ref": "turn476file1 / turn476file5 / turn476file9",
+      "facts": [
+        {
+          "key": "dnd35.small_city.upper_class_district_fraction",
+          "value": 0.1,
+          "unit": "fraction of districts"
+        },
+        {
+          "key": "dnd35.small_city.middle_class_district_fraction",
+          "value": 0.3,
+          "unit": "fraction of districts"
+        },
+        {
+          "key": "dnd35.small_city.lower_class_district_fraction",
+          "value": 0.6,
+          "unit": "fraction of districts"
+        },
+        {
+          "key": "dnd35.large_city.upper_class_district_fraction",
+          "value": 0.15,
+          "unit": "fraction of districts"
+        },
+        {
+          "key": "dnd35.large_city.middle_class_district_fraction",
+          "value": 0.3,
+          "unit": "fraction of districts"
+        },
+        {
+          "key": "dnd35.large_city.lower_class_district_fraction",
+          "value": 0.55,
+          "unit": "fraction of districts"
+        }
+      ],
+      "note": "District shares are not population shares. Do not use them directly as household class shares without a separate density model."
+    },
+    {
+      "id": "old-world-food-day",
+      "system": "WFRP 2e",
+      "book": "Old World Armoury",
+      "citation": "Table AP–10: Food & Drink",
+      "library_ref": "turn477file5",
+      "facts": [
+        {
+          "key": "wfrp.food_per_day.poor_cost_p",
+          "value": 5,
+          "unit": "p/day"
+        },
+        {
+          "key": "wfrp.food_per_day.average_cost_p",
+          "value": 10,
+          "unit": "p/day"
+        },
+        {
+          "key": "wfrp.food_per_day.good_cost_p",
+          "value": 18,
+          "unit": "p/day"
+        }
+      ],
+      "note": "Relative food-cost tier comparator only. No p/s/gc to Faerun gp conversion is adopted."
+    }
+  ],
+  "model_guardrails": [
+    "Campaign prices and wages observed in Notion outrank sourcebook anchors.",
+    "Sourcebook prices can initialize or bound an unsourced market model only after the model is explicitly adopted.",
+    "Do not combine currencies from different game systems by name.",
+    "Do not convert GURPS 3e draft-horse ST directly to GURPS 4e Basic Lift without an explicit conversion rule.",
+    "Baen's sourced 20–40 ton specialized heavy-stone wagon remains a campaign fact even though it exceeds ordinary historical/sourcebook wagon comparators; its traction and running-gear mechanism remains unresolved."
+  ]
+}

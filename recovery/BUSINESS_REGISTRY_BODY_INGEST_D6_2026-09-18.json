@@ -1,0 +1,292 @@
+{
+  "schema": "tnp.economy.business-registry-body-ingest/1",
+  "batch": "D6",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "target": 10,
+  "reviewed": 10,
+  "failed": 0,
+  "records": [
+    {
+      "source_id": "362e8214-84b0-81e9-8ce5-d318425ffcde",
+      "title": "Neverwinter Munitions Facility",
+      "revision": "2026-06-14T00:16:46.398Z",
+      "body_hash": "549a66c988d8476f3186209bd8c4681b7885b294dd8ee56ac1e4ab20c97b8524",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": null,
+        "employees": 43,
+        "cost": null,
+        "revenue": 12000,
+        "parent": "Baen Enterprises",
+        "status": "Operational",
+        "date_operational": "",
+        "city": "Neverwinter",
+        "sector": "Manufacturing"
+      }
+    },
+    {
+      "source_id": "372e8214-84b0-81d9-8c19-e650c16b687f",
+      "title": "🏭 Institut de Tissage Arcanique",
+      "revision": "2026-08-20T03:31:33.640Z",
+      "body_hash": "c22a45368e8a995a6b54db88f4e26cbe47b9009efa30b242e21ef8ffb6928534",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "industrial_production"
+      ],
+      "property_snapshot": {
+        "capital": 132000,
+        "employees": 81,
+        "cost": 17500,
+        "revenue": 28000,
+        "parent": "ESAMT (Shi'van Baen'und trust, NCF Waterdeep)",
+        "status": "Operational",
+        "date_operational": "Day 393, 1493 DR",
+        "city": "Waterdeep",
+        "sector": "Manufacturing"
+      }
+    },
+    {
+      "source_id": "376e8214-84b0-8108-8810-e1d99b58f959",
+      "title": "🪵 Thundertree Waystation",
+      "revision": "2026-08-21T03:53:00.210Z",
+      "body_hash": "dd7b83b18bb76af2cc52b184b11a8f7321db002d321a8c7dd72b99ca6752c8a1",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "trade_routes"
+      ],
+      "property_snapshot": {
+        "capital": null,
+        "employees": null,
+        "cost": null,
+        "revenue": null,
+        "parent": "Baen Enterprises — Northern Sea Gate",
+        "status": "Under Construction",
+        "date_operational": "Early phase (post Venomfang clearance)",
+        "city": "Neverwinter",
+        "sector": "Infrastructure"
+      }
+    },
+    {
+      "source_id": "376e8214-84b0-8121-88b4-ced3087746f7",
+      "title": "🏰 Seven Spires Estate",
+      "revision": "2026-06-05T15:56:04.129Z",
+      "body_hash": "b9bfbb7b17841cd293fb4079da6d2db385a50d438803bab3495dcc5d6ec2994f",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "population",
+        "labor_supply",
+        "household_consumption"
+      ],
+      "property_snapshot": {
+        "capital": null,
+        "employees": null,
+        "cost": null,
+        "revenue": null,
+        "parent": "Baen Enterprises — Northern Sea Gate",
+        "status": "Under Construction",
+        "date_operational": "Year 4 (projected \\~1498-1499 DR)",
+        "city": "Neverwinter",
+        "sector": "Hospitality"
+      }
+    },
+    {
+      "source_id": "376e8214-84b0-819e-8c07-d304487c01bb",
+      "title": "⚓ Sea Gate Harbor Authority",
+      "revision": "2026-08-20T03:32:24.241Z",
+      "body_hash": "bd8576ef3456956fb5811095b4a53b8c97ee87ac868c03bbc68479af1a5c5505",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": null,
+        "employees": null,
+        "cost": null,
+        "revenue": null,
+        "parent": "Baen Enterprises — Northern Sea Gate",
+        "status": "Under Construction",
+        "date_operational": "Year 4 (projected \\~1498-1499 DR)",
+        "city": "Northern Sea Gate",
+        "sector": "Infrastructure"
+      }
+    },
+    {
+      "source_id": "376e8214-84b0-81c1-95a1-d5c3e2ceb4cb",
+      "title": "⚙️ Neverwinter Wood Canal",
+      "revision": "2026-08-21T03:52:59.003Z",
+      "body_hash": "6157f80886527bf813d5ed328937e839bdd87dcc415ea771e34d520c16a698b7",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "trade_routes"
+      ],
+      "property_snapshot": {
+        "capital": null,
+        "employees": null,
+        "cost": null,
+        "revenue": null,
+        "parent": "Baen Enterprises — Northern Sea Gate",
+        "status": "Under Construction",
+        "date_operational": "Year 3 (projected \\~1497-1498 DR)",
+        "city": "Multi-Region",
+        "sector": "Infrastructure"
+      }
+    },
+    {
+      "source_id": "376e8214-84b0-81db-9a8a-e682a583b6ee",
+      "title": "🛠️ Sea Gate Shipyard",
+      "revision": "2026-08-20T03:32:27.055Z",
+      "body_hash": "7303224e093d221d3f372c5dd776b63a1a917852b7ae2e64321e0a7b87d121e6",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply",
+        "trade_routes"
+      ],
+      "property_snapshot": {
+        "capital": null,
+        "employees": null,
+        "cost": null,
+        "revenue": null,
+        "parent": "Baen Enterprises — Northern Sea Gate",
+        "status": "Planning",
+        "date_operational": "Year 7-8 activation (projected \\~1502-1503 DR)",
+        "city": "Northern Sea Gate",
+        "sector": "Manufacturing"
+      }
+    },
+    {
+      "source_id": "37de8214-84b0-81d1-bf05-cd5b4111d5bc",
+      "title": "Stonefire Ceramics",
+      "revision": "2026-08-20T03:31:48.462Z",
+      "body_hash": "93493585538d74c27540891b06118648433d7afb432950e65071a27e482911aa",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "industrial_production"
+      ],
+      "property_snapshot": {
+        "capital": 42700,
+        "employees": 67,
+        "cost": 1909,
+        "revenue": 1479,
+        "parent": "Baen Enterprises",
+        "status": "Under Construction",
+        "date_operational": "Ches 1495 DR (launch); established Hammer 1495 DR",
+        "city": "Forgedeep",
+        "sector": "Manufacturing"
+      }
+    },
+    {
+      "source_id": "3bbe8214-84b0-815f-ac80-dd1c4430327d",
+      "title": "🚇 Deep Road Network (Deep Road Authority)",
+      "revision": "2026-08-13T04:49:40.662Z",
+      "body_hash": "6c2a382f5f58677b16754188e8b8e4ee1b9899dd6f7fa11a0f5ac0b986b217ad",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "trade_routes"
+      ],
+      "property_snapshot": {
+        "capital": 18700000,
+        "employees": 522,
+        "cost": null,
+        "revenue": null,
+        "parent": "Baen Enterprises",
+        "status": "Planning",
+        "date_operational": "Phase 1 target Kythorn–Flamerule 1497 DR",
+        "city": "Multi-Region",
+        "sector": "Infrastructure"
+      }
+    },
+    {
+      "source_id": "3c2e8214-84b0-81f8-88a6-e1169f9a4df4",
+      "title": "❄️ Snowfall Hearthworks",
+      "revision": "2026-08-20T20:27:51.951Z",
+      "body_hash": "22f43ccf61ffb6a03aff5af820f2ba7e76a742bb902873c7b03196dbec018c76",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "industrial_production"
+      ],
+      "property_snapshot": {
+        "capital": 30000,
+        "employees": 0,
+        "cost": 0,
+        "revenue": 0,
+        "parent": "Independent venture: Veldrin 75% / Northern Crown Financial 25%; related-party supplier relationship with Baen Construction",
+        "status": "Planning",
+        "date_operational": "Resolved forward opening 1 Eleint 1495 DR; formation begins 1 Alturiak 1495; live clock not advanced",
+        "city": "Neverwinter",
+        "sector": "Manufacturing"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "UNKNOWN": 1521,
+      "SOURCE_MAPPED": 82,
+      "SUPERSEDED": 3,
+      "MISSING_DATA": 4,
+      "FUTURE": 3,
+      "CONFLICT": 5,
+      "CONTEXT_ONLY": 2
+    },
+    "body": {
+      "UNMEASURED": 1527,
+      "REVIEWED": 93
+    },
+    "dispositions": {
+      "UNREVIEWED": 1527,
+      "ECONOMIC_INPUT": 79,
+      "SUPERSEDED": 2,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 3,
+      "ECONOMIC_CONTEXT": 2,
+      "CONFLICT": 3
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

@@ -1,0 +1,332 @@
+{
+  "schema": "tnp.economy.business-registry-body-ingest/1",
+  "batch": "D1",
+  "captured_at": "2026-09-18",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "target": 12,
+  "reviewed": 12,
+  "failed": 0,
+  "records": [
+    {
+      "source_id": "321e8214-84b0-810c-945f-f2ee5b1d4841",
+      "title": "Underground Renovation Services",
+      "revision": "2026-03-12T21:10:39.902Z",
+      "body_hash": "e9a691e73259e0c6a17943444527e6b5366d67b017ffab209d00701182139d46",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": 8000,
+        "employees": 10,
+        "cost": 2100,
+        "revenue": 3500,
+        "parent": "Baen Construction",
+        "status": "Operational",
+        "date_operational": "Mirtul 1494",
+        "city": "Neverwinter",
+        "sector": "Construction"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-8110-98cf-ebc200f16c7a",
+      "title": "Converted Quarry Aquaculture (5 sites)",
+      "revision": "2026-03-13T00:04:41.838Z",
+      "body_hash": "fba653303f0d265aa0b078b78bbe4fabcdda680f1f582c1314a992af363d73be",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply",
+        "food_supply",
+        "inventories"
+      ],
+      "property_snapshot": {
+        "capital": 35000,
+        "employees": 20,
+        "cost": 9750,
+        "revenue": 12500,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Mirtul 1494",
+        "city": "Multi-Region",
+        "sector": "Aquaculture"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-8112-ab9e-cd6f5eba18e8",
+      "title": "Blacklake Aquaculture (7 pools)",
+      "revision": "2026-03-12T21:58:26.853Z",
+      "body_hash": "f073d90a8b0461d5c2acbef75c25331d3dedb76cfdb20712109ca442ea359503",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "food_supply",
+        "inventories"
+      ],
+      "property_snapshot": {
+        "capital": 40000,
+        "employees": 15,
+        "cost": 5850,
+        "revenue": 7500,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Tarsakh 1494",
+        "city": "Neverwinter",
+        "sector": "Aquaculture"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-8116-a104-c6217060c1c5",
+      "title": "BG Aquaculture Pools (3 sites)",
+      "revision": "2026-03-22T15:03:17.597Z",
+      "body_hash": "523488d2a00146514aa7f2f9426941505bfdd4955e74e4536cb669b4c9aa49a7",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "food_supply",
+        "business_financial_flows",
+        "labor_supply",
+        "inventories"
+      ],
+      "property_snapshot": {
+        "capital": 22000,
+        "employees": 12,
+        "cost": 2600,
+        "revenue": 3333,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Kythorn 1494",
+        "city": "Baldurs Gate",
+        "sector": "Aquaculture"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-8116-ac1b-cc07c68ff15f",
+      "title": "Gauntlgrym Tools Partnership",
+      "revision": "2026-07-24T22:05:07.387Z",
+      "body_hash": "c117fc18980f5bb060ef43681a878b1e9ebc81a0e52f465517ccd31e42de9180",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "industrial_production"
+      ],
+      "property_snapshot": {
+        "capital": 15000,
+        "employees": 10,
+        "cost": 2083,
+        "revenue": 4167,
+        "parent": "50/50 JV",
+        "status": "Operational",
+        "date_operational": "Kythorn 1494",
+        "city": "Gauntlgrym",
+        "sector": "Manufacturing"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-8119-b068-e3d4d503eaa3",
+      "title": "🗑️ [SUPERSEDED] Guardian's Gate Settlement (older variant)",
+      "revision": "2026-08-20T03:32:30.008Z",
+      "body_hash": "5332df970e0aabeb2f688f1a3fd3d8574f901024535cdbf7311dace4b6f5bb6d",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": [],
+      "property_snapshot": {
+        "capital": 30000,
+        "employees": 20,
+        "cost": 3000,
+        "revenue": 0,
+        "parent": "—",
+        "status": "Scaling",
+        "date_operational": "Eleint 1494",
+        "city": "Guardian's Gate Ziggurat",
+        "sector": "Infrastructure"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-8120-8756-cd5f9b876869",
+      "title": "Commercial Properties (Various)",
+      "revision": "2026-03-12T21:10:17.888Z",
+      "body_hash": "b3e0b9fbb225ea0039cfa05253d7488d9b14e4ad195b78a461cd7e336f1b8f3d",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "population",
+        "labor_supply",
+        "household_consumption"
+      ],
+      "property_snapshot": {
+        "capital": 25000,
+        "employees": 5,
+        "cost": 1500,
+        "revenue": 3000,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Various",
+        "city": "Multi-Region",
+        "sector": "Real Estate"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-8122-9dce-efa0c3c48170",
+      "title": "Baen Construction HQ",
+      "revision": "2026-08-20T20:00:08.549Z",
+      "body_hash": "0cb84ae2b295db53cfcaf29ce2236c5b72b4dd8f7dcc0a2329d7a960aa1af7bc",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "industrial_production"
+      ],
+      "property_snapshot": {
+        "capital": 15000,
+        "employees": 120,
+        "cost": 5125,
+        "revenue": 6250,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "1493",
+        "city": "Neverwinter",
+        "sector": "Construction"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-8128-9cb9-fbb308ea2536",
+      "title": "Waterdeep Trading Office",
+      "revision": "2026-03-12T23:43:55.052Z",
+      "body_hash": "c8c0e17cd8269de8a2b4b5662c40605ebbce4342836b78bac22ebe219d905cb8",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "banking_balance_sheet",
+        "credit_origination",
+        "labor_supply",
+        "trade_routes"
+      ],
+      "property_snapshot": {
+        "capital": 18000,
+        "employees": 10,
+        "cost": 1733,
+        "revenue": 3333,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Ches 1494",
+        "city": "Waterdeep",
+        "sector": "Trade"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-812d-bba0-e10b75086a02",
+      "title": "Bloodaxe Legion",
+      "revision": "2026-06-26T23:19:48.715Z",
+      "body_hash": "449e0cf315e3300a814a8132b3cfaf6f7dad7a6f73ad733a83e3cab8adb5ea70",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": 0,
+        "employees": 10000,
+        "cost": 150000,
+        "revenue": 30000,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "1493",
+        "city": "Multi-Region",
+        "sector": "Military"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-8132-bcc9-ef2290e366bc",
+      "title": "Dock Ward Warehouse",
+      "revision": "2026-03-12T23:44:10.034Z",
+      "body_hash": "fc70354415e53108c500169494c2c449cacf788e3ff9ceecd0f52940af8acd43",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": 12000,
+        "employees": 8,
+        "cost": 1100,
+        "revenue": 1833,
+        "parent": "—",
+        "status": "Operational",
+        "date_operational": "Tarsakh 1494",
+        "city": "Waterdeep",
+        "sector": "Trade"
+      }
+    },
+    {
+      "source_id": "321e8214-84b0-8140-8f8c-e78bbfd11b30",
+      "title": "Diplomatic Operations",
+      "revision": "2026-03-12T21:45:38.877Z",
+      "body_hash": "2b50261f72a2cc8f78876eb5eb8a6b58b5bbbe0c48bda7a39db9ffde0e0dd8ab",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "capital": 0,
+        "employees": 0,
+        "cost": 6250,
+        "revenue": 0,
+        "parent": "Empire overhead",
+        "status": "Operational",
+        "date_operational": "1494",
+        "city": "Multi-Region",
+        "sector": "Intelligence"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "UNKNOWN": 1576,
+      "SOURCE_MAPPED": 34,
+      "SUPERSEDED": 2,
+      "MISSING_DATA": 1,
+      "CONFLICT": 5,
+      "CONTEXT_ONLY": 2
+    },
+    "body": {
+      "UNMEASURED": 1585,
+      "REVIEWED": 35
+    },
+    "dispositions": {
+      "UNREVIEWED": 1585,
+      "ECONOMIC_INPUT": 28,
+      "SUPERSEDED": 1,
+      "MISSING_DATA": 1,
+      "ECONOMIC_CONTEXT": 2,
+      "CONFLICT": 3
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Baen Economy Engine — Mobile",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "11"
+    }
+  },
+  "forwardPorts": [8765],
+  "portsAttributes": {
+    "8765": {
+      "label": "Baen Economy Engine",
+      "onAutoForward": "openBrowser",
+      "visibility": "private"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/prepare-empire-app.sh",
+  "postStartCommand": "bash .devcontainer/start-empire-app.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  }
+}

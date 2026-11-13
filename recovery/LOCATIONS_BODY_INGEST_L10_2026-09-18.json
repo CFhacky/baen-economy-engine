@@ -1,0 +1,580 @@
+{
+  "schema": "tnp.economy.locations-body-ingest/1",
+  "batch": "L10",
+  "records": [
+    {
+      "source_id": "361e8214-84b0-81c1-8106-fac55527195c",
+      "title": "Sethr-Anhepet (Capital of the Hollow Reach)",
+      "revision": "2026-08-20T19:53:51.171Z",
+      "body_hash": "5c71ad2edb3f35ed50467716020c8cc810fdb0abfe55eed4cfc8c9b7bf9ce977",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/3c2e821484b0817a91ded9b892517270"
+        ],
+        "Garrison": "",
+        "Name": "Sethr-Anhepet (Capital of the Hollow Reach)",
+        "Notes": "Capital city of the Hollow Reach. \\~15,000 residents (mixed Awakened and living). Located centrally in the Hollow Reach corridor on the historical trade road. Built over pre-Time-of-Troubles Mulhan foundations. Contains: the Palace (Mehura's seat) with the SUN-VAULT (chamber where Dawn-Ankh maintains residual light, Council of First Awakened meets at change of seasons) + Council Chamber + Map Room (Sun-Crowned Heights campaign planning) + Mehura's private apartments; the Living Council Hall (southwestern ward); the Awakened Host HQ (eastern ward, Selvarra's office); the Bazaar of the Sun-Bronze (central commercial district); the Library of the First Awakened (holds Mulhan-era texts, founding-period records, compact mechanics research); the Foreign Quarter (northwestern ward, where Veshira's pending Mulhan-scholar-cover infiltration will operate); the Old Quarter (Mulhan-era foundations, First Generation Awakened dominant). Sensory character: streets quieter than living cities (no breathing/footsteps from Awakened), no cooking-food smell in Awakened districts, slower pace, light is WRONG (Dawn-Ankh residual influence makes lamps/candles burn longer, magical light lasts unaccountably long). City wall is sandstone-faced rammed-earth, 90 years old, three gates (north/east/south, no western gate by design).",
+        "Parent Location": [
+          "https://app.notion.com/p/361e821484b08146a17bcbbc1d829c97"
+        ],
+        "Region": [
+          "Anauroch"
+        ],
+        "Source File": "Composed 2026-05-15 from consolidated canon across Hollow Reach development sessions, Veshira infiltration planning, and Sun-Vault / Dawn-Ankh canon.",
+        "Status": "Contested",
+        "Strategic Value": "High",
+        "Type": "Settlement",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-15",
+        "url": "https://app.notion.com/p/361e821484b081c18106fac55527195c"
+      }
+    },
+    {
+      "source_id": "362e8214-84b0-8146-9996-eada540f9dd9",
+      "title": "The Faske Library (Discreet)",
+      "revision": "2026-08-20T03:24:32.378Z",
+      "body_hash": "a8f4534558f0ea86c2dea59ceff3bda62079ed04eb0cf19d7f1459f9d0097b67",
+      "disposition": "CONFLICT",
+      "semantic_status": "CONFLICT",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "1 live-in caretaker (human male, 68, retired Watchful Order member, no idea who his employer is); standing wards against scrying, teleportation, divination, and detection; magical alarm tied to sending stone Faske keeps on his person; library third floor warded against everything",
+        "Name": "The Faske Library (Discreet)",
+        "Notes": "DISCREET LOCATION. Three-story stone house on Pelfast Row in Castle Ward — a quiet residential block of similar properties owned by retired magistrates, minor scholars, Waterdhavian eccentrics. House registered to a trust whose paperwork leads through 4 layers of fictitious owners to a name that does not exist. Property tax paid annually through anonymous cash deposit at magistrate's office. City Watch has no record of building's occupant. Neighbors believe house owned by retired Calishite merchant who visits twice a year. GROUND FLOOR: small entrance hall with sturdy door, parlor never used socially, service kitchen for caretaker, caretaker's quarters (two rooms). Plausible part of building — magistrate's writ inspection finds nothing contradicting registered description. SECOND FLOOR: library proper begins here. Floor-to-ceiling custom dark-wood shelving across four interconnected rooms. \\~1,200 volumes: military history (Sembian, Cormyrean, ancient Netherese in translation, 3 Mulhorandi treatises imported), classical philosophy (Stoic primarily, Sembian commercial ethics, Cormyrean political theory), mercantile law (largest section, includes manuscripts Lords' Alliance does not officially acknowledge exist), biography (long-dead conquerors, mercantile magnates, three illuminated lives of Calishite caliphs). THIRD FLOOR: deeper collection \\~1,800 additional volumes including first editions Watchful Order would consider noteworthy, Sembian commercial treatises technically restricted in Waterdeep, Faske's private archive of 30 years correspondence (letters from mother, two from father, Vanessa pre-marriage, private records of certain Veil-adjacent operations he chose to keep against Lirien's standing advice). Third floor also contains reading room where Faske spends \\~one evening a tenday alone, door bolted, wards active. SELTHRANN EILARYA, LIBRARIAN: half-elven female, 87 (appears mid-40s), retired Cormyrean Royal Library after 40-year career, recruited 14 years ago through three layers of intermediaries. Lives Trades Ward apartment. Visits \\~3 afternoons per tenday on varying schedule. HAS NEVER MET WILSHAN FASKE. Receives acquisition instructions in writing via courier, delivers selections (catalog updates, condition reports, acquisition recommendations) through same chain. Has met Vanessa twice at Waterdhavian library events under pretext of retired Cormyrean scholar; Vanessa enjoys conversations, noted her in social book, exchanged 2 polite letters. Neither knows the other's true relationship to Wilshan. STRATEGIC FUNCTION: PERSONAL not operational. The one piece of Faske's life that is genuinely, defensibly his — empire does not have access, Lirien has no way in, Peri has never been inside, Vanessa has been inside 3 times and does not know what the building is (she believes it is a private archive for 'his correspondence and reading,' which is true as far as it goes). Provides +5 circumstance bonus to all Knowledge (history), Knowledge (nobility), Strategy, and Philosophy checks Faske makes while researching 8+ hours. THE LEVERAGE POINT — any campaign arc requiring actual leverage against Faske as a man (not against bank, not Masked Lord seat, not Vanessa) has to go through the library. Discovering it would reveal more than any subordinate could be tortured into revealing. The library is where his soul lives. Also where second oil portrait of Halric Halloran the elder hangs — given to Faske by Vanessa on tenth anniversary, the only artwork in third-floor reading room, the one piece of family inheritance Faske keeps where he can see it alone.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "faske-deployment",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-16",
+        "url": "https://app.notion.com/p/362e821484b081469996eada540f9dd9"
+      }
+    },
+    {
+      "source_id": "362e8214-84b0-8166-89cc-cc72eb8dfe59",
+      "title": "Faske & Halloran Premises",
+      "revision": "2026-08-20T19:52:42.732Z",
+      "body_hash": "aa55c0a56e4221a3d28b385930485e7f5facc179bc63149d662997b8d1ef516c",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "2 armed guards on rotation (both human veterans, vetted by Peri's people without their knowledge); anti-teleportation array on senior partner's office (commissioned 1488 DR) and on cellar vault; magical reinforcement on vault including Knock-resistance and Disjunction-resistance",
+        "Name": "Faske & Halloran Premises",
+        "Notes": "Three-story stone building at the corner of Pitch Court and Eel Way in the Castle Ward — late Lord's Alliance vernacular, Halloran-era construction circa 1438 DR. Brass plate to the left of entrance reads 'Halloran's' in old script with 'Faske & Halloran' added below in a slightly newer hand. Ground floor and cellar level: bank operations. Upper two floors: senior clerk Brennor Wickle and wife on perpetual favorable lease in exchange for after-hours presence. Ground floor public banking area runs 40 feet to rear — six clerks' desks in two rows of three, senior clerks' partition along eastern wall, customer waiting area with four leather chairs and low table, fireplace lit Marpenoth-Mirtul, magelights moderate cost, three small Sword Coast landscape paintings, oil portrait of Halric Halloran the elder above fireplace. Senior partner's office at rear — \\~20 feet square, oiled walnut paneling, heavy dark-wood desk, two dark green leather chairs, sideboard with single decanter, small fireplace, window onto inner courtyard. Sembian master's oil of Selgauntan harbor at dawn behind desk — Faske's only displayed personal art. Office warded against teleportation (12,000 gp 1490 DR, wards due for refresh). Cellar vault: 87 client safe deposit boxes (23 currently unleased), bank's working capital, short-term holdings, dwarven-built stone construction, mithril locks, three layers magical reinforcement including custom anti-teleportation array (1488 DR). Has never been successfully robbed. STRATEGIC FUNCTION: institutional cover for Veil's Waterdeep financial plumbing — cleans Peri's enterprise revenues, routes empire deniable holdings, refugee capital titration (1494+ DR). External profile indistinguishable from any small old Waterdhavian banking house.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "faske-deployment",
+        "Status": "Allied",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-16",
+        "url": "https://app.notion.com/p/362e821484b0816689cccc72eb8dfe59"
+      }
+    },
+    {
+      "source_id": "362e8214-84b0-81c6-b58b-cc3e9d78094f",
+      "title": "Halloran-Faske Townhouse",
+      "revision": "2026-08-20T03:23:33.044Z",
+      "body_hash": "dd579c6b453b80dbccfb38e033994c93d3186f2f63787151f12144058c3913bf",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "11 domestic staff (5 live-in, 6 day-staff) including Mistress Brennle (housekeeper), Vellis (Vanessa's lady's maid), Hartle (Wilshan's valet), Tomar Brennleson (footman/guard), Lyssen (cook); 2 private guards (sleeping shift); anti-teleportation wards on master bedroom and Wilshan's study, refreshed annually since 1487 DR",
+        "Name": "Halloran-Faske Townhouse",
+        "Notes": "Three-story Halloran-era townhouse on Wendlestone Lane in Castle Ward, \\~1/4 mile from bank premises. Built 1441 DR by Halric Halloran the elder; inherited Halric the younger; inherited Vanessa 1478 DR; co-owned by Wilshan since marriage but registered in Vanessa's name on public deeds as part of marriage settlement Wilshan insisted upon. Frontage of pale Waterdhavian limestone in older Sea Ward style — restrained, expensive, immediately readable as old-money. Wrought-iron gate with Halloran family crest (stylized barge crossing wave, awarded Halric's grandfather 1374 DR for civil service). Three steps to recessed dark-wood door with brass fittings polished daily. Single small lantern lit at dusk. GROUND FLOOR: formal entry hall, parlor, small day-library, formal dining room (seats 14), service kitchen, back stairs. SECOND FLOOR: 3 guest bedrooms, Vanessa's private sitting room (correspondence, three friends' visits), larger of two studies (Wilshan's primary work space at home), small Tymora chapel Vanessa maintains (Halric the younger's choice of patron, kept from family piety). THIRD FLOOR: master bedroom (warded against teleportation since 1487 DR), Vanessa's private dressing room with Institut commission wardrobe storage, Wilshan's smaller dressing room, evening sitting area. CELLAR: wine cellar, root storage, small armory (Wilshan's 2 backup canes + 3 concealed weapons), household emergency vault (separate from bank's vault, personal documents + Vanessa's mother's jewelry). STRATEGIC FUNCTION: principal residence. Faske entertains formally twice a year (Vanessa's two annual salons) and informally several times a season. Visible domestic surface of Faskes' Waterdhavian life — entirely real, entirely respectable, completely unconnected on any document or witnessable behavior to deeper operations.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "faske-deployment",
+        "Status": "Controlled",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-16",
+        "url": "https://app.notion.com/p/362e821484b081c6b58bcc3e9d78094f"
+      }
+    },
+    {
+      "source_id": "36ae8214-84b0-813a-911a-d8b205c76a29",
+      "title": "Rimehold Cloister",
+      "revision": "2026-08-20T03:25:26.477Z",
+      "body_hash": "b7ecd9386539836014f8d8b555dda511a4bd120af0cbf06155229e9f8aade0fe",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "trade_routes",
+        "food_supply",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/36ae821484b081f7835de500affe72fe"
+        ],
+        "Garrison": "Resident brothers + Executive Security detail when the Sovereign is in residence; relief from Tethyamar garrison and Maj. Valen Corvane's 19th 'Silver Trail' (mounted). Cradle of the Rimewardens after Alturiak 1499.",
+        "Name": "Rimehold Cloister",
+        "Notes": "Forward purification cloister sited EAST of the empire's warmth-line in Daggerdale, on the road/(frozen-)canal spine. Where the Sovereign purges the Dark Prince's rune (Graz'zt's crystallized essence Arik OWNS and WIELDS — NOT Arik's soul). Cradle of the Rimewardens. Anchor of the failed Alturiak 1499 DR assassination strike.",
+        "Region": [
+          "Dalelands",
+          "Tethyamar"
+        ],
+        "Source File": "[rimehold-cloister-and-rimewardens.md](http://rimehold-cloister-and-rimewardens.md)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-23",
+        "url": "https://app.notion.com/p/36ae821484b0813a911ad8b205c76a29"
+      }
+    },
+    {
+      "source_id": "36ae8214-84b0-81f4-b34a-f63c44327bea",
+      "title": "Talvert's Ford",
+      "revision": "2026-08-20T19:52:59.492Z",
+      "body_hash": "0c1cb53253679b690848dee3b130a836f69d96e9324cdad80623e0d9e8825b7a",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Low-strength garrison post-1494. Fortified bridge over the Surbrin tributary (decisive chokepoint), eastern defensive wall, western watchtower, waystation chapel of Sehanine intact. Giant-clan resettlement east of the Surbrin under joint imperial-Helm guarantee.",
+        "Name": "Talvert's Ford",
+        "Notes": "",
+        "Population": 1200,
+        "Region": [
+          "Sword Coast North",
+          "Silver Marches"
+        ],
+        "Source File": "(canon established in The Accord / character documents session)",
+        "Status": "Allied",
+        "Strategic Value": "Moderate",
+        "Type": "Settlement",
+        "date:Last Updated:is_datetime": 0,
+        "url": "https://app.notion.com/p/36ae821484b081f4b34af63c44327bea"
+      }
+    },
+    {
+      "source_id": "36be8214-84b0-8174-bdf2-f22d3e43e403",
+      "title": "Maltheus's Laboratory — The Concordance, the Theater, the Standing Problem",
+      "revision": "2026-08-20T19:54:10.100Z",
+      "body_hash": "df6c796d339f70e24c7aae97867ee757c77af252ae3b510f81d0feac42f3d072",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "",
+        "Name": "Maltheus's Laboratory — The Concordance, the Theater, the Standing Problem",
+        "Notes": "Three-level surgical-research wing in the Inevitable City (Blood Rift, Avernus). Dr. Maltheus's workspace. L1 the Concordance (comparative anatomy index); L2 the Theater (operating theater / Anchor Forge where anchors are cut open); L3 the Standing Problem (his study — books, leather chairs — with the unsolved Demiurge conversion proof written across the walls; two chairs face it, the second is Sania's). Names chosen to read as a surgeon's flat precision, not setting placards.",
+        "Region": [
+          "Nine Hells"
+        ],
+        "Source File": "Dr. Maltheus character sheet build (25 May 2026). Inevitable City founding sessions.",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-05-25",
+        "url": "https://app.notion.com/p/36be821484b08174bdf2f22d3e43e403"
+      }
+    },
+    {
+      "source_id": "372e8214-84b0-8153-8a4d-e3076e917016",
+      "title": "The Vast Swamp",
+      "revision": "2026-06-01T19:18:02.569Z",
+      "body_hash": "5d158e6f11a0c72a94277829c782a83deffd0b36bd4f7edf1dcdb9be5f034dbd",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "None. Uncontrolled wilderness. No Sembian military presence — the Council considers the swamp a natural barrier, not territory worth garrisoning.",
+        "Name": "The Vast Swamp",
+        "Notes": "Marshland region south of Sembia between the Heartlands and Cormyr. Lair of an ancient black dragon running a centuries-old territorial protection racket on southern Sembian trade routes. Quest site for Nightwind's Acid Fang evolution. Terrain: flooded bogs, acidic pools, toxic gases, visibility-killing fog. The Magisterium Verbi may have operational ties to the dragon's territorial control.",
+        "Region": [
+          "Sembia"
+        ],
+        "Source File": "",
+        "Status": "Hostile",
+        "Strategic Value": "Moderate",
+        "Type": "Region",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-01",
+        "url": "https://app.notion.com/p/372e821484b081538a4de3076e917016"
+      }
+    },
+    {
+      "source_id": "372e8214-84b0-81e9-bf93-e7a587e13fba",
+      "title": "Selgaunt",
+      "revision": "2026-08-20T19:53:45.673Z",
+      "body_hash": "ff9e7861bb822a2a72328983894211a910a492bdd18ee9c7767734356ed88b8e",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/32ae821484b081d59df3eac77416c849"
+        ],
+        "Garrison": "No empire garrison. Operation Evening Star operates under Vesper Aldaine cover. Sembian municipal guard and mercenary companies provide security. Veil presence: 5 operatives embedded in Tessavere & Aldaine.",
+        "Name": "Selgaunt",
+        "Notes": "Sembia's largest port city (formerly Chancelgaunt). Pop \\~56,000. Deep-water harbor at mouth of River Arkhen on Sea of Fallen Stars. Governed by the Old Chauncel (old noble merchant families: Uskevren, Foxmantle, Soargyl, Isterin). Hulorn is the ruling title. Was interim Sembian capital after Ordulin's destruction (\\~late 1300s–1499 DR). Survived Netherese/Shadovar occupation. Fashion and luxury capital of the Heartlands. Notable temples: Hallowed House of High Achievement (DENEIR — Magisterium Verbi institutional foothold), Firehair's House (Sune), House of Song (Milil), Palace of Holy Festivals (Lliira), Sanctum of the Scroll (Oghma). Operation Evening Star base — Lirien as Vesper Aldaine, Tessavere & Aldaine salon. Primary intelligence target: Oressa Talavera (Council Seat 6, Banking). Continental Waterway preferred eastern terminus.",
+        "Population": 56000,
+        "Region": [
+          "Sembia"
+        ],
+        "Source File": "",
+        "Status": "Contested",
+        "Strategic Value": "Critical",
+        "Type": "City",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-01",
+        "url": "https://app.notion.com/p/372e821484b081e9bf93e7a587e13fba"
+      }
+    },
+    {
+      "source_id": "376e8214-84b0-8156-ba5e-c9cb80aa57a4",
+      "title": "🏰 Khem-Ruur",
+      "revision": "2026-06-07T01:09:08.014Z",
+      "body_hash": "3bc4f24a5b701262d511cdd534b304a6a4dc5c3f4f2f07940775cc2f6a04ab3a",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "industrial_production",
+        "business_financial_flows"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Combined-arms Bloodaxe detachment (5th Redwall, 13th Black Anvil, 18th Vein Guard, 12th Grey Mantle) + Marine Corps det. + Wyrmhelm flight + Aevendrow auxiliaries + 1st-Circle mage pair + Moranth munitions team",
+        "Name": "Khem-Ruur",
+        "Notes": "",
+        "Region": [
+          "Old Empires"
+        ],
+        "Source File": "[khem-ruur-mass-combat-element-sheet.md](http://khem-ruur-mass-combat-element-sheet.md)",
+        "Status": "Contested",
+        "Strategic Value": "High",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-05",
+        "url": "https://app.notion.com/p/376e821484b08156ba5ec9cb80aa57a4"
+      }
+    },
+    {
+      "source_id": "376e8214-84b0-8195-b319-fbd85aa359b6",
+      "title": "⚓ Northern Sea Gate",
+      "revision": "2026-06-05T17:29:53.323Z",
+      "body_hash": "158be62da2c3b3e6ca48e14ff8f50a3d0894279599b09d974ddeac9d8252426e",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Planned: 300 peacetime / 1,000+ wartime (phased, Tier 2-3 harbor)",
+        "Name": "Northern Sea Gate",
+        "Notes": "Empire's sovereign ocean entrance for the Baen Continental Waterway. Purpose-built fortified harbor on the coast between Neverwinter and Leilon, connected to Forgedeep by canal through Neverwinter Wood. Eight-phase construction plan (1495-1503 DR). La Rochelle-model layered defenses: reef chain, southern headland, rock fort, breakwater arms, tower forts, chain boom, canal lock gate, contravallation. Status shifts to Controlled when Phase 1 construction begins.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[northern-sea-gate-master-plan-revised.md](http://northern-sea-gate-master-plan-revised.md), [northern-sea-gate-canal-route.md](http://northern-sea-gate-canal-route.md), [northern-sea-gate-options-analysis.md](http://northern-sea-gate-options-analysis.md), [northern-sea-gate-session-hooks.md](http://northern-sea-gate-session-hooks.md), [northern-sea-gate-play-integration.md](http://northern-sea-gate-play-integration.md)",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Settlement",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-05",
+        "url": "https://app.notion.com/p/376e821484b08195b319fbd85aa359b6"
+      }
+    },
+    {
+      "source_id": "376e8214-84b0-81c4-98fe-c09d23b01898",
+      "title": "🏰 The Seven Spires",
+      "revision": "2026-06-05T17:41:22.212Z",
+      "body_hash": "d19d201a1cfea3919276e1eb7364d3652331427c11173a5ab0412ba1fcfcb9c8",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Current: Goblin-occupied ruin. Planned: 80 soldiers + 40 estate staff (120 total, self-sustaining from demesne forest)",
+        "Name": "The Seven Spires",
+        "Notes": "Originally a Phalorm wizard-noble's research castle (Seven overlapping round towers). Destroyed by foundation failure over 900 years — built on dirt without reaching bedrock. Currently occupied by goblins (Cragmaw Castle). Empire plan: clear goblins, full teardown and rebuild on bedrock with Roman concrete foundations, echo crystal mortar throughout. Transformed into retreat-fortress with Marly-style cascade water features, managed demesne forest, and canal lock integration. Status shifts to Controlled after goblin clearance.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[seven-spires-retreat-fortress.md](http://seven-spires-retreat-fortress.md)",
+        "Status": "Controlled",
+        "Strategic Value": "High",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-05",
+        "url": "https://app.notion.com/p/376e821484b081c498fec09d23b01898"
+      }
+    },
+    {
+      "source_id": "376e8214-84b0-81cf-b7a0-e6a0aee7a57b",
+      "title": "👑 Fortress Llorkh — The Water Throne",
+      "revision": "2026-08-01T20:10:20.076Z",
+      "body_hash": "cae3e51d10d18a7bd91d00054a46a673d514f9a513ec311ca79d3a491cbdccc0",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Hammer 1495: Fortress Marshal Grimnar Doomhammer commands the installation; Major Jorik Tharn commands the \\~500–550 personnel of the 5th Redwall Cohort and attached staff. Reservoir marines number \\~40–80 while building toward 100. Hydraulic, power, communications, construction and support personnel are additional. Exact whole-site workforce remains pending.",
+        "Name": "Fortress Llorkh — The Water Throne",
+        "Notes": "GM-ready Hammer 1495 dam-fortress. Partially commissioned Grayflow works with active six-billion-gallon completed-state design, corrected pre-thaw storage doctrine, completed-state drought yield, reconciled project economics, separate H0–H3 hydraulic and S0–S3 security states, and no canonized active enemy. Grimnar Doomhammer commands the installation; Jorik Tharn commands Redwall; Hedra Stonewake holds independent hydraulic-safety authority and the Engineer's Key. Old Llorkh functions as the multi-thousand-person Works District. Scene grounding and keyed authoritative plate specifications are complete; exact workforce, Grayflow inundation atlas, Grimnar biography and turbine flow survey remain deferred.",
+        "Region": [
+          "Silver Marches"
+        ],
+        "Source File": "[baen-water-empire-consolidated.md](http://baen-water-empire-consolidated.md) (§3)",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "Fortress",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-07-24",
+        "url": "https://app.notion.com/p/376e821484b081cfb7a0e6a0aee7a57b"
+      }
+    },
+    {
+      "source_id": "376e8214-84b0-81f6-b91b-ea0dea73e916",
+      "title": "🛶 Loudwater — The Venice of the North",
+      "revision": "2026-07-25T00:55:25.117Z",
+      "body_hash": "20df7fa51ad546bf65b91071f95d5a6a4a5d5558a5b0e5392fdce3676908c175",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": [],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Pending canon reconciliation. The page's former 15th Road Wardens / Colonel Marina Swiftwater assignment conflicts with the current Bloodaxe Legion roster; the marine allocation and local command chain are also provisional.",
+        "Name": "Loudwater — The Venice of the North",
+        "Notes": "UDRP backfill, Hammer 1495: approximately 9,150 permanent residents and 2,470 floating or temporary people; normal working-day population approximately 11,620. Venice transformation approximately 47% complete: 11 of 23 planned island districts operational, approximately 7 of 15 canal miles open, 69 of 147 bridges usable, and approximately 46 permanently staffed checkpoints. Prosperous city with residential and civic capacity lagging. Five-year permanent target remains 15,000. Garrison and toll architecture pending reconciliation.",
+        "Population": 9150,
+        "Region": [
+          "Silver Marches"
+        ],
+        "Source File": "[baen-water-empire-consolidated.md](http://baen-water-empire-consolidated.md) (§4)",
+        "Status": "Controlled",
+        "Strategic Value": "Critical",
+        "Type": "City",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-07-24",
+        "url": "https://app.notion.com/p/376e821484b081f6b91bea0dea73e916"
+      }
+    },
+    {
+      "source_id": "378e8214-84b0-81ee-aa0c-d2792f860cb7",
+      "title": "The Saltglass Baths",
+      "revision": "2026-06-07T14:58:27.905Z",
+      "body_hash": "38794aa76e86e6c17df5ebdd7898d00f0541524602b8887545aabd6ba1589d4b",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "inventories",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Garrison": "",
+        "Name": "The Saltglass Baths",
+        "Notes": "Dock Ward bathhouse that fronts a drow surface-cell trafficking people DOWN into the Underdark; the cellar is an excavation for the Drowned Idol. One-session module, APL 8–10. Patron Peri (unsanctioned on her turf). Antagonist Naszra Dhaerryl. Hard clock: the Scuttle (collapse-and-flood failsafe over the holding cells). Stakes: free 14 adult captives before they drown with the evidence.",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "[saltglass-baths-module.md](http://saltglass-baths-module.md)",
+        "Status": "Hostile",
+        "Strategic Value": "Moderate",
+        "Type": "Building",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-07",
+        "url": "https://app.notion.com/p/378e821484b081eeaa0cd2792f860cb7"
+      }
+    },
+    {
+      "source_id": "37de8214-84b0-8138-8622-e02dcadce4bf",
+      "title": "🪨 Treasury Quarries",
+      "revision": "2026-08-20T03:25:02.922Z",
+      "body_hash": "d0d9978f840f65edd077ca44d7e0eece6cbe36988f3b714a5bc75b794c76400f",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "population",
+        "trade_routes",
+        "industrial_production",
+        "business_financial_flows",
+        "labor_supply"
+      ],
+      "property_snapshot": {
+        "Campaign Arc": [
+          "Surface"
+        ],
+        "Controller": [
+          "https://app.notion.com/p/2fbe821484b081ef80a5d67f7b7e6f31"
+        ],
+        "Garrison": "Site security detail; held under Bloodaxe forward-base posture (perimeter patrols, controlled road access) per Star Metal Hills caution.",
+        "Name": "Treasury Quarries",
+        "Notes": "",
+        "Region": [
+          "Sword Coast North"
+        ],
+        "Source File": "Founding canon: Neverwinter Munitions Facility (Origin and Migration). Site canon: Treasury Stone Quarries (Business Registry). Canon-build backlog item 3.",
+        "Status": "Controlled",
+        "Strategic Value": "Moderate",
+        "Type": "Settlement",
+        "date:Last Updated:is_datetime": 0,
+        "date:Last Updated:start": "2026-06-08",
+        "url": "https://app.notion.com/p/37de821484b081388622e02dcadce4bf"
+      }
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 215,
+      "UNKNOWN": 1364,
+      "CONFLICT": 11,
+      "SUPERSEDED": 14,
+      "MISSING_DATA": 4,
+      "FUTURE": 9,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 253,
+      "UNMEASURED": 1367
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 215,
+      "UNREVIEWED": 1367,
+      "CONFLICT": 9,
+      "SUPERSEDED": 13,
+      "MISSING_DATA": 4,
+      "FUTURE_ONLY": 9,
+      "ECONOMIC_CONTEXT": 3
+    }
+  }
+}

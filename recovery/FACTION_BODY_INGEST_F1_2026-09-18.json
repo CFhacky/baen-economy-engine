@@ -1,0 +1,216 @@
+{
+  "schema": "tnp.economy.faction-body-ingest/1",
+  "batch": "F1",
+  "captured_at": "2026-09-18",
+  "target": 16,
+  "reviewed": 16,
+  "failed": 0,
+  "records": [
+    {
+      "source_id": "2fbe8214-84b0-8123-91b5-ec2e34d09ac5",
+      "title": "Lords' Alliance",
+      "revision": "2026-04-17T16:58:43.752Z",
+      "body_hash": "fb4cd1126769334d6c256acaff8cefe58fa6a5dad7192b9f28142210f9085e14",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "labor_supply",
+        "population"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-812e-884c-cc3815fe582f",
+      "title": "Iron Sovereignty",
+      "revision": "2026-08-20T17:26:44.170Z",
+      "body_hash": "0dac2d9a2ef6d182c971be5558f7b54554bdfd1ffbd553b98f4db7ae8a326bd8",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-815f-ba19-e874f0becc19",
+      "title": "The Veil",
+      "revision": "2026-07-26T12:51:17.219Z",
+      "body_hash": "9f133a0f3ac5ac6bee7bd7fced4fa64734c77aa6adbcef5c4b4c631816d53856",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-8161-a02a-fe4c68fc8f6d",
+      "title": "Bloodaxe Legion",
+      "revision": "2026-08-20T16:52:44.544Z",
+      "body_hash": "74c8521af4c9a66369c6d85440ab49138e3c3647083fdf615d33fda785d49e2f",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "industrial_production",
+        "food_supply",
+        "population"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-8165-ab14-c8c669cc58b3",
+      "title": "Gauntlgrym Dwarves",
+      "revision": "2026-02-02T21:39:43.261Z",
+      "body_hash": "ec23f16d21202a417fb097b3e44ef06d2bd0ad44477005e8042b1f09edb11fe7",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-8167-b265-eac0d0df5a93",
+      "title": "Bregan D'aerthe",
+      "revision": "2026-08-20T17:28:17.161Z",
+      "body_hash": "08f02c6172ae2267e3d729d4ec337c5a6e1df74f0babfa08c47f0d91c410c74f",
+      "disposition": "SUPERSEDED",
+      "semantic_status": "SUPERSEDED",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-81d8-ae87-e3bd80ce0a54",
+      "title": "House Baen'und (Menzoberranzan)",
+      "revision": "2026-02-02T21:42:19.350Z",
+      "body_hash": "58f869c437db19a2999b1abfc2b68447f15216a12704c11c5c8d20b64109be78",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "industrial_production"
+      ]
+    },
+    {
+      "source_id": "2fbe8214-84b0-81d9-a18b-f06988cea7b9",
+      "title": "Moon Elf Alliance",
+      "revision": "2026-02-02T21:41:27.744Z",
+      "body_hash": "948b0096bb64c162f7bda630fbc8af418a579340922c3b2e297bd965d4e3f3df",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-81d9-bc8b-d10ad1ba785a",
+      "title": "Institut Baen'und",
+      "revision": "2026-02-02T21:44:29.421Z",
+      "body_hash": "6953ecdebfa6948d3eb5f7cae6efac8e1fd95fd6e6ecd447bc249de803e21d36",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-81ef-80a5-d67f7b7e6f31",
+      "title": "Baen Enterprises",
+      "revision": "2026-03-23T18:22:21.988Z",
+      "body_hash": "f051ea59ccbddb6818dae44397fbce712c562e881bb067a86ab739fa02b47878",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "2fbe8214-84b0-81fd-bdab-e411d421d64e",
+      "title": "[TRASH — H4] DELETED - DO NOT USE (tombstone, recycle)",
+      "revision": "2026-08-20T17:00:41.815Z",
+      "body_hash": "1d053aed1d1ed56c094c74e8701fcbd61482a85033089dd7818eec16bd2e6e2d",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes"
+      ]
+    },
+    {
+      "source_id": "32ae8214-84b0-81d5-9df3-eac77416c849",
+      "title": "Sembian Council of Merchants",
+      "revision": "2026-03-23T00:04:11.695Z",
+      "body_hash": "caecb7858eb534fc13747b547a8cf7e9d2de30e4a066ca52373d8114b04ab02a",
+      "disposition": "CONFLICT",
+      "semantic_status": "CONFLICT",
+      "driver_owners": []
+    },
+    {
+      "source_id": "32be8214-84b0-81c2-a5a0-ee17bed6b8e7",
+      "title": "Bloodaxe Legion Mage Cadre",
+      "revision": "2026-03-22T23:52:59.808Z",
+      "body_hash": "5c3d23ba0ce9acdbcc98248c7922170256de47dc75b30f86515ba95679a1dc10",
+      "disposition": "FUTURE_ONLY",
+      "semantic_status": "FUTURE",
+      "driver_owners": []
+    },
+    {
+      "source_id": "32be8214-84b0-81e4-84bc-e5ac1ab8e015",
+      "title": "Eternal Dancers Program",
+      "revision": "2026-07-01T20:48:35.840Z",
+      "body_hash": "b060078f48dedc994f79f7b65f85d64a561749261682bfebf8bb591f3c7cbe0d",
+      "disposition": "CONFLICT",
+      "semantic_status": "CONFLICT",
+      "driver_owners": []
+    },
+    {
+      "source_id": "32ce8214-84b0-81c4-87f6-da40d3ab1a7e",
+      "title": "Bloodaxe Diplomatic Escort Element — Operation Cardinal Support",
+      "revision": "2026-03-23T18:18:03.763Z",
+      "body_hash": "64b708e0563d956d810246497ff1f4a80f796ac0befeb1d8e72ff49c5132881d",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "labor_supply",
+        "food_supply"
+      ]
+    },
+    {
+      "source_id": "338e8214-84b0-8146-b362-f1bfdcfc91a7",
+      "title": "🗡️ Thousand Silences (Al-Samt al-Alf)",
+      "revision": "2026-04-04T12:17:34.252Z",
+      "body_hash": "ed0a532d0980682ef356fd4ecbcd9164f67b1367bda8c3cf848c0782e6e636d1",
+      "disposition": "ECONOMIC_INPUT",
+      "semantic_status": "SOURCE_MAPPED",
+      "driver_owners": [
+        "business_financial_flows",
+        "trade_routes",
+        "labor_supply"
+      ]
+    }
+  ],
+  "counts_after": {
+    "semantic": {
+      "SOURCE_MAPPED": 243,
+      "FUTURE": 15,
+      "CONFLICT": 14,
+      "SUPERSEDED": 218,
+      "MISSING_DATA": 4,
+      "UNKNOWN": 1123,
+      "CONTEXT_ONLY": 3
+    },
+    "body": {
+      "REVIEWED": 494,
+      "UNMEASURED": 1126
+    },
+    "dispositions": {
+      "ECONOMIC_INPUT": 243,
+      "FUTURE_ONLY": 15,
+      "CONFLICT": 12,
+      "SUPERSEDED": 217,
+      "MISSING_DATA": 4,
+      "UNREVIEWED": 1126,
+      "ECONOMIC_CONTEXT": 3
+    }
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}

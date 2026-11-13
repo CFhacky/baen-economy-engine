@@ -90,6 +90,35 @@ def pr48_chart():
 
 
 class FinanceTests(unittest.TestCase):
+    def test_exact_journal_movements_do_not_fabricate_unknown_openings(self):
+        source = source_event()
+        event = ncf_deposit(source_event=source, book_date="2026-01-01")
+        book = JournalBook(chart_for(event), accepted_store(source), [event])
+        report = book.position_report({})
+        rows = {r["account"]: r for r in report["accounts"]}
+        self.assertEqual(rows["Assets:NCF:Reserves"]["movement"], "1000")
+        self.assertEqual(rows["Liabilities:NCF:Deposits"]["movement"], "-1000")
+        self.assertTrue(all(r["closing"] is None for r in report["accounts"]))
+        self.assertFalse(report["opening_complete"])
+        known = book.position_report({("Assets:NCF:Reserves", "GP"): D("500")})
+        self.assertEqual(next(r for r in known["accounts"] if r["account"]=="Assets:NCF:Reserves")["closing"], "1500")
+        self.assertEqual(len(book.events), 1)
+        self.assertEqual(known["postings_created"], 0)
+
+    def test_position_report_keeps_loan_creation_out_of_reserve_cash(self):
+        source = source_event("finance.loan_credit", {"amount": D("600"), "currency": "GP", "borrower_slug": "borrower-one"})
+        event = ncf_loan_credit(source_event=source, book_date="2026-01-02")
+        chart = chart_for(event)
+        chart["Assets:NCF:Reserves"] = AccountOpen(("GP",), "2026-01-01")
+        book = JournalBook(chart, accepted_store(source), [event])
+        rows = {r["account"]: r for r in book.position_report({})["accounts"]}
+        self.assertEqual(rows["Assets:NCF:Reserves"]["movement"], "0")
+        self.assertIsNone(rows["Assets:NCF:Reserves"]["closing"])
+        with self.assertRaises(JournalError):
+            book.position_report({("Assets:NCF:Reserves", "GP"): 1.5})
+        with self.assertRaises(JournalError):
+            book.position_report({("Assets:Unopened", "GP"): D(0)})
+
     def test_deposit_creates_asset_and_liability_not_income(self):
         source = source_event()
         event = ncf_deposit(source_event=source, book_date="2026-01-01")

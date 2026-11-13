@@ -1,0 +1,45 @@
+{
+  "schema": "tnp.economy.financial-close/1",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "protected_target": {
+    "id": "shimmerdeep-auction-one",
+    "amount_gp": "450000",
+    "authority": "SOURCE-DERIVED",
+    "source": "https://app.notion.com/p/3c4e821484b08184af9bc4cba0339d5a"
+  },
+  "settlement_evidence": [
+    {
+      "id": "auction-one-opening-net-settled",
+      "target_id": "shimmerdeep-auction-one",
+      "status": "NET_SETTLED",
+      "net_settled_gp": "0",
+      "temporal_scope": "CURRENT_OPERATION",
+      "authority": "SOURCE-DERIVED",
+      "source": "https://app.notion.com/p/3c4e821484b08184af9bc4cba0339d5a",
+      "note": "Explicit zero before play in empty live run state; not empire opening cash. Exact auction date is UNSEATED; no event executed."
+    },
+    {
+      "id": "klauth-prior-clean-art-liquidation",
+      "target_id": null,
+      "status": "HISTORICAL_EXCLUDED",
+      "historical_approximate_gp": "410000",
+      "authority": "SOURCE-DERIVED",
+      "source": "https://app.notion.com/p/3c4e821484b081abb02ef1390d4a53be",
+      "note": "Historical forward/play canon, absorbed by later commitments. Not current unspent cash; never rerolled or counted toward this operation."
+    }
+  ],
+  "liquidity_evidence": {
+    "authority": "SOURCE-DERIVED",
+    "source": "https://app.notion.com/p/34ce821484b081c08dd4c3122711cc8e",
+    "operational_gap_approximate_gp": "400000",
+    "protected_target_including_buffer_gp": "450000",
+    "exact_empire_cash_gp": null,
+    "auction_one_face_value_gp": "241000",
+    "auction_one_aggregate_reserve_gp": "160000",
+    "face_or_reserve_is_cash": false,
+    "auction_source": "https://app.notion.com/p/3c4e821484b08184af9bc4cba0339d5a",
+    "runtime_status": "UNPLAYED_DATE_UNSEATED",
+    "opening_state_read_only": true,
+    "superseded_cash_models": ["800000 gp stale reserves", "-277000 gp older reconciliation midpoint"]
+  }
+}

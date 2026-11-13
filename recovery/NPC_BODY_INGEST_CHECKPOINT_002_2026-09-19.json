@@ -1,0 +1,35 @@
+{
+  "schema": "tnp.economy.npc-body-ingest-checkpoint/1",
+  "captured_at": "2026-09-19",
+  "campaign_boundary": "Day 7 Hammer 1495 DR",
+  "branch": "codex/reconcile-standalone-authority-20260917",
+  "parent_head": "b5f605d88130c289705af07e27f86d9924b81347",
+  "retained_core_records": 1620,
+  "total_complete_records": 1390,
+  "total_remaining_records": 230,
+  "npc_target": 920,
+  "npc_body_status_counts": {
+    "REVIEWED": 410,
+    "NO_BODY_NOT_APPLICABLE": 280,
+    "UNMEASURED": 230
+  },
+  "npc_semantic_status_counts": {
+    "SOURCE_MAPPED": 288,
+    "CONTEXT_ONLY": 388,
+    "HISTORICAL": 13,
+    "SUPERSEDED": 1,
+    "UNKNOWN": 230
+  },
+  "npc_disposition_counts": {
+    "ECONOMIC_INPUT": 288,
+    "NO_BODY_NOT_APPLICABLE": 280,
+    "ECONOMIC_CONTEXT": 37,
+    "HISTORICAL_ONLY": 13,
+    "NON_ECONOMIC": 71,
+    "SUPERSEDED": 1,
+    "UNREVIEWED": 230
+  },
+  "notion_writes": 0,
+  "campaign_time_advanced": false,
+  "canonical": false
+}
