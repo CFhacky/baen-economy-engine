@@ -45,3 +45,29 @@ which points back. Neither wins by traversal order.
 These ranges have different bases and confidence. They may appear in a
 reconciliation report, but they do not balance one another and are not substituted
 for the missing opening ledger.
+
+## Proposed answers (2026-11-13, NOT accepted)
+
+Evidence-backed proposals for the P0 decisions, prepared from the native Notion export of 12 Nov 2026. They are recorded here so the owner can decide against concrete numbers. Until the owner rules, every item stays open and the engine stays fail-closed. Fixture: `fixtures/canonical-import/opening-hammer-1495-proposed.json`; ledger proposal in campaign-development-vault `projects/in-progress/campaign-finance-ledger/docs/OPENING_SNAPSHOT_PROPOSAL_HAMMER_1495.md`.
+
+| ID | Proposed answer | Owner decides |
+|---|---|---|
+| CAN-001 | Open the Arik-side empire book at Day 7 Hammer 1495 DR (the engine's own boundary and ruling D1). Shi'van's trust, Institut and personal finances are a separate book at her lane (Day 911 / 6 Mirtul 1494). Jörmun's Crown of Eight Springs stays tracked, not consolidated (D9). Forward commissions (1502-1506) stay out of both. | Confirm, or name a different opening day. |
+| CAN-002 | Keep the books in gp only. No exact gp/Crown conversion rule was found in the pages read; none is applied. | Confirm, or supply the conversion. |
+| CAN-003 | The two monetary-authority pages point at each other (pointer loop recorded by the engine and by the Eastern finance screen). No reserve ratio or backing rule is applied until one page is named controlling. | Name the controlling page. |
+| CAN-004 | Not applied. Creating spendable value without matching assets is refused by the engine; the books follow that. | Confirm refusal, or rule the mechanism. |
+| CAN-005 | Post 2,300,000 loans receivable as provisional. Deposits, reserves, notes outstanding and equity stay UNKNOWN. Use the parent's 22,000/mo as consolidated banking revenue (branches sum to 23,250; never 45,250). | Choose parent (22,000) or branch sum (23,250); supply deposit and reserve figures if any exist. |
+| CAN-006 | Do not post a cash figure. Record the evidence band: 320,000-490,000 before old commitments (bridge test), and the current authority of a roughly 400,000 shortfall against a 450,000 protected target (22 Aug 2026). The Klauth hoard is carried at stated value as assets, not cash. | Rule an exact cash figure for Day 7 Hammer 1495, or accept UNKNOWN with the band. |
+
+## Proposed answers (2026-11-13, NOT accepted)
+
+Evidence-backed proposals for the P0 decisions, prepared from the native Notion export of 12 Nov 2026. They are recorded here so the owner can decide against concrete numbers. Until the owner rules, every item stays open and the engine stays fail-closed. Fixture: `fixtures/canonical-import/opening-hammer-1495-proposed.json`; ledger proposal in campaign-development-vault `projects/in-progress/campaign-finance-ledger/docs/OPENING_SNAPSHOT_PROPOSAL_HAMMER_1495.md`.
+
+| ID | Proposed answer | Owner decides |
+|---|---|---|
+| CAN-001 | Open the Arik-side empire book at Day 7 Hammer 1495 DR (the engine's own boundary and ruling D1). Shi'van's trust, Institut and personal finances are a separate book at her lane (Day 911 / 6 Mirtul 1494). Jörmun's Crown of Eight Springs stays tracked, not consolidated (D9). Forward commissions (1502-1506) stay out of both. | Confirm, or name a different opening day. |
+| CAN-002 | Keep the books in gp only. No exact gp/Crown conversion rule was found in the pages read; none is applied. | Confirm, or supply the conversion. |
+| CAN-003 | The two monetary-authority pages point at each other (pointer loop recorded by the engine and by the Eastern finance screen). No reserve ratio or backing rule is applied until one page is named controlling. | Name the controlling page. |
+| CAN-004 | Not applied. Creating spendable value without matching assets is refused by the engine; the books follow that. | Confirm refusal, or rule the mechanism. |
+| CAN-005 | Post 2,300,000 loans receivable as provisional. Deposits, reserves, notes outstanding and equity stay UNKNOWN. Use the parent's 22,000/mo as consolidated banking revenue (branches sum to 23,250; never 45,250). | Choose parent (22,000) or branch sum (23,250); supply deposit and reserve figures if any exist. |
+| CAN-006 | Do not post a cash figure. Record the evidence band: 320,000-490,000 before old commitments (bridge test), and the current authority of a roughly 400,000 shortfall against a 450,000 protected target (22 Aug 2026). The Klauth hoard is carried at stated value as assets, not cash. | Rule an exact cash figure for Day 7 Hammer 1495, or accept UNKNOWN with the band. |

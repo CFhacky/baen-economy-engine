@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "fixture_class": "CAN-IMPORT",
+  "authority": "proposal_not_accepted",
+  "captured_on": "2026-11-13",
+  "timeline_id": "arik-surface-u2",
+  "as_of_campaign_date": "Day 7 Hammer 1495 DR",
+  "economy_timeline_mapping": "unresolved_CAN-001",
+  "scenario_id": "opening-hammer-1495-proposed",
+  "source_refs": [
+    "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+    "https://app.notion.com/p/34ce821484b081c08dd4c3122711cc8e",
+    "https://app.notion.com/p/372e821484b08145a784ebd92a58e8a5",
+    "https://app.notion.com/p/341e821484b081a9b91be3e4102c6848",
+    "https://app.notion.com/p/342e821484b08123aad7fcdb949f1708",
+    "https://app.notion.com/p/3e9e821484b0815e9bb6ffe28a4a8cfc"
+  ],
+  "ledger_proposal": "campaign-development-vault: projects/in-progress/campaign-finance-ledger/ledger/opening-hammer-1495-proposed.bean",
+  "postable_stock_proposed": [
+    {
+      "account": "Assets:NCF:Loans-Receivable",
+      "amount_gp": "2300000",
+      "confidence": "High",
+      "narration": "NCF active loan portfolio",
+      "source_page": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "decision_needed": "CAN-005"
+    },
+    {
+      "account": "Assets:Projects:Guardians-Gate:WIP",
+      "amount_gp": "2000000",
+      "confidence": "Medium",
+      "narration": "Guardian's Gate Level 1 deployed value",
+      "source_page": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Warborn-Neverwinter:Plant",
+      "amount_gp": "288000",
+      "confidence": "High",
+      "narration": "Warborn Neverwinter completed facility",
+      "source_page": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:NMWC:Plant",
+      "amount_gp": "500000",
+      "confidence": "High",
+      "narration": "NMWC infrastructure capital",
+      "source_page": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Warborn-Waterdeep:Plant",
+      "amount_gp": "1127000",
+      "confidence": "Medium",
+      "narration": "Warborn Waterdeep full plant (canon override 19 Sep 2026)",
+      "source_page": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "decision_needed": "owner: confirm 1,127,000 vs Phase 1 220,000"
+    },
+    {
+      "account": "Assets:Projects:Shimmerdeep-Cradle:WIP",
+      "amount_gp": "1400000",
+      "confidence": "Medium",
+      "narration": "Shimmerdeep Cradle infrastructure",
+      "source_page": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Wyrmhelm-Forgedeep:Plant",
+      "amount_gp": "150000",
+      "confidence": "Medium",
+      "narration": "Wyrmhelm Forgedeep facility",
+      "source_page": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Projects:Dawnwood:WIP",
+      "amount_gp": "140000",
+      "confidence": "Medium",
+      "narration": "Dawnwood settlement, Baen share",
+      "source_page": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Projects:Forgedeep-Industrial-Quarter:WIP",
+      "amount_gp": "1000000",
+      "confidence": "Low",
+      "narration": "Forgedeep Industrial Quarter, assumed half-deployed",
+      "source_page": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "decision_needed": "owner: confirm deployed amount"
+    },
+    {
+      "account": "Assets:Projects:Burning-Gate:External-Cash-Deployed",
+      "amount_gp": "800000",
+      "confidence": "Medium",
+      "narration": "Project Burning Gate external cash",
+      "source_page": "https://app.notion.com/p/34ce821484b081d7abb5f5d9cf153d72",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Treasury:Klauth-Hoard:Platinum-Pyramids",
+      "amount_gp": "1000000",
+      "confidence": "Medium",
+      "narration": "Netherese platinum pyramids at stated value (strategic hold)",
+      "source_page": "https://app.notion.com/p/34ce821484b081c08dd4c3122711cc8e",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Treasury:Klauth-Hoard:Mythals",
+      "amount_gp": "100000",
+      "confidence": "Medium",
+      "narration": "Myth Drannor mythals at stated value (hold)",
+      "source_page": "https://app.notion.com/p/34ce821484b081c08dd4c3122711cc8e",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Treasury:Klauth-Hoard:Art",
+      "amount_gp": "800000",
+      "confidence": "Medium",
+      "narration": "Art objects at stated value (liquidate)",
+      "source_page": "https://app.notion.com/p/34ce821484b081c08dd4c3122711cc8e",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Treasury:Klauth-Hoard:Magic-Items",
+      "amount_gp": "500000",
+      "confidence": "Medium",
+      "narration": "Practical magic items at stated value",
+      "source_page": "https://app.notion.com/p/34ce821484b081c08dd4c3122711cc8e",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Treasury:Klauth-Hoard:Dragonslayer-Arsenal",
+      "amount_gp": "300000",
+      "confidence": "Medium",
+      "narration": "Dragonslayer arsenal, 247 weapons, at stated value",
+      "source_page": "https://app.notion.com/p/34ce821484b081c08dd4c3122711cc8e",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Treasury:Klauth-Hoard:Signature-Items",
+      "amount_gp": "750000",
+      "confidence": "Low",
+      "narration": "Signature magic items at face (hold, not for market)",
+      "source_page": "https://app.notion.com/p/34ce821484b081c08dd4c3122711cc8e",
+      "decision_needed": null
+    },
+    {
+      "account": "Assets:Treasury:Klauth-Gems",
+      "amount_gp": "940000",
+      "confidence": "Low",
+      "narration": "Klauth gems remaining at face after the bridge-test liquidation assumption",
+      "source_page": "https://app.notion.com/p/34ce821484b081c08dd4c3122711cc8e",
+      "decision_needed": "owner: confirm gems actually sold vs held (CAN-006 evidence)"
+    }
+  ],
+  "capital_deployed_register_gp": {
+    "Arterial-Roads": "230000",
+    "Core-Construction": "830000",
+    "Silversheen-Seed": "30000",
+    "Athenaeum": "500000",
+    "Hunding-Canal": "1050000",
+    "Hunding-Mechanism": "500000",
+    "Continental-Waterway-Western": "1200000",
+    "Glacier-System": "800000",
+    "Skyreach-Renovation": "75000",
+    "Residual-Kythorn-1494": "150000"
+  },
+  "shivan_separate_book_proposed": [
+    {
+      "account": "Assets:ESAMT:Ruby",
+      "amount_gp": "1013000",
+      "confidence": "High",
+      "narration": "Million-gold ruby, vaulted at NCF (1,010,000 appraised at establishment; 1,013,000 restructured basis)"
+    },
+    {
+      "account": "Assets:ESAMT:IP-Portfolio",
+      "amount_gp": "2116000",
+      "confidence": "Medium",
+      "narration": "Pemberton-Chase IP valuation, risk-adjusted collateral basis, not cash; 1,385,000 of it conditional on bonded-employee protections"
+    },
+    {
+      "account": "Assets:ESAMT:Celestial-Compass-Equity",
+      "amount_gp": "23000",
+      "confidence": "Medium",
+      "narration": "Celestial Compass Estate equity in trust"
+    },
+    {
+      "account": "Assets:ESAMT:Liquid-Reserves",
+      "amount_gp": "795000",
+      "confidence": "Medium",
+      "narration": "Liquid reserves about 795,000 after Session 34 deployments (~Day 737)"
+    },
+    {
+      "account": "Liabilities:ESAMT:Draws-Outstanding",
+      "amount_gp": "-582000",
+      "confidence": "Medium",
+      "narration": "Outstanding draws about 582,000 (327,100 pre-Session 34 + about 255,000 Session 34)"
+    },
+    {
+      "account": "Assets:Institut:Looms",
+      "amount_gp": "80000",
+      "confidence": "High",
+      "narration": "Five automated looms at cost"
+    },
+    {
+      "account": "Assets:Institut:Workshop-Buildout",
+      "amount_gp": "48000",
+      "confidence": "High",
+      "narration": "Cathedral workshop build-out (leased premises)"
+    },
+    {
+      "account": "Liabilities:NCF:Institut-Mortgage",
+      "amount_gp": "-132000",
+      "confidence": "High",
+      "narration": "Institut capital: separate NCF commercial mortgage at 6% (Session 31 ruling), 660/mo interest"
+    },
+    {
+      "account": "Assets:Estates:Celestial-Compass:Cost",
+      "amount_gp": "127000",
+      "confidence": "Medium",
+      "narration": "Celestial Compass Estate at cost (financing unresolved; 23,000 equity in trust table)"
+    },
+    {
+      "account": "Assets:ESAMT:Pension-Bridge-Endowment",
+      "amount_gp": "25000",
+      "confidence": "High",
+      "narration": "Pension Bridge Endowment committed in NCF vehicle"
+    },
+    {
+      "account": "Assets:Baen-Innovations:Capital",
+      "amount_gp": "10000",
+      "confidence": "High",
+      "narration": "Baen'und Innovations capitalised; 50,000 credit line drawn amount unknown"
+    }
+  ],
+  "commitments_not_posted": [
+    {
+      "commitment": "Canal Completion (Eleint 20 commitment)",
+      "amount_gp": "2000000",
+      "class": "COMMITMENT"
+    },
+    {
+      "commitment": "Guardian's Gate Levels 2-4",
+      "amount_gp": "3250000",
+      "class": "COMMITMENT"
+    },
+    {
+      "commitment": "Warborn Waterdeep remaining build",
+      "amount_gp": "907000",
+      "class": "DISPUTED"
+    },
+    {
+      "commitment": "Northern Crown expansion",
+      "amount_gp": "50000",
+      "class": "COMMITMENT"
+    },
+    {
+      "commitment": "Formicorps purchase",
+      "amount_gp": "1050000",
+      "class": "COMMITMENT"
+    },
+    {
+      "commitment": "Snowfall Hearthworks NCF facility",
+      "amount_gp": "30000",
+      "class": "COMMITMENT"
+    },
+    {
+      "commitment": "Hunding Canal remaining",
+      "amount_gp": "2450000",
+      "class": "PLANNING"
+    },
+    {
+      "commitment": "Continental Waterway, rest of system",
+      "amount_gp": "12600000",
+      "class": "PLANNING"
+    },
+    {
+      "commitment": "Desertsmouth Tunnel",
+      "amount_gp": "2800000",
+      "class": "PLANNING"
+    },
+    {
+      "commitment": "Eastern Terminus (Anauroch)",
+      "amount_gp": "1500000",
+      "class": "PLANNING"
+    },
+    {
+      "commitment": "Southern investor 2,500,000 offer",
+      "amount_gp": "2500000",
+      "class": "DECLINED?"
+    }
+  ],
+  "treasury_cash": {
+    "value": null,
+    "state_origin": "UNKNOWN",
+    "evidence_band_gp": [
+      "320000",
+      "490000"
+    ],
+    "current_authority": "about 400,000 shortfall vs 450,000 protected target (22 Aug 2026 audit)"
+  },
+  "docket_proposals": {
+    "CAN-001": {
+      "question": "Opening date and timeline",
+      "proposed": "Open the Arik-side empire book at Day 7 Hammer 1495 DR (the engine's own boundary and ruling D1). Shi'van's trust, Institut and personal finances are a separate book at her lane (Day 911 / 6 Mirtul 1494). Jörmun's Crown of Eight Springs stays tracked, not consolidated (D9). Forward commissions (1502-1506) stay out of both.",
+      "owner_decides": "Confirm, or name a different opening day."
+    },
+    "CAN-002": {
+      "question": "Currency",
+      "proposed": "Keep the books in gp only. No exact gp/Crown conversion rule was found in the pages read; none is applied.",
+      "owner_decides": "Confirm, or supply the conversion."
+    },
+    "CAN-003": {
+      "question": "Monetary authority",
+      "proposed": "The two monetary-authority pages point at each other (pointer loop recorded by the engine and by the Eastern finance screen). No reserve ratio or backing rule is applied until one page is named controlling.",
+      "owner_decides": "Name the controlling page."
+    },
+    "CAN-004": {
+      "question": "Crown Advantage 25:1",
+      "proposed": "Not applied. Creating spendable value without matching assets is refused by the engine; the books follow that.",
+      "owner_decides": "Confirm refusal, or rule the mechanism."
+    },
+    "CAN-005": {
+      "question": "NCF opening balance sheet",
+      "proposed": "Post 2,300,000 loans receivable as provisional. Deposits, reserves, notes outstanding and equity stay UNKNOWN. Use the parent's 22,000/mo as consolidated banking revenue (branches sum to 23,250; never 45,250).",
+      "owner_decides": "Choose parent (22,000) or branch sum (23,250); supply deposit and reserve figures if any exist."
+    },
+    "CAN-006": {
+      "question": "Treasury cash",
+      "proposed": "Do not post a cash figure. Record the evidence band: 320,000-490,000 before old commitments (bridge test), and the current authority of a roughly 400,000 shortfall against a 450,000 protected target (22 Aug 2026). The Klauth hoard is carried at stated value as assets, not cash.",
+      "owner_decides": "Rule an exact cash figure for Day 7 Hammer 1495, or accept UNKNOWN with the band."
+    }
+  },
+  "registry_classification": "campaign-development-vault: projects/in-progress/campaign-finance-ledger/migration/ROW_CLASSIFICATION_HAMMER_1495.csv",
+  "unresolved": [
+    "Northern Crown Financial: Parent revenue 22,000/mo vs branch sum 23,250/mo; never add both (45,250 is forbidden). Deposits, reserves, notes outstanding: unknown. CAN-005.",
+    "Warborn Production - Waterdeep: Capital: Phase 1 220,000 (older rows) vs full plant 1,127,000 (canon override 19 Sep 2026, producing since Kythorn 1493 in Shi'van's lane). 3,000,000 revenue is a capacity-band placeholder, excluded from totals.",
+    "Neverwinter Athenaeum: Capital 200,000 (Registry) vs 500,000 (Tracker): ruled 500,000 on 26 Aug 2026; Registry row still to be corrected.",
+    "Verdant Cascades Bathhouse: Capital 80,000 (Tracker) vs 32,000 (Comprehensive overview); both may be true at different dates. Needs one figure.",
+    "Wyrmhelm Forgedeep Facility: Monthly cost 2,000 (old) vs 3,000 booked, 2,500-3,500 band (Feeding Doctrine 24 Jul 2026).",
+    "Skyreach Castle: Cost 19,200/mo at home (128 crew) is booked once but split across two Registry rows (D7); 55,000 full garrison; the \"28 crew\" figure is retired.",
+    "Guardian: Eleint 20 allocation 800,000 vs 2,000,000 deployed on Level 1; L2 active early 1495 (D6); L3-L4 of the 3,250,000 remain future. Budget of record 5,250,000 total.",
+    "Formicorps: About 1,050,000 committed purchase; the Formicorps arrive Flamerule 1496, so on the Hammer 1495 clock this is a commitment/forecast, not operating capacity (D3, 28 Sep 2026).",
+    "Hunding Canal: Canal Completion committed at 2,000,000 (Eleint 20) vs Western Network 1,200,000 complete + Hunding 3,500,000 total with about 1,050,000 deployed. The 2,000,000 figure does not reconcile to either.",
+    "Silversheen Trading: 57,600/mo revenue admitted but no current monthly cost on record (engine unresolved_accounting).",
+    "ESAMT outstanding draws: Five different figures on four pages/dates: 304,716 (Transaction Ledger rows to Day 905), 327,100 (dashboard), 431,900 (draw log total), 454,116 (Session 41, Day 733), about 582,000 (trust page, ~Day 737 incl. Session 34). Proposal posts 582,000 as the latest stated state.",
+    "Celestial Compass Estate: 127,000 cost on the asset register vs 23,000 equity in the trust table: the difference is unexplained debt. Proposal posts cost and leaves the financing unresolved."
+  ]
+}
